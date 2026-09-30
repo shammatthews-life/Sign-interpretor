@@ -1,0 +1,132 @@
+{
+  "hello": {
+    "gloss": "HELLO",
+    "image": "hello.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Lexical sign for greeting. Awaiting official ISLRTC reference keyframe asset."
+  },
+  "thank you": {
+    "gloss": "THANK YOU",
+    "image": "thank_you.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Courtesy lexical sign (Dhanyavaad). Must not be fingerspelled. Awaiting official ISLRTC asset."
+  },
+  "good": {
+    "gloss": "GOOD",
+    "image": "good.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Lexical sign for good/positive. Flat hand moving outward from chin. Awaiting official ISLRTC asset."
+  },
+  "morning": {
+    "gloss": "MORNING",
+    "image": "morning.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Time-of-day lexical sign. Awaiting official ISLRTC asset."
+  },
+  "evening": {
+    "gloss": "EVENING",
+    "image": "evening.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Time-of-day sign."
+  },
+  "how": {
+    "gloss": "HOW",
+    "image": "how.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Interrogative sign."
+  },
+  "you": {
+    "gloss": "YOU",
+    "image": "you.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Deictic/indexical sign."
+  },
+  "help": {
+    "gloss": "HELP",
+    "image": "help.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Directional sign."
+  },
+  "me": {
+    "gloss": "ME",
+    "image": "me.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Self-referential indexical sign."
+  },
+  "water": {
+    "gloss": "WATER",
+    "image": "water.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Noun lexical sign. Three fingers extended near mouth/chin. Awaiting official ISLRTC asset."
+  },
+  "tomorrow": {
+    "gloss": "TOMORROW",
+    "image": "tomorrow.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Time marker sign."
+  },
+  "rain": {
+    "gloss": "RAIN",
+    "image": "rain.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Natural phenomenon sign."
+  },
+  "please": {
+    "gloss": "PLEASE",
+    "image": "please.jpg",
+    "source": "ISLRTC",
+    "source_url": "http://www.islrtc.nic.in/",
+    "accessed_date": "2026-09-30",
+    "license_notes": "Official ISLRTC Sign Learn library reference. Non-commercial accessibility research.",
+    "verified": false,
+    "notes": "Politeness marker sign."
+  }
+}

@@ -1,0 +1,5 @@
+# Phase 1 External Dependencies
+# Only minimal required packages are listed here.
+# Tkinter is included in the Python standard library.
+
+Pillow>=10.0.0

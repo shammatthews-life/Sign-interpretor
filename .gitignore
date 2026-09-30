@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# Editor settings (preserve project-level interpreter path, ignore personal states)
+.vscode/*
+!.vscode/settings.json
+
+# OS artifacts
+.DS_Store
+Thumbs.db
