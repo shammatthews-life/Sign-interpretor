@@ -1,6 +1,6 @@
 # R1 — Fine-Grained Avatar Articulation
 
-**Status: IN PROGRESS — expanded runtime verification required.**  
+**Status: IN PROGRESS — expanded runtime verification required.**
 **Scope:** technical rig articulation only; this report does not establish that any technical pose is a linguistically correct ISL sign.
 
 ## Verified source findings
