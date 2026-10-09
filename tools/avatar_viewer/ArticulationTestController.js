@@ -68,19 +68,31 @@ export class ArticulationTestController {
     for (const side of ['left', 'right']) {
       const prefix = side === 'left' ? 'L' : 'R';
       const hand = `Bip001_${prefix}_Hand`;
-      tests.push(
-        { id: `${side}-wrist-flexion`, side, joint: hand, axis: 'x', degrees: 30, expected: 'Hand bone rotates about local X toward flexion.' },
-        { id: `${side}-wrist-extension`, side, joint: hand, axis: 'x', degrees: -30, expected: 'Hand bone rotates about local X toward extension.' },
-        { id: `${side}-wrist-rotation`, side, joint: hand, axis: 'y', degrees: 30, expected: 'Hand bone rotates about local Y.' }
-      );
+      const wristTests = [
+        { id: `${side}-wrist-flexion`, axis: 'x', degrees: 30, motion: 'positive local X' },
+        { id: `${side}-wrist-extension`, axis: 'x', degrees: -30, motion: 'negative local X' },
+        { id: `${side}-wrist-rotation-y`, axis: 'y', degrees: 30, motion: 'positive local Y' },
+        { id: `${side}-wrist-rotation-z`, axis: 'z', degrees: 30, motion: 'positive local Z' }
+      ];
+      for (const test of wristTests) {
+        tests.push({
+          ...test, side, joint: hand, joint_id: `${side}-wrist`,
+          expected: `Hand-root joint changes about ${test.motion}; anatomical axis meaning requires visual calibration.`
+        });
+      }
+
       for (const finger of FINGERS) {
         (this.handRig[side][finger] || []).forEach((bone, index) => {
-          tests.push({
-            id: `${side}-${finger}-${SEGMENTS[index] || `segment-${index + 1}`}`,
-            side, finger, segment: SEGMENTS[index] || `segment-${index + 1}`,
-            joint: bone.name, axis: 'z', degrees: 30,
-            expected: `${finger} ${SEGMENTS[index] || `segment ${index + 1}`} rotates about local Z.`
-          });
+          const segment = SEGMENTS[index] || `segment-${index + 1}`;
+          for (const axis of ['x', 'y', 'z']) {
+            tests.push({
+              id: `${side}-${finger}-${segment}-${axis}`,
+              side, finger, segment, joint: bone.name,
+              joint_id: `${side}-${finger}-${segment}`,
+              axis, degrees: 30,
+              expected: `${side} ${finger} ${segment} changes about local ${axis.toUpperCase()}; anatomical meaning requires visual calibration.`
+            });
+          }
         });
       }
     }
@@ -94,13 +106,17 @@ export class ArticulationTestController {
     const bone = this.bonesMap.get(test.joint);
     const rest = this.rest.get(test.joint);
     if (!bone || !rest) throw new Error(`Required runtime bone is unavailable: ${test.joint}`);
+    this.model.updateMatrixWorld(true);
+    const beforeWorldRotation = bone.getWorldQuaternion(new THREE.Quaternion());
     const before = this.descendantPositions(bone);
     bone.rotation[test.axis] = rest.rotation[test.axis] + test.degrees * TO_RAD;
     this.model.updateMatrixWorld(true);
+    const afterWorldRotation = bone.getWorldQuaternion(new THREE.Quaternion());
     const after = this.descendantPositions(bone);
     return {
       ...test,
       observed_rotation_degrees: (bone.rotation[test.axis] - rest.rotation[test.axis]) / TO_RAD,
+      world_rotation_change_radians: beforeWorldRotation.angleTo(afterWorldRotation),
       descendant_displacement: this.positionDisplacement(before, after)
     };
   }
@@ -185,15 +201,23 @@ export class ArticulationTestController {
   }
 
   runAutomatedSuite() {
+    const restLoop = this.player.loop;
     const jointResults = this.singleJointTests().map(test => {
       const result = this.applySingleJoint(test.id);
       const rotationPassed = Math.abs(result.observed_rotation_degrees - test.degrees) < 1e-5;
-      const movementPassed = result.descendant_displacement !== null && result.descendant_displacement > 1e-5;
+      // A valid axis rotation may twist around a joint's long axis without moving child-bone origins.
+      // Use the bone's world orientation as the automated transform check; retain descendant
+      // displacement as diagnostic information, and leave anatomical visibility to manual review.
+      const transformPassed = Number.isFinite(result.world_rotation_change_radians)
+        && result.world_rotation_change_radians > 1e-5;
       return {
         id: test.id,
+        joint_id: test.joint_id,
+        axis: test.axis,
         expected: test.expected,
         observed: `${result.observed_rotation_degrees.toFixed(1)}° local ${test.axis.toUpperCase()}`,
-        status: rotationPassed && movementPassed ? 'PASS' : 'FAIL',
+        status: rotationPassed && transformPassed ? 'PASS' : 'FAIL',
+        world_rotation_change_radians: result.world_rotation_change_radians,
         descendant_displacement: result.descendant_displacement
       };
     });
@@ -237,18 +261,92 @@ export class ArticulationTestController {
         status: midPoseObserved && maxResetDrift < 1e-7 ? 'PASS' : 'FAIL'
       });
     }
+    const curlPrecedence = this.testCurlFallbackPrecedence();
     this.player.playbackSpeed = restPlaybackSpeed;
+    this.player.loop = restLoop;
     this.reset();
+    const nonFiniteRestDetails = this.listNonFiniteRestComponents();
     return {
       isolated_joints: jointResults,
+      axis_checks: {
+        passed: jointResults.filter(result => result.status === 'PASS').length,
+        total: jointResults.length
+      },
       poses: poseResults,
       replay_speeds: speedResults,
+      curl_precedence: curlPrecedence,
       hac: (() => {
-        const testedJointIds = [...new Set(jointResults.filter(result => result.status === 'PASS')
-          .map(result => result.id.replace(/-(wrist-flexion|wrist-extension|wrist-rotation)$/, '-wrist')))].sort();
-        return { tested_joint_ids: testedJointIds, numerator: testedJointIds.length, denominator: 32 };
+        const anatomicalJointIds = [...new Set(jointResults.map(result => result.joint_id || result.id))].sort();
+        const testedJointIds = anatomicalJointIds.filter(jointId =>
+          jointResults.filter(result => (result.joint_id || result.id) === jointId)
+            .every(result => result.status === 'PASS')
+        );
+        return {
+          tested_joint_ids: testedJointIds,
+          numerator: testedJointIds.length,
+          denominator: 32,
+          axis_checks_required_per_joint: true
+        };
       })(),
-      preexisting_non_finite_rest_components: this.countNonFiniteRestComponents()
+      preexisting_non_finite_rest_components: nonFiniteRestDetails.length,
+      preexisting_non_finite_rest_component_details: nonFiniteRestDetails
+    };
+  }
+
+  testCurlFallbackPrecedence() {
+    const chain = this.handRig?.right?.index || [];
+    if (chain.length < 2) {
+      return { status: 'FAIL', reason: 'Right index chain must contain a base and a second segment.' };
+    }
+    const explicitBone = chain[0];
+    const fallbackBone = chain[1];
+    const explicitRest = this.rest.get(explicitBone.name);
+    const fallbackRest = this.rest.get(fallbackBone.name);
+    if (!explicitRest || !fallbackRest) {
+      return { status: 'FAIL', reason: 'Captured rest rotations are missing for the index chain.' };
+    }
+
+    const sign = {
+      status: 'playable',
+      duration_ms: 1000,
+      dominant_hand: 'right',
+      return_to_neutral: true,
+      involved_bones: [explicitBone.name],
+      keyframes: [
+        {
+          time_ms: 0, label: 'Curl fallback start', easing: 'linear',
+          rotations: { [explicitBone.name]: { x: 0, y: 0, z: 10 } },
+          finger_curls: { index: 80 }
+        },
+        {
+          time_ms: 1000, label: 'Explicit finger rotation', easing: 'linear',
+          rotations: { [explicitBone.name]: { x: 0, y: 0, z: 30 } },
+          finger_curls: { index: 80 }
+        }
+      ]
+    };
+
+    this.player.loop = false;
+    this.player.loadSign(sign);
+    this.player.seek(500);
+
+    const explicitExpected = explicitRest.rotation.z + 20 * TO_RAD;
+    const fallbackExpected = fallbackRest.rotation.z + 80 * TO_RAD;
+    const explicitObserved = explicitBone.rotation.z;
+    const fallbackObserved = fallbackBone.rotation.z;
+    const explicitPassed = Math.abs(explicitObserved - explicitExpected) < 1e-5;
+    const fallbackPassed = Math.abs(fallbackObserved - fallbackExpected) < 1e-5;
+
+    return {
+      status: explicitPassed && fallbackPassed ? 'PASS' : 'FAIL',
+      explicit_bone: explicitBone.name,
+      explicit_expected_degrees: 20,
+      explicit_observed_degrees: (explicitObserved - explicitRest.rotation.z) / TO_RAD,
+      fallback_bone: fallbackBone.name,
+      fallback_expected_degrees: 80,
+      fallback_observed_degrees: (fallbackObserved - fallbackRest.rotation.z) / TO_RAD,
+      explicit_rotation_preserved: explicitPassed,
+      unkeyframed_legacy_curl_preserved: fallbackPassed
     };
   }
 
@@ -272,15 +370,36 @@ export class ArticulationTestController {
     return maxDrift;
   }
 
-  countNonFiniteRestComponents() {
-    let count = 0;
-    for (const pose of this.rest.values()) {
+  listNonFiniteRestComponents() {
+    const details = [];
+    const describeValue = value => {
+      if (Number.isNaN(value)) return 'NaN';
+      if (value === Infinity) return 'Infinity';
+      if (value === -Infinity) return '-Infinity';
+      if (value === undefined) return 'undefined';
+      return String(value);
+    };
+    for (const [boneName, pose] of this.rest) {
       for (const axis of ['x', 'y', 'z']) {
-        if (!Number.isFinite(pose.rotation[axis])) count++;
-        if (!Number.isFinite(pose.position[axis])) count++;
+        for (const [kind, value] of [
+          ['rotation', pose.rotation[axis]],
+          ['position', pose.position[axis]]
+        ]) {
+          if (!Number.isFinite(value)) {
+            details.push({
+              bone_name: boneName,
+              component: `${kind}.${axis}`,
+              value: describeValue(value)
+            });
+          }
+        }
       }
     }
-    return count;
+    return details;
+  }
+
+  countNonFiniteRestComponents() {
+    return this.listNonFiniteRestComponents().length;
   }
 
   playPose(rotations, speed = 1, label = 'Technical pose replay') {
