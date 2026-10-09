@@ -39,7 +39,7 @@ Those results are retained as prior evidence, **not** represented as a run of th
 5. The viewer status reports the axis checks, technical poses, replay speeds, curl-precedence check, HAC, and non-finite rest-component count. Any remaining non-finite rest values keep the overall disposition at **REVIEW REQUIRED**.
 6. `tools/validate_phase_r1_articulation.mjs` checks that the important source guardrails are present. It is a static source check; it is not a runtime or visual test.
 
-With the intended rig map (30 finger segments and two hand-root joints), the expanded matrix is expected to expose 98 axis tests. The actual number must be read from the live viewer after the updated branch is checked out.
+With the intended rig map (30 finger segments and two hand-root joints), the expanded matrix is expected to expose 98 axis tests. The actual number must be read from the live viewer after the updated branch is checked out. Automated axis checks use the bone's world-orientation change as the transform check; child-bone displacement is retained as diagnostic output because a twist around a long axis can change the rendered joint without translating child-bone origins.
 
 ## Remaining completion gates
 
