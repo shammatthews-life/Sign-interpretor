@@ -1,0 +1,316 @@
+{
+  "phase": "H1",
+  "generated_from": [
+    "docs/g3_translation_evaluation_report.json",
+    "isl_accessibility/data/sign_dictionary.json",
+    "tools/asr/benchmark_phase_f2_5.json"
+  ],
+  "scoring_formula": "10*G3 corpus frequency + 3*distinct affected sentences + 5*local dictionary entry + 4*existing incomplete motion schema + 8*phrase value; no unmeasured feasibility score.",
+  "current_coverage": {
+    "total_linguistic_concepts": 14,
+    "playable": 3,
+    "incomplete_or_not_authored": 11,
+    "unavailable_occurrences": 100
+  },
+  "ranked_candidates": [
+    {
+      "id": "you",
+      "concept": "YOU",
+      "frequency": 17,
+      "sentencesUnlocked": 17,
+      "state": "C. MOTION_INCOMPLETE + reference unavailable",
+      "priority_score": 226,
+      "score_parts": {
+        "frequency": 170,
+        "sentence_unlock": 51,
+        "local_dictionary": 5,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": true,
+      "dictionary_source": "ISLRTC",
+      "reference": {
+        "term": "You",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/search.php?search=You",
+        "status": "PROJECT_CATALOG_SOURCE_ONLY"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Locate and inspect an authoritative video reference before motion authoring."
+    },
+    {
+      "id": "water",
+      "concept": "WATER",
+      "frequency": 16,
+      "sentencesUnlocked": 16,
+      "state": "B. MOTION_INCOMPLETE + reference available",
+      "priority_score": 217,
+      "score_parts": {
+        "frequency": 160,
+        "sentence_unlock": 48,
+        "local_dictionary": 5,
+        "incomplete_motion_schema": 4,
+        "phrase_value": 0
+      },
+      "dictionary_entry": true,
+      "dictionary_source": "ISLRTC",
+      "reference": {
+        "term": "Water",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/listpage.php?type=W",
+        "status": "DIRECTORY_LISTED_POSE_NOT_INSPECTED"
+      },
+      "motion_status": "incomplete",
+      "recommended_action": "Request/inspect the official entry before motion authoring."
+    },
+    {
+      "id": "i",
+      "concept": "I",
+      "frequency": 15,
+      "sentencesUnlocked": 15,
+      "state": "B. MOTION_INCOMPLETE + reference available",
+      "priority_score": 195,
+      "score_parts": {
+        "frequency": 150,
+        "sentence_unlock": 45,
+        "local_dictionary": 0,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": false,
+      "dictionary_source": null,
+      "reference": {
+        "term": "I, Me",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/listpage.php?type=I",
+        "status": "DIRECTORY_LISTED_POSE_NOT_INSPECTED"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Request/inspect the official entry before motion authoring."
+    },
+    {
+      "id": "help",
+      "concept": "HELP",
+      "frequency": 12,
+      "sentencesUnlocked": 12,
+      "state": "C. MOTION_INCOMPLETE + reference unavailable",
+      "priority_score": 161,
+      "score_parts": {
+        "frequency": 120,
+        "sentence_unlock": 36,
+        "local_dictionary": 5,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": true,
+      "dictionary_source": "ISLRTC",
+      "reference": {
+        "term": "Help",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/search.php?search=Help",
+        "status": "PROJECT_CATALOG_SOURCE_ONLY"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Locate and inspect an authoritative video reference before motion authoring."
+    },
+    {
+      "id": "me",
+      "concept": "ME",
+      "frequency": 12,
+      "sentencesUnlocked": 12,
+      "state": "B. MOTION_INCOMPLETE + reference available",
+      "priority_score": 161,
+      "score_parts": {
+        "frequency": 120,
+        "sentence_unlock": 36,
+        "local_dictionary": 5,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": true,
+      "dictionary_source": "ISLRTC",
+      "reference": {
+        "term": "I, Me",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/listpage.php?type=I",
+        "status": "DIRECTORY_LISTED_POSE_NOT_INSPECTED"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Request/inspect the official entry before motion authoring."
+    },
+    {
+      "id": "need",
+      "concept": "NEED",
+      "frequency": 9,
+      "sentencesUnlocked": 9,
+      "state": "C. MOTION_INCOMPLETE + reference unavailable",
+      "priority_score": 117,
+      "score_parts": {
+        "frequency": 90,
+        "sentence_unlock": 27,
+        "local_dictionary": 0,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": false,
+      "dictionary_source": null,
+      "reference": {
+        "term": "Need",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/search.php?search=Need",
+        "status": "NEEDS_REVIEW"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Locate and inspect an authoritative video reference before motion authoring."
+    },
+    {
+      "id": "drink",
+      "concept": "DRINK",
+      "frequency": 7,
+      "sentencesUnlocked": 7,
+      "state": "C. MOTION_INCOMPLETE + reference unavailable",
+      "priority_score": 91,
+      "score_parts": {
+        "frequency": 70,
+        "sentence_unlock": 21,
+        "local_dictionary": 0,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": false,
+      "dictionary_source": null,
+      "reference": {
+        "term": "Drink",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/search.php?search=Drink",
+        "status": "NEEDS_REVIEW"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Locate and inspect an authoritative video reference before motion authoring."
+    },
+    {
+      "id": "tomorrow",
+      "concept": "TOMORROW",
+      "frequency": 6,
+      "sentencesUnlocked": 6,
+      "state": "C. MOTION_INCOMPLETE + reference unavailable",
+      "priority_score": 83,
+      "score_parts": {
+        "frequency": 60,
+        "sentence_unlock": 18,
+        "local_dictionary": 5,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": true,
+      "dictionary_source": "ISLRTC",
+      "reference": {
+        "term": "Tomorrow",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/search.php?search=Tomorrow",
+        "status": "PROJECT_CATALOG_SOURCE_ONLY"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Locate and inspect an authoritative video reference before motion authoring."
+    },
+    {
+      "id": "not",
+      "concept": "NOT",
+      "frequency": 3,
+      "sentencesUnlocked": 3,
+      "state": "C. MOTION_INCOMPLETE + reference unavailable",
+      "priority_score": 39,
+      "score_parts": {
+        "frequency": 30,
+        "sentence_unlock": 9,
+        "local_dictionary": 0,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": false,
+      "dictionary_source": null,
+      "reference": {
+        "term": "Not",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/search.php?search=Not",
+        "status": "NEEDS_REVIEW"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Locate and inspect an authoritative video reference before motion authoring."
+    },
+    {
+      "id": "thank_you",
+      "concept": "THANK_YOU",
+      "frequency": 2,
+      "sentencesUnlocked": 2,
+      "state": "C. MOTION_INCOMPLETE + reference unavailable",
+      "priority_score": 39,
+      "score_parts": {
+        "frequency": 20,
+        "sentence_unlock": 6,
+        "local_dictionary": 5,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 8
+      },
+      "dictionary_entry": true,
+      "dictionary_source": "ISLRTC",
+      "reference": {
+        "term": "Thank you",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/search.php?search=Thank%20you",
+        "status": "PROJECT_CATALOG_SOURCE_ONLY"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Locate and inspect an authoritative video reference before motion authoring."
+    },
+    {
+      "id": "how",
+      "concept": "HOW",
+      "frequency": 1,
+      "sentencesUnlocked": 1,
+      "state": "C. MOTION_INCOMPLETE + reference unavailable",
+      "priority_score": 18,
+      "score_parts": {
+        "frequency": 10,
+        "sentence_unlock": 3,
+        "local_dictionary": 5,
+        "incomplete_motion_schema": 0,
+        "phrase_value": 0
+      },
+      "dictionary_entry": true,
+      "dictionary_source": "ISLRTC",
+      "reference": {
+        "term": "how",
+        "url": null,
+        "status": "NEEDS_REVIEW"
+      },
+      "motion_status": "NO_MOTION_FILE",
+      "recommended_action": "Locate and inspect an authoritative video reference before motion authoring."
+    }
+  ],
+  "coverage_simulation": {
+    "current": {
+      "covered_concept_occurrences": 10,
+      "total_concept_occurrences": 110,
+      "technical_motion_coverage_percent": 9.09
+    },
+    "plus_top_5": {
+      "covered_concept_occurrences": 82,
+      "total_concept_occurrences": 110,
+      "technical_motion_coverage_percent": 74.55
+    },
+    "plus_top_10": {
+      "covered_concept_occurrences": 109,
+      "total_concept_occurrences": 110,
+      "technical_motion_coverage_percent": 99.09
+    }
+  },
+  "realistic_speech": {
+    "fixture": "fast.wav",
+    "model": "base.en CUDA float16",
+    "recorded_hypothesis": "And so my phone asked what your country can do for you, ask what you can do for your country.",
+    "catalog_overlap": [
+      {
+        "concept": "you",
+        "occurrences": 2
+      }
+    ],
+    "note": "This fixture is out of domain for the small G3 vocabulary. Only exact token overlap is reported; no speech frequency is inferred beyond the recorded hypothesis."
+  },
+  "first_authoring_batch": [
+    "water",
+    "i",
+    "me"
+  ],
+  "limitation": "Directory listing/catalog provenance is not a visual motion reference. No candidate may be animated until its official reference video is inspected and its intake record completed."
+}

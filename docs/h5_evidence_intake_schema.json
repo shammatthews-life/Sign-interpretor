@@ -1,0 +1,71 @@
+{
+  "schema_name": "H5 Official Sign Learn Evidence Intake",
+  "schema_version": "1.0.0",
+  "purpose": "Metadata-only intake for human-captured official Sign Learn evidence. Do not add source videos, recordings, screenshots, or extracted frames to this repository without explicit permission.",
+  "capture_metadata_directory": "docs/sign_references/captured/metadata",
+  "allowed_visual_values": ["OBSERVED", "UNCLEAR", "NOT_APPLICABLE"],
+  "evidence_status_values": ["VERIFIED_VISUAL_REFERENCE", "PARTIALLY_VERIFIED", "NEEDS_HUMAN_REVIEW", "REJECTED_INSUFFICIENT_EVIDENCE"],
+  "required_fields": [
+    "concept", "capture_filename", "capture_date", "platform", "app_name", "dictionary_result_label", "variant_label", "source_provenance", "video_complete", "video_quality", "signer_visible", "start_pose_visible", "movement_visible", "end_pose_visible", "hands_visible", "face_visible", "motion_parameters_observable", "uncertainties", "human_review_required", "authoring_eligible", "evidence_status", "motion_parameters"
+  ],
+  "source_provenance_required_fields": ["official_status", "source_url_or_app", "attribution"],
+  "motion_parameter_required_fields": [
+    "dominant_hand", "handshape", "thumb", "index", "middle", "ring", "pinky", "palm_orientation", "wrist_orientation", "forearm_orientation", "upper_arm_position", "starting_pose", "motion_direction", "motion_path", "amplitude", "repetition", "contact_point", "endpoint", "non_manual_features", "timing_estimate"
+  ],
+  "record_template": {
+    "concept": "YOU",
+    "capture_filename": "NOT_COMMITTED_TO_REPOSITORY",
+    "capture_date": "YYYY-MM-DD",
+    "platform": "Android or iOS",
+    "app_name": "Sign Learn",
+    "dictionary_result_label": "Exact label shown in Sign Learn",
+    "variant_label": "Sign 1, Sign 2, or NOT_APPLICABLE only when no variant label is shown",
+    "source_provenance": {
+      "official_status": "OFFICIAL_SIGN_LEARN_CAPTURE",
+      "source_url_or_app": "Android com.islrtc or iOS id1644466408",
+      "attribution": "Indian Sign Language Research and Training Centre (ISLRTC), Department of Empowerment of Persons with Disabilities, Government of India"
+    },
+    "video_complete": false,
+    "video_quality": "UNCLEAR",
+    "signer_visible": false,
+    "start_pose_visible": false,
+    "movement_visible": false,
+    "end_pose_visible": false,
+    "hands_visible": false,
+    "face_visible": false,
+    "motion_parameters_observable": false,
+    "uncertainties": ["No capture has been reviewed."],
+    "human_review_required": true,
+    "authoring_eligible": false,
+    "evidence_status": "NEEDS_HUMAN_REVIEW",
+    "i_me_relationship": "NOT_APPLICABLE",
+    "motion_parameters": {
+      "dominant_hand": "UNCLEAR",
+      "handshape": "UNCLEAR",
+      "thumb": "UNCLEAR",
+      "index": "UNCLEAR",
+      "middle": "UNCLEAR",
+      "ring": "UNCLEAR",
+      "pinky": "UNCLEAR",
+      "palm_orientation": "UNCLEAR",
+      "wrist_orientation": "UNCLEAR",
+      "forearm_orientation": "UNCLEAR",
+      "upper_arm_position": "UNCLEAR",
+      "starting_pose": "UNCLEAR",
+      "motion_direction": "UNCLEAR",
+      "motion_path": "UNCLEAR",
+      "amplitude": "UNCLEAR",
+      "repetition": "UNCLEAR",
+      "contact_point": "UNCLEAR",
+      "endpoint": "UNCLEAR",
+      "non_manual_features": "UNCLEAR",
+      "timing_estimate": "UNCLEAR"
+    }
+  },
+  "authoring_gate": {
+    "automatic_linguistic_validation": false,
+    "required_for_true": ["video_complete", "signer_visible", "start_pose_visible", "movement_visible", "end_pose_visible", "hands_visible", "motion_parameters_observable"],
+    "required_evidence_status": "VERIFIED_VISUAL_REFERENCE",
+    "note": "Passing this technical evidence gate only makes a record eligible for a separate authoring decision; it does not establish linguistic correctness."
+  }
+}
