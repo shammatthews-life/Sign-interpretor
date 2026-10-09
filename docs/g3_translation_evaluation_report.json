@@ -10,7 +10,7 @@
     "phrase_recognition_rate": "3/3",
     "unknown_term_rate": "20/148",
     "unavailable_sign_rate": "100/110",
-    "mean_translation_compute_ms": 0.104,
+    "mean_translation_compute_ms": 0.097,
     "failure_categories": {
       "missing sign motion": 35,
       "temporal ordering": 3,
@@ -27,9 +27,9 @@
       "delta": -10
     },
     "pipeline_latency_probe_ms": {
-      "t1_translation_complete_minus_t0": 0.061,
-      "t2_first_sign_commit_minus_t0": 1.577,
-      "t3_aether_playback_minus_t0": 1.684,
+      "t1_translation_complete_minus_t0": 0.066,
+      "t2_first_sign_commit_minus_t0": 2.014,
+      "t3_aether_playback_minus_t0": 2.146,
       "queue_depth": 0
     }
   },
@@ -42,7 +42,7 @@
       },
       "unknown_terms": 0,
       "unavailable_signs": 12,
-      "mean_translation_ms": 0.307
+      "mean_translation_ms": 0.417
     },
     "pronouns": {
       "total": 4,
@@ -51,7 +51,7 @@
       },
       "unknown_terms": 0,
       "unavailable_signs": 12,
-      "mean_translation_ms": 0.041
+      "mean_translation_ms": 0.032
     },
     "time_expressions": {
       "total": 3,
@@ -60,7 +60,7 @@
       },
       "unknown_terms": 0,
       "unavailable_signs": 12,
-      "mean_translation_ms": 0.031
+      "mean_translation_ms": 0.023
     },
     "questions": {
       "total": 4,
@@ -69,7 +69,7 @@
       },
       "unknown_terms": 0,
       "unavailable_signs": 11,
-      "mean_translation_ms": 0.024
+      "mean_translation_ms": 0.023
     },
     "negation": {
       "total": 3,
@@ -87,7 +87,7 @@
       },
       "unknown_terms": 0,
       "unavailable_signs": 1,
-      "mean_translation_ms": 0.036
+      "mean_translation_ms": 0.025
     },
     "longer_sentences": {
       "total": 3,
@@ -96,7 +96,7 @@
       },
       "unknown_terms": 0,
       "unavailable_signs": 12,
-      "mean_translation_ms": 0.024
+      "mean_translation_ms": 0.022
     },
     "function_word_heavy": {
       "total": 3,
@@ -105,7 +105,7 @@
       },
       "unknown_terms": 7,
       "unavailable_signs": 10,
-      "mean_translation_ms": 0.041
+      "mean_translation_ms": 0.029
     },
     "fast_spoken_style": {
       "total": 4,
@@ -115,7 +115,7 @@
       },
       "unknown_terms": 0,
       "unavailable_signs": 9,
-      "mean_translation_ms": 0.38
+      "mean_translation_ms": 0.264
     },
     "unknown_proper_technical": {
       "total": 6,
@@ -124,7 +124,7 @@
       },
       "unknown_terms": 11,
       "unavailable_signs": 8,
-      "mean_translation_ms": 0.043
+      "mean_translation_ms": 0.017
     },
     "mixed_known_unknown": {
       "total": 2,
@@ -133,7 +133,7 @@
       },
       "unknown_terms": 2,
       "unavailable_signs": 1,
-      "mean_translation_ms": 0.052
+      "mean_translation_ms": 0.019
     }
   },
   "sign_coverage": {
@@ -508,10 +508,10 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.735,
-        "analysis_ms": 0.345,
-        "gloss_generation_ms": 0.011,
-        "sign_id_resolution_ms": 0.041
+        "normalization_ms": 0.702,
+        "analysis_ms": 0.508,
+        "gloss_generation_ms": 0.018,
+        "sign_id_resolution_ms": 0.105
       }
     },
     {
@@ -566,10 +566,10 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.014,
-        "analysis_ms": 0.135,
-        "gloss_generation_ms": 0.005,
-        "sign_id_resolution_ms": 0.013
+        "normalization_ms": 0.022,
+        "analysis_ms": 0.325,
+        "gloss_generation_ms": 0.008,
+        "sign_id_resolution_ms": 0.015
       }
     },
     {
@@ -625,9 +625,9 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.008,
-        "analysis_ms": 0.029,
-        "gloss_generation_ms": 0.002,
-        "sign_id_resolution_ms": 0.01
+        "analysis_ms": 0.045,
+        "gloss_generation_ms": 0.004,
+        "sign_id_resolution_ms": 0.016
       }
     },
     {
@@ -682,10 +682,10 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.006,
-        "analysis_ms": 0.036,
-        "gloss_generation_ms": 0.002,
-        "sign_id_resolution_ms": 0.013
+        "normalization_ms": 0.01,
+        "analysis_ms": 0.099,
+        "gloss_generation_ms": 0.006,
+        "sign_id_resolution_ms": 0.022
       }
     },
     {
@@ -723,10 +723,10 @@
       "unavailable_signs": [],
       "translation_status": "TRANSLATION_SUPPORTED",
       "timing_ms": {
-        "normalization_ms": 0.007,
-        "analysis_ms": 0.107,
+        "normalization_ms": 0.011,
+        "analysis_ms": 0.145,
         "gloss_generation_ms": 0.004,
-        "sign_id_resolution_ms": 0.011
+        "sign_id_resolution_ms": 0.012
       }
     },
     {
@@ -781,10 +781,10 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.007,
-        "analysis_ms": 0.056,
+        "normalization_ms": 0.008,
+        "analysis_ms": 0.041,
         "gloss_generation_ms": 0.002,
-        "sign_id_resolution_ms": 0.014
+        "sign_id_resolution_ms": 0.012
       }
     },
     {
@@ -840,9 +840,9 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.004,
-        "analysis_ms": 0.016,
+        "analysis_ms": 0.013,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.004
+        "sign_id_resolution_ms": 0.003
       }
     },
     {
@@ -898,7 +898,7 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.003,
-        "analysis_ms": 0.012,
+        "analysis_ms": 0.01,
         "gloss_generation_ms": 0.001,
         "sign_id_resolution_ms": 0.003
       }
@@ -956,9 +956,9 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.004,
-        "analysis_ms": 0.01,
+        "analysis_ms": 0.018,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.027
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -1019,10 +1019,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.008,
-        "analysis_ms": 0.032,
-        "gloss_generation_ms": 0.002,
-        "sign_id_resolution_ms": 0.006
+        "normalization_ms": 0.007,
+        "analysis_ms": 0.022,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.004
       }
     },
     {
@@ -1083,8 +1083,8 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.009,
-        "analysis_ms": 0.014,
+        "normalization_ms": 0.004,
+        "analysis_ms": 0.012,
         "gloss_generation_ms": 0.001,
         "sign_id_resolution_ms": 0.003
       }
@@ -1147,8 +1147,8 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.003,
-        "analysis_ms": 0.011,
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.01,
         "gloss_generation_ms": 0.001,
         "sign_id_resolution_ms": 0.003
       }
@@ -1218,7 +1218,7 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.003,
-        "analysis_ms": 0.019,
+        "analysis_ms": 0.018,
         "gloss_generation_ms": 0.001,
         "sign_id_resolution_ms": 0.003
       }
@@ -1282,9 +1282,9 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.003,
-        "analysis_ms": 0.022,
-        "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.002
+        "analysis_ms": 0.023,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.004
       }
     },
     {
@@ -1351,8 +1351,8 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.002,
-        "analysis_ms": 0.016,
+        "normalization_ms": 0.004,
+        "analysis_ms": 0.013,
         "gloss_generation_ms": 0.001,
         "sign_id_resolution_ms": 0.002
       }
@@ -1422,9 +1422,9 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.002,
-        "analysis_ms": 0.012,
+        "analysis_ms": 0.013,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.004
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -1495,10 +1495,10 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.005,
-        "analysis_ms": 0.015,
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.037,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.019
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -1569,10 +1569,10 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.004,
+        "normalization_ms": 0.002,
         "analysis_ms": 0.019,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.003
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -1644,7 +1644,7 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.002,
-        "analysis_ms": 0.011,
+        "analysis_ms": 0.012,
         "gloss_generation_ms": 0.001,
         "sign_id_resolution_ms": 0.002
       }
@@ -1687,9 +1687,9 @@
       "translation_status": "TRANSLATION_SUPPORTED",
       "timing_ms": {
         "normalization_ms": 0.002,
-        "analysis_ms": 0.017,
+        "analysis_ms": 0.012,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.006
+        "sign_id_resolution_ms": 0.004
       }
     },
     {
@@ -1732,10 +1732,10 @@
       ],
       "translation_status": "TRANSLATION_SUPPORTED",
       "timing_ms": {
-        "normalization_ms": 0.006,
-        "analysis_ms": 0.02,
-        "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.003
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.007,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -1777,8 +1777,8 @@
       "unavailable_signs": [],
       "translation_status": "TRANSLATION_SUPPORTED",
       "timing_ms": {
-        "normalization_ms": 0.004,
-        "analysis_ms": 0.044,
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.038,
         "gloss_generation_ms": 0.001,
         "sign_id_resolution_ms": 0.004
       }
@@ -1845,10 +1845,10 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.005,
-        "analysis_ms": 0.024,
+        "normalization_ms": 0.006,
+        "analysis_ms": 0.02,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.003
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -1913,8 +1913,8 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.003,
-        "analysis_ms": 0.014,
+        "normalization_ms": 0.006,
+        "analysis_ms": 0.011,
         "gloss_generation_ms": 0.001,
         "sign_id_resolution_ms": 0.002
       }
@@ -1990,7 +1990,7 @@
         "normalization_ms": 0.002,
         "analysis_ms": 0.012,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.003
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2056,10 +2056,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.003,
-        "analysis_ms": 0.028,
-        "gloss_generation_ms": 0,
-        "sign_id_resolution_ms": 0.003
+        "normalization_ms": 0.005,
+        "analysis_ms": 0.03,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2134,10 +2134,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.002,
-        "analysis_ms": 0.023,
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.02,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.004
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2202,10 +2202,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.015,
-        "analysis_ms": 0.04,
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.017,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.004
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2247,10 +2247,10 @@
       "unavailable_signs": [],
       "translation_status": "TRANSLATION_SUPPORTED",
       "timing_ms": {
-        "normalization_ms": 0.004,
-        "analysis_ms": 0.018,
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.009,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.004
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2305,9 +2305,9 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.003,
-        "analysis_ms": 0.013,
-        "gloss_generation_ms": 0.001,
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.01,
+        "gloss_generation_ms": 0,
         "sign_id_resolution_ms": 0.003
       }
     },
@@ -2364,9 +2364,9 @@
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
         "normalization_ms": 0.002,
-        "analysis_ms": 0.017,
-        "gloss_generation_ms": 0.002,
-        "sign_id_resolution_ms": 1.379
+        "analysis_ms": 0.008,
+        "gloss_generation_ms": 0.975,
+        "sign_id_resolution_ms": 0.007
       }
     },
     {
@@ -2432,10 +2432,10 @@
       ],
       "translation_status": "TRANSLATION_HEURISTIC",
       "timing_ms": {
-        "normalization_ms": 0.012,
-        "analysis_ms": 0.043,
-        "gloss_generation_ms": 0.002,
-        "sign_id_resolution_ms": 0.015
+        "normalization_ms": 0.006,
+        "analysis_ms": 0.026,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.003
       }
     },
     {
@@ -2487,10 +2487,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.01,
-        "analysis_ms": 0.028,
+        "normalization_ms": 0.004,
+        "analysis_ms": 0.023,
         "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.004
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2538,10 +2538,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.005,
-        "analysis_ms": 0.022,
-        "gloss_generation_ms": 0.004,
-        "sign_id_resolution_ms": 0.003
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.011,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2594,10 +2594,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.004,
-        "analysis_ms": 0.03,
-        "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.003
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.01,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.001
       }
     },
     {
@@ -2649,10 +2649,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.005,
-        "analysis_ms": 0.077,
-        "gloss_generation_ms": 0.002,
-        "sign_id_resolution_ms": 0.004
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.009,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2700,10 +2700,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.006,
-        "analysis_ms": 0.016,
-        "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.002
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.013,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.001
       }
     },
     {
@@ -2752,10 +2752,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.004,
-        "analysis_ms": 0.02,
-        "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.002
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.012,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.001
       }
     },
     {
@@ -2801,10 +2801,10 @@
       ],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.004,
-        "analysis_ms": 0.036,
-        "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.003
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.021,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.002
       }
     },
     {
@@ -2846,10 +2846,10 @@
       "unavailable_signs": [],
       "translation_status": "TRANSLATION_UNCERTAIN",
       "timing_ms": {
-        "normalization_ms": 0.004,
-        "analysis_ms": 0.017,
-        "gloss_generation_ms": 0.001,
-        "sign_id_resolution_ms": 0.038
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.01,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.002
       }
     }
   ]

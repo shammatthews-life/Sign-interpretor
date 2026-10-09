@@ -5,7 +5,7 @@ Generated deterministically from 40 corpus sentences. This evaluates rule behavi
 - Phrase recognition: 3/3
 - Unknown-term rate: 20/148
 - Unavailable-sign rate: 100/110
-- Mean translation compute: 0.104 ms
+- Mean translation compute: 0.097 ms
 - Outcomes: {"HEURISTIC":21,"SUPPORTED":5,"UNCERTAIN":14}
 - Failure taxonomy: {"missing sign motion":35,"temporal ordering":3,"insufficient linguistic evidence":3,"question handling":4,"negation handling":3,"grammar gap":6,"lexical gap":3,"unknown vocabulary":8}
 - G3 targeted improvements: baseline unknown terms 30 -> 20.
