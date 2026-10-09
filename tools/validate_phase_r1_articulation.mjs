@@ -43,6 +43,8 @@ assert(authoring.includes("['x','y','z']"),
   'Authoring controller must serialize all three rotation axes.');
 assert(viewer.includes("names.map(name=>['x','y','z']"),
   'The authoring UI must expose X/Y/Z sliders for all controlled bones.');
+assert(viewer.includes('data-author-axis'),
+  'The authoring UI must bind each slider to its specific rotation axis.');
 assert(viewer.includes('non-finite rest components'),
   'The R1 UI must show unresolved non-finite rest components.');
 
