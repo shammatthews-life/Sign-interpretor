@@ -201,6 +201,7 @@ export class ArticulationTestController {
   }
 
   runAutomatedSuite() {
+    const restLoop = this.player.loop;
     const jointResults = this.singleJointTests().map(test => {
       const result = this.applySingleJoint(test.id);
       const rotationPassed = Math.abs(result.observed_rotation_degrees - test.degrees) < 1e-5;
@@ -262,6 +263,7 @@ export class ArticulationTestController {
     }
     const curlPrecedence = this.testCurlFallbackPrecedence();
     this.player.playbackSpeed = restPlaybackSpeed;
+    this.player.loop = restLoop;
     this.reset();
     const nonFiniteRestDetails = this.listNonFiniteRestComponents();
     return {
