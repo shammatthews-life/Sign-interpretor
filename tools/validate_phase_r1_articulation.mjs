@@ -21,6 +21,8 @@ const [controller, player, authoring, viewer] = await Promise.all([
 
 assert(controller.includes("for (const axis of ['x', 'y', 'z'])"),
   'R1 must test X/Y/Z independently for each finger segment.');
+assert(controller.includes('world_rotation_change_radians'),
+  'Axis checks must verify the bone world orientation so a twist axis is not failed solely because child origins do not translate.');
 assert(controller.includes("axis: 'z', degrees: 30"),
   'R1 must retain a positive Z-axis test.');
 assert(controller.includes('joint_id: `${side}-${finger}-${segment}`'),
