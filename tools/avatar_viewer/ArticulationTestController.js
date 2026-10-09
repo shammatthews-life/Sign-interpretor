@@ -265,9 +265,17 @@ export class ArticulationTestController {
       replay_speeds: speedResults,
       curl_precedence: curlPrecedence,
       hac: (() => {
-        const testedJointIds = [...new Set(jointResults.filter(result => result.status === 'PASS')
-          .map(result => result.joint_id || result.id))].sort();
-        return { tested_joint_ids: testedJointIds, numerator: testedJointIds.length, denominator: 32 };
+        const anatomicalJointIds = [...new Set(jointResults.map(result => result.joint_id || result.id))].sort();
+        const testedJointIds = anatomicalJointIds.filter(jointId =>
+          jointResults.filter(result => (result.joint_id || result.id) === jointId)
+            .every(result => result.status === 'PASS')
+        );
+        return {
+          tested_joint_ids: testedJointIds,
+          numerator: testedJointIds.length,
+          denominator: 32,
+          axis_checks_required_per_joint: true
+        };
       })(),
       preexisting_non_finite_rest_components: nonFiniteRestDetails.length,
       preexisting_non_finite_rest_component_details: nonFiniteRestDetails
