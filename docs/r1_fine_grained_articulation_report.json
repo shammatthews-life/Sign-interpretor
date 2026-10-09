@@ -1,0 +1,99 @@
+{
+  "report_schema": "r1-fine-grained-articulation-report/1.0.0",
+  "phase": "R1",
+  "status": "IN_PROGRESS_EXPANDED_RUNTIME_VERIFICATION_REQUIRED",
+  "updated_at": "2026-10-09",
+  "scope": "Technical rig articulation only; no claim of ISL linguistic correctness.",
+  "verified_source_findings": {
+    "runtime_curl_fallback_guard_present": true,
+    "explicit_rotation_wins_for_keyframed_bones": true,
+    "authoring_ui_has_xyz_controls_for_controlled_bones": true,
+    "authoring_controller_serializes_xyz_relative_to_captured_rest": true,
+    "h8_post_youtube_process_maps_url_validation_value_error_to_http_400": true
+  },
+  "prior_local_runtime_evidence": {
+    "evidence_source": "Local test/output log supplied from the October 9, 2026 project session; these metrics precede the expanded all-axis test matrix in this branch.",
+    "isolated_joint_checks": {
+      "passed": 36,
+      "total": 36
+    },
+    "technical_poses": {
+      "passed": 10,
+      "total": 10
+    },
+    "replay_speeds": [
+      {
+        "speed": 0.5,
+        "repeats": 3,
+        "status": "PASS",
+        "mid_pose_observed": true,
+        "max_reset_drift_radians": 0
+      },
+      {
+        "speed": 1,
+        "repeats": 3,
+        "status": "PASS",
+        "mid_pose_observed": true,
+        "max_reset_drift_radians": 0
+      },
+      {
+        "speed": 1.25,
+        "repeats": 3,
+        "status": "PASS",
+        "mid_pose_observed": true,
+        "max_reset_drift_radians": 0
+      },
+      {
+        "speed": 1.5,
+        "repeats": 3,
+        "status": "PASS",
+        "mid_pose_observed": true,
+        "max_reset_drift_radians": 0
+      }
+    ],
+    "prior_hac": {
+      "numerator": 32,
+      "denominator": 32
+    },
+    "visual_views_recorded": [
+      "neutral pose",
+      "technical fist pose",
+      "open-palm technical pose",
+      "right index-base isolated test",
+      "right wrist-flexion close-up"
+    ],
+    "preexisting_non_finite_rest_components": 4,
+    "non_finite_component_identity": "NOT_CAPTURED_IN_PRIOR_OUTPUT"
+  },
+  "changes_in_this_followup": {
+    "test_each_finger_segment_on_xyz": true,
+    "test_each_hand_root_on_xyz": true,
+    "hac_requires_all_axes_for_a_joint": true,
+    "curl_precedence_regression_added": true,
+    "non_finite_rest_component_details_added": true,
+    "ui_disposition_requires_non_finite_review": true,
+    "static_guardrail_validator": "tools/validate_phase_r1_articulation.mjs",
+    "expanded_axis_test_count_expected_for_full_rig": 98,
+    "expanded_suite_executed_on_target_runtime": false,
+    "static_validator_executed": false
+  },
+  "acceptance_gates": [
+    "Run the static R1 source guardrail validator.",
+    "Run the expanded R1 suite in the actual local Aether viewer and save the JSON results.",
+    "Identify and investigate each non-finite rest-pose component; do not silently replace it with zero.",
+    "Visually inspect isolated X/Y/Z movement for wrist and finger segments.",
+    "Run the full regression suite on the updated code and confirm lexical sign JSON hashes.",
+    "Update this report from the actual target-runtime results."
+  ],
+  "safety": {
+    "lexical_sign_json_changed_in_followup": false,
+    "technical_pose_is_not_a_lexical_isl_sign": true,
+    "no_missing_signs_fabricated": true,
+    "status_is_not_complete": true
+  },
+  "h8_status": {
+    "local_api_runtime_harness": "PASS_RECORDED_IN_EXISTING_H8_REPORT",
+    "invalid_youtube_url_expected_http_400": true,
+    "installed_extension_on_live_youtube_tab": "NOT_RUN"
+  }
+}
