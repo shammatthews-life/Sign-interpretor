@@ -75,7 +75,9 @@
     "static_guardrail_validator": "tools/validate_phase_r1_articulation.mjs",
     "expanded_axis_test_count_expected_for_full_rig": 98,
     "expanded_suite_executed_on_target_runtime": false,
-    "static_validator_executed": false
+    "static_validator_executed": false,
+    "world_orientation_used_for_axis_transform_check": true,
+    "descendant_displacement_is_diagnostic_not_the_only_movement_gate": true
   },
   "acceptance_gates": [
     "Run the static R1 source guardrail validator.",
