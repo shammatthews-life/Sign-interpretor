@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "ISL Accessibility Translator (Prototype Shell)",
+  "version": "1.0.0",
+  "description": "Accessible Indian Sign Language translation overlay prototype shell for web and streaming video.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "ISL Accessibility Translator"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://localhost:*/*",
+    "http://127.0.0.1:*/*",
+    "*://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "http://localhost:*/*",
+        "http://127.0.0.1:*/*",
+        "<all_urls>"
+      ],
+      "js": [
+        "shared/message-contract.js",
+        "content/overlay.js",
+        "content/content-script.js"
+      ],
+      "css": [
+        "content/overlay.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*",
+        "content/*",
+        "shared/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

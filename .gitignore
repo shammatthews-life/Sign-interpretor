@@ -16,3 +16,12 @@ ENV/
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# 3D Avatar assets (large binary / unverified public distribution)
+Avatar_Boy_Gun_AetherShadow/
+
+# Local pipeline runtime cache (YouTube downloads, WAVs, transcripts)
+runtime/
+
+# ASR benchmark fixtures derived from externally sourced recordings
+tools/asr/benchmark_audio/*.wav

@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether ISL Sign Player &amp; Inspection Viewer — Phase B: HELLO</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+    #viewport-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 17, 23, 0.94);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      transition: opacity 0.4s ease;
+    }
+    .spinner {
+      width: 52px;
+      height: 52px;
+      border: 4px solid rgba(88, 166, 255, 0.15);
+      border-top-color: #58a6ff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    #ui-panel {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 380px;
+      max-height: calc(100vh - 32px);
+      background: rgba(22, 27, 34, 0.92);
+      backdrop-filter: blur(16px);
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 16px;
+      overflow-y: auto;
+      z-index: 10;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
+    }
+    h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #58a6ff;
+      margin-bottom: 3px;
+    }
+    .subtitle {
+      font-size: 11px;
+      color: #8b949e;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .card-box {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+    }
+    .status-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      margin-bottom: 6px;
+      align-items: center;
+    }
+    .status-item:last-child {
+      margin-bottom: 0;
+    }
+    .status-label {
+      color: #8b949e;
+    }
+    .status-val {
+      font-weight: 600;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 11px;
+    }
+    .badge-found {
+      background: rgba(63, 185, 80, 0.15);
+      color: #3fb950;
+      border: 1px solid rgba(63, 185, 80, 0.4);
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-weight: 600;
+    }
+    .badge-lexical {
+      background: rgba(88, 166, 255, 0.15);
+      color: #58a6ff;
+      border: 1px solid rgba(88, 166, 255, 0.4);
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-weight: 600;
+      font-size: 10px;
+    }
+    .badge-keyframe {
+      background: rgba(210, 153, 34, 0.15);
+      color: #d29922;
+      border: 1px solid rgba(210, 153, 34, 0.4);
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-weight: 600;
+      font-size: 10px;
+    }
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #8b949e;
+      margin: 12px 0 6px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .btn-grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .btn-grid-4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    button {
+      background: #21262d;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 7px 10px;
+      font-size: 11px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    button:hover {
+      background: #30363d;
+      color: #f0f6fc;
+      border-color: #8b949e;
+    }
+    button.primary {
+      background: #1f6feb;
+      border-color: #388bfd;
+      color: #ffffff;
+    }
+    button.primary:hover {
+      background: #388bfd;
+    }
+    button.success {
+      background: #238636;
+      border-color: #2ea043;
+      color: #ffffff;
+    }
+    button.success:hover {
+      background: #2ea043;
+    }
+    .tab-bar {
+      display: flex;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 2px;
+      margin-bottom: 10px;
+      gap: 2px;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 5px 0;
+      font-size: 11px;
+      background: transparent;
+      border: none;
+      color: #8b949e;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .tab-btn.active {
+      background: #1f6feb;
+      color: #ffffff;
+      font-weight: 600;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .slider-row {
+      margin-bottom: 8px;
+    }
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #8b949e;
+      margin-bottom: 3px;
+    }
+    .slider-header span.deg-val {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      color: #58a6ff;
+      font-weight: 600;
+    }
+    input[type="range"] {
+      width: 100%;
+      height: 6px;
+      accent-color: #58a6ff;
+      background: #30363d;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .scrubber-track {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .timeline-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #8b949e;
+      margin-bottom: 6px;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+    }
+    .keyframe-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px solid #21262d;
+    }
+    #instructions {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: rgba(22, 27, 34, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 11px;
+      color: #8b949e;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .verification-box {
+      font-size: 10.5px;
+      color: #8b949e;
+      line-height: 1.4;
+      background: #11151c;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-top: 8px;
+    }
+    .verification-box b {
+      color: #c9d1d9;
+    }
+    details summary {
+      cursor: pointer;
+      user-select: none;
+      font-size: 11px;
+      font-weight: 600;
+      color: #8b949e;
+      margin-bottom: 6px;
+    }
+  </style>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="viewport-container"></div>
+
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <div id="loading-text" style="font-size: 14px; color: #58a6ff; font-weight: 500;">
+      Loading Aether Avatar (FBX &amp; Textures)...
+    </div>
+  </div>
+
+  <div id="ui-panel">
+    <h1>Aether ISL Sign Player</h1>
+    <div class="subtitle">Phase B: Lexical Sign Animation — HELLO</div>
+
+    <!-- 1. Rig & Sign Status -->
+    <div class="card-box">
+      <div class="status-item">
+        <span class="status-label">Active Sign</span>
+        <span class="badge-lexical" id="val-sign-badge">HELLO (Lexical ISL)</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Dominant Hand</span>
+        <span class="status-val" style="color: #58a6ff;">Right Hand</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Skeleton Rig</span>
+        <span class="status-val" style="color: #3fb950;">278 Bones (Verified)</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Hand Rigs</span>
+        <span class="badge-found">Left &amp; Right FOUND</span>
+      </div>
+      <div class="btn-grid" style="margin-top: 8px;">
+        <button id="btn-select-hello" class="primary">Sign: HELLO</button>
+        <button id="btn-select-good">Sign: GOOD (Sign 1)</button>
+        <button id="btn-select-morning">Sign: MORNING (Sign 1)</button>
+      </div>
+    </div>
+
+    <!-- 2. ISL Animation Transport Controls -->
+    <div class="section-title">
+      <span>Sign Animation Player</span>
+      <span class="badge-lexical" id="txt-speed-tag">1.0x Speed</span>
+    </div>
+
+    <div class="scrubber-track">
+      <div class="timeline-info">
+        <span id="txt-current-time">0 ms</span>
+        <span id="txt-progress-pct">0%</span>
+        <span id="txt-total-duration">2000 ms</span>
+      </div>
+      <input type="range" id="sign-scrubber" min="0" max="2000" step="10" value="0">
+      <div class="keyframe-indicator">
+        <span style="color: #8b949e;">Keyframe:</span>
+        <span class="badge-keyframe" id="txt-active-kf">Neutral Rest Pose</span>
+      </div>
+    </div>
+
+    <div class="btn-grid-4">
+      <button id="btn-sign-play" class="success">&#9658; Play</button>
+      <button id="btn-sign-pause">&#10074;&#10074; Pause</button>
+      <button id="btn-sign-replay" class="primary">&#8635; Replay</button>
+      <button id="btn-sign-stop">&#9632; Reset</button>
+    </div>
+
+    <div class="btn-grid-3" style="margin-bottom: 6px;">
+      <button id="btn-speed-05">0.5x Slow</button>
+      <button id="btn-speed-10" class="primary">1.0x Normal</button>
+      <button id="btn-toggle-loop">Loop: OFF</button>
+    </div>
+    <div class="btn-grid" style="margin-bottom: 12px;">
+      <button id="btn-speed-125">1.25x Test</button>
+      <button id="btn-speed-15">1.5x Test</button>
+    </div>
+
+    <div class="section-title">Controlled Sentence Pipeline</div>
+    <div class="card-box">
+      <input id="sentence-input" aria-label="English sentence" value="Hello good morning" style="width:100%; margin-bottom:6px; padding:7px; background:#0d1117; color:#c9d1d9; border:1px solid #30363d; border-radius:6px; font-size:11px;">
+      <div class="btn-grid">
+        <button id="btn-sentence-play" class="success">Convert &amp; Play</button>
+        <button id="btn-sequence-clear">Clear Queue</button>
+      </div>
+      <div class="btn-grid"><button id="btn-stream-sim">Simulate Streaming Input</button></div>
+      <div class="status-item"><span class="status-label">Input</span><span class="status-val" id="txt-sentence-input">-</span></div>
+      <div class="status-item"><span class="status-label">Sign Sequence</span><span class="status-val" id="txt-sentence-signs">-</span></div>
+      <div class="status-item"><span class="status-label">Unknown</span><span class="status-val" id="txt-sentence-unknown">none</span></div>
+      <div class="status-item"><span class="status-label">Current</span><span class="status-val" id="txt-queue-current">None</span></div>
+      <div class="status-item"><span class="status-label">Queue</span><span class="status-val" id="txt-queue-pending">empty</span></div>
+      <div class="status-item"><span class="status-label">Timing</span><span class="status-val" id="txt-sentence-timing">waiting</span></div>
+      <div class="status-item"><span class="status-label">Sequence Status</span><span class="status-val" id="txt-sequence-status">Preloading…</span></div>
+    </div>
+
+    <div class="section-title">Motion Checkpoints</div>
+    <div class="btn-grid-3" style="margin-bottom: 12px;">
+      <button data-checkpoint="0">Neutral</button>
+      <button data-checkpoint="650">Approach</button>
+      <button data-checkpoint="850">Temple</button>
+      <button data-checkpoint="1200">Outward</button>
+      <button data-checkpoint="1750">Return</button>
+    </div>
+
+    <div class="section-title">Phase F1 — Audio Preparation</div>
+    <div class="card-box">
+      <input id="audio-file-input" aria-label="WAV audio file" type="file" accept="audio/wav,.wav" style="width:100%; margin-bottom:6px; font-size:11px;">
+      <div class="btn-grid-3"><button id="btn-audio-mic" class="success">Start Mic</button><button id="btn-audio-file">Play WAV</button><button id="btn-audio-pause">Pause</button></div>
+      <div class="btn-grid"><button id="btn-audio-resume">Resume</button><button id="btn-audio-stop">Stop / Reset</button></div>
+      <div class="status-item"><span class="status-label">Audio Status</span><span class="status-val" id="txt-audio-status">idle</span></div>
+      <div class="status-item"><span class="status-label">Latest Chunk</span><span class="status-val" id="txt-audio-chunk">waiting</span></div>
+      <div class="status-item"><span class="status-label">ASR-ready Queue</span><span class="status-val" id="txt-audio-asr-queue">0</span></div>
+      <div style="font-size:10px;color:#8b949e;margin-top:6px">Diagnostics only: 16 kHz mono chunks → passthrough preprocessing → energy VAD → future ASR queue. No transcription in this phase.</div>
+    </div>
+
+    <div class="section-title">Phase F2 / F2.5 — Streaming ASR</div>
+    <div class="card-box">
+      <div class="btn-grid"><button id="btn-asr-start" class="success">Start ASR</button><button id="btn-asr-flush">Flush Final</button></div>
+      <div class="status-item"><span class="status-label">Device</span><span class="status-val" id="txt-asr-device">CPU / GPU</span></div>
+      <div class="status-item"><span class="status-label">Model</span><span class="status-val" id="txt-asr-model">tiny.en</span></div>
+      <div class="status-item"><span class="status-label">Worker state</span><span class="status-val" id="txt-asr-worker">IDLE</span></div>
+      <div class="status-item"><span class="status-label">Audio received</span><span class="status-val" id="txt-asr-audio">0.0 sec</span></div>
+      <div class="status-item"><span class="status-label">ASR queue</span><span class="status-val" id="txt-asr-queue">0</span></div>
+      <div class="status-item"><span class="status-label">Backlog</span><span class="status-val" id="txt-asr-backlog">0</span></div>
+      <div class="status-item"><span class="status-label">Current partial</span><span class="status-val" id="txt-asr-partial">—</span></div>
+      <div class="status-item"><span class="status-label">Last final</span><span class="status-val" id="txt-asr-final">—</span></div>
+      <div class="status-item"><span class="status-label">First partial latency</span><span class="status-val" id="txt-asr-first-partial">—</span></div>
+      <div class="status-item"><span class="status-label">Decode latency</span><span class="status-val" id="txt-asr-decode-latency">—</span></div>
+      <div class="status-item"><span class="status-label">RTF</span><span class="status-val" id="txt-asr-rtf">—</span></div>
+      <div class="status-item" style="display:none"><span class="status-label">ASR Status</span><span class="status-val" id="txt-asr-status">stopped</span></div>
+      <div class="status-item" style="display:none"><span class="status-label">Timing</span><span class="status-val" id="txt-asr-timing">waiting</span></div>
+    </div>
+
+    <div class="section-title">Phase G1 — Live Speech-to-Sign Pipeline</div>
+    <div class="card-box" id="speech-sign-panel">
+      <div class="btn-grid">
+        <button id="btn-live-speech-start" class="success">Start Live Speech</button>
+        <button id="btn-live-speech-stop">Stop Live Speech</button>
+      </div>
+      <div class="status-item"><span class="status-label">Pipeline Status</span><span class="status-val" id="txt-g1-status">idle</span></div>
+      <div class="status-item"><span class="status-label">Audio Status</span><span class="status-val" id="txt-g1-audio-status">idle</span></div>
+      <div class="status-item"><span class="status-label">ASR Status</span><span class="status-val" id="txt-g1-asr-status">stopped</span></div>
+      <div class="status-item"><span class="status-label">Current partial</span><span class="status-val" id="txt-g1-partial">—</span></div>
+      <div class="status-item"><span class="status-label">Last final</span><span class="status-val" id="txt-g1-final">—</span></div>
+      <div class="status-item"><span class="status-label">ISL gloss</span><span class="status-val" id="txt-g2-gloss">—</span></div>
+      <div class="status-item"><span class="status-label">Resolved sign IDs</span><span class="status-val" id="txt-g2-sign-ids">—</span></div>
+      <div class="status-item"><span class="status-label">Translation status</span><span class="status-val" id="txt-g2-status">—</span></div>
+      <div class="status-item"><span class="status-label">Translation trace</span><span class="status-val" id="txt-g2-trace">—</span></div>
+      <div class="status-item"><span class="status-label">Committed Signs</span><span class="status-val" id="txt-g1-committed" style="color:#58a6ff;">none</span></div>
+      <div class="status-item"><span class="status-label">Current Sign</span><span class="status-val" id="txt-g1-current-sign" style="color:#3fb950;">None</span></div>
+      <div class="status-item"><span class="status-label">Remaining Queue</span><span class="status-val" id="txt-g1-queue">empty</span></div>
+      <div class="status-item"><span class="status-label">Unknown Words</span><span class="status-val" id="txt-g1-unknown">none</span></div>
+      <div class="status-item"><span class="status-label">Unavailable Signs</span><span class="status-val" id="txt-g1-unavailable">none</span></div>
+      <div class="status-item"><span class="status-label">First partial latency</span><span class="status-val" id="txt-g1-first-partial-lat">—</span></div>
+      <div class="status-item"><span class="status-label">ASR latency</span><span class="status-val" id="txt-g1-asr-lat">—</span></div>
+      <div class="status-item"><span class="status-label">Speech→Sign commit</span><span class="status-val" id="txt-g1-commit-lat">—</span></div>
+      <div class="status-item"><span class="status-label">Speech→Aether playback</span><span class="status-val" id="txt-g1-playback-lat">—</span></div>
+    </div>
+
+    <div class="section-title">Phase D — Sign Authoring</div>
+    <div class="card-box" id="authoring-panel">
+      <div class="btn-grid"><button id="btn-author-enter" class="primary">Enter / New</button><button id="btn-author-load">Load Sign ID</button></div>
+      <input id="author-id" value="authoring_test" aria-label="Sign ID" style="width:100%;padding:7px;background:#0d1117;color:#c9d1d9;border:1px solid #30363d;border-radius:6px;font-size:11px;">
+      <div class="timeline-info" style="margin-top:7px"><span>Duration</span><span><input id="author-duration" type="number" value="1500" min="1" step="10" style="width:75px"> ms</span></div>
+      <input id="author-time" type="range" min="0" max="1500" step="10" value="0"><div class="timeline-info"><span id="author-now">0 ms</span><span id="author-selected">No keyframe</span></div>
+      <div class="btn-grid"><button id="btn-author-add" class="success">Add / Update Keyframe</button><button id="btn-author-delete">Delete Keyframe</button></div>
+      <select id="author-frames" size="4" style="width:100%;background:#0d1117;color:#c9d1d9;border:1px solid #30363d;border-radius:6px;margin-bottom:7px"></select>
+      <details><summary>Bone controls — fingers, wrist, arm</summary><div id="author-controls" style="margin-top:7px"></div></details>
+      <div class="btn-grid-3" style="margin-top:7px"><button data-author-preset="open">Open / Flat</button><button data-author-preset="fist">Fist</button><button data-author-preset="point">Point</button></div>
+      <div class="btn-grid"><button id="btn-author-save-pose">Save Pose</button><button id="btn-author-apply-pose">Apply Pose</button></div>
+      <input id="author-pose-name" value="OPEN_HAND_B" aria-label="Pose name" style="width:100%;padding:6px;background:#0d1117;color:#c9d1d9;border:1px solid #30363d;border-radius:6px;font-size:11px;">
+      <div class="btn-grid-4" style="margin-top:7px"><button id="btn-author-play" class="success">Play</button><button id="btn-author-pause">Pause</button><button id="btn-author-replay">Replay</button><button id="btn-author-reset">Reset</button></div>
+      <div class="btn-grid-4"><button data-author-speed="0.5">0.5×</button><button data-author-speed="1">1.0×</button><button data-author-speed="1.25">1.25×</button><button data-author-speed="1.5">1.5×</button></div>
+      <div class="btn-grid"><button id="btn-author-validate">Validate</button><button id="btn-author-export" class="primary">Save JSON</button></div>
+      <div id="author-status" class="verification-box">Enter authoring mode to begin from Aether’s captured neutral pose.</div>
+    </div>
+
+    <div class="section-title">R1 — Technical Articulation Tests</div>
+    <div class="card-box" id="r1-articulation-panel">
+      <div class="status-item"><span class="status-label">Purpose</span><span class="status-val">Non-linguistic rig tests</span></div>
+      <label for="r1-joint-test" class="status-label">Isolated joint (each selection changes one joint)</label>
+      <select id="r1-joint-test" style="width:100%;margin:4px 0 7px;padding:6px;background:#0d1117;color:#c9d1d9;border:1px solid #30363d;border-radius:6px"></select>
+      <div class="btn-grid"><button id="btn-r1-joint" class="primary">Apply One Joint</button><button id="btn-r1-neutral">Neutral Reset</button></div>
+      <button id="btn-r1-suite" style="width:100%;margin-bottom:7px">Run Automated Rig / Replay Suite</button>
+      <label for="r1-pose-test" class="status-label">Technical pose</label>
+      <select id="r1-pose-test" style="width:100%;margin:4px 0 7px;padding:6px;background:#0d1117;color:#c9d1d9;border:1px solid #30363d;border-radius:6px"></select>
+      <div class="btn-grid"><button id="btn-r1-pose">Apply Pose</button><button id="btn-r1-play" class="success">Replay Pose</button></div>
+      <input id="r1-pose-name" value="r1_open_palm" aria-label="Technical pose name" style="width:100%;padding:6px;background:#0d1117;color:#c9d1d9;border:1px solid #30363d;border-radius:6px;font-size:11px">
+      <div class="btn-grid"><button id="btn-r1-save">Save Technical Pose</button><button id="btn-r1-replay-saved">Replay Saved Pose</button></div>
+      <div class="btn-grid-4"><button data-r1-speed="0.5">0.5×</button><button data-r1-speed="1">1.0×</button><button data-r1-speed="1.25">1.25×</button><button data-r1-speed="1.5">1.5×</button></div>
+      <div id="r1-status" class="verification-box">Technical rig verification only. These poses are not ISL signs.</div>
+    </div>
+
+    <!-- 3. Camera Presets -->
+    <div class="section-title">Camera Focus</div>
+    <div class="btn-grid">
+      <button id="btn-cam-salute" class="primary">Focus Salute (Upper Body)</button>
+      <button id="btn-cam-rhand">Focus Right Hand</button>
+      <button id="btn-cam-lhand">Focus Left Hand</button>
+      <button id="btn-cam-full">Full Body</button>
+      <button id="btn-cam-face">Face / Head</button>
+      <button id="btn-cam-hello-closeup" class="primary">HELLO Close-up</button>
+      <button id="btn-cam-good-closeup" class="primary">GOOD Close-up</button>
+    </div>
+
+    <!-- 4. Verification & Metadata Information -->
+    <div class="verification-box">
+      <div><b>ISL Linguistic Form:</b> Right open flat hand (B-handshape) near temple, moving outward/forward in a polite greeting arc. <i>Not fingerspelled.</i></div>
+      <div style="margin-top: 4px;"><b>Source:</b> ISLRTC Dictionary &bull; <b>Technical Rig:</b> Zero-drift delta interpolation.</div>
+    </div>
+
+    <!-- 5. Collapsible Manual Debug Controls (From Phase A) -->
+    <div style="margin-top: 14px;">
+      <details>
+        <summary>Manual Rig &amp; Finger Controls (Phase A)</summary>
+        <div style="margin-top: 8px;">
+          <div class="tab-bar">
+            <button class="tab-btn active" id="tab-btn-right">Right Hand</button>
+            <button class="tab-btn" id="tab-btn-left">Left Hand</button>
+            <button class="tab-btn" id="tab-btn-both">Both</button>
+          </div>
+
+          <!-- Right Hand Sliders -->
+          <div id="tab-pane-right" class="tab-content active">
+            <div class="slider-row">
+              <div class="slider-header"><span>R Thumb</span><span class="deg-val" id="txt-r-thumb">0°</span></div>
+              <input type="range" id="slide-r-thumb" min="0" max="75" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>R Index</span><span class="deg-val" id="txt-r-index">0°</span></div>
+              <input type="range" id="slide-r-index" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>R Middle</span><span class="deg-val" id="txt-r-middle">0°</span></div>
+              <input type="range" id="slide-r-middle" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>R Ring</span><span class="deg-val" id="txt-r-ring">0°</span></div>
+              <input type="range" id="slide-r-ring" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>R Pinky</span><span class="deg-val" id="txt-r-pinky">0°</span></div>
+              <input type="range" id="slide-r-pinky" min="0" max="85" value="0">
+            </div>
+          </div>
+
+          <!-- Left Hand Sliders -->
+          <div id="tab-pane-left" class="tab-content">
+            <div class="slider-row">
+              <div class="slider-header"><span>L Thumb</span><span class="deg-val" id="txt-l-thumb">0°</span></div>
+              <input type="range" id="slide-l-thumb" min="0" max="75" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>L Index</span><span class="deg-val" id="txt-l-index">0°</span></div>
+              <input type="range" id="slide-l-index" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>L Middle</span><span class="deg-val" id="txt-l-middle">0°</span></div>
+              <input type="range" id="slide-l-middle" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>L Ring</span><span class="deg-val" id="txt-l-ring">0°</span></div>
+              <input type="range" id="slide-l-ring" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>L Pinky</span><span class="deg-val" id="txt-l-pinky">0°</span></div>
+              <input type="range" id="slide-l-pinky" min="0" max="85" value="0">
+            </div>
+          </div>
+
+          <!-- Both Hands Sliders -->
+          <div id="tab-pane-both" class="tab-content">
+            <div class="slider-row">
+              <div class="slider-header"><span>Both Thumbs</span><span class="deg-val" id="txt-b-thumb">0°</span></div>
+              <input type="range" id="slide-b-thumb" min="0" max="75" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>Both Indexes</span><span class="deg-val" id="txt-b-index">0°</span></div>
+              <input type="range" id="slide-b-index" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>Both Middles</span><span class="deg-val" id="txt-b-middle">0°</span></div>
+              <input type="range" id="slide-b-middle" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>Both Rings</span><span class="deg-val" id="txt-b-ring">0°</span></div>
+              <input type="range" id="slide-b-ring" min="0" max="85" value="0">
+            </div>
+            <div class="slider-row">
+              <div class="slider-header"><span>Both Pinkies</span><span class="deg-val" id="txt-b-pinky">0°</span></div>
+              <input type="range" id="slide-b-pinky" min="0" max="85" value="0">
+            </div>
+          </div>
+
+          <div class="btn-grid" style="margin-top: 8px;">
+            <button id="btn-pose-fist">Fist (Both)</button>
+            <button id="btn-pose-point">Point (Both)</button>
+            <button id="btn-pose-open">Open Palm</button>
+            <button id="btn-toggle-skel">Toggle Skeleton</button>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div id="instructions">
+    Left Drag: Orbit &bull; Right Drag: Pan &bull; Scroll: Zoom
+  </div>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+    import { SignAnimationPlayer } from './SignAnimationPlayer.js';
+    import { ArticulationTestController } from './ArticulationTestController.js';
+    import { SignLibrary, SignLibraryError } from './SignLibrary.js';
+    import { SignScheduler } from './SignScheduler.js';
+    import { SentenceProcessor } from './SentenceProcessor.js';
+    import { EnglishToISLTranslator } from './EnglishToISLTranslator.js';
+    import { SignAuthoringController } from './SignAuthoringController.js';
+    import { MicrophoneSource, FileSource, StreamingAudioPipeline, decodeWav } from '../audio_pipeline/AudioPipeline.js';
+    import { SpeechSignOrchestrator } from './SpeechSignOrchestrator.js';
+
+    // 1. Scene & Renderer Setup
+    const container = document.getElementById('viewport-container');
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x0d1117);
+
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(-0.35, 1.42, 1.15); // Focused on upper torso and right salute zone
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.15;
+    renderer.shadowMap.enabled = true;
+    container.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    window.__aetherOrbitControls = controls;
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.target.set(-0.15, 1.30, 0.05);
+
+    // 2. Lighting Setup
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.3);
+    scene.add(ambientLight);
+
+    const keyLight = new THREE.DirectionalLight(0xfff5ea, 1.8);
+    keyLight.position.set(2, 4, 3);
+    keyLight.castShadow = true;
+    scene.add(keyLight);
+
+    const fillLight = new THREE.DirectionalLight(0xd9ecff, 1.1);
+    fillLight.position.set(-3, 2, 2);
+    scene.add(fillLight);
+
+    const rimLight = new THREE.DirectionalLight(0xffeedd, 0.9);
+    rimLight.position.set(0, 3, -3);
+    scene.add(rimLight);
+
+    const grid = new THREE.GridHelper(10, 20, 0x30363d, 0x21262d);
+    grid.position.y = 0;
+    scene.add(grid);
+
+    // 3. Texture Loader
+    const texLoader = new THREE.TextureLoader();
+    const basePath = '/Avatar_Boy_Gun_AetherShadow/';
+
+    function loadTex(filename) {
+      const tex = texLoader.load(basePath + filename);
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.flipY = true;
+      return tex;
+    }
+
+    const textures = {
+      body: loadTex('Avatar_Boy_Gun_AetherShadow_Tex_Body_Diffuse.png'),
+      face: loadTex('Avatar_Boy_Gun_AetherShadow_Tex_Face_Diffuse.png'),
+      hair: loadTex('Avatar_Boy_Gun_AetherShadow_Tex_Hair_Diffuse.png'),
+      pupil: loadTex('Avatar_Boy_Gun_AetherShadow_Tex_Pupil_Diffuse.png')
+    };
+
+    let avatarModel = null;
+    let skeletonHelper = null;
+    const bonesMap = new Map();
+
+    const HandRig = {
+      left: { hand: null, thumb: [], index: [], middle: [], ring: [], pinky: [] },
+      right: { hand: null, thumb: [], index: [], middle: [], ring: [], pinky: [] }
+    };
+
+    function resolveFingerChain(handBone, prefix) {
+      if (!handBone) return [];
+      const chain = [];
+      let curr = handBone.children.find(c => c.isBone && c.name === prefix);
+      while (curr && !curr.name.includes('Nub')) {
+        chain.push(curr);
+        curr = curr.children.find(c => c.isBone && c.name.startsWith(prefix) && !c.name.includes('Nub'));
+      }
+      return chain;
+    }
+
+    let signPlayer = null;
+    let signLibrary = null;
+    let signScheduler = null;
+    let speechOrchestrator = null;
+    let authoring = null;
+    let articulationTest = null;
+    let audioPipeline = null;
+    let audioSource = null;
+    let asrEnabled = false;
+    const sentenceProcessor = new SentenceProcessor(); // G1 fallback remains available.
+    const islTranslator = new EnglishToISLTranslator();
+    const playbackTimings = [];
+    const timingMetrics = { receivedAt: null, sequenceMs: null, queueMs: null };
+
+    function renderG1Diagnostics(diag) {
+      if (!diag) return;
+      if (document.getElementById('txt-g1-status')) document.getElementById('txt-g1-status').textContent = diag.state;
+      if (document.getElementById('txt-g1-current-sign')) document.getElementById('txt-g1-current-sign').textContent = diag.currentSign ? diag.currentSign.toUpperCase() : 'None';
+      if (document.getElementById('txt-g1-queue')) document.getElementById('txt-g1-queue').textContent = diag.queuedSigns && diag.queuedSigns.length ? diag.queuedSigns.map(id => id.toUpperCase()).join(' → ') : 'empty';
+      if (document.getElementById('txt-g1-committed')) document.getElementById('txt-g1-committed').textContent = diag.committedSignIds && diag.committedSignIds.length ? diag.committedSignIds.map(id => id.toUpperCase()).join(' → ') : 'none';
+      if (document.getElementById('txt-g1-unknown')) document.getElementById('txt-g1-unknown').textContent = diag.unknownWords && diag.unknownWords.length ? diag.unknownWords.join(', ') : 'none';
+      if (document.getElementById('txt-g1-unavailable')) document.getElementById('txt-g1-unavailable').textContent = diag.unavailableSigns && diag.unavailableSigns.length ? diag.unavailableSigns.map(id => id.toUpperCase()).join(', ') : 'none';
+      const translation = diag.translation;
+      if (document.getElementById('txt-g2-gloss')) document.getElementById('txt-g2-gloss').textContent = translation?.gloss_sequence?.join(' ') || '—';
+      if (document.getElementById('txt-g2-sign-ids')) document.getElementById('txt-g2-sign-ids').textContent = translation?.sign_ids?.join(' → ') || 'none';
+      if (document.getElementById('txt-g2-status')) document.getElementById('txt-g2-status').textContent = translation?.status || '—';
+      if (document.getElementById('txt-g2-trace')) document.getElementById('txt-g2-trace').textContent = translation?.transformation_trace?.map(x => x.stage).join(' → ') || '—';
+
+      const t = diag.timings || {};
+      if (document.getElementById('txt-g1-first-partial-lat')) document.getElementById('txt-g1-first-partial-lat').textContent = t.firstPartialLatencyMs !== null && t.firstPartialLatencyMs !== undefined ? `${Math.round(t.firstPartialLatencyMs)} ms` : '—';
+      if (document.getElementById('txt-g1-commit-lat')) document.getElementById('txt-g1-commit-lat').textContent = t.firstCommitLatencyMs !== null && t.firstCommitLatencyMs !== undefined ? `${Math.round(t.firstCommitLatencyMs)} ms` : '—';
+      if (document.getElementById('txt-g1-playback-lat')) document.getElementById('txt-g1-playback-lat').textContent = t.speechToAetherLatencyMs !== null && t.speechToAetherLatencyMs !== undefined ? `${Math.round(t.speechToAetherLatencyMs)} ms` : '—';
+    }
+
+    function renderQueueState(state) {
+      document.getElementById('txt-queue-current').textContent = state.current ? state.current.toUpperCase() : 'None';
+      document.getElementById('txt-queue-pending').textContent = state.queued.length ? state.queued.map(id => id.toUpperCase()).join(' → ') : 'empty';
+      if (window.parent !== window && new URLSearchParams(window.location.search).has('embed')) {
+        window.parent.postMessage({
+          type: 'ISL_AETHER_STATE',
+          state: { current: state.current, queued: state.queued }
+        }, window.location.origin);
+      }
+    }
+
+    function setSequenceStatus(message, isError = false) {
+      const status = document.getElementById('txt-sequence-status');
+      status.textContent = message;
+      status.style.color = isError ? '#f85149' : '#3fb950';
+    }
+
+    function setAudioStatus(message, isError = false) {
+      const status = document.getElementById('txt-audio-status'); status.textContent = message; status.style.color = isError ? '#f85149' : '#3fb950';
+    }
+    function renderASR(status) {
+      if (!status) return;
+      if (document.getElementById('txt-asr-status')) document.getElementById('txt-asr-status').textContent = status.state || 'stopped';
+      if (document.getElementById('txt-asr-device')) document.getElementById('txt-asr-device').textContent = (status.device ? status.device.toUpperCase() : 'CPU') + (status.compute_type ? ` (${status.compute_type})` : '');
+      if (document.getElementById('txt-asr-model')) document.getElementById('txt-asr-model').textContent = status.model || 'tiny.en';
+      if (document.getElementById('txt-asr-worker')) document.getElementById('txt-asr-worker').textContent = status.worker_state || 'IDLE';
+      if (document.getElementById('txt-asr-audio')) document.getElementById('txt-asr-audio').textContent = `${(status.audio_duration_ms / 1000).toFixed(2)} sec`;
+      if (document.getElementById('txt-asr-queue')) document.getElementById('txt-asr-queue').textContent = String(status.asr_queue ?? 0);
+      if (document.getElementById('txt-asr-backlog')) document.getElementById('txt-asr-backlog').textContent = String(status.backlog ?? 0);
+      if (document.getElementById('txt-asr-partial')) document.getElementById('txt-asr-partial').textContent = status.partial || '—';
+      if (document.getElementById('txt-asr-final')) document.getElementById('txt-asr-final').textContent = status.final || '—';
+      const firstMs = status.first_partial_latency_ms === null || status.first_partial_latency_ms === undefined ? '—' : `${Math.round(status.first_partial_latency_ms)} ms`;
+      const decodeMs = status.last_decode_ms === null || status.last_decode_ms === undefined ? '—' : `${Math.round(status.last_decode_ms)} ms`;
+      const finalMs = status.final_latency_ms === null || status.final_latency_ms === undefined ? '—' : `${Math.round(status.final_latency_ms)} ms`;
+      if (document.getElementById('txt-asr-first-partial')) document.getElementById('txt-asr-first-partial').textContent = firstMs;
+      if (document.getElementById('txt-asr-decode-latency')) document.getElementById('txt-asr-decode-latency').textContent = decodeMs;
+      if (document.getElementById('txt-asr-rtf')) document.getElementById('txt-asr-rtf').textContent = status.rtf === null || status.rtf === undefined ? '—' : status.rtf.toFixed(3);
+      if (document.getElementById('txt-asr-timing')) document.getElementById('txt-asr-timing').textContent = `first ${firstMs}; final ${finalMs}; RTF ${status.rtf === null || status.rtf === undefined ? '—' : status.rtf.toFixed(3)}`;
+    }
+    async function asrRequest(path, body = {}) {
+      const response = await fetch(path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      if (!response.ok) throw new Error(await response.text());
+      return response.json();
+    }
+    function float32Base64(samples) {
+      const bytes = new Uint8Array(samples.buffer, samples.byteOffset, samples.byteLength); let binary = '';
+      for (let index = 0; index < bytes.length; index += 0x8000) binary += String.fromCharCode(...bytes.subarray(index, index + 0x8000));
+      return btoa(binary);
+    }
+    async function sendASRChunk(result) {
+      if (!asrEnabled || !result.accepted) return;
+      try {
+        const durationMs = result.chunk.samples.length * 1000 / result.chunk.sampleRate;
+        const response = await asrRequest('/asr/chunk', { samples_base64: float32Base64(result.chunk.samples), audio_start_ms: result.chunk.capturedAt, audio_end_ms: result.chunk.capturedAt + durationMs });
+        renderASR(response.status);
+
+        if (response.status) {
+          if (document.getElementById('txt-g1-asr-status')) document.getElementById('txt-g1-asr-status').textContent = `${response.status.device ? response.status.device.toUpperCase() : 'CPU'} ${response.status.worker_state || ''}`;
+          if (document.getElementById('txt-g1-partial')) document.getElementById('txt-g1-partial').textContent = response.status.partial || '—';
+          if (document.getElementById('txt-g1-final')) document.getElementById('txt-g1-final').textContent = response.status.final || '—';
+          if (response.status.last_decode_ms !== null && response.status.last_decode_ms !== undefined) {
+            if (document.getElementById('txt-g1-asr-lat')) document.getElementById('txt-g1-asr-lat').textContent = `${Math.round(response.status.last_decode_ms)} ms`;
+          }
+        }
+
+        if (speechOrchestrator && response.events) {
+          for (const ev of response.events) {
+            speechOrchestrator.handleTranscriptEvent(ev);
+          }
+        }
+      } catch (error) { asrEnabled = false; document.getElementById('txt-asr-status').textContent = `error: ${error.message}`; }
+    }
+    function createAudioPipeline() {
+      audioPipeline?.reset();
+      audioPipeline = new StreamingAudioPipeline({ onResult: result => {
+        const d = result.diagnostics, t = result.timings;
+        document.getElementById('txt-audio-chunk').textContent = `${result.accepted ? 'speech' : 'non-speech'} | RMS ${d.rms.toFixed(4)} | peak ${d.peak.toFixed(3)} | VAD ${t.vadMs.toFixed(2)}ms`;
+        document.getElementById('txt-audio-asr-queue').textContent = String(audioPipeline.asrInput.queue.length);
+        sendASRChunk(result);
+      } });
+      return audioPipeline;
+    }
+    async function startAudioSource(source, label) {
+      try {
+        const pipeline = createAudioPipeline(); audioSource = source; pipeline.attach(source); await pipeline.start();
+        setAudioStatus(`${label} running — 16 kHz canonical chunks.`);
+      } catch (error) { setAudioStatus(error.message, true); console.error('Audio source error:', error); }
+    }
+
+    function renderSentence(result, playableIds, unavailable = []) {
+      document.getElementById('txt-sentence-input').textContent = result.input || '-';
+      document.getElementById('txt-sentence-signs').textContent = playableIds.length ? playableIds.map(id => id.toUpperCase()).join(' -> ') : 'none';
+      const notices = [...result.unknownWords, ...unavailable.map(id => `${id.toUpperCase()} unavailable`)];
+      document.getElementById('txt-sentence-unknown').textContent = notices.length ? notices.join(', ') : 'none';
+    }
+
+    function renderTiming() {
+      const events = playbackTimings.slice(-4).map(event => `${event.id.toUpperCase()} ${event.type === 'playback_start' ? 'start' : 'end'} ${event.atMs.toFixed(1)}ms`).join(' | ');
+      const preparation = timingMetrics.sequenceMs === null ? '' : `received ${timingMetrics.receivedAt.toFixed(1)}ms, sequence ${timingMetrics.sequenceMs.toFixed(2)}ms, queue ${timingMetrics.queueMs.toFixed(2)}ms`;
+      document.getElementById('txt-sentence-timing').textContent = [preparation, events || (preparation ? 'playback pending' : 'waiting')].filter(Boolean).join('; ');
+    }
+
+    function enqueueSentence(text) {
+      if (!signLibrary || !signScheduler) return;
+      const receivedAt = performance.now();
+      const result = sentenceProcessor.process(text);
+      const sequenceAt = performance.now();
+      const playableIds = [], unavailable = [];
+      for (const id of result.signIds) {
+        try { signLibrary.getPlayable(id, bonesMap); playableIds.push(id); }
+        catch { unavailable.push(id); }
+      }
+      renderSentence(result, playableIds, unavailable);
+      signScheduler.cancel();
+      const queueAt = performance.now();
+      signScheduler.enqueueMany(playableIds);
+      const queuedAt = performance.now();
+      timingMetrics.receivedAt = receivedAt;
+      timingMetrics.sequenceMs = sequenceAt - receivedAt;
+      timingMetrics.queueMs = queuedAt - queueAt;
+      renderTiming();
+      setSequenceStatus(playableIds.length ? `Queued ${playableIds.length} playable sign(s) from controlled text.` : 'No playable signs were found for this controlled input.', !playableIds.length);
+    }
+
+    // 4. Load FBX Model & Initialize Sign Player
+    const fbxLoader = new FBXLoader();
+    fbxLoader.load(
+      basePath + 'Avatar_Boy_Gun_AetherShadow.fbx',
+      async (fbx) => {
+        avatarModel = fbx;
+
+        const bbox = new THREE.Box3().setFromObject(fbx);
+        const size = new THREE.Vector3();
+        bbox.getSize(size);
+        if (size.y > 10) {
+          fbx.scale.setScalar(0.01);
+        }
+
+        fbx.traverse((child) => {
+          if (child.isBone) {
+            bonesMap.set(child.name, child);
+            child.userData.initialRotation = child.rotation.clone();
+            child.userData.initialPosition = child.position.clone();
+          }
+
+          if (child.isMesh) {
+            child.castShadow = true;
+            child.receiveShadow = true;
+
+            const name = child.name.toLowerCase();
+            let targetTex = null;
+
+            if (name.includes('body') || name.includes('dress') || name.includes('effect')) {
+              targetTex = textures.body;
+            } else if (name.includes('face') || name.includes('brow')) {
+              targetTex = textures.face;
+            } else if (name.includes('hair') || name.includes('bang')) {
+              targetTex = textures.hair;
+            } else if (name.includes('pupil') || name.includes('eye')) {
+              targetTex = textures.pupil;
+            } else {
+              targetTex = textures.body;
+            }
+
+            if (targetTex) {
+              child.material = new THREE.MeshStandardMaterial({
+                map: targetTex,
+                roughness: 0.6,
+                metalness: 0.1,
+                side: THREE.DoubleSide
+              });
+            }
+          }
+        });
+
+        // Resolve Hand Rigs
+        HandRig.left.hand = bonesMap.get('Bip001_L_Hand') || null;
+        HandRig.left.thumb = resolveFingerChain(HandRig.left.hand, 'Bip001_L_Finger0');
+        HandRig.left.index = resolveFingerChain(HandRig.left.hand, 'Bip001_L_Finger1');
+        HandRig.left.middle = resolveFingerChain(HandRig.left.hand, 'Bip001_L_Finger2');
+        HandRig.left.ring = resolveFingerChain(HandRig.left.hand, 'Bip001_L_Finger3');
+        HandRig.left.pinky = resolveFingerChain(HandRig.left.hand, 'Bip001_L_Finger4');
+
+        HandRig.right.hand = bonesMap.get('Bip001_R_Hand') || null;
+        HandRig.right.thumb = resolveFingerChain(HandRig.right.hand, 'Bip001_R_Finger0');
+        HandRig.right.index = resolveFingerChain(HandRig.right.hand, 'Bip001_R_Finger1');
+        HandRig.right.middle = resolveFingerChain(HandRig.right.hand, 'Bip001_R_Finger2');
+        HandRig.right.ring = resolveFingerChain(HandRig.right.hand, 'Bip001_R_Finger3');
+        HandRig.right.pinky = resolveFingerChain(HandRig.right.hand, 'Bip001_R_Finger4');
+
+        // Skeleton Helper
+        skeletonHelper = new THREE.SkeletonHelper(fbx);
+        skeletonHelper.visible = false;
+        skeletonHelper.material.linewidth = 2;
+        scene.add(skeletonHelper);
+
+        scene.add(fbx);
+
+        // Initialize reusable player, preloaded sign library, and motion queue.
+        signPlayer = new SignAnimationPlayer(fbx, bonesMap, HandRig);
+        try {
+          signLibrary = new SignLibrary();
+          const preload = await signLibrary.preload(['hello', 'good', 'morning', 'water']);
+          const failed = preload.filter(item => item.status === 'rejected');
+          if (failed.length) throw failed[0].reason;
+          const hello = signLibrary.getPlayable('hello', bonesMap);
+          signPlayer.loadSign(hello);
+          document.getElementById('sign-scrubber').max = hello.duration_ms;
+          document.getElementById('txt-total-duration').textContent = hello.duration_ms + ' ms';
+          signScheduler = new SignScheduler(signPlayer, signLibrary, bonesMap, renderQueueState, event => { playbackTimings.push(event); renderTiming(); });
+          setSequenceStatus('Library preloaded: HELLO, GOOD (Sign 1), and MORNING (Sign 1) are playable; WATER remains unavailable.');
+          console.log('[ISL Library] Preloaded:', preload.map(item => item.id).join(', '));
+        } catch (err) {
+          setSequenceStatus(`Library error: ${err.message}`, true);
+          console.error('Failed to initialize SignLibrary:', err);
+        }
+
+        // Setup Player Callbacks
+        signPlayer.onFrameCallback = (state) => {
+          document.getElementById('sign-scrubber').value = state.currentTimeMs;
+          document.getElementById('txt-current-time').textContent = Math.round(state.currentTimeMs) + ' ms';
+          document.getElementById('txt-progress-pct').textContent = Math.round(state.progress * 100) + '%';
+          document.getElementById('txt-active-kf').textContent = state.activeKeyframe;
+        };
+
+        // Expose debug API
+        window.AetherRig = {
+          fbx,
+          bonesMap,
+          HandRig,
+          signPlayer,
+          signLibrary,
+          signScheduler,
+          THREE,
+          scene,
+          camera,
+          controls,
+          renderer
+        };
+
+        authoring = new SignAuthoringController({ bonesMap, handRig: HandRig, player: signPlayer, library: signLibrary, onState: renderAuthoring });
+        window.AetherRig.authoring = authoring;
+        articulationTest = new ArticulationTestController({ bonesMap, handRig: HandRig, player: signPlayer, scheduler: signScheduler, model: fbx });
+        window.AetherRig.articulationTest = articulationTest;
+        wireAuthoring();
+        wireArticulationTests();
+
+        // Hide loader
+        const loaderOverlay = document.getElementById('loading-overlay');
+        loaderOverlay.style.opacity = '0';
+        setTimeout(() => loaderOverlay.style.display = 'none', 400);
+
+        console.log('[Aether Viewer] Ready for ISL Phase B playback!');
+      },
+      undefined,
+      (error) => {
+        console.error('FBX Load Error:', error);
+      }
+    );
+
+    let authoringWired = false;
+    function authorStatus(message, error = false) { const el=document.getElementById('author-status'); el.textContent=message; el.style.color=error?'#f85149':'#8b949e'; }
+    function renderAuthoring(a) {
+      const duration=document.getElementById('author-duration'); duration.value=a.duration;
+      const slider=document.getElementById('author-time'); slider.max=a.duration;
+      const options=document.getElementById('author-frames'); options.innerHTML=a.frames.map((f,i)=>`<option value="${i}" ${i===a.selected?'selected':''}>${f.time_ms} ms — ${f.label||'Pose'}</option>`).join('');
+      document.getElementById('author-selected').textContent=a.selected<0?'No keyframe':`Keyframe ${a.selected+1}`;
+      refreshAuthorControls(a);
+    }
+    function refreshAuthorControls(a) {
+      const host=document.getElementById('author-controls');
+      const names=a.controlledNames();
+      if(!host.dataset.built) {
+        host.innerHTML=names.map(name=>['x','y','z'].map(axis=>`<div class="slider-row"><div class="slider-header"><span>${name.replace('Bip001_','')} ${axis.toUpperCase()}</span><span class="deg-val" id="av-${name}-${axis}">0°</span></div><input data-author-bone="${name}" data-author-axis="${axis}" type="range" min="-180" max="180" value="0"></div>`).join('')).join(''); host.dataset.built='1';
+        host.querySelectorAll('[data-author-bone]').forEach(input=>input.addEventListener('input',e=>{const n=e.target.dataset.authorBone,axis=e.target.dataset.authorAxis,b=bonesMap.get(n),r=authoring.rest.get(n),v=Number(e.target.value);b.rotation[axis]=r.r[axis]+v*Math.PI/180;document.getElementById(`av-${n}-${axis}`).textContent=v+'°';}));
+      }
+      host.querySelectorAll('[data-author-bone]').forEach(input=>{const n=input.dataset.authorBone,axis=input.dataset.authorAxis,b=bonesMap.get(n),r=authoring.rest.get(n),v=Math.round((b.rotation[axis]-r.r[axis])*180/Math.PI);input.value=String(v);document.getElementById(`av-${n}-${axis}`).textContent=`${v}°`;});
+    }
+    let r1PlaybackSpeed = 1;
+    function wireArticulationTests() {
+      const jointSelect=document.getElementById('r1-joint-test');
+      jointSelect.innerHTML=articulationTest.singleJointTests().map(test=>`<option value="${test.id}">${test.id} — ${test.joint} ${test.axis.toUpperCase()} ${test.degrees > 0 ? '+' : ''}${test.degrees}°</option>`).join('');
+      const poses=articulationTest.poseDefinitions();
+      const poseSelect=document.getElementById('r1-pose-test');
+      poseSelect.innerHTML=Object.entries(poses).map(([id,pose])=>`<option value="${id}">${pose.label}</option>`).join('');
+      const status=(message,error=false)=>{const el=document.getElementById('r1-status');el.textContent=message;el.style.color=error?'#f85149':'#8b949e';};
+      const run=(action)=>{try{return action();}catch(error){status(error.message,true);return null;}};
+      document.getElementById('btn-r1-joint').onclick=()=>run(()=>{const result=articulationTest.applySingleJoint(jointSelect.value);status(`${result.id}: observed ${result.observed_rotation_degrees.toFixed(1)}° local ${result.axis.toUpperCase()} rotation; descendant displacement ${result.descendant_displacement===null?'not measurable':result.descendant_displacement.toFixed(5)} m. Visual check required.`);return result;});
+      document.getElementById('btn-r1-neutral').onclick=()=>run(()=>{articulationTest.reset();status('Rest/bind pose restored.');});
+      document.getElementById('btn-r1-suite').onclick=()=>run(()=>{const result=articulationTest.runAutomatedSuite();window.AetherRig.articulationTestResults=result;const jointPass=result.isolated_joints.filter(item=>item.status==='PASS').length,posePass=result.poses.filter(item=>item.status==='PASS').length,speedPass=result.replay_speeds.filter(item=>item.status==='PASS').length;const passed=jointPass===result.isolated_joints.length&&posePass===result.poses.length&&speedPass===result.replay_speeds.length;status(`${passed?'PASS':'FAIL'} — ${jointPass}/${result.isolated_joints.length} isolated joints, ${posePass}/${result.poses.length} poses, ${speedPass}/${result.replay_speeds.length} speeds; HAC ${result.hac.numerator}/${result.hac.denominator}. Detailed results: window.AetherRig.articulationTestResults.` ,!passed);return result;});
+      document.getElementById('btn-r1-pose').onclick=()=>run(()=>{const result=articulationTest.applyPose(poseSelect.value);status(`${result.label}: ${result.rotation_count} joints changed from captured rest. Technical pose only.`);return result;});
+      document.getElementById('btn-r1-play').onclick=()=>run(()=>{const pose=poses[poseSelect.value];const result=articulationTest.playPose(pose.rotations,r1PlaybackSpeed,pose.label);status(`${result.label} replay started at ${result.speed}×. It returns to neutral.`);return result;});
+      document.getElementById('btn-r1-save').onclick=()=>run(()=>{const name=articulationTest.savePose(document.getElementById('r1-pose-name').value);status(`Current rig pose saved locally as "${name}" (technical pose schema; not a sign asset).`);return name;});
+      document.getElementById('btn-r1-replay-saved').onclick=()=>run(()=>{const result=articulationTest.replaySavedPose(document.getElementById('r1-pose-name').value,r1PlaybackSpeed);status(`Saved technical pose replay started at ${result.speed}×.`);return result;});
+      document.querySelectorAll('[data-r1-speed]').forEach(button=>button.onclick=()=>{r1PlaybackSpeed=Number(button.dataset.r1Speed);signPlayer.playbackSpeed=r1PlaybackSpeed;status(`Technical replay speed: ${r1PlaybackSpeed}×.`);});
+    }
+    function wireAuthoring() { if(authoringWired)return; authoringWired=true;
+      const id=()=>document.getElementById('author-id').value, time=()=>Number(document.getElementById('author-time').value);
+      document.getElementById('btn-author-enter').onclick=()=>{authoring.begin(id()); authorStatus('Authoring session started from captured neutral pose.');};
+      document.getElementById('btn-author-load').onclick=async()=>{try{await authoring.load(id()); document.getElementById('author-id').value=authoring.signId; authorStatus(`${authoring.signId.toUpperCase()} loaded without changing its source motion.`);}catch(e){authorStatus(e.message,true);}};
+      document.getElementById('author-duration').onchange=e=>{authoring.duration=Number(e.target.value);renderAuthoring(authoring);};
+      document.getElementById('author-time').oninput=e=>{document.getElementById('author-now').textContent=e.target.value+' ms'; if(authoring.selected>=0)authoring.moveSelected(e.target.value);};
+      document.getElementById('author-frames').onchange=e=>{authoring.select(Number(e.target.value)); const f=authoring.frames[authoring.selected]; document.getElementById('author-time').value=f.time_ms;document.getElementById('author-now').textContent=f.time_ms+' ms';};
+      document.getElementById('btn-author-add').onclick=()=>{authoring.addFrame(time(), 'Pose');authorStatus('Keyframe captured; only changed bones were recorded.');};
+      document.getElementById('btn-author-delete').onclick=()=>{authoring.deleteSelected();authorStatus('Selected keyframe deleted.');};
+      document.querySelectorAll('[data-author-preset]').forEach(b=>b.onclick=()=>{authoring.preset(b.dataset.authorPreset);authorStatus(`${b.textContent} is a technical bone-pose helper, not an ISL linguistic claim.`);});
+      document.getElementById('btn-author-save-pose').onclick=()=>{authoring.saveSnapshot(document.getElementById('author-pose-name').value);authorStatus('Pose snapshot saved in this browser session.');};
+      document.getElementById('btn-author-apply-pose').onclick=()=>{authoring.applySnapshot(document.getElementById('author-pose-name').value);authorStatus('Pose snapshot applied.');};
+      document.getElementById('btn-author-play').onclick=()=>authoring.preview(); document.getElementById('btn-author-pause').onclick=()=>signPlayer.pause(); document.getElementById('btn-author-replay').onclick=()=>authoring.preview(); document.getElementById('btn-author-reset').onclick=()=>authoring.reset();
+      document.querySelectorAll('[data-author-speed]').forEach(b=>b.onclick=()=>signPlayer.playbackSpeed=Number(b.dataset.authorSpeed));
+      document.getElementById('btn-author-validate').onclick=()=>{const v=authoring.validate();authorStatus(v.errors.length?`Errors: ${v.errors.join(' ')}`:`Valid. ${v.warnings.length?'Warnings: '+v.warnings.join(' '):'No warnings.'}`,v.errors.length>0);};
+      document.getElementById('btn-author-export').onclick=async()=>{const v=authoring.validate();if(v.errors.length){authorStatus('Not saved: '+v.errors.join(' '),true);return;}const data=authoring.definition();try{const exists=await fetch(`/signs/${data.sign_id}.json`,{method:'HEAD'});if(exists.ok&&!confirm(`Overwrite existing ${data.sign_id}.json?`))return;const r=await fetch('/save_sign',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});if(!r.ok)throw new Error(await r.text());authorStatus(`Saved signs/${data.sign_id}.json. ${v.warnings.join(' ')}`);}catch(e){authorStatus('Save failed: '+e.message,true);}};
+    }
+
+    // 5. Scrubber & Transport Event Listeners
+    const scrubber = document.getElementById('sign-scrubber');
+    scrubber.addEventListener('input', (e) => {
+      if (signPlayer) {
+        signPlayer.pause();
+        signPlayer.seek(parseFloat(e.target.value));
+      }
+    });
+
+    document.getElementById('btn-sign-play').addEventListener('click', () => {
+      if (signScheduler && (signScheduler.currentId || signScheduler.queue.length)) signScheduler.resume();
+      else if (signPlayer) signPlayer.play();
+    });
+
+    document.getElementById('btn-sign-pause').addEventListener('click', () => {
+      if (signScheduler && signScheduler.currentId) signScheduler.pause();
+      else if (signPlayer) signPlayer.pause();
+    });
+
+    document.getElementById('btn-sign-replay').addEventListener('click', () => {
+      if (signPlayer) signPlayer.replay();
+    });
+
+    document.getElementById('btn-sign-stop').addEventListener('click', () => {
+      if (signScheduler) signScheduler.cancel();
+      else if (signPlayer) signPlayer.stop();
+    });
+
+    document.getElementById('btn-sentence-play').addEventListener('click', () => enqueueSentence(document.getElementById('sentence-input').value));
+    document.getElementById('btn-stream-sim').addEventListener('click', () => {
+      if (!signScheduler) return;
+      signScheduler.cancel();
+      playbackTimings.length = 0;
+      signScheduler.enqueue('hello');
+      setTimeout(() => signScheduler.enqueue('good'), 300);
+      setTimeout(() => signScheduler.enqueue('morning'), 600);
+      setSequenceStatus('Streaming simulation: HELLO is active; GOOD and MORNING will arrive incrementally.');
+    });
+
+    document.getElementById('btn-sequence-clear').addEventListener('click', () => {
+      if (signScheduler) signScheduler.cancel();
+      setSequenceStatus('Queue cleared.');
+    });
+
+    document.getElementById('btn-audio-mic').addEventListener('click', () => startAudioSource(new MicrophoneSource(), 'Microphone'));
+    document.getElementById('btn-audio-file').addEventListener('click', async () => {
+      const file = document.getElementById('audio-file-input').files[0];
+      if (!file) { setAudioStatus('Choose a PCM WAV file first.', true); return; }
+      try { const decoded = decodeWav(await file.arrayBuffer()); await startAudioSource(new FileSource(decoded), `WAV ${file.name}`); }
+      catch (error) { setAudioStatus(error.message, true); }
+    });
+    document.getElementById('btn-audio-pause').addEventListener('click', () => { audioPipeline?.pause(); setAudioStatus('Audio pipeline paused.'); });
+    document.getElementById('btn-audio-resume').addEventListener('click', async () => { if (!audioPipeline) return; await audioPipeline.resume(); setAudioStatus('Audio pipeline resumed.'); });
+    document.getElementById('btn-audio-stop').addEventListener('click', () => { audioPipeline?.reset(); audioSource = null; document.getElementById('txt-audio-chunk').textContent = 'waiting'; document.getElementById('txt-audio-asr-queue').textContent = '0'; setAudioStatus('Audio pipeline reset.'); });
+    document.getElementById('btn-asr-start').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/start')); asrEnabled = true; } catch (error) { document.getElementById('txt-asr-status').textContent = `error: ${error.message}`; } });
+    document.getElementById('btn-asr-flush').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/flush')); } catch (error) { document.getElementById('txt-asr-status').textContent = `error: ${error.message}`; } });
+
+    document.getElementById('btn-live-speech-start').addEventListener('click', async () => {
+      try {
+        if (!signLibrary || !signScheduler) {
+          document.getElementById('txt-g1-status').textContent = 'Avatar/Signs still loading...';
+          return;
+        }
+
+        if (!speechOrchestrator) {
+          speechOrchestrator = new SpeechSignOrchestrator({
+            sentenceProcessor,
+            translator: islTranslator,
+            signScheduler,
+            signLibrary,
+            onDiagnostics: renderG1Diagnostics,
+          });
+        }
+        speechOrchestrator.reset();
+        speechOrchestrator.start();
+
+        const asrStatus = await asrRequest('/asr/start');
+        renderASR(asrStatus);
+        asrEnabled = true;
+
+        await startAudioSource(new MicrophoneSource(), 'Live Microphone');
+        document.getElementById('txt-g1-status').textContent = 'Live Speech Running (Listening...)';
+        document.getElementById('txt-g1-audio-status').textContent = 'Microphone Active';
+      } catch (error) {
+        document.getElementById('txt-g1-status').textContent = `Error: ${error.message}`;
+      }
+    });
+
+    document.getElementById('btn-live-speech-stop').addEventListener('click', async () => {
+      try {
+        if (asrEnabled) {
+          const flushRes = await asrRequest('/asr/flush');
+          renderASR(flushRes.status);
+          if (speechOrchestrator && flushRes.events) {
+            for (const ev of flushRes.events) {
+              speechOrchestrator.handleTranscriptEvent(ev);
+            }
+          }
+        }
+        audioPipeline?.pause();
+        speechOrchestrator?.stop();
+        document.getElementById('txt-g1-status').textContent = 'Live Speech Stopped';
+        document.getElementById('txt-g1-audio-status').textContent = 'Paused / Stopped';
+      } catch (error) {
+        document.getElementById('txt-g1-status').textContent = `Error: ${error.message}`;
+      }
+    });
+
+    document.querySelectorAll('[data-checkpoint]').forEach((button) => {
+      button.addEventListener('click', () => {
+        if (signPlayer) {
+          signPlayer.pause();
+          signPlayer.seek(parseFloat(button.dataset.checkpoint));
+        }
+      });
+    });
+
+    // Speed & Loop Controls
+    document.getElementById('btn-speed-05').addEventListener('click', (e) => {
+      if (signPlayer) {
+        signPlayer.playbackSpeed = 0.5;
+        document.getElementById('txt-speed-tag').textContent = '0.5x Speed';
+        e.target.classList.add('primary');
+        document.getElementById('btn-speed-10').classList.remove('primary');
+      }
+    });
+
+    document.getElementById('btn-speed-10').addEventListener('click', (e) => {
+      if (signPlayer) {
+        signPlayer.playbackSpeed = 1.0;
+        document.getElementById('txt-speed-tag').textContent = '1.0x Speed';
+        e.target.classList.add('primary');
+        document.getElementById('btn-speed-05').classList.remove('primary');
+      }
+    });
+
+    function setPlaybackSpeed(speed, label) {
+      if (!signPlayer) return;
+      signPlayer.playbackSpeed = speed;
+      document.getElementById('txt-speed-tag').textContent = label;
+      ['05', '10', '125', '15'].forEach(id => document.getElementById(`btn-speed-${id}`).classList.remove('primary'));
+      document.getElementById(`btn-speed-${speed === 0.5 ? '05' : String(speed).replace('.', '')}`).classList.add('primary');
+    }
+
+    document.getElementById('btn-speed-125').addEventListener('click', () => setPlaybackSpeed(1.25, '1.25x Test Speed'));
+    document.getElementById('btn-speed-15').addEventListener('click', () => setPlaybackSpeed(1.5, '1.5x Test Speed'));
+
+    const loopBtn = document.getElementById('btn-toggle-loop');
+    loopBtn.addEventListener('click', () => {
+      if (signPlayer) {
+        signPlayer.loop = !signPlayer.loop;
+        loopBtn.textContent = 'Loop: ' + (signPlayer.loop ? 'ON' : 'OFF');
+        loopBtn.classList.toggle('primary', signPlayer.loop);
+      }
+    });
+
+    // 6. Camera Views
+    document.getElementById('btn-cam-salute').addEventListener('click', () => {
+      camera.position.set(-0.35, 1.42, 1.15);
+      controls.target.set(-0.15, 1.30, 0.05);
+    });
+
+    document.getElementById('btn-cam-rhand').addEventListener('click', () => {
+      focusHand('right');
+    });
+
+    document.getElementById('btn-cam-lhand').addEventListener('click', () => {
+      focusHand('left');
+    });
+
+    function focusHand(side) {
+      const hand=HandRig[side].hand;
+      if(!hand) { console.error(`Cannot focus ${side} hand: runtime hand bone is unavailable.`); return; }
+      window.AetherRig?.fbx.updateMatrixWorld(true);
+      const tips=['thumb','index','middle','ring','pinky'].map(f=>HandRig[side][f]?.[HandRig[side][f].length-1]).filter(Boolean);
+      const points=[hand,...tips].map(b=>b.getWorldPosition(new THREE.Vector3()));
+      const target=points.reduce((sum,p)=>sum.add(p),new THREE.Vector3()).multiplyScalar(1/points.length);
+      const damping=controls.enableDamping;
+      controls.enableDamping=false;
+      controls.target.copy(target);
+      camera.position.set(target.x+(side==='right'?-.12:.12),target.y+.05,target.z+.32);
+      controls.update();
+      controls.enableDamping=damping;
+    }
+
+    document.getElementById('btn-cam-full').addEventListener('click', () => {
+      camera.position.set(0, 1.2, 2.5);
+      controls.target.set(0, 0.9, 0);
+    });
+
+    document.getElementById('btn-cam-face').addEventListener('click', () => {
+      camera.position.set(0, 1.55, 0.65);
+      controls.target.set(0, 1.45, 0);
+    });
+
+    document.getElementById('btn-cam-hello-closeup').addEventListener('click', () => {
+      camera.position.set(-0.48, 1.36, 0.48);
+      controls.target.set(-0.18, 1.27, 0.05);
+    });
+
+    document.getElementById('btn-cam-good-closeup').addEventListener('click', () => {
+      camera.position.set(-0.42, 1.25, 0.52);
+      controls.target.set(-0.16, 1.18, 0.05);
+    });
+
+    function selectSign(id) {
+      if (!signLibrary || !signPlayer) return;
+      try {
+        const playable = signLibrary.getPlayable(id, bonesMap);
+        signPlayer.loadSign(playable);
+        document.getElementById('val-sign-badge').textContent = `${playable.gloss} (${playable.display_name})`;
+        document.getElementById('sign-scrubber').max = playable.duration_ms;
+        document.getElementById('txt-total-duration').textContent = playable.duration_ms + ' ms';
+        document.getElementById('sign-scrubber').value = 0;
+        document.getElementById('txt-current-time').textContent = '0 ms';
+        document.getElementById('txt-progress-pct').textContent = '0%';
+        document.getElementById('txt-active-kf').textContent = playable.keyframes[0]?.label || 'Neutral';
+        ['hello', 'good', 'morning'].forEach(name => {
+          const btn = document.getElementById(`btn-select-${name}`);
+          if (btn) btn.classList.toggle('primary', name === id);
+        });
+      } catch (err) {
+        console.error('Failed to select sign:', err);
+      }
+    }
+
+    document.getElementById('btn-select-hello').addEventListener('click', () => selectSign('hello'));
+    document.getElementById('btn-select-good').addEventListener('click', () => selectSign('good'));
+    document.getElementById('btn-select-morning').addEventListener('click', () => selectSign('morning'));
+
+    // Toggle Skeleton
+    let skeletonVisible = false;
+    document.getElementById('btn-toggle-skel').addEventListener('click', () => {
+      if (skeletonHelper) {
+        skeletonVisible = !skeletonVisible;
+        skeletonHelper.visible = skeletonVisible;
+      }
+    });
+
+    // 7. Manual Debug Sliders (Phase A compatibility)
+    function setFingerCurl(fingerBones, angleDeg) {
+      if (!fingerBones || fingerBones.length === 0) return;
+      const rad = THREE.MathUtils.degToRad(angleDeg);
+      fingerBones.forEach((bone, idx) => {
+        if (!bone || !bone.userData.initialRotation) return;
+        const factor = idx === 0 ? 0.75 : 1.0;
+        bone.rotation.z = bone.userData.initialRotation.z + (rad * factor);
+      });
+    }
+
+    const sliders = {
+      left: {
+        thumb: document.getElementById('slide-l-thumb'),
+        index: document.getElementById('slide-l-index'),
+        middle: document.getElementById('slide-l-middle'),
+        ring: document.getElementById('slide-l-ring'),
+        pinky: document.getElementById('slide-l-pinky')
+      },
+      right: {
+        thumb: document.getElementById('slide-r-thumb'),
+        index: document.getElementById('slide-r-index'),
+        middle: document.getElementById('slide-r-middle'),
+        ring: document.getElementById('slide-r-ring'),
+        pinky: document.getElementById('slide-r-pinky')
+      },
+      both: {
+        thumb: document.getElementById('slide-b-thumb'),
+        index: document.getElementById('slide-b-index'),
+        middle: document.getElementById('slide-b-middle'),
+        ring: document.getElementById('slide-b-ring'),
+        pinky: document.getElementById('slide-b-pinky')
+      }
+    };
+
+    ['thumb', 'index', 'middle', 'ring', 'pinky'].forEach(f => {
+      sliders.right[f].addEventListener('input', (e) => {
+        const val = parseFloat(e.target.value);
+        document.getElementById(`txt-r-${f}`).textContent = val + '°';
+        setFingerCurl(HandRig.right[f], val);
+      });
+      sliders.left[f].addEventListener('input', (e) => {
+        const val = parseFloat(e.target.value);
+        document.getElementById(`txt-l-${f}`).textContent = val + '°';
+        setFingerCurl(HandRig.left[f], val);
+      });
+      sliders.both[f].addEventListener('input', (e) => {
+        const val = parseFloat(e.target.value);
+        document.getElementById(`txt-b-${f}`).textContent = val + '°';
+        sliders.left[f].value = val;
+        sliders.right[f].value = val;
+        setFingerCurl(HandRig.left[f], val);
+        setFingerCurl(HandRig.right[f], val);
+      });
+    });
+
+    // Tabs logic for manual debug
+    const tabs = {
+      right: { btn: document.getElementById('tab-btn-right'), pane: document.getElementById('tab-pane-right') },
+      left: { btn: document.getElementById('tab-btn-left'), pane: document.getElementById('tab-pane-left') },
+      both: { btn: document.getElementById('tab-btn-both'), pane: document.getElementById('tab-pane-both') }
+    };
+
+    function switchTab(target) {
+      Object.keys(tabs).forEach(k => {
+        const isActive = k === target;
+        tabs[k].btn.classList.toggle('active', isActive);
+        tabs[k].pane.classList.toggle('active', isActive);
+      });
+    }
+
+    tabs.right.btn.addEventListener('click', () => switchTab('right'));
+    tabs.left.btn.addEventListener('click', () => switchTab('left'));
+    tabs.both.btn.addEventListener('click', () => switchTab('both'));
+
+    // Manual Quick Pose Buttons
+    document.getElementById('btn-pose-fist').addEventListener('click', () => {
+      ['thumb', 'index', 'middle', 'ring', 'pinky'].forEach(f => {
+        sliders.both[f].value = f === 'thumb' ? 60 : 80;
+        sliders.both[f].dispatchEvent(new Event('input'));
+      });
+    });
+
+    document.getElementById('btn-pose-point').addEventListener('click', () => {
+      ['thumb', 'index', 'middle', 'ring', 'pinky'].forEach(f => {
+        sliders.both[f].value = f === 'index' ? 0 : 80;
+        sliders.both[f].dispatchEvent(new Event('input'));
+      });
+    });
+
+    document.getElementById('btn-pose-open').addEventListener('click', () => {
+      ['thumb', 'index', 'middle', 'ring', 'pinky'].forEach(f => {
+        sliders.both[f].value = 0;
+        sliders.both[f].dispatchEvent(new Event('input'));
+      });
+    });
+
+    // Resize Handler
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    // Embed Mode & PostMessage Event Bridge (Phase H6 Extension Integration)
+    if (new URLSearchParams(window.location.search).has('embed')) {
+      const uiPanel = document.getElementById('ui-panel');
+      if (uiPanel) uiPanel.style.display = 'none';
+      const instructions = document.getElementById('instructions');
+      if (instructions) instructions.style.display = 'none';
+    }
+
+    window.addEventListener('message', (event) => {
+      const data = event.data;
+      if (!data || data.type !== 'ISL_AETHER_COMMAND') return;
+      if (!signScheduler) return;
+
+      switch (data.command) {
+        case 'PLAY_SIGN':
+          if (data.signId) {
+            signScheduler.cancel();
+            signScheduler.enqueue(data.signId);
+          }
+          break;
+        case 'QUEUE_SIGN':
+          if (data.signId) {
+            signScheduler.enqueue(data.signId);
+          }
+          break;
+        case 'PAUSE':
+          signScheduler.pause();
+          break;
+        case 'RESUME':
+          signScheduler.resume();
+          break;
+        case 'RESET_AVATAR':
+          signScheduler.cancel();
+          break;
+      }
+    });
+
+    // 8. Render & Animation Loop
+    let lastTime = performance.now();
+    function animate() {
+      requestAnimationFrame(animate);
+
+      const now = performance.now();
+      const deltaMs = now - lastTime;
+      lastTime = now;
+
+      if (signPlayer) {
+        signPlayer.update(deltaMs);
+      }
+
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>

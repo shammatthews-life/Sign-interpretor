@@ -24,9 +24,12 @@ Real-Time Accessibility Overlay (Web, YouTube, Television, Public Broadcasts)
 
 ## Current Status
 
-**PHASE 1 — English Text → ISL Sign Images**
+The original **Phase 1 English text → ISL sign images** desktop prototype
+remains available through `python run.py`. The repository also contains the
+later local development runtime described below. Neither path is a
+linguistically complete English-to-ISL translator.
 
-The project is currently a local, standalone prototype. Current capabilities include:
+Phase 1 capabilities include:
 - **English Text Input:** Desktop GUI text entry supporting the Enter key and translate button.
 - **Text Preprocessing:** Tokenization, lowercasing, punctuation stripping, and whitespace normalization.
 - **Controlled ISL Mapping:** Direct dictionary lookup for tokens and 2-word phrases (`data/sign_dictionary.json`).
@@ -34,6 +37,46 @@ The project is currently a local, standalone prototype. Current capabilities inc
 - **Sign Image Display:** Horizontal, scrollable visual card presentation.
 - **Placeholder Handling:** Dynamic, in-memory Pillow placeholder rendering for missing sign images.
 - **Sign Asset Validation:** Automated test suite verifying schema integrity, Pillow decoding, and missing visual assets (`tools/validate_sign_library.py`).
+
+### Local runtime implementation
+
+The later G1–H8 development runtime is implemented under `tools/` and
+`extension/`:
+
+- `tools/avatar_viewer/` contains the avatar viewer, schema 2.0.0 sign
+  library, scheduler, authoring controls, and existing translation pipeline.
+- `tools/audio_pipeline/`, `tools/asr/`, and `tools/youtube_pipeline/`
+  implement speech/audio handling and the H7 YouTube-to-transcript pipeline.
+- `extension/` contains the Manifest V3 popup, content overlay, service
+  worker, and runtime bridge. The H8 YouTube flow uses the local runtime API.
+- `signs/` contains the authored sign JSON files. A sign is schedulable only
+  when the existing library marks its motion playable.
+- `tools/validate_phase_*.mjs` and `tools/validate_phase_*.py` contain the
+  phase validation scripts that are present in this checkout.
+
+Use Python 3.12 for the runtime. Start the local viewer and development API
+from the repository root:
+
+```powershell
+.\.venv\Scripts\python.exe tools\run_avatar_viewer.py --port 8000
+```
+
+Load the unpacked extension by selecting the `extension/` directory in the
+browser's extension developer mode. The extension talks to the local viewer
+API; it is not a hosted service. See
+[`docs/h8_youtube_extension_integration.md`](docs/h8_youtube_extension_integration.md)
+and the H7/H8 test reports for the API contract and tested limitations.
+
+The viewer expects the separately supplied Aether model and textures at
+`Avatar_Boy_Gun_AetherShadow/` in the repository root. Those third-party
+assets are excluded from Git; obtain and place them locally only when their
+license permits. YouTube downloads, generated transcripts, benchmark/runtime
+output, and optional local wheel files belong under the ignored `runtime/`
+directory and are not source files. ASR benchmark WAV fixtures are also
+excluded because they are derived from an upstream recording; benchmark
+scripts can create local fixtures with
+`tools/asr/generate_benchmark_audio.py` after reviewing the upstream source
+terms.
 
 ---
 
@@ -184,18 +227,12 @@ To protect linguistic authenticity and ethical standards:
 
 ## Roadmap
 
-Development proceeds strictly phase-by-phase:
-
-- **Phase 1 (Current):** English Text → ISL Sign Images prototype.
-- **Phase 2 (Future):** Validated ISL sign library expansion and organization.
-- **Phase 3 (Future):** English → ISL linguistic representation (syntax parsing, SOV restructuring).
-- **Phase 4 (Future):** English speech → text integration.
-- **Phase 5 (Future):** Speech → ISL signs pipeline.
-- **Phase 6 (Future):** Continuous sign sequencing and timing.
-- **Phase 7 (Future):** 3D human/avatar signer.
-- **Phase 8 (Future):** Real-time optimization.
-- **Phase 9 (Future):** Browser extension for web video accessibility.
-- **Phase 10 (Future):** Live video / TV accessibility overlay integration.
+The repository preserves the Phase 1 prototype and includes later development
+work through H8. Current work includes fine-grained avatar articulation
+testing (R1). This remains a limited prototype: sign coverage, linguistic
+validation, and a browser-installed YouTube extension session are not implied
+by the presence of the runtime code. See the phase-specific reports under
+[`docs/`](docs/).
 
 ---
 
