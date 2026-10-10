@@ -12,11 +12,13 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const read = path => readFile(resolve(root, path), 'utf8');
 
-const [controller, player, authoring, viewer] = await Promise.all([
+const [controller, player, authoring, viewer, helperCorrection, helperCorrectionTests] = await Promise.all([
   read('tools/avatar_viewer/ArticulationTestController.js'),
   read('tools/avatar_viewer/SignAnimationPlayer.js'),
   read('tools/avatar_viewer/SignAuthoringController.js'),
-  read('tools/avatar_viewer/index.html')
+  read('tools/avatar_viewer/index.html'),
+  read('tools/avatar_viewer/NonFiniteHelperBoneCorrection.mjs'),
+  read('tools/avatar_viewer/NonFiniteHelperBoneCorrection.test.mjs')
 ]);
 
 assert(controller.includes("for (const axis of ['x', 'y', 'z'])"),
@@ -49,6 +51,27 @@ assert(viewer.includes('data-author-axis'),
   'The authoring UI must bind each slider to its specific rotation axis.');
 assert(viewer.includes('non-finite rest components'),
   'The R1 UI must show unresolved non-finite rest components.');
+assert(helperCorrection.includes("'PRIVATE_Grenade_Point'") &&
+  helperCorrection.includes("'PRIVATE_Grenade_Point_Low'"),
+  'Only the two confirmed imported helper bones may be considered for correction.');
+assert(helperCorrection.includes('Math.abs(node.scale.x) > zeroScaleTolerance'),
+  'The helper correction must require effectively zero X scale.');
+assert(helperCorrection.includes('skeletonBones.has(node)'),
+  'The helper correction must reject nodes referenced by loaded skeletons.');
+assert(helperCorrection.includes('isAncestorOfAny(node, protectedBones)'),
+  'The helper correction must reject ancestors of articulated chains.');
+assert(helperCorrection.includes('node.rotation.set(0, 0, 0, node.rotation.order)'),
+  'Eligible helper rotations must be reset to identity without changing position or scale.');
+assert(helperCorrection.includes('positionPreserved') && helperCorrection.includes('scalePreserved'),
+  'The helper correction must verify position and scale preservation.');
+const correctionCall = viewer.indexOf('const helperCorrectionResult = correctNonFiniteHelperBoneRotations');
+const restSnapshot = viewer.indexOf('child.userData.initialRotation = child.rotation.clone()');
+assert(correctionCall !== -1 && restSnapshot > correctionCall,
+  'The helper correction must run before imported rest-pose snapshots are captured.');
+assert(helperCorrectionTests.includes("does not correct nodes that fail any safety condition") &&
+  helperCorrectionTests.includes("reports missing expected candidate names"),
+  'Focused tests must cover ineligible and missing helper nodes.');
 
 console.log('PASS: R1 source guardrails confirm wrist/finger XYZ coverage, curl precedence, and non-finite reporting.');
+console.log('PASS: R1 imported helper correction is whitelisted, safety-guarded, tested, and runs before rest-pose capture.');
 console.log('NOTE: This is a static source check. Run window.AetherRig.articulationTest.runAutomatedSuite() and visually inspect the rendered avatar to establish runtime results.');

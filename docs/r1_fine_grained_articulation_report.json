@@ -1,101 +1,281 @@
 {
   "report_schema": "r1-fine-grained-articulation-report/1.0.0",
   "phase": "R1",
-  "status": "IN_PROGRESS_EXPANDED_RUNTIME_VERIFICATION_REQUIRED",
-  "updated_at": "2026-10-09",
+  "status": "REVIEW_REQUIRED",
+  "updated_at": "2026-10-10",
   "scope": "Technical rig articulation only; no claim of ISL linguistic correctness.",
-  "verified_source_findings": {
-    "runtime_curl_fallback_guard_present": true,
-    "explicit_rotation_wins_for_keyframed_bones": true,
-    "authoring_ui_has_xyz_controls_for_controlled_bones": true,
-    "authoring_controller_serializes_xyz_relative_to_captured_rest": true,
-    "h8_post_youtube_process_maps_url_validation_value_error_to_http_400": true
+  "runtime": {
+    "branch": "r1-articulation-coverage-and-report",
+    "commit": "2608ba357c70e030d4ad9063d988fb09a22d150d",
+    "viewer": "http://localhost:8000/tools/avatar_viewer/index.html",
+    "avatar_assets": "Local Avatar_Boy_Gun_AetherShadow FBX and textures",
+    "bone_map_count": 243,
+    "hand_audit_count": 34,
+    "hand_audit_scope": "Two forearms, two hand roots, and 30 finger segments"
   },
-  "prior_local_runtime_evidence": {
-    "evidence_source": "Local test/output log supplied from the October 9, 2026 project session; these metrics precede the expanded all-axis test matrix in this branch.",
-    "isolated_joint_checks": {
-      "passed": 36,
-      "total": 36
+  "automated_runtime_suite": {
+    "status": "PASS",
+    "axis_checks": {
+      "passed": 98,
+      "total": 98,
+      "world_orientation_change_required": true,
+      "all_results_finite": true,
+      "by_axis": {
+        "x": {
+          "passed": 34,
+          "total": 34
+        },
+        "y": {
+          "passed": 32,
+          "total": 32
+        },
+        "z": {
+          "passed": 32,
+          "total": 32
+        }
+      },
+      "coverage": "30 finger segments on X/Y/Z; two hand roots on X/Y/Z, with flexion and extension tested on X"
+    },
+    "hac": {
+      "numerator": 32,
+      "denominator": 32,
+      "axis_checks_required_per_joint": true,
+      "joint_ids": [
+        "left-index-base",
+        "left-index-middle",
+        "left-index-tip",
+        "left-middle-base",
+        "left-middle-middle",
+        "left-middle-tip",
+        "left-pinky-base",
+        "left-pinky-middle",
+        "left-pinky-tip",
+        "left-ring-base",
+        "left-ring-middle",
+        "left-ring-tip",
+        "left-thumb-base",
+        "left-thumb-middle",
+        "left-thumb-tip",
+        "left-wrist",
+        "right-index-base",
+        "right-index-middle",
+        "right-index-tip",
+        "right-middle-base",
+        "right-middle-middle",
+        "right-middle-tip",
+        "right-pinky-base",
+        "right-pinky-middle",
+        "right-pinky-tip",
+        "right-ring-base",
+        "right-ring-middle",
+        "right-ring-tip",
+        "right-thumb-base",
+        "right-thumb-middle",
+        "right-thumb-tip",
+        "right-wrist"
+      ]
     },
     "technical_poses": {
       "passed": 10,
-      "total": 10
+      "total": 10,
+      "results": [
+        {
+          "id": "neutral",
+          "status": "PASS"
+        },
+        {
+          "id": "all_fingers_extended",
+          "status": "PASS"
+        },
+        {
+          "id": "partially_curled",
+          "status": "PASS"
+        },
+        {
+          "id": "fist",
+          "status": "PASS"
+        },
+        {
+          "id": "thumb_index_isolated",
+          "status": "PASS"
+        },
+        {
+          "id": "open_palm",
+          "status": "PASS"
+        },
+        {
+          "id": "wrist_flexed",
+          "status": "PASS"
+        },
+        {
+          "id": "wrist_extended",
+          "status": "PASS"
+        },
+        {
+          "id": "wrist_rotated",
+          "status": "PASS"
+        },
+        {
+          "id": "asymmetric_fingers",
+          "status": "PASS"
+        }
+      ]
+    },
+    "curl_precedence": {
+      "status": "PASS",
+      "explicit_bone": "Bip001_R_Finger1",
+      "explicit_expected_degrees": 20,
+      "explicit_observed_degrees": 20.000000000000004,
+      "fallback_bone": "Bip001_R_Finger11",
+      "fallback_expected_degrees": 80,
+      "fallback_observed_degrees": 79.99999999999999,
+      "explicit_rotation_preserved": true,
+      "unkeyframed_legacy_curl_preserved": true
     },
     "replay_speeds": [
       {
         "speed": 0.5,
         "repeats": 3,
-        "status": "PASS",
         "mid_pose_observed": true,
-        "max_reset_drift_radians": 0
+        "max_reset_drift_radians": 0,
+        "status": "PASS"
       },
       {
         "speed": 1,
         "repeats": 3,
-        "status": "PASS",
         "mid_pose_observed": true,
-        "max_reset_drift_radians": 0
+        "max_reset_drift_radians": 0,
+        "status": "PASS"
       },
       {
         "speed": 1.25,
         "repeats": 3,
-        "status": "PASS",
         "mid_pose_observed": true,
-        "max_reset_drift_radians": 0
+        "max_reset_drift_radians": 0,
+        "status": "PASS"
       },
       {
         "speed": 1.5,
         "repeats": 3,
-        "status": "PASS",
         "mid_pose_observed": true,
-        "max_reset_drift_radians": 0
+        "max_reset_drift_radians": 0,
+        "status": "PASS"
       }
     ],
-    "prior_hac": {
-      "numerator": 32,
-      "denominator": 32
-    },
-    "visual_views_recorded": [
-      "neutral pose",
-      "technical fist pose",
-      "open-palm technical pose",
-      "right index-base isolated test",
-      "right wrist-flexion close-up"
+    "neutral_reset_and_accumulation": {
+      "status": "PASS",
+      "maximum_measured_replay_reset_drift_radians": 0,
+      "repeated_replay": "Three repeats passed at every tested speed; no measured rotation accumulation"
+    }
+  },
+  "non_finite_rest_components": {
+    "status": "PASS_AFTER_GUARDED_CORRECTION",
+    "count": 0,
+    "components": [],
+    "previously_imported_components": [
+      {
+        "bone_name": "PRIVATE_Grenade_Point",
+        "parent": "Avatar_Boy_Gun_AetherShadow",
+        "scale_x": 0,
+        "component": "rotation.x",
+        "value": "NaN"
+      },
+      {
+        "bone_name": "PRIVATE_Grenade_Point",
+        "parent": "Avatar_Boy_Gun_AetherShadow",
+        "scale_x": 0,
+        "component": "rotation.y",
+        "value": "NaN"
+      },
+      {
+        "bone_name": "PRIVATE_Grenade_Point_Low",
+        "parent": "Avatar_Boy_Gun_AetherShadow",
+        "scale_x": 0,
+        "component": "rotation.x",
+        "value": "NaN"
+      },
+      {
+        "bone_name": "PRIVATE_Grenade_Point_Low",
+        "parent": "Avatar_Boy_Gun_AetherShadow",
+        "scale_x": 0,
+        "component": "rotation.y",
+        "value": "NaN"
+      }
     ],
-    "preexisting_non_finite_rest_components": 4,
-    "non_finite_component_identity": "NOT_CAPTURED_IN_PRIOR_OUTPUT"
+    "assessment": "The two unrelated imported FBX helper bones initially had zero X scale and non-finite rotations, quaternions, and matrices. A runtime correction restricted to these allowlisted nodes reset eligible rotations to identity before rest-pose capture. Position, scale, skeleton references, and protected articulated hierarchy were preserved. The zero X scale was not changed; captured rest rotations are finite after correction.",
+    "normalization_performed": false,
+    "guarded_correction_status": "PASS",
+    "guarded_correction_nodes": [
+      "PRIVATE_Grenade_Point",
+      "PRIVATE_Grenade_Point_Low"
+    ]
   },
-  "changes_in_this_followup": {
-    "test_each_finger_segment_on_xyz": true,
-    "test_each_hand_root_on_xyz": true,
-    "hac_requires_all_axes_for_a_joint": true,
-    "curl_precedence_regression_added": true,
-    "non_finite_rest_component_details_added": true,
-    "ui_disposition_requires_non_finite_review": true,
-    "static_guardrail_validator": "tools/validate_phase_r1_articulation.mjs",
-    "expanded_axis_test_count_expected_for_full_rig": 98,
-    "expanded_suite_executed_on_target_runtime": false,
-    "static_validator_executed": false,
-    "world_orientation_used_for_axis_transform_check": true,
-    "descendant_displacement_is_diagnostic_not_the_only_movement_gate": true
+  "visual_verification": {
+    "status": "PARTIAL_REVIEW_REQUIRED",
+    "performed": [
+      {
+        "check": "Right-hand technical fist versus open palm",
+        "result": "Visible pose difference confirmed in the Aether viewer"
+      },
+      {
+        "check": "Neutral hand focus, left and right",
+        "result": "Both neutral close-up views were usable; focus changed camera framing only"
+      },
+      {
+        "check": "Left and right wrist X/Y/Z isolated movement",
+        "result": "All six wrist-axis controls were exercised; hand/wrist orientation changes were visible. Left Y initially had body occlusion; a runtime-only camera reposition improved visibility. Right Z brought the hand close to the torso."
+      },
+      {
+        "check": "Left and right index-base X/Y/Z isolated movement",
+        "result": "All six controls were exercised; rendered finger changes were subtle and not consistently distinguishable from overlapping fingers and glove/cuff geometry."
+      }
+    ],
+    "not_established": [
+      "Clear visual confirmation of isolated finger-axis movement on both hands",
+      "Rendered visual correctness of every individual finger-segment X/Y/Z rotation",
+      "Conclusive close-up visual verification of both hand roots and both complete hand poses",
+      "Anatomical or linguistic correctness"
+    ],
+    "evidence": "Browser screenshots were inspected during the verification session; no avatar screenshots were committed. The articulation controller was reset to its captured rest pose afterward."
   },
-  "acceptance_gates": [
-    "Run the static R1 source guardrail validator.",
-    "Run the expanded R1 suite in the actual local Aether viewer and save the JSON results.",
-    "Identify and investigate each non-finite rest-pose component; do not silently replace it with zero.",
-    "Visually inspect isolated X/Y/Z movement for wrist and finger segments.",
-    "Run the full regression suite on the updated code and confirm lexical sign JSON hashes.",
-    "Update this report from the actual target-runtime results."
-  ],
-  "safety": {
-    "lexical_sign_json_changed_in_followup": false,
-    "technical_pose_is_not_a_lexical_isl_sign": true,
-    "no_missing_signs_fabricated": true,
-    "status_is_not_complete": true
+  "regressions": {
+    "status": "PASS",
+    "results": {
+      "B": "PASS",
+      "C": "PASS",
+      "D": "PASS",
+      "E2": "PASS",
+      "E3": "PASS",
+      "F1": "PASS",
+      "F2": "PASS",
+      "G1": "PASS",
+      "G2": "PASS",
+      "G3": "PASS",
+      "H1": "PASS",
+      "H2": "PASS",
+      "H3": "PASS",
+      "H4": "PASS",
+      "H5": "PASS",
+      "H6": "PASS",
+      "H7_cached_audio": "PASS: cached real-audio pipeline; 256 transcript segments, no redownload",
+      "H8_local_runtime_harness": "PASS: invalid URL HTTP 400, unknown job HTTP 404, cached job READY and three playable good occurrences relayed",
+      "sentence_pipeline": "PASS",
+      "speech_sign_orchestrator": "PASS",
+      "SignLibrary": "PASS: 13 dictionary entries; existing 13 missing visual assets remain subject to the evidence gate",
+      "git_diff_check": "PASS"
+    },
+    "installed_extension_on_live_youtube_tab": "NOT RUN; the H8 harness is not an installed-extension browser session"
   },
-  "h8_status": {
-    "local_api_runtime_harness": "PASS_RECORDED_IN_EXISTING_H8_REPORT",
-    "invalid_youtube_url_expected_http_400": true,
-    "installed_extension_on_live_youtube_tab": "NOT_RUN"
-  }
+  "sign_file_sha256": {
+    "signs/hello.json": "997966650120253032bfa1bb3de8e2706bf1f31d316432decd8a52bc1d1bcfe5",
+    "signs/good.json": "cdeca8ee3149bf160749d21daaa3602e4008415ce015e8e57ca839a2752e8113",
+    "signs/morning.json": "9b7f488b6579efb8aeeaf27653fe21a95820943cc06e0c09de02a303ddb8087c",
+    "signs/water.json": "7d914d4487d795e927f92f7becb53c13bb694acfe298714268b0e3d0603962e9"
+  },
+  "lexical_sign_files_changed": false,
+  "technical_poses_are_isl_signs": false,
+  "overall_completion_gates": [
+    "Obtain clear visual confirmation of isolated finger-axis movement on both hands; keep R1 REVIEW REQUIRED until this is resolved.",
+    "Reconfirm the final documented results and rerun git diff --check after any follow-up changes."
+  ]
 }

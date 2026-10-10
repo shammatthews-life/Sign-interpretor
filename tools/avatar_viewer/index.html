@@ -626,6 +626,7 @@
     import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
     import { SignAnimationPlayer } from './SignAnimationPlayer.js';
     import { ArticulationTestController } from './ArticulationTestController.js';
+    import { correctNonFiniteHelperBoneRotations } from './NonFiniteHelperBoneCorrection.mjs';
     import { SignLibrary, SignLibraryError } from './SignLibrary.js';
     import { SignScheduler } from './SignScheduler.js';
     import { SentenceProcessor } from './SentenceProcessor.js';
@@ -891,8 +892,6 @@
         fbx.traverse((child) => {
           if (child.isBone) {
             bonesMap.set(child.name, child);
-            child.userData.initialRotation = child.rotation.clone();
-            child.userData.initialPosition = child.position.clone();
           }
 
           if (child.isMesh) {
@@ -939,6 +938,31 @@
         HandRig.right.middle = resolveFingerChain(HandRig.right.hand, 'Bip001_R_Finger2');
         HandRig.right.ring = resolveFingerChain(HandRig.right.hand, 'Bip001_R_Finger3');
         HandRig.right.pinky = resolveFingerChain(HandRig.right.hand, 'Bip001_R_Finger4');
+
+        const articulatedBones = ['left', 'right'].flatMap(side => {
+          const prefix = side === 'left' ? 'L' : 'R';
+          return [
+            bonesMap.get(`Bip001_${prefix}_Forearm`),
+            HandRig[side].hand,
+            ...['thumb', 'index', 'middle', 'ring', 'pinky'].flatMap(finger => HandRig[side][finger])
+          ].filter(Boolean);
+        });
+        const helperCorrectionResult = correctNonFiniteHelperBoneRotations({
+          model: fbx,
+          protectedBones: articulatedBones
+        });
+        if (helperCorrectionResult.corrected.length) {
+          console.info('[R1 helper correction]', helperCorrectionResult.corrected);
+        }
+        if (helperCorrectionResult.issues.length) {
+          console.error('[R1 helper correction] REVIEW REQUIRED', helperCorrectionResult.issues);
+        }
+
+        fbx.traverse(child => {
+          if (!child.isBone) return;
+          child.userData.initialRotation = child.rotation.clone();
+          child.userData.initialPosition = child.position.clone();
+        });
 
         // Skeleton Helper
         skeletonHelper = new THREE.SkeletonHelper(fbx);
@@ -987,7 +1011,8 @@
           scene,
           camera,
           controls,
-          renderer
+          renderer,
+          helperCorrectionResult
         };
 
         authoring = new SignAuthoringController({ bonesMap, handRig: HandRig, player: signPlayer, library: signLibrary, onState: renderAuthoring });
@@ -996,6 +1021,16 @@
         window.AetherRig.articulationTest = articulationTest;
         wireAuthoring();
         wireArticulationTests();
+        const r1Status = document.getElementById('r1-status');
+        if (helperCorrectionResult.status === 'PASS') {
+          const names = helperCorrectionResult.corrected.map(item => item.name).join(', ');
+          r1Status.textContent = `Imported helper correction PASS — identity rotations applied to ${names} before rest-pose capture; position and scale preserved.`;
+          r1Status.style.color = '#3fb950';
+        } else {
+          const issues = helperCorrectionResult.issues.map(item => `${item.name}: ${item.reason}`).join(' ');
+          r1Status.textContent = `REVIEW REQUIRED — imported helper correction was not fully applied. ${issues}`;
+          r1Status.style.color = '#f85149';
+        }
 
         // Hide loader
         const loaderOverlay = document.getElementById('loading-overlay');
@@ -1235,16 +1270,26 @@
     });
 
     function focusHand(side) {
-      const hand=HandRig[side].hand;
-      if(!hand) { console.error(`Cannot focus ${side} hand: runtime hand bone is unavailable.`); return; }
+      const handRig = HandRig[side];
+      const hand = handRig.hand;
+      if (!hand) {
+        console.error(`Cannot focus ${side} hand: runtime hand bone is unavailable.`);
+        return;
+      }
+
       window.AetherRig?.fbx.updateMatrixWorld(true);
-      const tips=['thumb','index','middle','ring','pinky'].map(f=>HandRig[side][f]?.[HandRig[side][f].length-1]).filter(Boolean);
-      const points=[hand,...tips].map(b=>b.getWorldPosition(new THREE.Vector3()));
-      const target=points.reduce((sum,p)=>sum.add(p),new THREE.Vector3()).multiplyScalar(1/points.length);
-      const damping=controls.enableDamping;
-      controls.enableDamping=false;
+      const handBones = [
+        hand,
+        ...['thumb', 'index', 'middle', 'ring', 'pinky'].flatMap(finger => handRig[finger])
+      ];
+      const bounds = new THREE.Box3().setFromPoints(
+        handBones.map(bone => bone.getWorldPosition(new THREE.Vector3()))
+      );
+      const target = bounds.getCenter(new THREE.Vector3());
+      const damping = controls.enableDamping;
+      controls.enableDamping = false;
       controls.target.copy(target);
-      camera.position.set(target.x+(side==='right'?-.12:.12),target.y+.05,target.z+.32);
+      camera.position.set(target.x + (side === 'right' ? -0.28 : 0.28), target.y + 0.02, target.z - 0.28);
       controls.update();
       controls.enableDamping=damping;
     }

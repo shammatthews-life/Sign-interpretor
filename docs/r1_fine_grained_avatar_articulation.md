@@ -1,57 +1,174 @@
 # R1 — Fine-Grained Avatar Articulation
 
-**Status: IN PROGRESS — expanded runtime verification required.**
-**Scope:** technical rig articulation only; this report does not establish that any technical pose is a linguistically correct ISL sign.
+**Overall status: REVIEW REQUIRED.** The live Aether automated articulation
+suite passes, and the two imported helper rotations have been corrected with
+position and scale preserved. Isolated finger-axis visual verification remains
+inconclusive.
 
-## Verified source findings
+**Scope:** technical rig articulation only. The poses and tests below are not
+ISL signs and do not establish linguistic or anatomical correctness.
 
-The published runtime source was inspected on the review branch:
+## Runtime and rig
 
-- `SignAnimationPlayer.js` contains a legacy finger-curl fallback that skips bones with explicit rotation entries in either endpoint keyframe.
-- `SignAuthoringController.js` captures, applies, validates, and serializes X/Y/Z rotation deltas relative to the captured rest pose.
-- `index.html` generates separate X, Y, and Z sliders for every name returned by `controlledNames()`, including the controlled hand/finger chains and arm/hand-root bones.
-- `run_avatar_viewer.py` maps URL-validation `ValueError` exceptions in `POST /youtube/process` to HTTP 400. The H8 runtime report records the invalid-URL test passing.
-- Existing lexical sign JSON files were hash-checked during the source synchronization and were not modified.
+- Branch: `r1-articulation-coverage-and-report`
+- Verified commit: `2608ba357c70e030d4ad9063d988fb09a22d150d`
+- Viewer: `http://localhost:8000/tools/avatar_viewer/index.html`
+- Local Aether model: `Avatar_Boy_Gun_AetherShadow` FBX and textures
+- Runtime bone map: 243 bones
+- Hand audit: 34 entries (two forearms, two hand roots, and 30 finger
+  segments)
+- Both left and right hand chains were present in the runtime map. The
+  independent-joint matrix covered thumb, index, middle, ring, and pinky base,
+  middle, and tip joints on both sides, plus both hand roots.
+- X/Y/Z were independently tested for every one of the 30 finger segments and
+  both hand roots. The hand-root X checks include flexion and extension.
 
-## Previously recorded local runtime evidence
+The viewer exposes per-bone X/Y/Z authoring controls for the controlled bones.
+`SignAuthoringController` captures and serializes rotations relative to the
+captured rest pose. The existing sign schema can represent these fine-grained
+rotations; no schema change was needed. The current runtime applies explicit
+rotations without replacing them with the legacy curl pass, while preserving
+the legacy curl fallback on unkeyframed neighboring joints.
 
-The local agent run log from October 9, 2026 records these results from the version before the expanded all-axis suite in this branch:
+## Expanded live browser suite
 
-| Check | Recorded result |
-|---|---|
-| Isolated joint checks in the earlier suite | 36/36 passed |
-| Technical poses | 10/10 passed |
-| Replay speeds | 0.5×, 1.0×, 1.25×, and 1.5× passed; three repeats per speed |
-| Mid-pose observation | True |
-| Maximum reset drift in those replay checks | 0 |
-| Earlier HAC-style unique-joint coverage | 32/32 |
-| Non-finite captured rest-pose components | 4 — not yet attributed to exact bones/components in the earlier output |
-| Visual checks recorded | Neutral, technical fist, open-palm pose, right index-base isolated test, and right wrist flexion view |
+The suite was run in the actual local Aether viewer using
+`window.AetherRig.articulationTest.runAutomatedSuite()`. Results were captured
+from the live runtime and are included in
+[`r1_fine_grained_articulation_report.json`](r1_fine_grained_articulation_report.json).
 
-Those results are retained as prior evidence, **not** represented as a run of the expanded suite introduced in this follow-up. Technical poses are diagnostics; they are not ISL signs.
+| Check | Result |
+|---|---:|
+| World-orientation axis checks | **98/98 PASS** |
+| X axis | 34/34 PASS |
+| Y axis | 32/32 PASS |
+| Z axis | 32/32 PASS |
+| HAC (all tested joints require all axes) | **32/32** |
+| Technical poses | **10/10 PASS** |
+| Replay rates | **4/4 PASS**, three repeats each |
+| Maximum measured replay reset drift | **0 radians** |
+| Curl precedence | **PASS** |
 
-## Changes in this follow-up
+Each axis test measured a finite, non-zero world-orientation change. Child
+displacement was recorded as diagnostic evidence rather than being the sole
+movement criterion. The 34 X checks are 30 finger axes plus two axes for each
+hand root (flexion and extension); Y and Z each have 30 finger axes and one
+axis check for each hand root.
 
-1. The R1 isolated-joint matrix now generates independent local X/Y/Z checks for every available finger segment, and X/Y/Z checks for each hand-root joint (plus a negative-X wrist check).
-2. Hand Articulation Completeness (HAC) counts an anatomical joint only when **all** of that joint's axis checks pass, rather than counting it after one successful axis.
-3. A targeted runtime regression checks that an explicitly authored finger rotation is preserved while the legacy curl fallback still affects a neighbouring, unkeyframed joint.
-4. The result captures the exact bone/component/value for each non-finite rest-pose component, rather than reporting only a count.
-5. The viewer status reports the axis checks, technical poses, replay speeds, curl-precedence check, HAC, and non-finite rest-component count. Any remaining non-finite rest values keep the overall disposition at **REVIEW REQUIRED**.
-6. `tools/validate_phase_r1_articulation.mjs` checks that the important source guardrails are present. It is a static source check; it is not a runtime or visual test.
+The HAC numerator is 32 because the test requires all three axes to pass for
+each of the 30 finger joints and two hand roots. This is a technical coverage
+metric, not an anatomical or ISL accuracy score.
 
-With the intended rig map (30 finger segments and two hand-root joints), the expanded matrix is expected to expose 98 axis tests. The actual number must be read from the live viewer after the updated branch is checked out. Automated axis checks use the bone's world-orientation change as the transform check; child-bone displacement is retained as diagnostic output because a twist around a long axis can change the rendered joint without translating child-bone origins.
+### Technical poses
 
-## Remaining completion gates
+All ten viewer fixtures passed their automated checks:
 
-- Run `node tools/validate_phase_r1_articulation.mjs` and the full existing regression suite after updating the local checkout.
-- Open the current Aether viewer and run `window.AetherRig.articulationTest.runAutomatedSuite()`. Save the resulting `window.AetherRig.articulationTestResults` output with the updated report.
-- Inspect the reported non-finite components by exact bone name and component. Determine whether these arise from the imported model/rig or from viewer initialization. Do **not** silently replace them with zero; document and test any normalization change before making it.
-- Visually inspect isolated X, Y, and Z movement for each relevant wrist/finger segment with a close-up view. Property changes and descendant displacement are not alone proof of anatomically correct motion.
-- Repeat the visual technical-pose checks and replay/reset tests on the updated code.
-- Keep lexical sign JSON unchanged unless a generic runtime fix demonstrably requires an edit and before/after hashes are reviewed.
+1. neutral hand
+2. all fingers extended
+3. partially curled fingers
+4. fist
+5. thumb/index isolated
+6. open palm
+7. wrist flexed
+8. wrist extended
+9. wrist rotated
+10. asymmetric finger test
 
-## Acceptance
+These are technical test poses, not lexical signs.
 
-R1 is **not yet marked complete**. Completion requires the expanded target-runtime suite, reviewed non-finite rest-component details, visual checks of the newly covered axes, successful regressions, and a final report with the actual updated results.
+### Curl precedence
 
-H8's local API/worker harness was recorded as passing, including invalid URL HTTP 400 and cached job processing. A real session with the unpacked Chrome extension installed and active on a live YouTube tab remains unverified in the existing H8 report.
+- Explicit right index-base bone `Bip001_R_Finger1`: expected 20 degrees,
+  observed 20 degrees; authored rotation was preserved.
+- Unkeyframed neighboring bone `Bip001_R_Finger11`: expected 80 degrees,
+  observed 80 degrees; legacy curl fallback remained active.
+- Both regression conditions passed; fallback behavior was not removed.
+
+### Replay and reset
+
+At 0.5×, 1.0×, 1.25×, and 1.5×, each repeated three times, the suite observed
+the mid-pose, reset successfully, and measured zero reset drift. This
+automated result found no rotation accumulation in those runs.
+
+## Non-finite imported rest values — guarded correction verified
+
+The live report initially identified four non-finite rotation components on
+two nodes unrelated to the hand joints:
+
+| Runtime node | Parent | Imported X scale | Component | Value |
+|---|---|---:|---|---|
+| `PRIVATE_Grenade_Point` | `Avatar_Boy_Gun_AetherShadow` | 0 | `rotation.x` | NaN |
+| `PRIVATE_Grenade_Point` | `Avatar_Boy_Gun_AetherShadow` | 0 | `rotation.y` | NaN |
+| `PRIVATE_Grenade_Point_Low` | `Avatar_Boy_Gun_AetherShadow` | 0 | `rotation.x` | NaN |
+| `PRIVATE_Grenade_Point_Low` | `Avatar_Boy_Gun_AetherShadow` | 0 | `rotation.y` | NaN |
+
+The nodes' local quaternions and matrices were also non-finite after loading.
+The guarded runtime correction applies only to these two allowlisted,
+childless helper bones after verifying their zero X scale, non-finite rotation,
+absence from loaded skeleton references, and lack of ancestry over protected
+articulated bones. It resets only their rotations to identity before rest-pose
+capture. Runtime checks confirmed finite captured rest rotations, preserved
+position, scale, skeleton references, and articulated hierarchy. The zero X
+scale was not changed. The focused correction tests passed 5/5 and the static
+validator passed. This resolves the helper-rotation correction gate without
+changing the FBX model.
+
+## Visual verification
+
+The actual rendered avatar was inspected in the browser:
+
+- The right-hand technical fist and open-palm views showed visibly different
+  hand poses.
+- Neutral close-up framing was usable for both the left and right hand.
+- Wrist X/Y/Z controls were exercised on both sides; changes in wrist/hand
+  orientation were visible. Left wrist Y initially had body occlusion, which
+  a runtime-only camera reposition reduced. Right wrist Z brought the hand
+  close to the torso.
+- Index-base X/Y/Z controls were exercised on both sides, but rendered finger
+  changes were subtle and not consistently distinguishable from overlapping
+  fingers and glove/cuff geometry.
+- The expanded automated suite independently reports finite world-orientation
+  changes for both hands and every covered axis.
+- A right open-palm technical pose was inspected; it does not establish clear
+  isolated finger-axis movement.
+
+Therefore, visual verification is **PARTIAL**. Numeric transform checks do
+not prove every rendered joint moves as intended. The articulation controller
+was reset to its captured rest pose afterward. No avatar screenshot was
+committed; local browser screenshots were inspected during the session.
+
+## Regression and sign protection
+
+The applicable recorded regressions passed:
+
+- B, C, D, E2, E3, F1, F2
+- G1, G2, G3
+- H1–H6
+- H7 cached-audio pipeline (256 transcript segments; no redownload)
+- H8 local runtime harness, including invalid YouTube URL HTTP 400, unknown
+  job HTTP 404, cached job completion, and handoff of three playable `good`
+  occurrences
+- Sentence pipeline and speech/sign orchestrator
+- SignLibrary validation (13 dictionary entries; 13 missing visual assets
+  remain under the existing evidence gate)
+- `git diff --check`
+
+The H8 harness is not evidence of an installed extension session on a live
+YouTube tab; that check remains not run.
+
+SHA-256 hashes of `signs/hello.json`, `signs/good.json`,
+`signs/morning.json`, and `signs/water.json` were rechecked and are recorded
+in the JSON report. They match the unchanged baseline; no lexical sign file
+was modified.
+
+## Conclusion and remaining gates
+
+The runtime can represent and replay fine-grained rotations across both hand
+chains, and its automated suite passed. R1 remains **REVIEW REQUIRED**, not
+complete, until:
+
+1. Clear visual confirmation of isolated finger-axis movement is obtained on
+   both hands; numeric-only results are insufficient.
+2. The final diff and regression state are rechecked after follow-up work.
+
+No lexical ISL sign was created or changed as part of this articulation test.
