@@ -9,7 +9,7 @@ export class AudioSource {
   pause() { if (this.state === 'running') this.state = 'paused'; }
   resume() { if (this.state === 'paused') this.state = 'running'; }
   stop() { this.state = 'stopped'; }
-  reset() { this.stop(); }
+  async reset() { await this.stop(); }
 }
 
 /** Pushes prerecorded PCM progressively, rather than coupling downstream code to files. */
@@ -27,28 +27,59 @@ export class FileSource extends AudioSource {
     }
     if (this.offset >= this.samples.length) this.stop();
   }
-  reset() { super.reset(); this.offset = 0; }
+  async reset() { await super.reset(); this.offset = 0; }
 }
 
 /** Browser-only microphone adapter. It only captures PCM; pipeline processing is shared. */
 export class MicrophoneSource extends AudioSource {
   constructor({ bufferSize = 2048 } = {}) { super(); this.bufferSize = bufferSize; this.stream = null; this.context = null; this.node = null; }
   async start() {
+    if (this.state === 'running') return;
+    if (this.state !== 'stopped') await this.stop();
     if (!globalThis.navigator?.mediaDevices?.getUserMedia || !globalThis.AudioContext) throw new Error('Browser microphone capture is unavailable in this context.');
-    this.stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
-    this.context = new AudioContext();
-    const input = this.context.createMediaStreamSource(this.stream);
-    this.node = this.context.createScriptProcessor(this.bufferSize, 1, 1);
-    this.node.onaudioprocess = event => {
-      if (this.state !== 'running') return;
-      const samples = new Float32Array(event.inputBuffer.getChannelData(0));
-      this.emit({ samples, sampleRate: this.context.sampleRate, channels: 1, capturedAt: performance.now(), source: 'microphone' });
-    };
-    input.connect(this.node); this.node.connect(this.context.destination); await super.start();
+    try {
+      this.stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
+      this.context = new AudioContext();
+      const input = this.context.createMediaStreamSource(this.stream);
+      this.node = this.context.createScriptProcessor(this.bufferSize, 1, 1);
+      this.node.onaudioprocess = event => {
+        if (this.state !== 'running') return;
+        const samples = new Float32Array(event.inputBuffer.getChannelData(0));
+        this.emit({ samples, sampleRate: this.context.sampleRate, channels: 1, capturedAt: performance.now(), source: 'microphone' });
+      };
+      input.connect(this.node);
+      this.node.connect(this.context.destination);
+      await super.start();
+    } catch (error) {
+      try {
+        await this.stop();
+      } catch (cleanupError) {
+        throw new AggregateError([error, cleanupError], 'Microphone startup failed and cleanup was incomplete.');
+      }
+      throw error;
+    }
   }
-  pause() { super.pause(); this.context?.suspend(); }
-  resume() { super.resume(); this.context?.resume(); }
-  stop() { super.stop(); this.node?.disconnect(); this.stream?.getTracks().forEach(track => track.stop()); this.context?.close(); this.node = this.stream = this.context = null; }
+  pause() { super.pause(); return this.context?.suspend(); }
+  async resume() { if (this.state !== 'paused') return; await this.context?.resume(); super.resume(); }
+  async stop() {
+    super.stop();
+    const node = this.node;
+    const stream = this.stream;
+    const context = this.context;
+    this.node = this.stream = this.context = null;
+    const errors = [];
+    if (node) {
+      node.onaudioprocess = null;
+      try { node.disconnect(); } catch (error) { errors.push(error); }
+    }
+    for (const track of stream?.getTracks() || []) {
+      try { track.stop(); } catch (error) { errors.push(error); }
+    }
+    if (context && context.state !== 'closed') {
+      try { await context.close(); } catch (error) { errors.push(error); }
+    }
+    if (errors.length) throw new AggregateError(errors, 'Microphone resources could not all be released.');
+  }
 }
 
 export function decodeWav(arrayBuffer) {
@@ -119,10 +150,19 @@ export class StreamingAudioPipeline {
   }
   attach(source) { this.detach?.(); this.detach = source.onChunk(chunk => this.ingest(chunk)); this.source = source; return this; }
   async start() { this.state = 'running'; if (this.source) await this.source.start(); }
-  pause() { this.state = 'paused'; this.source?.pause(); }
-  async resume() { this.state = 'running'; this.source?.resume(); }
-  stop() { this.state = 'stopped'; this.source?.stop(); }
-  reset() { this.stop(); this.chunker.reset(); this.vad.reset(); this.asrInput.reset(); this.results = []; }
+  async pause() { this.state = 'paused'; await this.source?.pause(); }
+  async resume() { await this.source?.resume(); this.state = 'running'; }
+  async stop() {
+    this.state = 'stopped';
+    try {
+      await this.source?.stop();
+    } finally {
+      this.detach?.();
+      this.detach = null;
+      this.source = null;
+    }
+  }
+  async reset() { await this.stop(); this.chunker.reset(); this.vad.reset(); this.asrInput.reset(); this.results = []; }
   ingest(rawChunk) {
     if (this.state !== 'running') return [];
     const mono = toMono(rawChunk.samples, rawChunk.channels || 1), samples = resample(mono, rawChunk.sampleRate, this.format.sampleRate);

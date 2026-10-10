@@ -45,7 +45,7 @@ for (let i = 0; i < 200; i += 1) stress.ingest({ samples: i % 4 ? sine(1600) : n
 const elapsed = performance.now() - started, perChunk = elapsed / 200;
 assert(stress.results.length === 200, 'Long-running stream lost chunks.');
 assert(perChunk < 100, `Pipeline falls behind real time: ${perChunk.toFixed(3)} ms per 100 ms chunk.`);
-pipeline.pause(); assert(pipeline.state === 'paused', 'Pipeline pause failed.'); await pipeline.resume(); assert(pipeline.state === 'running', 'Pipeline resume failed.'); pipeline.reset(); assert(pipeline.asrInput.queue.length === 0 && pipeline.results.length === 0 && pipeline.state === 'stopped', 'Pipeline reset failed.');
+pipeline.pause(); assert(pipeline.state === 'paused', 'Pipeline pause failed.'); await pipeline.resume(); assert(pipeline.state === 'running', 'Pipeline resume failed.'); await pipeline.reset(); assert(pipeline.asrInput.queue.length === 0 && pipeline.results.length === 0 && pipeline.state === 'stopped', 'Pipeline reset failed.');
 
 console.log('PASS: audio source/file abstraction, chunking, normalization, and lifecycle states');
 console.log('PASS: RMS/peak/clipping/silence diagnostics and adaptive energy VAD transitions');

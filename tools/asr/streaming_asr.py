@@ -211,6 +211,9 @@ class FasterWhisperBackend(StreamingASRBackend):
             return self._stale_windows_dropped
 
     def start(self) -> None:
+        if self.async_worker and self._worker_thread and self._worker_thread.is_alive():
+            raise RuntimeError("The previous ASR worker is still stopping; retry after it exits.")
+
         if self.device == "cuda":
             ensure_cuda_support()
 
@@ -224,7 +227,8 @@ class FasterWhisperBackend(StreamingASRBackend):
         self.state = "running"
         self._worker_state = "IDLE"
 
-        if self.async_worker and (self._worker_thread is None or not self._worker_thread.is_alive()):
+        if self.async_worker:
+            self._worker_thread = None
             self._stop_event.clear()
             self._worker_trigger.clear()
             self._flush_requested.clear()
@@ -248,7 +252,9 @@ class FasterWhisperBackend(StreamingASRBackend):
         if self.async_worker and self._worker_thread and self._worker_thread.is_alive():
             self._stop_event.set()
             self._worker_trigger.set()
-            self._worker_thread.join(timeout=1.0)
+            self._worker_thread.join(timeout=5.0)
+            if self._worker_thread.is_alive():
+                raise TimeoutError("ASR worker did not stop within 5 seconds; session reset is incomplete.")
             self._worker_thread = None
 
     def reset(self) -> None:
@@ -313,7 +319,8 @@ class FasterWhisperBackend(StreamingASRBackend):
                 self._worker_trigger.set()
 
             # Wait for background worker to finalize the flush
-            self._flush_completed.wait(timeout=5.0)
+            if not self._flush_completed.wait(timeout=5.0):
+                raise TimeoutError("ASR worker did not complete flush within 5 seconds.")
 
             with self._lock:
                 returned = list(self._completed_events)

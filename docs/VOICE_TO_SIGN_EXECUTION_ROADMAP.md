@@ -11,7 +11,7 @@
 | Milestone | Planned dates (IST) | Status | Acceptance summary |
 |---|---|---|---|
 | Phase 1 — R1 Stabilization | Oct 11–12 | REVIEW REQUIRED | Helper correction and automated/runtime checks pass. Complete manual visual review of individual wrist/finger-axis changes before R1 can pass. |
-| Phase 2 — Voice to Text | Oct 13–17 | IN PROGRESS — PH2-STT-01 audit complete | Owner approved proceeding under the bounded R1 fallback. Reuse the existing local ASR paths; still require genuine live-speech verification, clean lifecycle, and visible transcript evidence. |
+| Phase 2 — Voice to Text | Oct 13–17 | IN PROGRESS — PH2-STT-02 implementation checkpoint; live acceptance BLOCKED | Lifecycle implementation and automated/browser capture-cleanup checks pass. Genuine speech-to-transcript-to-sign evidence remains outstanding. |
 | Phase 3 — Text to Sign Pipeline | Oct 18–24 | NOT STARTED | Transcript tokens resolve to an ordered animation queue; unsupported tokens remain visible. |
 | Phase 4 — Vocabulary Coverage | Oct 25–31 | NOT STARTED | Coverage has a defined denominator, provenance, validation, and disclosed limitations. |
 | Phase 5 — Extension Options and UX | Nov 1–7 | NOT STARTED | Main flow and playback controls operate reliably through the extension. |
@@ -74,6 +74,25 @@
 - **Acceptance boundary:** The repository already contains a local recognizer and audio path, but these audit tests do not prove that fresh real microphone speech has been transcribed in the current runtime. Do not claim PH2-STT-02/03 complete until actual speech is recognized and displayed, clean stop/restart and error cases are tested, and a fresh reload is verified.
 - **Next action:** PH2-STT-02 — verify and harden the selected existing speech-input path, then PH2-STT-03 — run a repeatable actual-speech end-to-end check. First confirm whether the demonstration source is the microphone route (recommended smallest route) or a user-submitted YouTube URL; current-tab audio capture is not implemented.
 
+### PH2-STT-02 — Harden live microphone-to-text lifecycle
+
+- **Planned:** October 13–17, 2026
+- **Actual implementation/checkpoint:** October 10, 2026
+- **Status:** IMPLEMENTATION CHECKPOINT — automated and capture lifecycle checks PASS; end-to-end live acceptance BLOCKED / REVIEW REQUIRED.
+- **Implementation:** Reused the standalone viewer's existing microphone, 16 kHz mono float32 pipeline, `/asr/*` endpoints, transcript display, and sign orchestrator. Startup now requires successful microphone capture and ASR startup before reporting RUNNING; partial startup resources are released on failure. Stop prevents further chunk acceptance, releases microphone tracks, awaits in-flight chunks, flushes accepted audio, then calls the existing ASR stop/reset endpoints. Restart creates a fresh source and pipeline. The UI reports startup/recognition errors and permits recovery. The streaming backend now surfaces a timed-out flush, retains a worker that exceeds its bounded five-second stop wait, reports reset failure, and refuses a new worker until the prior worker exits.
+- **Automated verification (October 10):**
+  - `node --test tools\avatar_viewer\LiveSpeechSession.test.mjs` — PASS, 8/8, including concurrent/double-start protection, microphone and ASR startup failures, cleanup, restart, chunk failure, transcript-event delivery, and microphone setup/permission failures.
+  - `node tools\validate_phase_f1_audio.mjs` — PASS; audio/VAD/chunk pipeline checks (synthetic input, not live speech).
+  - `.\.venv\Scripts\python.exe tools\validate_phase_f2_asr.py` — PASS; F2 lifecycle, fresh reset/restart, stuck-worker protection, and flush-timeout reporting use fake test doubles and are not recognition evidence.
+  - `node tools\validate_phase_g1_pipeline.mjs` — PASS; simulated transcript-to-sign integration, not live speech.
+  - `node tools\validate_speech_sign_orchestrator.mjs` — PASS; orchestrator logic only.
+  - `git diff --check` — PASS.
+- **Browser lifecycle evidence (October 10):** Reloaded the standalone viewer cleanly and verified its initial stop control was disabled. Independently started live capture more than once, including after reload: each session showed `Live Speech Running`, `Microphone Active`, a `live` browser track, and ASR `running`. Stopping showed `Live Speech Stopped`, `Microphone released`, ASR `stopped`, and the captured track's `readyState` became `ended`. A controlled microphone-acquisition rejection showed ERROR rather than RUNNING; automated tests cover permission and setup failure cleanup. No bone rotations, animation poses, sign JSON, or model data were changed by these checks.
+- **Live-speech blocker:** No human phrase was spoken during this verification. The microphone was active, but the service audio duration remained 0.00 seconds and the VAD forwarded no chunks. Consequently, there is no evidence of genuine speech reaching faster-whisper, a visible real transcript, transcript-triggered sign scheduling, or a live-speech stop/restart cycle following recognized speech. Fake-model tests and simulated G1 transcript events do not satisfy these criteria.
+- **Acceptance decision:** PH2-STT-02 is not PASS. Retain BLOCKED / REVIEW REQUIRED until real speech produces a visible transcript and reaches the existing sign scheduler. No speech-recognition system was duplicated, and the NaN correction, sign data, animation poses, and hand articulation were not changed.
+- **Files changed for this checkpoint:** `tools/audio_pipeline/AudioPipeline.js`, `tools/asr/streaming_asr.py`, `tools/avatar_viewer/LiveSpeechSession.mjs`, `tools/avatar_viewer/LiveSpeechSession.test.mjs`, `tools/avatar_viewer/index.html`, `tools/validate_phase_f1_audio.mjs`, `tools/validate_phase_f2_asr.py`, and this roadmap.
+- **Next action:** PH2-STT-03 — obtain a repeatable real-microphone phrase test; verify received audio, genuine partial/final transcript display, sign scheduling, clean stop and a fresh restarted session, then record exact evidence. Keep the speech-to-text milestone open until all live criteria pass.
+
 ## Risks and guardrails
 
 - R1 remains **REVIEW REQUIRED** until the unclear isolated finger-axis views are resolved or an explicitly approved fallback is recorded; do not infer a visual PASS from the automated suite.
@@ -84,10 +103,10 @@
 
 ## Next task
 
-**PH2-STT-02 — Verify and harden the selected speech input path**
+**PH2-STT-03 — Verify genuine live speech end to end**
 
-**Planned dates:** October 13–17, 2026 (IST)
+**Planned date:** October 17, 2026 (IST)
 
 **Prerequisite:** Owner approved the bounded R1 fallback on October 10, 2026; R1 remains REVIEW REQUIRED.
 
-**Concrete next action:** Confirm the required input source, then address the relevant lifecycle/error gaps in the existing route. Do not add a parallel recognizer.
+**Concrete next action:** With a real microphone and a speaker available, say a short, clear phrase through the existing local viewer; retain evidence that audio reaches faster-whisper, a genuine transcript is displayed and schedules signs, stop releases the microphone and resets ASR, and a new session works after restart/reload. Record any service, model, device, permission, or VAD blocker exactly. Do not use simulated events as evidence or add a parallel recognizer.

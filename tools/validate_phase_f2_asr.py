@@ -53,6 +53,45 @@ assert report["audio_duration_ms"] > 0 and report["compute_ms"] >= 0 and report[
 backend.pause(); assert backend.accept_audio_chunk(np.zeros(16000), audio_start_ms=2500, audio_end_ms=3500) == [], "Paused backend accepted audio."
 backend.resume(); backend.reset()
 assert backend.state == "stopped" and len(backend.samples) == 0 and not backend.events, "Reset left stale audio or events."
+backend.start()
+events = backend.accept_audio_chunk(np.zeros(16000, dtype=np.float32), audio_start_ms=0, audio_end_ms=1000)
+assert backend.state == "running" and [event.kind for event in events] == ["PARTIAL_TRANSCRIPT"], "Backend did not restart with a fresh transcript session."
+
+class StuckWorker:
+    def is_alive(self): return True
+    def join(self, timeout=None): self.join_timeout = timeout
+
+worker_backend = FasterWhisperBackend(model_name="fake", model_factory=model_factory, async_worker=True)
+worker_backend._worker_thread = StuckWorker()
+try:
+    worker_backend.stop()
+except TimeoutError:
+    pass
+else:
+    raise AssertionError("A still-running ASR worker must not be reported as stopped.")
+assert worker_backend._worker_thread.join_timeout == 5.0, "ASR worker shutdown must be bounded."
+try:
+    worker_backend.start()
+except RuntimeError:
+    pass
+else:
+    raise AssertionError("A fresh ASR worker must not start while the previous worker is alive.")
+worker_backend._worker_thread = None
+
+class FlushTimeoutEvent:
+    def clear(self): pass
+    def wait(self, timeout=None): return False
+
+flush_backend = FasterWhisperBackend(model_name="fake", model_factory=model_factory, async_worker=True)
+flush_backend.state = "running"
+flush_backend.samples = np.ones(1, dtype=np.float32)
+flush_backend._flush_completed = FlushTimeoutEvent()
+try:
+    flush_backend.flush()
+except TimeoutError:
+    pass
+else:
+    raise AssertionError("An incomplete asynchronous ASR flush must be reported.")
 
 stabilizer = TranscriptStabilizer()
 assert stabilizer.partial(" hello ") == "hello"
@@ -77,8 +116,11 @@ response = service.accept({"samples_base64": base64.b64encode(raw).decode(), "au
 assert response["status"]["audio_duration_ms"] == 100, "F1-to-ASR service bridge did not account for canonical chunk."
 assert service.control("pause")["state"] == "paused"
 assert service.control("reset")["audio_duration_ms"] == 0
+assert service.start(model="fake")["state"] == "running", "ASR service did not restart after reset."
+response = service.accept({"samples_base64": base64.b64encode(raw).decode(), "audio_start_ms": 0, "audio_end_ms": 100})
+assert response["status"]["audio_duration_ms"] == 100, "Restart retained stale ASR audio duration."
 
-print("PASS: ASR backend lifecycle loads the model once and resets cleanly")
+print("PASS: ASR backend lifecycle loads once, resets cleanly, and restarts without stale transcript state")
 print("PASS: buffered audio windows emit stabilized partial/final transcript events")
 print("PASS: duplicate suppression and event timing/RTF reporting work")
-print("PASS: local F1-to-ASR service bridge accepts canonical float32 chunks")
+print("PASS: local F1-to-ASR service bridge accepts canonical float32 chunks and starts a fresh session after reset")

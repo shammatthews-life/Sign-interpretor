@@ -448,7 +448,7 @@
     <div class="card-box" id="speech-sign-panel">
       <div class="btn-grid">
         <button id="btn-live-speech-start" class="success">Start Live Speech</button>
-        <button id="btn-live-speech-stop">Stop Live Speech</button>
+        <button id="btn-live-speech-stop" disabled>Stop Live Speech</button>
       </div>
       <div class="status-item"><span class="status-label">Pipeline Status</span><span class="status-val" id="txt-g1-status">idle</span></div>
       <div class="status-item"><span class="status-label">Audio Status</span><span class="status-val" id="txt-g1-audio-status">idle</span></div>
@@ -627,6 +627,7 @@
     import { SignAnimationPlayer } from './SignAnimationPlayer.js';
     import { ArticulationTestController } from './ArticulationTestController.js';
     import { correctNonFiniteHelperBoneRotations } from './NonFiniteHelperBoneCorrection.mjs';
+    import { LiveSpeechSession } from './LiveSpeechSession.mjs';
     import { SignLibrary, SignLibraryError } from './SignLibrary.js';
     import { SignScheduler } from './SignScheduler.js';
     import { SentenceProcessor } from './SentenceProcessor.js';
@@ -726,6 +727,7 @@
     let audioPipeline = null;
     let audioSource = null;
     let asrEnabled = false;
+    let liveSpeechSession = null;
     const sentenceProcessor = new SentenceProcessor(); // G1 fallback remains available.
     const islTranslator = new EnglishToISLTranslator();
     const playbackTimings = [];
@@ -733,7 +735,9 @@
 
     function renderG1Diagnostics(diag) {
       if (!diag) return;
-      if (document.getElementById('txt-g1-status')) document.getElementById('txt-g1-status').textContent = diag.state;
+      if (!liveSpeechSession || ['IDLE', 'STOPPED'].includes(liveSpeechSession.state)) {
+        document.getElementById('txt-g1-status').textContent = diag.state;
+      }
       if (document.getElementById('txt-g1-current-sign')) document.getElementById('txt-g1-current-sign').textContent = diag.currentSign ? diag.currentSign.toUpperCase() : 'None';
       if (document.getElementById('txt-g1-queue')) document.getElementById('txt-g1-queue').textContent = diag.queuedSigns && diag.queuedSigns.length ? diag.queuedSigns.map(id => id.toUpperCase()).join(' → ') : 'empty';
       if (document.getElementById('txt-g1-committed')) document.getElementById('txt-g1-committed').textContent = diag.committedSignIds && diag.committedSignIds.length ? diag.committedSignIds.map(id => id.toUpperCase()).join(' → ') : 'none';
@@ -821,10 +825,13 @@
             speechOrchestrator.handleTranscriptEvent(ev);
           }
         }
-      } catch (error) { asrEnabled = false; document.getElementById('txt-asr-status').textContent = `error: ${error.message}`; }
+      } catch (error) {
+        asrEnabled = false;
+        document.getElementById('txt-asr-status').textContent = `error: ${error.message}`;
+      }
     }
-    function createAudioPipeline() {
-      audioPipeline?.reset();
+    async function createAudioPipeline() {
+      if (audioPipeline) await audioPipeline.reset();
       audioPipeline = new StreamingAudioPipeline({ onResult: result => {
         const d = result.diagnostics, t = result.timings;
         document.getElementById('txt-audio-chunk').textContent = `${result.accepted ? 'speech' : 'non-speech'} | RMS ${d.rms.toFixed(4)} | peak ${d.peak.toFixed(3)} | VAD ${t.vadMs.toFixed(2)}ms`;
@@ -834,10 +841,58 @@
       return audioPipeline;
     }
     async function startAudioSource(source, label) {
+      if (liveSpeechSession && ['STARTING', 'RUNNING', 'STOPPING'].includes(liveSpeechSession.state)) {
+        throw new Error('Stop live speech before starting another audio source.');
+      }
+      const pipeline = await createAudioPipeline(); audioSource = source; pipeline.attach(source);
       try {
-        const pipeline = createAudioPipeline(); audioSource = source; pipeline.attach(source); await pipeline.start();
+        await pipeline.start();
         setAudioStatus(`${label} running — 16 kHz canonical chunks.`);
-      } catch (error) { setAudioStatus(error.message, true); console.error('Audio source error:', error); }
+      } catch (error) {
+        await pipeline.reset();
+        audioPipeline = null;
+        audioSource = null;
+        setAudioStatus(error.message, true);
+        throw error;
+      }
+    }
+
+    function setLiveSpeechState({ state, error }) {
+      const status = document.getElementById('txt-g1-status');
+      const audioStatus = document.getElementById('txt-g1-audio-status');
+      const startButton = document.getElementById('btn-live-speech-start');
+      const stopButton = document.getElementById('btn-live-speech-stop');
+      status.textContent = state === 'RUNNING' ? 'Live Speech Running (Listening...)'
+        : state === 'ERROR' ? `Error: ${error || 'Live speech session failed.'}`
+          : state === 'STOPPED' ? 'Live Speech Stopped'
+            : state === 'STARTING' ? 'Starting microphone and ASR...'
+              : state === 'STOPPING' ? 'Stopping microphone and ASR...'
+                : 'idle';
+      audioStatus.textContent = state === 'RUNNING' ? 'Microphone Active'
+        : state === 'ERROR' ? 'Error — microphone/ASR cleanup attempted'
+          : state === 'STOPPED' ? 'Microphone released'
+            : state === 'STOPPING' ? 'Releasing microphone...'
+              : state === 'STARTING' ? 'Requesting microphone...'
+                : 'idle';
+      startButton.disabled = ['STARTING', 'RUNNING', 'STOPPING'].includes(state);
+      stopButton.disabled = !['STARTING', 'RUNNING', 'STOPPING', 'ERROR'].includes(state);
+    }
+
+    function getLiveSpeechSession() {
+      if (liveSpeechSession) return liveSpeechSession;
+      liveSpeechSession = new LiveSpeechSession({
+        createSource: () => new MicrophoneSource(),
+        createPipeline: onResult => new StreamingAudioPipeline({
+          onResult: result => onResult({ ...result, samplesBase64: float32Base64(result.chunk.samples) })
+        }),
+        request: asrRequest,
+        onState: setLiveSpeechState,
+        onASRStatus: renderASR,
+        onTranscriptEvents: events => {
+          for (const event of events) speechOrchestrator?.handleTranscriptEvent(event);
+        }
+      });
+      return liveSpeechSession;
     }
 
     function renderSentence(result, playableIds, unavailable = []) {
@@ -1143,21 +1198,41 @@
       setSequenceStatus('Queue cleared.');
     });
 
-    document.getElementById('btn-audio-mic').addEventListener('click', () => startAudioSource(new MicrophoneSource(), 'Microphone'));
+    document.getElementById('btn-audio-mic').addEventListener('click', async () => {
+      try { await startAudioSource(new MicrophoneSource(), 'Microphone'); }
+      catch (error) { console.error('Audio source error:', error); }
+    });
     document.getElementById('btn-audio-file').addEventListener('click', async () => {
       const file = document.getElementById('audio-file-input').files[0];
       if (!file) { setAudioStatus('Choose a PCM WAV file first.', true); return; }
       try { const decoded = decodeWav(await file.arrayBuffer()); await startAudioSource(new FileSource(decoded), `WAV ${file.name}`); }
       catch (error) { setAudioStatus(error.message, true); }
     });
-    document.getElementById('btn-audio-pause').addEventListener('click', () => { audioPipeline?.pause(); setAudioStatus('Audio pipeline paused.'); });
-    document.getElementById('btn-audio-resume').addEventListener('click', async () => { if (!audioPipeline) return; await audioPipeline.resume(); setAudioStatus('Audio pipeline resumed.'); });
-    document.getElementById('btn-audio-stop').addEventListener('click', () => { audioPipeline?.reset(); audioSource = null; document.getElementById('txt-audio-chunk').textContent = 'waiting'; document.getElementById('txt-audio-asr-queue').textContent = '0'; setAudioStatus('Audio pipeline reset.'); });
+    document.getElementById('btn-audio-pause').addEventListener('click', async () => {
+      try { await audioPipeline?.pause(); setAudioStatus('Audio pipeline paused.'); }
+      catch (error) { setAudioStatus(error.message, true); }
+    });
+    document.getElementById('btn-audio-resume').addEventListener('click', async () => {
+      if (!audioPipeline) return;
+      try { await audioPipeline.resume(); setAudioStatus('Audio pipeline resumed.'); }
+      catch (error) { setAudioStatus(error.message, true); }
+    });
+    document.getElementById('btn-audio-stop').addEventListener('click', async () => {
+      try {
+        await audioPipeline?.reset();
+        audioPipeline = null;
+        audioSource = null;
+        document.getElementById('txt-audio-chunk').textContent = 'waiting';
+        document.getElementById('txt-audio-asr-queue').textContent = '0';
+        setAudioStatus('Audio pipeline reset.');
+      } catch (error) { setAudioStatus(error.message, true); }
+    });
     document.getElementById('btn-asr-start').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/start')); asrEnabled = true; } catch (error) { document.getElementById('txt-asr-status').textContent = `error: ${error.message}`; } });
     document.getElementById('btn-asr-flush').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/flush')); } catch (error) { document.getElementById('txt-asr-status').textContent = `error: ${error.message}`; } });
 
     document.getElementById('btn-live-speech-start').addEventListener('click', async () => {
       try {
+        if (liveSpeechSession && ['STARTING', 'RUNNING', 'STOPPING'].includes(liveSpeechSession.state)) return;
         if (!signLibrary || !signScheduler) {
           document.getElementById('txt-g1-status').textContent = 'Avatar/Signs still loading...';
           return;
@@ -1175,35 +1250,25 @@
         speechOrchestrator.reset();
         speechOrchestrator.start();
 
-        const asrStatus = await asrRequest('/asr/start');
-        renderASR(asrStatus);
-        asrEnabled = true;
-
-        await startAudioSource(new MicrophoneSource(), 'Live Microphone');
-        document.getElementById('txt-g1-status').textContent = 'Live Speech Running (Listening...)';
-        document.getElementById('txt-g1-audio-status').textContent = 'Microphone Active';
+        if (audioPipeline?.state === 'running') {
+          await audioPipeline.reset();
+          audioPipeline = null;
+          audioSource = null;
+        }
+        await getLiveSpeechSession().start();
       } catch (error) {
-        document.getElementById('txt-g1-status').textContent = `Error: ${error.message}`;
+        speechOrchestrator?.stop();
+        setLiveSpeechState({ state: 'ERROR', error: liveSpeechSession?.error?.message || error.message });
       }
     });
 
     document.getElementById('btn-live-speech-stop').addEventListener('click', async () => {
       try {
-        if (asrEnabled) {
-          const flushRes = await asrRequest('/asr/flush');
-          renderASR(flushRes.status);
-          if (speechOrchestrator && flushRes.events) {
-            for (const ev of flushRes.events) {
-              speechOrchestrator.handleTranscriptEvent(ev);
-            }
-          }
-        }
-        audioPipeline?.pause();
+        await liveSpeechSession?.stop();
         speechOrchestrator?.stop();
-        document.getElementById('txt-g1-status').textContent = 'Live Speech Stopped';
-        document.getElementById('txt-g1-audio-status').textContent = 'Paused / Stopped';
+        if (liveSpeechSession) setLiveSpeechState({ state: liveSpeechSession.state, error: liveSpeechSession.error?.message });
       } catch (error) {
-        document.getElementById('txt-g1-status').textContent = `Error: ${error.message}`;
+        setLiveSpeechState({ state: 'ERROR', error: error.message });
       }
     });
 
