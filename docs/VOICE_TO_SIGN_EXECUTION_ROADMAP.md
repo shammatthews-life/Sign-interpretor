@@ -11,7 +11,7 @@
 | Milestone | Planned dates (IST) | Status | Acceptance summary |
 |---|---|---|---|
 | Phase 1 — R1 Stabilization | Oct 11–12 | REVIEW REQUIRED | Helper correction and automated/runtime checks pass. Complete manual visual review of individual wrist/finger-axis changes before R1 can pass. |
-| Phase 2 — Voice to Text | Oct 13–17 | IN PROGRESS — PH2-STT-03 implementation; live verification BLOCKED | Short/repeated utterance fixes and automated pipeline tests pass. Genuine speech-to-transcript-to-sign evidence remains outstanding. |
+| Phase 2 — Voice to Text | Oct 13–17 | IN PROGRESS — PH2-STT-04 implementation; live verification outstanding | Short/repeated utterance fixes and automated pipeline tests pass. Genuine speech-to-transcript-to-sign evidence remains outstanding. |
 | Phase 3 — Text to Sign Pipeline | Oct 18–24 | NOT STARTED | Transcript tokens resolve to an ordered animation queue; unsupported tokens remain visible. |
 | Phase 4 — Vocabulary Coverage | Oct 25–31 | NOT STARTED | Coverage has a defined denominator, provenance, validation, and disclosed limitations. |
 | Phase 5 — Extension Options and UX | Nov 1–7 | NOT STARTED | Main flow and playback controls operate reliably through the extension. |
@@ -111,6 +111,17 @@
 - **Acceptance decision:** PH2 Voice to Text remains open and is not PASS. The implementation addresses identified pipeline defects, but audio quality, actual one-word recognition, automatic pause-finalization behavior, repeated live playback, and end-to-end device/service operation still need a real speaker, microphone, local ASR service, and viewer.
 - **Files changed for this task:** `tools/avatar_viewer/LiveSpeechSession.mjs`, `tools/avatar_viewer/LiveSpeechSession.test.mjs`, `tools/avatar_viewer/SignScheduler.js`, `tools/avatar_viewer/SpeechSignOrchestrator.js`, `tools/avatar_viewer/SpeechSignOrchestrator.test.mjs`, `tools/avatar_viewer/index.html`, `tools/asr/streaming_asr.py`, `tools/validate_phase_f2_asr.py`, `tools/validate_speech_sign_orchestrator.mjs`, and this roadmap.
 - **Next action:** Run the four requested spoken cases (`Hello`, separate `Hello`, `Good`, and `Hello, good morning`) with the local ASR service and viewer available. Enable metadata-only diagnostics using `?speechDiagnostics=1`, record only phrases genuinely shown by ASR and their actual sign/animation status, and keep PH2 open until live evidence passes. Preserve R1 as REVIEW REQUIRED and protect the November 20 demonstration deadline.
+
+### PH2-STT-04 — Return finalized ASR events on flush
+
+- **Actual:** October 11, 2026
+- **Status:** Targeted fix and automated regression coverage PASS; live microphone verification not performed.
+- **Confirmed cause:** `LocalASRService.control("flush")` recorded the backend's finalized events but discarded them from its return value. The `/asr/*` route serializes this return value directly, while `LiveSpeechSession` forwards transcript events only when the response contains `events`; therefore flush-finalized transcripts could not reach the orchestration callback. The live-session callback already used the right forwarding path and needed no duplicate forwarding branch.
+- **Fix:** Flush now calls the backend once, records that returned event list once, and returns its event reports together with the resulting current status. Other control actions retain their status-only responses, and the HTTP route preserves the result unchanged. The shared ASR status renderer now updates the G1 ASR state label; ASR and live-session errors update that same label explicitly.
+- **Verification:** `.\.venv\Scripts\python.exe tools\validate_phase_f2_asr.py` exercises flush event payload, updated final status, a single backend flush invocation, and existing start/pause/reset/restart behavior. `node --test tools\avatar_viewer\LiveSpeechSession.test.mjs tools\avatar_viewer\SpeechSignOrchestrator.test.mjs` exercises flush-to-session callback delivery, including separate repeated `hello` utterances, plus orchestration and scheduler cases. `node tools\validate_speech_sign_orchestrator.mjs` checks the directly related resolver/scheduler validator.
+- **Live verification:** Not performed in this code-change task. Automated events are not evidence of actual microphone recognition or avatar playback; PH2 remains open until real spoken transcript and playback are observed.
+- **R1:** Remains REVIEW REQUIRED pending its separate visual sign-off.
+- **Next action:** Perform a single bounded microphone-to-avatar test with the local service and viewer, then record the actual ASR final and whether its sign starts playback. Do not mark Phase 2 complete without that evidence.
 
 ## Risks and guardrails
 

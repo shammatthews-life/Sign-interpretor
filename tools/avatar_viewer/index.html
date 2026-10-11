@@ -781,6 +781,7 @@
     function renderASR(status) {
       if (!status) return;
       if (document.getElementById('txt-asr-status')) document.getElementById('txt-asr-status').textContent = status.state || 'stopped';
+      if (document.getElementById('txt-g1-asr-status')) document.getElementById('txt-g1-asr-status').textContent = status.error ? `error: ${status.error}` : (status.state || 'stopped');
       if (document.getElementById('txt-asr-device')) document.getElementById('txt-asr-device').textContent = (status.device ? status.device.toUpperCase() : 'CPU') + (status.compute_type ? ` (${status.compute_type})` : '');
       if (document.getElementById('txt-asr-model')) document.getElementById('txt-asr-model').textContent = status.model || 'tiny.en';
       if (document.getElementById('txt-asr-worker')) document.getElementById('txt-asr-worker').textContent = status.worker_state || 'IDLE';
@@ -796,6 +797,11 @@
       if (document.getElementById('txt-asr-decode-latency')) document.getElementById('txt-asr-decode-latency').textContent = decodeMs;
       if (document.getElementById('txt-asr-rtf')) document.getElementById('txt-asr-rtf').textContent = status.rtf === null || status.rtf === undefined ? '—' : status.rtf.toFixed(3);
       if (document.getElementById('txt-asr-timing')) document.getElementById('txt-asr-timing').textContent = `first ${firstMs}; final ${finalMs}; RTF ${status.rtf === null || status.rtf === undefined ? '—' : status.rtf.toFixed(3)}`;
+    }
+    function renderASRError(error) {
+      const message = `error: ${error.message}`;
+      if (document.getElementById('txt-asr-status')) document.getElementById('txt-asr-status').textContent = message;
+      if (document.getElementById('txt-g1-asr-status')) document.getElementById('txt-g1-asr-status').textContent = message;
     }
     async function asrRequest(path, body = {}) {
       const response = await fetch(path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
@@ -815,7 +821,6 @@
         renderASR(response.status);
 
         if (response.status) {
-          if (document.getElementById('txt-g1-asr-status')) document.getElementById('txt-g1-asr-status').textContent = `${response.status.device ? response.status.device.toUpperCase() : 'CPU'} ${response.status.worker_state || ''}`;
           if (document.getElementById('txt-g1-partial')) document.getElementById('txt-g1-partial').textContent = response.status.partial || '—';
           if (document.getElementById('txt-g1-final')) document.getElementById('txt-g1-final').textContent = response.status.final || '—';
           if (response.status.last_decode_ms !== null && response.status.last_decode_ms !== undefined) {
@@ -830,7 +835,7 @@
         }
       } catch (error) {
         asrEnabled = false;
-        document.getElementById('txt-asr-status').textContent = `error: ${error.message}`;
+        renderASRError(error);
       }
     }
     async function createAudioPipeline() {
@@ -871,6 +876,7 @@
             : state === 'STARTING' ? 'Starting microphone and ASR...'
               : state === 'STOPPING' ? 'Stopping microphone and ASR...'
                 : 'idle';
+      if (state === 'ERROR') renderASRError(new Error(error || 'Live speech session failed.'));
       audioStatus.textContent = state === 'RUNNING' ? 'Microphone Active'
         : state === 'ERROR' ? 'Error — microphone/ASR cleanup attempted'
           : state === 'STOPPED' ? 'Microphone released'
@@ -1230,8 +1236,8 @@
         setAudioStatus('Audio pipeline reset.');
       } catch (error) { setAudioStatus(error.message, true); }
     });
-    document.getElementById('btn-asr-start').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/start')); asrEnabled = true; } catch (error) { document.getElementById('txt-asr-status').textContent = `error: ${error.message}`; } });
-    document.getElementById('btn-asr-flush').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/flush')); } catch (error) { document.getElementById('txt-asr-status').textContent = `error: ${error.message}`; } });
+    document.getElementById('btn-asr-start').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/start')); asrEnabled = true; } catch (error) { renderASRError(error); } });
+    document.getElementById('btn-asr-flush').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/flush')); } catch (error) { renderASRError(error); } });
 
     document.getElementById('btn-live-speech-start').addEventListener('click', async () => {
       try {

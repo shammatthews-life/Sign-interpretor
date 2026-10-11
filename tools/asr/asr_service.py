@@ -91,7 +91,9 @@ class LocalASRService:
         elif action == "resume":
             self.backend.resume()
         elif action == "flush":
-            self._record(self.backend.flush())
+            events = self.backend.flush()
+            self._record(events)
+            return {"events": [event.report() for event in events], "status": self.status()}
         elif action == "stop":
             self.backend.stop()
         elif action == "reset":
