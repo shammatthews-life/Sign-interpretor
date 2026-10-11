@@ -185,6 +185,7 @@ orchestrator3.handleTranscriptEvent({
 const diag3 = orchestrator3.getDiagnostics();
 assert(diag3.unknownWords.includes('MYSTERY'), 'Unknown word MYSTERY must be reported.');
 assert(diag3.unavailableSigns.includes('water'), 'MOTION_INCOMPLETE sign WATER must be reported as unavailable.');
+assert(diag3.unavailableSignDetails.some(sign => sign.id === 'water' && sign.reason === 'MOTION_INCOMPLETE'), 'Unavailable sign feedback must expose the motion status.');
 assert(!diag3.committedSignIds.includes('water'), 'WATER must NOT enter playable sign queue.');
 assert(!diag3.committedSignIds.includes('mystery'), 'Unknown word must NOT be fabricated as sign.');
 assert(JSON.stringify(diag3.committedSignIds) === JSON.stringify(['hello', 'good']), `Expected ['hello', 'good'], got ${JSON.stringify(diag3.committedSignIds)}`);

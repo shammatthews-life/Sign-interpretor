@@ -16,6 +16,9 @@ export class SignScheduler {
     const normalizedId = String(id).trim().toLowerCase();
     const playable = this.library.getPlayable(normalizedId, this.bonesMap);
     this.queue.push({ id: normalizedId, playable });
+    if (globalThis.__SPEECH_DIAGNOSTICS__ === true) {
+      console.debug('[SignScheduler] enqueue', { queueLength: this.queue.length, current: Boolean(this.currentId), duplicateSuppressed: false });
+    }
     if (!this.currentId && !this.isPaused) this.startNext();
     this.emit();
   }
@@ -34,11 +37,13 @@ export class SignScheduler {
     this.player.loadSign(next.playable); // Safe neutral transition before each sign.
     this.player.play();
     this.emitLifecycle('playback_start', next.id);
+    if (globalThis.__SPEECH_DIAGNOSTICS__ === true) console.debug('[SignScheduler] playback_start');
     this.emit();
   }
 
   completeCurrent() {
     if (this.currentId) this.emitLifecycle('playback_end', this.currentId);
+    if (globalThis.__SPEECH_DIAGNOSTICS__ === true) console.debug('[SignScheduler] playback_end');
     this.currentId = null;
     if (!this.isPaused) this.startNext();
     else this.emit();
@@ -46,7 +51,14 @@ export class SignScheduler {
 
   pause() { this.isPaused = true; this.player.pause(); this.emit(); }
   resume() { this.isPaused = false; if (this.currentId) this.player.play(); else this.startNext(); this.emit(); }
-  cancel() { this.queue = []; this.currentId = null; this.isPaused = false; this.player.stop(); this.emit(); }
+  cancel() {
+    this.queue = [];
+    this.currentId = null;
+    this.isPaused = false;
+    this.player.stop();
+    if (globalThis.__SPEECH_DIAGNOSTICS__ === true) console.debug('[SignScheduler] reset');
+    this.emit();
+  }
 
   getState() {
     return { current: this.currentId, queued: this.queue.map(item => item.id), currentTimeMs: this.player.currentTimeMs, paused: this.isPaused };

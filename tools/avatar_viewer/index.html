@@ -635,6 +635,7 @@
     import { SignAuthoringController } from './SignAuthoringController.js';
     import { MicrophoneSource, FileSource, StreamingAudioPipeline, decodeWav } from '../audio_pipeline/AudioPipeline.js';
     import { SpeechSignOrchestrator } from './SpeechSignOrchestrator.js';
+    globalThis.__SPEECH_DIAGNOSTICS__ = new URLSearchParams(window.location.search).get('speechDiagnostics') === '1';
 
     // 1. Scene & Renderer Setup
     const container = document.getElementById('viewport-container');
@@ -742,7 +743,9 @@
       if (document.getElementById('txt-g1-queue')) document.getElementById('txt-g1-queue').textContent = diag.queuedSigns && diag.queuedSigns.length ? diag.queuedSigns.map(id => id.toUpperCase()).join(' → ') : 'empty';
       if (document.getElementById('txt-g1-committed')) document.getElementById('txt-g1-committed').textContent = diag.committedSignIds && diag.committedSignIds.length ? diag.committedSignIds.map(id => id.toUpperCase()).join(' → ') : 'none';
       if (document.getElementById('txt-g1-unknown')) document.getElementById('txt-g1-unknown').textContent = diag.unknownWords && diag.unknownWords.length ? diag.unknownWords.join(', ') : 'none';
-      if (document.getElementById('txt-g1-unavailable')) document.getElementById('txt-g1-unavailable').textContent = diag.unavailableSigns && diag.unavailableSigns.length ? diag.unavailableSigns.map(id => id.toUpperCase()).join(', ') : 'none';
+      if (document.getElementById('txt-g1-unavailable')) document.getElementById('txt-g1-unavailable').textContent = diag.unavailableSignDetails && diag.unavailableSignDetails.length
+        ? diag.unavailableSignDetails.map(({ id, reason }) => `${id.toUpperCase()} (${reason})`).join(', ')
+        : diag.unavailableSigns && diag.unavailableSigns.length ? diag.unavailableSigns.map(id => id.toUpperCase()).join(', ') : 'none';
       const translation = diag.translation;
       if (document.getElementById('txt-g2-gloss')) document.getElementById('txt-g2-gloss').textContent = translation?.gloss_sequence?.join(' ') || '—';
       if (document.getElementById('txt-g2-sign-ids')) document.getElementById('txt-g2-sign-ids').textContent = translation?.sign_ids?.join(' → ') || 'none';

@@ -5,7 +5,8 @@ export class LiveSpeechSession {
     request,
     onState = () => {},
     onASRStatus = () => {},
-    onTranscriptEvents = () => {}
+    onTranscriptEvents = () => {},
+    silenceDurationMs = 800
   }) {
     if (![createSource, createPipeline, request].every(value => typeof value === 'function')) {
       throw new TypeError('LiveSpeechSession requires source, pipeline, and request factories.');
@@ -16,6 +17,7 @@ export class LiveSpeechSession {
     this.onState = onState;
     this.onASRStatus = onASRStatus;
     this.onTranscriptEvents = onTranscriptEvents;
+    this.silenceDurationMs = silenceDurationMs;
     this.state = 'IDLE';
     this.error = null;
     this.pipeline = null;
@@ -27,6 +29,10 @@ export class LiveSpeechSession {
     this.stopPromise = null;
     this.cleanupPromise = null;
     this.sessionId = 0;
+    this.speechActive = false;
+    this.silenceMs = 0;
+    this.finalizingPromise = null;
+    this.chunkSendChain = Promise.resolve();
   }
 
   #setState(state, error = null) {
@@ -67,6 +73,9 @@ export class LiveSpeechSession {
       }
       this.asrStarted = true;
       this.acceptingChunks = true;
+      this.speechActive = false;
+      this.silenceMs = 0;
+      this.chunkSendChain = Promise.resolve();
       this.onASRStatus(response);
       this.#setState('RUNNING');
       return response;
@@ -82,31 +91,79 @@ export class LiveSpeechSession {
   }
 
   #queueChunk(result, sessionId) {
-    if (!this.acceptingChunks || this.state !== 'RUNNING' || sessionId !== this.sessionId || !result.accepted) return;
-    let chunkError = null;
-    const task = this.#sendChunk(result)
-      .catch(error => {
-        this.acceptingChunks = false;
-        chunkError = error;
-        this.#setState('ERROR', error);
-      })
-      .finally(() => {
-        this.pendingChunks.delete(task);
-        if (chunkError && !this.cleanupPromise) {
-          const error = chunkError;
-          this.asrStarted = false;
-          this.cleanupPromise = Promise.all([...this.pendingChunks]).then(() =>
-            this.#releaseResources({ resetASR: true })
-          ).then(cleanupErrors => {
-            if (cleanupErrors.length) {
-              this.#setState('ERROR', new AggregateError([error, ...cleanupErrors], 'Live speech failed and cleanup reported errors.'));
-            }
-          }).catch(cleanupError => {
-            this.#setState('ERROR', new AggregateError([error, cleanupError], 'Live speech failed and cleanup reported errors.'));
-          }).finally(() => { this.cleanupPromise = null; });
+    if (!this.acceptingChunks || this.state !== 'RUNNING' || sessionId !== this.sessionId) return;
+    const durationMs = result.chunk.samples.length * 1000 / result.chunk.sampleRate;
+    if (!result.accepted) {
+      if (this.speechActive) {
+        this.silenceMs += durationMs;
+        if (this.silenceMs >= this.silenceDurationMs && !this.finalizingPromise) {
+          this.speechActive = false;
+          this.silenceMs = 0;
+          this.#trace('vad_speech_end', { silenceDurationMs: this.silenceDurationMs });
+          this.finalizingPromise = this.#finalizeUtterance(sessionId)
+            .catch(error => {
+              this.acceptingChunks = false;
+              this.#setState('ERROR', error);
+            })
+            .finally(() => { this.finalizingPromise = null; });
         }
-      });
+      }
+      this.#trace('audio_chunk', { accepted: false, durationMs, rms: result.diagnostics?.rms });
+      return;
+    }
+    if (!this.speechActive) this.#trace('vad_speech_start');
+    this.speechActive = true;
+    this.silenceMs = 0;
+    this.#trace('audio_chunk', { accepted: true, durationMs, rms: result.diagnostics?.rms });
+
+    const precedingFinalization = this.finalizingPromise;
+    let chunkError = null;
+    const task = this.chunkSendChain.then(async () => {
+      if (precedingFinalization) await precedingFinalization;
+      if (!this.acceptingChunks || this.state !== 'RUNNING') return;
+      await this.#sendChunk(result);
+    }).catch(error => {
+      this.acceptingChunks = false;
+      chunkError = error;
+      this.#setState('ERROR', error);
+    }).finally(() => {
+      this.pendingChunks.delete(task);
+      if (chunkError && !this.cleanupPromise) {
+        const error = chunkError;
+        this.asrStarted = false;
+        this.cleanupPromise = Promise.all([...this.pendingChunks]).then(() =>
+          this.#releaseResources({ resetASR: true })
+        ).then(cleanupErrors => {
+          if (cleanupErrors.length) {
+            this.#setState('ERROR', new AggregateError([error, ...cleanupErrors], 'Live speech failed and cleanup reported errors.'));
+          }
+        }).catch(cleanupError => {
+          this.#setState('ERROR', new AggregateError([error, cleanupError], 'Live speech failed and cleanup reported errors.'));
+        }).finally(() => { this.cleanupPromise = null; });
+      }
+    });
+    this.chunkSendChain = task;
     this.pendingChunks.add(task);
+  }
+
+  async #finalizeUtterance(sessionId) {
+    await Promise.all([...this.pendingChunks]);
+    if (!this.asrStarted || sessionId !== this.sessionId) return;
+    this.#trace('asr_flush');
+    const response = await this.request('/asr/flush');
+    this.onASRStatus(response.status);
+    if (response.events?.length) {
+      for (const event of response.events) {
+        this.#trace('asr_transcript', { kind: event.kind, characterCount: event.text?.length || 0 });
+      }
+      this.onTranscriptEvents(response.events);
+    }
+  }
+
+  #trace(event, details = {}) {
+    if (globalThis.__SPEECH_DIAGNOSTICS__ === true) {
+      console.debug(`[LiveSpeechSession] ${event}`, details);
+    }
   }
 
   async #sendChunk(result) {
@@ -117,7 +174,12 @@ export class LiveSpeechSession {
       audio_end_ms: result.chunk.capturedAt + durationMs
     });
     this.onASRStatus(response.status);
-    if (response.events?.length) this.onTranscriptEvents(response.events);
+    if (response.events?.length) {
+      for (const event of response.events) {
+        this.#trace('asr_transcript', { kind: event.kind, characterCount: event.text?.length || 0 });
+      }
+      this.onTranscriptEvents(response.events);
+    }
   }
 
   async stop() {
@@ -154,12 +216,18 @@ export class LiveSpeechSession {
       }
     }
     await Promise.all([...this.pendingChunks]);
+    if (this.finalizingPromise) await this.finalizingPromise;
 
     if (flush) {
       try {
         const response = await this.request('/asr/flush');
         this.onASRStatus(response.status);
-        if (response.events?.length) this.onTranscriptEvents(response.events);
+        if (response.events?.length) {
+          for (const event of response.events) {
+            this.#trace('asr_transcript', { kind: event.kind, characterCount: event.text?.length || 0 });
+          }
+          this.onTranscriptEvents(response.events);
+        }
       } catch (error) {
         errors.push(error);
       }

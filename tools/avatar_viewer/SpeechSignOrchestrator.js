@@ -49,10 +49,12 @@ export class SpeechSignOrchestrator {
 
     // Incremental transcript & commitment tracking
     this.committedSigns = [];       // [{ id, word, committedAt, enqueuedAt }]
+    this.utteranceCommittedCount = 0;
     this.candidateSigns = [];       // currently pending uncommitted sign IDs
     this.trailingCandidates = new Map(); // key -> { count, firstSeenAt }
     this.unknownWordsSet = new Set();
     this.unavailableSignsSet = new Set();
+    this.unavailableSignReasons = new Map();
     this.lastProcessedText = '';
     this.lastTranslation = null;
 
@@ -117,10 +119,12 @@ export class SpeechSignOrchestrator {
     this.state = 'idle';
     this.signScheduler.cancel();
     this.committedSigns = [];
+    this.utteranceCommittedCount = 0;
     this.candidateSigns = [];
     this.trailingCandidates.clear();
     this.unknownWordsSet.clear();
     this.unavailableSignsSet.clear();
+    this.unavailableSignReasons.clear();
     this.lastProcessedText = '';
     this.lastTranslation = null;
     this.queueEntryTimes.clear();
@@ -180,6 +184,29 @@ export class SpeechSignOrchestrator {
     const parsed = processor.process(normalized);
     this.lastTranslation = this.translator ? parsed : null;
     const allTokens = normalized.split(' ');
+    if (globalThis.__SPEECH_DIAGNOSTICS__ === true) {
+      const unknownCounts = new Map();
+      for (const word of parsed.unknownWords) {
+        const token = word.toLowerCase();
+        unknownCounts.set(token, (unknownCounts.get(token) || 0) + 1);
+      }
+      const tokenResults = allTokens.map((token, index) => {
+        const unknownCount = unknownCounts.get(token) || 0;
+        if (unknownCount) {
+          unknownCounts.set(token, unknownCount - 1);
+          return { index, characterCount: token.length, status: 'UNSUPPORTED' };
+        }
+        return { index, characterCount: token.length, status: 'RESOLVED' };
+      });
+      console.debug('[SpeechSignOrchestrator] normalized utterance', {
+        kind: isFinal ? 'FINAL_TRANSCRIPT' : 'PARTIAL_TRANSCRIPT',
+        tokens: tokenResults,
+        signResolutions: parsed.signIds.map(id => {
+          const result = this._checkPlayability(id);
+          return { status: result.playable ? 'PLAYABLE' : 'UNAVAILABLE', reason: result.reason || null };
+        }),
+      });
+    }
 
     // Register any unknown words reported by the parser
     for (const unknown of parsed.unknownWords) {
@@ -187,13 +214,22 @@ export class SpeechSignOrchestrator {
     }
 
     const allSignIds = parsed.signIds;
-    const committedCount = this.committedSigns.length;
+    const committedCount = this.utteranceCommittedCount;
 
     // Candidate signs that have not yet been committed to SignScheduler
     const candidateSignIds = allSignIds.slice(committedCount);
     this.candidateSigns = candidateSignIds;
 
     if (candidateSignIds.length === 0) {
+      if (globalThis.__SPEECH_DIAGNOSTICS__ === true) {
+        console.debug('[SpeechSignOrchestrator] no new sign candidates', {
+          duplicateSuppressed: parsed.signIds.length > 0 && committedCount > 0,
+        });
+      }
+      if (isFinal) {
+        this.utteranceCommittedCount = 0;
+        this.trailingCandidates.clear();
+      }
       this.emitState();
       return;
     }
@@ -244,6 +280,10 @@ export class SpeechSignOrchestrator {
     }
 
     this.lastProcessedText = normalized;
+    if (isFinal) {
+      this.utteranceCommittedCount = 0;
+      this.trailingCandidates.clear();
+    }
     this.emitState();
   }
 
@@ -251,11 +291,19 @@ export class SpeechSignOrchestrator {
    * Commit a single sign ID to the SignScheduler, filtering out unplayable signs.
    */
   _commitSign(signId, isFinal) {
+    this.utteranceCommittedCount += 1;
     const playability = this._checkPlayability(signId);
 
     if (!playability.playable) {
+      if (globalThis.__SPEECH_DIAGNOSTICS__ === true) {
+        console.debug('[SpeechSignOrchestrator] sign resolution', {
+          result: 'unavailable',
+          reason: playability.reason,
+        });
+      }
       // Report unavailable and skip scheduling; record as processed to prevent infinite loop
       this.unavailableSignsSet.add(signId);
+      this.unavailableSignReasons.set(signId, playability.reason);
       this.committedSigns.push({
         id: signId,
         status: 'UNAVAILABLE',
@@ -264,6 +312,9 @@ export class SpeechSignOrchestrator {
         enqueuedAt: null,
       });
       return;
+    }
+    if (globalThis.__SPEECH_DIAGNOSTICS__ === true) {
+      console.debug('[SpeechSignOrchestrator] sign resolution', { result: 'playable' });
     }
 
     const now = performance.now();
@@ -383,6 +434,7 @@ export class SpeechSignOrchestrator {
       signsCompleted: this.completedSignsCount,
       unknownWords: Array.from(this.unknownWordsSet),
       unavailableSigns: Array.from(this.unavailableSignsSet),
+      unavailableSignDetails: Array.from(this.unavailableSignReasons, ([id, reason]) => ({ id, reason })),
       candidateSigns: this.candidateSigns,
       translation: this.lastTranslation,
       timings: {

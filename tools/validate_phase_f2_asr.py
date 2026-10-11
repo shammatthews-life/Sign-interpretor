@@ -57,6 +57,26 @@ backend.start()
 events = backend.accept_audio_chunk(np.zeros(16000, dtype=np.float32), audio_start_ms=0, audio_end_ms=1000)
 assert backend.state == "running" and [event.kind for event in events] == ["PARTIAL_TRANSCRIPT"], "Backend did not restart with a fresh transcript session."
 
+class ShortUtteranceModel:
+    def transcribe(self, _audio, **_kwargs):
+        return [Segment(" hello")], object()
+
+short_backend = FasterWhisperBackend(
+    model_name="short-test",
+    model_factory=lambda *_args, **_kwargs: ShortUtteranceModel(),
+    minimum_decode_ms=1000,
+)
+short_backend.start()
+short_audio = np.zeros(3200, dtype=np.float32)  # 200 ms, below the partial decode minimum.
+assert short_backend.accept_audio_chunk(short_audio, audio_start_ms=0, audio_end_ms=200) == [], "Short utterance should wait for finalization, not be partially decoded."
+events = short_backend.flush()
+assert [event.kind for event in events] == ["FINAL_TRANSCRIPT"] and events[0].text == "hello", "Explicit flush must finalize audio shorter than the decode minimum."
+assert len(short_backend.samples) == 0, "Flush must clear the completed utterance audio."
+assert short_backend.accept_audio_chunk(short_audio, audio_start_ms=500, audio_end_ms=700) == [], "Fresh short utterance should wait for finalization."
+events = short_backend.flush()
+assert [event.kind for event in events] == ["FINAL_TRANSCRIPT"] and events[0].text == "hello", "A fresh utterance must be allowed to repeat the same final transcript."
+short_backend.stop()
+
 class StuckWorker:
     def is_alive(self): return True
     def join(self, timeout=None): self.join_timeout = timeout
@@ -122,5 +142,6 @@ assert response["status"]["audio_duration_ms"] == 100, "Restart retained stale A
 
 print("PASS: ASR backend lifecycle loads once, resets cleanly, and restarts without stale transcript state")
 print("PASS: buffered audio windows emit stabilized partial/final transcript events")
+print("PASS: short buffered utterances finalize on flush and repeated finals are not suppressed across utterance boundaries")
 print("PASS: duplicate suppression and event timing/RTF reporting work")
 print("PASS: local F1-to-ASR service bridge accepts canonical float32 chunks and starts a fresh session after reset")

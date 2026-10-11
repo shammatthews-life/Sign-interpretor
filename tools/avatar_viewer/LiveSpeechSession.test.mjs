@@ -3,7 +3,7 @@ import test from 'node:test';
 import { LiveSpeechSession } from './LiveSpeechSession.mjs';
 import { MicrophoneSource } from '../audio_pipeline/AudioPipeline.js';
 
-function createHarness({ sourceStart = async () => {}, requestOverrides = {} } = {}) {
+function createHarness({ sourceStart = async () => {}, requestOverrides = {}, silenceDurationMs = 800 } = {}) {
   const sources = [];
   const pipelines = [];
   const requests = [];
@@ -63,7 +63,8 @@ function createHarness({ sourceStart = async () => {}, requestOverrides = {} } =
     request,
     onState: state => states.push(state),
     onASRStatus: () => {},
-    onTranscriptEvents: events => transcripts.push(...events)
+    onTranscriptEvents: events => transcripts.push(...events),
+    silenceDurationMs
   });
   return { session, sources, pipelines, requests, states, transcripts };
 }
@@ -173,6 +174,46 @@ test('accepted chunks reach ASR and transcript events are forwarded; stopped chu
     chunk: { samples: new Float32Array(1600), sampleRate: 16000, capturedAt: 200 }
   });
   assert.equal(harness.requests.filter(item => item.path === '/asr/chunk').length, 1);
+});
+
+test('VAD silence flushes short utterances and allows the same word in a new utterance', async () => {
+  const finalHello = { kind: 'FINAL_TRANSCRIPT', text: 'hello' };
+  const harness = createHarness({
+    silenceDurationMs: 200,
+    requestOverrides: {
+      '/asr/flush': async () => ({ status: { state: 'running' }, events: [finalHello] })
+    }
+  });
+  const accepted = {
+    accepted: true,
+    samplesBase64: 'short-word',
+    chunk: { samples: new Float32Array(1600), sampleRate: 16000, capturedAt: 0 }
+  };
+  const silence = {
+    accepted: false,
+    diagnostics: { rms: 0 },
+    chunk: { samples: new Float32Array(1600), sampleRate: 16000, capturedAt: 100 }
+  };
+
+  await harness.session.start();
+  harness.pipelines[0].emit(accepted);
+  await Promise.all([...harness.session.pendingChunks]);
+  harness.pipelines[0].emit(silence);
+  harness.pipelines[0].emit({ ...silence, chunk: { ...silence.chunk, capturedAt: 200 } });
+  await harness.session.finalizingPromise;
+
+  harness.pipelines[0].emit({ ...accepted, chunk: { ...accepted.chunk, capturedAt: 300 } });
+  await Promise.all([...harness.session.pendingChunks]);
+  harness.pipelines[0].emit({ ...silence, chunk: { ...silence.chunk, capturedAt: 400 } });
+  harness.pipelines[0].emit({ ...silence, chunk: { ...silence.chunk, capturedAt: 500 } });
+  await harness.session.finalizingPromise;
+
+  assert.deepEqual(harness.transcripts, [finalHello, finalHello]);
+  assert.deepEqual(
+    harness.requests.filter(item => ['/asr/chunk', '/asr/flush'].includes(item.path)).map(item => item.path),
+    ['/asr/chunk', '/asr/flush', '/asr/chunk', '/asr/flush']
+  );
+  await harness.session.stop();
 });
 
 test('chunk failure reports ERROR, stops capture, and resets ASR', async () => {

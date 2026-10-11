@@ -325,12 +325,23 @@ class FasterWhisperBackend(StreamingASRBackend):
             with self._lock:
                 returned = list(self._completed_events)
                 self._completed_events.clear()
+                self._reset_utterance_locked()
                 return returned
         else:
             with self._lock:
                 if not len(self.samples):
                     return []
-            return self._decode(final=True)
+            events = self._decode(final=True)
+            with self._lock:
+                self._reset_utterance_locked()
+            return events
+
+    def _reset_utterance_locked(self) -> None:
+        """Keep the running model, but start fresh audio and transcript state."""
+        self.samples = np.empty(0, dtype=np.float32)
+        self.buffer_start_ms = self.buffer_end_ms = self.last_decode_end_ms = None
+        self._pending_decode_count = 0
+        self.stabilizer.reset()
 
     def _trim_window(self) -> None:
         maximum_samples = round(self.sample_rate * self.rolling_window_ms / 1000)
@@ -444,7 +455,7 @@ class FasterWhisperBackend(StreamingASRBackend):
         if stable is None:
             return None
 
-        return TranscriptEvent(
+        event = TranscriptEvent(
             kind="FINAL_TRANSCRIPT" if final else "PARTIAL_TRANSCRIPT",
             text=stable,
             audio_start_ms=start_ms,
@@ -455,6 +466,9 @@ class FasterWhisperBackend(StreamingASRBackend):
             confidence=sum(confidence_values) / len(confidence_values) if confidence_values else None,
             backlog_dropped=backlog_dropped,
         )
+        if os.environ.get("SIGN_SPEECH_DIAGNOSTICS") == "1":
+            print(f"[ASR] {event.kind} character_count={len(stable)}", file=sys.stderr)
+        return event
 
     def _decode(self, *, final: bool) -> list[TranscriptEvent]:
         """Synchronous decoding helper for non-threaded mode."""
