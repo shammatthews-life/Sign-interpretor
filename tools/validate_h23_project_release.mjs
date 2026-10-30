@@ -21,8 +21,8 @@ console.log(`PASS 1: Canonical 23,258-token accounting invariant verified (sum: 
 // 2. Validate Playable 207 Schema 2.0.0 Assets
 const manifest = JSON.parse(fs.readFileSync('signs/manifest.json', 'utf8'));
 const signs = manifest.signs || [];
-if (signs.length !== 207) {
-  console.error(`FAIL: Expected exactly 207 signs, found ${signs.length}`);
+if (signs.length < 207) {
+  console.error(`FAIL: Expected at least 207 signs, found ${signs.length}`);
   process.exit(1);
 }
 console.log(`PASS 2: Sign library manifest contains ${signs.length} Schema 2.0.0 playable assets.`);

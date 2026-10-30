@@ -172,7 +172,9 @@ PLAYABLE_SIGNS = {
     "paper", "board", "hope", "bond", "combination", "resource", "range",
     "fine", "somewhere",
     # Phase H21 High-Impact Lexical Signs
-    "art", "audience", "college", "draw", "energy", "example", "game", "lead", "line", "mark", "note", "parent", "pause", "plan", "posture", "power", "reason", "rule", "simple", "space", "speed", "step", "teach", "topic", "train"
+    "art", "audience", "college", "draw", "energy", "example", "game", "lead", "line", "mark", "note", "parent", "pause", "plan", "posture", "power", "reason", "rule", "simple", "space", "speed", "step", "teach", "topic", "train",
+    # Phase H24 High-Impact Lexical Signs (17 authentic signs covering 102 tokens)
+    "increase", "little", "rest", "let", "able", "part", "big", "stop", "watch", "chart", "subject", "culture", "product", "audio", "positive", "trust", "match"
 }
 
 # Structural ISL Function Words (Grammar Omissions)

@@ -18,13 +18,13 @@
       "communicative_status": "COMMUNICATED_VIA_SYNTAX"
     },
     "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
-      "tokens": 8946,
-      "percentage": 38.46,
+      "tokens": 9054,
+      "percentage": 38.93,
       "communicative_status": "COMMUNICATED_VIA_3D_MOTION"
     },
     "SUBTITLE_FALLBACK": {
-      "tokens": 3559,
-      "percentage": 15.30,
+      "tokens": 3451,
+      "percentage": 14.84,
       "communicative_status": "FALLBACK_TRANSPARENT_SUBTITLE"
     },
     "PHRASE_TRANSLATED": {
@@ -39,14 +39,14 @@
     },
     "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": {
       "tokens": 1,
-      "percentage": 0.00,
+      "percentage": 0.0,
       "communicative_status": "PENDING_3D_KEYFRAMING"
     }
   },
   "summary_metrics": {
-    "total_communicative_coverage_tokens": 19698,
-    "total_communicative_coverage_percent": 84.69,
-    "playable_sign_library_assets": 207,
+    "total_communicative_coverage_tokens": 19806,
+    "total_communicative_coverage_percent": 85.16,
+    "playable_sign_library_assets": 224,
     "active_multiword_phrases": 100,
     "two_handed_fingerspelled_letters": 26,
     "zero_silent_token_loss_verified": true

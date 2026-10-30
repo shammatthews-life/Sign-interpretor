@@ -1,5 +1,5 @@
 /**
- * ISL Accessibility Translator - Overlay UI Component (Phase H6)
+ * ISL Accessibility Translator - Overlay UI Component (Phase H24 Stunning Right Sidebar Edition)
  * Encapsulated inside Shadow DOM for total isolation from host page styles.
  */
 
@@ -19,9 +19,12 @@
       this.shadowRoot = null;
       this.elements = {};
       this.isMinimized = false;
+      this.isSidebarMode = true; // Default: Modern right sidebar view
+      this.isCollapsed = false;
       this.isVisible = true;
       this.isDragging = false;
       this.dragOffset = { x: 0, y: 0 };
+      this.fallbackTimer = null;
     }
 
     /**
@@ -45,24 +48,33 @@
     buildDOM() {
       const container = document.createElement('div');
       container.innerHTML = `
+        <!-- Floating Launcher Badge (for floating mode) -->
         <div id="isl-launcher-badge" class="hidden" title="Click to open ISL Accessibility Translator">
           <span>🤟 ISL Translator</span>
         </div>
 
-        <div id="isl-overlay-container">
-          <!-- Header -->
+        <!-- Right Edge Dock Toggle Handle (for collapsed sidebar) -->
+        <div id="isl-sidebar-toggle-handle" class="hidden" title="Open ISL Accessibility Sidebar">
+          <span class="isl-handle-icon">🤟</span>
+          <span class="isl-handle-text">ISL BAR</span>
+        </div>
+
+        <!-- Main Container: Defaults to stunning right sidebar dock -->
+        <div id="isl-overlay-container" class="sidebar-mode">
+          <!-- Header Bar -->
           <div id="isl-header-bar">
             <div class="isl-title-group">
               <span class="isl-app-title">🤟 ISL Translator</span>
-              <span class="isl-version-tag">H8 YouTube</span>
+              <span id="isl-mode-badge" class="isl-version-tag">Right Sidebar</span>
             </div>
             <div class="isl-header-actions">
-              <button id="btn-minimize" class="isl-icon-btn" title="Minimize">─</button>
+              <button id="btn-layout-mode" class="isl-icon-btn" title="Toggle Right Sidebar / Floating Window">◫</button>
+              <button id="btn-minimize" class="isl-icon-btn" title="Collapse Sidebar">─</button>
               <button id="btn-close" class="isl-icon-btn" title="Close">✕</button>
             </div>
           </div>
 
-          <!-- Status Matrix (Task H6-C) -->
+          <!-- Status Matrix Pills -->
           <div id="isl-status-matrix">
             <div class="isl-status-pill">
               <span class="isl-status-label">CONN</span>
@@ -86,17 +98,17 @@
             </div>
           </div>
 
-          <!-- Body -->
+          <!-- Scrollable Middle Section: Live YouTube Telemetry, Transcripts & Queue -->
           <div id="isl-overlay-body">
-            <!-- Development-mode H7 YouTube job result -->
+            <!-- YouTube Job & Sync Card -->
             <div class="isl-card" id="youtube-result-card">
               <div class="isl-card-header">
-                <span>YouTube processing</span>
+                <span>YouTube Synchronization</span>
                 <span id="youtube-job-state" class="isl-sublabel">IDLE</span>
               </div>
               <div id="youtube-job-id" class="isl-sublabel">No video job</div>
               <div id="youtube-video-title" class="isl-youtube-title">—</div>
-              <div id="youtube-job-progress" class="isl-youtube-progress">Waiting for a job.</div>
+              <div id="youtube-job-progress" class="isl-youtube-progress">Waiting for video stream.</div>
               <div id="youtube-job-error" class="isl-youtube-error hidden"></div>
               <div class="isl-transcript-row">
                 <span class="isl-sublabel">Latest ASR segment (<span id="youtube-segment-count">0</span> total)</span>
@@ -107,7 +119,7 @@
                 <div id="youtube-transcript-summary" class="isl-transcript-box">—</div>
               </details>
               <div class="isl-youtube-result-line">
-                <span class="isl-sublabel">Prototype gloss (not full ISL translation)</span>
+                <span class="isl-sublabel">Current ISL Gloss Sequence</span>
                 <span id="youtube-translation-status" class="isl-sublabel">IDLE</span>
               </div>
               <div id="youtube-glosses" class="isl-gloss-badge">No resolved concepts</div>
@@ -116,41 +128,12 @@
                 <span id="youtube-playable-signs" class="isl-youtube-playable">None</span>
               </div>
               <div class="isl-youtube-unavailable">
-                <div class="isl-unavailable-title">Unavailable concepts (not played)</div>
+                <div class="isl-unavailable-title">Unavailable concepts (Transparent Fallback)</div>
                 <div id="youtube-unavailable-concepts">None</div>
               </div>
             </div>
 
-            <!-- Aether Avatar Integration (Task H6-E) -->
-            <div class="isl-card">
-              <div class="isl-card-header">
-                <span>Aether 3D Avatar</span>
-                <span id="aether-status-badge" class="isl-version-tag">Localhost Bridge</span>
-              </div>
-              <div id="isl-aether-container">
-                <iframe id="isl-aether-iframe" src="about:blank" class="hidden"></iframe>
-                <div id="isl-aether-fallback">
-                  <div class="isl-fallback-badge">Aether Localhost Dev Mode</div>
-                  <p style="font-size: 11px; margin-top: 4px;">Avatar loads via local server</p>
-                  <p style="font-size: 10px; color: #58a6ff;">http://localhost:8000</p>
-                </div>
-              </div>
-
-              <!-- Unavailable Subtitle Fallback (Phase H13) -->
-              <div id="isl-unavailable-subtitle" class="isl-unavailable-subtitle hidden">
-                <div class="isl-unavailable-sub-header">ISL translation not available in this translator</div>
-                <div id="isl-unavailable-sub-text" class="isl-unavailable-sub-text"></div>
-              </div>
-              <div class="isl-aether-controls">
-                <button id="btn-avatar-hello" class="isl-btn" title="Play HELLO">HELLO</button>
-                <button id="btn-avatar-good" class="isl-btn" title="Queue GOOD">+GOOD</button>
-                <button id="btn-avatar-morning" class="isl-btn" title="Queue MORNING">+MORN</button>
-                <button id="btn-avatar-pause" class="isl-btn" title="Pause/Resume">⏸</button>
-                <button id="btn-avatar-reset" class="isl-btn isl-btn-danger" title="Reset Avatar">⏹</button>
-              </div>
-            </div>
-
-            <!-- Transcripts Card -->
+            <!-- Speech Audio & Transcripts Card -->
             <div class="isl-card">
               <div class="isl-card-header">
                 <span>Speech Audio &amp; Transcripts</span>
@@ -165,7 +148,7 @@
               </div>
             </div>
 
-            <!-- ISL Representation Card -->
+            <!-- ISL Representation & Grammar Transformation Card -->
             <div class="isl-card">
               <div class="isl-card-header">
                 <span>ISL-Oriented Translation</span>
@@ -177,7 +160,7 @@
               <div id="box-trace" class="isl-trace-list">No transformation trace.</div>
             </div>
 
-            <!-- Sign Queue & Unavailable Concepts Card -->
+            <!-- Sign Queue & Active Playback Card -->
             <div class="isl-card">
               <div class="isl-card-header">
                 <span>Sign Playback &amp; Queue</span>
@@ -202,7 +185,7 @@
               </div>
             </div>
 
-            <!-- Demo Mode Controls Card (Task H6-D) -->
+            <!-- Deterministic Demo Mode Controls Card -->
             <div class="isl-card">
               <div class="isl-card-header">
                 <span>Deterministic Demo Mode</span>
@@ -222,12 +205,46 @@
               </div>
             </div>
 
-            <!-- Diagnostics & Localhost Connection -->
+            <!-- Diagnostics & Localhost Connection Card -->
             <div class="isl-card" style="padding: 8px 12px;">
               <div style="display: flex; justify-content: space-between; align-items: center;">
                 <span id="txt-runtime-msg" style="font-size: 10.5px; color: #8b949e;">Localhost runtime offline</span>
                 <button id="btn-reconnect" class="isl-btn" style="padding: 3px 8px; font-size: 10px;">🔄 Probe</button>
               </div>
+            </div>
+          </div>
+
+          <!-- Bottom-Right Anchored Section: Aether 3D Avatar Viewport -->
+          <div id="isl-bottom-avatar-dock">
+            <div class="isl-card-header" style="margin-bottom: 4px;">
+              <span style="display: flex; align-items: center; gap: 6px;">
+                <span class="isl-pulse-dot"></span>
+                <span>Aether 3D Avatar</span>
+              </span>
+              <span id="aether-status-badge" class="isl-version-tag">Bottom-Right View</span>
+            </div>
+            <div id="isl-aether-container">
+              <iframe id="isl-aether-iframe" src="about:blank" class="hidden"></iframe>
+              <div id="isl-aether-fallback">
+                <div class="isl-fallback-badge">Aether Localhost Dev Mode</div>
+                <p style="font-size: 11px; margin-top: 4px;">Avatar loads via local server</p>
+                <p style="font-size: 10px; color: #58a6ff;">http://localhost:8000</p>
+              </div>
+            </div>
+
+            <!-- Unavailable Subtitle Fallback (Phase H13) -->
+            <div id="isl-unavailable-subtitle" class="isl-unavailable-subtitle hidden">
+              <div class="isl-unavailable-sub-header">ISL translation not available in this translator</div>
+              <div id="isl-unavailable-sub-text" class="isl-unavailable-sub-text"></div>
+            </div>
+
+            <!-- Avatar Quick Controls -->
+            <div class="isl-aether-controls">
+              <button id="btn-avatar-hello" class="isl-btn" title="Play HELLO">HELLO</button>
+              <button id="btn-avatar-good" class="isl-btn" title="Queue GOOD">+GOOD</button>
+              <button id="btn-avatar-morning" class="isl-btn" title="Queue MORNING">+MORN</button>
+              <button id="btn-avatar-pause" class="isl-btn" title="Pause/Resume">⏸</button>
+              <button id="btn-avatar-reset" class="isl-btn isl-btn-danger" title="Reset Avatar">⏹</button>
             </div>
           </div>
         </div>
@@ -246,11 +263,15 @@
       // Cache DOM references
       this.elements = {
         launcher: this.shadowRoot.getElementById('isl-launcher-badge'),
+        sidebarToggle: this.shadowRoot.getElementById('isl-sidebar-toggle-handle'),
         container: this.shadowRoot.getElementById('isl-overlay-container'),
         body: this.shadowRoot.getElementById('isl-overlay-body'),
         header: this.shadowRoot.getElementById('isl-header-bar'),
+        modeBadge: this.shadowRoot.getElementById('isl-mode-badge'),
+        btnLayoutMode: this.shadowRoot.getElementById('btn-layout-mode'),
         btnMinimize: this.shadowRoot.getElementById('btn-minimize'),
         btnClose: this.shadowRoot.getElementById('btn-close'),
+        bottomAvatarDock: this.shadowRoot.getElementById('isl-bottom-avatar-dock'),
 
         // Status pills
         stConn: this.shadowRoot.getElementById('st-conn'),
@@ -321,6 +342,8 @@
 
       const onMouseDown = (e) => {
         if (e.target.closest('button')) return;
+        if (this.isSidebarMode) return; // In sidebar mode, bar stays docked to right edge
+
         this.isDragging = true;
         const rect = container.getBoundingClientRect();
         this.dragOffset.x = e.clientX - rect.left;
@@ -351,7 +374,7 @@
 
     bindEvents() {
       const {
-        btnMinimize, btnClose, launcher,
+        btnMinimize, btnClose, launcher, sidebarToggle, btnLayoutMode,
         btnDemoStart, btnDemoStep, btnDemoStop, selectScenario,
         btnReconnect,
         btnAvatarHello, btnAvatarGood, btnAvatarMorning, btnAvatarPause, btnAvatarReset
@@ -360,6 +383,12 @@
       btnMinimize.addEventListener('click', () => this.toggleMinimize());
       btnClose.addEventListener('click', () => this.hide());
       launcher.addEventListener('click', () => this.show());
+      if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', () => this.expandSidebar());
+      }
+      if (btnLayoutMode) {
+        btnLayoutMode.addEventListener('click', () => this.toggleLayoutMode());
+      }
 
       btnDemoStart.addEventListener('click', () => {
         const scenario = selectScenario.value;
@@ -433,19 +462,73 @@
     toggleMinimize() {
       this.isMinimized = !this.isMinimized;
       this.elements.container.classList.toggle('minimized', this.isMinimized);
-      this.elements.btnMinimize.textContent = this.isMinimized ? '□' : '─';
+
+      if (this.isSidebarMode) {
+        this.isCollapsed = this.isMinimized;
+        this.elements.container.classList.toggle('sidebar-collapsed', this.isCollapsed);
+        if (this.elements.sidebarToggle) {
+          this.elements.sidebarToggle.classList.toggle('hidden', !this.isCollapsed);
+        }
+        this.elements.btnMinimize.textContent = this.isCollapsed ? '◀' : '─';
+      } else {
+        this.elements.btnMinimize.textContent = this.isMinimized ? '□' : '─';
+      }
+    }
+
+    expandSidebar() {
+      this.isCollapsed = false;
+      this.elements.container.classList.remove('sidebar-collapsed');
+      if (this.elements.sidebarToggle) {
+        this.elements.sidebarToggle.classList.add('hidden');
+      }
+      this.elements.btnMinimize.textContent = '─';
+    }
+
+    toggleLayoutMode() {
+      this.isSidebarMode = !this.isSidebarMode;
+      const c = this.elements.container;
+      if (this.isSidebarMode) {
+        c.classList.remove('floating-mode');
+        c.classList.add('sidebar-mode');
+        c.style.left = '';
+        c.style.top = '';
+        c.style.right = '';
+        c.style.bottom = '';
+        if (this.elements.modeBadge) this.elements.modeBadge.textContent = 'Right Sidebar';
+        if (this.elements.btnLayoutMode) this.elements.btnLayoutMode.textContent = '◫';
+        if (this.elements.sidebarToggle) {
+          this.elements.sidebarToggle.classList.toggle('hidden', !this.isCollapsed);
+        }
+        this.elements.launcher.classList.add('hidden');
+      } else {
+        c.classList.remove('sidebar-mode');
+        c.classList.add('floating-mode');
+        c.classList.remove('sidebar-collapsed');
+        if (this.elements.modeBadge) this.elements.modeBadge.textContent = 'Floating Window';
+        if (this.elements.btnLayoutMode) this.elements.btnLayoutMode.textContent = '▥';
+        if (this.elements.sidebarToggle) this.elements.sidebarToggle.classList.add('hidden');
+      }
     }
 
     show() {
       this.isVisible = true;
       this.elements.container.classList.remove('hidden');
       this.elements.launcher.classList.add('hidden');
+      if (this.isSidebarMode && this.isCollapsed) {
+        this.expandSidebar();
+      }
     }
 
     hide() {
       this.isVisible = false;
       this.elements.container.classList.add('hidden');
-      this.elements.launcher.classList.remove('hidden');
+      if (this.isSidebarMode) {
+        if (this.elements.sidebarToggle) {
+          this.elements.sidebarToggle.classList.remove('hidden');
+        }
+      } else {
+        this.elements.launcher.classList.remove('hidden');
+      }
     }
 
     /**
@@ -499,22 +582,23 @@
       // 3. ISL Representation
       const rep = state.representation || {};
       el.badgeTransStatus.textContent = rep.status || '—';
-      el.boxGloss.textContent = rep.gloss || (rep.glossSequence?.length ? rep.glossSequence.join(' ') : '—');
+      el.boxGloss.textContent = rep.glossSequence?.length
+        ? rep.glossSequence.join(' ')
+        : '—';
+      el.boxTrace.textContent = rep.trace?.length
+        ? rep.trace.join(' -> ')
+        : 'No transformation trace.';
 
-      if (rep.trace && rep.trace.length) {
-        el.boxTrace.innerHTML = rep.trace.map(t => `<div>• <b>${t.stage}:</b> ${t.detail}</div>`).join('');
-      } else {
-        el.boxTrace.textContent = 'No transformation trace.';
-      }
-
-      // 4. Signing Queue & Current Sign
+      // 4. Signing & Queue State
       const queue = state.signingQueue || {};
-      if (queue.currentSign) {
+      const activeSignName = queue.currentSign || queue.activeSign;
+      if (activeSignName) {
+        el.pillActiveSign.textContent = activeSignName.toUpperCase();
         el.pillActiveSign.style.display = 'inline-block';
-        el.pillActiveSign.textContent = queue.currentSign.toUpperCase();
         el.txtNoActive.style.display = 'none';
+
         if (el.pillReviewBadge) {
-          const isVerified = queue.currentSignVerified === true;
+          const isVerified = queue.currentSignVerified === true || queue.isUnderReview === false;
           el.pillReviewBadge.textContent = isVerified ? 'Verified' : 'Pending Review';
           el.pillReviewBadge.className = isVerified ? 'isl-badge-review verified' : 'isl-badge-review';
           el.pillReviewBadge.classList.remove('hidden');
@@ -527,19 +611,24 @@
         }
       }
 
-      if (queue.queuedSigns && queue.queuedSigns.length) {
-        el.boxQueuedSigns.innerHTML = queue.queuedSigns
-          .map(s => `<span class="isl-sign-tag isl-sign-queued">${s.toUpperCase()}</span>`)
-          .join('');
+      const queueList = queue.queuedSigns || queue.queue;
+      if (queueList && queueList.length > 0) {
+        el.boxQueuedSigns.innerHTML = '';
+        queueList.forEach((item) => {
+          const tag = document.createElement('span');
+          tag.className = 'isl-sign-tag isl-sign-queued';
+          tag.textContent = typeof item === 'string' ? item.toUpperCase() : (item.id || item.word || '').toUpperCase();
+          el.boxQueuedSigns.appendChild(tag);
+        });
       } else {
         el.boxQueuedSigns.innerHTML = '<span style="color: #8b949e; font-size: 11px;">Queue is empty</span>';
       }
 
-      // 5. Unavailable Concepts (Crucial: transparent missing-sign indication)
-      if (queue.unavailableConcepts && queue.unavailableConcepts.length) {
+      // 5. Unavailable Concepts (Evidence / Motion Pending)
+      if (queue.unavailableConcepts && queue.unavailableConcepts.length > 0) {
         el.boxUnavailable.classList.remove('hidden');
         el.listUnavailable.innerHTML = queue.unavailableConcepts
-          .map(item => `<div class="isl-unavailable-item">✕ <b>${(item.word || item).toUpperCase()}:</b> ${item.reason || 'Pending evidence'}</div>`)
+          .map(item => `<div class="isl-unavailable-item">✕ <b>${(typeof item === 'string' ? item : item.word || '').toUpperCase()}:</b> ${typeof item === 'string' ? 'Pending evidence' : (item.reason || 'Pending evidence')}</div>`)
           .join('');
       } else {
         el.boxUnavailable.classList.add('hidden');
@@ -550,30 +639,29 @@
       const fallbackWord = queue.unavailableFallback || state.youtube?.unavailableFallback;
       if (fallbackWord) {
         this.setUnavailableFallback(fallbackWord);
-      } else if (queue.currentSign) {
+      } else if (activeSignName) {
         this.setUnavailableFallback(null);
       }
 
-      // 6. Demo mode state
+      // 6. Demo Indicator
       const demo = state.demo || {};
       if (demo.active) {
         el.demoIndicator.textContent = `Step ${demo.step} / ${demo.totalSteps}`;
         el.demoIndicator.style.color = '#58a6ff';
-        if (el.selectScenario.value !== demo.scenario && demo.scenario) {
+        if (el.selectScenario && el.selectScenario.value !== demo.scenario && demo.scenario) {
           el.selectScenario.value = demo.scenario;
         }
       } else {
-        el.demoIndicator.textContent = 'Idle';
+        el.demoIndicator.textContent = demo.step || 'Idle';
         el.demoIndicator.style.color = '#8b949e';
       }
 
-      // 7. Runtime Status & Aether Embed
-      if (state.runtimeAvailable) {
-        el.txtRuntimeMsg.textContent = `Connected: ${state.runtimeEndpoint}`;
+      // 7. Aether Bridge Runtime Status
+      if (state.runtimeAvailable || state.runtimeActive) {
+        el.txtRuntimeMsg.textContent = state.runtimeEndpoint ? `Connected: ${state.runtimeEndpoint}` : 'Localhost runtime online';
         el.txtRuntimeMsg.style.color = '#3fb950';
 
-        // Load iframe if not already loaded
-        const targetSrc = `${state.runtimeEndpoint}/tools/avatar_viewer/index.html?embed=1`;
+        const targetSrc = state.avatarViewerUrl || `${state.runtimeEndpoint || 'http://localhost:8000'}/tools/avatar_viewer/index.html?embed=1`;
         if (el.aetherIframe.src !== targetSrc) {
           el.aetherIframe.src = targetSrc;
           el.aetherIframe.classList.remove('hidden');
