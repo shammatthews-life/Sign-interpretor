@@ -74,7 +74,12 @@ const h24SignIds = [
   'test', 'village', 'street', 'cloak', 'average',
   'dry', 'attract', 'grab', 'send', 'behavior',
   'effect', 'belief', 'failure', 'gray', 'nowhere',
-  'burden', 'observant', 'kid', 'set', 'result'
+  'burden', 'observant', 'kid', 'set', 'result',
+  // Batch 15 (20)
+  'may', 'hey', 'boom', 'sweden', 'everything',
+  'somebody', 'anyone', 'anything', 'nothing', 'until',
+  'weird', 'along', 'quarter', 'tumble', 'fill',
+  'danger', 'conductor', 'lie', 'luxury', 'turbo'
 ];
 
 let allPassed = true;

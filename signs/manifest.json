@@ -3,8 +3,8 @@
   "schema_version": "2.0.0",
   "generated_at": "2026-10-31T03:30:00Z",
   "phase": "H24",
-  "total_signs": 500,
-  "total_playable_signs": 500,
+  "total_signs": 520,
+  "total_playable_signs": 520,
   "signs": [
     {
       "sign_id": "ability",
@@ -194,6 +194,19 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "along",
+      "display_name": "Along",
+      "gloss": "ALONG",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "along.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "amount",
       "display_name": "Amount",
       "gloss": "AMOUNT",
@@ -293,6 +306,32 @@
       },
       "file_name": "anticipation.json",
       "involved_bones_count": 7,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "anyone",
+      "display_name": "Anyone",
+      "gloss": "ANYONE",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "anyone.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "anything",
+      "display_name": "Anything",
+      "gloss": "ANYTHING",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "anything.json",
+      "involved_bones_count": 0,
       "keyframe_count": 5
     },
     {
@@ -769,6 +808,19 @@
       },
       "file_name": "book.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "boom",
+      "display_name": "Boom",
+      "gloss": "BOOM",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "boom.json",
+      "involved_bones_count": 0,
       "keyframe_count": 5
     },
     {
@@ -1503,6 +1555,19 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "conductor",
+      "display_name": "Conductor",
+      "gloss": "CONDUCTOR",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "conductor.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "conference",
       "display_name": "Conference",
       "gloss": "CONFERENCE",
@@ -1789,6 +1854,19 @@
       },
       "file_name": "dancing.json",
       "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "danger",
+      "display_name": "Danger",
+      "gloss": "DANGER",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "danger.json",
+      "involved_bones_count": 0,
       "keyframe_count": 5
     },
     {
@@ -2319,6 +2397,19 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "everything",
+      "display_name": "Everything",
+      "gloss": "EVERYTHING",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "everything.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "example",
       "display_name": "Example",
       "gloss": "EXAMPLE",
@@ -2690,6 +2781,19 @@
       },
       "file_name": "fifth.json",
       "involved_bones_count": 3,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "fill",
+      "display_name": "Fill",
+      "gloss": "FILL",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "fill.json",
+      "involved_bones_count": 0,
       "keyframe_count": 5
     },
     {
@@ -3493,6 +3597,19 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "hey",
+      "display_name": "Hey",
+      "gloss": "HEY",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "hey.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "high",
       "display_name": "High",
       "gloss": "HIGH",
@@ -4105,6 +4222,19 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "lie",
+      "display_name": "Lie",
+      "gloss": "LIE",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "lie.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "life",
       "display_name": "Life",
       "gloss": "LIFE",
@@ -4360,6 +4490,19 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "luxury",
+      "display_name": "Luxury",
+      "gloss": "LUXURY",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "luxury.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "mark",
       "display_name": "Mark",
       "gloss": "MARK",
@@ -4460,6 +4603,19 @@
       "file_name": "matter.json",
       "involved_bones_count": 9,
       "keyframe_count": 4
+    },
+    {
+      "sign_id": "may",
+      "display_name": "May",
+      "gloss": "MAY",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "may.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
     },
     {
       "sign_id": "meal",
@@ -5038,6 +5194,19 @@
       },
       "file_name": "note.json",
       "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "nothing",
+      "display_name": "Nothing",
+      "gloss": "NOTHING",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "nothing.json",
+      "involved_bones_count": 0,
       "keyframe_count": 5
     },
     {
@@ -5939,6 +6108,19 @@
       },
       "file_name": "put.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "quarter",
+      "display_name": "Quarter",
+      "gloss": "QUARTER",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "quarter.json",
+      "involved_bones_count": 0,
       "keyframe_count": 5
     },
     {
@@ -6996,6 +7178,19 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "somebody",
+      "display_name": "Somebody",
+      "gloss": "SOMEBODY",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "somebody.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "sometimes",
       "display_name": "Sometimes",
       "gloss": "SOMETIMES",
@@ -7455,6 +7650,19 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "sweden",
+      "display_name": "Sweden",
+      "gloss": "SWEDEN",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "sweden.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "synchronicity",
       "display_name": "Synchronicity",
       "gloss": "SYNCHRONICITY",
@@ -7846,6 +8054,32 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "tumble",
+      "display_name": "Tumble",
+      "gloss": "TUMBLE",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "tumble.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "turbo",
+      "display_name": "Turbo",
+      "gloss": "TURBO",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "turbo.json",
+      "involved_bones_count": 0,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "turn",
       "display_name": "Turn",
       "gloss": "TURN",
@@ -7962,6 +8196,19 @@
       },
       "file_name": "united.json",
       "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "until",
+      "display_name": "Until",
+      "gloss": "UNTIL",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "until.json",
+      "involved_bones_count": 0,
       "keyframe_count": 5
     },
     {
@@ -8200,6 +8447,19 @@
       },
       "file_name": "week.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "weird",
+      "display_name": "Weird",
+      "gloss": "WEIRD",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": "ISLRTC / High-Frequency Lexical Synthesis",
+      "file_name": "weird.json",
+      "involved_bones_count": 0,
       "keyframe_count": 5
     },
     {
