@@ -225,6 +225,7 @@
               <span id="aether-status-badge" class="isl-version-tag">Bottom-Right View</span>
             </div>
             <div id="isl-aether-container">
+              <div class="isl-aether-hud-tag"><span class="isl-pulse-dot"></span> AETHER 3D • 60 FPS</div>
               <iframe id="isl-aether-iframe" src="about:blank" class="hidden"></iframe>
               <div id="isl-aether-fallback">
                 <div class="isl-fallback-badge">Aether Localhost Dev Mode</div>

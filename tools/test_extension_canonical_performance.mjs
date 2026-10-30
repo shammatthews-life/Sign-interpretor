@@ -256,7 +256,12 @@ const fullH24VocabSet = new Set([
   'wait', 'pattern', 'front', 'fall', 'mobile',
   'ignore', 'under', 'certain', 'subtle', 'scream',
   'everyday', 'emotional', 'connect', 'extent', 'longer',
-  'ultimate', 'somatic', 'synchronicity', 'sat', 'united'
+  'ultimate', 'somatic', 'synchronicity', 'sat', 'united',
+  // Batch 12 (20)
+  'conference', 'door', 'break', 'road', 'full',
+  'past', 'worth', 'ten', 'setting', 'expectation',
+  'server', 'simply', 'cannot', 'dollar', 'deep',
+  'phenomenal', 'record', 'buy', 'breathe', 'billion'
 ]);
 
 const tStart = performance.now();

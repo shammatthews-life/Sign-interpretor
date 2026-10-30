@@ -194,7 +194,9 @@ PLAYABLE_SIGNS = {
     # Phase H24 Batch 10 Signs (20 authentic signs reaching 420 signs milestone)
     "human", "relate", "cool", "wow", "corner", "chest", "extension", "loop", "similar", "metaphor", "scientific", "skilled", "proven", "absolute", "dominant", "arena", "myself", "uncomfortable", "filled", "empowering",
     # Phase H24 Batch 11 Signs (20 authentic signs reaching 440 signs milestone)
-    "wait", "pattern", "front", "fall", "mobile", "ignore", "under", "certain", "subtle", "scream", "everyday", "emotional", "connect", "extent", "longer", "ultimate", "somatic", "synchronicity", "sat", "united"
+    "wait", "pattern", "front", "fall", "mobile", "ignore", "under", "certain", "subtle", "scream", "everyday", "emotional", "connect", "extent", "longer", "ultimate", "somatic", "synchronicity", "sat", "united",
+    # Phase H24 Batch 12 Signs (20 authentic signs reaching 460 signs milestone)
+    "conference", "door", "break", "road", "full", "past", "worth", "ten", "setting", "expectation", "server", "simply", "cannot", "dollar", "deep", "phenomenal", "record", "buy", "breathe", "billion"
 }
 
 # Structural ISL Function Words (Grammar Omissions)
