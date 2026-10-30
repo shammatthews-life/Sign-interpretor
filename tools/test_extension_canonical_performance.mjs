@@ -18,7 +18,7 @@ import assert from 'node:assert/strict';
 import { performance } from 'perf_hooks';
 
 console.log('======================================================================');
-console.log('TESTING EXTENSION PERFORMANCE ON CANONICAL VIDEO MXKkXXYUxBc (260 SIGNS)');
+console.log('TESTING EXTENSION PERFORMANCE ON CANONICAL VIDEO MXKkXXYUxBc (284 SIGNS)');
 console.log('======================================================================');
 
 // 1. Proven Mock DOM Environment

@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 console.log('====================================================');
-console.log('TESTING AETHER AVATAR PERFORMANCE ON ALL 53 H24 SIGNS');
+console.log('TESTING AETHER AVATAR PERFORMANCE ON ALL 77 H24 SIGNS');
 console.log('====================================================');
 
 const h24SignIds = [
@@ -18,7 +18,12 @@ const h24SignIds = [
   // Batch 3 (20)
   'functional', 'anticipation', 'based', 'clarity', 'during', 'prior',
   'while', 'inhale', 'goal', 'science', 'career', 'passion', 'session',
-  'interesting', 'face', 'group', 'enjoy', 'core', 'vision', 'color'
+  'interesting', 'face', 'group', 'enjoy', 'core', 'vision', 'color',
+  // Batch 4 (24)
+  'play', 'live', 'emotion', 'afraid', 'place', 'house', 'sorry',
+  'believe', 'company', 'sing', 'song', 'money', 'real', 'hour',
+  'perfect', 'sit', 'car', 'turn', 'normal', 'confused', 'remind',
+  'definition', 'happen', 'slowly'
 ];
 
 let allPassed = true;
@@ -117,13 +122,13 @@ for (const id of h24SignIds) {
   });
 }
 
-console.log(`\nVerified ${results.length}/53 signs on Aether Rig:`);
+console.log(`\nVerified ${results.length}/${h24SignIds.length} signs on Aether Rig:`);
 results.forEach(r => {
   console.log(`  ✓ ${r.sign_id.padEnd(14)} [${r.gloss.padEnd(14)}] - ${r.duration_ms}ms, ${r.keyframes} kfs, max_rot: ${r.max_joint_rotation_rad} rad -> ${r.aether_status}`);
 });
 
-if (allPassed && results.length === 53) {
-  console.log('\nSUCCESS: Avatar Aether performs all 53 new actions smoothly and accurately with zero clipping!');
+if (allPassed && results.length === h24SignIds.length) {
+  console.log(`\nSUCCESS: Avatar Aether performs all ${h24SignIds.length} new actions smoothly and accurately with zero clipping!`);
 } else {
   console.error('\nFAILURE: Some signs failed verification.');
   process.exit(1);
