@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-30T21:26:47.874Z",
+  "environment": {
+    "platform": "win32",
+    "node_version": "v24.15.0",
+    "arch": "x64"
+  },
+  "metrics": {
+    "total_signs": 207,
+    "preload_duration_ms": 64,
+    "total_payload_kb": 1272.1,
+    "heap_used_mb": 6.3,
+    "rss_mb": 40.46,
+    "lookup_latency_us": 0.13
+  }
+}

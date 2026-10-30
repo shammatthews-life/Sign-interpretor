@@ -1,0 +1,908 @@
+{
+  "batch_index": 5,
+  "concept_range": "201\u2013250",
+  "concept_count": 50,
+  "total_occurrences": 50,
+  "concepts": [
+    {
+      "rank": 201,
+      "concept": "activity",
+      "lemma": "activity",
+      "surface_forms": [
+        "activity"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ACTIVITY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "dopamine is increased for that particular activity."
+    },
+    {
+      "rank": 202,
+      "concept": "stranger",
+      "lemma": "stranger",
+      "surface_forms": [
+        "stranger"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "STRANGER",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Do what you think is hard in speaking in public. Start talking to a stranger for instance."
+    },
+    {
+      "rank": 203,
+      "concept": "cure",
+      "lemma": "cure",
+      "surface_forms": [
+        "cure"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "CURE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It won't happen if you don't do it. It's as simple as that. It's no magic cure."
+    },
+    {
+      "rank": 204,
+      "concept": "wake",
+      "lemma": "wake",
+      "surface_forms": [
+        "wake"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WAKE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "actually doing things. But dopamine can also be created by imagination. So if you wake up in the"
+    },
+    {
+      "rank": 205,
+      "concept": "news",
+      "lemma": "news",
+      "surface_forms": [
+        "news"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NEWS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "morning and the first thing you do is take up your phone and you look at the news, you are literally"
+    },
+    {
+      "rank": 206,
+      "concept": "throat",
+      "lemma": "throat",
+      "surface_forms": [
+        "throat"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "THROAT",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "just pouring a devil's cocktail down your throat and that is how you start your day. But if you start"
+    },
+    {
+      "rank": 207,
+      "concept": "deciding",
+      "lemma": "deciding",
+      "surface_forms": [
+        "deciding"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DECIDING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "your day by using your mind to create dopamine, by simply deciding to look forward to something,"
+    },
+    {
+      "rank": 208,
+      "concept": "future",
+      "lemma": "future",
+      "surface_forms": [
+        "future"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FUTURE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "that whatever you want to achieve in the future,"
+    },
+    {
+      "rank": 209,
+      "concept": "recommendation",
+      "lemma": "recommendation",
+      "surface_forms": [
+        "recommendation"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "RECOMMENDATION",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "my absolute recommendation is that"
+    },
+    {
+      "rank": 210,
+      "concept": "earn",
+      "lemma": "earn",
+      "surface_forms": [
+        "earn"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "EARN",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "the money you want to earn,"
+    },
+    {
+      "rank": 211,
+      "concept": "hang",
+      "lemma": "hang",
+      "surface_forms": [
+        "hang"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "HANG",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "the people you want to hang out with,"
+    },
+    {
+      "rank": 212,
+      "concept": "hanging",
+      "lemma": "hanging",
+      "surface_forms": [
+        "hanging"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "HANGING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "the feeling of hanging out with these people would be,"
+    },
+    {
+      "rank": 213,
+      "concept": "priming",
+      "lemma": "priming",
+      "surface_forms": [
+        "priming"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PRIMING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "because then you are constantly priming your brain"
+    },
+    {
+      "rank": 214,
+      "concept": "release",
+      "lemma": "release",
+      "surface_forms": [
+        "release"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "RELEASE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "to release dopamine for those particular things"
+    },
+    {
+      "rank": 215,
+      "concept": "allows",
+      "lemma": "allows",
+      "surface_forms": [
+        "allows"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ALLOWS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "which allows you to focus on them more."
+    },
+    {
+      "rank": 216,
+      "concept": "traveling",
+      "lemma": "traveling",
+      "surface_forms": [
+        "traveling"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TRAVELING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "traveling the world, it's not an easy life always."
+    },
+    {
+      "rank": 217,
+      "concept": "countries",
+      "lemma": "countries",
+      "surface_forms": [
+        "countries"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "COUNTRIES",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Last year I think I went to close to 30 countries."
+    },
+    {
+      "rank": 218,
+      "concept": "equates",
+      "lemma": "equates",
+      "surface_forms": [
+        "equates"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "EQUATES",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "So it still equates to a nice work-life balance."
+    },
+    {
+      "rank": 219,
+      "concept": "balance",
+      "lemma": "balance",
+      "surface_forms": [
+        "balance"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "BALANCE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "So it still equates to a nice work-life balance."
+    },
+    {
+      "rank": 220,
+      "concept": "profession",
+      "lemma": "profession",
+      "surface_forms": [
+        "profession"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PROFESSION",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I love my profession, it is beautiful."
+    },
+    {
+      "rank": 221,
+      "concept": "log",
+      "lemma": "log",
+      "surface_forms": [
+        "log"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "LOG",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "build that log by taking action, building momentum,"
+    },
+    {
+      "rank": 222,
+      "concept": "functions",
+      "lemma": "functions",
+      "surface_forms": [
+        "functions"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FUNCTIONS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Dopamine has multiple functions,"
+    },
+    {
+      "rank": 223,
+      "concept": "describe",
+      "lemma": "describe",
+      "surface_forms": [
+        "describe"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DESCRIBE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Now, the best way for me to describe testosterone"
+    },
+    {
+      "rank": 224,
+      "concept": "doors",
+      "lemma": "doors",
+      "surface_forms": [
+        "doors"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DOORS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It opened up so many doors,"
+    },
+    {
+      "rank": 225,
+      "concept": "sensible",
+      "lemma": "sensible",
+      "surface_forms": [
+        "sensible"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SENSIBLE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Actually looks quite sensible for being a left hand."
+    },
+    {
+      "rank": 226,
+      "concept": "edgy",
+      "lemma": "edgy",
+      "surface_forms": [
+        "edgy"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "EDGY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "They all look a bit edgy these flowers."
+    },
+    {
+      "rank": 227,
+      "concept": "vag",
+      "lemma": "vag",
+      "surface_forms": [
+        "vag"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "VAG",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Vag, that is a tree, man."
+    },
+    {
+      "rank": 228,
+      "concept": "robert",
+      "lemma": "robert",
+      "surface_forms": [
+        "robert"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ROBERT",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "All right, Robert put a smiley on his."
+    },
+    {
+      "rank": 229,
+      "concept": "weren't",
+      "lemma": "weren't",
+      "surface_forms": [
+        "weren't"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WEREN'T",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "because they felt that they weren't able to perform"
+    },
+    {
+      "rank": 230,
+      "concept": "perform",
+      "lemma": "perform",
+      "surface_forms": [
+        "perform"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PERFORM",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "because they felt that they weren't able to perform"
+    },
+    {
+      "rank": 231,
+      "concept": "pancakes",
+      "lemma": "pancakes",
+      "surface_forms": [
+        "pancakes"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PANCAKES",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "May that be cooking pancakes, singing, wrapping,"
+    },
+    {
+      "rank": 232,
+      "concept": "wrapping",
+      "lemma": "wrapping",
+      "surface_forms": [
+        "wrapping"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WRAPPING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "May that be cooking pancakes, singing, wrapping,"
+    },
+    {
+      "rank": 233,
+      "concept": "profoundly",
+      "lemma": "profoundly",
+      "surface_forms": [
+        "profoundly"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Adverb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PROFOUNDLY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "walking, profoundly beautiful."
+    },
+    {
+      "rank": 234,
+      "concept": "martina",
+      "lemma": "martina",
+      "surface_forms": [
+        "martina"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "MARTINA",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Martina PowerPoint, wow."
+    },
+    {
+      "rank": 235,
+      "concept": "connecting",
+      "lemma": "connecting",
+      "surface_forms": [
+        "connecting"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "CONNECTING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Connecting agile, eating chocolate, skiing,"
+    },
+    {
+      "rank": 236,
+      "concept": "agile",
+      "lemma": "agile",
+      "surface_forms": [
+        "agile"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "AGILE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Connecting agile, eating chocolate, skiing,"
+    },
+    {
+      "rank": 237,
+      "concept": "skiing",
+      "lemma": "skiing",
+      "surface_forms": [
+        "skiing"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SKIING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Connecting agile, eating chocolate, skiing,"
+    },
+    {
+      "rank": 238,
+      "concept": "steak",
+      "lemma": "steak",
+      "surface_forms": [
+        "steak"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "STEAK",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "singing and writing, cooking, steak, analysis, PowerPoint."
+    },
+    {
+      "rank": 239,
+      "concept": "analysis",
+      "lemma": "analysis",
+      "surface_forms": [
+        "analysis"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ANALYSIS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "singing and writing, cooking, steak, analysis, PowerPoint."
+    },
+    {
+      "rank": 240,
+      "concept": "observing",
+      "lemma": "observing",
+      "surface_forms": [
+        "observing"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "OBSERVING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Okay, music, coaching, observing, yoga."
+    },
+    {
+      "rank": 241,
+      "concept": "yoga",
+      "lemma": "yoga",
+      "surface_forms": [
+        "yoga"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "YOGA",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Okay, music, coaching, observing, yoga."
+    },
+    {
+      "rank": 242,
+      "concept": "reducing",
+      "lemma": "reducing",
+      "surface_forms": [
+        "reducing"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "REDUCING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "reducing your testosterone in a real-time manner."
+    },
+    {
+      "rank": 243,
+      "concept": "vulnerability",
+      "lemma": "vulnerability",
+      "surface_forms": [
+        "vulnerability"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "VULNERABILITY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "us human. When we fail, it shows vulnerability. It shows a human side of us. We connect with"
+    },
+    {
+      "rank": 244,
+      "concept": "perfection",
+      "lemma": "perfection",
+      "surface_forms": [
+        "perfection"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PERFECTION",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "people through failures, not through perfection. So I add failures in order to create that connection."
+    },
+    {
+      "rank": 245,
+      "concept": "connection",
+      "lemma": "connection",
+      "surface_forms": [
+        "connection"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "CONNECTION",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "people through failures, not through perfection. So I add failures in order to create that connection."
+    },
+    {
+      "rank": 246,
+      "concept": "invite",
+      "lemma": "invite",
+      "surface_forms": [
+        "invite"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "INVITE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "What I want you to see is change your perspective on failures. Invite them. Be proud of them."
+    },
+    {
+      "rank": 247,
+      "concept": "opportunity",
+      "lemma": "opportunity",
+      "surface_forms": [
+        "opportunity"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "OPPORTUNITY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Whenever you're uncomfortable, you have the opportunity"
+    },
+    {
+      "rank": 248,
+      "concept": "tricky",
+      "lemma": "tricky",
+      "surface_forms": [
+        "tricky"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TRICKY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Now the tricky thing with testosterone is that the videos"
+    },
+    {
+      "rank": 249,
+      "concept": "potentially",
+      "lemma": "potentially",
+      "surface_forms": [
+        "potentially"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Adverb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "POTENTIALLY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "videos that create or potentially can create testosterone in us, they have to be relatable."
+    },
+    {
+      "rank": 250,
+      "concept": "jackson",
+      "lemma": "jackson",
+      "surface_forms": [
+        "jackson"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "JACKSON",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "So say, for instance, that I'll take, let's see, I'll find a name, Ross Jackson. I see him up there,"
+    }
+  ]
+}

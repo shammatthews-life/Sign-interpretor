@@ -1,0 +1,3246 @@
+{
+  "metadata": {
+    "title": "Phase H22 100-Sentence Translation Regression Benchmark",
+    "total_sentences_audited": 100,
+    "transcript_source": "YouTube MXKkXXYUxBc (2,366 segments)"
+  },
+  "regression_set": [
+    {
+      "test_id": 1,
+      "segment_id": null,
+      "timestamp": 2.45,
+      "original_english": "This is public speaking for beginners, and the goal of this video is simple.",
+      "recognized_concepts": [
+        "public",
+        "video",
+        "simple"
+      ],
+      "unavailable_concepts": [
+        "this",
+        "speaking",
+        "for",
+        "beginners",
+        "and",
+        "goal",
+        "of",
+        "this"
+      ],
+      "actual_translator_output": [
+        "PUBLIC",
+        "VIDEO",
+        "SIMPLE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "PUBLIC",
+        "VIDEO",
+        "SIMPLE"
+      ],
+      "grammar_omissions_applied": [
+        "is",
+        "the",
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 2,
+      "segment_id": null,
+      "timestamp": 98.93,
+      "original_english": "you can apply tomorrow.",
+      "recognized_concepts": [
+        "you",
+        "can"
+      ],
+      "unavailable_concepts": [
+        "apply",
+        "tomorrow"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "CAN"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "CAN"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 3,
+      "segment_id": null,
+      "timestamp": 196.07,
+      "original_english": "to being a confident person, delivering a great presentation in these three sessions.",
+      "recognized_concepts": [
+        "confident",
+        "great",
+        "presentation"
+      ],
+      "unavailable_concepts": [
+        "to",
+        "being",
+        "person",
+        "delivering",
+        "in",
+        "these",
+        "three",
+        "sessions"
+      ],
+      "actual_translator_output": [
+        "CONFIDENT",
+        "GREAT",
+        "PRESENTATION"
+      ],
+      "expected_isl_gloss_sequence": [
+        "CONFIDENT",
+        "GREAT",
+        "PRESENTATION"
+      ],
+      "grammar_omissions_applied": [
+        "a",
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 4,
+      "segment_id": null,
+      "timestamp": 308.63,
+      "original_english": "It just came out in Japan, which I think looks a lot more interesting than the English version,",
+      "recognized_concepts": [
+        "i",
+        "think",
+        "more"
+      ],
+      "unavailable_concepts": [
+        "it",
+        "just",
+        "came",
+        "out",
+        "in",
+        "japan",
+        "which",
+        "looks",
+        "lot",
+        "interesting",
+        "than",
+        "english",
+        "version"
+      ],
+      "actual_translator_output": [
+        "I",
+        "THINK",
+        "MORE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "THINK",
+        "MORE"
+      ],
+      "grammar_omissions_applied": [
+        "a",
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 5,
+      "segment_id": null,
+      "timestamp": 387.34,
+      "original_english": "your PowerPoint and you feel you're good because you've done the preparation, but then you",
+      "recognized_concepts": [
+        "your",
+        "you",
+        "feel",
+        "good",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "powerpoint",
+        "and",
+        "you're",
+        "because",
+        "you've",
+        "done",
+        "preparation",
+        "but",
+        "then"
+      ],
+      "actual_translator_output": [
+        "YOUR",
+        "YOU",
+        "FEEL",
+        "GOOD",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOUR",
+        "YOU",
+        "FEEL",
+        "GOOD",
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 6,
+      "segment_id": null,
+      "timestamp": 486.72,
+      "original_english": "I want you to know what you specifically",
+      "recognized_concepts": [
+        "i",
+        "want",
+        "you",
+        "know",
+        "what",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "to",
+        "specifically"
+      ],
+      "actual_translator_output": [
+        "I",
+        "WANT",
+        "YOU",
+        "KNOW",
+        "WHAT",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "WANT",
+        "YOU",
+        "KNOW",
+        "YOU",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 7,
+      "segment_id": null,
+      "timestamp": 544.68,
+      "original_english": "It's two massively different things.",
+      "recognized_concepts": [
+        "two",
+        "different"
+      ],
+      "unavailable_concepts": [
+        "it's",
+        "massively",
+        "things"
+      ],
+      "actual_translator_output": [
+        "TWO",
+        "DIFFERENT"
+      ],
+      "expected_isl_gloss_sequence": [
+        "TWO",
+        "DIFFERENT"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 8,
+      "segment_id": null,
+      "timestamp": 628.52,
+      "original_english": "Have you ever noticed that even if you are very good at something, if you are very confident",
+      "recognized_concepts": [
+        "have",
+        "you",
+        "you",
+        "good",
+        "you",
+        "confident"
+      ],
+      "unavailable_concepts": [
+        "ever",
+        "noticed",
+        "that",
+        "even",
+        "if",
+        "very",
+        "at",
+        "something",
+        "if",
+        "very"
+      ],
+      "actual_translator_output": [
+        "HAVE",
+        "YOU",
+        "YOU",
+        "GOOD",
+        "YOU",
+        "CONFIDENT"
+      ],
+      "expected_isl_gloss_sequence": [
+        "HAVE",
+        "YOU",
+        "YOU",
+        "GOOD",
+        "YOU",
+        "CONFIDENT"
+      ],
+      "grammar_omissions_applied": [
+        "are",
+        "are"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 9,
+      "segment_id": null,
+      "timestamp": 760.38,
+      "original_english": "Well, look at this.",
+      "recognized_concepts": [
+        "look"
+      ],
+      "unavailable_concepts": [
+        "well",
+        "at",
+        "this"
+      ],
+      "actual_translator_output": [
+        "LOOK"
+      ],
+      "expected_isl_gloss_sequence": [
+        "LOOK"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 10,
+      "segment_id": null,
+      "timestamp": 889.78,
+      "original_english": "He used to, but he can't anymore.",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "he",
+        "used",
+        "to",
+        "but",
+        "he",
+        "can't",
+        "anymore"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 11,
+      "segment_id": null,
+      "timestamp": 985.58,
+      "original_english": "our fire or put it out. And those two are dopamine and testosterone. So I'd like to",
+      "recognized_concepts": [
+        "fire",
+        "put",
+        "two",
+        "like"
+      ],
+      "unavailable_concepts": [
+        "our",
+        "or",
+        "it",
+        "out",
+        "and",
+        "those",
+        "dopamine",
+        "and",
+        "testosterone",
+        "so",
+        "i'd",
+        "to"
+      ],
+      "actual_translator_output": [
+        "FIRE",
+        "PUT",
+        "TWO",
+        "LIKE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "FIRE",
+        "PUT",
+        "TWO",
+        "LIKE"
+      ],
+      "grammar_omissions_applied": [
+        "are"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 12,
+      "segment_id": null,
+      "timestamp": 1089.66,
+      "original_english": "I'm gonna do this, oh, I've got a to-do list",
+      "recognized_concepts": [
+        "do",
+        "do"
+      ],
+      "unavailable_concepts": [
+        "i'm",
+        "gonna",
+        "this",
+        "oh",
+        "i've",
+        "got",
+        "to",
+        "list"
+      ],
+      "actual_translator_output": [
+        "DO",
+        "DO"
+      ],
+      "expected_isl_gloss_sequence": [
+        "DO",
+        "DO"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 13,
+      "segment_id": null,
+      "timestamp": 1157.1,
+      "original_english": "I know exactly who to call when I want to be uplifted, which is serotonin.",
+      "recognized_concepts": [
+        "i",
+        "know",
+        "call",
+        "when",
+        "i",
+        "want"
+      ],
+      "unavailable_concepts": [
+        "exactly",
+        "who",
+        "to",
+        "to",
+        "uplifted",
+        "which",
+        "serotonin"
+      ],
+      "actual_translator_output": [
+        "I",
+        "KNOW",
+        "CALL",
+        "WHEN",
+        "I",
+        "WANT"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "KNOW",
+        "CALL",
+        "I",
+        "WANT",
+        "WHEN"
+      ],
+      "grammar_omissions_applied": [
+        "be",
+        "is"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 14,
+      "segment_id": null,
+      "timestamp": 1229.58,
+      "original_english": "So just so you know what your dopamine sensation",
+      "recognized_concepts": [
+        "you",
+        "know",
+        "what",
+        "your"
+      ],
+      "unavailable_concepts": [
+        "so",
+        "just",
+        "so",
+        "dopamine",
+        "sensation"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "KNOW",
+        "WHAT",
+        "YOUR"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "KNOW",
+        "YOUR",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 15,
+      "segment_id": null,
+      "timestamp": 1290.26,
+      "original_english": "OK, and who would you like to be as successful as?",
+      "recognized_concepts": [
+        "you",
+        "like"
+      ],
+      "unavailable_concepts": [
+        "ok",
+        "and",
+        "who",
+        "would",
+        "to",
+        "as",
+        "successful",
+        "as"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "LIKE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "LIKE"
+      ],
+      "grammar_omissions_applied": [
+        "be"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 16,
+      "segment_id": null,
+      "timestamp": 1369.28,
+      "original_english": "That make you feel, oh, I'm hungry.",
+      "recognized_concepts": [
+        "you",
+        "feel"
+      ],
+      "unavailable_concepts": [
+        "that",
+        "make",
+        "oh",
+        "i'm",
+        "hungry"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "FEEL"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "FEEL"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 17,
+      "segment_id": null,
+      "timestamp": 1426.82,
+      "original_english": "And then when you've listened to it 50 times,",
+      "recognized_concepts": [
+        "when"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "then",
+        "you've",
+        "listened",
+        "to",
+        "it",
+        "50",
+        "times"
+      ],
+      "actual_translator_output": [
+        "WHEN"
+      ],
+      "expected_isl_gloss_sequence": [
+        "WHEN"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 18,
+      "segment_id": null,
+      "timestamp": 1504.28,
+      "original_english": "diet and you're like, oh my God, this is so fun.",
+      "recognized_concepts": [
+        "like",
+        "my"
+      ],
+      "unavailable_concepts": [
+        "diet",
+        "and",
+        "you're",
+        "oh",
+        "god",
+        "this",
+        "so",
+        "fun"
+      ],
+      "actual_translator_output": [
+        "LIKE",
+        "MY"
+      ],
+      "expected_isl_gloss_sequence": [
+        "LIKE",
+        "MY"
+      ],
+      "grammar_omissions_applied": [
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 19,
+      "segment_id": null,
+      "timestamp": 1589.82,
+      "original_english": "you have to not only take action, but take action upon action upon action upon action upon action",
+      "recognized_concepts": [
+        "you",
+        "have",
+        "not",
+        "action",
+        "action",
+        "action",
+        "action",
+        "action",
+        "action"
+      ],
+      "unavailable_concepts": [
+        "to",
+        "only",
+        "take",
+        "but",
+        "take",
+        "upon",
+        "upon",
+        "upon",
+        "upon"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "HAVE",
+        "NOT",
+        "ACTION",
+        "ACTION",
+        "ACTION",
+        "ACTION",
+        "ACTION",
+        "ACTION"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "HAVE",
+        "NOT",
+        "ACTION",
+        "ACTION",
+        "ACTION",
+        "ACTION",
+        "ACTION",
+        "ACTION"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 20,
+      "segment_id": null,
+      "timestamp": 1717.84,
+      "original_english": "my absolute recommendation is that",
+      "recognized_concepts": [
+        "my"
+      ],
+      "unavailable_concepts": [
+        "absolute",
+        "recommendation",
+        "that"
+      ],
+      "actual_translator_output": [
+        "MY"
+      ],
+      "expected_isl_gloss_sequence": [
+        "MY"
+      ],
+      "grammar_omissions_applied": [
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 21,
+      "segment_id": null,
+      "timestamp": 1778.74,
+      "original_english": "I'm not home that often, but I often,",
+      "recognized_concepts": [
+        "not",
+        "i"
+      ],
+      "unavailable_concepts": [
+        "i'm",
+        "home",
+        "that",
+        "often",
+        "but",
+        "often"
+      ],
+      "actual_translator_output": [
+        "NOT",
+        "I"
+      ],
+      "expected_isl_gloss_sequence": [
+        "NOT",
+        "I"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 22,
+      "segment_id": null,
+      "timestamp": 1848.69,
+      "original_english": "which also scientifically has proven to impact confidence.",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "which",
+        "also",
+        "scientifically",
+        "has",
+        "proven",
+        "to",
+        "impact",
+        "confidence"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 23,
+      "segment_id": null,
+      "timestamp": 1934.4,
+      "original_english": "Wow, that's nice, Vicki.",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "wow",
+        "that's",
+        "nice",
+        "vicki"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 24,
+      "segment_id": null,
+      "timestamp": 1993.48,
+      "original_english": "May that be cooking pancakes, singing, wrapping,",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "may",
+        "that",
+        "cooking",
+        "pancakes",
+        "singing",
+        "wrapping"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [
+        "be"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 25,
+      "segment_id": null,
+      "timestamp": 2087.09,
+      "original_english": "or booked for a meeting. So imagine this, it's the 1st of February, your boss calls you up and says,",
+      "recognized_concepts": [
+        "imagine",
+        "your",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "or",
+        "booked",
+        "for",
+        "meeting",
+        "so",
+        "this",
+        "it's",
+        "1st",
+        "of",
+        "february",
+        "boss",
+        "calls",
+        "up",
+        "and",
+        "says"
+      ],
+      "actual_translator_output": [
+        "IMAGINE",
+        "YOUR",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "IMAGINE",
+        "YOUR",
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "a",
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 26,
+      "segment_id": null,
+      "timestamp": 2207.33,
+      "original_english": "Whenever you're uncomfortable, you have the opportunity",
+      "recognized_concepts": [
+        "you",
+        "have"
+      ],
+      "unavailable_concepts": [
+        "whenever",
+        "you're",
+        "uncomfortable",
+        "opportunity"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "HAVE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "HAVE"
+      ],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 27,
+      "segment_id": null,
+      "timestamp": 2382.23,
+      "original_english": "at them when you want confidence on command. I'm going to show you one more video which",
+      "recognized_concepts": [
+        "when",
+        "you",
+        "want",
+        "show",
+        "you",
+        "one",
+        "more",
+        "video"
+      ],
+      "unavailable_concepts": [
+        "at",
+        "them",
+        "confidence",
+        "on",
+        "command",
+        "i'm",
+        "going",
+        "to",
+        "which"
+      ],
+      "actual_translator_output": [
+        "WHEN",
+        "YOU",
+        "WANT",
+        "SHOW",
+        "YOU",
+        "ONE",
+        "MORE",
+        "VIDEO"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "WANT",
+        "SHOW",
+        "YOU",
+        "ONE",
+        "MORE",
+        "VIDEO",
+        "WHEN"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 28,
+      "segment_id": null,
+      "timestamp": 2472.98,
+      "original_english": "but it doesn't make sense because they need to be relatable to you.",
+      "recognized_concepts": [
+        "they",
+        "need",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "but",
+        "it",
+        "doesn't",
+        "make",
+        "sense",
+        "because",
+        "to",
+        "relatable",
+        "to"
+      ],
+      "actual_translator_output": [
+        "THEY",
+        "NEED",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "THEY",
+        "NEED",
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "be"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 29,
+      "segment_id": null,
+      "timestamp": 2587.57,
+      "original_english": "and he walks up into the corner,",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "and",
+        "he",
+        "walks",
+        "up",
+        "into",
+        "corner"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 30,
+      "segment_id": null,
+      "timestamp": 2648.51,
+      "original_english": "And I did all of that.",
+      "recognized_concepts": [
+        "i"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "did",
+        "all",
+        "of",
+        "that"
+      ],
+      "actual_translator_output": [
+        "I"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 31,
+      "segment_id": null,
+      "timestamp": 2763.65,
+      "original_english": "Now the third one I want to give you on testosterone.",
+      "recognized_concepts": [
+        "now",
+        "one",
+        "i",
+        "want",
+        "give",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "third",
+        "to",
+        "on",
+        "testosterone"
+      ],
+      "actual_translator_output": [
+        "NOW",
+        "ONE",
+        "I",
+        "WANT",
+        "GIVE",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "NOW",
+        "ONE",
+        "I",
+        "WANT",
+        "GIVE",
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 32,
+      "segment_id": null,
+      "timestamp": 2837.13,
+      "original_english": "I long to this, but testosterone is just more powerful.",
+      "recognized_concepts": [
+        "i",
+        "long",
+        "more"
+      ],
+      "unavailable_concepts": [
+        "to",
+        "this",
+        "but",
+        "testosterone",
+        "just",
+        "powerful"
+      ],
+      "actual_translator_output": [
+        "I",
+        "LONG",
+        "MORE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "LONG",
+        "MORE"
+      ],
+      "grammar_omissions_applied": [
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 33,
+      "segment_id": null,
+      "timestamp": 2916.18,
+      "original_english": "will have on my audience.",
+      "recognized_concepts": [
+        "will",
+        "have",
+        "my",
+        "audience"
+      ],
+      "unavailable_concepts": [
+        "on"
+      ],
+      "actual_translator_output": [
+        "WILL",
+        "HAVE",
+        "MY",
+        "AUDIENCE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "WILL",
+        "HAVE",
+        "MY",
+        "AUDIENCE"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 34,
+      "segment_id": null,
+      "timestamp": 3033.22,
+      "original_english": "that I get goosebumps over my entire body and I feel like I'm in absolute",
+      "recognized_concepts": [
+        "i",
+        "my",
+        "body",
+        "i",
+        "feel",
+        "like"
+      ],
+      "unavailable_concepts": [
+        "that",
+        "get",
+        "goosebumps",
+        "over",
+        "entire",
+        "and",
+        "i'm",
+        "in",
+        "absolute"
+      ],
+      "actual_translator_output": [
+        "I",
+        "MY",
+        "BODY",
+        "I",
+        "FEEL",
+        "LIKE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "MY",
+        "BODY",
+        "I",
+        "FEEL",
+        "LIKE"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 35,
+      "segment_id": null,
+      "timestamp": 3150.1,
+      "original_english": "See what it does.",
+      "recognized_concepts": [
+        "see",
+        "what"
+      ],
+      "unavailable_concepts": [
+        "it",
+        "does"
+      ],
+      "actual_translator_output": [
+        "SEE",
+        "WHAT"
+      ],
+      "expected_isl_gloss_sequence": [
+        "SEE",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 36,
+      "segment_id": null,
+      "timestamp": 3218.06,
+      "original_english": "Remember to take action, to build those logs,",
+      "recognized_concepts": [
+        "remember",
+        "action",
+        "build"
+      ],
+      "unavailable_concepts": [
+        "to",
+        "take",
+        "to",
+        "those",
+        "logs"
+      ],
+      "actual_translator_output": [
+        "REMEMBER",
+        "ACTION",
+        "BUILD"
+      ],
+      "expected_isl_gloss_sequence": [
+        "REMEMBER",
+        "ACTION",
+        "BUILD"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 37,
+      "segment_id": null,
+      "timestamp": 3295.68,
+      "original_english": "write every single one down, start applying them in your presentations.",
+      "recognized_concepts": [
+        "write",
+        "one",
+        "your"
+      ],
+      "unavailable_concepts": [
+        "every",
+        "single",
+        "down",
+        "start",
+        "applying",
+        "them",
+        "in",
+        "presentations"
+      ],
+      "actual_translator_output": [
+        "WRITE",
+        "ONE",
+        "YOUR"
+      ],
+      "expected_isl_gloss_sequence": [
+        "WRITE",
+        "ONE",
+        "YOUR"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 38,
+      "segment_id": null,
+      "timestamp": 3377.99,
+      "original_english": "How can I be really good? People are going to come to you. It's much easier.",
+      "recognized_concepts": [
+        "how",
+        "can",
+        "i",
+        "good",
+        "people",
+        "come",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "really",
+        "going",
+        "to",
+        "to",
+        "it's",
+        "much",
+        "easier"
+      ],
+      "actual_translator_output": [
+        "HOW",
+        "CAN",
+        "I",
+        "GOOD",
+        "PEOPLE",
+        "COME",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "CAN",
+        "I",
+        "GOOD",
+        "PEOPLE",
+        "COME",
+        "YOU",
+        "HOW"
+      ],
+      "grammar_omissions_applied": [
+        "be",
+        "are"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 39,
+      "segment_id": null,
+      "timestamp": 3480.04,
+      "original_english": "Do something differently to inject attention in the person that is listening.",
+      "recognized_concepts": [
+        "do",
+        "attention"
+      ],
+      "unavailable_concepts": [
+        "something",
+        "differently",
+        "to",
+        "inject",
+        "in",
+        "person",
+        "that",
+        "listening"
+      ],
+      "actual_translator_output": [
+        "DO",
+        "ATTENTION"
+      ],
+      "expected_isl_gloss_sequence": [
+        "DO",
+        "ATTENTION"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 40,
+      "segment_id": null,
+      "timestamp": 3570.56,
+      "original_english": "Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in",
+      "recognized_concepts": [
+        "problem",
+        "show",
+        "they",
+        "like"
+      ],
+      "unavailable_concepts": [
+        "though",
+        "studies",
+        "that",
+        "adults",
+        "or",
+        "kids",
+        "develop",
+        "adhd",
+        "symptoms",
+        "in"
+      ],
+      "actual_translator_output": [
+        "PROBLEM",
+        "SHOW",
+        "THEY",
+        "LIKE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "PROBLEM",
+        "SHOW",
+        "THEY",
+        "LIKE"
+      ],
+      "grammar_omissions_applied": [
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 41,
+      "segment_id": null,
+      "timestamp": 3636.63,
+      "original_english": "they bring up their mobile phone and then they go, oh, oh,",
+      "recognized_concepts": [
+        "they",
+        "phone",
+        "they",
+        "go"
+      ],
+      "unavailable_concepts": [
+        "bring",
+        "up",
+        "their",
+        "mobile",
+        "and",
+        "then",
+        "oh",
+        "oh"
+      ],
+      "actual_translator_output": [
+        "THEY",
+        "PHONE",
+        "THEY",
+        "GO"
+      ],
+      "expected_isl_gloss_sequence": [
+        "THEY",
+        "PHONE",
+        "THEY",
+        "GO"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 42,
+      "segment_id": null,
+      "timestamp": 3715.4,
+      "original_english": "We're going to have a look at big ways to inject dopamine.",
+      "recognized_concepts": [
+        "have",
+        "look"
+      ],
+      "unavailable_concepts": [
+        "we're",
+        "going",
+        "to",
+        "at",
+        "big",
+        "ways",
+        "to",
+        "inject",
+        "dopamine"
+      ],
+      "actual_translator_output": [
+        "HAVE",
+        "LOOK"
+      ],
+      "expected_isl_gloss_sequence": [
+        "HAVE",
+        "LOOK"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 43,
+      "segment_id": null,
+      "timestamp": 3796.36,
+      "original_english": "create. Imagine a person comes to you and absolutely truthfully says hey if",
+      "recognized_concepts": [
+        "imagine",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "create",
+        "person",
+        "comes",
+        "to",
+        "and",
+        "absolutely",
+        "truthfully",
+        "says",
+        "hey",
+        "if"
+      ],
+      "actual_translator_output": [
+        "IMAGINE",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "IMAGINE",
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 44,
+      "segment_id": null,
+      "timestamp": 3864.64,
+      "original_english": "I wanna hear, do you all have your built up presentation",
+      "recognized_concepts": [
+        "i",
+        "hear",
+        "do",
+        "you",
+        "have",
+        "your",
+        "presentation"
+      ],
+      "unavailable_concepts": [
+        "wanna",
+        "all",
+        "built",
+        "up"
+      ],
+      "actual_translator_output": [
+        "I",
+        "HEAR",
+        "DO",
+        "YOU",
+        "HAVE",
+        "YOUR",
+        "PRESENTATION"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "HEAR",
+        "DO",
+        "YOU",
+        "HAVE",
+        "YOUR",
+        "PRESENTATION"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 45,
+      "segment_id": null,
+      "timestamp": 3926.83,
+      "original_english": "origins when you give that to them. So in this case, if you would rewind this",
+      "recognized_concepts": [
+        "when",
+        "you",
+        "give",
+        "case",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "origins",
+        "that",
+        "to",
+        "them",
+        "so",
+        "in",
+        "this",
+        "if",
+        "would",
+        "rewind",
+        "this"
+      ],
+      "actual_translator_output": [
+        "WHEN",
+        "YOU",
+        "GIVE",
+        "CASE",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "GIVE",
+        "CASE",
+        "YOU",
+        "WHEN"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 46,
+      "segment_id": null,
+      "timestamp": 4071.76,
+      "original_english": "Suddenly, the door is thrown up and this guy comes out, he's like two meters tall,",
+      "recognized_concepts": [
+        "like",
+        "two"
+      ],
+      "unavailable_concepts": [
+        "suddenly",
+        "door",
+        "thrown",
+        "up",
+        "and",
+        "this",
+        "guy",
+        "comes",
+        "out",
+        "he's",
+        "meters",
+        "tall"
+      ],
+      "actual_translator_output": [
+        "LIKE",
+        "TWO"
+      ],
+      "expected_isl_gloss_sequence": [
+        "LIKE",
+        "TWO"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 47,
+      "segment_id": null,
+      "timestamp": 4172.43,
+      "original_english": "storytelling. When I told you the story about Arthur Brummer just 45 seconds ago, I increased",
+      "recognized_concepts": [
+        "when",
+        "i",
+        "you",
+        "story",
+        "i"
+      ],
+      "unavailable_concepts": [
+        "storytelling",
+        "told",
+        "about",
+        "arthur",
+        "brummer",
+        "just",
+        "45",
+        "seconds",
+        "ago",
+        "increased"
+      ],
+      "actual_translator_output": [
+        "WHEN",
+        "I",
+        "YOU",
+        "STORY",
+        "I"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "YOU",
+        "STORY",
+        "I",
+        "WHEN"
+      ],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 48,
+      "segment_id": null,
+      "timestamp": 4289.19,
+      "original_english": "So if you have that, bring that up, you have the resource pack.",
+      "recognized_concepts": [
+        "you",
+        "have",
+        "you",
+        "have",
+        "resource"
+      ],
+      "unavailable_concepts": [
+        "so",
+        "if",
+        "that",
+        "bring",
+        "that",
+        "up",
+        "pack"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "HAVE",
+        "YOU",
+        "HAVE",
+        "RESOURCE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "HAVE",
+        "YOU",
+        "HAVE",
+        "RESOURCE"
+      ],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 49,
+      "segment_id": null,
+      "timestamp": 4372.5,
+      "original_english": "Six micro dopamine injections.",
+      "recognized_concepts": [
+        "six"
+      ],
+      "unavailable_concepts": [
+        "micro",
+        "dopamine",
+        "injections"
+      ],
+      "actual_translator_output": [
+        "SIX"
+      ],
+      "expected_isl_gloss_sequence": [
+        "SIX"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 50,
+      "segment_id": null,
+      "timestamp": 4479.62,
+      "original_english": "placed as a rhetorical question, it would sound like this. What is the most important",
+      "recognized_concepts": [
+        "question",
+        "sound",
+        "like",
+        "what",
+        "important"
+      ],
+      "unavailable_concepts": [
+        "placed",
+        "as",
+        "rhetorical",
+        "it",
+        "would",
+        "this",
+        "most"
+      ],
+      "actual_translator_output": [
+        "QUESTION",
+        "SOUND",
+        "LIKE",
+        "WHAT",
+        "IMPORTANT"
+      ],
+      "expected_isl_gloss_sequence": [
+        "QUESTION",
+        "SOUND",
+        "LIKE",
+        "IMPORTANT",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [
+        "a",
+        "is",
+        "the"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 51,
+      "segment_id": null,
+      "timestamp": 4553.66,
+      "original_english": "And you can see your kids' eyes go, oh yes, oh yes,",
+      "recognized_concepts": [
+        "you",
+        "can",
+        "see",
+        "your",
+        "go",
+        "yes",
+        "yes"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "kids'",
+        "eyes",
+        "oh",
+        "oh"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "CAN",
+        "SEE",
+        "YOUR",
+        "GO",
+        "YES",
+        "YES"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "CAN",
+        "SEE",
+        "YOUR",
+        "GO",
+        "YES",
+        "YES"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 52,
+      "segment_id": null,
+      "timestamp": 4657.88,
+      "original_english": "I've, uh,",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "i've",
+        "uh"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 53,
+      "segment_id": null,
+      "timestamp": 4755.71,
+      "original_english": "We're going to have a look at a combination here because we've come to",
+      "recognized_concepts": [
+        "have",
+        "look",
+        "combination",
+        "come"
+      ],
+      "unavailable_concepts": [
+        "we're",
+        "going",
+        "to",
+        "at",
+        "here",
+        "because",
+        "we've",
+        "to"
+      ],
+      "actual_translator_output": [
+        "HAVE",
+        "LOOK",
+        "COMBINATION",
+        "COME"
+      ],
+      "expected_isl_gloss_sequence": [
+        "HAVE",
+        "LOOK",
+        "COMBINATION",
+        "COME"
+      ],
+      "grammar_omissions_applied": [
+        "a",
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 54,
+      "segment_id": null,
+      "timestamp": 4815.95,
+      "original_english": "2.9.",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "2",
+        "9"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 55,
+      "segment_id": null,
+      "timestamp": 4885.47,
+      "original_english": "I started talking about cars from absolutely nowhere, but you went, I think it's faster,",
+      "recognized_concepts": [
+        "i",
+        "you",
+        "i",
+        "think"
+      ],
+      "unavailable_concepts": [
+        "started",
+        "talking",
+        "about",
+        "cars",
+        "from",
+        "absolutely",
+        "nowhere",
+        "but",
+        "went",
+        "it's",
+        "faster"
+      ],
+      "actual_translator_output": [
+        "I",
+        "YOU",
+        "I",
+        "THINK"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "YOU",
+        "I",
+        "THINK"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 56,
+      "segment_id": null,
+      "timestamp": 4999.92,
+      "original_english": "This is me using a flip chart.",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "this",
+        "me",
+        "using",
+        "flip",
+        "chart"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [
+        "is",
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 57,
+      "segment_id": null,
+      "timestamp": 5088.4,
+      "original_english": "of an outstanding meal that you had.",
+      "recognized_concepts": [
+        "you"
+      ],
+      "unavailable_concepts": [
+        "of",
+        "outstanding",
+        "meal",
+        "that",
+        "had"
+      ],
+      "actual_translator_output": [
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "an"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 58,
+      "segment_id": null,
+      "timestamp": 5158.28,
+      "original_english": "you ask yourself, is this well-spiced?",
+      "recognized_concepts": [
+        "you",
+        "ask"
+      ],
+      "unavailable_concepts": [
+        "yourself",
+        "this",
+        "well",
+        "spiced"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "ASK"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "ASK"
+      ],
+      "grammar_omissions_applied": [
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 59,
+      "segment_id": null,
+      "timestamp": 5221.6,
+      "original_english": "We added a customer interaction.",
+      "recognized_concepts": [
+        "we"
+      ],
+      "unavailable_concepts": [
+        "added",
+        "customer",
+        "interaction"
+      ],
+      "actual_translator_output": [
+        "WE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "WE"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 60,
+      "segment_id": null,
+      "timestamp": 5341.28,
+      "original_english": "So I've never ever been influenced by another public speaker and therefore,",
+      "recognized_concepts": [
+        "public"
+      ],
+      "unavailable_concepts": [
+        "so",
+        "i've",
+        "never",
+        "ever",
+        "influenced",
+        "by",
+        "another",
+        "speaker",
+        "and",
+        "therefore"
+      ],
+      "actual_translator_output": [
+        "PUBLIC"
+      ],
+      "expected_isl_gloss_sequence": [
+        "PUBLIC"
+      ],
+      "grammar_omissions_applied": [
+        "been"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 61,
+      "segment_id": null,
+      "timestamp": 5421.43,
+      "original_english": "Good, Gary, you are on point, my man. Yes, here we go. So these are the ways I did it.",
+      "recognized_concepts": [
+        "good",
+        "you",
+        "point",
+        "my",
+        "yes",
+        "we",
+        "go",
+        "i"
+      ],
+      "unavailable_concepts": [
+        "gary",
+        "on",
+        "man",
+        "here",
+        "so",
+        "these",
+        "ways",
+        "did",
+        "it"
+      ],
+      "actual_translator_output": [
+        "GOOD",
+        "YOU",
+        "POINT",
+        "MY",
+        "YES",
+        "WE",
+        "GO",
+        "I"
+      ],
+      "expected_isl_gloss_sequence": [
+        "GOOD",
+        "YOU",
+        "POINT",
+        "MY",
+        "YES",
+        "WE",
+        "GO",
+        "I"
+      ],
+      "grammar_omissions_applied": [
+        "are",
+        "are",
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 62,
+      "segment_id": null,
+      "timestamp": 5534.42,
+      "original_english": "The thing is this, as I mentioned yesterday, some of my content I do live at a thousand",
+      "recognized_concepts": [
+        "i",
+        "my",
+        "i",
+        "do"
+      ],
+      "unavailable_concepts": [
+        "thing",
+        "this",
+        "as",
+        "mentioned",
+        "yesterday",
+        "some",
+        "of",
+        "content",
+        "live",
+        "at",
+        "thousand"
+      ],
+      "actual_translator_output": [
+        "I",
+        "MY",
+        "I",
+        "DO"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "MY",
+        "I",
+        "DO"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "is",
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 63,
+      "segment_id": null,
+      "timestamp": 5613.68,
+      "original_english": "She asked the class to stand in a circle and kick it to each other.",
+      "recognized_concepts": [
+        "class",
+        "stand",
+        "other"
+      ],
+      "unavailable_concepts": [
+        "she",
+        "asked",
+        "to",
+        "in",
+        "circle",
+        "and",
+        "kick",
+        "it",
+        "to",
+        "each"
+      ],
+      "actual_translator_output": [
+        "CLASS",
+        "STAND",
+        "OTHER"
+      ],
+      "expected_isl_gloss_sequence": [
+        "CLASS",
+        "STAND",
+        "OTHER"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 64,
+      "segment_id": null,
+      "timestamp": 5677.21,
+      "original_english": "Store telling, yes.",
+      "recognized_concepts": [
+        "yes"
+      ],
+      "unavailable_concepts": [
+        "store",
+        "telling"
+      ],
+      "actual_translator_output": [
+        "YES"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YES"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 65,
+      "segment_id": null,
+      "timestamp": 5753.08,
+      "original_english": "Try that.",
+      "recognized_concepts": [
+        "try"
+      ],
+      "unavailable_concepts": [
+        "that"
+      ],
+      "actual_translator_output": [
+        "TRY"
+      ],
+      "expected_isl_gloss_sequence": [
+        "TRY"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 66,
+      "segment_id": null,
+      "timestamp": 5832.2,
+      "original_english": "I wanna end this entire evening",
+      "recognized_concepts": [
+        "i"
+      ],
+      "unavailable_concepts": [
+        "wanna",
+        "end",
+        "this",
+        "entire",
+        "evening"
+      ],
+      "actual_translator_output": [
+        "I"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 67,
+      "segment_id": null,
+      "timestamp": 5894.72,
+      "original_english": "The story said, please be my guest.",
+      "recognized_concepts": [
+        "story",
+        "my"
+      ],
+      "unavailable_concepts": [
+        "said",
+        "please",
+        "guest"
+      ],
+      "actual_translator_output": [
+        "STORY",
+        "MY"
+      ],
+      "expected_isl_gloss_sequence": [
+        "STORY",
+        "MY"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "be"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 68,
+      "segment_id": null,
+      "timestamp": 5977.14,
+      "original_english": "The thing is though, the people aren't attracted to the truth.",
+      "recognized_concepts": [
+        "people"
+      ],
+      "unavailable_concepts": [
+        "thing",
+        "though",
+        "aren't",
+        "attracted",
+        "to",
+        "truth"
+      ],
+      "actual_translator_output": [
+        "PEOPLE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "PEOPLE"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "is",
+        "the",
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 69,
+      "segment_id": null,
+      "timestamp": 6064.67,
+      "original_english": "Today's subject.",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "today's",
+        "subject"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 70,
+      "segment_id": null,
+      "timestamp": 6141.79,
+      "original_english": "And I also want to say to all of those who have got the resource package, what we will",
+      "recognized_concepts": [
+        "i",
+        "want",
+        "say",
+        "have",
+        "resource",
+        "what",
+        "we",
+        "will"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "also",
+        "to",
+        "to",
+        "all",
+        "of",
+        "those",
+        "who",
+        "got",
+        "package"
+      ],
+      "actual_translator_output": [
+        "I",
+        "WANT",
+        "SAY",
+        "HAVE",
+        "RESOURCE",
+        "WHAT",
+        "WE",
+        "WILL"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "WANT",
+        "SAY",
+        "HAVE",
+        "RESOURCE",
+        "WE",
+        "WILL",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 71,
+      "segment_id": null,
+      "timestamp": 6260.12,
+      "original_english": "Same thing when you go to a job interview. Same thing when you buy something in a shop.",
+      "recognized_concepts": [
+        "same",
+        "when",
+        "you",
+        "go",
+        "same",
+        "when",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "thing",
+        "to",
+        "job",
+        "interview",
+        "thing",
+        "buy",
+        "something",
+        "in",
+        "shop"
+      ],
+      "actual_translator_output": [
+        "SAME",
+        "WHEN",
+        "YOU",
+        "GO",
+        "SAME",
+        "WHEN",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "SAME",
+        "YOU",
+        "GO",
+        "SAME",
+        "YOU",
+        "WHEN",
+        "WHEN"
+      ],
+      "grammar_omissions_applied": [
+        "a",
+        "a"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 72,
+      "segment_id": null,
+      "timestamp": 6353.01,
+      "original_english": "I saw in my brain went, bop, bop, bop, bop, bop, bop.",
+      "recognized_concepts": [
+        "i",
+        "my",
+        "brain"
+      ],
+      "unavailable_concepts": [
+        "saw",
+        "in",
+        "went",
+        "bop",
+        "bop",
+        "bop",
+        "bop",
+        "bop",
+        "bop"
+      ],
+      "actual_translator_output": [
+        "I",
+        "MY",
+        "BRAIN"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "MY",
+        "BRAIN"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 73,
+      "segment_id": null,
+      "timestamp": 6410.61,
+      "original_english": "oh, I'm sorry to hear that.",
+      "recognized_concepts": [
+        "hear"
+      ],
+      "unavailable_concepts": [
+        "oh",
+        "i'm",
+        "sorry",
+        "to",
+        "that"
+      ],
+      "actual_translator_output": [
+        "HEAR"
+      ],
+      "expected_isl_gloss_sequence": [
+        "HEAR"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 74,
+      "segment_id": null,
+      "timestamp": 6473.69,
+      "original_english": "And so are about 20% of you.",
+      "recognized_concepts": [
+        "you"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "so",
+        "about",
+        "20",
+        "of"
+      ],
+      "actual_translator_output": [
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "are"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 75,
+      "segment_id": null,
+      "timestamp": 6542.89,
+      "original_english": "That is not strange, my friend.",
+      "recognized_concepts": [
+        "not",
+        "my",
+        "friend"
+      ],
+      "unavailable_concepts": [
+        "that",
+        "strange"
+      ],
+      "actual_translator_output": [
+        "NOT",
+        "MY",
+        "FRIEND"
+      ],
+      "expected_isl_gloss_sequence": [
+        "NOT",
+        "MY",
+        "FRIEND"
+      ],
+      "grammar_omissions_applied": [
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 76,
+      "segment_id": null,
+      "timestamp": 6620.71,
+      "original_english": "And if you look at this, if you got a good resolution,",
+      "recognized_concepts": [
+        "you",
+        "look",
+        "you",
+        "good"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "if",
+        "at",
+        "this",
+        "if",
+        "got",
+        "resolution"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "LOOK",
+        "YOU",
+        "GOOD"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "LOOK",
+        "YOU",
+        "GOOD"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 77,
+      "segment_id": null,
+      "timestamp": 6697.68,
+      "original_english": "Three, 11, 20.",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "three",
+        "11",
+        "20"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 78,
+      "segment_id": null,
+      "timestamp": 6767.16,
+      "original_english": "And we're gonna have a look at number 62,",
+      "recognized_concepts": [
+        "have",
+        "look",
+        "number"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "we're",
+        "gonna",
+        "at",
+        "62"
+      ],
+      "actual_translator_output": [
+        "HAVE",
+        "LOOK",
+        "NUMBER"
+      ],
+      "expected_isl_gloss_sequence": [
+        "HAVE",
+        "LOOK",
+        "NUMBER"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 79,
+      "segment_id": null,
+      "timestamp": 6863.34,
+      "original_english": "She goes like, yeah, absolutely.",
+      "recognized_concepts": [
+        "like"
+      ],
+      "unavailable_concepts": [
+        "she",
+        "goes",
+        "yeah",
+        "absolutely"
+      ],
+      "actual_translator_output": [
+        "LIKE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "LIKE"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 80,
+      "segment_id": null,
+      "timestamp": 6947.38,
+      "original_english": "What I'm saying 20 of you have it is because you've got your cameras coming up from below.",
+      "recognized_concepts": [
+        "what",
+        "you",
+        "have",
+        "your"
+      ],
+      "unavailable_concepts": [
+        "i'm",
+        "saying",
+        "20",
+        "of",
+        "it",
+        "because",
+        "you've",
+        "got",
+        "cameras",
+        "coming",
+        "up",
+        "from",
+        "below"
+      ],
+      "actual_translator_output": [
+        "WHAT",
+        "YOU",
+        "HAVE",
+        "YOUR"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "HAVE",
+        "YOUR",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [
+        "is"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 81,
+      "segment_id": null,
+      "timestamp": 7072.5,
+      "original_english": "How's your head angle?",
+      "recognized_concepts": [
+        "your",
+        "head"
+      ],
+      "unavailable_concepts": [
+        "how's",
+        "angle"
+      ],
+      "actual_translator_output": [
+        "YOUR",
+        "HEAD"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOUR",
+        "HEAD"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 82,
+      "segment_id": null,
+      "timestamp": 7147.7,
+      "original_english": "Yeah, let's have a look at that.",
+      "recognized_concepts": [
+        "have",
+        "look"
+      ],
+      "unavailable_concepts": [
+        "yeah",
+        "let's",
+        "at",
+        "that"
+      ],
+      "actual_translator_output": [
+        "HAVE",
+        "LOOK"
+      ],
+      "expected_isl_gloss_sequence": [
+        "HAVE",
+        "LOOK"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 83,
+      "segment_id": null,
+      "timestamp": 7219.68,
+      "original_english": "And the second one, you're like,",
+      "recognized_concepts": [
+        "second",
+        "one",
+        "like"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "you're"
+      ],
+      "actual_translator_output": [
+        "SECOND",
+        "ONE",
+        "LIKE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "SECOND",
+        "ONE",
+        "LIKE"
+      ],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 84,
+      "segment_id": null,
+      "timestamp": 7319.06,
+      "original_english": "If it's too fast, it means that everything that they say is pointless to the people listening.",
+      "recognized_concepts": [
+        "fast",
+        "they",
+        "say",
+        "people"
+      ],
+      "unavailable_concepts": [
+        "if",
+        "it's",
+        "too",
+        "it",
+        "means",
+        "that",
+        "everything",
+        "that",
+        "pointless",
+        "to",
+        "listening"
+      ],
+      "actual_translator_output": [
+        "FAST",
+        "THEY",
+        "SAY",
+        "PEOPLE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "FAST",
+        "THEY",
+        "SAY",
+        "PEOPLE"
+      ],
+      "grammar_omissions_applied": [
+        "is",
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 85,
+      "segment_id": null,
+      "timestamp": 7407.2,
+      "original_english": "What do I... What does a conductor...",
+      "recognized_concepts": [
+        "what",
+        "do",
+        "i",
+        "what"
+      ],
+      "unavailable_concepts": [
+        "does",
+        "conductor"
+      ],
+      "actual_translator_output": [
+        "WHAT",
+        "DO",
+        "I",
+        "WHAT"
+      ],
+      "expected_isl_gloss_sequence": [
+        "DO",
+        "I",
+        "WHAT",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 86,
+      "segment_id": null,
+      "timestamp": 7456.39,
+      "original_english": "but say something with excitement.",
+      "recognized_concepts": [
+        "say"
+      ],
+      "unavailable_concepts": [
+        "but",
+        "something",
+        "with",
+        "excitement"
+      ],
+      "actual_translator_output": [
+        "SAY"
+      ],
+      "expected_isl_gloss_sequence": [
+        "SAY"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 87,
+      "segment_id": null,
+      "timestamp": 7503.54,
+      "original_english": "It doesn't matter.",
+      "recognized_concepts": [
+        "matter"
+      ],
+      "unavailable_concepts": [
+        "it",
+        "doesn't"
+      ],
+      "actual_translator_output": [
+        "MATTER"
+      ],
+      "expected_isl_gloss_sequence": [
+        "MATTER"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 88,
+      "segment_id": null,
+      "timestamp": 7573.22,
+      "original_english": "Hello, my name is Lars and I'm going to take you through quarter one and I can't do this",
+      "recognized_concepts": [
+        "hello",
+        "my",
+        "name",
+        "you",
+        "one",
+        "i",
+        "do"
+      ],
+      "unavailable_concepts": [
+        "lars",
+        "and",
+        "i'm",
+        "going",
+        "to",
+        "take",
+        "through",
+        "quarter",
+        "and",
+        "can't",
+        "this"
+      ],
+      "actual_translator_output": [
+        "HELLO",
+        "MY",
+        "NAME",
+        "YOU",
+        "ONE",
+        "I",
+        "DO"
+      ],
+      "expected_isl_gloss_sequence": [
+        "HELLO",
+        "MY",
+        "NAME",
+        "YOU",
+        "ONE",
+        "I",
+        "DO"
+      ],
+      "grammar_omissions_applied": [
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 89,
+      "segment_id": null,
+      "timestamp": 7730.08,
+      "original_english": "If you listen to the amount of silly",
+      "recognized_concepts": [
+        "you"
+      ],
+      "unavailable_concepts": [
+        "if",
+        "listen",
+        "to",
+        "amount",
+        "of",
+        "silly"
+      ],
+      "actual_translator_output": [
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 90,
+      "segment_id": null,
+      "timestamp": 7836.24,
+      "original_english": "Before I give you the technique, I'm going to give you a demonstration.",
+      "recognized_concepts": [
+        "i",
+        "give",
+        "you",
+        "give",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "before",
+        "technique",
+        "i'm",
+        "going",
+        "to",
+        "demonstration"
+      ],
+      "actual_translator_output": [
+        "I",
+        "GIVE",
+        "YOU",
+        "GIVE",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "I",
+        "GIVE",
+        "YOU",
+        "GIVE",
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 91,
+      "segment_id": null,
+      "timestamp": 7917.97,
+      "original_english": "The first one I saw you lost interest, but the second one I had you nailed, I had you",
+      "recognized_concepts": [
+        "first",
+        "one",
+        "i",
+        "you",
+        "second",
+        "one",
+        "i",
+        "you",
+        "i",
+        "you"
+      ],
+      "unavailable_concepts": [
+        "saw",
+        "lost",
+        "interest",
+        "but",
+        "had",
+        "nailed",
+        "had"
+      ],
+      "actual_translator_output": [
+        "FIRST",
+        "ONE",
+        "I",
+        "YOU",
+        "SECOND",
+        "ONE",
+        "I",
+        "YOU",
+        "I",
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "FIRST",
+        "ONE",
+        "I",
+        "YOU",
+        "SECOND",
+        "ONE",
+        "I",
+        "YOU",
+        "I",
+        "YOU"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 92,
+      "segment_id": null,
+      "timestamp": 7990.77,
+      "original_english": "you instead inhale.",
+      "recognized_concepts": [
+        "you"
+      ],
+      "unavailable_concepts": [
+        "instead",
+        "inhale"
+      ],
+      "actual_translator_output": [
+        "YOU"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 93,
+      "segment_id": null,
+      "timestamp": 8040.87,
+      "original_english": "It's a liability not to know public speaking.",
+      "recognized_concepts": [
+        "not",
+        "know",
+        "public"
+      ],
+      "unavailable_concepts": [
+        "it's",
+        "liability",
+        "to",
+        "speaking"
+      ],
+      "actual_translator_output": [
+        "NOT",
+        "KNOW",
+        "PUBLIC"
+      ],
+      "expected_isl_gloss_sequence": [
+        "NOT",
+        "KNOW",
+        "PUBLIC"
+      ],
+      "grammar_omissions_applied": [
+        "a"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 94,
+      "segment_id": null,
+      "timestamp": 8121.91,
+      "original_english": "You can make people fall in love with what you do.",
+      "recognized_concepts": [
+        "you",
+        "can",
+        "people",
+        "love",
+        "what",
+        "you",
+        "do"
+      ],
+      "unavailable_concepts": [
+        "make",
+        "fall",
+        "in",
+        "with"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "CAN",
+        "PEOPLE",
+        "LOVE",
+        "WHAT",
+        "YOU",
+        "DO"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "CAN",
+        "PEOPLE",
+        "LOVE",
+        "YOU",
+        "DO",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 95,
+      "segment_id": null,
+      "timestamp": 8183.35,
+      "original_english": "for three minutes and 30 seconds.",
+      "recognized_concepts": [],
+      "unavailable_concepts": [
+        "for",
+        "three",
+        "minutes",
+        "and",
+        "30",
+        "seconds"
+      ],
+      "actual_translator_output": [],
+      "expected_isl_gloss_sequence": [],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 96,
+      "segment_id": null,
+      "timestamp": 8267.39,
+      "original_english": "OK, so what is a functional gesture?",
+      "recognized_concepts": [
+        "what",
+        "gesture"
+      ],
+      "unavailable_concepts": [
+        "ok",
+        "so",
+        "functional"
+      ],
+      "actual_translator_output": [
+        "WHAT",
+        "GESTURE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "GESTURE",
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [
+        "is",
+        "a"
+      ],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 97,
+      "segment_id": null,
+      "timestamp": 8340.75,
+      "original_english": "Huh? What?",
+      "recognized_concepts": [
+        "what"
+      ],
+      "unavailable_concepts": [
+        "huh"
+      ],
+      "actual_translator_output": [
+        "WHAT"
+      ],
+      "expected_isl_gloss_sequence": [
+        "WHAT"
+      ],
+      "grammar_omissions_applied": [],
+      "linguistic_notes": "WH-question syntax applied"
+    },
+    {
+      "test_id": 98,
+      "segment_id": null,
+      "timestamp": 8425.47,
+      "original_english": "So if you are not aware of the gestures you do and if you don't do them correctly",
+      "recognized_concepts": [
+        "you",
+        "not",
+        "you",
+        "do",
+        "you",
+        "do"
+      ],
+      "unavailable_concepts": [
+        "so",
+        "if",
+        "aware",
+        "of",
+        "gestures",
+        "and",
+        "if",
+        "don't",
+        "them",
+        "correctly"
+      ],
+      "actual_translator_output": [
+        "YOU",
+        "NOT",
+        "YOU",
+        "DO",
+        "YOU",
+        "DO"
+      ],
+      "expected_isl_gloss_sequence": [
+        "YOU",
+        "NOT",
+        "YOU",
+        "DO",
+        "YOU",
+        "DO"
+      ],
+      "grammar_omissions_applied": [
+        "are",
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 99,
+      "segment_id": null,
+      "timestamp": 8501.85,
+      "original_english": "23 minutes in a public bathroom doing the tumble dryer.",
+      "recognized_concepts": [
+        "public"
+      ],
+      "unavailable_concepts": [
+        "23",
+        "minutes",
+        "in",
+        "bathroom",
+        "doing",
+        "tumble",
+        "dryer"
+      ],
+      "actual_translator_output": [
+        "PUBLIC"
+      ],
+      "expected_isl_gloss_sequence": [
+        "PUBLIC"
+      ],
+      "grammar_omissions_applied": [
+        "a",
+        "the"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    },
+    {
+      "test_id": 100,
+      "segment_id": null,
+      "timestamp": 8614.92,
+      "original_english": "And the last one is over here 108,",
+      "recognized_concepts": [
+        "one"
+      ],
+      "unavailable_concepts": [
+        "and",
+        "last",
+        "over",
+        "here",
+        "108"
+      ],
+      "actual_translator_output": [
+        "ONE"
+      ],
+      "expected_isl_gloss_sequence": [
+        "ONE"
+      ],
+      "grammar_omissions_applied": [
+        "the",
+        "is"
+      ],
+      "linguistic_notes": "Direct lexical sequence preserved with copula omission."
+    }
+  ]
+}

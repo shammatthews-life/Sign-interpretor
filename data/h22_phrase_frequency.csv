@@ -1,75 +1,251 @@
-rank,phrase,words_count,occurrences,tokens_affected,target_glosses,description
-1,i'm going to show,4,15,60,I'M GOING TO SHOW,ISLRTC discourse rule; compound structure in public lecture context
-2,going to show you,4,14,56,GOING TO SHOW YOU,ISLRTC discourse rule; compound structure in public lecture context
-3,i'm going to give,4,12,48,I'M GOING TO GIVE,ISLRTC discourse rule; compound structure in public lecture context
-4,going to give you,4,12,48,GOING TO GIVE YOU,ISLRTC discourse rule; compound structure in public lecture context
-5,a look at this,4,12,48,A LOOK AT THIS,ISLRTC discourse rule; compound structure in public lecture context
-6,it goes like this,4,9,36,IT GOES LIKE THIS,ISLRTC discourse rule; compound structure in public lecture context
-7,you want to become,4,8,32,YOU WANT TO BECOME,ISLRTC discourse rule; compound structure in public lecture context
-8,want to become more,4,8,32,WANT TO BECOME MORE,ISLRTC discourse rule; compound structure in public lecture context
-9,to become more confident,4,8,32,TO BECOME MORE CONFIDENT,ISLRTC discourse rule; compound structure in public lecture context
-10,become more confident in,4,8,32,BECOME MORE CONFIDENT IN,ISLRTC discourse rule; compound structure in public lecture context
-11,what do i get,4,8,32,WHAT DO I GET,ISLRTC discourse rule; compound structure in public lecture context
-12,to have a look,4,7,28,TO HAVE A LOOK,ISLRTC discourse rule; compound structure in public lecture context
-13,goes like this,3,16,48,GOES LIKE THIS,ISLRTC discourse rule; compound structure in public lecture context
-14,up on stage,3,13,39,UP ON STAGE,ISLRTC discourse rule; compound structure in public lecture context
-15,i look at,3,13,39,I LOOK AT,ISLRTC discourse rule; compound structure in public lecture context
-16,you have to,3,13,39,YOU HAVE TO,ISLRTC discourse rule; compound structure in public lecture context
-17,if you have,3,12,36,IF YOU HAVE,ISLRTC discourse rule; compound structure in public lecture context
-18,that you can,3,12,36,THAT YOU CAN,ISLRTC discourse rule; compound structure in public lecture context
-19,let's have a,3,12,36,LET'S HAVE A,ISLRTC discourse rule; compound structure in public lecture context
-20,to do this,3,12,36,TO DO THIS,ISLRTC discourse rule; compound structure in public lecture context
-21,you have a,3,11,33,YOU HAVE A,ISLRTC discourse rule; compound structure in public lecture context
-22,that you are,3,11,33,THAT YOU ARE,ISLRTC discourse rule; compound structure in public lecture context
-23,this is the,3,10,30,THIS IS THE,ISLRTC discourse rule; compound structure in public lecture context
-24,so if you,3,10,30,SO IF YOU,ISLRTC discourse rule; compound structure in public lecture context
-25,want to become,3,10,30,WANT TO BECOME,ISLRTC discourse rule; compound structure in public lecture context
-26,do you know,3,10,30,DO YOU KNOW,ISLRTC discourse rule; compound structure in public lecture context
-27,this is a,3,10,30,THIS IS A,ISLRTC discourse rule; compound structure in public lecture context
-28,you look at,3,10,30,YOU LOOK AT,ISLRTC discourse rule; compound structure in public lecture context
-29,give you a,3,9,27,GIVE YOU A,ISLRTC discourse rule; compound structure in public lecture context
-30,you are not,3,9,27,YOU ARE NOT,ISLRTC discourse rule; compound structure in public lecture context
-31,it goes like,3,9,27,IT GOES LIKE,ISLRTC discourse rule; compound structure in public lecture context
-32,of you have,3,9,27,OF YOU HAVE,ISLRTC discourse rule; compound structure in public lecture context
-33,and that is,3,9,27,AND THAT IS,ISLRTC discourse rule; compound structure in public lecture context
-34,and over again,3,9,27,AND OVER AGAIN,ISLRTC discourse rule; compound structure in public lecture context
-35,the way you,3,9,27,THE WAY YOU,ISLRTC discourse rule; compound structure in public lecture context
-36,do i get,3,9,27,DO I GET,ISLRTC discourse rule; compound structure in public lecture context
-37,and he goes,3,9,27,AND HE GOES,ISLRTC discourse rule; compound structure in public lecture context
-38,what do i,3,9,27,WHAT DO I,ISLRTC discourse rule; compound structure in public lecture context
-39,in public,2,16,32,IN PUBLIC,ISLRTC discourse rule; compound structure in public lecture context
-40,the people,2,16,32,THE PEOPLE,ISLRTC discourse rule; compound structure in public lecture context
-41,we go,2,16,32,WE GO,ISLRTC discourse rule; compound structure in public lecture context
-42,time you,2,16,32,TIME YOU,ISLRTC discourse rule; compound structure in public lecture context
-43,do i,2,16,32,DO I,ISLRTC discourse rule; compound structure in public lecture context
-44,of your,2,16,32,OF YOUR,ISLRTC discourse rule; compound structure in public lecture context
-45,to see,2,15,30,TO SEE,ISLRTC discourse rule; compound structure in public lecture context
-46,to me,2,15,30,TO ME,ISLRTC discourse rule; compound structure in public lecture context
-47,if i,2,15,30,IF I,ISLRTC discourse rule; compound structure in public lecture context
-48,and it,2,15,30,AND IT,ISLRTC discourse rule; compound structure in public lecture context
-49,so you,2,15,30,SO YOU,ISLRTC discourse rule; compound structure in public lecture context
-50,over and,2,15,30,OVER AND,ISLRTC discourse rule; compound structure in public lecture context
-51,it was,2,15,30,IT WAS,ISLRTC discourse rule; compound structure in public lecture context
-52,i'm gonna,2,15,30,I'M GONNA,ISLRTC discourse rule; compound structure in public lecture context
-53,and she,2,15,30,AND SHE,ISLRTC discourse rule; compound structure in public lecture context
-54,will be,2,14,28,WILL BE,ISLRTC discourse rule; compound structure in public lecture context
-55,here we,2,14,28,HERE WE,ISLRTC discourse rule; compound structure in public lecture context
-56,a person,2,14,28,A PERSON,ISLRTC discourse rule; compound structure in public lecture context
-57,a lot,2,14,28,A LOT,ISLRTC discourse rule; compound structure in public lecture context
-58,go up,2,14,28,GO UP,ISLRTC discourse rule; compound structure in public lecture context
-59,the first,2,14,28,THE FIRST,ISLRTC discourse rule; compound structure in public lecture context
-60,what do,2,14,28,WHAT DO,ISLRTC discourse rule; compound structure in public lecture context
-61,go like,2,14,28,GO LIKE,ISLRTC discourse rule; compound structure in public lecture context
-62,my friend,2,14,28,MY FRIEND,ISLRTC discourse rule; compound structure in public lecture context
-63,it's not,2,14,28,IT'S NOT,ISLRTC discourse rule; compound structure in public lecture context
-64,at your,2,14,28,AT YOUR,ISLRTC discourse rule; compound structure in public lecture context
-65,of them,2,14,28,OF THEM,ISLRTC discourse rule; compound structure in public lecture context
-66,more confident,2,13,26,MORE CONFIDENT,ISLRTC discourse rule; compound structure in public lecture context
-67,and i'm,2,13,26,AND I'M,ISLRTC discourse rule; compound structure in public lecture context
-68,the world,2,13,26,THE WORLD,ISLRTC discourse rule; compound structure in public lecture context
-69,one of,2,13,26,ONE OF,ISLRTC discourse rule; compound structure in public lecture context
-70,up to,2,13,26,UP TO,ISLRTC discourse rule; compound structure in public lecture context
-71,means that,2,13,26,MEANS THAT,ISLRTC discourse rule; compound structure in public lecture context
-72,i love,2,13,26,I LOVE,ISLRTC discourse rule; compound structure in public lecture context
-73,one is,2,13,26,ONE IS,ISLRTC discourse rule; compound structure in public lecture context
-74,so if,2,13,26,SO IF,ISLRTC discourse rule; compound structure in public lecture context
+rank,phrase,word_count,frequency,sample_context
+1,going to,2,85,"Mayorka, I'm going to Mayorka in just a couple of weeks."
+2,if you,2,85,"So if you like this session, make sure you pick up this book."
+3,look at,2,82,"Saying that, let's begin by having a look at what happens"
+4,have a,2,68,"So make sure you have a pen and a paper,"
+5,you have,2,63,"So make sure you have a pen and a paper,"
+6,want to,2,63,no? Are you ready to be challenged? I want to say two hands in the air if you're ready to be
+7,i want,2,58,"During these three days, I am not kidding around. Your time is valuable. My time is valuable. I want"
+8,you can,2,57,you can apply tomorrow.
+9,like this,2,49,"So if you like this session, make sure you pick up this book."
+10,and then,2,49,and then you have a per-skill confidence.
+11,that you,2,48,But it comes down to the work that you put into it.
+12,do you,2,48,How do you think it's going to impact
+13,and you,2,48,"your PowerPoint and you feel you're good because you've done the preparation, but then you"
+14,give you,2,46,"Because this isn't up to me. I'm here. I will give you the skills and the tools and the techniques,"
+15,you are,2,46,"hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+16,you to,2,43,"you to grow as much as humanly possible in three days. So, are you ready to be challenged? Yes or"
+17,when you,2,42,When you put a smile on your face
+18,i'm going,2,40,"Mayorka, I'm going to Mayorka in just a couple of weeks."
+19,i'm going to,3,40,"Mayorka, I'm going to Mayorka in just a couple of weeks."
+20,a look,2,40,"Saying that, let's begin by having a look at what happens"
+21,public speaking,2,38,"This is public speaking for beginners, and the goal of this video is simple."
+22,have a look,3,38,Have a look at this video.
+23,you know,2,38,like do you know maths because you've studied it? Are you good at maths? They
+24,a look at,3,37,"Saying that, let's begin by having a look at what happens"
+25,you want,2,36,"to ask you is to ask yourself, what do you want to become more confident in? What do you"
+26,have a look at,4,35,Have a look at this video.
+27,you go,2,32,"you go like, this is good."
+28,in your,2,31,"So it's going to be loads of stuff which you can actually use in your everyday life, in"
+29,you do,2,31,"And you play a couple of matches, you win, you do some really good, nice moves, and your"
+30,listen to,2,31,"your TED talk, whatever it is, listen to those songs."
+31,of you,2,30,"This is, well, this is my view of you."
+32,my god,2,30,"asked to do public speaking, and you say, oh my god, now I can't do that, you should"
+33,want you,2,29,"I want you to take with you that the case is often this one, which is that confidence is"
+34,when i,2,28,"As always, when I do these trainings."
+35,oh my god,3,28,"asked to do public speaking, and you say, oh my god, now I can't do that, you should"
+36,which is,2,27,"You've signed up to something which is called a challenge,"
+37,this one,2,27,"I want you to take with you that the case is often this one, which is that confidence is"
+38,want you to,3,27,"I want you to take with you that the case is often this one, which is that confidence is"
+39,you want to,3,27,"to ask you is to ask yourself, what do you want to become more confident in? What do you"
+40,i can't,2,27,dancing. I can't sing. There's no chance. I'm not a born singer. I was not put on this earth
+41,to give,2,26,"to give you a concept of how important this is for any public speaker, at the far end"
+42,i want you,3,26,"I want you to take with you that the case is often this one, which is that confidence is"
+43,show you,2,26,"I'm going to show you two studies, one where people have a growth mindset, where they say"
+44,to give you,3,25,"to give you a concept of how important this is for any public speaker, at the far end"
+45,i want you to,4,25,"I want you to take with you that the case is often this one, which is that confidence is"
+46,on stage,2,24,"walks up on stage fearful, well, their output and what they present will be severely impacted"
+47,you will,2,24,"You will suddenly become more confident, bold, daring, driven, magnetic almost,"
+48,the most,2,23,and we'll finish off with the most impactful delivery skills
+49,and they,2,23,"Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+50,what is,2,23,Too much. What is your occupation?
+51,to show,2,22,"I'm going to show you two studies, one where people have a growth mindset, where they say"
+52,you a,2,21,"and bring you a few steps closer to being more confident, more clear,"
+53,are you,2,21,"you to grow as much as humanly possible in three days. So, are you ready to be challenged? Yes or"
+54,i want to,3,21,no? Are you ready to be challenged? I want to say two hands in the air if you're ready to be
+55,i look,2,21,"All right, so if I look at these,"
+56,have to,2,21,You have to understand that.
+57,look at this,3,20,Have a look at this video.
+58,goes like,2,20,"concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+59,to show you,3,20,"I'm going to show you two studies, one where people have a growth mindset, where they say"
+60,all of,2,20,"mentioned growth mindset. We won't be able to go through all of these, but when we"
+61,to you,2,20,"And he said, well, I've got no problem presenting to you, one person."
+62,i think,2,19,"It just came out in Japan, which I think looks a lot more interesting than the English version,"
+63,it's a,2,19,"hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+64,for you,2,19,"In order for you to remember this better,"
+65,i don't,2,19,"fixed mindset. If your answer is, for instance, I don't know how to dance and I wasn't born"
+66,i just,2,19,I just want us to be in agreement
+67,your presentation,2,18,"You may have prepared, like, weeks, your presentation,"
+68,good at,2,18,good at playing golf and that you are naturally confident in it. So the first question I want
+69,have you,2,18,"Have you ever noticed that even if you are very good at something, if you are very confident"
+70,i was,2,18,dancing. I can't sing. There's no chance. I'm not a born singer. I was not put on this earth
+71,i have,2,18,"And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+72,these are,2,18,"These are key core, powerful things to create and supercharge your dopamine and your confidence"
+73,i get,2,18,"I get to see the world, I get to see global companies,"
+74,we have,2,17,"over here we have fear, and at the far end over here we have confidence. If a person"
+75,how to,2,17,"You've got how to avoid death by PowerPoint, the magical signs of storytelling,"
+76,what you,2,17,Tell us what you think.
+77,i said,2,17,"better as a public speaker. And as I said, the more you play basketball, the better you"
+78,the best,2,17,"Now, the best way for me to describe testosterone"
+79,the way,2,17,state in you. So the way you walk can impact the way you feel. You've probably felt this so many
+80,in public,2,16,Do you want to become more confident in public speaking?
+81,goes like this,3,16,"concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+82,the people,2,16,"particular skill, but the people who had a growth mindset actually grew."
+83,every single,2,16,because you do it every single day.
+84,time you,2,16,"Have you ever realized that the first time you hear a song,"
+85,of your,2,16,So the real truth of your life is this.
+86,to see,2,15,"All right, beautiful to see you all."
+87,so you,2,15,"become and the more confident you become. That's the fire, right? So you can make it burn stronger"
+88,going to show,3,15,"I'm going to show you two studies, one where people have a growth mindset, where they say"
+89,i'm going to show,4,15,"I'm going to show you two studies, one where people have a growth mindset, where they say"
+90,over and,2,15,Can you please fly over and have a look at it?
+91,a presentation,2,15,do a presentation for me.
+92,it was,2,15,And it was sublime.
+93,i'm gonna,2,15,"I'm gonna do this, oh, I've got a to-do list"
+94,and she,2,15,"It's a video of a woman, her name is Susan Boyle, and she was a British Got Talent."
+95,you see,2,14,"You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+96,will be,2,14,"challenge. Yes, you've probably seen that. Yes. That means that I will be challenging you."
+97,here we,2,14,"over here we have fear, and at the far end over here we have confidence. If a person"
+98,a person,2,14,"over here we have fear, and at the far end over here we have confidence. If a person"
+99,a lot,2,14,"It just came out in Japan, which I think looks a lot more interesting than the English version,"
+100,the first,2,14,good at playing golf and that you are naturally confident in it. So the first question I want
+101,what do,2,14,"to ask you is to ask yourself, what do you want to become more confident in? What do you"
+102,going to show you,4,14,"I'm going to show you two studies, one where people have a growth mindset, where they say"
+103,go like,2,14,"And an Angels Cocktail can go like this. If I were to offer you an Angels Cocktail, well,"
+104,my friend,2,14,"But here's the key, my friend."
+105,it's not,2,14,"Never, ever listen to them if it's not intentional."
+106,at your,2,14,look at your vision board every two to three days
+107,of them,2,14,What I want you to see is change your perspective on failures. Invite them. Be proud of them.
+108,more confident,2,13,"and bring you a few steps closer to being more confident, more clear,"
+109,and i'm,2,13,"and I'm best known for my TEDx talks,"
+110,the world,2,13,which are among the most viewed in the world
+111,one of,2,13,And this chart is one of the results of that particular endeavour.
+112,means that,2,13,"challenge. Yes, you've probably seen that. Yes. That means that I will be challenging you."
+113,i love,2,13,"challenge, yes? All right, that's amazing. I love it. Love it."
+114,up on stage,3,13,"walks up on stage fearful, well, their output and what they present will be severely impacted"
+115,one is,2,13,And the mindset one is actually derived from this book.
+116,confident in,2,13,"So, for instance, if you were to be not very confident in basketball, but you start playing"
+117,but if,2,13,"become confident because confidence is per skill in this matter. But if someone asks you,"
+118,i look at,3,13,"All right, so if I look at these,"
+119,you have to,3,13,You have to understand that.
+120,and it's,2,13,any longer and it's like the wind is putting out your fire. What on earth is going on?
+121,don't know,2,13,"fixed mindset. If your answer is, for instance, I don't know how to dance and I wasn't born"
+122,not a,2,13,dancing. I can't sing. There's no chance. I'm not a born singer. I was not put on this earth
+123,of these,2,13,"mentioned growth mindset. We won't be able to go through all of these, but when we"
+124,as well,2,13,testosterone and maybe some oxytocin in there as well. I'll ask you to drink that.
+125,give me,2,13,"where the feeling is, give me more, give me more."
+126,you don't,2,13,You don't need more.
+127,like i,2,13,"away, you go like, I want more of that."
+128,for the,2,13,"for the next coming four weeks. So if it's public speaking, well if you turn those words around"
+129,with your,2,13,And I'd like you to draw a flower with your non-dominant hand.
+130,they will,2,13,talking to. You give them a promise of what they will get and how it will affect
+131,to say,2,12,no? Are you ready to be challenged? I want to say two hands in the air if you're ready to be
+132,going to give,3,12,Now the stuff I'm going to give you all come from my TEDx talks.
+133,i'm going to give,4,12,Now the stuff I'm going to give you all come from my TEDx talks.
+134,going to give you,4,12,Now the stuff I'm going to give you all come from my TEDx talks.
+135,you've got,2,12,"You've got how to avoid death by PowerPoint, the magical signs of storytelling,"
+136,a look at this,4,12,Have a look at this video.
+137,what i,2,12,"And what I try to do is, as a director,"
+138,when we,2,12,"When we talk about confidence and confidence on command, there's two perspectives."
+139,can you,2,12,"hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+140,to become,2,12,"to ask you is to ask yourself, what do you want to become more confident in? What do you"
+141,if you have,3,12,way you think about the answer to that question says a lot about if you have a growth or a
+142,how you,2,12,"Yes, depending on how you answer these, these may be an evidence of growth and fixed mindset."
+143,that you can,3,12,"If your perspective is that you can learn and that you are not restricted, you have, per"
+144,let's have,2,12,Let's have a look at these two studies.
+145,let's have a,3,12,Let's have a look at these two studies.
+146,it's the,2,12,"see my mother and my father, they could not, I can't do that. Oh, it's the worst thing"
+147,you look,2,12,"and you look forward to things,"
+148,lot of,2,12,"Now, a lot of you, you actually look at Instagram feeds and TikTok feeds"
+149,a lot of,3,12,"Now, a lot of you, you actually look at Instagram feeds and TikTok feeds"
+150,here we go,3,12,"So here we go, let's have a look at this"
+151,and over,2,12,"But if you don't, go over and over and over again."
+152,look at your,3,12,look at your vision board every two to three days
+153,out of,2,12,"And to give you an out of the world perspective on this, when I built my TEDx talks, my first"
+154,your audience,2,12,"two hours per day, you aren't different and your audience isn't different because most"
+155,we're going,2,12,We're going to have a look at big ways to inject dopamine.
+156,we're going to,3,12,We're going to have a look at big ways to inject dopamine.
+157,he goes,2,12,"So he's a British detective and he goes around and he's like,"
+158,the next,2,11,"attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+159,public speaker,2,11,I've gathered during my 25 year career as a public speaker
+160,you have a,3,11,"So make sure you have a pen and a paper,"
+161,all right,2,11,"All right, beautiful to see you all."
+162,on command,2,11,that it's time to begin. Our first session today is about confidence on command. And
+163,how do,2,11,How do you think it's going to impact
+164,of all,2,11,"First of all, you have a general confidence which comes from a newer scientific basis,"
+165,that you are,3,11,"hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+166,to have,2,11,"So I want to have a look at that in the chat,"
+167,because you,2,11,Just because you are super confident in storytelling
+168,i don't know,3,11,"fixed mindset. If your answer is, for instance, I don't know how to dance and I wasn't born"
+169,your life,2,11,And that makes a huge difference in your life.
+170,but the,2,11,"particular skill, but the people who had a growth mindset actually grew."
+171,can't do,2,11,"asked to do public speaking, and you say, oh my god, now I can't do that, you should"
+172,is not,2,11,And suddenly it just stops and that is not a technical error.
+173,over again,2,11,"But if you don't, go over and over and over again."
+174,over and over,3,11,"But if you don't, go over and over and over again."
+175,one i,2,11,"specifically, because the fourth one I was very sick when I did that one, but the first three,"
+176,i'm like,2,11,"I'm like, what just happened?"
+177,you can't,2,11,you can't just grab and hold it like in the beginning of a presentation you can't just go
+178,a public,2,10,I've gathered during my 25 year career as a public speaker
+179,that means,2,10,"challenge. Yes, you've probably seen that. Yes. That means that I will be challenging you."
+180,have the,2,10,We have the 110 steps of excellent communication and the final one which is about mindset.
+181,so if you,3,10,"So if you like this session, make sure you pick up this book."
+182,you think,2,10,don't you think?
+183,you ever,2,10,Has anyone of you ever been in a situation similar to this?
+184,and your,2,10,"And you play a couple of matches, you win, you do some really good, nice moves, and your"
+185,become more,2,10,"to ask you is to ask yourself, what do you want to become more confident in? What do you"
+186,want to become,3,10,"to ask you is to ask yourself, what do you want to become more confident in? What do you"
+187,become more confident,3,10,"to ask you is to ask yourself, what do you want to become more confident in? What do you"
+188,into your,2,10,So just get that into your head that your confidence is per skill
+189,is your,2,10,fire and it becomes stronger and stronger. This is your skill. This is your skill in becoming
+190,are not,2,10,"Some days you may walk in and even if you were super confident three days before, you are not"
+191,it goes,2,10,"concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+192,way you,2,10,way you think about the answer to that question says a lot about if you have a growth or a
+193,but i,2,10,"to themselves, I can't dance, but I can learn."
+194,let's have a look,4,10,Let's have a look at these two studies.
+195,do you know,3,10,like do you know maths because you've studied it? Are you good at maths? They
+196,that they,2,10,believed do they understand maths? The kids who said that they did had a
+197,when you're,2,10,"Now this is a choice that you make in life. When you're asked to do a talk, when you're"
+198,i know,2,10,"I know, I can't do that. That is you having a fixed mindset. But if you instead say,"
+199,i've got,2,10,"And he said, well, I've got no problem presenting to you, one person."
+200,a video,2,10,So he showed me a video of his most recent presentation and it absolutely sucked.
+201,looking at,2,10,or eating some snacks or looking at Netflix.
+202,me more,2,10,"where the feeling is, give me more, give me more."
+203,give me more,3,10,"where the feeling is, give me more, give me more."
+204,the rest,2,10,I wanted to see the rest. I wanted to see the rest.
+205,they go,2,10,"And they go like, yeah, it's nothing special."
+206,i did,2,10,"Two, I didn't even know why I did that."
+207,your brain,2,10,You will lose momentum and your dopamine will be depleted and your brain will... won't know why you went.
+208,you look at,3,10,"morning and the first thing you do is take up your phone and you look at the news, you are literally"
+209,we are,2,10,"So just by doing an action which we don't feel that we are good at,"
+210,then i,2,10,"And then I said, okay, let's just try"
+211,to grab,2,10,how can anyone learn how to grab
+212,most beautiful,2,10,"indeed. Maybe not the most beautiful one I've seen, but it does summarize, you know, based on how"
+213,the most beautiful,3,10,"indeed. Maybe not the most beautiful one I've seen, but it does summarize, you know, based on how"
+214,i will,2,9,"challenge. Yes, you've probably seen that. Yes. That means that I will be challenging you."
+215,give you a,3,9,"to give you a concept of how important this is for any public speaker, at the far end"
+216,then you,2,9,"your PowerPoint and you feel you're good because you've done the preparation, but then you"
+217,from a,2,9,"First of all, you have a general confidence which comes from a newer scientific basis,"
+218,you start,2,9,"So, for instance, if you were to be not very confident in basketball, but you start playing"
+219,to them,2,9,in just walking up to strangers and talking to them?
+220,if it's,2,9,"But if it's just good enough, it can actually increase your fire."
+221,you are not,3,9,"Some days you may walk in and even if you were super confident three days before, you are not"
+222,it goes like,3,9,"concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+223,it goes like this,4,9,"concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+224,you say,2,9,"asked to do public speaking, and you say, oh my god, now I can't do that, you should"
+225,is you,2,9,"I know, I can't do that. That is you having a fixed mindset. But if you instead say,"
+226,that was,2,9,"So we backtracked the reason to this and that was he was giving, he was given criticism"
+227,of dopamine,2,9,"let's have a prop for that. And it goes like this. Nice levels of dopamine, nice levels of"
+228,how can,2,9,"So the question then is, how can we create dopamine"
+229,your dopamine,2,9,You know how to artificially increase your dopamine.
+230,know that,2,9,You know that even eating chocolate or eating an ice cream
+231,to create,2,9,all of this brings out dope and you know how to create this artificially.
+232,the same,2,9,I think you've done exactly the same thing.
+233,you this,2,9,I'm going to show you this video.
+234,of you have,3,9,A lot of you have seen her.
+235,where you,2,9,Something where you truly feel when you turn off the video and you stand up and you walk
+236,and over again,3,9,"But if you don't, go over and over and over again."
+237,speaking in,2,9,it's actually speaking in public. So start speaking in public. More these coming four weeks.
+238,dopamine into,2,9,"And suddenly, you're launching dopamine into your system and you feel motivated to get up,"
+239,so much,2,9,I put so much quality time when I am at home.
+240,are the,2,9,these are the ways to go.
+241,like a,2,9,It wasn't that like a truly empowering feeling.
+242,as you,2,9,as beautiful as you can.
+243,you now,2,9,So my tip to that I want to give you now is this. The next time you have a
+244,imagine that,2,9,"hey, Ross. Imagine that he roots for, I don't know, Manchester United, right? And I show him a video"
+245,the way you,3,9,state in you. So the way you walk can impact the way you feel. You've probably felt this so many
+246,like that,2,9,"definition of, I don't know, masculinity or something like that. And I go like, well, this"
+247,the audience,2,9,"Chest out, arms relaxed, angle toward the audience, and speak slowly."
+248,the last,2,9,That's the last thing you want to be perceived as.
+249,do i get,3,9,"How do I get to do what you do, David?"
+250,can see,2,9,"recording that we've done today or this live session, you can see that recorded"

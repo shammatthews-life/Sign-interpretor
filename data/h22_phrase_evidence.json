@@ -1,0 +1,602 @@
+[
+  {
+    "phrase": "going to",
+    "isl_representation": "GOING",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "if you",
+    "isl_representation": "IF YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "look at",
+    "isl_representation": "LOOK",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "have a",
+    "isl_representation": "HAVE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you have",
+    "isl_representation": "YOU HAVE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "want to",
+    "isl_representation": "WANT",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i want",
+    "isl_representation": "I WANT",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you can",
+    "isl_representation": "YOU CAN",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "like this",
+    "isl_representation": "LIKE THIS",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "and then",
+    "isl_representation": "AND THEN",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "that you",
+    "isl_representation": "THAT YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "do you",
+    "isl_representation": "DO YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "and you",
+    "isl_representation": "AND YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "give you",
+    "isl_representation": "GIVE YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you are",
+    "isl_representation": "YOU ARE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you to",
+    "isl_representation": "YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "when you",
+    "isl_representation": "WHEN YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i'm going",
+    "isl_representation": "I'M GOING",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i'm going to",
+    "isl_representation": "I'M GOING",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "a look",
+    "isl_representation": "LOOK",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "public speaking",
+    "isl_representation": "PUBLIC SPEAKING",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "have a look",
+    "isl_representation": "HAVE LOOK",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you know",
+    "isl_representation": "YOU KNOW",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "a look at",
+    "isl_representation": "LOOK",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you want",
+    "isl_representation": "YOU WANT",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "have a look at",
+    "isl_representation": "HAVE LOOK",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you go",
+    "isl_representation": "YOU GO",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "in your",
+    "isl_representation": "YOUR",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you do",
+    "isl_representation": "YOU DO",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "listen to",
+    "isl_representation": "LISTEN",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "of you",
+    "isl_representation": "YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "my god",
+    "isl_representation": "MY GOD",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "want you",
+    "isl_representation": "WANT YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "when i",
+    "isl_representation": "WHEN I",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "oh my god",
+    "isl_representation": "OH MY GOD",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "which is",
+    "isl_representation": "WHICH IS",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "this one",
+    "isl_representation": "THIS ONE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "want you to",
+    "isl_representation": "WANT YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you want to",
+    "isl_representation": "YOU WANT",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i can't",
+    "isl_representation": "I CAN'T",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "to give",
+    "isl_representation": "GIVE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i want you",
+    "isl_representation": "I WANT YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "show you",
+    "isl_representation": "SHOW YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "to give you",
+    "isl_representation": "GIVE YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i want you to",
+    "isl_representation": "I WANT YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "on stage",
+    "isl_representation": "STAGE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you will",
+    "isl_representation": "YOU WILL",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "the most",
+    "isl_representation": "MOST",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "and they",
+    "isl_representation": "AND THEY",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "what is",
+    "isl_representation": "WHAT IS",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "to show",
+    "isl_representation": "SHOW",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you a",
+    "isl_representation": "YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "are you",
+    "isl_representation": "ARE YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i want to",
+    "isl_representation": "I WANT",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i look",
+    "isl_representation": "I LOOK",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "have to",
+    "isl_representation": "HAVE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "look at this",
+    "isl_representation": "LOOK THIS",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "goes like",
+    "isl_representation": "GOES LIKE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "to show you",
+    "isl_representation": "SHOW YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "all of",
+    "isl_representation": "ALL",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "to you",
+    "isl_representation": "YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i think",
+    "isl_representation": "I THINK",
+    "linguistic_justification": "Topicalized internal state with facial affect",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "it's a",
+    "isl_representation": "IT'S",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "for you",
+    "isl_representation": "FOR YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i don't",
+    "isl_representation": "I DON'T",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i just",
+    "isl_representation": "I JUST",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "your presentation",
+    "isl_representation": "YOUR PRESENTATION",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "good at",
+    "isl_representation": "GOOD",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "have you",
+    "isl_representation": "HAVE YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i was",
+    "isl_representation": "I WAS",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i have",
+    "isl_representation": "I HAVE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "these are",
+    "isl_representation": "THESE ARE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i get",
+    "isl_representation": "I GET",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "we have",
+    "isl_representation": "WE HAVE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "how to",
+    "isl_representation": "HOW",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "what you",
+    "isl_representation": "WHAT YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i said",
+    "isl_representation": "I SAID",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "the best",
+    "isl_representation": "BEST",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "the way",
+    "isl_representation": "WAY",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "in public",
+    "isl_representation": "PUBLIC",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "goes like this",
+    "isl_representation": "GOES LIKE THIS",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "the people",
+    "isl_representation": "PEOPLE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "every single",
+    "isl_representation": "EVERY SINGLE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "time you",
+    "isl_representation": "TIME YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "of your",
+    "isl_representation": "YOUR",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "to see",
+    "isl_representation": "SEE",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "so you",
+    "isl_representation": "SO YOU",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "going to show",
+    "isl_representation": "GOING SHOW",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i'm going to show",
+    "isl_representation": "I'M GOING SHOW",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "over and",
+    "isl_representation": "OVER AND",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "a presentation",
+    "isl_representation": "PRESENTATION",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "it was",
+    "isl_representation": "IT WAS",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "i'm gonna",
+    "isl_representation": "I'M GONNA",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "and she",
+    "isl_representation": "AND SHE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "you see",
+    "isl_representation": "YOU SEE",
+    "linguistic_justification": "Direct spatial indexing toward focal visual target",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "will be",
+    "isl_representation": "WILL BE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "here we",
+    "isl_representation": "HERE WE",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "a person",
+    "isl_representation": "PERSON",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "a lot",
+    "isl_representation": "LOT",
+    "linguistic_justification": "Compound reduction to core semantic heads",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  },
+  {
+    "phrase": "the first",
+    "isl_representation": "FIRST",
+    "linguistic_justification": "Linear discourse sequencing with neutral pause",
+    "source_authority": "ISLRTC Syntax Guidelines"
+  }
+]

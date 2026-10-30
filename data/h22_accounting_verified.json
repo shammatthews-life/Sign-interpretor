@@ -1,0 +1,37 @@
+{
+  "status": "MATHEMATICALLY_VERIFIED",
+  "canonical_total_tokens": 23258,
+  "calculated_sum": 23258,
+  "discrepancy": 0,
+  "silent_token_loss": 0,
+  "communicative_coverage": {
+    "tokens": 19698,
+    "percentage": 84.69
+  },
+  "dispositions": {
+    "GRAMMAR_OMISSION": {
+      "tokens": 9088,
+      "percentage": 39.07
+    },
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
+      "tokens": 8946,
+      "percentage": 38.46
+    },
+    "SUBTITLE_FALLBACK": {
+      "tokens": 3559,
+      "percentage": 15.3
+    },
+    "PHRASE_TRANSLATED": {
+      "tokens": 1444,
+      "percentage": 6.21
+    },
+    "FINGERSPELLED": {
+      "tokens": 220,
+      "percentage": 0.95
+    },
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": {
+      "tokens": 1,
+      "percentage": 0.0
+    }
+  }
+}

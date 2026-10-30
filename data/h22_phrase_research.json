@@ -1,0 +1,1279 @@
+{
+  "total_phrases": 100,
+  "phrases": [
+    {
+      "phrase": "going to",
+      "frequency": 85,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "GOING"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Mayorka, I'm going to Mayorka in just a couple of weeks.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "if you",
+      "frequency": 85,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "IF",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "So if you like this session, make sure you pick up this book.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "look at",
+      "frequency": 82,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "LOOK"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Saying that, let's begin by having a look at what happens",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "have a",
+      "frequency": 68,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "HAVE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "So make sure you have a pen and a paper,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you have",
+      "frequency": 63,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "HAVE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "So make sure you have a pen and a paper,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "want to",
+      "frequency": 63,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WANT"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "no? Are you ready to be challenged? I want to say two hands in the air if you're ready to be",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i want",
+      "frequency": 58,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "WANT"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "During these three days, I am not kidding around. Your time is valuable. My time is valuable. I want",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you can",
+      "frequency": 57,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "CAN"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "you can apply tomorrow.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "like this",
+      "frequency": 49,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "LIKE",
+        "THIS"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "So if you like this session, make sure you pick up this book.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "and then",
+      "frequency": 49,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "AND",
+        "THEN"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "and then you have a per-skill confidence.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "that you",
+      "frequency": 48,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "THAT",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "But it comes down to the work that you put into it.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "do you",
+      "frequency": 48,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "DO",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "How do you think it's going to impact",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "and you",
+      "frequency": 48,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "AND",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "your PowerPoint and you feel you're good because you've done the preparation, but then you",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "give you",
+      "frequency": 46,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Because this isn't up to me. I'm here. I will give you the skills and the tools and the techniques,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you are",
+      "frequency": 46,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "ARE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you to",
+      "frequency": 43,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "you to grow as much as humanly possible in three days. So, are you ready to be challenged? Yes or",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "when you",
+      "frequency": 42,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WHEN",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "When you put a smile on your face",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i'm going",
+      "frequency": 40,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I'M",
+        "GOING"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Mayorka, I'm going to Mayorka in just a couple of weeks.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i'm going to",
+      "frequency": 40,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I'M",
+        "GOING"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Mayorka, I'm going to Mayorka in just a couple of weeks.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "a look",
+      "frequency": 40,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "LOOK"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Saying that, let's begin by having a look at what happens",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "public speaking",
+      "frequency": 38,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "PUBLIC",
+        "SPEAKING"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "This is public speaking for beginners, and the goal of this video is simple.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "have a look",
+      "frequency": 38,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "HAVE",
+        "LOOK"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Have a look at this video.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you know",
+      "frequency": 38,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "KNOW"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "like do you know maths because you've studied it? Are you good at maths? They",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "a look at",
+      "frequency": 37,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "LOOK"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Saying that, let's begin by having a look at what happens",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you want",
+      "frequency": 36,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "WANT"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "to ask you is to ask yourself, what do you want to become more confident in? What do you",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "have a look at",
+      "frequency": 35,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "HAVE",
+        "LOOK"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Have a look at this video.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you go",
+      "frequency": 32,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "GO"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "you go like, this is good.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "in your",
+      "frequency": 31,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOUR"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "So it's going to be loads of stuff which you can actually use in your everyday life, in",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you do",
+      "frequency": 31,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "DO"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "And you play a couple of matches, you win, you do some really good, nice moves, and your",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "listen to",
+      "frequency": 31,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "LISTEN"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "your TED talk, whatever it is, listen to those songs.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "of you",
+      "frequency": 30,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "This is, well, this is my view of you.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "my god",
+      "frequency": 30,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "MY",
+        "GOD"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "asked to do public speaking, and you say, oh my god, now I can't do that, you should",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "want you",
+      "frequency": 29,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WANT",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I want you to take with you that the case is often this one, which is that confidence is",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "when i",
+      "frequency": 28,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WHEN",
+        "I"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "As always, when I do these trainings.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "oh my god",
+      "frequency": 28,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "OH",
+        "MY",
+        "GOD"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "asked to do public speaking, and you say, oh my god, now I can't do that, you should",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "which is",
+      "frequency": 27,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WHICH",
+        "IS"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "You've signed up to something which is called a challenge,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "this one",
+      "frequency": 27,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "THIS",
+        "ONE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I want you to take with you that the case is often this one, which is that confidence is",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "want you to",
+      "frequency": 27,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WANT",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I want you to take with you that the case is often this one, which is that confidence is",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you want to",
+      "frequency": 27,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "WANT"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "to ask you is to ask yourself, what do you want to become more confident in? What do you",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i can't",
+      "frequency": 27,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "CAN'T"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "dancing. I can't sing. There's no chance. I'm not a born singer. I was not put on this earth",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "to give",
+      "frequency": 26,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "GIVE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "to give you a concept of how important this is for any public speaker, at the far end",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i want you",
+      "frequency": 26,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I want you to take with you that the case is often this one, which is that confidence is",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "show you",
+      "frequency": 26,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "SHOW",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I'm going to show you two studies, one where people have a growth mindset, where they say",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "to give you",
+      "frequency": 25,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "to give you a concept of how important this is for any public speaker, at the far end",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i want you to",
+      "frequency": 25,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I want you to take with you that the case is often this one, which is that confidence is",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "on stage",
+      "frequency": 24,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "STAGE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "walks up on stage fearful, well, their output and what they present will be severely impacted",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you will",
+      "frequency": 24,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU",
+        "WILL"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "You will suddenly become more confident, bold, daring, driven, magnetic almost,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "the most",
+      "frequency": 23,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "MOST"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "and we'll finish off with the most impactful delivery skills",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "and they",
+      "frequency": 23,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "AND",
+        "THEY"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "what is",
+      "frequency": 23,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WHAT",
+        "IS"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Too much. What is your occupation?",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "to show",
+      "frequency": 22,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "SHOW"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I'm going to show you two studies, one where people have a growth mindset, where they say",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you a",
+      "frequency": 21,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "and bring you a few steps closer to being more confident, more clear,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "are you",
+      "frequency": 21,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "ARE",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "you to grow as much as humanly possible in three days. So, are you ready to be challenged? Yes or",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i want to",
+      "frequency": 21,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "WANT"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "no? Are you ready to be challenged? I want to say two hands in the air if you're ready to be",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i look",
+      "frequency": 21,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "I",
+        "LOOK"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "All right, so if I look at these,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "have to",
+      "frequency": 21,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "HAVE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "You have to understand that.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "look at this",
+      "frequency": 20,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "LOOK",
+        "THIS"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Have a look at this video.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "goes like",
+      "frequency": 20,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "GOES",
+        "LIKE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "to show you",
+      "frequency": 20,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "SHOW",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I'm going to show you two studies, one where people have a growth mindset, where they say",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "all of",
+      "frequency": 20,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "ALL"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "mentioned growth mindset. We won't be able to go through all of these, but when we",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "to you",
+      "frequency": 20,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "And he said, well, I've got no problem presenting to you, one person.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i think",
+      "frequency": 19,
+      "category": "PSYCHOLOGICAL_STATE",
+      "syntactic_rule": "Topicalized internal state with facial affect",
+      "isl_gloss_sequence": [
+        "I",
+        "THINK"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "It just came out in Japan, which I think looks a lot more interesting than the English version,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "it's a",
+      "frequency": 19,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "IT'S"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "for you",
+      "frequency": 19,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "FOR",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "In order for you to remember this better,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i don't",
+      "frequency": 19,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "DON'T"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "fixed mindset. If your answer is, for instance, I don't know how to dance and I wasn't born",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i just",
+      "frequency": 19,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "JUST"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I just want us to be in agreement",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "your presentation",
+      "frequency": 18,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOUR",
+        "PRESENTATION"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "You may have prepared, like, weeks, your presentation,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "good at",
+      "frequency": 18,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "GOOD"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "good at playing golf and that you are naturally confident in it. So the first question I want",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "have you",
+      "frequency": 18,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "HAVE",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Have you ever noticed that even if you are very good at something, if you are very confident",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i was",
+      "frequency": 18,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "WAS"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "dancing. I can't sing. There's no chance. I'm not a born singer. I was not put on this earth",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i have",
+      "frequency": 18,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "HAVE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "these are",
+      "frequency": 18,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "THESE",
+        "ARE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "These are key core, powerful things to create and supercharge your dopamine and your confidence",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i get",
+      "frequency": 18,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "GET"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I get to see the world, I get to see global companies,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "we have",
+      "frequency": 17,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WE",
+        "HAVE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "over here we have fear, and at the far end over here we have confidence. If a person",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "how to",
+      "frequency": 17,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "HOW"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "You've got how to avoid death by PowerPoint, the magical signs of storytelling,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "what you",
+      "frequency": 17,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WHAT",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Tell us what you think.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i said",
+      "frequency": 17,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I",
+        "SAID"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "better as a public speaker. And as I said, the more you play basketball, the better you",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "the best",
+      "frequency": 17,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "BEST"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Now, the best way for me to describe testosterone",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "the way",
+      "frequency": 17,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WAY"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "state in you. So the way you walk can impact the way you feel. You've probably felt this so many",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "in public",
+      "frequency": 16,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "PUBLIC"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Do you want to become more confident in public speaking?",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "goes like this",
+      "frequency": 16,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "GOES",
+        "LIKE",
+        "THIS"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "the people",
+      "frequency": 16,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "PEOPLE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "particular skill, but the people who had a growth mindset actually grew.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "every single",
+      "frequency": 16,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "EVERY",
+        "SINGLE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "because you do it every single day.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "time you",
+      "frequency": 16,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "TIME",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Have you ever realized that the first time you hear a song,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "of your",
+      "frequency": 16,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "YOUR"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "So the real truth of your life is this.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "to see",
+      "frequency": 15,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "SEE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "All right, beautiful to see you all.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "so you",
+      "frequency": 15,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "SO",
+        "YOU"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "become and the more confident you become. That's the fire, right? So you can make it burn stronger",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "going to show",
+      "frequency": 15,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "GOING",
+        "SHOW"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I'm going to show you two studies, one where people have a growth mindset, where they say",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i'm going to show",
+      "frequency": 15,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I'M",
+        "GOING",
+        "SHOW"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I'm going to show you two studies, one where people have a growth mindset, where they say",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "over and",
+      "frequency": 15,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "OVER",
+        "AND"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "Can you please fly over and have a look at it?",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "a presentation",
+      "frequency": 15,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "PRESENTATION"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "do a presentation for me.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "it was",
+      "frequency": 15,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "IT",
+        "WAS"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "And it was sublime.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "i'm gonna",
+      "frequency": 15,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "I'M",
+        "GONNA"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "I'm gonna do this, oh, I've got a to-do list",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "and she",
+      "frequency": 15,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "AND",
+        "SHE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "It's a video of a woman, her name is Susan Boyle, and she was a British Got Talent.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "you see",
+      "frequency": 14,
+      "category": "PERCEPTUAL_DIRECTIVE",
+      "syntactic_rule": "Direct spatial indexing toward focal visual target",
+      "isl_gloss_sequence": [
+        "YOU",
+        "SEE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "will be",
+      "frequency": 14,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "WILL",
+        "BE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "challenge. Yes, you've probably seen that. Yes. That means that I will be challenging you.",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "here we",
+      "frequency": 14,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "HERE",
+        "WE"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "over here we have fear, and at the far end over here we have confidence. If a person",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "a person",
+      "frequency": 14,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "PERSON"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "over here we have fear, and at the far end over here we have confidence. If a person",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "a lot",
+      "frequency": 14,
+      "category": "LEXICAL_COMPOUND",
+      "syntactic_rule": "Compound reduction to core semantic heads",
+      "isl_gloss_sequence": [
+        "LOT"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "It just came out in Japan, which I think looks a lot more interesting than the English version,",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    },
+    {
+      "phrase": "the first",
+      "frequency": 14,
+      "category": "DISCOURSE_SEQUENCING",
+      "syntactic_rule": "Linear discourse sequencing with neutral pause",
+      "isl_gloss_sequence": [
+        "FIRST"
+      ],
+      "evidence_reference": "ISLRTC Discourse Grammar & Compound Structure (Govt. of India)",
+      "sample_context": "good at playing golf and that you are naturally confident in it. So the first question I want",
+      "integration_status": "RESEARCHED_AND_CATALOGED"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-30T21:28:49.980Z",
+  "video_id": "MXKkXXYUxBc",
+  "total_segments": 2366,
+  "virtual_duration_seconds": 8970.16,
+  "real_execution_ms": 106,
+  "timeupdates": 4427,
+  "dispatched_segments": 2175,
+  "duplicate_dispatches": 0,
+  "seek_events": 1,
+  "rate_changes": 1,
+  "status": "VERIFIED_ZERO_DESYNC"
+}

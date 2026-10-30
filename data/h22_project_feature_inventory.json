@@ -1,0 +1,179 @@
+{
+  "architecture_summary": {
+    "name": "Indian Sign Language (ISL) Real-Time Accessibility Translator",
+    "runtime_type": "Hybrid Chrome Extension + Local WebGL Avatar Viewer + Python Video/ASR Ingestion Engine",
+    "primary_target": "YouTube Video MXKkXXYUxBc (2.5 hr, 2366 segments, 23258 tokens)",
+    "supported_sign_schema": "2.0.0",
+    "playable_signs_count": 207,
+    "extension_modules_count": 15,
+    "avatar_viewer_modules_count": 17,
+    "tools_scripts_count": 48,
+    "total_data_files": 68,
+    "total_documentation_files": 53
+  },
+  "feature_status": {
+    "implemented": [
+      "WebGL 3D Avatar ('Aether') skeletal animation runtime in Three.js",
+      "207 authentic ISLRTC-mapped Schema 2.0.0 sign assets with strict neutral transitions",
+      "English-to-ISL grammar transformation engine (SOV gloss ordering, negation, WH-movement)",
+      "Corpus-wide 23,258 spoken token canonical accounting with 0 silent token loss",
+      "Multiword expression matching (75+ active educational compound phrases)",
+      "Transcript-accurate subtitle fallback UI with persistence management (2500ms)",
+      "Full neutral avatar return during fallback to prevent misleading gestures",
+      "ISL two-handed manual alphabet fingerspelling engine (26 letters)",
+      "HTML5 video timeline synchronization with sub-100ms drift tracking",
+      "Bounded event queue (100 capacity) preventing queue overflow and memory leaks",
+      "Immediate video seek reset (`RESET_AVATAR`) purging stale gesture queues",
+      "Video playback rate scaling (`SET_PLAYBACK_RATE`) coordinating animation speed with video",
+      "Manifest V3 Chrome extension overlay mounting on YouTube watch pages",
+      "Fast HTTP sign preloading (< 400ms for 207 assets)",
+      "Offline deterministic playback simulation across 2,366 transcript segments",
+      "15-scenario error recovery matrix with automated self-healing mechanisms"
+    ],
+    "partially_implemented": [
+      "Live microphone audio capture to ASR pipeline (working in local test, pending browser web-audio integration)",
+      "Automatic signer facial expression blending with manual gestures (viseme system prototyped, pending facial bone weight maps)",
+      "Bidirectional translation (ISL video gesture recognition to spoken English text - external research stage)"
+    ],
+    "planned_future_features": [
+      "Full regional ISL dialect selector (Northern, Western, Southern variants)",
+      "Cloud-based peer-to-peer sign asset streaming for massive 10,000+ sign libraries",
+      "Certified ISLRTC Deaf linguistic review portal with web-based feedback annotations"
+    ],
+    "technical_debt_and_observations": [
+      {
+        "id": "TD-01",
+        "severity": "LOW",
+        "item": "Hardcoded default port 8000/8001 in some utility scripts; mitigated by CLI flag --port"
+      },
+      {
+        "id": "TD-02",
+        "severity": "MEDIUM",
+        "item": "Signs awaiting linguistic review (marked IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW) need official certified Deaf signer sign-off before clinical deployment"
+      },
+      {
+        "id": "TD-03",
+        "severity": "LOW",
+        "item": "NonFiniteHelperBoneCorrection in SignAnimationPlayer corrects helper bones on-the-fly; permanent FBX weight bake recommended for production v3"
+      },
+      {
+        "id": "TD-04",
+        "severity": "LOW",
+        "item": "YouTube dynamic SPA DOM mutations periodically require rebind() on video element, currently handled by MutationObserver"
+      }
+    ]
+  },
+  "scanned_categories": {
+    "extension": {
+      "files": 15,
+      "lines": 3342,
+      "modules": [
+        "manifest.json",
+        "background\\runtime-bridge.js",
+        "background\\service-worker.js",
+        "content\\content-script.js",
+        "content\\overlay.css",
+        "content\\overlay.js",
+        "content\\timeline-synchronizer.js",
+        "icons\\icon128.png",
+        "icons\\icon16.png",
+        "icons\\icon48.png",
+        "popup\\popup.css",
+        "popup\\popup.html",
+        "popup\\popup.js",
+        "shared\\demo-data.js",
+        "shared\\message-contract.js"
+      ]
+    },
+    "avatar_viewer": {
+      "files": 17,
+      "lines": 5500,
+      "modules": [
+        "ArticulationTestController.js",
+        "diagnose.html",
+        "EnglishToISLTranslator.js",
+        "index.html",
+        "ISLFingerspelling.js",
+        "LiveSpeechSession.mjs",
+        "LiveSpeechSession.test.mjs",
+        "NonFiniteHelperBoneCorrection.mjs",
+        "NonFiniteHelperBoneCorrection.test.mjs",
+        "SentenceProcessor.js",
+        "SignAnimationPlayer.js",
+        "SignAuthoringController.js",
+        "SignLibrary.js",
+        "SignScheduler.js",
+        "SpeechSignOrchestrator.js",
+        "SpeechSignOrchestrator.test.mjs",
+        "TranslationBackend.js"
+      ]
+    },
+    "signs": {
+      "files": 208,
+      "lines": 0,
+      "assets": 207
+    },
+    "tools": {
+      "files": 48,
+      "lines": 8391,
+      "scripts": [
+        "audit_codebase_architecture.py",
+        "audit_phrase_integration.py",
+        "author_6_additional_signs.py",
+        "author_h21_signs.py",
+        "benchmark_live_avatar_server.mjs",
+        "build_corpus_lexicon.py",
+        "generate_h22_final_accounting.py",
+        "integrate_h21_coordinator.py",
+        "mine_h21_fallback_and_phrases.py",
+        "patch_build_corpus_lexicon.py",
+        "patch_multiword_phrases.py",
+        "run_avatar_viewer.py",
+        "simulate_youtube_playback_2_5h.mjs",
+        "test_error_recovery_matrix.py",
+        "validate_phase_b_hello.mjs",
+        "validate_phase_c_library_scheduler.mjs",
+        "validate_phase_d_authoring.mjs",
+        "validate_phase_e2_good.mjs",
+        "validate_phase_e3_morning.mjs",
+        "validate_phase_f1_audio.mjs",
+        "validate_phase_f2_asr.py",
+        "validate_phase_g1_pipeline.mjs",
+        "validate_phase_g2_translation.mjs",
+        "validate_phase_g3_translation.mjs",
+        "validate_phase_h13_motion_and_subtitle.mjs",
+        "validate_phase_h14_visual_and_extension.mjs",
+        "validate_phase_h15_corpus_lexicon.mjs",
+        "validate_phase_h16_bulk_expansion.mjs",
+        "validate_phase_h17_complete_corpus.mjs",
+        "validate_phase_h18_100_concept_expansion.mjs",
+        "validate_phase_h19_coverage_optimization.mjs",
+        "validate_phase_h1_sign_coverage.mjs",
+        "validate_phase_h20_parallel_execution.mjs",
+        "validate_phase_h21_deep_execution.mjs",
+        "validate_phase_h22_project_completion.mjs",
+        "validate_phase_h2_coverage.mjs",
+        "validate_phase_h3_evidence.mjs",
+        "validate_phase_h4_evidence.mjs",
+        "validate_phase_h5_evidence.mjs",
+        "validate_phase_h6_extension.mjs",
+        "validate_phase_h8_extension_youtube.mjs",
+        "validate_phase_r1_articulation.mjs",
+        "validate_sentence_pipeline.mjs",
+        "validate_sign_library.py",
+        "validate_speech_sign_orchestrator.mjs",
+        "worker_a_vocabulary_engine.py",
+        "worker_b_integrate_phrases.py",
+        "__init__.py"
+      ]
+    },
+    "data": {
+      "files": 68,
+      "size_mb": 7.38
+    },
+    "docs": {
+      "files": 53,
+      "count": 0
+    }
+  }
+}
