@@ -198,7 +198,9 @@ PLAYABLE_SIGNS = {
     # Phase H24 Batch 12 Signs (20 authentic signs reaching 460 signs milestone)
     "conference", "door", "break", "road", "full", "past", "worth", "ten", "setting", "expectation", "server", "simply", "cannot", "dollar", "deep", "phenomenal", "record", "buy", "breathe", "billion",
     # Phase H24 Batch 13 Signs (20 authentic signs reaching 480 signs milestone)
-    "laugh", "soul", "meal", "follow", "fair", "statistics", "nose", "self", "angel", "math", "insane", "goosebumps", "pointless", "misunderstand", "tilt", "spend", "perceive", "upon", "fan", "decide"
+    "laugh", "soul", "meal", "follow", "fair", "statistics", "nose", "self", "angel", "math", "insane", "goosebumps", "pointless", "misunderstand", "tilt", "spend", "perceive", "upon", "fan", "decide",
+    # Phase H24 Batch 14 Signs (20 authentic signs reaching landmark 500 signs milestone)
+    "test", "village", "street", "cloak", "average", "dry", "attract", "grab", "send", "behavior", "effect", "belief", "failure", "gray", "nowhere", "burden", "observant", "kid", "set", "result"
 }
 
 # Structural ISL Function Words (Grammar Omissions)

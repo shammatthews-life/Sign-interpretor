@@ -230,7 +230,7 @@ $$\sum \text{Dispositions} = 9,642 + 9,088 + 2,863 + 1,444 + 220 + 1 = 23,258\te
 | Disposition Category | Tokens | Share | Description |
 | :--- | :---: | :---: | :--- |
 | **Implemented Sign (Review Pending)** | 9,642 | 41.46% | Authored, playable Schema 2.0.0 signs (+697 tokens from H23) |
-| **Grammar Omission** | 9,088 | 39.07% | Structural function words, copulas, and discourse particles omitted per ISL syntax |
+| **Grammar Omission** | 9,064 | 38.97% | Structural function words, copulas, and discourse particles omitted per ISL syntax |
 | **Subtitle Fallback** | 2,863 | 12.31% | Transparent text subtitles for specialized terminology (-697 tokens from H23) |
 | **Phrase Translated** | 1,444 | 6.21% | Multiword educational compounds mapped to idiomatic ISL sign sequences |
 | **Fingerspelled** | 220 | 0.95% | Acronyms, proper nouns, and technical labels spelled via two-handed ISL |

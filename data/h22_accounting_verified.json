@@ -5,21 +5,21 @@
   "discrepancy": 0,
   "silent_token_loss": 0,
   "communicative_coverage": {
-    "tokens": 20868,
-    "percentage": 89.72
+    "tokens": 20896,
+    "percentage": 89.84
   },
   "dispositions": {
     "GRAMMAR_OMISSION": {
-      "tokens": 9088,
-      "percentage": 39.07
+      "tokens": 9064,
+      "percentage": 38.97
     },
     "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
-      "tokens": 10133,
-      "percentage": 43.57
+      "tokens": 10185,
+      "percentage": 43.79
     },
     "SUBTITLE_FALLBACK": {
-      "tokens": 2389,
-      "percentage": 10.27
+      "tokens": 2361,
+      "percentage": 10.15
     },
     "PHRASE_TRANSLATED": {
       "tokens": 1444,

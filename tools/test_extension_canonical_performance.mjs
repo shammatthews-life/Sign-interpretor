@@ -266,7 +266,12 @@ const fullH24VocabSet = new Set([
   'laugh', 'soul', 'meal', 'follow', 'fair',
   'statistics', 'nose', 'self', 'angel', 'math',
   'insane', 'goosebumps', 'pointless', 'misunderstand', 'tilt',
-  'spend', 'perceive', 'upon', 'fan', 'decide'
+  'spend', 'perceive', 'upon', 'fan', 'decide',
+  // Batch 14 (20)
+  'test', 'village', 'street', 'cloak', 'average',
+  'dry', 'attract', 'grab', 'send', 'behavior',
+  'effect', 'belief', 'failure', 'gray', 'nowhere',
+  'burden', 'observant', 'kid', 'set', 'result'
 ]);
 
 const tStart = performance.now();

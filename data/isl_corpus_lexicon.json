@@ -792,10 +792,29 @@
     "fallback_required": false
   },
   {
+    "concept_id": "on",
+    "lemma": "on",
+    "surface_forms": [
+      "on"
+    ],
+    "frequency": 162,
+    "example_sentences": [],
+    "timestamps": [],
+    "semantic_category": "Grammar / Auxiliary",
+    "dictionary_match": false,
+    "dictionary_entry": null,
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "GRAMMAR_OMISSION",
+    "sign_id": null,
+    "motion_status": "OMITTED_BY_SYNTAX",
+    "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
     "concept_id": "people",
     "lemma": "people",
     "surface_forms": [
-      "kid",
       "kids",
       "man",
       "men",
@@ -804,7 +823,7 @@
       "woman",
       "women"
     ],
-    "frequency": 165,
+    "frequency": 159,
     "example_sentences": [
       "Welcome beautiful people all around the world",
       "We've got people from UK, Croatia, Switzerland,",
@@ -833,26 +852,6 @@
     "sign_id": "people",
     "motion_status": "playable",
     "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
-    "concept_id": "on",
-    "lemma": "on",
-    "surface_forms": [
-      "on"
-    ],
-    "frequency": 162,
-    "example_sentences": [],
-    "timestamps": [],
-    "semantic_category": "Grammar / Auxiliary",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "GRAMMAR_OMISSION",
-    "sign_id": null,
-    "motion_status": "OMITTED_BY_SYNTAX",
-    "linguistic_review_status": "NONE",
     "fallback_required": false
   },
   {
@@ -4699,17 +4698,34 @@
       "grab"
     ],
     "frequency": 24,
-    "example_sentences": [],
-    "timestamps": [],
-    "semantic_category": "Grammar / Auxiliary",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "example_sentences": [
+      "how can anyone learn how to grab",
+      "How can you grab, what is required",
+      "to grab a person's attention and hold it for hours on end?"
+    ],
+    "timestamps": [
+      [
+        3247.26,
+        3250.72
+      ],
+      [
+        3254.8,
+        3257.28
+      ],
+      [
+        3257.28,
+        3261.76
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Grab",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "GRAMMAR_OMISSION",
-    "sign_id": null,
-    "motion_status": "OMITTED_BY_SYNTAX",
-    "linguistic_review_status": "NONE",
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "grab",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
   },
   {
@@ -13396,6 +13412,43 @@
     "sign_variants": [],
     "translation_strategy": "PLAYABLE_SIGN",
     "sign_id": "range",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "kid",
+    "lemma": "kid",
+    "surface_forms": [
+      "kid"
+    ],
+    "frequency": 6,
+    "example_sentences": [
+      "His kid is going, oh yeah.",
+      "Oh my God! That is driving this kid insane and the teacher looks at the kid and goes,",
+      "Oh my God! That is driving this kid insane and the teacher looks at the kid and goes,"
+    ],
+    "timestamps": [
+      [
+        3525.84,
+        3528.92
+      ],
+      [
+        3557.56,
+        3564.12
+      ],
+      [
+        3557.56,
+        3564.12
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Kid",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "kid",
     "motion_status": "playable",
     "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
@@ -25511,16 +25564,16 @@
         8811.54
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Nowhere",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "nowhere",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "faster",
@@ -26104,16 +26157,16 @@
         6964.54
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Set",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "set",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "grayscale",
@@ -26178,16 +26231,16 @@
         6993.64
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Test",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "test",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "village",
@@ -26215,16 +26268,16 @@
         6011.4
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Village",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "village",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "sister's",
@@ -26289,16 +26342,16 @@
         6005.7
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Street",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "street",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "grabs",
@@ -26363,16 +26416,16 @@
         6005.7
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Cloak",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "cloak",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "attracted",
@@ -26548,16 +26601,16 @@
         6990.64
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Observant",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "observant",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "tina",
@@ -26696,16 +26749,16 @@
         7966.69
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Average",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "average",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "unfunctional",
@@ -28979,16 +29032,16 @@
         956.74
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Belief",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "belief",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "himself",
@@ -58529,16 +58582,16 @@
         7187.14
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Effect",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "effect",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "incredible",
@@ -60608,16 +60661,16 @@
         8142.17
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Behavior",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "behavior",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "he'd",
