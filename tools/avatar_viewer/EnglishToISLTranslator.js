@@ -22,9 +22,15 @@ export class EnglishToISLTranslator extends TranslationBackend {
       drink: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
       help: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, need: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
       how: { playable: true }, tomorrow: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
+      go: { playable: true }, do: { playable: true }, people: { playable: true },
+      one: { playable: true }, when: { playable: true }, now: { playable: true },
+      more: { playable: true },
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
+      ['going to', ['GOING_TO']], ['want to', ['WANT']], ['look at', ['LOOK']],
+      ['as well as', ['AND', 'ALSO']], ['in order to', ['FOR']], ['what do you', ['YOU', 'WHAT']],
+      ['how to', ['HOW']], ['have to', ['MUST']],
     ]);
     this.lexicon = new Map([
       ['i', 'I'], ['you', 'YOU'], ['me', 'ME'],
@@ -34,6 +40,17 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['drink', 'DRINK'], ['water', 'WATER'],
       ['help', 'HELP'], ['need', 'NEED'], ['hello', 'HELLO'], ['good', 'GOOD'], ['morning', 'MORNING'],
       ['what', 'WHAT'], ['not', 'NOT'], ['how', 'HOW'],
+      ['go', 'GO'], ['going', 'GO'], ['goes', 'GO'], ['went', 'GO'], ['gone', 'GO'],
+      ['do', 'DO'], ['doing', 'DO'], ['does', 'DO'], ['did', 'DO'], ['done', 'DO'],
+      ['people', 'PEOPLE'], ['person', 'PEOPLE'],
+      ['one', 'ONE'], ['ones', 'ONE'],
+      ['when', 'WHEN'],
+      ['now', 'NOW'],
+      ['more', 'MORE'],
+      ['has', 'HAVE'], ['had', 'HAVE'], ['having', 'HAVE'],
+      ['wants', 'WANT'], ['wanted', 'WANT'], ['wanting', 'WANT'],
+      ['looks', 'LOOK'], ['looked', 'LOOK'], ['looking', 'LOOK'],
+      ['sees', 'SEE'], ['saw', 'SEE'], ['seen', 'SEE'], ['seeing', 'SEE'],
     ]);
   }
 
@@ -84,7 +101,15 @@ export class EnglishToISLTranslator extends TranslationBackend {
     const auxiliaries = new Set(['will', 'can', 'do', 'does', 'did', 'are', 'is', 'am', 'was', 'were', 'be', 'been', 'the', 'a', 'an', 'to', 'of', 'in']);
     if (remainingTokens.length) {
       for (const token of remainingTokens) {
-        if (auxiliaries.has(token)) { removed.push(token); continue; }
+        if (auxiliaries.has(token)) {
+          const hasOtherVerb = remainingTokens.some(t => t !== 'do' && ['go', 'want', 'see', 'look', 'have', 'need', 'help', 'drink'].includes(t));
+          if (token === 'do' && !hasOtherVerb) {
+            // Retain lexical DO when no auxiliary function is required
+          } else {
+            removed.push(token);
+            continue;
+          }
+        }
         const g3Lexicon = this.enableG3Improvements ? { not: 'NOT', how: 'HOW', tomorrow: 'TOMORROW' } : {};
         const entry = this.lexicon.get(token) || g3Lexicon[token];
         if (entry) gloss.push(entry); else unknown_terms.push(token.toUpperCase());
@@ -92,9 +117,9 @@ export class EnglishToISLTranslator extends TranslationBackend {
       if (removed.length) trace.push({ stage: 'function_words', detail: `Omitted English function/auxiliary tokens: ${removed.join(', ')}`, basis: 'PROJECT_HEURISTIC', status: 'GRAMMAR_OMISSION' });
       // Small controlled SVO pattern only.  This is intentionally not a general ISL parser.
       const pronounPositions = gloss.map((g, index) => ({ g, index })).filter(x => ['I', 'YOU', 'ME', 'YOUR', 'MY'].includes(x.g));
-      const subject = gloss.find(g => ['I', 'YOU', 'YOUR', 'MY'].includes(g));
-      const object = gloss.find(g => ['WATER', 'ME'].includes(g)) || (this.enableG3Improvements && pronounPositions.length >= 2 ? pronounPositions[1].g : null);
-      const verb = gloss.find(g => ['DRINK', 'HELP', 'NEED', 'HAVE', 'WANT', 'LOOK', 'SEE'].includes(g));
+      const subject = gloss.find(g => ['I', 'YOU', 'YOUR', 'MY', 'PEOPLE', 'ONE'].includes(g));
+      const object = gloss.find(g => ['WATER', 'ME', 'MORE'].includes(g)) || (this.enableG3Improvements && pronounPositions.length >= 2 ? pronounPositions[1].g : null);
+      const verb = gloss.find(g => ['DRINK', 'HELP', 'NEED', 'HAVE', 'WANT', 'LOOK', 'SEE', 'GO', 'DO'].includes(g));
       if (subject && object && verb && gloss.length === 3) {
         gloss.splice(0, gloss.length, subject, object, verb);
         trace.push({ stage: 'restructure', detail: `Controlled semantic-role order: ${subject} ${object} ${verb}`, basis: 'PROJECT_HEURISTIC', rule_id: 'G3-RULE-PRONOUN-01' });

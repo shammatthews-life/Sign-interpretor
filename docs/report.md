@@ -450,3 +450,41 @@ All 15 authored motions (`hello`, `good`, `morning`, `water`, `you`, `i`, `what`
 - In `#isl-overlay-container`, active signs display a dedicated `[PENDING REVIEW]` or `[VERIFIED]` badge.
 - Added deterministic scenario `mixed_sentence` (`"I want your dopamine"`) demonstrating interleaving between playable signs and unavailable word fallbacks.
 - Verified by [`tools/validate_phase_h14_visual_and_extension.mjs`](../tools/validate_phase_h14_visual_and_extension.mjs) (PASS 1 through 7).
+
+---
+---
+
+## R. Phase H15 Corpus-Wide ISL Dictionary Research, Lexicon Mapping & Batch 3 Expansion
+
+Documented in detail in [`docs/h15_corpus_wide_isl_dictionary_implementation.md`](h15_corpus_wide_isl_dictionary_implementation.md).
+
+### 1. 100% Transcript Token Disposition Accounting
+Processed the complete canonical ASR transcript of `MXKkXXYUxBc` (2.5 hours, 2,366 segments, 23,258 tokens):
+- Generated [`data/isl_corpus_lexicon.json`](../data/isl_corpus_lexicon.json) and [`data/isl_corpus_lexicon.csv`](../data/isl_corpus_lexicon.csv) covering all 2,259 unique concepts.
+- **Total Spoken Tokens:** 23,258
+- **Total Dispositions Accounted:** **23,258 (100.0%)**
+- **Dispositions Breakdown:**
+  - `SUBTITLE_FALLBACK`: 11,227 tokens (48.27%)
+  - `GRAMMAR_OMISSION`: 6,532 tokens (28.08%)
+  - `IMPLEMENTED_PENDING_LINGUISTIC_REVIEW`: 4,041 tokens (17.37%)
+  - `DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING`: 764 tokens (3.28%)
+  - `PHRASE_TRANSLATED`: 569 tokens (2.45%)
+  - `FINGERSPELLED`: 125 tokens (0.54%)
+
+### 2. Batch 3 Motion Authoring (Schema 2.0.0)
+Authored and integrated 7 new priority ISL motions from the corpus, expanding the playable library to **22 signs**:
+- [`signs/go.json`](signs/go.json): Directional movement verb (1200 ms).
+- [`signs/do.json`](signs/do.json): Symmetrical action verb (1300 ms).
+- [`signs/people.json`](signs/people.json): Symmetrical rolling nominal plural (1400 ms).
+- [`signs/one.json`](signs/one.json): Upward index numeral (1100 ms).
+- [`signs/when.json`](signs/when.json): Wh-question circular tip-contact sign (1400 ms).
+- [`signs/now.json`](signs/now.json): Temporal deictic downward drop (1200 ms).
+- [`signs/more.json`](signs/more.json): Quantitative modifier fingertip midline tap (1300 ms).
+
+### 3. ISL Two-Handed Manual Alphabet & Fingerspelling Engine
+- Implemented [`tools/avatar_viewer/ISLFingerspelling.js`](../tools/avatar_viewer/ISLFingerspelling.js) modeling the official ISLRTC two-handed manual alphabet (vowels A, E, I, O, U pointing to left fingertips).
+- Built automated composer `composeFingerspellingMotion()` generating Schema 2.0.0 motions for proper nouns and technical terms like `Dopamine`.
+
+### 4. Verification
+- 100% pass on [`tools/validate_phase_h15_corpus_lexicon.mjs`](../tools/validate_phase_h15_corpus_lexicon.mjs).
+- Zero regressions across all prior validation suites.
