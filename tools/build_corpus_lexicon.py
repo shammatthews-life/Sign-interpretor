@@ -176,7 +176,9 @@ PLAYABLE_SIGNS = {
     # Phase H24 High-Impact Lexical Signs (17 authentic signs covering 102 tokens)
     "increase", "little", "rest", "let", "able", "part", "big", "stop", "watch", "chart", "subject", "culture", "product", "audio", "positive", "trust", "match",
     # Phase H24 Batch 2 Signs (16 authentic signs covering 128 tokens)
-    "perspective", "after", "angle", "wise", "outside", "remove", "sell", "momentum", "bring", "pen", "nervous", "feedback", "quick", "earth", "far", "instance"
+    "perspective", "after", "angle", "wise", "outside", "remove", "sell", "momentum", "bring", "pen", "nervous", "feedback", "quick", "earth", "far", "instance",
+    # Phase H24 Batch 3 Signs (20 authentic signs covering 138 tokens)
+    "functional", "anticipation", "based", "clarity", "during", "prior", "while", "inhale", "goal", "science", "career", "passion", "session", "interesting", "face", "group", "enjoy", "core", "vision", "color"
 }
 
 # Structural ISL Function Words (Grammar Omissions)

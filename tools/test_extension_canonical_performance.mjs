@@ -6,8 +6,7 @@
  * Verifies:
  * 1. Extension Overlay mounts with Right Sidebar view and bottom-right docked Aether avatar.
  * 2. Full simulation across 2,366 segments of runtime/youtube/MXKkXXYUxBc/transcript.json.
- * 3. Execution of newly added ISL vocabulary (increase, little, rest, let, able, part, big,
- *    perspective, after, angle, wise, outside, remove, sell, momentum, bring, pen, nervous, feedback, quick, etc.).
+ * 3. Execution of newly added ISL vocabulary (all 53 H24 signs, 260 total signs).
  * 4. Transparent Subtitle Fallback directly beneath Aether for un-signable terms.
  * 5. Clean layout toggling between Right Sidebar Dock and Floating Window.
  * 6. Zero memory leaks, zero XSS vulnerabilities, zero unhandled rejections.
@@ -19,7 +18,7 @@ import assert from 'node:assert/strict';
 import { performance } from 'perf_hooks';
 
 console.log('======================================================================');
-console.log('TESTING EXTENSION PERFORMANCE ON CANONICAL VIDEO MXKkXXYUxBc');
+console.log('TESTING EXTENSION PERFORMANCE ON CANONICAL VIDEO MXKkXXYUxBc (260 SIGNS)');
 console.log('======================================================================');
 
 // 1. Proven Mock DOM Environment
@@ -207,7 +206,10 @@ const fullH24VocabSet = new Set([
   'trust', 'match',
   'perspective', 'after', 'angle', 'wise', 'outside', 'remove', 'sell',
   'momentum', 'bring', 'pen', 'nervous', 'feedback', 'quick', 'earth',
-  'far', 'instance'
+  'far', 'instance',
+  'functional', 'anticipation', 'based', 'clarity', 'during', 'prior',
+  'while', 'inhale', 'goal', 'science', 'career', 'passion', 'session',
+  'interesting', 'face', 'group', 'enjoy', 'core', 'vision', 'color'
 ]);
 
 const tStart = performance.now();
@@ -278,7 +280,7 @@ console.log(`  Fallback Subtitle Events: ${fallbackActivations}`);
 console.log(`  Elapsed Simulation Time:  ${tElapsedMs} ms (< 500 ms target)`);
 
 assert.equal(handledSegments, segments.length, 'All 2,366 segments must be processed without loss.');
-assert(newVocabTriggered > 150, `Expected > 150 new vocab occurrences, observed ${newVocabTriggered}`);
+assert(newVocabTriggered > 250, `Expected > 250 new vocab occurrences, observed ${newVocabTriggered}`);
 assert(Number(tElapsedMs) < 1000, 'Performance must be high-throughput (< 1000 ms)');
 
 console.log('\n======================================================================');

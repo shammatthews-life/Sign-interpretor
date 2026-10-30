@@ -3,18 +3,22 @@ import fs from 'fs';
 import path from 'path';
 
 console.log('====================================================');
-console.log('TESTING AETHER AVATAR PERFORMANCE ON ALL 33 H24 SIGNS');
+console.log('TESTING AETHER AVATAR PERFORMANCE ON ALL 53 H24 SIGNS');
 console.log('====================================================');
 
 const h24SignIds = [
-  // Batch 1
+  // Batch 1 (17)
   'increase', 'little', 'rest', 'let', 'able', 'part', 'big', 'stop',
   'watch', 'chart', 'subject', 'culture', 'product', 'audio', 'positive',
   'trust', 'match',
-  // Batch 2
+  // Batch 2 (16)
   'perspective', 'after', 'angle', 'wise', 'outside', 'remove', 'sell',
   'momentum', 'bring', 'pen', 'nervous', 'feedback', 'quick', 'earth',
-  'far', 'instance'
+  'far', 'instance',
+  // Batch 3 (20)
+  'functional', 'anticipation', 'based', 'clarity', 'during', 'prior',
+  'while', 'inhale', 'goal', 'science', 'career', 'passion', 'session',
+  'interesting', 'face', 'group', 'enjoy', 'core', 'vision', 'color'
 ];
 
 let allPassed = true;
@@ -113,13 +117,13 @@ for (const id of h24SignIds) {
   });
 }
 
-console.log(`\nVerified ${results.length}/33 signs on Aether Rig:`);
+console.log(`\nVerified ${results.length}/53 signs on Aether Rig:`);
 results.forEach(r => {
-  console.log(`  ✓ ${r.sign_id.padEnd(12)} [${r.gloss.padEnd(12)}] - ${r.duration_ms}ms, ${r.keyframes} kfs, max_rot: ${r.max_joint_rotation_rad} rad -> ${r.aether_status}`);
+  console.log(`  ✓ ${r.sign_id.padEnd(14)} [${r.gloss.padEnd(14)}] - ${r.duration_ms}ms, ${r.keyframes} kfs, max_rot: ${r.max_joint_rotation_rad} rad -> ${r.aether_status}`);
 });
 
-if (allPassed && results.length === 33) {
-  console.log('\nSUCCESS: Avatar Aether performs all 33 new actions smoothly and accurately with zero clipping!');
+if (allPassed && results.length === 53) {
+  console.log('\nSUCCESS: Avatar Aether performs all 53 new actions smoothly and accurately with zero clipping!');
 } else {
   console.error('\nFAILURE: Some signs failed verification.');
   process.exit(1);
