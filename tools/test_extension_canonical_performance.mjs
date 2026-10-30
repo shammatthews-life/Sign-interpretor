@@ -251,7 +251,12 @@ const fullH24VocabSet = new Set([
   'human', 'relate', 'cool', 'wow', 'corner',
   'chest', 'extension', 'loop', 'similar', 'metaphor',
   'scientific', 'skilled', 'proven', 'absolute', 'dominant',
-  'arena', 'myself', 'uncomfortable', 'filled', 'empowering'
+  'arena', 'myself', 'uncomfortable', 'filled', 'empowering',
+  // Batch 11 (20)
+  'wait', 'pattern', 'front', 'fall', 'mobile',
+  'ignore', 'under', 'certain', 'subtle', 'scream',
+  'everyday', 'emotional', 'connect', 'extent', 'longer',
+  'ultimate', 'somatic', 'synchronicity', 'sat', 'united'
 ]);
 
 const tStart = performance.now();
