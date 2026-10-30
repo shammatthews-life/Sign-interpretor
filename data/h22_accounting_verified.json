@@ -5,8 +5,8 @@
   "discrepancy": 0,
   "silent_token_loss": 0,
   "communicative_coverage": {
-    "tokens": 20303,
-    "percentage": 87.29
+    "tokens": 20394,
+    "percentage": 87.69
   },
   "dispositions": {
     "GRAMMAR_OMISSION": {
@@ -14,12 +14,12 @@
       "percentage": 39.07
     },
     "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
-      "tokens": 9551,
-      "percentage": 41.07
+      "tokens": 9642,
+      "percentage": 41.46
     },
     "SUBTITLE_FALLBACK": {
-      "tokens": 2954,
-      "percentage": 12.7
+      "tokens": 2863,
+      "percentage": 12.31
     },
     "PHRASE_TRANSLATED": {
       "tokens": 1444,

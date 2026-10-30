@@ -1,0 +1,179 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "couple",
+  "metadata": {
+    "display_name": "Couple",
+    "gloss": "COUPLE",
+    "language": "ISL",
+    "lexical_type": "ISL Lexical Sign (Pair / Binary Quantifier Noun)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC 10,000 Dictionary. Dominant V-hand with two extended fingers curving together gently to signify a pair/couple."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1200,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0.0,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.0,
+          "pinky": 0.0
+        }
+      },
+      {
+        "time_ms": 300,
+        "label": "Articulation_300ms",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": -0.4,
+            "y": 0.2,
+            "z": 0.2
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.7,
+            "y": 0.2,
+            "z": 0.1
+          },
+          "Bip001_R_Hand": {
+            "x": 0.2,
+            "y": 0.1,
+            "z": -0.1
+          }
+        },
+        "finger_curls": {
+          "thumb": 0.8,
+          "index": 0.1,
+          "middle": 0.1,
+          "ring": 0.8,
+          "pinky": 0.8
+        }
+      },
+      {
+        "time_ms": 650,
+        "label": "Articulation_650ms",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": -0.3,
+            "y": 0.1,
+            "z": 0.2
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.8,
+            "y": 0.3,
+            "z": 0.1
+          },
+          "Bip001_R_Hand": {
+            "x": 0.3,
+            "y": 0.2,
+            "z": -0.2
+          }
+        },
+        "finger_curls": {
+          "thumb": 0.8,
+          "index": 0.4,
+          "middle": 0.4,
+          "ring": 0.8,
+          "pinky": 0.8
+        }
+      },
+      {
+        "time_ms": 950,
+        "label": "Articulation_950ms",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": -0.2,
+            "y": 0.1,
+            "z": 0.1
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.4,
+            "y": 0.1,
+            "z": 0.1
+          },
+          "Bip001_R_Hand": {
+            "x": 0.1,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0.1,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.1,
+          "pinky": 0.1
+        }
+      },
+      {
+        "time_ms": 1200,
+        "label": "Neutral_Return",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0.0,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.0,
+          "pinky": 0.0
+        }
+      }
+    ]
+  }
+}
