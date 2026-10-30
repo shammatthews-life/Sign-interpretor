@@ -43,6 +43,7 @@
       this.bindEvents();
 
       targetDoc.body.appendChild(this.hostElement);
+      this.updateHostPageLayout();
     }
 
     buildDOM() {
@@ -473,6 +474,7 @@
       } else {
         this.elements.btnMinimize.textContent = this.isMinimized ? '□' : '─';
       }
+      this.updateHostPageLayout();
     }
 
     expandSidebar() {
@@ -482,6 +484,7 @@
         this.elements.sidebarToggle.classList.add('hidden');
       }
       this.elements.btnMinimize.textContent = '─';
+      this.updateHostPageLayout();
     }
 
     toggleLayoutMode() {
@@ -508,6 +511,7 @@
         if (this.elements.btnLayoutMode) this.elements.btnLayoutMode.textContent = '▥';
         if (this.elements.sidebarToggle) this.elements.sidebarToggle.classList.add('hidden');
       }
+      this.updateHostPageLayout();
     }
 
     show() {
@@ -517,6 +521,7 @@
       if (this.isSidebarMode && this.isCollapsed) {
         this.expandSidebar();
       }
+      this.updateHostPageLayout();
     }
 
     hide() {
@@ -528,6 +533,37 @@
         }
       } else {
         this.elements.launcher.classList.remove('hidden');
+      }
+      this.updateHostPageLayout();
+    }
+
+    updateHostPageLayout() {
+      if (typeof document === 'undefined') return;
+      try {
+        const isDockedActive = this.isVisible && this.isSidebarMode && !this.isCollapsed;
+        const root = document.documentElement;
+        if (root && typeof root.setAttribute === 'function') {
+          if (isDockedActive) {
+            root.setAttribute('data-isl-sidebar-active', 'true');
+          } else {
+            root.removeAttribute('data-isl-sidebar-active');
+          }
+        }
+        if (typeof document.querySelector === 'function') {
+          const primary = document.querySelector('#primary') || document.querySelector('ytd-watch-flexy');
+          if (primary && primary.style) {
+            if (isDockedActive) {
+              primary.style.transition = 'margin-right 0.32s cubic-bezier(0.16, 1, 0.3, 1)';
+              primary.style.marginRight = '380px';
+              primary.__islShifted = true;
+            } else if (primary.__islShifted) {
+              primary.style.marginRight = '';
+              primary.__islShifted = false;
+            }
+          }
+        }
+      } catch (e) {
+        // Safe silent degradation in mock DOM or restricted contexts
       }
     }
 
@@ -702,6 +738,8 @@
     }
 
     destroy() {
+      this.isVisible = false;
+      this.updateHostPageLayout();
       if (this.hostElement && this.hostElement.parentNode) {
         this.hostElement.parentNode.removeChild(this.hostElement);
       }

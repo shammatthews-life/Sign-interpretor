@@ -180,7 +180,9 @@ PLAYABLE_SIGNS = {
     # Phase H24 Batch 3 Signs (20 authentic signs covering 138 tokens)
     "functional", "anticipation", "based", "clarity", "during", "prior", "while", "inhale", "goal", "science", "career", "passion", "session", "interesting", "face", "group", "enjoy", "core", "vision", "color",
     # Phase H24 Batch 4 Signs (24 authentic signs covering 150+ tokens)
-    "play", "live", "emotion", "afraid", "place", "house", "sorry", "believe", "company", "sing", "song", "money", "real", "hour", "perfect", "sit", "car", "turn", "normal", "confused", "remind", "definition", "happen", "slowly"
+    "play", "live", "emotion", "afraid", "place", "house", "sorry", "believe", "company", "sing", "song", "money", "real", "hour", "perfect", "sit", "car", "turn", "normal", "confused", "remind", "definition", "happen", "slowly",
+    # Phase H24 Batch 5 Signs (24 authentic signs covering 125+ tokens, passing 300 milestone)
+    "ability", "leave", "movie", "dynamic", "guess", "respect", "data", "launch", "pack", "apple", "grow", "air", "fun", "concept", "present", "tools", "sure", "awesome", "opposite", "tip", "sensation", "gym", "basis", "technique"
 }
 
 # Structural ISL Function Words (Grammar Omissions)
