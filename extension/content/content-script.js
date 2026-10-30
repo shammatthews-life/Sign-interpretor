@@ -98,12 +98,20 @@
     } catch (error) {
       console.warn('[ISL Content Script] Unable to forward Aether command:', error.message);
     }
+  }
 
-    function flushAetherCommands() {
-      while (pendingAetherCommands.length) {
-        const next = pendingAetherCommands.shift();
-        forwardAetherCommand(next);
-      }
+  function flushAetherCommands() {
+    while (pendingAetherCommands.length) {
+      const next = pendingAetherCommands.shift();
+      forwardAetherCommand(next);
+    }
+  }
+
+  function bindAetherFrame() {
+    const iframe = ui?.elements?.aetherIframe;
+    if (iframe && !iframe.__islLoadBound) {
+      iframe.__islLoadBound = true;
+      iframe.addEventListener('load', flushAetherCommands);
     }
   }
 
@@ -124,14 +132,6 @@
       if (chrome.runtime.lastError) console.warn('[ISL Content Script] Aether state relay failed:', chrome.runtime.lastError.message);
       else if (!response?.success) console.warn('[ISL Content Script] Aether state relay was rejected.');
     });
-
-    function bindAetherFrame() {
-      const iframe = ui?.elements?.aetherIframe;
-      if (iframe && !iframe.__islLoadBound) {
-        iframe.__islLoadBound = true;
-        iframe.addEventListener('load', flushAetherCommands);
-      }
-    }
   });
 
   // Listen for messages from service worker
