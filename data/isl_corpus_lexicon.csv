@@ -280,23 +280,23 @@ hope,hope,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_RE
 over_and_over,over and over,9,Multiword Expression,PHRASE_TRANSLATED,PHRASE_SEQUENCE,NONE,False,1
 phone,phone,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,2
 functional,functional,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
-guy,guy,9,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+guy,guy,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 angle,angle,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 let,let,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 boom,boom,9,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 new,new,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 wise,wise,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 idea,idea,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
-friday,friday,9,Technical / Proper Noun,FINGERSPELLED,FINGERSPELLED_SEQUENCE,NONE,False,1
+friday,friday,9,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 clear,clear,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 communication,communication,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 to_give_you,to give you,8,Multiword Expression,PHRASE_TRANSLATED,PHRASE_SEQUENCE,NONE,False,1
 win,win,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,4
 chat,chat,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
-instead,instead,8,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+instead,instead,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 able,able,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
-ago,ago,8,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-quite,quite,8,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+ago,ago,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
+quite,quite,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 problem,problem,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 reason,reason,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,2
 part,part,8,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
@@ -589,49 +589,49 @@ sql,sql,4,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,Tru
 server,server,4,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 synchronicity,synchronicity,4,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 few,few,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-special,special,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+special,special,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 jp,jp,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 phillips,phillips,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 hours,hours,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-practical,practical,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-welcome,welcome,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+practical,practical,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
+welcome,welcome,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 lovely,lovely,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 thank_you,thank you,3,Multiword Expression,PHRASE_TRANSLATED,PHRASE_SEQUENCE,NONE,False,1
 signed,signed,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-valuable,valuable,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-transform,transform,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+valuable,valuable,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
+transform,transform,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 tips,tips,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 everyday,everyday,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 meetings,meetings,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 fear,fear,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 compared,compared,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-content,content,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-avoid,avoid,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-excellent,excellent,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+content,content,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
+avoid,avoid,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
+excellent,excellent,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 emotional,emotional,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 similar,similar,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 extent,extent,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-fail,fail,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+fail,fail,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 talk_about,talk about,3,Multiword Expression,PHRASE_TRANSLATED,PHRASE_SEQUENCE,NONE,False,1
 scientific,scientific,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-basketball,basketball,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-golf,golf,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+basketball,basketball,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
+golf,golf,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 stand_up,stand up,3,Multiword Expression,PHRASE_TRANSLATED,PHRASE_SEQUENCE,NONE,False,1
-social,social,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+social,social,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 presenting,presenting,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 skilled,skilled,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 focusing,focusing,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 metaphor,metaphor,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-less,less,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+less,less,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 longer,longer,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 aren't,aren't,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-born,born,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-dancing,dancing,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+born,born,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
+dancing,dancing,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 places,places,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-massive,massive,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+massive,massive,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 math,math,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-continuous,continuous,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-critical,critical,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+continuous,continuous,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
+critical,critical,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 beliefs,beliefs,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 sat,sat,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 sometimes,sometimes,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
@@ -640,7 +640,7 @@ devil's,devil's,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVI
 ourselves,ourselves,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 entirely,entirely,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 effects,effects,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
-direction,direction,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
+direction,direction,3,Everyday,PLAYABLE_SIGN,playable,IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW,False,1
 list,list,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 smile,smile,3,Uncategorized Lexicon,SUBTITLE_FALLBACK,NO_MOTION_ASSET,UNREVIEWED,True,1
 feel_like,feel like,3,Multiword Expression,PHRASE_TRANSLATED,PHRASE_SEQUENCE,NONE,False,1

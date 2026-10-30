@@ -236,7 +236,12 @@ const fullH24VocabSet = new Set([
   'job', 'business', 'message', 'care', 'promise', 'flow',
   'store', 'center', 'middle', 'sister', 'post', 'package',
   'favorite', 'silent', 'comfortable', 'football', 'low', 'amount',
-  'crazy', 'between', 'each', 'chat', 'bit', 'super'
+  'crazy', 'between', 'each', 'chat', 'bit', 'super',
+  // Batch 8 (24)
+  'special', 'practical', 'welcome', 'valuable', 'transform', 'avoid',
+  'excellent', 'social', 'critical', 'direction', 'content', 'fail',
+  'basketball', 'golf', 'less', 'massive', 'continuous', 'dancing',
+  'born', 'friday', 'instead', 'ago', 'quite', 'guy'
 ]);
 
 const tStart = performance.now();
