@@ -246,7 +246,12 @@ const fullH24VocabSet = new Set([
   'smile', 'dream', 'exercise', 'accomplish', 'close',
   'old', 'hungry', 'intention', 'motivated', 'few',
   'lovely', 'focus', 'sometimes', 'list', 'connected',
-  'course', 'analyze', 'fourth', 'fifth', 'meeting'
+  'course', 'analyze', 'fourth', 'fifth', 'meeting',
+  // Batch 10 (20)
+  'human', 'relate', 'cool', 'wow', 'corner',
+  'chest', 'extension', 'loop', 'similar', 'metaphor',
+  'scientific', 'skilled', 'proven', 'absolute', 'dominant',
+  'arena', 'myself', 'uncomfortable', 'filled', 'empowering'
 ]);
 
 const tStart = performance.now();

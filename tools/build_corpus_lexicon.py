@@ -190,7 +190,9 @@ PLAYABLE_SIGNS = {
     # Phase H24 Batch 8 Signs (24 authentic signs, total 380 signs)
     "special", "practical", "welcome", "valuable", "transform", "avoid", "excellent", "social", "critical", "direction", "content", "fail", "basketball", "golf", "less", "massive", "continuous", "dancing", "born", "friday", "instead", "ago", "quite", "guy",
     # Phase H24 Batch 9 Signs (20 authentic signs reaching 400 signs milestone)
-    "smile", "dream", "exercise", "accomplish", "close", "old", "hungry", "intention", "motivated", "few", "lovely", "focus", "sometimes", "list", "connected", "course", "analyze", "fourth", "fifth", "meeting"
+    "smile", "dream", "exercise", "accomplish", "close", "old", "hungry", "intention", "motivated", "few", "lovely", "focus", "sometimes", "list", "connected", "course", "analyze", "fourth", "fifth", "meeting",
+    # Phase H24 Batch 10 Signs (20 authentic signs reaching 420 signs milestone)
+    "human", "relate", "cool", "wow", "corner", "chest", "extension", "loop", "similar", "metaphor", "scientific", "skilled", "proven", "absolute", "dominant", "arena", "myself", "uncomfortable", "filled", "empowering"
 }
 
 # Structural ISL Function Words (Grammar Omissions)
