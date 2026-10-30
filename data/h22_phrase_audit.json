@@ -1,0 +1,888 @@
+{
+  "phase": "H22",
+  "worker": "B",
+  "root_cause_analysis": {
+    "finding": "In Phase H21, 200 phrase candidates were mined and 100 researched into data/ artifacts, but only a subset was plugged into MULTIWORD_EXPRESSIONS in build_corpus_lexicon.py and this.phrases in EnglishToISLTranslator.js.",
+    "impact": "75 high-value phrases affecting 2369 spoken tokens remained unintegrated, causing phrase-translated tokens to plateau at 1,415.",
+    "resolution": "Integrate the researched multiword phrases into MULTIWORD_EXPRESSIONS and EnglishToISLTranslator.js with longest-match precedence."
+  },
+  "integrated_count": 25,
+  "missing_count": 75,
+  "missing_phrases": [
+    {
+      "phrase": "i'm going to show",
+      "occurrences": 15,
+      "tokens_affected": 60,
+      "target_isl_glosses": [
+        "I'M",
+        "GOING",
+        "TO",
+        "SHOW"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "going to show you",
+      "occurrences": 14,
+      "tokens_affected": 56,
+      "target_isl_glosses": [
+        "GOING",
+        "TO",
+        "SHOW",
+        "YOU"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "goes like this",
+      "occurrences": 16,
+      "tokens_affected": 48,
+      "target_isl_glosses": [
+        "GOES",
+        "LIKE",
+        "THIS"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "i'm going to give",
+      "occurrences": 12,
+      "tokens_affected": 48,
+      "target_isl_glosses": [
+        "I'M",
+        "GOING",
+        "TO",
+        "GIVE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "going to give you",
+      "occurrences": 12,
+      "tokens_affected": 48,
+      "target_isl_glosses": [
+        "GOING",
+        "TO",
+        "GIVE",
+        "YOU"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "a look at this",
+      "occurrences": 12,
+      "tokens_affected": 48,
+      "target_isl_glosses": [
+        "A",
+        "LOOK",
+        "AT",
+        "THIS"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "up on stage",
+      "occurrences": 13,
+      "tokens_affected": 39,
+      "target_isl_glosses": [
+        "UP",
+        "ON",
+        "STAGE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "i look at",
+      "occurrences": 13,
+      "tokens_affected": 39,
+      "target_isl_glosses": [
+        "I",
+        "LOOK",
+        "AT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "you have to",
+      "occurrences": 13,
+      "tokens_affected": 39,
+      "target_isl_glosses": [
+        "YOU",
+        "HAVE",
+        "TO"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "if you have",
+      "occurrences": 12,
+      "tokens_affected": 36,
+      "target_isl_glosses": [
+        "IF",
+        "YOU",
+        "HAVE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "that you can",
+      "occurrences": 12,
+      "tokens_affected": 36,
+      "target_isl_glosses": [
+        "THAT",
+        "YOU",
+        "CAN"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "let's have a",
+      "occurrences": 12,
+      "tokens_affected": 36,
+      "target_isl_glosses": [
+        "LET'S",
+        "HAVE",
+        "A"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "to do this",
+      "occurrences": 12,
+      "tokens_affected": 36,
+      "target_isl_glosses": [
+        "TO",
+        "DO",
+        "THIS"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "it goes like this",
+      "occurrences": 9,
+      "tokens_affected": 36,
+      "target_isl_glosses": [
+        "IT",
+        "GOES",
+        "LIKE",
+        "THIS"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "you have a",
+      "occurrences": 11,
+      "tokens_affected": 33,
+      "target_isl_glosses": [
+        "YOU",
+        "HAVE",
+        "A"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "that you are",
+      "occurrences": 11,
+      "tokens_affected": 33,
+      "target_isl_glosses": [
+        "THAT",
+        "YOU",
+        "ARE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "in public",
+      "occurrences": 16,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "IN",
+        "PUBLIC"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "the people",
+      "occurrences": 16,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "THE",
+        "PEOPLE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "we go",
+      "occurrences": 16,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "WE",
+        "GO"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "time you",
+      "occurrences": 16,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "TIME",
+        "YOU"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "do i",
+      "occurrences": 16,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "DO",
+        "I"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "of your",
+      "occurrences": 16,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "OF",
+        "YOUR"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "you want to become",
+      "occurrences": 8,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "YOU",
+        "WANT",
+        "TO",
+        "BECOME"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "want to become more",
+      "occurrences": 8,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "WANT",
+        "TO",
+        "BECOME",
+        "MORE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "to become more confident",
+      "occurrences": 8,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "TO",
+        "BECOME",
+        "MORE",
+        "CONFIDENT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "become more confident in",
+      "occurrences": 8,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "BECOME",
+        "MORE",
+        "CONFIDENT",
+        "IN"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "what do i get",
+      "occurrences": 8,
+      "tokens_affected": 32,
+      "target_isl_glosses": [
+        "WHAT",
+        "DO",
+        "I",
+        "GET"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "to see",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "TO",
+        "SEE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "to me",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "TO",
+        "ME"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "if i",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "IF",
+        "I"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "and it",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "AND",
+        "IT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "so you",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "SO",
+        "YOU"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "over and",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "OVER",
+        "AND"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "it was",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "IT",
+        "WAS"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "i'm gonna",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "I'M",
+        "GONNA"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "and she",
+      "occurrences": 15,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "AND",
+        "SHE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "this is the",
+      "occurrences": 10,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "THIS",
+        "IS",
+        "THE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "so if you",
+      "occurrences": 10,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "SO",
+        "IF",
+        "YOU"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "want to become",
+      "occurrences": 10,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "WANT",
+        "TO",
+        "BECOME"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "do you know",
+      "occurrences": 10,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "DO",
+        "YOU",
+        "KNOW"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "this is a",
+      "occurrences": 10,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "THIS",
+        "IS",
+        "A"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "you look at",
+      "occurrences": 10,
+      "tokens_affected": 30,
+      "target_isl_glosses": [
+        "YOU",
+        "LOOK",
+        "AT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "you see",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "YOU",
+        "SEE"
+      ],
+      "in_build_corpus_lexicon": true,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "will be",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "WILL",
+        "BE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "here we",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "HERE",
+        "WE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "a person",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "A",
+        "PERSON"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "a lot",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "A",
+        "LOT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "go up",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "GO",
+        "UP"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "the first",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "THE",
+        "FIRST"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "what do",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "WHAT",
+        "DO"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "go like",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "GO",
+        "LIKE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "my friend",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "MY",
+        "FRIEND"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "it's not",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "IT'S",
+        "NOT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "at your",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "AT",
+        "YOUR"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "of them",
+      "occurrences": 14,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "OF",
+        "THEM"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "to have a look",
+      "occurrences": 7,
+      "tokens_affected": 28,
+      "target_isl_glosses": [
+        "TO",
+        "HAVE",
+        "A",
+        "LOOK"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "give you a",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "GIVE",
+        "YOU",
+        "A"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "you are not",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "YOU",
+        "ARE",
+        "NOT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "it goes like",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "IT",
+        "GOES",
+        "LIKE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "of you have",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "OF",
+        "YOU",
+        "HAVE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "and that is",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "AND",
+        "THAT",
+        "IS"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "and over again",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "AND",
+        "OVER",
+        "AGAIN"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "the way you",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "THE",
+        "WAY",
+        "YOU"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "do i get",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "DO",
+        "I",
+        "GET"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "and he goes",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "AND",
+        "HE",
+        "GOES"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "what do i",
+      "occurrences": 9,
+      "tokens_affected": 27,
+      "target_isl_glosses": [
+        "WHAT",
+        "DO",
+        "I"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "more confident",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "MORE",
+        "CONFIDENT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "and i'm",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "AND",
+        "I'M"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "the world",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "THE",
+        "WORLD"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "one of",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "ONE",
+        "OF"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "up to",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "UP",
+        "TO"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "means that",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "MEANS",
+        "THAT"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "i love",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "I",
+        "LOVE"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "one is",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "ONE",
+        "IS"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    },
+    {
+      "phrase": "so if",
+      "occurrences": 13,
+      "tokens_affected": 26,
+      "target_isl_glosses": [
+        "SO",
+        "IF"
+      ],
+      "in_build_corpus_lexicon": false,
+      "in_translator_js": false
+    }
+  ]
+}

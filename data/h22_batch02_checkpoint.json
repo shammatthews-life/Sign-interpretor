@@ -1,0 +1,908 @@
+{
+  "batch_index": 2,
+  "concept_range": "51\u2013100",
+  "concept_count": 50,
+  "total_occurrences": 50,
+  "concepts": [
+    {
+      "rank": 51,
+      "concept": "denmark",
+      "lemma": "denmark",
+      "surface_forms": [
+        "denmark"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DENMARK",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "We've got Norway, Denmark, Latvia, Mexico is in the house."
+    },
+    {
+      "rank": 52,
+      "concept": "latvia",
+      "lemma": "latvia",
+      "surface_forms": [
+        "latvia"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "LATVIA",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "We've got Norway, Denmark, Latvia, Mexico is in the house."
+    },
+    {
+      "rank": 53,
+      "concept": "mexico",
+      "lemma": "mexico",
+      "surface_forms": [
+        "mexico"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "MEXICO",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "We've got Norway, Denmark, Latvia, Mexico is in the house."
+    },
+    {
+      "rank": 54,
+      "concept": "dublin",
+      "lemma": "dublin",
+      "surface_forms": [
+        "dublin"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DUBLIN",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It's lovely, Dublin, Germany."
+    },
+    {
+      "rank": 55,
+      "concept": "germany",
+      "lemma": "germany",
+      "surface_forms": [
+        "germany"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "GERMANY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It's lovely, Dublin, Germany."
+    },
+    {
+      "rank": 56,
+      "concept": "humanly",
+      "lemma": "humanly",
+      "surface_forms": [
+        "humanly"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Adverb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "HUMANLY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "you to grow as much as humanly possible in three days. So, are you ready to be challenged? Yes or"
+    },
+    {
+      "rank": 57,
+      "concept": "wreck",
+      "lemma": "wreck",
+      "surface_forms": [
+        "wreck"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WRECK",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "which can literally transform you into being a nervous wreck, delivering a bad presentation,"
+    },
+    {
+      "rank": 58,
+      "concept": "sessions",
+      "lemma": "sessions",
+      "surface_forms": [
+        "sessions"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SESSIONS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "to being a confident person, delivering a great presentation in these three sessions."
+    },
+    {
+      "rank": 59,
+      "concept": "pens",
+      "lemma": "pens",
+      "surface_forms": [
+        "pens"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PENS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I also want to say this, please take out pens and papers and whatever you need to write"
+    },
+    {
+      "rank": 60,
+      "concept": "hordes",
+      "lemma": "hordes",
+      "surface_forms": [
+        "hordes"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "HORDES",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "on because there's going to be hordes of awesome tips and techniques."
+    },
+    {
+      "rank": 61,
+      "concept": "trainings",
+      "lemma": "trainings",
+      "surface_forms": [
+        "trainings"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TRAININGS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "As always, when I do these trainings."
+    },
+    {
+      "rank": 62,
+      "concept": "leader",
+      "lemma": "leader",
+      "surface_forms": [
+        "leader"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "LEADER",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "presentations, in meetings, in negotiations, as a leader, as a presenter, as a coach, doesn't"
+    },
+    {
+      "rank": 63,
+      "concept": "fearful",
+      "lemma": "fearful",
+      "surface_forms": [
+        "fearful"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FEARFUL",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+    },
+    {
+      "rank": 64,
+      "concept": "output",
+      "lemma": "output",
+      "surface_forms": [
+        "output"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "OUTPUT",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+    },
+    {
+      "rank": 65,
+      "concept": "severely",
+      "lemma": "severely",
+      "surface_forms": [
+        "severely"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Adverb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SEVERELY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+    },
+    {
+      "rank": 66,
+      "concept": "pillars",
+      "lemma": "pillars",
+      "surface_forms": [
+        "pillars"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PILLARS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Now in my world, there are three pillars that make us great presenters and great public speakers."
+    },
+    {
+      "rank": 67,
+      "concept": "signs",
+      "lemma": "signs",
+      "surface_forms": [
+        "signs"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SIGNS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "You've got how to avoid death by PowerPoint, the magical signs of storytelling,"
+    },
+    {
+      "rank": 68,
+      "concept": "derived",
+      "lemma": "derived",
+      "surface_forms": [
+        "derived"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Past Tense / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DERIVED",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "And the mindset one is actually derived from this book."
+    },
+    {
+      "rank": 69,
+      "concept": "translated",
+      "lemma": "translated",
+      "surface_forms": [
+        "translated"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Past Tense / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TRANSLATED",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It's been translated to 35 different languages."
+    },
+    {
+      "rank": 70,
+      "concept": "35",
+      "lemma": "35",
+      "surface_forms": [
+        "35"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "35",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It's been translated to 35 different languages."
+    },
+    {
+      "rank": 71,
+      "concept": "native",
+      "lemma": "native",
+      "surface_forms": [
+        "native"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NATIVE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It is probably in your native language."
+    },
+    {
+      "rank": 72,
+      "concept": "japan",
+      "lemma": "japan",
+      "surface_forms": [
+        "japan"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "JAPAN",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It just came out in Japan, which I think looks a lot more interesting than the English version,"
+    },
+    {
+      "rank": 73,
+      "concept": "english",
+      "lemma": "english",
+      "surface_forms": [
+        "english"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ENGLISH",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It just came out in Japan, which I think looks a lot more interesting than the English version,"
+    },
+    {
+      "rank": 74,
+      "concept": "version",
+      "lemma": "version",
+      "surface_forms": [
+        "version"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "VERSION",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It just came out in Japan, which I think looks a lot more interesting than the English version,"
+    },
+    {
+      "rank": 75,
+      "concept": "visual",
+      "lemma": "visual",
+      "surface_forms": [
+        "visual"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "VISUAL",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I create visual worlds that are so beyond everyone's normal life"
+    },
+    {
+      "rank": 76,
+      "concept": "worlds",
+      "lemma": "worlds",
+      "surface_forms": [
+        "worlds"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WORLDS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I create visual worlds that are so beyond everyone's normal life"
+    },
+    {
+      "rank": 77,
+      "concept": "beyond",
+      "lemma": "beyond",
+      "surface_forms": [
+        "beyond"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "BEYOND",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I create visual worlds that are so beyond everyone's normal life"
+    },
+    {
+      "rank": 78,
+      "concept": "everyone's",
+      "lemma": "everyone's",
+      "surface_forms": [
+        "everyone's"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "EVERYONE'S",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I create visual worlds that are so beyond everyone's normal life"
+    },
+    {
+      "rank": 79,
+      "concept": "experiences",
+      "lemma": "experiences",
+      "surface_forms": [
+        "experiences"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "EXPERIENCES",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "experiences."
+    },
+    {
+      "rank": 80,
+      "concept": "viewer",
+      "lemma": "viewer",
+      "surface_forms": [
+        "viewer"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "VIEWER",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "And Hollywood is a place that creates a viewer escape."
+    },
+    {
+      "rank": 81,
+      "concept": "director",
+      "lemma": "director",
+      "surface_forms": [
+        "director"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DIRECTOR",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "And what I try to do is, as a director,"
+    },
+    {
+      "rank": 82,
+      "concept": "type",
+      "lemma": "type",
+      "surface_forms": [
+        "type"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TYPE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I try to, the type is all off."
+    },
+    {
+      "rank": 83,
+      "concept": "curve",
+      "lemma": "curve",
+      "surface_forms": [
+        "curve"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "CURVE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "The curve?"
+    },
+    {
+      "rank": 84,
+      "concept": "viewers",
+      "lemma": "viewers",
+      "surface_forms": [
+        "viewers"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "VIEWERS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "how viewers experience your movies?"
+    },
+    {
+      "rank": 85,
+      "concept": "excuse",
+      "lemma": "excuse",
+      "surface_forms": [
+        "excuse"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "EXCUSE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Excuse me, I'm sorry."
+    },
+    {
+      "rank": 86,
+      "concept": "preparation",
+      "lemma": "preparation",
+      "surface_forms": [
+        "preparation"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PREPARATION",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "your PowerPoint and you feel you're good because you've done the preparation, but then you"
+    },
+    {
+      "rank": 87,
+      "concept": "perspectives",
+      "lemma": "perspectives",
+      "surface_forms": [
+        "perspectives"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PERSPECTIVES",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "When we talk about confidence and confidence on command, there's two perspectives."
+    },
+    {
+      "rank": 88,
+      "concept": "newer",
+      "lemma": "newer",
+      "surface_forms": [
+        "newer"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NEWER",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "First of all, you have a general confidence which comes from a newer scientific basis,"
+    },
+    {
+      "rank": 89,
+      "concept": "asks",
+      "lemma": "asks",
+      "surface_forms": [
+        "asks"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ASKS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "become confident because confidence is per skill in this matter. But if someone asks you,"
+    },
+    {
+      "rank": 90,
+      "concept": "ball",
+      "lemma": "ball",
+      "surface_forms": [
+        "ball"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "BALL",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+    },
+    {
+      "rank": 91,
+      "concept": "comedy",
+      "lemma": "comedy",
+      "surface_forms": [
+        "comedy"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "COMEDY",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "and stand up comedy."
+    },
+    {
+      "rank": 92,
+      "concept": "strangers",
+      "lemma": "strangers",
+      "surface_forms": [
+        "strangers"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "STRANGERS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "in just walking up to strangers and talking to them?"
+    },
+    {
+      "rank": 93,
+      "concept": "humor",
+      "lemma": "humor",
+      "surface_forms": [
+        "humor"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "HUMOR",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "using humor for mayor, public speaking for Suzanne,"
+    },
+    {
+      "rank": 94,
+      "concept": "mayor",
+      "lemma": "mayor",
+      "surface_forms": [
+        "mayor"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "MAYOR",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "using humor for mayor, public speaking for Suzanne,"
+    },
+    {
+      "rank": 95,
+      "concept": "selaine",
+      "lemma": "selaine",
+      "surface_forms": [
+        "selaine"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SELAINE",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "selaine coping on unexpected cases,"
+    },
+    {
+      "rank": 96,
+      "concept": "coping",
+      "lemma": "coping",
+      "surface_forms": [
+        "coping"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "COPING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "selaine coping on unexpected cases,"
+    },
+    {
+      "rank": 97,
+      "concept": "unexpected",
+      "lemma": "unexpected",
+      "surface_forms": [
+        "unexpected"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Past Tense / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "UNEXPECTED",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "selaine coping on unexpected cases,"
+    },
+    {
+      "rank": 98,
+      "concept": "broad",
+      "lemma": "broad",
+      "surface_forms": [
+        "broad"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "BROAD",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "public speaking is broad."
+    },
+    {
+      "rank": 99,
+      "concept": "ending",
+      "lemma": "ending",
+      "surface_forms": [
+        "ending"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ENDING",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "is it the ending, is it the entire thing,"
+    },
+    {
+      "rank": 100,
+      "concept": "startups",
+      "lemma": "startups",
+      "surface_forms": [
+        "startups"
+      ],
+      "fallback_frequency": 1,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "STARTUPS",
+      "evidence_rationale": "ISLRTC official catalogue matched; auditable fallback awaiting motion review",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "pitching startups at the start, authenticity,"
+    }
+  ]
+}

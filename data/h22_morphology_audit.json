@@ -1,0 +1,84 @@
+{
+  "phase": "H22",
+  "inflection_classes": {
+    "regular_plurals": [
+      {
+        "word": "steps",
+        "lemma": "step"
+      },
+      {
+        "word": "rules",
+        "lemma": "rule"
+      },
+      {
+        "word": "notes",
+        "lemma": "note"
+      },
+      {
+        "word": "plans",
+        "lemma": "plan"
+      },
+      {
+        "word": "topics",
+        "lemma": "topic"
+      },
+      {
+        "word": "powers",
+        "lemma": "power"
+      },
+      {
+        "word": "games",
+        "lemma": "game"
+      },
+      {
+        "word": "lines",
+        "lemma": "line"
+      }
+    ],
+    "participles": [
+      {
+        "word": "teaching",
+        "lemma": "teach"
+      },
+      {
+        "word": "stepping",
+        "lemma": "step"
+      },
+      {
+        "word": "planning",
+        "lemma": "plan"
+      },
+      {
+        "word": "drawing",
+        "lemma": "draw"
+      },
+      {
+        "word": "pausing",
+        "lemma": "pause"
+      },
+      {
+        "word": "training",
+        "lemma": "train"
+      }
+    ],
+    "contractions": [
+      {
+        "contraction": "you'll",
+        "expansion": "you will"
+      },
+      {
+        "contraction": "haven't",
+        "expansion": "have not"
+      },
+      {
+        "contraction": "isn't",
+        "expansion": "is not"
+      },
+      {
+        "contraction": "we've",
+        "expansion": "we have"
+      }
+    ]
+  },
+  "precedence_rule": "Multiword expression > Single word lemma > Grammar omission > Subtitle fallback"
+}

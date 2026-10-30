@@ -8,7 +8,7 @@
       "you've",
       "yourself"
     ],
-    "frequency": 1036,
+    "frequency": 1034,
     "example_sentences": [
       "It's to help you overcome being uncertain, anxious, afraid,",
       "and bring you a few steps closer to being more confident, more clear,",
@@ -105,7 +105,7 @@
     "surface_forms": [
       "the"
     ],
-    "frequency": 646,
+    "frequency": 645,
     "example_sentences": [],
     "timestamps": [],
     "semantic_category": "Grammar / Auxiliary",
@@ -329,27 +329,7 @@
     "surface_forms": [
       "of"
     ],
-    "frequency": 328,
-    "example_sentences": [],
-    "timestamps": [],
-    "semantic_category": "Grammar / Auxiliary",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "GRAMMAR_OMISSION",
-    "sign_id": null,
-    "motion_status": "OMITTED_BY_SYNTAX",
-    "linguistic_review_status": "NONE",
-    "fallback_required": false
-  },
-  {
-    "concept_id": "in",
-    "lemma": "in",
-    "surface_forms": [
-      "in"
-    ],
-    "frequency": 306,
+    "frequency": 326,
     "example_sentences": [],
     "timestamps": [],
     "semantic_category": "Grammar / Auxiliary",
@@ -370,6 +350,26 @@
       "it"
     ],
     "frequency": 306,
+    "example_sentences": [],
+    "timestamps": [],
+    "semantic_category": "Grammar / Auxiliary",
+    "dictionary_match": false,
+    "dictionary_entry": null,
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "GRAMMAR_OMISSION",
+    "sign_id": null,
+    "motion_status": "OMITTED_BY_SYNTAX",
+    "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "in",
+    "lemma": "in",
+    "surface_forms": [
+      "in"
+    ],
+    "frequency": 305,
     "example_sentences": [],
     "timestamps": [],
     "semantic_category": "Grammar / Auxiliary",
@@ -683,7 +683,7 @@
       "likes",
       "liking"
     ],
-    "frequency": 201,
+    "frequency": 195,
     "example_sentences": [
       "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
       "So if you like this session, make sure you pick up this book.",
@@ -1272,51 +1272,6 @@
     "fallback_required": false
   },
   {
-    "concept_id": "give",
-    "lemma": "give",
-    "surface_forms": [
-      "deliver",
-      "delivered",
-      "delivering",
-      "delivers",
-      "gave",
-      "give",
-      "given",
-      "gives",
-      "giving"
-    ],
-    "frequency": 95,
-    "example_sentences": [
-      "which we delivered live right here in our studio.",
-      "Because this isn't up to me. I'm here. I will give you the skills and the tools and the techniques,",
-      "which can literally transform you into being a nervous wreck, delivering a bad presentation,"
-    ],
-    "timestamps": [
-      [
-        30.45,
-        34.25
-      ],
-      [
-        180.43,
-        187.15
-      ],
-      [
-        188.79,
-        195.75
-      ]
-    ],
-    "semantic_category": "Everyday",
-    "dictionary_match": true,
-    "dictionary_entry": "Give",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "PLAYABLE_SIGN",
-    "sign_id": "give",
-    "motion_status": "playable",
-    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
     "concept_id": "will",
     "lemma": "will",
     "surface_forms": [
@@ -1374,6 +1329,51 @@
     "sign_id": null,
     "motion_status": "OMITTED_BY_SYNTAX",
     "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "give",
+    "lemma": "give",
+    "surface_forms": [
+      "deliver",
+      "delivered",
+      "delivering",
+      "delivers",
+      "gave",
+      "give",
+      "given",
+      "gives",
+      "giving"
+    ],
+    "frequency": 93,
+    "example_sentences": [
+      "which we delivered live right here in our studio.",
+      "Because this isn't up to me. I'm here. I will give you the skills and the tools and the techniques,",
+      "which can literally transform you into being a nervous wreck, delivering a bad presentation,"
+    ],
+    "timestamps": [
+      [
+        30.45,
+        34.25
+      ],
+      [
+        180.43,
+        187.15
+      ],
+      [
+        188.79,
+        195.75
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Give",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "give",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
   },
   {
@@ -1773,7 +1773,7 @@
     "surface_forms": [
       "all"
     ],
-    "frequency": 73,
+    "frequency": 71,
     "example_sentences": [],
     "timestamps": [],
     "semantic_category": "Grammar / Auxiliary",
@@ -1864,46 +1864,6 @@
     "sign_variants": [],
     "translation_strategy": "PLAYABLE_SIGN",
     "sign_id": "presentation",
-    "motion_status": "playable",
-    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
-    "concept_id": "look",
-    "lemma": "look",
-    "surface_forms": [
-      "look",
-      "looked",
-      "looking",
-      "looks"
-    ],
-    "frequency": 66,
-    "example_sentences": [
-      "It just came out in Japan, which I think looks a lot more interesting than the English version,",
-      "So I looked at him and I baffled.",
-      "and we feel, oh my God, I look forward to this."
-    ],
-    "timestamps": [
-      [
-        308.63,
-        314.35
-      ],
-      [
-        908.3,
-        910.1
-      ],
-      [
-        1086.66,
-        1089.66
-      ]
-    ],
-    "semantic_category": "Everyday",
-    "dictionary_match": true,
-    "dictionary_entry": "Look",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "PLAYABLE_SIGN",
-    "sign_id": "look",
     "motion_status": "playable",
     "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
@@ -2009,6 +1969,46 @@
     "fallback_required": false
   },
   {
+    "concept_id": "look",
+    "lemma": "look",
+    "surface_forms": [
+      "look",
+      "looked",
+      "looking",
+      "looks"
+    ],
+    "frequency": 60,
+    "example_sentences": [
+      "It just came out in Japan, which I think looks a lot more interesting than the English version,",
+      "So I looked at him and I baffled.",
+      "and we feel, oh my God, I look forward to this."
+    ],
+    "timestamps": [
+      [
+        308.63,
+        314.35
+      ],
+      [
+        908.3,
+        910.1
+      ],
+      [
+        1086.66,
+        1089.66
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Look",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "look",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
     "concept_id": "confident",
     "lemma": "confident",
     "surface_forms": [
@@ -2047,26 +2047,6 @@
     "fallback_required": false
   },
   {
-    "concept_id": "an",
-    "lemma": "an",
-    "surface_forms": [
-      "an"
-    ],
-    "frequency": 59,
-    "example_sentences": [],
-    "timestamps": [],
-    "semantic_category": "Grammar / Auxiliary",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "GRAMMAR_OMISSION",
-    "sign_id": null,
-    "motion_status": "OMITTED_BY_SYNTAX",
-    "linguistic_review_status": "NONE",
-    "fallback_required": false
-  },
-  {
     "concept_id": "oh",
     "lemma": "oh",
     "surface_forms": [
@@ -2091,6 +2071,26 @@
     "lemma": "from",
     "surface_forms": [
       "from"
+    ],
+    "frequency": 57,
+    "example_sentences": [],
+    "timestamps": [],
+    "semantic_category": "Grammar / Auxiliary",
+    "dictionary_match": false,
+    "dictionary_entry": null,
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "GRAMMAR_OMISSION",
+    "sign_id": null,
+    "motion_status": "OMITTED_BY_SYNTAX",
+    "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "an",
+    "lemma": "an",
+    "surface_forms": [
+      "an"
     ],
     "frequency": 57,
     "example_sentences": [],
@@ -4947,43 +4947,6 @@
     "fallback_required": false
   },
   {
-    "concept_id": "first",
-    "lemma": "first",
-    "surface_forms": [
-      "first"
-    ],
-    "frequency": 22,
-    "example_sentences": [
-      "that it's time to begin. Our first session today is about confidence on command. And",
-      "First of all, you have a general confidence which comes from a newer scientific basis,",
-      "good at playing golf and that you are naturally confident in it. So the first question I want"
-    ],
-    "timestamps": [
-      [
-        231.59,
-        239.59
-      ],
-      [
-        403.44,
-        411.44
-      ],
-      [
-        451.24,
-        456.64
-      ]
-    ],
-    "semantic_category": "Everyday",
-    "dictionary_match": true,
-    "dictionary_entry": "First",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "PLAYABLE_SIGN",
-    "sign_id": "first",
-    "motion_status": "playable",
-    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
     "concept_id": "become",
     "lemma": "become",
     "surface_forms": [
@@ -5286,6 +5249,43 @@
     "sign_id": null,
     "motion_status": "OMITTED_BY_SYNTAX",
     "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "first",
+    "lemma": "first",
+    "surface_forms": [
+      "first"
+    ],
+    "frequency": 20,
+    "example_sentences": [
+      "that it's time to begin. Our first session today is about confidence on command. And",
+      "good at playing golf and that you are naturally confident in it. So the first question I want",
+      "The first thing I want to give you is growth mindset. You've probably heard about this"
+    ],
+    "timestamps": [
+      [
+        231.59,
+        239.59
+      ],
+      [
+        451.24,
+        456.64
+      ],
+      [
+        661.16,
+        667.0
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "First",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "first",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
   },
   {
@@ -8627,44 +8627,6 @@
     "fallback_required": false
   },
   {
-    "concept_id": "example",
-    "lemma": "example",
-    "surface_forms": [
-      "example",
-      "examples"
-    ],
-    "frequency": 9,
-    "example_sentences": [
-      "So this is just one example of what you usually experience when you do this.",
-      "examples of what these can look like so that you, after this challenge, can create your own",
-      "You've probably heard that if you're, let's put it, I'll give you an example."
-    ],
-    "timestamps": [
-      [
-        1134.98,
-        1139.48
-      ],
-      [
-        2272.0,
-        2277.04
-      ],
-      [
-        3510.08,
-        3514.88
-      ]
-    ],
-    "semantic_category": "Everyday",
-    "dictionary_match": true,
-    "dictionary_entry": "Example",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "PLAYABLE_SIGN",
-    "sign_id": "example",
-    "motion_status": "playable",
-    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
     "concept_id": "hope",
     "lemma": "hope",
     "surface_forms": [
@@ -11104,6 +11066,44 @@
     "fallback_required": false
   },
   {
+    "concept_id": "example",
+    "lemma": "example",
+    "surface_forms": [
+      "example",
+      "examples"
+    ],
+    "frequency": 7,
+    "example_sentences": [
+      "So this is just one example of what you usually experience when you do this.",
+      "examples of what these can look like so that you, after this challenge, can create your own",
+      "and new waves and so on, your emotions are contagious. To give an example, you went to school, I went to"
+    ],
+    "timestamps": [
+      [
+        1134.98,
+        1139.48
+      ],
+      [
+        2272.0,
+        2277.04
+      ],
+      [
+        3986.31,
+        3992.79
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Example",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "example",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
     "concept_id": "prior",
     "lemma": "prior",
     "surface_forms": [
@@ -13103,6 +13103,43 @@
     "sign_id": "flower",
     "motion_status": "playable",
     "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "look_like",
+    "lemma": "look like",
+    "surface_forms": [
+      "look like"
+    ],
+    "frequency": 6,
+    "example_sentences": [
+      "It didn't look like a flower.",
+      "examples of what these can look like so that you, after this challenge, can create your own",
+      "So what does it look like?"
+    ],
+    "timestamps": [
+      [
+        1951.92,
+        1955.08
+      ],
+      [
+        2272.0,
+        2277.04
+      ],
+      [
+        3600.39,
+        3601.39
+      ]
+    ],
+    "semantic_category": "Multiword Expression",
+    "dictionary_match": true,
+    "dictionary_entry": "look like",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PHRASE_TRANSLATED",
+    "sign_id": null,
+    "motion_status": "PHRASE_SEQUENCE",
+    "linguistic_review_status": "NONE",
     "fallback_required": false
   },
   {
@@ -27982,6 +28019,38 @@
     "fallback_required": true
   },
   {
+    "concept_id": "first_of_all",
+    "lemma": "first of all",
+    "surface_forms": [
+      "first of all"
+    ],
+    "frequency": 2,
+    "example_sentences": [
+      "First of all, you have a general confidence which comes from a newer scientific basis,",
+      "First of all, now this is your pen and paper moment."
+    ],
+    "timestamps": [
+      [
+        403.44,
+        411.44
+      ],
+      [
+        3755.16,
+        3758.16
+      ]
+    ],
+    "semantic_category": "Multiword Expression",
+    "dictionary_match": true,
+    "dictionary_entry": "first of all",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PHRASE_TRANSLATED",
+    "sign_id": null,
+    "motion_status": "PHRASE_SEQUENCE",
+    "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
     "concept_id": "matches",
     "lemma": "matches",
     "surface_forms": [
@@ -32207,6 +32276,38 @@
     "fallback_required": true
   },
   {
+    "concept_id": "give_you_an_example",
+    "lemma": "give you an example",
+    "surface_forms": [
+      "give you an example"
+    ],
+    "frequency": 2,
+    "example_sentences": [
+      "You've probably heard that if you're, let's put it, I'll give you an example.",
+      "I'm going to give you an example, two examples."
+    ],
+    "timestamps": [
+      [
+        3510.08,
+        3514.88
+      ],
+      [
+        7152.3,
+        7154.78
+      ]
+    ],
+    "semantic_category": "Multiword Expression",
+    "dictionary_match": true,
+    "dictionary_entry": "give you an example",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PHRASE_TRANSLATED",
+    "sign_id": null,
+    "motion_status": "PHRASE_SEQUENCE",
+    "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
     "concept_id": "hitting",
     "lemma": "hitting",
     "surface_forms": [
@@ -32833,38 +32934,6 @@
       [
         3992.79,
         4002.55
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "classroom",
-    "lemma": "classroom",
-    "surface_forms": [
-      "classroom"
-    ],
-    "frequency": 2,
-    "example_sentences": [
-      "some kind of advanced maths. I remember I went to that classroom that morning, I just vivid us",
-      "he looks us dead in the eye and he says, biology does not begin in the classroom."
-    ],
-    "timestamps": [
-      [
-        4010.63,
-        4016.71
-      ],
-      [
-        4082.8,
-        4087.6
       ]
     ],
     "semantic_category": "Uncategorized Lexicon",
@@ -48590,6 +48659,33 @@
     "fallback_required": true
   },
   {
+    "concept_id": "classroom",
+    "lemma": "classroom",
+    "surface_forms": [
+      "classroom"
+    ],
+    "frequency": 1,
+    "example_sentences": [
+      "some kind of advanced maths. I remember I went to that classroom that morning, I just vivid us"
+    ],
+    "timestamps": [
+      [
+        4010.63,
+        4016.71
+      ]
+    ],
+    "semantic_category": "Uncategorized Lexicon",
+    "dictionary_match": false,
+    "dictionary_entry": null,
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "SUBTITLE_FALLBACK",
+    "sign_id": null,
+    "motion_status": "NO_MOTION_ASSET",
+    "linguistic_review_status": "UNREVIEWED",
+    "fallback_required": true
+  },
+  {
     "concept_id": "vivid",
     "lemma": "vivid",
     "surface_forms": [
@@ -48912,6 +49008,33 @@
     "motion_status": "NO_MOTION_ASSET",
     "linguistic_review_status": "UNREVIEWED",
     "fallback_required": true
+  },
+  {
+    "concept_id": "in_the_classroom",
+    "lemma": "in the classroom",
+    "surface_forms": [
+      "in the classroom"
+    ],
+    "frequency": 1,
+    "example_sentences": [
+      "he looks us dead in the eye and he says, biology does not begin in the classroom."
+    ],
+    "timestamps": [
+      [
+        4082.8,
+        4087.6
+      ]
+    ],
+    "semantic_category": "Multiword Expression",
+    "dictionary_match": true,
+    "dictionary_entry": "in the classroom",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PHRASE_TRANSLATED",
+    "sign_id": null,
+    "motion_status": "PHRASE_SEQUENCE",
+    "linguistic_review_status": "NONE",
+    "fallback_required": false
   },
   {
     "concept_id": "begins",

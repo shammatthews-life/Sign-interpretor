@@ -1,0 +1,964 @@
+rank,lemma,fallback_frequency,percentage_of_fallback,semantic_category,example_context
+1,hoo,2,0.202,Uncategorized Lexicon,"hoo, hoo, David talk me this."
+2,hm,2,0.202,Uncategorized Lexicon,Hm.
+3,sneak,2,0.202,Uncategorized Lexicon,"We're just gonna have a quick sneak peek at this,"
+4,peek,2,0.202,Uncategorized Lexicon,"We're just gonna have a quick sneak peek at this,"
+5,usage,2,0.202,Uncategorized Lexicon,"when it comes to voice usage,"
+6,warren,2,0.202,Uncategorized Lexicon,what Warren Buffett said in the beginning.
+7,buffett,2,0.202,Uncategorized Lexicon,what Warren Buffett said in the beginning.
+8,products,2,0.202,Uncategorized Lexicon,Steve Jobs launched technical products like computers
+9,culture,2,0.202,Uncategorized Lexicon,to sit in the audience and he created an entire culture
+10,product,2,0.202,Uncategorized Lexicon,based on his ability to pitch a product
+11,judged,2,0.202,Uncategorized Lexicon,by which competitive products are judged.
+12,philosounds,2,0.202,Uncategorized Lexicon,to get coaching from me in Philosounds specifically.
+13,audio,2,0.202,Uncategorized Lexicon,Every phyllis sound from one hour video into an audio file.
+14,yareyareyada,2,0.202,Uncategorized Lexicon,"Yareyareyada. Number five, yareyareyada."
+15,market,2,0.202,Uncategorized Lexicon,but this is the market share. 100%.
+16,positive,2,0.202,Uncategorized Lexicon,"the words, the way I said them, they were positive."
+17,horrid,2,0.202,Uncategorized Lexicon,"This is horrid, horrid."
+18,quickie,2,0.202,Uncategorized Lexicon,This is a quickie.
+19,quik,2,0.202,Uncategorized Lexicon,This SQL Server QUIK was recorded in a completely new high quality format
+20,format,2,0.202,Uncategorized Lexicon,This SQL Server QUIK was recorded in a completely new high quality format
+21,108,2,0.202,Uncategorized Lexicon,"And the last one is over here 108,"
+22,trust,2,0.202,Uncategorized Lexicon,"like, almost immediately feel trust for, have high level of synchronicity. What that means is,"
+23,match,2,0.202,Uncategorized Lexicon,write this down. What they say is said with the same kind of tonality. So the words match their
+24,lasting,2,0.202,Uncategorized Lexicon,but lasting change really only happens
+25,community,2,0.202,Uncategorized Lexicon,It's a school forum community with all of my courses
+26,exercises,2,0.202,Uncategorized Lexicon,with over 150 instructional videos and exercises.
+27,beginners,1,0.101,Uncategorized Lexicon,"This is public speaking for beginners, and the goal of this video is simple."
+28,overcome,1,0.101,Uncategorized Lexicon,"It's to help you overcome being uncertain, anxious, afraid,"
+29,uncertain,1,0.101,Uncategorized Lexicon,"It's to help you overcome being uncertain, anxious, afraid,"
+30,closer,1,0.101,Uncategorized Lexicon,"and bring you a few steps closer to being more confident, more clear,"
+31,captivating,1,0.101,Uncategorized Lexicon,and a much more captivating speaker.
+32,compilation,1,0.101,Uncategorized Lexicon,What you're about to watch is a special compilation of a three-day public speaking challenge
+33,studio,1,0.101,Uncategorized Lexicon,which we delivered live right here in our studio.
+34,capturing,1,0.101,Uncategorized Lexicon,"We'll move into the science of capturing attention,"
+35,impactful,1,0.101,Uncategorized Lexicon,and we'll finish off with the most impactful delivery skills
+36,excellence,1,0.101,Uncategorized Lexicon,from the 110-step chart of excellence communication.
+37,among,1,0.101,Uncategorized Lexicon,which are among the most viewed in the world
+38,endeavour,1,0.101,Uncategorized Lexicon,And this chart is one of the results of that particular endeavour.
+39,coached,1,0.101,Uncategorized Lexicon,"Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+40,giants,1,0.101,Uncategorized Lexicon,"Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+41,oracle,1,0.101,Uncategorized Lexicon,"Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+42,disney,1,0.101,Uncategorized Lexicon,"and Disney and storytelling and presentation skills, and the beautiful science of holding an audience"
+43,discover,1,0.101,Uncategorized Lexicon,"attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+44,apply,1,0.101,Uncategorized Lexicon,you can apply tomorrow.
+45,tomorrow,1,0.101,Everyday,you can apply tomorrow.
+46,country,1,0.101,Uncategorized Lexicon,to the lovely country of Sweden.
+47,uk,1,0.101,Uncategorized Lexicon,"We've got people from UK, Croatia, Switzerland,"
+48,croatia,1,0.101,Uncategorized Lexicon,"We've got people from UK, Croatia, Switzerland,"
+49,switzerland,1,0.101,Uncategorized Lexicon,"We've got people from UK, Croatia, Switzerland,"
+50,norway,1,0.101,Uncategorized Lexicon,"We've got Norway, Denmark, Latvia, Mexico is in the house."
+51,denmark,1,0.101,Uncategorized Lexicon,"We've got Norway, Denmark, Latvia, Mexico is in the house."
+52,latvia,1,0.101,Uncategorized Lexicon,"We've got Norway, Denmark, Latvia, Mexico is in the house."
+53,mexico,1,0.101,Uncategorized Lexicon,"We've got Norway, Denmark, Latvia, Mexico is in the house."
+54,dublin,1,0.101,Uncategorized Lexicon,"It's lovely, Dublin, Germany."
+55,germany,1,0.101,Uncategorized Lexicon,"It's lovely, Dublin, Germany."
+56,humanly,1,0.101,Uncategorized Lexicon,"you to grow as much as humanly possible in three days. So, are you ready to be challenged? Yes or"
+57,wreck,1,0.101,Uncategorized Lexicon,"which can literally transform you into being a nervous wreck, delivering a bad presentation,"
+58,sessions,1,0.101,Uncategorized Lexicon,"to being a confident person, delivering a great presentation in these three sessions."
+59,pens,1,0.101,Uncategorized Lexicon,"I also want to say this, please take out pens and papers and whatever you need to write"
+60,hordes,1,0.101,Uncategorized Lexicon,on because there's going to be hordes of awesome tips and techniques.
+61,trainings,1,0.101,Uncategorized Lexicon,"As always, when I do these trainings."
+62,leader,1,0.101,Uncategorized Lexicon,"presentations, in meetings, in negotiations, as a leader, as a presenter, as a coach, doesn't"
+63,fearful,1,0.101,Uncategorized Lexicon,"walks up on stage fearful, well, their output and what they present will be severely impacted"
+64,output,1,0.101,Uncategorized Lexicon,"walks up on stage fearful, well, their output and what they present will be severely impacted"
+65,severely,1,0.101,Uncategorized Lexicon,"walks up on stage fearful, well, their output and what they present will be severely impacted"
+66,pillars,1,0.101,Uncategorized Lexicon,"Now in my world, there are three pillars that make us great presenters and great public speakers."
+67,signs,1,0.101,Uncategorized Lexicon,"You've got how to avoid death by PowerPoint, the magical signs of storytelling,"
+68,derived,1,0.101,Uncategorized Lexicon,And the mindset one is actually derived from this book.
+69,translated,1,0.101,Uncategorized Lexicon,It's been translated to 35 different languages.
+70,35,1,0.101,Uncategorized Lexicon,It's been translated to 35 different languages.
+71,native,1,0.101,Uncategorized Lexicon,It is probably in your native language.
+72,japan,1,0.101,Uncategorized Lexicon,"It just came out in Japan, which I think looks a lot more interesting than the English version,"
+73,english,1,0.101,Uncategorized Lexicon,"It just came out in Japan, which I think looks a lot more interesting than the English version,"
+74,version,1,0.101,Uncategorized Lexicon,"It just came out in Japan, which I think looks a lot more interesting than the English version,"
+75,visual,1,0.101,Uncategorized Lexicon,I create visual worlds that are so beyond everyone's normal life
+76,worlds,1,0.101,Uncategorized Lexicon,I create visual worlds that are so beyond everyone's normal life
+77,beyond,1,0.101,Uncategorized Lexicon,I create visual worlds that are so beyond everyone's normal life
+78,everyone's,1,0.101,Uncategorized Lexicon,I create visual worlds that are so beyond everyone's normal life
+79,experiences,1,0.101,Uncategorized Lexicon,experiences.
+80,viewer,1,0.101,Uncategorized Lexicon,And Hollywood is a place that creates a viewer escape.
+81,director,1,0.101,Uncategorized Lexicon,"And what I try to do is, as a director,"
+82,type,1,0.101,Uncategorized Lexicon,"I try to, the type is all off."
+83,curve,1,0.101,Uncategorized Lexicon,The curve?
+84,viewers,1,0.101,Uncategorized Lexicon,how viewers experience your movies?
+85,excuse,1,0.101,Uncategorized Lexicon,"Excuse me, I'm sorry."
+86,preparation,1,0.101,Uncategorized Lexicon,"your PowerPoint and you feel you're good because you've done the preparation, but then you"
+87,perspectives,1,0.101,Uncategorized Lexicon,"When we talk about confidence and confidence on command, there's two perspectives."
+88,newer,1,0.101,Uncategorized Lexicon,"First of all, you have a general confidence which comes from a newer scientific basis,"
+89,asks,1,0.101,Uncategorized Lexicon,"become confident because confidence is per skill in this matter. But if someone asks you,"
+90,ball,1,0.101,Uncategorized Lexicon,"hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+91,comedy,1,0.101,Uncategorized Lexicon,and stand up comedy.
+92,strangers,1,0.101,Uncategorized Lexicon,in just walking up to strangers and talking to them?
+93,humor,1,0.101,Uncategorized Lexicon,"using humor for mayor, public speaking for Suzanne,"
+94,mayor,1,0.101,Uncategorized Lexicon,"using humor for mayor, public speaking for Suzanne,"
+95,selaine,1,0.101,Uncategorized Lexicon,"selaine coping on unexpected cases,"
+96,coping,1,0.101,Uncategorized Lexicon,"selaine coping on unexpected cases,"
+97,unexpected,1,0.101,Uncategorized Lexicon,"selaine coping on unexpected cases,"
+98,broad,1,0.101,Uncategorized Lexicon,public speaking is broad.
+99,ending,1,0.101,Uncategorized Lexicon,"is it the ending, is it the entire thing,"
+100,startups,1,0.101,Uncategorized Lexicon,"pitching startups at the start, authenticity,"
+101,authenticity,1,0.101,Uncategorized Lexicon,"pitching startups at the start, authenticity,"
+102,ideas,1,0.101,Uncategorized Lexicon,"presenting ideas, recording videos."
+103,discipline,1,0.101,Uncategorized Lexicon,It's a different discipline than recording Instagram videos
+104,massively,1,0.101,Uncategorized Lexicon,It's two massively different things.
+105,order,1,0.101,Uncategorized Lexicon,"In order for you to remember this better,"
+106,becoming,1,0.101,Uncategorized Lexicon,fire and it becomes stronger and stronger. This is your skill. This is your skill in becoming
+107,burn,1,0.101,Uncategorized Lexicon,"become and the more confident you become. That's the fire, right? So you can make it burn stronger"
+108,throw,1,0.101,Uncategorized Lexicon,"and stronger and stronger. The more logs you throw onto it, the more you learn and the"
+109,chances,1,0.101,Uncategorized Lexicon,"the bigger chances you take, the risks you take, your fire becomes bigger and bigger and bigger. But"
+110,risks,1,0.101,Uncategorized Lexicon,"the bigger chances you take, the risks you take, your fire becomes bigger and bigger and bigger. But"
+111,noticed,1,0.101,Uncategorized Lexicon,"Have you ever noticed that even if you are very good at something, if you are very confident"
+112,blowing,1,0.101,Uncategorized Lexicon,"in something, some days you are less confident in it, because the wind is blowing. Some days"
+113,unbeatable,1,0.101,Uncategorized Lexicon,you're literally unbeatable and that's a beautiful wind coming in and giving your fire oxygen.
+114,oxygen,1,0.101,Uncategorized Lexicon,you're literally unbeatable and that's a beautiful wind coming in and giving your fire oxygen.
+115,carol,1,0.101,Uncategorized Lexicon,"concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+116,dweck,1,0.101,Uncategorized Lexicon,"concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+117,gps,1,0.101,Uncategorized Lexicon,"to sing. I suck at singing. I'm born with a bad ability to find places. I can't find, I need a GPS."
+118,depending,1,0.101,Uncategorized Lexicon,"Yes, depending on how you answer these, these may be an evidence of growth and fixed mindset."
+119,evidence,1,0.101,Uncategorized Lexicon,"Yes, depending on how you answer these, these may be an evidence of growth and fixed mindset."
+120,restricted,1,0.101,Uncategorized Lexicon,"If your perspective is that you can learn and that you are not restricted, you have, per"
+121,grades,1,0.101,Uncategorized Lexicon,This first study was done on math grades before and after the intervention.
+122,intervention,1,0.101,Uncategorized Lexicon,This first study was done on math grades before and after the intervention.
+123,improvement,1,0.101,Uncategorized Lexicon,continuous improvement in their ability to understand maths. In this second study
+124,feedbacks,1,0.101,Uncategorized Lexicon,"when it came to critical feedbacks, if any one of you were to get critical"
+125,choice,1,0.101,Uncategorized Lexicon,"Now this is a choice that you make in life. When you're asked to do a talk, when you're"
+126,father,1,0.101,Uncategorized Lexicon,"see my mother and my father, they could not, I can't do that. Oh, it's the worst thing"
+127,evolve,1,0.101,Uncategorized Lexicon,"brain, and that will help you evolve as a public speaker. Other things that impact your"
+128,values,1,0.101,Uncategorized Lexicon,"your fire is limiting beliefs, values and rules, focus questions, and as I"
+129,month,1,0.101,Uncategorized Lexicon,"And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+130,critically,1,0.101,Uncategorized Lexicon,"And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+131,hr,1,0.101,Uncategorized Lexicon,"And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+132,manager,1,0.101,Uncategorized Lexicon,"And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+133,president,1,0.101,Uncategorized Lexicon,a president of the company who is panicking because he can't do public speaking.
+134,panicking,1,0.101,Uncategorized Lexicon,a president of the company who is panicking because he can't do public speaking.
+135,fly,1,0.101,Uncategorized Lexicon,Can you please fly over and have a look at it?
+136,sublime,1,0.101,Uncategorized Lexicon,And it was sublime.
+137,stellar,1,0.101,Uncategorized Lexicon,That presentation was so stellar.
+138,soon,1,0.101,Uncategorized Lexicon,"But as soon as there's 10 or more suddenly, I can't."
+139,backtracked,1,0.101,Uncategorized Lexicon,"So we backtracked the reason to this and that was he was giving, he was given criticism"
+140,criticism,1,0.101,Uncategorized Lexicon,"So we backtracked the reason to this and that was he was giving, he was given criticism"
+141,recent,1,0.101,Uncategorized Lexicon,So he showed me a video of his most recent presentation and it absolutely sucked.
+142,sucked,1,0.101,Uncategorized Lexicon,So he showed me a video of his most recent presentation and it absolutely sucked.
+143,allowing,1,0.101,Uncategorized Lexicon,So we sat down and we changed his limiting belief to allowing him to believe in himself
+144,introduce,1,0.101,Uncategorized Lexicon,"introduce you to the concept of the Angels and the Devil's Cocktail, which is part of the book."
+145,offer,1,0.101,Uncategorized Lexicon,"And an Angels Cocktail can go like this. If I were to offer you an Angels Cocktail, well,"
+146,prop,1,0.101,Uncategorized Lexicon,"let's have a prop for that. And it goes like this. Nice levels of dopamine, nice levels of"
+147,bold,1,0.101,Uncategorized Lexicon,"You will suddenly become more confident, bold, daring, driven, magnetic almost,"
+148,driven,1,0.101,Uncategorized Lexicon,"You will suddenly become more confident, bold, daring, driven, magnetic almost,"
+149,magnetic,1,0.101,Uncategorized Lexicon,"You will suddenly become more confident, bold, daring, driven, magnetic almost,"
+150,adrenaline,1,0.101,Uncategorized Lexicon,"and present. But if I were to give you a devil's cocktail with high levels of cortisol, adrenaline,"
+151,tunnel,1,0.101,Uncategorized Lexicon,You'd become tunnel-visioned instead of holistic.
+152,visioned,1,0.101,Uncategorized Lexicon,You'd become tunnel-visioned instead of holistic.
+153,holistic,1,0.101,Uncategorized Lexicon,You'd become tunnel-visioned instead of holistic.
+154,force,1,0.101,Uncategorized Lexicon,Dopamine is kind of the life force for many of us.
+155,snacks,1,0.101,Uncategorized Lexicon,or eating some snacks or looking at Netflix.
+156,netflix,1,0.101,Uncategorized Lexicon,or eating some snacks or looking at Netflix.
+157,laugh,1,0.101,Uncategorized Lexicon,I know exactly who to call when I want to laugh and create endorphins.
+158,endorphins,1,0.101,Uncategorized Lexicon,I know exactly who to call when I want to laugh and create endorphins.
+159,uplifted,1,0.101,Uncategorized Lexicon,"I know exactly who to call when I want to be uplifted, which is serotonin."
+160,serotonin,1,0.101,Uncategorized Lexicon,"I know exactly who to call when I want to be uplifted, which is serotonin."
+161,accordingly,1,0.101,Uncategorized Lexicon,I think you have categorized your friends accordingly.
+162,substance,1,0.101,Uncategorized Lexicon,But you just haven't done it according to the substance per se.
+163,se,1,0.101,Uncategorized Lexicon,But you just haven't done it according to the substance per se.
+164,talent,1,0.101,Uncategorized Lexicon,"It's a video of a woman, her name is Susan Boyle, and she was a British Got Talent."
+165,nod,1,0.101,Uncategorized Lexicon,Can I see a head nod if you do?
+166,audition,1,0.101,Uncategorized Lexicon,It's an amazing audition.
+167,groundbreakingly,1,0.101,Uncategorized Lexicon,she is absolutely groundbreakingly brilliant at singing.
+168,greater,1,0.101,Uncategorized Lexicon,and then greater and then amazing
+169,painful,1,0.101,Uncategorized Lexicon,and then suddenly it's gonna be painful
+170,blythe,1,0.101,Uncategorized Lexicon,"I am from Blythe, wouldn't you, Bathgate, West Lothian?"
+171,bathgate,1,0.101,Uncategorized Lexicon,"I am from Blythe, wouldn't you, Bathgate, West Lothian?"
+172,west,1,0.101,Uncategorized Lexicon,"I am from Blythe, wouldn't you, Bathgate, West Lothian?"
+173,lothian,1,0.101,Uncategorized Lexicon,"I am from Blythe, wouldn't you, Bathgate, West Lothian?"
+174,town,1,0.101,Uncategorized Lexicon,It's a big town.
+175,collection,1,0.101,Uncategorized Lexicon,It's a sort of collection of villages.
+176,villages,1,0.101,Uncategorized Lexicon,It's a sort of collection of villages.
+177,professional,1,0.101,Uncategorized Lexicon,I'm trying to be a professional singer.
+178,hasn't,1,0.101,Uncategorized Lexicon,"And why hasn't it worked out so far, Susan?"
+179,successful,1,0.101,Uncategorized Lexicon,"OK, and who would you like to be as successful as?"
+180,tonight,1,0.101,Uncategorized Lexicon,What are you going to sing tonight?
+181,misserabs,1,0.101,Uncategorized Lexicon,I'm going to sing My Dream to Dream from the Misserabs.
+182,stops,1,0.101,Uncategorized Lexicon,And suddenly it just stops and that is not a technical error.
+183,error,1,0.101,Uncategorized Lexicon,And suddenly it just stops and that is not a technical error.
+184,surge,1,0.101,Uncategorized Lexicon,"That was only 55 seconds that created a small surge,"
+185,removed,1,0.101,Uncategorized Lexicon,which made you feel pain when I removed it.
+186,intense,1,0.101,Uncategorized Lexicon,"The power of that is so intense and the realization that you can create this in yourself whenever, wherever is profound."
+187,realization,1,0.101,Uncategorized Lexicon,"The power of that is so intense and the realization that you can create this in yourself whenever, wherever is profound."
+188,profound,1,0.101,Uncategorized Lexicon,"The power of that is so intense and the realization that you can create this in yourself whenever, wherever is profound."
+189,spotify,1,0.101,Uncategorized Lexicon,Please create your own dopamine playlist on Spotify or YouTube music or whatever it is.
+190,preparing,1,0.101,Uncategorized Lexicon,"or even when you're preparing your presentation,"
+191,ooh,1,0.101,Uncategorized Lexicon,"Second time you go, ooh, this is really good."
+192,insanely,1,0.101,Uncategorized Lexicon,"And the fifth time you're like, this is insanely good."
+193,10th,1,0.101,Uncategorized Lexicon,10th time you start asking your friends to listen to it.
+194,whichever,1,0.101,Uncategorized Lexicon,"So whichever five, six songs you put in there,"
+195,boost,1,0.101,Uncategorized Lexicon,just listen to them when you truly want that boost.
+196,ceramic,1,0.101,Uncategorized Lexicon,"So go onto YouTube and maybe in ceramic talk,"
+197,playlists,1,0.101,Uncategorized Lexicon,"like create playlists of videos that create that particular sensation of, give me more,"
+198,supercharge,1,0.101,Uncategorized Lexicon,"These are key core, powerful things to create and supercharge your dopamine and your confidence"
+199,assume,1,0.101,Uncategorized Lexicon,I assume you've been to the gym once or twice at least.
+200,within,1,0.101,Uncategorized Lexicon,"that within two weeks we can go from, I'm never going to stop doing this."
+201,activity,1,0.101,Uncategorized Lexicon,dopamine is increased for that particular activity.
+202,stranger,1,0.101,Uncategorized Lexicon,Do what you think is hard in speaking in public. Start talking to a stranger for instance.
+203,cure,1,0.101,Uncategorized Lexicon,It won't happen if you don't do it. It's as simple as that. It's no magic cure.
+204,wake,1,0.101,Uncategorized Lexicon,actually doing things. But dopamine can also be created by imagination. So if you wake up in the
+205,news,1,0.101,Uncategorized Lexicon,"morning and the first thing you do is take up your phone and you look at the news, you are literally"
+206,throat,1,0.101,Uncategorized Lexicon,just pouring a devil's cocktail down your throat and that is how you start your day. But if you start
+207,deciding,1,0.101,Uncategorized Lexicon,"your day by using your mind to create dopamine, by simply deciding to look forward to something,"
+208,future,1,0.101,Uncategorized Lexicon,"that whatever you want to achieve in the future,"
+209,recommendation,1,0.101,Uncategorized Lexicon,my absolute recommendation is that
+210,earn,1,0.101,Uncategorized Lexicon,"the money you want to earn,"
+211,hang,1,0.101,Uncategorized Lexicon,"the people you want to hang out with,"
+212,hanging,1,0.101,Uncategorized Lexicon,"the feeling of hanging out with these people would be,"
+213,priming,1,0.101,Uncategorized Lexicon,because then you are constantly priming your brain
+214,release,1,0.101,Uncategorized Lexicon,to release dopamine for those particular things
+215,allows,1,0.101,Uncategorized Lexicon,which allows you to focus on them more.
+216,traveling,1,0.101,Uncategorized Lexicon,"traveling the world, it's not an easy life always."
+217,countries,1,0.101,Uncategorized Lexicon,Last year I think I went to close to 30 countries.
+218,equates,1,0.101,Uncategorized Lexicon,So it still equates to a nice work-life balance.
+219,balance,1,0.101,Uncategorized Lexicon,So it still equates to a nice work-life balance.
+220,profession,1,0.101,Uncategorized Lexicon,"I love my profession, it is beautiful."
+221,log,1,0.101,Uncategorized Lexicon,"build that log by taking action, building momentum,"
+222,functions,1,0.101,Uncategorized Lexicon,"Dopamine has multiple functions,"
+223,describe,1,0.101,Uncategorized Lexicon,"Now, the best way for me to describe testosterone"
+224,doors,1,0.101,Uncategorized Lexicon,"It opened up so many doors,"
+225,sensible,1,0.101,Uncategorized Lexicon,Actually looks quite sensible for being a left hand.
+226,edgy,1,0.101,Uncategorized Lexicon,They all look a bit edgy these flowers.
+227,vag,1,0.101,Uncategorized Lexicon,"Vag, that is a tree, man."
+228,robert,1,0.101,Uncategorized Lexicon,"All right, Robert put a smiley on his."
+229,weren't,1,0.101,Uncategorized Lexicon,because they felt that they weren't able to perform
+230,perform,1,0.101,Uncategorized Lexicon,because they felt that they weren't able to perform
+231,pancakes,1,0.101,Uncategorized Lexicon,"May that be cooking pancakes, singing, wrapping,"
+232,wrapping,1,0.101,Uncategorized Lexicon,"May that be cooking pancakes, singing, wrapping,"
+233,profoundly,1,0.101,Uncategorized Lexicon,"walking, profoundly beautiful."
+234,martina,1,0.101,Uncategorized Lexicon,"Martina PowerPoint, wow."
+235,connecting,1,0.101,Uncategorized Lexicon,"Connecting agile, eating chocolate, skiing,"
+236,agile,1,0.101,Uncategorized Lexicon,"Connecting agile, eating chocolate, skiing,"
+237,skiing,1,0.101,Uncategorized Lexicon,"Connecting agile, eating chocolate, skiing,"
+238,steak,1,0.101,Uncategorized Lexicon,"singing and writing, cooking, steak, analysis, PowerPoint."
+239,analysis,1,0.101,Uncategorized Lexicon,"singing and writing, cooking, steak, analysis, PowerPoint."
+240,observing,1,0.101,Uncategorized Lexicon,"Okay, music, coaching, observing, yoga."
+241,yoga,1,0.101,Uncategorized Lexicon,"Okay, music, coaching, observing, yoga."
+242,reducing,1,0.101,Uncategorized Lexicon,reducing your testosterone in a real-time manner.
+243,vulnerability,1,0.101,Uncategorized Lexicon,"us human. When we fail, it shows vulnerability. It shows a human side of us. We connect with"
+244,perfection,1,0.101,Uncategorized Lexicon,"people through failures, not through perfection. So I add failures in order to create that connection."
+245,connection,1,0.101,Uncategorized Lexicon,"people through failures, not through perfection. So I add failures in order to create that connection."
+246,invite,1,0.101,Uncategorized Lexicon,What I want you to see is change your perspective on failures. Invite them. Be proud of them.
+247,opportunity,1,0.101,Uncategorized Lexicon,"Whenever you're uncomfortable, you have the opportunity"
+248,tricky,1,0.101,Uncategorized Lexicon,Now the tricky thing with testosterone is that the videos
+249,potentially,1,0.101,Uncategorized Lexicon,"videos that create or potentially can create testosterone in us, they have to be relatable."
+250,jackson,1,0.101,Uncategorized Lexicon,"So say, for instance, that I'll take, let's see, I'll find a name, Ross Jackson. I see him up there,"
+251,roots,1,0.101,Uncategorized Lexicon,"hey, Ross. Imagine that he roots for, I don't know, Manchester United, right? And I show him a video"
+252,hates,1,0.101,Uncategorized Lexicon,"now of Manchester United winning, his testosterone levels would increase. But if he hates Manchester"
+253,loves,1,0.101,Uncategorized Lexicon,United. He loves Arsenal. His testosterone levels will crash. So the two videos I'm going to show you
+254,arsenal,1,0.101,Uncategorized Lexicon,United. He loves Arsenal. His testosterone levels will crash. So the two videos I'm going to show you
+255,crash,1,0.101,Uncategorized Lexicon,United. He loves Arsenal. His testosterone levels will crash. So the two videos I'm going to show you
+256,fascinating,1,0.101,Uncategorized Lexicon,"root for when they win. Because listen to this very fascinating fact. When people, when the fans"
+257,fact,1,0.101,Uncategorized Lexicon,"root for when they win. Because listen to this very fascinating fact. When people, when the fans"
+258,evident,1,0.101,Uncategorized Lexicon,"of the losing team playing football, when their team loses, it's evident that testosterone can"
+259,drop,1,0.101,Uncategorized Lexicon,drop by as much as 20%. While the fans of the winning team can have an sudden increase of testosterone
+260,sudden,1,0.101,Uncategorized Lexicon,drop by as much as 20%. While the fans of the winning team can have an sudden increase of testosterone
+261,victorious,1,0.101,Uncategorized Lexicon,"victorious after testosterone levels can increase. So we can have a look at, I'm half British,"
+262,half,1,0.101,Uncategorized Lexicon,"victorious after testosterone levels can increase. So we can have a look at, I'm half British,"
+263,beckham's,1,0.101,Uncategorized Lexicon,"and we can have a look at David Beckham's golden goal. I was in England at the time,"
+264,golden,1,0.101,Uncategorized Lexicon,"and we can have a look at David Beckham's golden goal. I was in England at the time,"
+265,england,1,0.101,Uncategorized Lexicon,"and we can have a look at David Beckham's golden goal. I was in England at the time,"
+266,scored,1,0.101,Uncategorized Lexicon,"I was outside of the pub, and when he scored, just prior to him scoring, there were, I don't know,"
+267,scoring,1,0.101,Uncategorized Lexicon,"I was outside of the pub, and when he scored, just prior to him scoring, there were, I don't know,"
+268,500,1,0.101,Uncategorized Lexicon,500 British people in there and the pub had never been a silent. It was more silent than midnight.
+269,midnight,1,0.101,Uncategorized Lexicon,500 British people in there and the pub had never been a silent. It was more silent than midnight.
+270,charging,1,0.101,Uncategorized Lexicon,And he was charging up for the goal and when he scores they went absolutely ballistic.
+271,scores,1,0.101,Uncategorized Lexicon,And he was charging up for the goal and when he scores they went absolutely ballistic.
+272,ballistic,1,0.101,Uncategorized Lexicon,And he was charging up for the goal and when he scores they went absolutely ballistic.
+273,recommend,1,0.101,Uncategorized Lexicon,So what I'd recommend you to do is five of those videos in a playlist so that you can look at
+274,shown,1,0.101,Uncategorized Lexicon,has also shown that it can increase testosterone but only if you can relate to the character.
+275,character,1,0.101,Uncategorized Lexicon,has also shown that it can increase testosterone but only if you can relate to the character.
+276,consider,1,0.101,Uncategorized Lexicon,Do you exercise? Do you consider you informative and psychologically stressful?
+277,informative,1,0.101,Uncategorized Lexicon,Do you exercise? Do you consider you informative and psychologically stressful?
+278,psychologically,1,0.101,Uncategorized Lexicon,Do you exercise? Do you consider you informative and psychologically stressful?
+279,stressful,1,0.101,Uncategorized Lexicon,Do you exercise? Do you consider you informative and psychologically stressful?
+280,alcohol,1,0.101,Uncategorized Lexicon,Sometimes. How much alcohol do you consume?
+281,occupation,1,0.101,Uncategorized Lexicon,Too much. What is your occupation?
+282,why's,1,0.101,Uncategorized Lexicon,And why's that?
+283,kill,1,0.101,Uncategorized Lexicon,I kill people.
+284,appreciate,1,0.101,Uncategorized Lexicon,"Who doesn't appreciate the occasional twist, mister?"
+285,occasional,1,0.101,Uncategorized Lexicon,"Who doesn't appreciate the occasional twist, mister?"
+286,twist,1,0.101,Uncategorized Lexicon,"Who doesn't appreciate the occasional twist, mister?"
+287,mister,1,0.101,Uncategorized Lexicon,"Who doesn't appreciate the occasional twist, mister?"
+288,beach,1,0.101,Uncategorized Lexicon,"Welcome, Mr. Beach."
+289,hell,1,0.101,Uncategorized Lexicon,What the hell have you been?
+290,enjoying,1,0.101,Uncategorized Lexicon,Enjoying death.
+291,007,1,0.101,Uncategorized Lexicon,007 reporting for duty.
+292,reporting,1,0.101,Uncategorized Lexicon,007 reporting for duty.
+293,duty,1,0.101,Uncategorized Lexicon,007 reporting for duty.
+294,somewhat,1,0.101,Uncategorized Lexicon,"I'm a man, I can relate to somewhat that I would like to be like James Bond, so my testosterone levels are increased."
+295,recommending,1,0.101,Uncategorized Lexicon,which is why I'm recommending you again.
+296,necessary,1,0.101,Uncategorized Lexicon,"Create your playlist, add your five videos into it, so that you can create this on command when needed, when necessary."
+297,communicate,1,0.101,Uncategorized Lexicon,These are the 110 ways that we can use to communicate with other people.
+298,choosing,1,0.101,Uncategorized Lexicon,So this is your somatic nervous system. This is you choosing to do this with your hand. Well done.
+299,state,1,0.101,Uncategorized Lexicon,state in you. So the way you walk can impact the way you feel. You've probably felt this so many
+300,greek,1,0.101,Uncategorized Lexicon,"I know, a Greek god. He's got perfect teeth, perfect skin, perfect eyes. And he walks in with"
+301,teeth,1,0.101,Uncategorized Lexicon,"I know, a Greek god. He's got perfect teeth, perfect skin, perfect eyes. And he walks in with"
+302,skin,1,0.101,Uncategorized Lexicon,"I know, a Greek god. He's got perfect teeth, perfect skin, perfect eyes. And he walks in with"
+303,grace,1,0.101,Uncategorized Lexicon,"such grace and he shakes my hand and feels like I'm knocked out. You know, like this guy is the"
+304,shakes,1,0.101,Uncategorized Lexicon,"such grace and he shakes my hand and feels like I'm knocked out. You know, like this guy is the"
+305,knocked,1,0.101,Uncategorized Lexicon,"such grace and he shakes my hand and feels like I'm knocked out. You know, like this guy is the"
+306,masculinity,1,0.101,Uncategorized Lexicon,"definition of, I don't know, masculinity or something like that. And I go like, well, this"
+307,park,1,0.101,Uncategorized Lexicon,"This will be a walk in the park, of course."
+308,fig,1,0.101,Uncategorized Lexicon,"puts his hands like this into the fig leaf position,"
+309,leaf,1,0.101,Uncategorized Lexicon,"puts his hands like this into the fig leaf position,"
+310,position,1,0.101,Uncategorized Lexicon,"puts his hands like this into the fig leaf position,"
+311,crosses,1,0.101,Uncategorized Lexicon,"crosses his legs like this,"
+312,legs,1,0.101,Uncategorized Lexicon,"crosses his legs like this,"
+313,wobbling,1,0.101,Uncategorized Lexicon,"and then he starts wobbling backwards and forwards,"
+314,backwards,1,0.101,Uncategorized Lexicon,"and then he starts wobbling backwards and forwards,"
+315,correlate,1,0.101,Uncategorized Lexicon,This does not correlate to how you walked in
+316,terrified,1,0.101,Uncategorized Lexicon,"And he said, he's terrified of presentations."
+317,confidently,1,0.101,Uncategorized Lexicon,I want you A to stand confidently.
+318,towards,1,0.101,Uncategorized Lexicon,I want you to angle towards me.
+319,transformed,1,0.101,Uncategorized Lexicon,"And he transformed to being non-confident,"
+320,major,1,0.101,Uncategorized Lexicon,because this is like a major thing that we see
+321,parallel,1,0.101,Uncategorized Lexicon,"A, parallel feet, even hip bones,"
+322,feet,1,0.101,Uncategorized Lexicon,"A, parallel feet, even hip bones,"
+323,hip,1,0.101,Uncategorized Lexicon,"A, parallel feet, even hip bones,"
+324,bones,1,0.101,Uncategorized Lexicon,"A, parallel feet, even hip bones,"
+325,arms,1,0.101,Uncategorized Lexicon,"Chest out, arms relaxed, angle toward the audience, and speak slowly."
+326,relaxed,1,0.101,Uncategorized Lexicon,"Chest out, arms relaxed, angle toward the audience, and speak slowly."
+327,toward,1,0.101,Uncategorized Lexicon,"Chest out, arms relaxed, angle toward the audience, and speak slowly."
+328,cinema,1,0.101,Uncategorized Lexicon,It's sitting outside of the movies and looking at the people coming out of the cinema.
+329,females,1,0.101,Uncategorized Lexicon,"people who come out of the movies and they've seen James Bond, they walk differently. Females"
+330,males,1,0.101,Uncategorized Lexicon,"and males, they walk differently. So when you see them come out of the movies, they kind"
+331,sway,1,0.101,Uncategorized Lexicon,"of sway, they walk out with more pride in their body language. I'll ask you this, if"
+332,pride,1,0.101,Uncategorized Lexicon,"of sway, they walk out with more pride in their body language. I'll ask you this, if"
+333,re,1,0.101,Uncategorized Lexicon,"of the Re-Knife. They don't make a sound, but just by the way they walk, can you tell"
+334,controlled,1,0.101,Uncategorized Lexicon,controlled. It is more distinct. It's more dignified. And as you have a somatic feedback
+335,dignified,1,0.101,Uncategorized Lexicon,controlled. It is more distinct. It's more dignified. And as you have a somatic feedback
+336,tiger,1,0.101,Uncategorized Lexicon,"Emil, which is I Have The Tiger,"
+337,prime,1,0.101,Uncategorized Lexicon,Some songs immediately prime up to feeling
+338,comfort,1,0.101,Uncategorized Lexicon,a stronger level of comfort.
+339,throughout,1,0.101,Uncategorized Lexicon,"This may not be your song, but it's quite general throughout the population because we've seen rock."
+340,population,1,0.101,Uncategorized Lexicon,"This may not be your song, but it's quite general throughout the population because we've seen rock."
+341,rock,1,0.101,Uncategorized Lexicon,"This may not be your song, but it's quite general throughout the population because we've seen rock."
+342,grueling,1,0.101,Uncategorized Lexicon,It's grueling.
+343,v8,1,0.101,Uncategorized Lexicon,It's like a V8 engine.
+344,v4,1,0.101,Uncategorized Lexicon,"While a dopamine is a V4 engine,"
+345,animal,1,0.101,Uncategorized Lexicon,"it's just a different animal all along,"
+346,months,1,0.101,Uncategorized Lexicon,I was in an arena about three months ago.
+347,introvert,1,0.101,Uncategorized Lexicon,"Because I'm nervous, I'm an introvert."
+348,fantasizing,1,0.101,Uncategorized Lexicon,"And I start fantasizing, imagining the impact my talk"
+349,supercharging,1,0.101,Uncategorized Lexicon,I start supercharging myself on testosterone.
+350,shift,1,0.101,Uncategorized Lexicon,And the way I do that is I shift my playlist
+351,clip,1,0.101,Uncategorized Lexicon,So I look at this one minute clip of victories for whatever team I root for.
+352,primal,1,0.101,Uncategorized Lexicon,"movement, gaze, eyes, breathing pattern, primal scream and pain. So look at this weird combination"
+353,stride,1,0.101,Uncategorized Lexicon,more confident stride behind the stage and I do this posture. And then I start
+354,behind,1,0.101,Uncategorized Lexicon,more confident stride behind the stage and I do this posture. And then I start
+355,luckily,1,0.101,Uncategorized Lexicon,"control. Luckily, I'm a speaker where I have my own green room, so I have my own space to do this in."
+356,green,1,0.101,Uncategorized Lexicon,"control. Luckily, I'm a speaker where I have my own green room, so I have my own space to do this in."
+357,stability,1,0.101,Uncategorized Lexicon,"But if you listen to my voice now and prior, there's even more stability in my voice when delivering"
+358,obnoxious,1,0.101,Uncategorized Lexicon,"created now, you will be seen as obnoxious."
+359,humble,1,0.101,Uncategorized Lexicon,You'll be seen in non-humble.
+360,dude,1,0.101,Uncategorized Lexicon,Come here dude.
+361,daughter,1,0.101,Uncategorized Lexicon,I look at a video like this or I look at photos of my daughter.
+362,chosen,1,0.101,Uncategorized Lexicon,where I've chosen how to feel where my emotions are picked by me and not by
+363,default,1,0.101,Uncategorized Lexicon,"default. This is the first level of all great public speaking,"
+364,required,1,0.101,Uncategorized Lexicon,"How can you grab, what is required"
+365,person's,1,0.101,Uncategorized Lexicon,to grab a person's attention and hold it for hours on end?
+366,boring,1,0.101,Uncategorized Lexicon,You've probably sat through super boring presentations
+367,applying,1,0.101,Uncategorized Lexicon,"write every single one down, start applying them in your presentations."
+368,asleep,1,0.101,Uncategorized Lexicon,presentation is seeing people fall asleep looking at their mobile phones. This is the opposite.
+369,engagement,1,0.101,Uncategorized Lexicon,"This is where you get engagement, big eyes, almost like looking at you in a wondrous way,"
+370,wondrous,1,0.101,Uncategorized Lexicon,"This is where you get engagement, big eyes, almost like looking at you in a wondrous way,"
+371,wisdom,1,0.101,Uncategorized Lexicon,"Now, I want to share a couple of words of wisdom from another legend in the business,"
+372,legend,1,0.101,Uncategorized Lexicon,"Now, I want to share a couple of words of wisdom from another legend in the business,"
+373,agent,1,0.101,Uncategorized Lexicon,"What they wanna hear is, here's how you get an agent,"
+374,script,1,0.101,Uncategorized Lexicon,"here's how you write a script, here's how you do this,"
+375,covid,1,0.101,Uncategorized Lexicon,how often? Microsoft did a study on this during COVID and they gave us a number. I want you to
+376,julia,1,0.101,Uncategorized Lexicon,"We got every 10 seconds there from Julia, 30 from Anders,"
+377,anders,1,0.101,Uncategorized Lexicon,"We got every 10 seconds there from Julia, 30 from Anders,"
+378,emily,1,0.101,Uncategorized Lexicon,"8 seconds Emily, 20."
+379,plodia,1,0.101,Uncategorized Lexicon,"Plodia, 5 minutes."
+380,3,1,0.101,Uncategorized Lexicon,"Every 6 seconds, every 3..."
+381,1,1,0.101,Uncategorized Lexicon,"1,000 seconds, 20, not much, 7, 5, 30."
+382,7,1,0.101,Uncategorized Lexicon,"1,000 seconds, 20, not much, 7, 5, 30."
+383,goldfish,1,0.101,Uncategorized Lexicon,It is less than a goldfish.
+384,corridor,1,0.101,Uncategorized Lexicon,"You're sitting in the school corridor, you're looking at your phone, you've got Snapchat"
+385,snapchat,1,0.101,Uncategorized Lexicon,"You're sitting in the school corridor, you're looking at your phone, you've got Snapchat"
+386,kid's,1,0.101,Uncategorized Lexicon,And the dopamine level hitting that kid's brain is literally like this.
+387,1902,1,0.101,Uncategorized Lexicon,"It is time for history lesson 1902, boom."
+388,limited,1,0.101,Uncategorized Lexicon,"And you know, the dopamine flow in that history lesson, it's so freaking limited."
+389,adults,1,0.101,Uncategorized Lexicon,"Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in"
+390,develop,1,0.101,Uncategorized Lexicon,"Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in"
+391,adhd,1,0.101,Uncategorized Lexicon,"Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in"
+392,symptoms,1,0.101,Uncategorized Lexicon,"Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in"
+393,algorithms,1,0.101,Uncategorized Lexicon,"only eight weeks if they look at algorithms of Instagram, TikTok, Facebook, YouTube for"
+394,facebook,1,0.101,Uncategorized Lexicon,"only eight weeks if they look at algorithms of Instagram, TikTok, Facebook, YouTube for"
+395,accustomed,1,0.101,Uncategorized Lexicon,So they are accustomed to a certain dopamine flow.
+396,achieving,1,0.101,Uncategorized Lexicon,How do you know that you are not achieving dopamine?
+397,scribbling,1,0.101,Uncategorized Lexicon,"I can't, oh, and they start scribbling something"
+398,dread,1,0.101,Uncategorized Lexicon,and start dread-day dreaming.
+399,wandering,1,0.101,Uncategorized Lexicon,They start wandering off.
+400,swiping,1,0.101,Uncategorized Lexicon,and they keep swiping under the side of the table.
+401,moan,1,0.101,Uncategorized Lexicon,And you can literally hear the moan of enjoyment
+402,drug,1,0.101,Uncategorized Lexicon,You have to be the best drug dealer in the room.
+403,dealer,1,0.101,Uncategorized Lexicon,You have to be the best drug dealer in the room.
+404,neuro,1,0.101,Uncategorized Lexicon,"inject dopamine into the neuro system of the people sitting in the audience. The question then is,"
+405,dm's,1,0.101,Uncategorized Lexicon,"around you. Imagine that. That's almost like somebody sent me, no, two people sent me DM's yesterday on"
+406,magician,1,0.101,Uncategorized Lexicon,"my God, you're a magician, man."
+407,nano,1,0.101,Uncategorized Lexicon,"I think I call that one nano, probably not, but..."
+408,medium,1,0.101,Uncategorized Lexicon,"The three levels, big ones, medium ones, small ones,"
+409,macroy,1,0.101,Uncategorized Lexicon,The macroy in the beginning is where you make a promise to the people that you're
+410,affect,1,0.101,Uncategorized Lexicon,talking to. You give them a promise of what they will get and how it will affect
+411,truthfully,1,0.101,Uncategorized Lexicon,create. Imagine a person comes to you and absolutely truthfully says hey if
+412,exercising,1,0.101,Uncategorized Lexicon,"But if you start exercising once a day,"
+413,mountains,1,0.101,Uncategorized Lexicon,"When we get a strong enough why it can move mountains,"
+414,daily,1,0.101,Uncategorized Lexicon,Like I coach people on an almost daily basis.
+415,executives,1,0.101,Uncategorized Lexicon,"I coach executives, top multi-billion companies."
+416,top,1,0.101,Uncategorized Lexicon,"I coach executives, top multi-billion companies."
+417,bullshit,1,0.101,Uncategorized Lexicon,"And they go, and it's bullshit."
+418,company's,1,0.101,Uncategorized Lexicon,This one's built it for the company's sake.
+419,other's,1,0.101,Uncategorized Lexicon,This one's built it for some other's sake.
+420,origins,1,0.101,Uncategorized Lexicon,"origins when you give that to them. So in this case, if you would rewind this"
+421,rewind,1,0.101,Uncategorized Lexicon,"origins when you give that to them. So in this case, if you would rewind this"
+422,large,1,0.101,Uncategorized Lexicon,was the large Y that is an umbrella over this entire session. The second one is
+423,umbrella,1,0.101,Uncategorized Lexicon,was the large Y that is an umbrella over this entire session. The second one is
+424,glow,1,0.101,Uncategorized Lexicon,"your why? Well, it's why you do what you do. It is the glow in your eyes. It is the passion"
+425,leaning,1,0.101,Uncategorized Lexicon,in your voice. It is you leaning forward. It's you being passionate. It's you being hungry.
+426,neurons,1,0.101,Uncategorized Lexicon,It's you being proud because your emotions are contagious. Thanks to something called mirror neurons
+427,waves,1,0.101,Uncategorized Lexicon,"and new waves and so on, your emotions are contagious. To give an example, you went to school, I went to"
+428,status,1,0.101,Uncategorized Lexicon,"school. In Sweden, about 12, 13, we changed schools to something called higher status, a higher school."
+429,loved,1,0.101,Uncategorized Lexicon,"Now, I loved mathematics, always had when I was a kid. So, this was the first time I was going to do"
+430,mathematics,1,0.101,Uncategorized Lexicon,"Now, I loved mathematics, always had when I was a kid. So, this was the first time I was going to do"
+431,advanced,1,0.101,Uncategorized Lexicon,"some kind of advanced maths. I remember I went to that classroom that morning, I just vivid us"
+432,vivid,1,0.101,Uncategorized Lexicon,"some kind of advanced maths. I remember I went to that classroom that morning, I just vivid us"
+433,classmates,1,0.101,Uncategorized Lexicon,"yesterday. I was standing outside the door, the rest of my classmates were there, it was closed."
+434,closed,1,0.101,Uncategorized Lexicon,"yesterday. I was standing outside the door, the rest of my classmates were there, it was closed."
+435,yawn,1,0.101,Uncategorized Lexicon,"my math teacher comes out and with a yawn and with a sigh, which is a very odd combination,"
+436,sigh,1,0.101,Uncategorized Lexicon,"my math teacher comes out and with a yawn and with a sigh, which is a very odd combination,"
+437,odd,1,0.101,Uncategorized Lexicon,"my math teacher comes out and with a yawn and with a sigh, which is a very odd combination,"
+438,welcoming,1,0.101,Uncategorized Lexicon,welcoming.
+439,unpassionate,1,0.101,Uncategorized Lexicon,He was the most unpassionate teacher you can ever imagine.
+440,pages,1,0.101,Uncategorized Lexicon,"Every single math lesson was literally sit down, read 10 pages, do them."
+441,tall,1,0.101,Uncategorized Lexicon,"Suddenly, the door is thrown up and this guy comes out, he's like two meters tall,"
+442,brumer,1,0.101,Uncategorized Lexicon,"two meters wide, shoulder-wise. His name is Arthur Brumer, he sounds like a bear,"
+443,bear,1,0.101,Uncategorized Lexicon,"two meters wide, shoulder-wise. His name is Arthur Brumer, he sounds like a bear,"
+444,begins,1,0.101,Uncategorized Lexicon,It begins in the forest and that's where we shall go.
+445,bags,1,0.101,Uncategorized Lexicon,"and he's got these bags and we head off into the forest and he's this, he's a freaking magical teacher."
+446,became,1,0.101,Uncategorized Lexicon,"He had so much passion, it became my passion which is today the reason I teach the very same"
+447,healed,1,0.101,Uncategorized Lexicon,"things I healed taught me when I was 12, 13, why I wrote a book which is now published in 34 languages"
+448,taught,1,0.101,Uncategorized Lexicon,"things I healed taught me when I was 12, 13, why I wrote a book which is now published in 34 languages"
+449,published,1,0.101,Uncategorized Lexicon,"things I healed taught me when I was 12, 13, why I wrote a book which is now published in 34 languages"
+450,34,1,0.101,Uncategorized Lexicon,"things I healed taught me when I was 12, 13, why I wrote a book which is now published in 34 languages"
+451,supersedes,1,0.101,Uncategorized Lexicon,because it supersedes everything.
+452,emmett,1,0.101,Uncategorized Lexicon,"Can we have some music, Emmett?"
+453,increases,1,0.101,Uncategorized Lexicon,"Because science has proven that music, as long as we like it, increases our dopamine levels."
+454,trick,1,0.101,Uncategorized Lexicon,So I get a free ride of dopamine before I even speak. So that's a trick for you.
+455,desiring,1,0.101,Uncategorized Lexicon,desiring to hear the end is a macro way of injecting dopamine into your audience. So
+456,wager,1,0.101,Uncategorized Lexicon,become good at storytelling my friend. I would wager to say that storytelling is the single
+457,marketing,1,0.101,Uncategorized Lexicon,"most powerful technique of all communication, presentation, marketing and sales technique"
+458,sales,1,0.101,Uncategorized Lexicon,"most powerful technique of all communication, presentation, marketing and sales technique"
+459,metaphors,1,0.101,Uncategorized Lexicon,"out there. Nothing comes close to it. Maybe metaphors, but they're really small stories."
+460,mind's,1,0.101,Uncategorized Lexicon,"after the story, you launch the Y, the macro I to your audience, and your mind's yourself"
+461,smaller,1,0.101,Uncategorized Lexicon,which Microsoft wants us to do. So there's got to be smaller ways of injecting dopamine.
+462,sheet,1,0.101,Uncategorized Lexicon,You've got this entire sheet with dopamine hacks and how to use them.
+463,hacks,1,0.101,Uncategorized Lexicon,You've got this entire sheet with dopamine hacks and how to use them.
+464,microways,1,0.101,Uncategorized Lexicon,"Okay, microways."
+465,microwave,1,0.101,Uncategorized Lexicon,Just me saying that creates a microwave.
+466,triggered,1,0.101,Uncategorized Lexicon,"So when I just say that, I've just triggered your brain to wait for number six."
+467,promises,1,0.101,Uncategorized Lexicon,"So small, small injections is creating small, small promises as you go along and fulfilling them as you go along."
+468,fulfilling,1,0.101,Uncategorized Lexicon,"So small, small injections is creating small, small promises as you go along and fulfilling them as you go along."
+469,gear,1,0.101,Uncategorized Lexicon,"Just by asking a question like that, that obviously kicks dopamine into high gear because"
+470,sentence,1,0.101,Uncategorized Lexicon,"write this sentence down is the anticipation of reward. That's what dopamine is, the anticipation"
+471,reward,1,0.101,Uncategorized Lexicon,"write this sentence down is the anticipation of reward. That's what dopamine is, the anticipation"
+472,similarly,1,0.101,Uncategorized Lexicon,"Similarly, a question is obviously you demanding an answer from your audience, but"
+473,demanding,1,0.101,Uncategorized Lexicon,"Similarly, a question is obviously you demanding an answer from your audience, but"
+474,cheerset,1,0.101,Uncategorized Lexicon,skill in public speaking? Cheerset. Could it be this? Could it be that? Could it be this?
+475,expecting,1,0.101,Uncategorized Lexicon,"Rhetorical by definition is a question you are not expecting an answer from the audience,"
+476,triggers,1,0.101,Uncategorized Lexicon,but it still triggers them.
+477,expectations,1,0.101,Uncategorized Lexicon,"Expectations, well, I showed you that in the beginning. I'm going to show you six of these."
+478,breaking,1,0.101,Uncategorized Lexicon,"of breaking kids' patterns, right?"
+479,something's,1,0.101,Uncategorized Lexicon,"oh, crying, something's upset them."
+480,upset,1,0.101,Uncategorized Lexicon,"oh, crying, something's upset them."
+481,cousins,1,0.101,Uncategorized Lexicon,Is it your cousins?
+482,gussians,1,0.101,Uncategorized Lexicon,"they get here and they go like yes yes yes ice cream, gussians ice cream, god that's the"
+483,generally,1,0.101,Uncategorized Lexicon,normally. We are generally not a good at it when it comes to presentations but become good at it.
+484,overall,1,0.101,Uncategorized Lexicon,"what it says and it's fairly pointless overall. Let's skip it. But in the corner it says,"
+485,skip,1,0.101,Uncategorized Lexicon,"what it says and it's fairly pointless overall. Let's skip it. But in the corner it says,"
+486,corporate,1,0.101,Uncategorized Lexicon,"It's almost like corporate standard these days, isn't it?"
+487,standard,1,0.101,Uncategorized Lexicon,"It's almost like corporate standard these days, isn't it?"
+488,robbing,1,0.101,Uncategorized Lexicon,"But that is, my friend, that is like robbing the little dopamine that your audience had"
+489,um,1,0.101,Uncategorized Lexicon,"the next slide coming up, my friend, is, um,"
+490,honestly,1,0.101,Uncategorized Lexicon,"honestly, it's my personal favorite."
+491,personal,1,0.101,Uncategorized Lexicon,"honestly, it's my personal favorite."
+492,uh,1,0.101,Uncategorized Lexicon,"I've, uh,"
+493,complex,1,0.101,Uncategorized Lexicon,It's very complex.
+494,digest,1,0.101,Uncategorized Lexicon,It's going to take you the time to digest.
+495,sucky,1,0.101,Uncategorized Lexicon,And it's the same sucky slide as last time.
+496,framed,1,0.101,Uncategorized Lexicon,"this time because you framed it differently, your audience will be going, yes. That is interesting,"
+497,indeed,1,0.101,Uncategorized Lexicon,"indeed. Maybe not the most beautiful one I've seen, but it does summarize, you know, based on how"
+498,summarize,1,0.101,Uncategorized Lexicon,"indeed. Maybe not the most beautiful one I've seen, but it does summarize, you know, based on how"
+499,exaggeration,1,0.101,Uncategorized Lexicon,"you frame it, you will create their expectation of enjoyment. So that is obviously a great exaggeration,"
+500,favorites,1,0.101,Uncategorized Lexicon,"So we have come to the favorite of favorites,"
+501,animations,1,0.101,Uncategorized Lexicon,which is animations in combination will sell your data.
+502,american,1,0.101,Uncategorized Lexicon,"and we have a Lucid Sapphire, an American electric car."
+503,electric,1,0.101,Uncategorized Lexicon,"and we have a Lucid Sapphire, an American electric car."
+504,zero,1,0.101,Uncategorized Lexicon,We got zero to 100.
+505,fastest,1,0.101,Uncategorized Lexicon,which one is the fastest?
+506,italians,1,0.101,Uncategorized Lexicon,"Let's have a look at the Lamborghini Aventador, Italians."
+507,9,1,0.101,Uncategorized Lexicon,2.9.
+508,french,1,0.101,Uncategorized Lexicon,"the French Riviera, you've got the Mediterranean overlooking"
+509,riviera,1,0.101,Uncategorized Lexicon,"the French Riviera, you've got the Mediterranean overlooking"
+510,overlooking,1,0.101,Uncategorized Lexicon,"the French Riviera, you've got the Mediterranean overlooking"
+511,rev,1,0.101,Uncategorized Lexicon,"and you put it into launch control, you rev it high,"
+512,sun,1,0.101,Uncategorized Lexicon,the sun is just setting and you let that thing rip
+513,rip,1,0.101,Uncategorized Lexicon,the sun is just setting and you let that thing rip
+514,whiplash,1,0.101,Uncategorized Lexicon,and it's whiplash fast.
+515,measurement,1,0.101,Uncategorized Lexicon,"even if it's small by measurement, but 2.8."
+516,electrical,1,0.101,Uncategorized Lexicon,"Well, it's an electrical car,"
+517,weighs,1,0.101,Uncategorized Lexicon,it weighs 2.6 tons in no way of form
+518,tons,1,0.101,Uncategorized Lexicon,it weighs 2.6 tons in no way of form
+519,beat,1,0.101,Uncategorized Lexicon,should it be able to beat these
+520,masterful,1,0.101,Uncategorized Lexicon,masterful pieces of engineering.
+521,pieces,1,0.101,Uncategorized Lexicon,masterful pieces of engineering.
+522,engineering,1,0.101,Uncategorized Lexicon,masterful pieces of engineering.
+523,relevant,1,0.101,Uncategorized Lexicon,"going like, I have you hooked on a subject that which absolutely not relevant to mine."
+524,cars,1,0.101,Uncategorized Lexicon,"I started talking about cars from absolutely nowhere, but you went, I think it's faster,"
+525,animate,1,0.101,Uncategorized Lexicon,doing two things. Animate it and sell it. There you go. By so you can inject dopamine
+526,harsh,1,0.101,Uncategorized Lexicon,"into your presentation wherever you want to. And to be harsh, which is also important in"
+527,bullet,1,0.101,Uncategorized Lexicon,"life, I'll put it like this. If you have bullet lists, if you have charts and PowerPoint today,"
+528,animated,1,0.101,Uncategorized Lexicon,"which are not animated, you are simply wasting. You are pouring dopamine into a black"
+529,wasting,1,0.101,Uncategorized Lexicon,"which are not animated, you are simply wasting. You are pouring dopamine into a black"
+530,black,1,0.101,Uncategorized Lexicon,"which are not animated, you are simply wasting. You are pouring dopamine into a black"
+531,endless,1,0.101,Uncategorized Lexicon,"endless, whole, to never be retrieved again."
+532,whole,1,0.101,Uncategorized Lexicon,"endless, whole, to never be retrieved again."
+533,retrieved,1,0.101,Uncategorized Lexicon,"endless, whole, to never be retrieved again."
+534,sixth,1,0.101,Uncategorized Lexicon,"Fair enough, we are going to leave that fifth, sixth tip I gave you. That means"
+535,saved,1,0.101,Uncategorized Lexicon,"Well, the thing is this, I've saved the best for last."
+536,dopement,1,0.101,Uncategorized Lexicon,Micro-dopement ways.
+537,seventh,1,0.101,Uncategorized Lexicon,The seventh micro dopamine injection tool.
+538,flip,1,0.101,Uncategorized Lexicon,This is me using a flip chart.
+539,professor,1,0.101,Uncategorized Lexicon,We have a professor in Sweden who is a world-renowned presenter of statistics.
+540,renowned,1,0.101,Uncategorized Lexicon,We have a professor in Sweden who is a world-renowned presenter of statistics.
+541,popcorn,1,0.101,Uncategorized Lexicon,"fill an arena of 20,000 people who paid money, who bought popcorn, to watch a guy talk about"
+542,r,1,0.101,Uncategorized Lexicon,His name is Hans Rüsling.
+543,sling,1,0.101,Uncategorized Lexicon,His name is Hans Rüsling.
+544,presented,1,0.101,Uncategorized Lexicon,"When he presented, he didn't just have slides, he used toilet rolls to represent bar charts,"
+545,toilet,1,0.101,Uncategorized Lexicon,"When he presented, he didn't just have slides, he used toilet rolls to represent bar charts,"
+546,rolls,1,0.101,Uncategorized Lexicon,"When he presented, he didn't just have slides, he used toilet rolls to represent bar charts,"
+547,bar,1,0.101,Uncategorized Lexicon,"When he presented, he didn't just have slides, he used toilet rolls to represent bar charts,"
+548,dolls,1,0.101,Uncategorized Lexicon,"he used paper dolls to represent statistics, he used Legos when speaking to Bill Gates"
+549,legos,1,0.101,Uncategorized Lexicon,"he used paper dolls to represent statistics, he used Legos when speaking to Bill Gates"
+550,gates,1,0.101,Uncategorized Lexicon,"he used paper dolls to represent statistics, he used Legos when speaking to Bill Gates"
+551,demonstrate,1,0.101,Uncategorized Lexicon,to demonstrate.
+552,beer,1,0.101,Uncategorized Lexicon,"When I worked with him once, he had beer crates, 300 of them building things on stage."
+553,crates,1,0.101,Uncategorized Lexicon,"When I worked with him once, he had beer crates, 300 of them building things on stage."
+554,genius,1,0.101,Uncategorized Lexicon,The guy was a genius.
+555,spectacular,1,0.101,Uncategorized Lexicon,like a spectacular meal?
+556,italy,1,0.101,Uncategorized Lexicon,"Maybe it was in Italy, Spain, America, Thailand,"
+557,spain,1,0.101,Uncategorized Lexicon,"Maybe it was in Italy, Spain, America, Thailand,"
+558,america,1,0.101,Uncategorized Lexicon,"Maybe it was in Italy, Spain, America, Thailand,"
+559,thailand,1,0.101,Uncategorized Lexicon,"Maybe it was in Italy, Spain, America, Thailand,"
+560,memory,1,0.101,Uncategorized Lexicon,but I think all of you have a memory
+561,outstanding,1,0.101,Uncategorized Lexicon,of an outstanding meal that you had.
+562,degree,1,0.101,Uncategorized Lexicon,"to such a degree that you wanna go back there,"
+563,rouselings,1,0.101,Uncategorized Lexicon,"If they are well-spiced, like Hans-Rouselings, like mine,"
+564,replicate,1,0.101,Uncategorized Lexicon,"They will want to replicate it,"
+565,who've,1,0.101,Uncategorized Lexicon,I have fans who've watched some of my TEDx talks
+566,assembling,1,0.101,Uncategorized Lexicon,I spent five years assembling every spice I could find.
+567,stock,1,0.101,Uncategorized Lexicon,"Actually, I was in stock of all places and I was doing a keynote and it went really well."
+568,panic,1,0.101,Uncategorized Lexicon,"And then the guy after me, there was a break, the guy after me came up to me in panic and he looked at me and he said, David, that was horrible."
+569,when's,1,0.101,Uncategorized Lexicon,"And I'm like, when's your presentation?"
+570,shove,1,0.101,Uncategorized Lexicon,and just shove them into your presentation.
+571,customer,1,0.101,Uncategorized Lexicon,We added a customer interaction.
+572,interaction,1,0.101,Uncategorized Lexicon,We added a customer interaction.
+573,updated,1,0.101,Uncategorized Lexicon,He updated his presentation.
+574,kills,1,0.101,Uncategorized Lexicon,"He walks up on stage 45 minutes later, absolutely kills it."
+575,value,1,0.101,Uncategorized Lexicon,"Unheard of. And again, for you who have, I'll just say this, you know, this is all so much free value"
+576,addition,1,0.101,Uncategorized Lexicon,"that this is almost like no addition at all to all of you. For all of you have the resource pack,"
+577,thumbs,1,0.101,Uncategorized Lexicon,Is it beneficial? Thumbs up. Right. It's unheard of. Do you know why the stuff I give you is unheard of?
+578,embark,1,0.101,Uncategorized Lexicon,"No where. Because when I was 20 and I decided to embark on this career, I consciously decided to never read a book on public speaking,"
+579,consciously,1,0.101,Uncategorized Lexicon,"No where. Because when I was 20 and I decided to embark on this career, I consciously decided to never read a book on public speaking,"
+580,attend,1,0.101,Uncategorized Lexicon,"to never attend a training in public speaking, to never engage with another public speaking coach"
+581,engage,1,0.101,Uncategorized Lexicon,"to never attend a training in public speaking, to never engage with another public speaking coach"
+582,regards,1,0.101,Uncategorized Lexicon,"in regards to skills, never. Because I knew that that would influence my creations."
+583,influence,1,0.101,Uncategorized Lexicon,"in regards to skills, never. Because I knew that that would influence my creations."
+584,creations,1,0.101,Uncategorized Lexicon,"in regards to skills, never. Because I knew that that would influence my creations."
+585,influenced,1,0.101,Uncategorized Lexicon,"So I've never ever been influenced by another public speaker and therefore,"
+586,therefore,1,0.101,Uncategorized Lexicon,"So I've never ever been influenced by another public speaker and therefore,"
+587,unique,1,0.101,Uncategorized Lexicon,my TEDx talks and my content is so unique that you do not find it anywhere else.
+588,rare,1,0.101,Uncategorized Lexicon,which is quite rare when it comes to public speaking.
+589,sensual,1,0.101,Uncategorized Lexicon,These are sensual.
+590,pair,1,0.101,Uncategorized Lexicon,under a pair of five seconds and they affected your biochemistry. What were they? Give me
+591,silence,1,0.101,Uncategorized Lexicon,"Somebody said silence. Oh, there, Gary, look up, smile and chuckle and pointed."
+592,chuckle,1,0.101,Uncategorized Lexicon,"Somebody said silence. Oh, there, Gary, look up, smile and chuckle and pointed."
+593,paused,1,0.101,Uncategorized Lexicon,So write this down for yourself. I paused. I did an audible inhale through my nose.
+594,suspension,1,0.101,Uncategorized Lexicon,"the post-bill suspension, the audible inhale,"
+595,gotta,1,0.101,Uncategorized Lexicon,It's gotta be something amazing.
+596,emotionally,1,0.101,Uncategorized Lexicon,"You can also look down where you, but that is more finding something emotionally powerful."
+597,seems,1,0.101,Uncategorized Lexicon,"looked up, he's launching into something and he found something that seems to be exciting"
+598,douchein,1,0.101,Uncategorized Lexicon,"to him, so maybe it's exciting to me. And then the final one is what is called a douchein smile,"
+599,photovase,1,0.101,Uncategorized Lexicon,"where you smiley with your own photovase, which is just an extension of the self-laughter"
+600,climax,1,0.101,Uncategorized Lexicon,"So pause climax, audible inhale, pays volume, self laughter."
+601,pays,1,0.101,Uncategorized Lexicon,"So pause climax, audible inhale, pays volume, self laughter."
+602,piece,1,0.101,Uncategorized Lexicon,Please write your answers down on a piece of paper or preferably on a document on your
+603,preferably,1,0.101,Uncategorized Lexicon,Please write your answers down on a piece of paper or preferably on a document on your
+604,document,1,0.101,Uncategorized Lexicon,Please write your answers down on a piece of paper or preferably on a document on your
+605,paste,1,0.101,Uncategorized Lexicon,"computer, because when you come back after this one minute video, I want you to paste"
+606,mundane,1,0.101,Uncategorized Lexicon,It was mundane.
+607,pocket,1,0.101,Uncategorized Lexicon,She had an apple in her pocket and she picked it up and placed it on the floor.
+608,floor,1,0.101,Uncategorized Lexicon,She had an apple in her pocket and she picked it up and placed it on the floor.
+609,circle,1,0.101,Uncategorized Lexicon,She asked the class to stand in a circle and kick it to each other.
+610,kick,1,0.101,Uncategorized Lexicon,She asked the class to stand in a circle and kick it to each other.
+611,bruise,1,0.101,Uncategorized Lexicon,"They said, well, maybe there's a bruise here and there, but not much."
+612,cut,1,0.101,Uncategorized Lexicon,"Friday came, the teacher took out a knife and cut that apple in the middle."
+613,brownness,1,0.101,Uncategorized Lexicon,"And now you can see the brownness, the bruises, the squishiness."
+614,bruises,1,0.101,Uncategorized Lexicon,"And now you can see the brownness, the bruises, the squishiness."
+615,squishiness,1,0.101,Uncategorized Lexicon,"And now you can see the brownness, the bruises, the squishiness."
+616,hurtful,1,0.101,Uncategorized Lexicon,Bullying isn't just hurtful on the outside.
+617,destroying,1,0.101,Uncategorized Lexicon,It is the inside that is truly destroying a person.
+618,rot,1,0.101,Uncategorized Lexicon,for the rest of the year to see it slowly rot
+619,students,1,0.101,Uncategorized Lexicon,to remind the students to respect each other.
+620,inspiration,1,0.101,Uncategorized Lexicon,give each other some inspiration
+621,background,1,0.101,Uncategorized Lexicon,"Absolute, the background music makes"
+622,jonas,1,0.101,Uncategorized Lexicon,"facial expressions, these are brilliant Jonas, that's a great list you got there man."
+623,mad,1,0.101,Uncategorized Lexicon,"If you've never tried this, try this because it's mad."
+624,settings,1,0.101,Uncategorized Lexicon,"If you have your mobile phone, you can go into settings and set it on grayscale."
+625,lick,1,0.101,Uncategorized Lexicon,"I wanted to lick the display. You know, like, oh, because my brain went, oh my god, there's so much"
+626,display,1,0.101,Uncategorized Lexicon,"I wanted to lick the display. You know, like, oh, because my brain went, oh my god, there's so much"
+627,apps,1,0.101,Uncategorized Lexicon,"Why do you think apps, children, games, and so on,"
+628,children,1,0.101,Uncategorized Lexicon,"Why do you think apps, children, games, and so on,"
+629,neat,1,0.101,Uncategorized Lexicon,"It's a nice, neat way for them to create dopamine."
+630,wish,1,0.101,Uncategorized Lexicon,"Add them, feel them, see them, test them if you wish,"
+631,concluded,1,0.101,Uncategorized Lexicon,We have concluded this evening when it comes to dopamine.
+632,empowered,1,0.101,Uncategorized Lexicon,and that you've been empowered by them.
+633,east,1,0.101,Uncategorized Lexicon,the Middle East.
+634,lived,1,0.101,Uncategorized Lexicon,In this quaint little house lived two sisters.
+635,sisters,1,0.101,Uncategorized Lexicon,In this quaint little house lived two sisters.
+636,rowl,1,0.101,Uncategorized Lexicon,"And this particular day, it turned into a rowl,"
+637,contest,1,0.101,Uncategorized Lexicon,Let's have a contest.
+638,arch,1,0.101,Uncategorized Lexicon,"And so the day grew, they went up to the arch,"
+639,guest,1,0.101,Uncategorized Lexicon,"The story said, please be my guest."
+640,veins,1,0.101,Uncategorized Lexicon,"Truth, filled her chest, allowed confidence to flow through her veins,"
+641,played,1,0.101,Uncategorized Lexicon,"She walked down, and the kids who played football, they ran away."
+642,ran,1,0.101,Uncategorized Lexicon,"She walked down, and the kids who played football, they ran away."
+643,picnic,1,0.101,Uncategorized Lexicon,"The parents who were having a picnic, they packed it up and left."
+644,packed,1,0.101,Uncategorized Lexicon,"The parents who were having a picnic, they packed it up and left."
+645,herself,1,0.101,Uncategorized Lexicon,"So she asked herself, can I be more beautiful in any way?"
+646,unbuttoned,1,0.101,Uncategorized Lexicon,So she unbuttoned her cloak and she let it go and there she was entirely naked.
+647,scattered,1,0.101,Uncategorized Lexicon,"This time, everyone scattered."
+648,picnics,1,0.101,Uncategorized Lexicon,You can see the parents eating their picnics.
+649,admit,1,0.101,Uncategorized Lexicon,I admit it.
+650,wrapped,1,0.101,Uncategorized Lexicon,So story took a cloak wrapped around truth shoulders.
+651,shoulders,1,0.101,Uncategorized Lexicon,So story took a cloak wrapped around truth shoulders.
+652,television,1,0.101,Uncategorized Lexicon,"Because don't you agree that when you watch a television show or when you watch a movie,"
+653,movie,1,0.101,Uncategorized Lexicon,"Because don't you agree that when you watch a television show or when you watch a movie,"
+654,ignites,1,0.101,Uncategorized Lexicon,"and it says suddenly based on a true story, feels like your entire brain ignites."
+655,flows,1,0.101,Uncategorized Lexicon,"Your dopamine flows in a different way and you go, give it, give it, give it to me."
+656,email,1,0.101,Uncategorized Lexicon,"You'll obviously see camera three, email, whee!"
+657,whee,1,0.101,Uncategorized Lexicon,"You'll obviously see camera three, email, whee!"
+658,modules,1,0.101,Uncategorized Lexicon,what are the three most important modules from my life
+659,commands,1,0.101,Uncategorized Lexicon,"So imagine you have confidence on commands,"
+660,crowd,1,0.101,Uncategorized Lexicon,"It actually gets easier, the bigger the crowd is."
+661,smoked,1,0.101,Uncategorized Lexicon,"but if you don't have high level of clarity, you're smoked anyway."
+662,referencing,1,0.101,Uncategorized Lexicon,referencing that as we go along. If you haven't got it yet I'll ask you able to just post a
+663,yet,1,0.101,Uncategorized Lexicon,referencing that as we go along. If you haven't got it yet I'll ask you able to just post a
+664,influential,1,0.101,Uncategorized Lexicon,"Love those words, one of them, I guess, most influential financial people in the world describes"
+665,financial,1,0.101,Uncategorized Lexicon,"Love those words, one of them, I guess, most influential financial people in the world describes"
+666,describes,1,0.101,Uncategorized Lexicon,"Love those words, one of them, I guess, most influential financial people in the world describes"
+667,invest,1,0.101,Uncategorized Lexicon,"it as an asset which you invest in, which you can make use of 50, 60 years to go ahead. But also,"
+668,ahead,1,0.101,Uncategorized Lexicon,"it as an asset which you invest in, which you can make use of 50, 60 years to go ahead. But also,"
+669,treat,1,0.101,Uncategorized Lexicon,"at the same time, it's a liability if you don't. So always treat public speaking from that perspective."
+670,switch,1,0.101,Uncategorized Lexicon,"And the second thing I want to say about this is this, what happens if we switch those words"
+671,tricks,1,0.101,Uncategorized Lexicon,that is speaking in public. You can still use your dopamine tricks. You can still use your confidence
+672,interview,1,0.101,Uncategorized Lexicon,Same thing when you go to a job interview. Same thing when you buy something in a shop.
+673,pass,1,0.101,Uncategorized Lexicon,Same thing when you pass another person. Public speaking is not standing on a stage. It is
+674,mistake,1,0.101,Uncategorized Lexicon,That is the worst mistake you can do.
+675,machine,1,0.101,Uncategorized Lexicon,"by the coffee machine with your kids, with your friends,"
+676,spouse,1,0.101,Uncategorized Lexicon,"with your spouse, with your colleagues,"
+677,colleagues,1,0.101,Uncategorized Lexicon,"with your spouse, with your colleagues,"
+678,flawless,1,0.101,Uncategorized Lexicon,"when you go up on stage, you're flawless."
+679,craziest,1,0.101,Uncategorized Lexicon,which is by far the craziest thing I've ever done.
+680,mathematical,1,0.101,Uncategorized Lexicon,"I started seeing people like almost like mathematical patterns when they moved,"
+681,explain,1,0.101,Uncategorized Lexicon,The best way to explain this is have you seen Sherlock Holmes?
+682,sherlock,1,0.101,Uncategorized Lexicon,The best way to explain this is have you seen Sherlock Holmes?
+683,holmes,1,0.101,Uncategorized Lexicon,The best way to explain this is have you seen Sherlock Holmes?
+684,tv,1,0.101,Uncategorized Lexicon,Have you seen his movies or TV shows?
+685,detective,1,0.101,Uncategorized Lexicon,"So he's a British detective and he goes around and he's like,"
+686,shoelace,1,0.101,Uncategorized Lexicon,"So he goes like, well, your shoelace is tied with a right hand,"
+687,tied,1,0.101,Uncategorized Lexicon,"So he goes like, well, your shoelace is tied with a right hand,"
+688,must,1,0.101,Uncategorized Lexicon,That means that you must have killed this person.
+689,killed,1,0.101,Uncategorized Lexicon,That means that you must have killed this person.
+690,detail,1,0.101,Uncategorized Lexicon,He's like super observant on every single detail.
+691,wesberg,1,0.101,Uncategorized Lexicon,"and I go, I look at Tina Wesberg, for instance,"
+692,john's,1,0.101,Uncategorized Lexicon,Why is John's head slightly tilted to the right?
+693,vickers,1,0.101,Uncategorized Lexicon,Why is Vickers head slightly tilted to the right?
+694,guinea,1,0.101,Uncategorized Lexicon,"Suzanne, if your guinea pig dies,"
+695,pig,1,0.101,Uncategorized Lexicon,"Suzanne, if your guinea pig dies,"
+696,dies,1,0.101,Uncategorized Lexicon,"Suzanne, if your guinea pig dies,"
+697,automatic,1,0.101,Uncategorized Lexicon,"my automatic human response would be,"
+698,response,1,0.101,Uncategorized Lexicon,"my automatic human response would be,"
+699,signaling,1,0.101,Uncategorized Lexicon,"you are signaling non-verbally to me,"
+700,verbally,1,0.101,Uncategorized Lexicon,"you are signaling non-verbally to me,"
+701,aww,1,0.101,Uncategorized Lexicon,"you're going, aww."
+702,empathy,1,0.101,Uncategorized Lexicon,"So you're showing empathy,"
+703,inducing,1,0.101,Uncategorized Lexicon,and that is by inducing oxytocin.
+704,tilters,1,0.101,Uncategorized Lexicon,and I've got like 20% head tilters
+705,42,1,0.101,Uncategorized Lexicon,"It's so remarkable because when I start the talk, I say, in 42 minutes from now, 80% of"
+706,gaiman,1,0.101,Uncategorized Lexicon,"So a second thing that, well, let's have a look at Vicki Gaiman, she's nodding her"
+707,instinctively,1,0.101,Uncategorized Lexicon,"Like, you don't know that affects me, but you do it instinctively because you are a good listener."
+708,listener,1,0.101,Uncategorized Lexicon,"Like, you don't know that affects me, but you do it instinctively because you are a good listener."
+709,tilther,1,0.101,Uncategorized Lexicon,"So, having a look at Tina again, she's a head-tilther and she's a head-nodder."
+710,nodder,1,0.101,Uncategorized Lexicon,"So, having a look at Tina again, she's a head-tilther and she's a head-nodder."
+711,fulfills,1,0.101,Uncategorized Lexicon,"So, she fulfills two skills."
+712,avi,1,0.101,Uncategorized Lexicon,"So you want me to use these skills, but that's weird, Avi."
+713,swing,1,0.101,Uncategorized Lexicon,"If you're going to learn a new golf swing,"
+714,strange,1,0.101,Uncategorized Lexicon,"That is not strange, my friend."
+715,nods,1,0.101,Uncategorized Lexicon,"Have you ever met a person with a straight head, no nods?"
+716,receipt,1,0.101,Uncategorized Lexicon,"You'll get no receipt like, are you getting this?"
+717,statistically,1,0.101,Uncategorized Lexicon,"Statistically, 20% of you are here this evening."
+718,tilterer,1,0.101,Uncategorized Lexicon,You're not a right or left-tilterer and you are not a noider.
+719,noider,1,0.101,Uncategorized Lexicon,You're not a right or left-tilterer and you are not a noider.
+720,blind,1,0.101,Uncategorized Lexicon,"If that is the case, you are blind to what's going on around you."
+721,function,1,0.101,Uncategorized Lexicon,"Record yourself, look how you function in a social setting, and change that if that is the case."
+722,individual,1,0.101,Uncategorized Lexicon,"I found 236, 236 individual skills."
+723,digested,1,0.101,Uncategorized Lexicon,"It's a bit too much, so I digested them,"
+724,boiled,1,0.101,Uncategorized Lexicon,boiled them down to 110 core skills.
+725,resolution,1,0.101,Uncategorized Lexicon,"And if you look at this, if you got a good resolution,"
+726,61,1,0.101,Uncategorized Lexicon,"you'll see that Tina is using Skill 61, Empowering Head Angle."
+727,j,1,0.101,Uncategorized Lexicon,"Mark J as well, nice one there, Simona."
+728,simona,1,0.101,Uncategorized Lexicon,"Mark J as well, nice one there, Simona."
+729,amplifying,1,0.101,Uncategorized Lexicon,You are currently doing a amplifying head movement.
+730,64,1,0.101,Uncategorized Lexicon,So that's Skill 64 for you.
+731,organization,1,0.101,Uncategorized Lexicon,"If you have 55 of them, 60, you are the best in your company, in your organization."
+732,doubt,1,0.101,Uncategorized Lexicon,There's no doubt about it.
+733,dominate,1,0.101,Uncategorized Lexicon,and you will dominate.
+734,touching,1,0.101,Uncategorized Lexicon,"If you want to become a world class speaker, you've got to be touching between 90 to 100."
+735,11,1,0.101,Uncategorized Lexicon,"Three, 11, 20."
+736,amir,1,0.101,Uncategorized Lexicon,"But again, Amir Hossein, the thing is this, when you're dead you have seven skills."
+737,hossein,1,0.101,Uncategorized Lexicon,"But again, Amir Hossein, the thing is this, when you're dead you have seven skills."
+738,guessing,1,0.101,Uncategorized Lexicon,"So I got God knows who's guessing down like three, four, five, seven."
+739,actual,1,0.101,Uncategorized Lexicon,The actual number is 24.
+740,employees,1,0.101,Uncategorized Lexicon,"And when people come to me and they say, David, I've been doing this pitch now for my employees"
+741,pointer,1,0.101,Uncategorized Lexicon,"All of you, all of you listening to this this evening, you can be a 75 pointer."
+742,angles,1,0.101,Uncategorized Lexicon,"at the moment, there's about 20 unfunctional head angles,"
+743,skill62,1,0.101,Uncategorized Lexicon,"that mean? Well, to give you an idea, it goes like this. The story of when I found Skill62"
+744,girl,1,0.101,Uncategorized Lexicon,"like 10, 15 years ago. This one girl in the group, she was doing something, and I could not, for the"
+745,figure,1,0.101,Uncategorized Lexicon,"life of me, figure out what it was, and it was so irritating. So I said, can we have a quick lunch,"
+746,irritating,1,0.101,Uncategorized Lexicon,"life of me, figure out what it was, and it was so irritating. So I said, can we have a quick lunch,"
+747,lunch,1,0.101,Uncategorized Lexicon,"life of me, figure out what it was, and it was so irritating. So I said, can we have a quick lunch,"
+748,nuts,1,0.101,Uncategorized Lexicon,I need to see what you're doing because it's driving me nuts.
+749,motion,1,0.101,Uncategorized Lexicon,I'm looking at the recording. I can't see it. I go slow motion.
+750,adjustment,1,0.101,Uncategorized Lexicon,"So I asked her to do one small adjustment, and she did."
+751,blew,1,0.101,Uncategorized Lexicon,"And she blew me away and I said, hey, when we bring out in the other nine,"
+752,gobsmacked,1,0.101,Uncategorized Lexicon,"they were gobsmacked, they were like, what's going on?"
+753,twin,1,0.101,Uncategorized Lexicon,"And one even said, is this your twin sister?"
+754,comment,1,0.101,Uncategorized Lexicon,I love that comment because what had changed was this.
+755,angled,1,0.101,Uncategorized Lexicon,It's an unfunctional head angle where your nose is slightly angled upwards.
+756,upwards,1,0.101,Uncategorized Lexicon,It's an unfunctional head angle where your nose is slightly angled upwards.
+757,handwritten,1,0.101,Uncategorized Lexicon,She wrote two handwritten letters to me one year and the year after.
+758,letters,1,0.101,Uncategorized Lexicon,She wrote two handwritten letters to me one year and the year after.
+759,arrogant,1,0.101,Uncategorized Lexicon,"suddenly being seen for who I am. I'm not arrogant, I'm kind."
+760,promotion,1,0.101,Uncategorized Lexicon,"I've got this promotion, I've got a boyfriend, it's working out."
+761,boyfriend,1,0.101,Uncategorized Lexicon,"I've got this promotion, I've got a boyfriend, it's working out."
+762,working,1,0.101,Uncategorized Lexicon,"I've got this promotion, I've got a boyfriend, it's working out."
+763,recordings,1,0.101,Uncategorized Lexicon,Have a look at recordings of yourself on stage.
+764,dysfunctional,1,0.101,Uncategorized Lexicon,"If you have a dysfunctional head angle, either this one or this one,"
+765,examination,1,0.101,Uncategorized Lexicon,So a bunch of you've got this nose hair angle kind of examination thing going on.
+766,interested,1,0.101,Uncategorized Lexicon,"It's like, why would I be interested in seeing this part of your face?"
+767,zoom,1,0.101,Uncategorized Lexicon,"if you do a lot of Zoom and Tiers meeting,"
+768,tiers,1,0.101,Uncategorized Lexicon,"if you do a lot of Zoom and Tiers meeting,"
+769,height,1,0.101,Uncategorized Lexicon,just raise up your camera so that it's eye height
+770,appeared,1,0.101,Uncategorized Lexicon,"15, 16 skills used and appeared of 15, 16 seconds, literally one skill a second."
+771,everywhere,1,0.101,Uncategorized Lexicon,"And it's not just on stage, it's everywhere, anywhere in your life."
+772,anchoring,1,0.101,Uncategorized Lexicon,Do you use anchoring?
+773,how's,1,0.101,Uncategorized Lexicon,How's your head angle?
+774,potential,1,0.101,Uncategorized Lexicon,"When you look at a person from this perspective, you can see so many things that has this potential"
+775,woman's,1,0.101,Uncategorized Lexicon,"And wow, as I said, one single skill changed that woman's life and it's definitely the"
+776,defined,1,0.101,Uncategorized Lexicon,These are a lot of them are defined as mother skills. That means that one skill impacts many
+777,impacts,1,0.101,Uncategorized Lexicon,These are a lot of them are defined as mother skills. That means that one skill impacts many
+778,yellow,1,0.101,Uncategorized Lexicon,So we're gonna start off over here in the yellow area.
+779,area,1,0.101,Uncategorized Lexicon,So we're gonna start off over here in the yellow area.
+780,carefully,1,0.101,Uncategorized Lexicon,Listen very carefully to this.
+781,rippling,1,0.101,Uncategorized Lexicon,He's going to say we're going to go through the rippling
+782,limbic,1,0.101,Uncategorized Lexicon,"brain, limbic brain, the cortex, and how that affects"
+783,cortex,1,0.101,Uncategorized Lexicon,"brain, limbic brain, the cortex, and how that affects"
+784,psychological,1,0.101,Uncategorized Lexicon,different psychological structures of beginning with an intention grab and then objectives
+785,objectives,1,0.101,Uncategorized Lexicon,different psychological structures of beginning with an intention grab and then objectives
+786,information,1,0.101,Uncategorized Lexicon,and then we move into the practical information. We're going to move over then to the dopamine
+787,effect,1,0.101,Uncategorized Lexicon,your presentation you'll have such an amazing effect. It'll be absolutely incredible. Now
+788,incredible,1,0.101,Uncategorized Lexicon,your presentation you'll have such an amazing effect. It'll be absolutely incredible. Now
+789,compare,1,0.101,Uncategorized Lexicon,"compare that to this. Ladies and gentlemen, it's lovely to have you here this evening."
+790,ladies,1,0.101,Uncategorized Lexicon,"compare that to this. Ladies and gentlemen, it's lovely to have you here this evening."
+791,gentlemen,1,0.101,Uncategorized Lexicon,"compare that to this. Ladies and gentlemen, it's lovely to have you here this evening."
+792,utterly,1,0.101,Uncategorized Lexicon,What I am about to tell you is absolutely and utterly pointless. In every single word I say
+793,prefer,1,0.101,Uncategorized Lexicon,"Now, looking at your faces, which one do you prefer?"
+794,react,1,0.101,Uncategorized Lexicon,How can your brain react like that?
+795,he'll,1,0.101,Uncategorized Lexicon,"When you have other bad stuff, I know he'll be right."
+796,conducts,1,0.101,Uncategorized Lexicon,A conductor conducts an orchestra.
+797,orchestra,1,0.101,Uncategorized Lexicon,A conductor conducts an orchestra.
+798,conduct,1,0.101,Uncategorized Lexicon,"to conduct your audience,"
+799,generic,1,0.101,Uncategorized Lexicon,pace you speak in normally. Like it's your generic pace when you speak. And then when
+800,signal,1,0.101,Uncategorized Lexicon,a dynamic range of increasing pace to go through something that they just want to signal that
+801,constant,1,0.101,Uncategorized Lexicon,"It's horrible to listen to somebody with a constant pace, isn't it?"
+802,phenomenally,1,0.101,Uncategorized Lexicon,"So when we look at people and their presentations, this is a phenomenally powerful skill to learn"
+803,adjust,1,0.101,Uncategorized Lexicon,"to adjust your base pace so that it's perfectly in the middle, to practice slow pace to such"
+804,spirit,1,0.101,Uncategorized Lexicon,And we spirit also means that they can go up
+805,excitement,1,0.101,Uncategorized Lexicon,but say something with excitement.
+806,people's,1,0.101,Uncategorized Lexicon,But some people's base pace is too high
+807,hit,1,0.101,Uncategorized Lexicon,or it's too low and they can't hit the dynamic range.
+808,e,1,0.101,Uncategorized Lexicon,E amil.
+809,amil,1,0.101,Uncategorized Lexicon,E amil.
+810,hero,1,0.101,Uncategorized Lexicon,You are a hero.
+811,gothenburg,1,0.101,Uncategorized Lexicon,"We go down to Gothenburg, which is the city in Sweden."
+812,city,1,0.101,Uncategorized Lexicon,"We go down to Gothenburg, which is the city in Sweden."
+813,anyhow,1,0.101,Uncategorized Lexicon,"Anyhow, Lars was the CFO of the company."
+814,cfo,1,0.101,Uncategorized Lexicon,"Anyhow, Lars was the CFO of the company."
+815,quarterly,1,0.101,Uncategorized Lexicon,And I am here to deliver the quarterly results
+816,received,1,0.101,Uncategorized Lexicon,"of quarter one and quarter two. And I stop him and I say, Lawrence, have you ever received"
+817,punch,1,0.101,Uncategorized Lexicon,"let's punch it up a bit. Let's go. I'm talking 100% up, Lawrence, 100%. And he goes, okay, okay."
+818,phew,1,0.101,Uncategorized Lexicon,"I'm like, phew, still low Lars."
+819,brave,1,0.101,Uncategorized Lexicon,But he's a brave soul.
+820,dave,1,0.101,Uncategorized Lexicon,"Dave, I can't do it, I can't do it, I can't scream at you people, I can't scream man,"
+821,screaming,1,0.101,Uncategorized Lexicon,So his perception of a normal volume was screaming to the audience.
+822,observation,1,0.101,Uncategorized Lexicon,"voice, whether that be from a speaker from your own head, it doesn't matter. Your observation"
+823,sentences,1,0.101,Uncategorized Lexicon,"going in between words and sentences. Why is this not good? Well, if I were to follow"
+824,vary,1,0.101,Uncategorized Lexicon,When? Because it would vary. You would use your highest concentration of phyllisans when you are
+825,silly,1,0.101,Uncategorized Lexicon,If you listen to the amount of silly
+826,poker,1,0.101,Uncategorized Lexicon,it's like playing poker with somebody
+827,cards,1,0.101,Uncategorized Lexicon,and they're literally having their cards
+828,analytical,1,0.101,Uncategorized Lexicon,from an analytical perspective.
+829,conclusion,1,0.101,Uncategorized Lexicon,of this conclusion is this.
+830,kicker,1,0.101,Uncategorized Lexicon,"assertive, listen to those. Now this is the kicker. Woo, what would happen if you were"
+831,businesses,1,0.101,Uncategorized Lexicon,"lost businesses, you've lost deals, you've lost job interviews because you had filler"
+832,deals,1,0.101,Uncategorized Lexicon,"lost businesses, you've lost deals, you've lost job interviews because you had filler"
+833,possibly,1,0.101,Uncategorized Lexicon,"sounds. Absolutely certain of it because people viewed you as being afraid, nervous, possibly"
+834,politicians,1,0.101,Uncategorized Lexicon,filler sounds. They're a dead giveaway. Listen to politicians and famous people when they
+835,famous,1,0.101,Uncategorized Lexicon,filler sounds. They're a dead giveaway. Listen to politicians and famous people when they
+836,demonstration,1,0.101,Uncategorized Lexicon,"Before I give you the technique, I'm going to give you a demonstration."
+837,proverb,1,0.101,Uncategorized Lexicon,I'm going to say a rhetorical proverb from Greece.
+838,greece,1,0.101,Uncategorized Lexicon,I'm going to say a rhetorical proverb from Greece.
+839,versions,1,0.101,Uncategorized Lexicon,Which of these three versions of this one do you like the best?
+840,slaps,1,0.101,Uncategorized Lexicon,"My coach comes in and slaps me over the head and says,"
+841,emphasis,1,0.101,Uncategorized Lexicon,"hey, yeah, yeah, yeah, emphasis is good, pace is a little bit too fast, the volume is good,"
+842,nailed,1,0.101,Uncategorized Lexicon,"The first one I saw you lost interest, but the second one I had you nailed, I had you"
+843,habit,1,0.101,Uncategorized Lexicon,"So many people are afraid of the pause, or they have a habit of using the filler sound,"
+844,age,1,0.101,Uncategorized Lexicon,We've got an average age of like something like 14 here.
+845,14,1,0.101,Uncategorized Lexicon,We've got an average age of like something like 14 here.
+846,productive,1,0.101,Uncategorized Lexicon,of productive years out there.
+847,beher,1,0.101,Uncategorized Lexicon,"every time you feel that sensation of going beher,"
+848,master,1,0.101,Uncategorized Lexicon,I wanna show you a master of voice.
+849,blown,1,0.101,Uncategorized Lexicon,but if you ever wanna be like blown away
+850,everybody,1,0.101,Uncategorized Lexicon,that everybody else had as well.
+851,notebooks,1,0.101,Uncategorized Lexicon,"Well, as you know, Apple makes the best notebooks"
+852,pro,1,0.101,Uncategorized Lexicon,"on the planet, the MacBook and the MacBook Pro."
+853,standards,1,0.101,Uncategorized Lexicon,These are the standards in the industry
+854,industry,1,0.101,Uncategorized Lexicon,These are the standards in the industry
+855,competitive,1,0.101,Uncategorized Lexicon,by which competitive products are judged.
+856,introducing,1,0.101,Uncategorized Lexicon,"Well today, we're introducing a third kind of notebook."
+857,notebook,1,0.101,Uncategorized Lexicon,"Well today, we're introducing a third kind of notebook."
+858,fricking,1,0.101,Uncategorized Lexicon,with such a voice usage that is fricking poetic
+859,poetic,1,0.101,Uncategorized Lexicon,with such a voice usage that is fricking poetic
+860,service,1,0.101,Uncategorized Lexicon,Same thing with your service and your product.
+861,nah,1,0.101,Uncategorized Lexicon,Nah.
+862,flying,1,0.101,Uncategorized Lexicon,I had an executive flying from the US to Sweden
+863,behavior,1,0.101,Uncategorized Lexicon,"And in order to remove any bad behavior,"
+864,he'd,1,0.101,Uncategorized Lexicon,He'd been sent there by his boss.
+865,tortured,1,0.101,Uncategorized Lexicon,I tortured him.
+866,assistant,1,0.101,Uncategorized Lexicon,I asked my assistant to edit out every phyllis sound
+867,edit,1,0.101,Uncategorized Lexicon,I asked my assistant to edit out every phyllis sound
+868,file,1,0.101,Uncategorized Lexicon,Every phyllis sound from one hour video into an audio file.
+869,agreed,1,0.101,Uncategorized Lexicon,"And I'm like, we agreed, man, you go in,"
+870,sits,1,0.101,Uncategorized Lexicon,And he goes in and he sits there and he's gut wrenching.
+871,gut,1,0.101,Uncategorized Lexicon,And he goes in and he sits there and he's gut wrenching.
+872,wrenching,1,0.101,Uncategorized Lexicon,And he goes in and he sits there and he's gut wrenching.
+873,nightmares,1,0.101,Uncategorized Lexicon,"I still think he, he's literally dreaming nightmares"
+874,orange,1,0.101,Uncategorized Lexicon,"voice, we're moving into this orange field. Oh, and yeah, and we're going to move into"
+875,field,1,0.101,Uncategorized Lexicon,"voice, we're moving into this orange field. Oh, and yeah, and we're going to move into"
+876,cover,1,0.101,Uncategorized Lexicon,"Number three is, hmm, we'll cover three later because it's the best one."
+877,clarify,1,0.101,Uncategorized Lexicon,"Number three is, you know, so you use your hands to clarify what's being said."
+878,98,1,0.101,Uncategorized Lexicon,2%. It's another 98% gain.
+879,huh,1,0.101,Uncategorized Lexicon,Huh? What?
+880,reverse,1,0.101,Uncategorized Lexicon,I'm going to use my body language in reverse.
+881,tuned,1,0.101,Uncategorized Lexicon,Stay tuned.
+882,arguments,1,0.101,Uncategorized Lexicon,"learn public speaking, people will truly enjoy what you do. They will listen to your arguments,"
+883,jump,1,0.101,Uncategorized Lexicon,they'll jump off joy. The beautiful thing with this is that you are special and you
+884,joy,1,0.101,Uncategorized Lexicon,they'll jump off joy. The beautiful thing with this is that you are special and you
+885,especially,1,0.101,Uncategorized Lexicon,"should definitely learn this my friend, especially you. Sorry for the last one there, but again,"
+886,negative,1,0.101,Uncategorized Lexicon,"Because your impression was negative, but every single word I said, my facial expression,"
+887,correctly,1,0.101,Uncategorized Lexicon,So if you are not aware of the gestures you do and if you don't do them correctly
+888,missed,1,0.101,Uncategorized Lexicon,You've missed out tumble dryers are people who have this
+889,dryers,1,0.101,Uncategorized Lexicon,You've missed out tumble dryers are people who have this
+890,sunday,1,0.101,Uncategorized Lexicon,"I went on YouTube one day, one Sunday,"
+891,stumble,1,0.101,Uncategorized Lexicon,"and I just stumble over this guy,"
+892,drawn,1,0.101,Uncategorized Lexicon,I hope you haven't drawn the last quickie
+893,flat,1,0.101,Uncategorized Lexicon,where I have talked about flat pull stavuation in SQL Server.
+894,pull,1,0.101,Uncategorized Lexicon,where I have talked about flat pull stavuation in SQL Server.
+895,stavuation,1,0.101,Uncategorized Lexicon,where I have talked about flat pull stavuation in SQL Server.
+896,completely,1,0.101,Uncategorized Lexicon,This SQL Server QUIK was recorded in a completely new high quality format
+897,foundation,1,0.101,Uncategorized Lexicon,and this format is not a foundation of all subsequent SQL Server QUIKIs
+898,subsequent,1,0.101,Uncategorized Lexicon,and this format is not a foundation of all subsequent SQL Server QUIKIs
+899,quikis,1,0.101,Uncategorized Lexicon,and this format is not a foundation of all subsequent SQL Server QUIKIs
+900,23,1,0.101,Uncategorized Lexicon,23 minutes in a public bathroom doing the tumble dryer.
+901,bathroom,1,0.101,Uncategorized Lexicon,23 minutes in a public bathroom doing the tumble dryer.
+902,horrific,1,0.101,Uncategorized Lexicon,"It's horrific. You have no idea what he says. Like, can you please repeat what he said?"
+903,46,1,0.101,Uncategorized Lexicon,"got this one up. In the resource pack, I want you to open up and have a look at 45, 46, 47, 48,"
+904,48,1,0.101,Uncategorized Lexicon,"got this one up. In the resource pack, I want you to open up and have a look at 45, 46, 47, 48,"
+905,49,1,0.101,Uncategorized Lexicon,49 and 50. So literally from 45 to 50 are the specific techniques of how to use gestures in
+906,specific,1,0.101,Uncategorized Lexicon,49 and 50. So literally from 45 to 50 are the specific techniques of how to use gestures in
+907,various,1,0.101,Uncategorized Lexicon,"but there's various ways of using gestures like distinct smoothness, amplification, adjusted speed"
+908,smoothness,1,0.101,Uncategorized Lexicon,"but there's various ways of using gestures like distinct smoothness, amplification, adjusted speed"
+909,amplification,1,0.101,Uncategorized Lexicon,"but there's various ways of using gestures like distinct smoothness, amplification, adjusted speed"
+910,adjusted,1,0.101,Uncategorized Lexicon,"but there's various ways of using gestures like distinct smoothness, amplification, adjusted speed"
+911,itself,1,0.101,Uncategorized Lexicon,"and so on and so forth. So it's a, as you understand, it's a language in itself, right?"
+912,granted,1,0.101,Uncategorized Lexicon,"Using gestures. You can't just take them for granted. So have a look at one of your videos,"
+913,passed,1,0.101,Uncategorized Lexicon,"I think we've actually passed seven now, haven't we?"
+914,porsus,1,0.101,Uncategorized Lexicon,We did Philosounds and we did Porsus.
+915,purple,1,0.101,Uncategorized Lexicon,"and eight, all these purple ones are what are called ultimate skills."
+916,disliked,1,0.101,Uncategorized Lexicon,"It is, have you ever walked into a room and immediately disliked a person?"
+917,fell,1,0.101,Uncategorized Lexicon,"Have you ever walked into a room and literally just starting to speak to a person, you fell"
+918,likability,1,0.101,Uncategorized Lexicon,"was that the people we fall in love with, the people that have high likability, the people that we,"
+919,tonality,1,0.101,Uncategorized Lexicon,write this down. What they say is said with the same kind of tonality. So the words match their
+920,layer,1,0.101,Uncategorized Lexicon,voice. The third layer is that their face matches what they said and their voice.
+921,layers,1,0.101,Uncategorized Lexicon,"So the next time you meet a person like this, you will notice that all of these five layers are"
+922,bed,1,0.101,Uncategorized Lexicon,"in synchronicity. So the opposite is if you imagine that you're in bed and your partner says,"
+923,lack,1,0.101,Uncategorized Lexicon,Because the lack of synchronism that is so freaking bad.
+924,synchronism,1,0.101,Uncategorized Lexicon,Because the lack of synchronism that is so freaking bad.
+925,strive,1,0.101,Uncategorized Lexicon,"So, what to strive for in life is to achieve"
+926,fields,1,0.101,Uncategorized Lexicon,synchronicity in all of these five fields.
+927,seem,1,0.101,Uncategorized Lexicon,"if you often get misunderstood, if people don't seem to be one,"
+928,desire,1,0.101,Uncategorized Lexicon,"like they don't desire to be in your presence,"
+929,presence,1,0.101,Uncategorized Lexicon,"like they don't desire to be in your presence,"
+930,synchronousness,1,0.101,Uncategorized Lexicon,it could be because you're out of synchronousness.
+931,twenty,1,0.101,Uncategorized Lexicon,"Literally, it's one out of twenty people who have a full dynamic facial expression."
+932,options,1,0.101,Uncategorized Lexicon,"options. Either you do this by yourself. Like you go to YouTube, you read books,"
+933,books,1,0.101,Uncategorized Lexicon,"options. Either you do this by yourself. Like you go to YouTube, you read books,"
+934,journey,1,0.101,Uncategorized Lexicon,Your journey will go from this long to this long.
+935,period,1,0.101,Uncategorized Lexicon,You will learn the same amount in this short period of time
+936,starter,1,0.101,Uncategorized Lexicon,"By now, you've got a starter pack of practical tools"
+937,knowledge,1,0.101,Uncategorized Lexicon,"and knowledge in terms of hacking your mindset,"
+938,terms,1,0.101,Uncategorized Lexicon,"and knowledge in terms of hacking your mindset,"
+939,hacking,1,0.101,Uncategorized Lexicon,"and knowledge in terms of hacking your mindset,"
+940,spicing,1,0.101,Uncategorized Lexicon,"spicing your presentations,"
+941,optimizing,1,0.101,Uncategorized Lexicon,and optimizing your voice and body language.
+942,hopefully,1,0.101,Uncategorized Lexicon,Hopefully your mind has been opened up
+943,inspired,1,0.101,Uncategorized Lexicon,"You've taken notes, you've been inspired,"
+944,regularly,1,0.101,Uncategorized Lexicon,when you practice regularly and challenge yourself.
+945,blueprint,1,0.101,Uncategorized Lexicon,inside the speaking blueprint.
+946,courses,1,0.101,Uncategorized Lexicon,It's a school forum community with all of my courses
+947,program,1,0.101,Uncategorized Lexicon,"the turbo program, high on live, and the communication code,"
+948,code,1,0.101,Uncategorized Lexicon,"the turbo program, high on live, and the communication code,"
+949,extensive,1,0.101,Uncategorized Lexicon,which is an extensive or a three level video course
+950,150,1,0.101,Uncategorized Lexicon,with over 150 instructional videos and exercises.
+951,instructional,1,0.101,Uncategorized Lexicon,with over 150 instructional videos and exercises.
+952,unlock,1,0.101,Uncategorized Lexicon,It's only when you challenge yourself that you unlock the greatest opportunities to grow as a person and in this case as a communicator.
+953,opportunities,1,0.101,Uncategorized Lexicon,It's only when you challenge yourself that you unlock the greatest opportunities to grow as a person and in this case as a communicator.
+954,communicator,1,0.101,Uncategorized Lexicon,It's only when you challenge yourself that you unlock the greatest opportunities to grow as a person and in this case as a communicator.
+955,programs,1,0.101,Uncategorized Lexicon,"And if you watch this far, we can both agree. This is for you. So do get signed up. It's not one of those programs that cost you thousands of dollars."
+956,cost,1,0.101,Uncategorized Lexicon,"And if you watch this far, we can both agree. This is for you. So do get signed up. It's not one of those programs that cost you thousands of dollars."
+957,tiny,1,0.101,Uncategorized Lexicon,It's a tiny entrance fee and you're going to become part of a supporter community where you challenge yourself.
+958,entrance,1,0.101,Uncategorized Lexicon,It's a tiny entrance fee and you're going to become part of a supporter community where you challenge yourself.
+959,fee,1,0.101,Uncategorized Lexicon,It's a tiny entrance fee and you're going to become part of a supporter community where you challenge yourself.
+960,supporter,1,0.101,Uncategorized Lexicon,It's a tiny entrance fee and you're going to become part of a supporter community where you challenge yourself.
+961,commit,1,0.101,Uncategorized Lexicon,"If you learn from others and you'll share your wins and I promise you this, if you commit"
+962,comments,1,0.101,Uncategorized Lexicon,"If you've got any questions at all, leave them in the comments below and if you are"
+963,cheers,1,0.101,Uncategorized Lexicon,and I'll see you on day one. Cheers!

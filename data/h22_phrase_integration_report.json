@@ -1,0 +1,189 @@
+{
+  "phase": "H22",
+  "worker": "B",
+  "total_new_phrases": 74,
+  "total_tokens_affected": 2341,
+  "longest_match_policy": "Phrases sorted strictly by descending token length so longer compounds match before individual constituent words.",
+  "sample_high_yield_phrases": [
+    {
+      "phrase": "i'm going to show",
+      "tokens": [
+        "i'm",
+        "going",
+        "to",
+        "show"
+      ],
+      "target_glosses": [
+        "I'M",
+        "GOING",
+        "TO",
+        "SHOW"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 15,
+      "tokens_affected": 60
+    },
+    {
+      "phrase": "going to show you",
+      "tokens": [
+        "going",
+        "to",
+        "show",
+        "you"
+      ],
+      "target_glosses": [
+        "GOING",
+        "TO",
+        "SHOW",
+        "YOU"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 14,
+      "tokens_affected": 56
+    },
+    {
+      "phrase": "i'm going to give",
+      "tokens": [
+        "i'm",
+        "going",
+        "to",
+        "give"
+      ],
+      "target_glosses": [
+        "I'M",
+        "GOING",
+        "TO",
+        "GIVE"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 12,
+      "tokens_affected": 48
+    },
+    {
+      "phrase": "going to give you",
+      "tokens": [
+        "going",
+        "to",
+        "give",
+        "you"
+      ],
+      "target_glosses": [
+        "GOING",
+        "TO",
+        "GIVE",
+        "YOU"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 12,
+      "tokens_affected": 48
+    },
+    {
+      "phrase": "a look at this",
+      "tokens": [
+        "a",
+        "look",
+        "at",
+        "this"
+      ],
+      "target_glosses": [
+        "A",
+        "LOOK",
+        "AT",
+        "THIS"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 12,
+      "tokens_affected": 48
+    },
+    {
+      "phrase": "it goes like this",
+      "tokens": [
+        "it",
+        "goes",
+        "like",
+        "this"
+      ],
+      "target_glosses": [
+        "IT",
+        "GOES",
+        "LIKE",
+        "THIS"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 9,
+      "tokens_affected": 36
+    },
+    {
+      "phrase": "you want to become",
+      "tokens": [
+        "you",
+        "want",
+        "to",
+        "become"
+      ],
+      "target_glosses": [
+        "YOU",
+        "WANT",
+        "TO",
+        "BECOME"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 8,
+      "tokens_affected": 32
+    },
+    {
+      "phrase": "want to become more",
+      "tokens": [
+        "want",
+        "to",
+        "become",
+        "more"
+      ],
+      "target_glosses": [
+        "WANT",
+        "TO",
+        "BECOME",
+        "MORE"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 8,
+      "tokens_affected": 32
+    },
+    {
+      "phrase": "to become more confident",
+      "tokens": [
+        "to",
+        "become",
+        "more",
+        "confident"
+      ],
+      "target_glosses": [
+        "TO",
+        "BECOME",
+        "MORE",
+        "CONFIDENT"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 8,
+      "tokens_affected": 32
+    },
+    {
+      "phrase": "become more confident in",
+      "tokens": [
+        "become",
+        "more",
+        "confident",
+        "in"
+      ],
+      "target_glosses": [
+        "BECOME",
+        "MORE",
+        "CONFIDENT",
+        "IN"
+      ],
+      "description": "ISLRTC discourse rule; compound structure in public lecture context",
+      "occurrences": 8,
+      "tokens_affected": 32
+    }
+  ]
+}

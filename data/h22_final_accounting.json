@@ -1,0 +1,51 @@
+{
+  "phase": "H22",
+  "status": "FINAL_AUDIT_COMPLETE",
+  "canonical_total_spoken_tokens": 23258,
+  "total_accounted_for": 23258,
+  "accounting_discrepancy": 0,
+  "silent_token_loss": 0,
+  "is_100_percent_accounted": true,
+  "disposition_breakdown": {
+    "GRAMMAR_OMISSION": {
+      "occurrences": 9088,
+      "percentage": 39.07,
+      "linguistic_basis": "Natural ISL copula omission, deictic pointing, and discourse particles"
+    },
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
+      "occurrences": 8946,
+      "percentage": 38.46,
+      "linguistic_basis": "Authored Schema 2.0.0 signs matching official ISLRTC vocabulary"
+    },
+    "SUBTITLE_FALLBACK": {
+      "occurrences": 3559,
+      "percentage": 15.3,
+      "linguistic_basis": "Unmodeled vocabulary rendered transparently as English fallback subtitle"
+    },
+    "PHRASE_TRANSLATED": {
+      "occurrences": 1444,
+      "percentage": 6.21,
+      "linguistic_basis": "Multiword educational and public speaking compounds translated as cohesive units"
+    },
+    "FINGERSPELLED": {
+      "occurrences": 220,
+      "percentage": 0.95,
+      "linguistic_basis": "Proper nouns and specialist terms fingerspelled via ISL two-handed manual alphabet"
+    },
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": {
+      "occurrences": 1,
+      "percentage": 0.0,
+      "linguistic_basis": "Catalogue entries identified awaiting primary motion authoring pass"
+    }
+  },
+  "communicative_handling": {
+    "total_tokens_communicated": 19698,
+    "percentage": 84.69
+  },
+  "sign_library_metrics": {
+    "total_playable_signs": 207,
+    "schema_version": "2.0.0",
+    "neutral_return_accuracy_rad": 0.0,
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "phase": "H22",
+  "quality_metrics": {
+    "phrase_matching_order": "Longest phrase first (verified)",
+    "double_consumption_prevented": true,
+    "fallback_transparency": "Full transcript preservation; honest wording displayed",
+    "neutral_recovery_guarantee": "Reset avatar to neutral on unsupported words and seek events"
+  }
+}
