@@ -1,0 +1,38 @@
+{
+  "phase": "H20",
+  "target_corpus": "MXKkXXYUxBc",
+  "canonical_spoken_tokens": 23258,
+  "audit_findings": {
+    "discrepancy_identified": "H19 report table omitted DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING (243 tokens)",
+    "omitted_category": "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING",
+    "omitted_token_count": 243,
+    "h19_table_sum_without_category": 23015,
+    "verified_sum_with_category": 23258,
+    "percentage_reconciled": 100.0,
+    "token_loss": 0
+  },
+  "disposition_breakdown": {
+    "GRAMMAR_OMISSION": 9096,
+    "PHRASE_TRANSLATED": 1415,
+    "SUBTITLE_FALLBACK": 3627,
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 8885,
+    "FINGERSPELLED": 220,
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 15
+  },
+  "disposition_percentages": {
+    "GRAMMAR_OMISSION": 39.11,
+    "PHRASE_TRANSLATED": 6.08,
+    "SUBTITLE_FALLBACK": 15.59,
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 38.2,
+    "FINGERSPELLED": 0.95,
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 0.06
+  },
+  "h19_candidates_audit": {
+    "total_concepts_processed": 250,
+    "unique_concepts": 250,
+    "duplicate_count": 0,
+    "checkpoints_verified": 5,
+    "checkpoint_concepts_total": 250
+  },
+  "reconciliation_status": "EXACT_MATHEMATICAL_RECONCILIATION_VERIFIED"
+}

@@ -162,7 +162,15 @@ PLAYABLE_SIGNS = {
     "system",
     "lesson",
     "camera",
-    "screen"
+    "screen",
+    # Phase H19 High-Impact Lexical Signs
+    "other", "six", "seven", "should", "long", "left", "next", "slide",
+    "add", "room", "off", "new", "pick", "case", "keep", "team", "catch",
+    "dead", "later", "mine",
+    # Phase H20 High-Impact Lexical Signs
+    "base", "volume", "point", "matter", "structure", "communication",
+    "paper", "board", "hope", "bond", "combination", "resource", "range",
+    "fine", "somewhere"
 }
 
 # Structural ISL Function Words (Grammar Omissions)
@@ -334,6 +342,18 @@ LEMMA_MAP = {
     "command": "lead", "stuff": "thing", "suddenly": "fast",
     "delivers": "give", "delivered": "give", "focuses": "attention", "focused": "attention",
     "stories": "story", "repeating": "more", "repeated": "more",
+    # Phase H20 Synonyms, Inflections & Lexical Equivalences
+    "storyteller": "story", "storytellers": "story", "podium": "stage", "podiums": "stage",
+    "whiteboard": "board", "whiteboards": "board", "notes": "paper",
+    "points": "point", "pointed": "point", "pointing": "point",
+    "matters": "matter", "mattered": "matter", "mattering": "matter",
+    "structures": "structure", "structured": "structure", "structuring": "structure",
+    "communications": "communication", "papers": "paper", "boards": "board",
+    "hopes": "hope", "hoped": "hope", "hoping": "hope",
+    "bonds": "bond", "bonded": "bond", "bonding": "bond",
+    "combinations": "combination", "resources": "resource", "ranges": "range",
+    "bases": "base", "volumes": "volume",
+
     # Contractions mapping
     "you'll": "will", "haven't": "not", "we've": "have", "isn't": "not",
     "didn't": "not", "doesn't": "not", "wasn't": "not", "couldn't": "not",

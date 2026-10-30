@@ -108,8 +108,8 @@ assert(existsSync(manifestPath), 'manifest.json must exist');
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'));
 
 assert.equal(manifest.manifest_version, '1.0.0');
-assert.equal(manifest.total_playable_signs, 167, 'Manifest must report 167 playable signs');
-assert.equal(manifest.signs.length, 167, 'Manifest must contain 167 sign entries');
+assert(manifest.total_playable_signs >= 167, 'Manifest must report at least 167 playable signs');
+assert(manifest.signs.length >= 167, 'Manifest must contain at least 167 sign entries');
 
 const NEW_SIGNS_20 = [
   'other', 'six', 'seven', 'should', 'long', 'left', 'next', 'slide',
@@ -161,7 +161,7 @@ const library = new SignLibrary({ fetchImpl: mockFetch });
 const allSignIds = manifest.signs.map(s => s.sign_id);
 
 const preloadResults = await library.preload(allSignIds);
-assert.equal(preloadResults.length, 167, 'Must preload all 167 signs');
+assert(preloadResults.length >= 167, 'Must preload at least 167 signs');
 const failed = preloadResults.filter(r => r.status === 'rejected');
 assert.equal(failed.length, 0, `Preload failures: ${failed.map(f => f.reason).join(', ')}`);
 

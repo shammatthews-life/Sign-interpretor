@@ -1,0 +1,10 @@
+{
+  "phase": "H20",
+  "inflection_rules_audited": {
+    "plural_nouns": "Preserve root lexical sign; plurality indexed spatially or via number morpheme",
+    "past_participles": "Omit English -ed affix; time indicator (FINISH / BEFORE) establishes tense",
+    "progressive_aspect": "Continuous movement / repetition of root verb",
+    "contractions": "Unpack into explicit modal / negation / pronoun constituents"
+  },
+  "audited_inflections_count": 48
+}

@@ -1,0 +1,316 @@
+{
+  "phase": "H20",
+  "recommended_new_phrases": [
+    {
+      "phrase": "this is",
+      "token_count": 2,
+      "occurrences": 98,
+      "total_tokens_affected": 196,
+      "target_glosses": [
+        "THIS"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: this is"
+    },
+    {
+      "phrase": "if you",
+      "token_count": 2,
+      "occurrences": 87,
+      "total_tokens_affected": 174,
+      "target_glosses": [
+        "IF",
+        "YOU"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: if you"
+    },
+    {
+      "phrase": "going to",
+      "token_count": 2,
+      "occurrences": 85,
+      "total_tokens_affected": 170,
+      "target_glosses": [
+        "GOING"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: going to"
+    },
+    {
+      "phrase": "look at",
+      "token_count": 2,
+      "occurrences": 82,
+      "total_tokens_affected": 164,
+      "target_glosses": [
+        "LOOK",
+        "AT"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: look at"
+    },
+    {
+      "phrase": "have a",
+      "token_count": 2,
+      "occurrences": 69,
+      "total_tokens_affected": 138,
+      "target_glosses": [
+        "HAVE"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: have a"
+    },
+    {
+      "phrase": "and i",
+      "token_count": 2,
+      "occurrences": 68,
+      "total_tokens_affected": 136,
+      "target_glosses": [
+        "AND",
+        "I"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: and i"
+    },
+    {
+      "phrase": "want to",
+      "token_count": 2,
+      "occurrences": 65,
+      "total_tokens_affected": 130,
+      "target_glosses": [
+        "WANT"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: want to"
+    },
+    {
+      "phrase": "you have",
+      "token_count": 2,
+      "occurrences": 64,
+      "total_tokens_affected": 128,
+      "target_glosses": [
+        "YOU",
+        "HAVE"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: you have"
+    },
+    {
+      "phrase": "in the",
+      "token_count": 2,
+      "occurrences": 61,
+      "total_tokens_affected": 122,
+      "target_glosses": [
+        "IN"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: in the"
+    },
+    {
+      "phrase": "i want",
+      "token_count": 2,
+      "occurrences": 58,
+      "total_tokens_affected": 116,
+      "target_glosses": [
+        "I",
+        "WANT"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: i want"
+    },
+    {
+      "phrase": "you can",
+      "token_count": 2,
+      "occurrences": 57,
+      "total_tokens_affected": 114,
+      "target_glosses": [
+        "YOU",
+        "CAN"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: you can"
+    },
+    {
+      "phrase": "that you",
+      "token_count": 2,
+      "occurrences": 50,
+      "total_tokens_affected": 100,
+      "target_glosses": [
+        "THAT",
+        "YOU"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: that you"
+    },
+    {
+      "phrase": "like this",
+      "token_count": 2,
+      "occurrences": 49,
+      "total_tokens_affected": 98,
+      "target_glosses": [
+        "LIKE",
+        "THIS"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: like this"
+    },
+    {
+      "phrase": "and then",
+      "token_count": 2,
+      "occurrences": 49,
+      "total_tokens_affected": 98,
+      "target_glosses": [
+        "AND",
+        "THEN"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: and then"
+    },
+    {
+      "phrase": "do you",
+      "token_count": 2,
+      "occurrences": 48,
+      "total_tokens_affected": 96,
+      "target_glosses": [
+        "DO",
+        "YOU"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: do you"
+    },
+    {
+      "phrase": "and you",
+      "token_count": 2,
+      "occurrences": 48,
+      "total_tokens_affected": 96,
+      "target_glosses": [
+        "AND",
+        "YOU"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: and you"
+    },
+    {
+      "phrase": "give you",
+      "token_count": 2,
+      "occurrences": 46,
+      "total_tokens_affected": 92,
+      "target_glosses": [
+        "GIVE",
+        "YOU"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: give you"
+    },
+    {
+      "phrase": "you are",
+      "token_count": 2,
+      "occurrences": 46,
+      "total_tokens_affected": 92,
+      "target_glosses": [
+        "YOU"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: you are"
+    },
+    {
+      "phrase": "when you",
+      "token_count": 2,
+      "occurrences": 44,
+      "total_tokens_affected": 88,
+      "target_glosses": [
+        "WHEN",
+        "YOU"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: when you"
+    },
+    {
+      "phrase": "you to",
+      "token_count": 2,
+      "occurrences": 43,
+      "total_tokens_affected": 86,
+      "target_glosses": [
+        "YOU"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: you to"
+    },
+    {
+      "phrase": "to the",
+      "token_count": 2,
+      "occurrences": 42,
+      "total_tokens_affected": 84,
+      "target_glosses": [
+        "TO"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: to the"
+    },
+    {
+      "phrase": "to be",
+      "token_count": 2,
+      "occurrences": 42,
+      "total_tokens_affected": 84,
+      "target_glosses": [
+        "BE"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: to be"
+    },
+    {
+      "phrase": "that is",
+      "token_count": 2,
+      "occurrences": 42,
+      "total_tokens_affected": 84,
+      "target_glosses": [
+        "THAT"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: that is"
+    },
+    {
+      "phrase": "and the",
+      "token_count": 2,
+      "occurrences": 40,
+      "total_tokens_affected": 80,
+      "target_glosses": [
+        "AND"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: and the"
+    },
+    {
+      "phrase": "i'm going",
+      "token_count": 2,
+      "occurrences": 40,
+      "total_tokens_affected": 80,
+      "target_glosses": [
+        "I'M",
+        "GOING"
+      ],
+      "semantic_category": "Discourse / Academic Expression",
+      "linguistic_note": "Spoken phrase construct in lecture discourse: i'm going"
+    }
+  ],
+  "recommended_synonyms": [
+    {
+      "source": "storyteller",
+      "target": "story",
+      "rationale": "Agentive derivation of STORY"
+    },
+    {
+      "source": "podium",
+      "target": "stage",
+      "rationale": "Spatial presentation platform locus"
+    },
+    {
+      "source": "whiteboard",
+      "target": "board",
+      "rationale": "Visual instructional board"
+    },
+    {
+      "source": "notes",
+      "target": "paper",
+      "rationale": "Physical lecture notes on paper"
+    }
+  ]
+}
