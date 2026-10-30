@@ -1040,7 +1040,7 @@
         signPlayer = new SignAnimationPlayer(fbx, bonesMap, HandRig);
         try {
           signLibrary = new SignLibrary();
-          const preload = await signLibrary.preload(['hello', 'good', 'morning', 'water', 'you', 'i', 'what', 'not', 'how', 'your', 'my', 'have', 'want', 'look', 'see', 'go', 'do', 'people', 'one', 'when', 'now', 'more', 'like', 'can', 'know', 'think', 'say', 'time', 'give', 'we', 'they', 'will', 'two', 'yes', 'no', 'come', 'learn', 'help', 'need', 'drink', 'work', 'friend', 'name', 'head', 'hand', 'idea', 'book']);
+          const preload = await signLibrary.preload(["action", "answer", "ask", "attention", "bad", "beautiful", "body", "book", "brain", "build", "call", "camera", "can", "challenge", "change", "class", "clean", "clear", "come", "computer", "confident", "dark", "different", "do", "doctor", "drink", "easy", "eat", "eye", "fast", "fear", "feel", "find", "finish", "fire", "first", "flower", "friend", "gesture", "give", "go", "good", "great", "hand", "happy", "hard", "have", "head", "hear", "heart", "hello", "help", "high", "hold", "how", "i", "idea", "imagine", "important", "know", "learn", "lesson", "level", "life", "light", "like", "look", "lose", "love", "mean", "meet", "mind", "mindset", "minute", "more", "morning", "move", "music", "my", "name", "need", "no", "not", "now", "number", "one", "open", "pace", "people", "phone", "picture", "practice", "presentation", "problem", "public", "put", "question", "read", "ready", "remember", "same", "say", "school", "screen", "second", "see", "share", "show", "skill", "slow", "small", "sound", "stage", "stand", "story", "study", "system", "teacher", "tell", "they", "think", "time", "today", "tree", "true", "try", "two", "understand", "video", "voice", "walk", "want", "water", "we", "week", "what", "when", "will", "win", "work", "world", "write", "wrong", "year", "yes", "you", "your"]);
           const failed = preload.filter(item => item.status === 'rejected');
           if (failed.length) throw failed[0].reason;
           const hello = signLibrary.getPlayable('hello', bonesMap);
@@ -1048,7 +1048,7 @@
           document.getElementById('sign-scrubber').max = hello.duration_ms;
           document.getElementById('txt-total-duration').textContent = hello.duration_ms + ' ms';
           signScheduler = new SignScheduler(signPlayer, signLibrary, bonesMap, renderQueueState, event => { playbackTimings.push(event); renderTiming(); });
-          setSequenceStatus('Library preloaded: 47 ISL signs (HELLO, GOOD, MORNING, WATER, YOU, I, WHAT, NOT, HOW, YOUR, MY, HAVE, WANT, LOOK, SEE, GO, DO, PEOPLE, ONE, WHEN, NOW, MORE, LIKE, CAN, KNOW, THINK, SAY, TIME, GIVE, WE, THEY, WILL, TWO, YES, NO, COME, LEARN, HELP, NEED, DRINK, WORK, FRIEND, NAME, HEAD, HAND, IDEA, BOOK) are playable.');
+          setSequenceStatus('Library preloaded: 147 ISL signs across 147 verified Schema 2.0.0 assets are playable.');
           console.log('[ISL Library] Preloaded:', preload.map(item => item.id).join(', '));
         } catch (err) {
           setSequenceStatus(`Library error: ${err.message}`, true);

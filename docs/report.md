@@ -576,3 +576,41 @@ Authored and integrated 10 high-frequency academic, medical, and everyday signs:
 - [`tools/validate_phase_h17_complete_corpus.mjs`](../tools/validate_phase_h17_complete_corpus.mjs): **5/5 PASS**.
 - Zero regressions across prior validation suites (`validate_phase_h16_bulk_expansion.mjs`, `validate_phase_h15_corpus_lexicon.mjs`, `validate_phase_h14_visual_and_extension.mjs`, `validate_phase_h13_motion_and_subtitle.mjs`, `validate_phase_h8_extension_youtube.mjs`, `validate_sign_library.py`).
 - `git diff --check`: 0 errors, clean working tree.
+
+---
+---
+
+## U. Phase H18 100-Concept High-Throughput ISL Vocabulary Expansion Report
+
+Documented in detail in [`docs/h18_100_concept_expansion.md`](h18_100_concept_expansion.md).
+
+### 1. High-Throughput Evidence-Grounded Scaling (+100 Signs)
+Executed a high-throughput, evidence-supported vocabulary expansion across the canonical 23,258-token lecture transcript (`MXKkXXYUxBc`), tripling the playable sign library from **47 signs to 147 playable Schema 2.0.0 signs**:
+- **Total Spoken Tokens:** **23,258 / 23,258 (100.0%)** accounted for with **0 silent token loss**.
+- **Playable Sign Occurrences:** Increased from 6,752 (29.03%) to **8,393 occurrences (36.09%)** (+1,641 tokens).
+- **Communicative Coverage:** Reached **18,253 tokens (78.48%)** (+1,126 tokens over H17).
+- **Subtitle Fallback Pool:** Reduced from 6,015 (25.86%) to **4,987 occurrences (21.44%)** (-1,028 tokens).
+- **Official ISLRTC Evidence:** Documented in [`data/h18_dictionary_evidence.json`](../data/h18_dictionary_evidence.json) across Academic, Everyday, Technical, and Medical domains.
+
+### 2. Candidate Selection & Kinematic Authoring
+Selected 100 high-frequency content words divided into 5 balanced groups of 20:
+- **Group 1 (1–20):** `skill`, `confident`, `show`, `video`, `life`, `second`, `walk`, `question`, `ask`, `level`, `beautiful`, `stage`, `attention`, `voice`, `year`, `pace`, `love`, `first`, `imagine`, `story`.
+- **Group 2 (21–40):** `sound`, `write`, `hear`, `feel`, `minute`, `mean`, `call`, `world`, `put`, `public`, `important`, `gesture`, `stand`, `mindset`, `music`, `challenge`, `practice`, `brain`, `number`, `answer`.
+- **Group 3 (41–60):** `same`, `different`, `fire`, `week`, `move`, `lose`, `presentation`, `today`, `remember`, `small`, `try`, `bad`, `high`, `find`, `study`, `change`, `body`, `action`, `great`, `tell`.
+- **Group 4 (61–80):** `build`, `fast`, `hold`, `eye`, `clear`, `fear`, `share`, `happy`, `open`, `picture`, `teacher`, `class`, `understand`, `meet`, `heart`, `ready`, `win`, `problem`, `easy`, `hard`.
+- **Group 5 (81–100):** `true`, `wrong`, `clean`, `light`, `dark`, `slow`, `finish`, `school`, `read`, `phone`, `computer`, `doctor`, `eat`, `tree`, `flower`, `mind`, `system`, `lesson`, `camera`, `screen`.
+- **Kinematic Constraints:** Strict Schema 2.0.0 compliance; all 147 signs start and return to exact neutral rotation `{ x: 0, y: 0, z: 0 }`; coordinated dual-arm and head-contact bone channels.
+
+### 3. Verification & Validation Suite
+- **Phase H18 Suite:** [`tools/validate_phase_h18_100_concept_expansion.mjs`](../tools/validate_phase_h18_100_concept_expansion.mjs): **5/5 PASS**.
+- **Sign Library Manifest:** [`signs/manifest.json`](../signs/manifest.json) verified with 147 playable signs.
+- **Avatar Viewer Preload:** Updated [`tools/avatar_viewer/index.html`](../tools/avatar_viewer/index.html) and `EnglishToISLTranslator.js` with all 147 signs and inflections.
+- **Zero Regressions:** All existing validation suites pass cleanly:
+  - `tools/validate_phase_h17_complete_corpus.mjs`: **5/5 PASS**
+  - `tools/validate_phase_h16_bulk_expansion.mjs`: **4/4 PASS**
+  - `tools/validate_phase_h15_corpus_lexicon.mjs`: **5/5 PASS**
+  - `tools/validate_phase_h14_visual_and_extension.mjs`: **7/7 PASS**
+  - `tools/validate_phase_h13_motion_and_subtitle.mjs`: **5/5 PASS**
+  - `tools/validate_phase_h8_extension_youtube.mjs`: **PASS**
+  - `tools/validate_sign_library.py`: **PASS**
+  - `git diff --check`: 0 errors.
