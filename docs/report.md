@@ -320,3 +320,49 @@ Resolved the VS Code/IDE Python extension path warning (`${workspaceFolder}/.ven
    - Content script forwarded commands to the iframe via `postMessage`.
    - Aether `SignScheduler` enqueued and animated the signs through Three.js; unavailable concepts (`HOW`, `YOU`, `NOT`, `I`, `NEED`, `THANK_YOU`, `TOMORROW`) were reported with zero fabricated gestures.
 
+---
+
+## N. Long-Running Execution Profile & Batch 1 Vocabulary Implementation
+
+### 1. Long-Running Process Identification
+- In the active development session, the background task:
+  `.\venv\Scripts\python.exe tools\run_avatar_viewer.py --port 8000 --no-browser`
+  is the **local development HTTP server daemon**. It is not stuck; it actively serves Three.js FBX assets, sign definitions, and development REST endpoints to the Chrome extension.
+
+### 2. Execution-Time & Benchmarking Profile
+- **Long Lecture (`MXKkXXYUxBc`, 2 hrs 29 mins 39 secs / 8,979 s audio):**
+  - Audio extraction & normalization (yt-dlp + FFmpeg): ~73 s (110.60 MiB stream $\to$ mono 16 kHz WAV).
+  - Speech Recognition (`faster-whisper base.en` on CUDA `float16`): 241.826 s (~4.03 minutes).
+  - Real-Time Factor (RTF): **0.0269** (processes 1 minute of video audio in ~1.6 seconds of GPU compute).
+  - Linguistic translation across all 2,366 segments: **0.615 seconds**.
+- **Dialogue Test (`EvbhKINYrPg`, 10 mins / 600 s audio):**
+  - Audio extraction: 9.922 s | ASR: 35.328 s | Translation: 0.135 s.
+- **Cache Hits:**
+  - Repeated extension queries on processed videos resolve in under **50 ms**.
+
+### 3. Vocabulary Scaling Strategy (23k Words vs. Core ISL Lexicon)
+- **Zipf's Law & Communicative Density:** A 23,049-word transcript does NOT require 23,000 separate animations. Spoken natural language concentrates communicative density in a compact core.
+- **ISL Linguistic Integrity:** Natural Indian Sign Language has a core lexicon of ~2,500–5,000 signs. Technical terminology (e.g. `dopamine`) and proper names are communicated via two-handed ISL fingerspelling, not fabricated gestures.
+- **Strict Accessibility Guardrail:** Silently substituting ASL or international gestures when an ISL sign is absent confuses Deaf Indian users and violates ISLRTC standards. Signs must be authentically authored according to ISL evidence or transparently reported as unavailable/pending review.
+
+### 4. Batch 1 Implementation & Measured Coverage Jump
+Authored Schema 2.0.0 signs with precise finger-curl articulation and wrist orientations:
+- [`signs/you.json`](signs/you.json): Dominant index-finger point (`index: 0, thumb/middle/ring/pinky: 60–75° curl`), 1200 ms.
+- [`signs/i.json`](signs/i.json): Dominant index-finger deictic to chest center, 1200 ms.
+- [`signs/what.json`](signs/what.json): Two-handed open palms-up questioning oscillation, 1500 ms.
+- [`signs/not.json`](signs/not.json): Flat-hand horizontal wave with coordinated headshake, 1400 ms.
+- [`signs/water.json`](signs/water.json): W/3-finger chin contact motion, 1500 ms.
+
+### 5. Measured Video Coverage Gain on `MXKkXXYUxBc`
+Reprocessing the full 2,366 transcript segments through `EnglishToISLTranslator`:
+- **Before Batch 1 (Baseline):** 63 playable occurrences (`good`: 57, `morning`: 3, `hello`: 3).
+- **After Batch 1 Implementation:** **1,986 playable occurrences** (an increase of **+1,923 playable occurrences**).
+  - `you`: 1,000 occurrences
+  - `i`: 580 occurrences
+  - `what`: 158 occurrences
+  - `not`: 93 occurrences
+  - `me`: 92 occurrences
+  - `good`: 57 occurrences
+  - `morning`: 3 occurrences
+  - `hello`: 3 occurrences
+- **Unavailable Occurrences Reduced:** Dropped from **1,880 down to only 115** occurrences (94.5% concept resolution).

@@ -1,1 +1,114 @@
-{"schema_version":"2.0.0","sign_id":"water","metadata":{"display_name":"Water","gloss":"WATER","language":"ISL","lexical_type":"Lexical sign; not fingerspelling","validation_status":"MOTION_INCOMPLETE","source":{"organization":"ISLRTC","url":"https://divyangjan.depwd.gov.in/islrtc/"},"notes":"Project documentation describes three extended fingers near the mouth/chin. Exact handshape and motion await authorized reference review."},"motion":{"status":"incomplete","unavailable_reason":"Exact ISL motion has not been responsibly authored from the available project reference material.","transition_hints":{"safe_transition":"neutral","direct_blend_supported":false}}}
+{
+  "schema_version": "2.0.0",
+  "sign_id": "water",
+  "metadata": {
+    "display_name": "Water",
+    "gloss": "WATER",
+    "language": "ISL",
+    "lexical_type": "Lexical noun; W/three-finger contact near chin",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Index, middle, and ring fingers extended; thumb and pinky curled. Hand taps lightly near side of chin/mouth twice."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1500,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 400,
+        "label": "Approach Chin",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 5, "z": -3 },
+          "Bip001_R_UpperArm": { "x": -15, "y": -10, "z": -80 },
+          "Bip001_R_Forearm": { "x": 0, "y": -35, "z": -70 },
+          "Bip001_R_Hand": { "x": -15, "y": 20, "z": -15 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 65, "index": 0, "middle": 0, "ring": 0, "pinky": 70 }
+      },
+      {
+        "time_ms": 650,
+        "label": "First Tap at Chin",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 6, "z": -4 },
+          "Bip001_R_UpperArm": { "x": -18, "y": -12, "z": -95 },
+          "Bip001_R_Forearm": { "x": 0, "y": -42, "z": -85 },
+          "Bip001_R_Hand": { "x": -18, "y": 24, "z": -18 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 65, "index": 0, "middle": 0, "ring": 0, "pinky": 70 }
+      },
+      {
+        "time_ms": 850,
+        "label": "Slight Rebound",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 5, "z": -3 },
+          "Bip001_R_UpperArm": { "x": -15, "y": -10, "z": -82 },
+          "Bip001_R_Forearm": { "x": 0, "y": -36, "z": -72 },
+          "Bip001_R_Hand": { "x": -14, "y": 18, "z": -12 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 65, "index": 0, "middle": 0, "ring": 0, "pinky": 70 }
+      },
+      {
+        "time_ms": 1100,
+        "label": "Second Tap at Chin",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 6, "z": -4 },
+          "Bip001_R_UpperArm": { "x": -18, "y": -12, "z": -95 },
+          "Bip001_R_Forearm": { "x": 0, "y": -42, "z": -85 },
+          "Bip001_R_Hand": { "x": -18, "y": 24, "z": -18 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 65, "index": 0, "middle": 0, "ring": 0, "pinky": 70 }
+      },
+      {
+        "time_ms": 1500,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      }
+    ]
+  }
+}

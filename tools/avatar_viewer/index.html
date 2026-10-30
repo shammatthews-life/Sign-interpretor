@@ -1040,7 +1040,7 @@
         signPlayer = new SignAnimationPlayer(fbx, bonesMap, HandRig);
         try {
           signLibrary = new SignLibrary();
-          const preload = await signLibrary.preload(['hello', 'good', 'morning', 'water']);
+          const preload = await signLibrary.preload(['hello', 'good', 'morning', 'water', 'you', 'i', 'what', 'not']);
           const failed = preload.filter(item => item.status === 'rejected');
           if (failed.length) throw failed[0].reason;
           const hello = signLibrary.getPlayable('hello', bonesMap);
@@ -1048,7 +1048,7 @@
           document.getElementById('sign-scrubber').max = hello.duration_ms;
           document.getElementById('txt-total-duration').textContent = hello.duration_ms + ' ms';
           signScheduler = new SignScheduler(signPlayer, signLibrary, bonesMap, renderQueueState, event => { playbackTimings.push(event); renderTiming(); });
-          setSequenceStatus('Library preloaded: HELLO, GOOD (Sign 1), and MORNING (Sign 1) are playable; WATER remains unavailable.');
+          setSequenceStatus('Library preloaded: HELLO, GOOD, MORNING, WATER, YOU, I, WHAT, and NOT are playable.');
           console.log('[ISL Library] Preloaded:', preload.map(item => item.id).join(', '));
         } catch (err) {
           setSequenceStatus(`Library error: ${err.message}`, true);

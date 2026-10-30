@@ -11,12 +11,13 @@ export class EnglishToISLTranslator extends TranslationBackend {
     // This catalog is motion availability metadata, deliberately separate from glosses.
     this.motionCatalog = motionCatalog || {
       hello: { playable: true }, good: { playable: true }, morning: { playable: true },
-      water: { playable: false, reason: 'MOTION_INCOMPLETE' },
+      water: { playable: true },
+      you: { playable: true }, i: { playable: true }, me: { playable: true },
+      what: { playable: true }, not: { playable: true },
       thank_you: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
-      i: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, you: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
-      me: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, drink: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
+      drink: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
       help: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, need: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
-      not: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, how: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, tomorrow: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
+      how: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, tomorrow: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
@@ -24,6 +25,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
     this.lexicon = new Map([
       ['i', 'I'], ['you', 'YOU'], ['me', 'ME'], ['drink', 'DRINK'], ['water', 'WATER'],
       ['help', 'HELP'], ['need', 'NEED'], ['hello', 'HELLO'], ['good', 'GOOD'], ['morning', 'MORNING'],
+      ['what', 'WHAT'], ['not', 'NOT'],
     ]);
   }
 

@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "i",
+  "metadata": {
+    "display_name": "I",
+    "gloss": "I",
+    "language": "ISL",
+    "lexical_type": "Deictic pronoun; index-finger pointing to chest",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant index finger points inward to center chest. Thumb, middle, ring, pinky curled."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1200,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 300,
+        "label": "Curl Hand & Lift",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 3, "z": -2 },
+          "Bip001_R_UpperArm": { "x": -10, "y": -15, "z": -35 },
+          "Bip001_R_Forearm": { "x": 0, "y": -40, "z": -50 },
+          "Bip001_R_Hand": { "x": -5, "y": 15, "z": -20 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 60, "index": 0, "middle": 75, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 600,
+        "label": "Point to Chest Center",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": -12, "y": -25, "z": -40 },
+          "Bip001_R_Forearm": { "x": 0, "y": -65, "z": -75 },
+          "Bip001_R_Hand": { "x": -15, "y": 25, "z": -30 },
+          "Bip001_Head": { "x": 5, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 60, "index": 0, "middle": 75, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 900,
+        "label": "Hold Contact & Release",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 3, "z": -2 },
+          "Bip001_R_UpperArm": { "x": -8, "y": -18, "z": -30 },
+          "Bip001_R_Forearm": { "x": 0, "y": -45, "z": -50 },
+          "Bip001_R_Hand": { "x": -8, "y": 18, "z": -15 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 60, "index": 0, "middle": 75, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 1200,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      }
+    ]
+  }
+}
