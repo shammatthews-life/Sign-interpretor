@@ -261,7 +261,12 @@ const fullH24VocabSet = new Set([
   'conference', 'door', 'break', 'road', 'full',
   'past', 'worth', 'ten', 'setting', 'expectation',
   'server', 'simply', 'cannot', 'dollar', 'deep',
-  'phenomenal', 'record', 'buy', 'breathe', 'billion'
+  'phenomenal', 'record', 'buy', 'breathe', 'billion',
+  // Batch 13 (20)
+  'laugh', 'soul', 'meal', 'follow', 'fair',
+  'statistics', 'nose', 'self', 'angel', 'math',
+  'insane', 'goosebumps', 'pointless', 'misunderstand', 'tilt',
+  'spend', 'perceive', 'upon', 'fan', 'decide'
 ]);
 
 const tStart = performance.now();

@@ -3,8 +3,8 @@
   "schema_version": "2.0.0",
   "generated_at": "2026-10-31T03:30:00Z",
   "phase": "H24",
-  "total_signs": 460,
-  "total_playable_signs": 460,
+  "total_signs": 480,
+  "total_playable_signs": 480,
   "signs": [
     {
       "sign_id": "ability",
@@ -224,6 +224,23 @@
         "url": "https://divyangjan.depwd.gov.in/islrtc/"
       },
       "file_name": "analyze.json",
+      "involved_bones_count": 7,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "angel",
+      "display_name": "Angel",
+      "gloss": "ANGEL",
+      "lexical_type": "ISL Lexical Sign (Symbolic / Winged Figure Noun)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "angel.json",
       "involved_bones_count": 7,
       "keyframe_count": 5
     },
@@ -1724,6 +1741,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "decide",
+      "display_name": "Decide",
+      "gloss": "DECIDE",
+      "lexical_type": "ISL Lexical Sign (Cognition / Choice Verb)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "decide.json",
+      "involved_bones_count": 7,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "decision",
       "display_name": "Decision",
       "gloss": "DECISION",
@@ -2319,6 +2353,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "fair",
+      "display_name": "Fair",
+      "gloss": "FAIR",
+      "lexical_type": "ISL Lexical Sign (Justice / Equality Adjective)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "fair.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "fall",
       "display_name": "Fall",
       "gloss": "FALL",
@@ -2333,6 +2384,23 @@
       },
       "file_name": "fall.json",
       "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "fan",
+      "display_name": "Fan",
+      "gloss": "FAN",
+      "lexical_type": "ISL Lexical Sign (Device / Supporter Noun)",
+      "duration_ms": 1250,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "fan.json",
+      "involved_bones_count": 4,
       "keyframe_count": 5
     },
     {
@@ -2642,6 +2710,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "follow",
+      "display_name": "Follow",
+      "gloss": "FOLLOW",
+      "lexical_type": "ISL Lexical Sign (Direction / Motion Verb)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "follow.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "football",
       "display_name": "Football",
       "gloss": "FOOTBALL",
@@ -2913,6 +2998,23 @@
       "file_name": "good.json",
       "involved_bones_count": 19,
       "keyframe_count": 7
+    },
+    {
+      "sign_id": "goosebumps",
+      "display_name": "Goosebumps",
+      "gloss": "GOOSEBUMPS",
+      "lexical_type": "ISL Lexical Sign (Sensation / Physiological Noun)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "goosebumps.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
     },
     {
       "sign_id": "great",
@@ -3476,6 +3578,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "insane",
+      "display_name": "Insane",
+      "gloss": "INSANE",
+      "lexical_type": "ISL Lexical Sign (Psychological / State Adjective)",
+      "duration_ms": 1250,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "insane.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "instance",
       "display_name": "Instance",
       "gloss": "INSTANCE",
@@ -3609,6 +3728,23 @@
       },
       "file_name": "later.json",
       "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "laugh",
+      "display_name": "Laugh",
+      "gloss": "LAUGH",
+      "lexical_type": "ISL Lexical Sign (Emotion / Expression Verb)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "laugh.json",
+      "involved_bones_count": 7,
       "keyframe_count": 5
     },
     {
@@ -4071,6 +4207,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "math",
+      "display_name": "Math",
+      "gloss": "MATH",
+      "lexical_type": "ISL Lexical Sign (Academic / Science Noun)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "math.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "maths",
       "display_name": "Maths",
       "gloss": "MATHS",
@@ -4103,6 +4256,23 @@
       "file_name": "matter.json",
       "involved_bones_count": 9,
       "keyframe_count": 4
+    },
+    {
+      "sign_id": "meal",
+      "display_name": "Meal",
+      "gloss": "MEAL",
+      "lexical_type": "ISL Lexical Sign (Food / Dining Noun)",
+      "duration_ms": 1250,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "meal.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
     },
     {
       "sign_id": "mean",
@@ -4289,6 +4459,23 @@
       },
       "file_name": "minute.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "misunderstand",
+      "display_name": "Misunderstand",
+      "gloss": "MISUNDERSTAND",
+      "lexical_type": "ISL Lexical Sign (Cognition / Confusion Verb)",
+      "duration_ms": 1300,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "misunderstand.json",
+      "involved_bones_count": 4,
       "keyframe_count": 5
     },
     {
@@ -4596,6 +4783,23 @@
       },
       "file_name": "normal.json",
       "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "nose",
+      "display_name": "Nose",
+      "gloss": "NOSE",
+      "lexical_type": "ISL Lexical Sign (Anatomy / Facial Noun)",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "nose.json",
+      "involved_bones_count": 4,
       "keyframe_count": 5
     },
     {
@@ -5024,6 +5228,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "perceive",
+      "display_name": "Perceive",
+      "gloss": "PERCEIVE",
+      "lexical_type": "ISL Lexical Sign (Sensation / Cognition Verb)",
+      "duration_ms": 1300,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "perceive.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "perfect",
       "display_name": "Perfect",
       "gloss": "PERFECT",
@@ -5192,6 +5413,23 @@
       "file_name": "point.json",
       "involved_bones_count": 5,
       "keyframe_count": 4
+    },
+    {
+      "sign_id": "pointless",
+      "display_name": "Pointless",
+      "gloss": "POINTLESS",
+      "lexical_type": "ISL Lexical Sign (Futility / Quality Adjective)",
+      "duration_ms": 1250,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "pointless.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
     },
     {
       "sign_id": "positive",
@@ -5976,6 +6214,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "self",
+      "display_name": "Self",
+      "gloss": "SELF",
+      "lexical_type": "ISL Lexical Sign (Identity / Reflexive Pronoun)",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "self.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "sell",
       "display_name": "Sell",
       "gloss": "SELL",
@@ -6520,6 +6775,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "soul",
+      "display_name": "Soul",
+      "gloss": "SOUL",
+      "lexical_type": "ISL Lexical Sign (Spiritual / Inner Core Noun)",
+      "duration_ms": 1300,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "soul.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "sound",
       "display_name": "Sound",
       "gloss": "SOUND",
@@ -6605,6 +6877,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "spend",
+      "display_name": "Spend",
+      "gloss": "SPEND",
+      "lexical_type": "ISL Lexical Sign (Commerce / Expenditure Verb)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "spend.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "spice",
       "display_name": "Spice",
       "gloss": "SPICE",
@@ -6653,6 +6942,23 @@
       },
       "file_name": "stand.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "statistics",
+      "display_name": "Statistics",
+      "gloss": "STATISTICS",
+      "lexical_type": "ISL Lexical Sign (Analytics / Numerical Data Noun)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "statistics.json",
+      "involved_bones_count": 6,
       "keyframe_count": 5
     },
     {
@@ -7013,6 +7319,23 @@
       "keyframe_count": 4
     },
     {
+      "sign_id": "tilt",
+      "display_name": "Tilt",
+      "gloss": "TILT",
+      "lexical_type": "ISL Lexical Sign (Orientation / Posture Verb)",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "tilt.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "time",
       "display_name": "Time",
       "gloss": "TIME",
@@ -7315,6 +7638,23 @@
         "url": "https://divyangjan.depwd.gov.in/islrtc/"
       },
       "file_name": "united.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "upon",
+      "display_name": "Upon",
+      "gloss": "UPON",
+      "lexical_type": "ISL Lexical Sign (Spatial / Position Preposition)",
+      "duration_ms": 1200,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "upon.json",
       "involved_bones_count": 6,
       "keyframe_count": 5
     },
