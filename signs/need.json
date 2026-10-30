@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "need",
+  "metadata": {
+    "display_name": "Need",
+    "gloss": "NEED",
+    "language": "ISL",
+    "lexical_type": "Modal of necessity; dominant bent index hook flexing downward firmly twice",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant hand forms a bent index finger (X-handshape), flexing firmly downward from wrist twice at mid-torso level, indicating necessity or obligation."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1150,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 300,
+        "label": "First Downward Flex",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": -8,
+            "y": -6,
+            "z": -40
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -22,
+            "z": -65
+          },
+          "Bip001_R_Hand": {
+            "x": -22,
+            "y": 12,
+            "z": -10
+          },
+          "Bip001_Head": {
+            "x": 3,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 65,
+          "index": 55,
+          "middle": 80,
+          "ring": 80,
+          "pinky": 80
+        }
+      },
+      {
+        "time_ms": 550,
+        "label": "Rebound Upward",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": -8,
+            "y": -6,
+            "z": -38
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -20,
+            "z": -58
+          },
+          "Bip001_R_Hand": {
+            "x": 5,
+            "y": 10,
+            "z": -5
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 65,
+          "index": 55,
+          "middle": 80,
+          "ring": 80,
+          "pinky": 80
+        }
+      },
+      {
+        "time_ms": 800,
+        "label": "Second Downward Flex",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": -8,
+            "y": -6,
+            "z": -40
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -22,
+            "z": -65
+          },
+          "Bip001_R_Hand": {
+            "x": -22,
+            "y": 12,
+            "z": -10
+          },
+          "Bip001_Head": {
+            "x": 3,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 65,
+          "index": 55,
+          "middle": 80,
+          "ring": 80,
+          "pinky": 80
+        }
+      },
+      {
+        "time_ms": 1150,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

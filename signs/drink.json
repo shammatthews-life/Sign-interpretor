@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "drink",
+  "metadata": {
+    "display_name": "Drink",
+    "gloss": "DRINK",
+    "language": "ISL",
+    "lexical_type": "Ingestion verb; dominant C-handshape tilted toward mouth as if holding a cup",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant hand forms a curved C-handshape mimicking holding a small cup or glass, lifting and tilting upward toward the mouth twice."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1200,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 400,
+        "label": "Tilt C-Hand Toward Mouth",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 5,
+            "z": -3
+          },
+          "Bip001_R_UpperArm": {
+            "x": 5,
+            "y": 18,
+            "z": -65
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -40,
+            "z": -90
+          },
+          "Bip001_R_Hand": {
+            "x": -20,
+            "y": 25,
+            "z": -15
+          },
+          "Bip001_Head": {
+            "x": -4,
+            "y": 2,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 35,
+          "index": 45,
+          "middle": 45,
+          "ring": 45,
+          "pinky": 45
+        }
+      },
+      {
+        "time_ms": 750,
+        "label": "Slight Lower",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 12,
+            "z": -55
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -30,
+            "z": -75
+          },
+          "Bip001_R_Hand": {
+            "x": -10,
+            "y": 18,
+            "z": -10
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 35,
+          "index": 45,
+          "middle": 45,
+          "ring": 45,
+          "pinky": 45
+        }
+      },
+      {
+        "time_ms": 950,
+        "label": "Second Tilt Toward Mouth",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 5,
+            "z": -3
+          },
+          "Bip001_R_UpperArm": {
+            "x": 5,
+            "y": 18,
+            "z": -65
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -40,
+            "z": -90
+          },
+          "Bip001_R_Hand": {
+            "x": -20,
+            "y": 25,
+            "z": -15
+          },
+          "Bip001_Head": {
+            "x": -4,
+            "y": 2,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 35,
+          "index": 45,
+          "middle": 45,
+          "ring": 45,
+          "pinky": 45
+        }
+      },
+      {
+        "time_ms": 1200,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

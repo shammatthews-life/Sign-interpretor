@@ -3491,16 +3491,16 @@
         4097.52
       ]
     ],
-    "semantic_category": "Medical",
+    "semantic_category": "Everyday",
     "dictionary_match": true,
     "dictionary_entry": "Head",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "head",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "those",
@@ -5218,11 +5218,11 @@
     "dictionary_entry": "Friend",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "friend",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "seven",
@@ -5287,16 +5287,16 @@
         2245.44
       ]
     ],
-    "semantic_category": "Legal and administrative",
+    "semantic_category": "Everyday",
     "dictionary_match": true,
     "dictionary_entry": "Name",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "name",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "you_see",
@@ -5768,16 +5768,16 @@
         1922.25
       ]
     ],
-    "semantic_category": "Medical",
+    "semantic_category": "Everyday",
     "dictionary_match": true,
     "dictionary_entry": "Hand",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "hand",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "left",
@@ -7294,11 +7294,11 @@
     "dictionary_entry": "Need",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "need",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "stuff",
@@ -9626,16 +9626,16 @@
         6551.61
       ]
     ],
-    "semantic_category": "Academic",
+    "semantic_category": "Everyday",
     "dictionary_match": true,
     "dictionary_entry": "Idea",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "idea",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "friday",
@@ -11422,16 +11422,16 @@
         997.9
       ]
     ],
-    "semantic_category": "Academic",
+    "semantic_category": "Everyday",
     "dictionary_match": true,
     "dictionary_entry": "Book",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "book",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "per",
@@ -12833,11 +12833,11 @@
     "dictionary_entry": "Help",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "help",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "steps",
@@ -13092,11 +13092,11 @@
     "dictionary_entry": "Work",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "work",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "matter",
@@ -43805,11 +43805,11 @@
     "dictionary_entry": "Drink",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "drink",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "bold",

@@ -57,7 +57,9 @@ PLAYABLE_SIGNS = {
     "go", "do", "people", "one", "when", "now", "more",
     # Batch 4 signs (Phase H16 bulk expansion)
     "like", "can", "know", "think", "say", "time", "give", "we", "they",
-    "will", "two", "yes", "no", "come", "learn"
+    "will", "two", "yes", "no", "come", "learn",
+    # Batch 5 signs (Phase H17 full vocabulary consolidation)
+    "help", "need", "drink", "work", "friend", "name", "head", "hand", "idea", "book"
 }
 
 # Structural ISL Function Words (Grammar Omissions)

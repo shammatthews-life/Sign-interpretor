@@ -1,0 +1,192 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "head",
+  "metadata": {
+    "display_name": "Head",
+    "gloss": "HEAD",
+    "language": "ISL",
+    "lexical_type": "Anatomical noun; dominant flat hand touching temple and jaw area",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant flat hand gently touches the right side of the forehead/temple, then moves down slightly to touch the upper jaw/temple region, delineating the head."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1150,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 350,
+        "label": "Touch Temple",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 6,
+            "z": -4
+          },
+          "Bip001_R_UpperArm": {
+            "x": 12,
+            "y": 25,
+            "z": -75
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -40,
+            "z": -100
+          },
+          "Bip001_R_Hand": {
+            "x": 15,
+            "y": -15,
+            "z": 10
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 3,
+            "z": -2
+          }
+        },
+        "finger_curls": {
+          "thumb": 15,
+          "index": 10,
+          "middle": 10,
+          "ring": 10,
+          "pinky": 10
+        }
+      },
+      {
+        "time_ms": 750,
+        "label": "Touch Side of Head",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 5,
+            "z": -3
+          },
+          "Bip001_R_UpperArm": {
+            "x": 8,
+            "y": 20,
+            "z": -70
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -35,
+            "z": -90
+          },
+          "Bip001_R_Hand": {
+            "x": 10,
+            "y": -10,
+            "z": 8
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 2,
+            "z": -1
+          }
+        },
+        "finger_curls": {
+          "thumb": 15,
+          "index": 10,
+          "middle": 10,
+          "ring": 10,
+          "pinky": 10
+        }
+      },
+      {
+        "time_ms": 1150,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

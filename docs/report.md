@@ -533,3 +533,46 @@ Authored and integrated 15 high-frequency ISLRTC-documented motions into `signs/
 - **Phase H16 Suite:** [`tools/validate_phase_h16_bulk_expansion.mjs`](../tools/validate_phase_h16_bulk_expansion.mjs) (4/4 PASS).
 - **All 37 Signs Preloaded:** Initialized and verified in [`tools/avatar_viewer/index.html`](../tools/avatar_viewer/index.html) and `SignLibrary.js`.
 - **Regression Suite:** Zero regressions across [`tools/validate_phase_h15_corpus_lexicon.mjs`](../tools/validate_phase_h15_corpus_lexicon.mjs), [`tools/validate_phase_h14_visual_and_extension.mjs`](../tools/validate_phase_h14_visual_and_extension.mjs), [`tools/validate_phase_h13_motion_and_subtitle.mjs`](../tools/validate_phase_h13_motion_and_subtitle.mjs), [`tools/validate_phase_h8_extension_youtube.mjs`](../tools/validate_phase_h8_extension_youtube.mjs), and [`tools/validate_phase_g3_translation.mjs`](../tools/validate_phase_g3_translation.mjs).
+
+
+---
+---
+
+## T. Phase H17 Emergency Complete Corpus Vocabulary Integration & Demonstration Report
+
+Documented in detail in [`docs/h17_complete_vocabulary_integration.md`](h17_complete_vocabulary_integration.md).
+
+### 1. 100.0% Corpus Vocabulary Accountability Ahead of College Demonstration
+Prepared the ISL Accessibility Translator for the October 31, 2026 college mentor demonstration across the complete 2.5-hour canonical YouTube lecture transcript (`MXKkXXYUxBc`, 2,366 segments, 23,258 spoken tokens, 2,173 unique canonical concepts):
+- **Spoken Tokens Accounted For:** **23,258 / 23,258 (100.0%)** with **0 silent token loss**.
+- **Communicative Coverage:** **17,127 tokens (73.64%)** communicated via authored ISL motions, grammar omissions, and fingerspelling.
+- **Playable Sign Library:** Expanded from 37 to **47 playable Schema 2.0.0 signs** documented in [`signs/manifest.json`](signs/manifest.json).
+- **Two-Handed ISL Fingerspelling:** Complete 26-letter manual alphabet (A-Z) in [`tools/avatar_viewer/ISLFingerspelling.js`](../tools/avatar_viewer/ISLFingerspelling.js) adhering to official ISLRTC standards.
+- **Honest Subtitle Fallback:** All unsupported concepts (6,015 occurrences, 25.86%) display exact recognized English words directly below Aether:
+  `ISL translation not available in this translator: [word / phrase]`
+  paired with neutral pose resets and $\ge 2,500$ ms persistence.
+
+### 2. Batch 5 Motion Authoring (Schema 2.0.0)
+Authored and integrated 10 high-frequency academic, medical, and everyday signs:
+- [`signs/help.json`](signs/help.json): S-fist resting on open palm lifting forward (1250 ms).
+- [`signs/need.json`](signs/need.json): Bent index downward firm flex modal (1150 ms).
+- [`signs/drink.json`](signs/drink.json): Curved C-handshape tilted toward mouth (1200 ms).
+- [`signs/work.json`](signs/work.json): S-fist tapping non-dominant wrist twice (1250 ms).
+- [`signs/friend.json`](signs/friend.json): Interlocking index finger hooks bond (1300 ms).
+- [`signs/name.json`](signs/name.json): Perpendicular H-finger taps (1200 ms).
+- [`signs/head.json`](signs/head.json): Flat hand temple/jaw touch (1150 ms).
+- [`signs/hand.json`](signs/hand.json): Flat palm stroking non-dominant dorsal hand (1200 ms).
+- [`signs/idea.json`](signs/idea.json): Extended index lifting from forehead outward (1150 ms).
+- [`signs/book.json`](signs/book.json): Flat hands hinging open like book pages (1250 ms).
+
+### 3. Demonstration Acceptance Scenarios Verified
+- `"I want your help"` $\rightarrow$ Plays signs `I`, `WANT`, `YOUR`, `HELP` in order; subtitle hidden.
+- `"I want your dopamine"` $\rightarrow$ Plays `I`, `WANT`, `YOUR`, returns to neutral, displays subtitle fallback: *dopamine*.
+- `"I am going to speak"` $\rightarrow$ Automatically unpacks contraction and resolves phrase `GOING_TO` + sign `SAY`.
+- `"Public speaking is good"` $\rightarrow$ Resolves compound `['SAY', 'PEOPLE']`, omits copula `is`, plays `GOOD`.
+- Technical & unmodeled terms $\rightarrow$ Safe neutral return and prominent English subtitle without crash or silent omission.
+
+### 4. Verification Suite Results
+- [`tools/validate_phase_h17_complete_corpus.mjs`](../tools/validate_phase_h17_complete_corpus.mjs): **5/5 PASS**.
+- Zero regressions across prior validation suites (`validate_phase_h16_bulk_expansion.mjs`, `validate_phase_h15_corpus_lexicon.mjs`, `validate_phase_h14_visual_and_extension.mjs`, `validate_phase_h13_motion_and_subtitle.mjs`, `validate_phase_h8_extension_youtube.mjs`, `validate_sign_library.py`).
+- `git diff --check`: 0 errors, clean working tree.

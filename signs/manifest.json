@@ -1,0 +1,808 @@
+{
+  "manifest_version": "1.0.0",
+  "total_playable_signs": 47,
+  "authoring_standard": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+  "signs": [
+    {
+      "sign_id": "book",
+      "display_name": "Book",
+      "gloss": "BOOK",
+      "lexical_type": "Educational noun; flat hands together hinging open at pinky side like a book",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "book.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "can",
+      "display_name": "Can",
+      "gloss": "CAN",
+      "lexical_type": "Modal auxiliary; dominant S-fist downward firm nod from wrist and elbow",
+      "duration_ms": 1100,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "can.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "come",
+      "display_name": "Come",
+      "gloss": "COME",
+      "lexical_type": "Directional motion verb; supinated open hand curling inward toward torso",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "come.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "do",
+      "display_name": "Do",
+      "gloss": "DO",
+      "lexical_type": "Action verb; two hands with curved palms facing down swiveling symmetrically",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "do.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "drink",
+      "display_name": "Drink",
+      "gloss": "DRINK",
+      "lexical_type": "Ingestion verb; dominant C-handshape tilted toward mouth as if holding a cup",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "drink.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "friend",
+      "display_name": "Friend",
+      "gloss": "FRIEND",
+      "lexical_type": "Social relationship noun; index fingers hooked together in interlocking bond",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "friend.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "give",
+      "display_name": "Give",
+      "gloss": "GIVE",
+      "lexical_type": "Transfer verb; dominant curved palm starting near chest extending forward",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "give.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "go",
+      "display_name": "Go",
+      "gloss": "GO",
+      "lexical_type": "Directional movement verb; index finger moving outward in an arc away from body",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "go.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "good",
+      "display_name": "Good",
+      "gloss": "GOOD",
+      "lexical_type": "Lexical sign (thumb and index joined in circle, remaining three fingers extended open, compact back-and-forth movement); not fingerspelling",
+      "duration_ms": 1700,
+      "dominant_hand": "right",
+      "validation_status": "TECHNICALLY_PLAYABLE",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://www.youtube.com/watch?v=aQEJlg8RhXQ",
+        "entry": "good (sign 1)"
+      },
+      "file_name": "good.json",
+      "involved_bones_count": 19,
+      "keyframe_count": 7
+    },
+    {
+      "sign_id": "hand",
+      "display_name": "Hand",
+      "gloss": "HAND",
+      "lexical_type": "Anatomical noun; dominant flat hand stroking back of non-dominant hand",
+      "duration_ms": 1200,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "hand.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 4
+    },
+    {
+      "sign_id": "have",
+      "display_name": "Have",
+      "gloss": "HAVE",
+      "lexical_type": "Possessive verb; two-handed curved handshape contacting torso",
+      "duration_ms": 1400,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "have.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "head",
+      "display_name": "Head",
+      "gloss": "HEAD",
+      "lexical_type": "Anatomical noun; dominant flat hand touching temple and jaw area",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "head.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 4
+    },
+    {
+      "sign_id": "hello",
+      "display_name": "Hello",
+      "gloss": "HELLO",
+      "lexical_type": "Lexical greeting; not fingerspelling",
+      "duration_ms": 2000,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "hello.json",
+      "involved_bones_count": 10,
+      "keyframe_count": 7
+    },
+    {
+      "sign_id": "help",
+      "display_name": "Help",
+      "gloss": "HELP",
+      "lexical_type": "Supportive transfer verb; dominant S-fist resting on non-dominant open palm lifting forward",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "help.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "how",
+      "display_name": "How",
+      "gloss": "HOW",
+      "lexical_type": "Wh-question sign; two-handed curved handshape outward rotation",
+      "duration_ms": 1400,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "how.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "i",
+      "display_name": "I",
+      "gloss": "I",
+      "lexical_type": "Deictic pronoun; index-finger pointing to chest",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "i.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "idea",
+      "display_name": "Idea",
+      "gloss": "IDEA",
+      "lexical_type": "Cognitive spark noun; dominant extended index lifting from forehead outward",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "idea.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "know",
+      "display_name": "Know",
+      "gloss": "KNOW",
+      "lexical_type": "Cognitive stative verb; bent hand fingertips tapping right temple",
+      "duration_ms": 1250,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "know.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 6
+    },
+    {
+      "sign_id": "learn",
+      "display_name": "Learn",
+      "gloss": "LEARN",
+      "lexical_type": "Cognitive acquisition verb; taking knowledge from open palm to forehead",
+      "duration_ms": 1350,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "learn.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "like",
+      "display_name": "Like",
+      "gloss": "LIKE",
+      "lexical_type": "Affective experiential verb; thumb and middle finger drawing forward from chest in subtle pinch",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "like.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "look",
+      "display_name": "Look",
+      "gloss": "LOOK",
+      "lexical_type": "Directional visual verb; V-handshape pointing toward visual target",
+      "duration_ms": 1300,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "look.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "more",
+      "display_name": "More",
+      "gloss": "MORE",
+      "lexical_type": "Quantitative modifier; two tapered hands tapping fingertips together at midline",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "more.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 6
+    },
+    {
+      "sign_id": "morning",
+      "display_name": "Morning",
+      "gloss": "MORNING",
+      "lexical_type": "Lexical sign (rising sun / iconic dawn upward motion with flat B-handshape); not fingerspelling",
+      "duration_ms": 1800,
+      "dominant_hand": "right",
+      "validation_status": "TECHNICALLY_PLAYABLE",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/",
+        "entry": "morning (sign 1)"
+      },
+      "file_name": "morning.json",
+      "involved_bones_count": 20,
+      "keyframe_count": 6
+    },
+    {
+      "sign_id": "my",
+      "display_name": "My",
+      "gloss": "MY",
+      "lexical_type": "Possessive pronoun; flat B-handshape contacting chest",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "my.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "name",
+      "display_name": "Name",
+      "gloss": "NAME",
+      "lexical_type": "Identity noun; dominant H-fingers tapping non-dominant H-fingers perpendicularly twice",
+      "duration_ms": 1200,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "name.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "need",
+      "display_name": "Need",
+      "gloss": "NEED",
+      "lexical_type": "Modal of necessity; dominant bent index hook flexing downward firmly twice",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "need.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "no",
+      "display_name": "No",
+      "gloss": "NO",
+      "lexical_type": "Negative response particle; index and middle finger closing firmly onto thumb",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "no.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "not",
+      "display_name": "Not",
+      "gloss": "NOT",
+      "lexical_type": "Negation particle; flat-hand wave with non-manual headshake",
+      "duration_ms": 1400,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "not.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "now",
+      "display_name": "Now",
+      "gloss": "NOW",
+      "lexical_type": "Temporal deictic; both hands dropping downward firmly in front of torso",
+      "duration_ms": 1200,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "now.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "one",
+      "display_name": "One",
+      "gloss": "ONE",
+      "lexical_type": "Numeral; dominant index finger pointing upward with palm forward",
+      "duration_ms": 1100,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "one.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "people",
+      "display_name": "People",
+      "gloss": "PEOPLE",
+      "lexical_type": "Nominal plural; two hands moving in alternating forward circles",
+      "duration_ms": 1400,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "people.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "say",
+      "display_name": "Say",
+      "gloss": "SAY",
+      "lexical_type": "Communication verb; dominant index finger rolling forward from mouth",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "say.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "see",
+      "display_name": "See",
+      "gloss": "SEE",
+      "lexical_type": "Visual perception verb; V-handshape moving forward from eye level",
+      "duration_ms": 1300,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "see.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "they",
+      "display_name": "They",
+      "gloss": "THEY",
+      "lexical_type": "Third-person plural pronoun; dominant index finger pointing and sweeping outward to third-person locus",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "they.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "think",
+      "display_name": "Think",
+      "gloss": "THINK",
+      "lexical_type": "Mental activity verb; dominant index finger pointing at temple with reflective posture",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "think.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 4
+    },
+    {
+      "sign_id": "time",
+      "display_name": "Time",
+      "gloss": "TIME",
+      "lexical_type": "Temporal noun; dominant index finger tapping non-dominant wrist twice",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "time.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "two",
+      "display_name": "Two",
+      "gloss": "TWO",
+      "lexical_type": "Cardinal numeral; dominant V-handshape held upright in neutral signing space",
+      "duration_ms": 1100,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "two.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 4
+    },
+    {
+      "sign_id": "want",
+      "display_name": "Want",
+      "gloss": "WANT",
+      "lexical_type": "Volitional verb; two-handed claw handshape pulling toward body",
+      "duration_ms": 1400,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "want.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "water",
+      "display_name": "Water",
+      "gloss": "WATER",
+      "lexical_type": "Lexical noun; W/three-finger contact near chin",
+      "duration_ms": 1500,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "water.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 6
+    },
+    {
+      "sign_id": "we",
+      "display_name": "We",
+      "gloss": "WE",
+      "lexical_type": "First-person plural pronoun; dominant index finger sweeping across chest from right to left",
+      "duration_ms": 1250,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "we.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "what",
+      "display_name": "What",
+      "gloss": "WHAT",
+      "lexical_type": "Wh-question sign; two-handed palms-up oscillation",
+      "duration_ms": 1500,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "what.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "when",
+      "display_name": "When",
+      "gloss": "WHEN",
+      "lexical_type": "Wh-question sign; dominant index finger circling and contacting non-dominant index tip",
+      "duration_ms": 1400,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "when.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "will",
+      "display_name": "Will",
+      "gloss": "WILL",
+      "lexical_type": "Temporal future modal; flat hand pushing forward from shoulder into future space",
+      "duration_ms": 1100,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "will.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "work",
+      "display_name": "Work",
+      "gloss": "WORK",
+      "lexical_type": "Labor activity verb; dominant S-fist tapping dorsal surface of non-dominant S-fist wrist",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "work.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "yes",
+      "display_name": "Yes",
+      "gloss": "YES",
+      "lexical_type": "Affirmative marker; dominant S-fist nodding downward twice from wrist",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "yes.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "you",
+      "display_name": "You",
+      "gloss": "YOU",
+      "lexical_type": "Deictic pronoun; index-finger pointing to addressee",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "you.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "your",
+      "display_name": "Your",
+      "gloss": "YOUR",
+      "lexical_type": "Possessive pronoun; flat B-handshape facing addressee",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "your.json",
+      "involved_bones_count": 5,
+      "keyframe_count": 5
+    }
+  ]
+}

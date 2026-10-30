@@ -21,13 +21,46 @@ export const ISL_ALPHABET = Object.freeze({
     duration_ms: 600,
     dominant_hand: 'both',
     target_finger: 'thumb',
-    rotations: {
-      right_wrist: { x: -10, y: 15, z: -10 },
-      left_wrist: { x: 10, y: -15, z: 10 }
-    },
+    rotations: { right_wrist: { x: -10, y: 15, z: -10 }, left_wrist: { x: 10, y: -15, z: 10 } },
     finger_curls: {
       right: { thumb: 60, index: 0, middle: 75, ring: 75, pinky: 75 },
       left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  B: {
+    letter: 'B',
+    type: 'CONSONANT',
+    description: 'Both hands form rounded loops touching at index and thumb tips',
+    duration_ms: 600,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 14, z: -8 }, left_wrist: { x: 12, y: -14, z: 8 } },
+    finger_curls: {
+      right: { thumb: 50, index: 50, middle: 0, ring: 0, pinky: 0 },
+      left: { thumb: 50, index: 50, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  C: {
+    letter: 'C',
+    type: 'CONSONANT',
+    description: 'Dominant hand forms curved C-shape held against non-dominant palm',
+    duration_ms: 600,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -15, y: 18, z: -10 }, left_wrist: { x: 10, y: -12, z: 6 } },
+    finger_curls: {
+      right: { thumb: 30, index: 40, middle: 40, ring: 40, pinky: 40 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  D: {
+    letter: 'D',
+    type: 'CONSONANT',
+    description: 'Left index points upward, right thumb and index form loop against left index',
+    duration_ms: 650,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 15, z: -8 }, left_wrist: { x: 5, y: -10, z: 5 } },
+    finger_curls: {
+      right: { thumb: 60, index: 60, middle: 80, ring: 80, pinky: 80 },
+      left: { thumb: 80, index: 0, middle: 80, ring: 80, pinky: 80 }
     }
   },
   E: {
@@ -37,13 +70,46 @@ export const ISL_ALPHABET = Object.freeze({
     duration_ms: 600,
     dominant_hand: 'both',
     target_finger: 'index',
-    rotations: {
-      right_wrist: { x: -12, y: 18, z: -12 },
-      left_wrist: { x: 10, y: -15, z: 10 }
-    },
+    rotations: { right_wrist: { x: -12, y: 18, z: -12 }, left_wrist: { x: 10, y: -15, z: 10 } },
     finger_curls: {
       right: { thumb: 60, index: 0, middle: 75, ring: 75, pinky: 75 },
       left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  F: {
+    letter: 'F',
+    type: 'CONSONANT',
+    description: 'Dominant index and middle finger rest across non-dominant index and middle',
+    duration_ms: 600,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -10, y: 12, z: -8 }, left_wrist: { x: 10, y: -12, z: 8 } },
+    finger_curls: {
+      right: { thumb: 75, index: 0, middle: 0, ring: 85, pinky: 85 },
+      left: { thumb: 75, index: 0, middle: 0, ring: 85, pinky: 85 }
+    }
+  },
+  G: {
+    letter: 'G',
+    type: 'CONSONANT',
+    description: 'Both hands form fists, dominant fist placed directly over non-dominant fist',
+    duration_ms: 600,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -15, y: 10, z: -10 }, left_wrist: { x: 15, y: -10, z: 10 } },
+    finger_curls: {
+      right: { thumb: 80, index: 85, middle: 85, ring: 85, pinky: 85 },
+      left: { thumb: 80, index: 85, middle: 85, ring: 85, pinky: 85 }
+    }
+  },
+  H: {
+    letter: 'H',
+    type: 'CONSONANT',
+    description: 'Dominant flat open hand strokes horizontally across non-dominant open palm',
+    duration_ms: 650,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -10, y: 16, z: -10 }, left_wrist: { x: 10, y: -16, z: 10 } },
+    finger_curls: {
+      right: { thumb: 15, index: 10, middle: 10, ring: 10, pinky: 10 },
+      left: { thumb: 15, index: 10, middle: 10, ring: 10, pinky: 10 }
     }
   },
   I: {
@@ -53,12 +119,69 @@ export const ISL_ALPHABET = Object.freeze({
     duration_ms: 600,
     dominant_hand: 'both',
     target_finger: 'middle',
-    rotations: {
-      right_wrist: { x: -14, y: 20, z: -14 },
-      left_wrist: { x: 10, y: -15, z: 10 }
-    },
+    rotations: { right_wrist: { x: -14, y: 20, z: -14 }, left_wrist: { x: 10, y: -15, z: 10 } },
     finger_curls: {
       right: { thumb: 60, index: 0, middle: 75, ring: 75, pinky: 75 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  J: {
+    letter: 'J',
+    type: 'CONSONANT',
+    description: 'Dominant index traces letter J downwards from tip of non-dominant middle finger',
+    duration_ms: 700,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 18, z: -10 }, left_wrist: { x: 10, y: -15, z: 10 } },
+    finger_curls: {
+      right: { thumb: 60, index: 0, middle: 75, ring: 75, pinky: 75 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  K: {
+    letter: 'K',
+    type: 'CONSONANT',
+    description: 'Dominant bent index finger rests against upright non-dominant index finger',
+    duration_ms: 650,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -10, y: 15, z: -8 }, left_wrist: { x: 5, y: -10, z: 5 } },
+    finger_curls: {
+      right: { thumb: 65, index: 45, middle: 80, ring: 80, pinky: 80 },
+      left: { thumb: 75, index: 0, middle: 80, ring: 80, pinky: 80 }
+    }
+  },
+  L: {
+    letter: 'L',
+    type: 'CONSONANT',
+    description: 'Dominant hand forms L-shape resting upright upon open non-dominant palm',
+    duration_ms: 600,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -10, y: 12, z: -8 }, left_wrist: { x: 10, y: -12, z: 8 } },
+    finger_curls: {
+      right: { thumb: 0, index: 0, middle: 85, ring: 85, pinky: 85 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  M: {
+    letter: 'M',
+    type: 'CONSONANT',
+    description: 'Dominant index, middle, and ring fingers rest across non-dominant palm',
+    duration_ms: 650,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 16, z: -10 }, left_wrist: { x: 10, y: -15, z: 10 } },
+    finger_curls: {
+      right: { thumb: 65, index: 15, middle: 15, ring: 15, pinky: 85 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  N: {
+    letter: 'N',
+    type: 'CONSONANT',
+    description: 'Dominant index and middle fingers rest across non-dominant palm',
+    duration_ms: 650,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 16, z: -10 }, left_wrist: { x: 10, y: -15, z: 10 } },
+    finger_curls: {
+      right: { thumb: 65, index: 15, middle: 15, ring: 85, pinky: 85 },
       left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
     }
   },
@@ -69,12 +192,69 @@ export const ISL_ALPHABET = Object.freeze({
     duration_ms: 600,
     dominant_hand: 'both',
     target_finger: 'ring',
-    rotations: {
-      right_wrist: { x: -16, y: 22, z: -16 },
-      left_wrist: { x: 10, y: -15, z: 10 }
-    },
+    rotations: { right_wrist: { x: -16, y: 22, z: -16 }, left_wrist: { x: 10, y: -15, z: 10 } },
     finger_curls: {
       right: { thumb: 60, index: 0, middle: 75, ring: 75, pinky: 75 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  P: {
+    letter: 'P',
+    type: 'CONSONANT',
+    description: 'Dominant thumb and index form circle touching extended upright left index finger tip',
+    duration_ms: 650,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -10, y: 14, z: -8 }, left_wrist: { x: 5, y: -10, z: 5 } },
+    finger_curls: {
+      right: { thumb: 55, index: 55, middle: 85, ring: 85, pinky: 85 },
+      left: { thumb: 80, index: 0, middle: 80, ring: 80, pinky: 80 }
+    }
+  },
+  Q: {
+    letter: 'Q',
+    type: 'CONSONANT',
+    description: 'Non-dominant hand forms O-circle; dominant index hooks downward through it',
+    duration_ms: 650,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -14, y: 16, z: -10 }, left_wrist: { x: 10, y: -12, z: 8 } },
+    finger_curls: {
+      right: { thumb: 65, index: 45, middle: 80, ring: 80, pinky: 80 },
+      left: { thumb: 50, index: 50, middle: 50, ring: 50, pinky: 50 }
+    }
+  },
+  R: {
+    letter: 'R',
+    type: 'CONSONANT',
+    description: 'Dominant crossed index and middle fingers rest upon open non-dominant palm',
+    duration_ms: 650,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 15, z: -10 }, left_wrist: { x: 10, y: -12, z: 8 } },
+    finger_curls: {
+      right: { thumb: 70, index: 10, middle: 10, ring: 85, pinky: 85 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
+  },
+  S: {
+    letter: 'S',
+    type: 'CONSONANT',
+    description: 'Both pinky fingers hooked together at midline',
+    duration_ms: 600,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -10, y: 14, z: -8 }, left_wrist: { x: 10, y: -14, z: 8 } },
+    finger_curls: {
+      right: { thumb: 75, index: 80, middle: 80, ring: 80, pinky: 40 },
+      left: { thumb: 75, index: 80, middle: 80, ring: 80, pinky: 40 }
+    }
+  },
+  T: {
+    letter: 'T',
+    type: 'CONSONANT',
+    description: 'Dominant index finger touches the outer edge of open non-dominant hand perpendicularly',
+    duration_ms: 600,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 15, z: -10 }, left_wrist: { x: 8, y: -10, z: 6 } },
+    finger_curls: {
+      right: { thumb: 65, index: 0, middle: 80, ring: 80, pinky: 80 },
       left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
     }
   },
@@ -85,70 +265,71 @@ export const ISL_ALPHABET = Object.freeze({
     duration_ms: 600,
     dominant_hand: 'both',
     target_finger: 'pinky',
-    rotations: {
-      right_wrist: { x: -18, y: 24, z: -18 },
-      left_wrist: { x: 10, y: -15, z: 10 }
-    },
+    rotations: { right_wrist: { x: -18, y: 24, z: -18 }, left_wrist: { x: 10, y: -15, z: 10 } },
     finger_curls: {
       right: { thumb: 60, index: 0, middle: 75, ring: 75, pinky: 75 },
       left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
     }
   },
-  B: {
-    letter: 'B',
+  V: {
+    letter: 'V',
     type: 'CONSONANT',
-    description: 'Both hands join curved fingers forming two circles contacting at fingertips and thumbs',
-    duration_ms: 650,
-    dominant_hand: 'both'
-  },
-  C: {
-    letter: 'C',
-    type: 'CONSONANT',
-    description: 'Dominant hand forms curved C-handshape facing partner',
+    description: 'Dominant V-handshape (index + middle upright spread) rests on non-dominant palm',
     duration_ms: 600,
-    dominant_hand: 'right'
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -10, y: 14, z: -8 }, left_wrist: { x: 10, y: -12, z: 8 } },
+    finger_curls: {
+      right: { thumb: 75, index: 0, middle: 0, ring: 85, pinky: 85 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
   },
-  D: {
-    letter: 'D',
+  W: {
+    letter: 'W',
     type: 'CONSONANT',
-    description: 'Non-dominant index points up; dominant hand forms arc touching left tip and base',
+    description: 'Both hands form W-handshapes interlocking fingers at midline',
     duration_ms: 650,
-    dominant_hand: 'both'
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 14, z: -8 }, left_wrist: { x: 12, y: -14, z: 8 } },
+    finger_curls: {
+      right: { thumb: 70, index: 0, middle: 0, ring: 0, pinky: 85 },
+      left: { thumb: 70, index: 0, middle: 0, ring: 0, pinky: 85 }
+    }
   },
-  L: {
-    letter: 'L',
+  X: {
+    letter: 'X',
     type: 'CONSONANT',
-    description: 'Dominant hand forms L-shape with thumb and index at right angles across left palm',
+    description: 'Both extended index fingers crossed over each other forming an X',
     duration_ms: 600,
-    dominant_hand: 'right'
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -10, y: 12, z: -8 }, left_wrist: { x: 10, y: -12, z: 8 } },
+    finger_curls: {
+      right: { thumb: 70, index: 0, middle: 80, ring: 80, pinky: 80 },
+      left: { thumb: 70, index: 0, middle: 80, ring: 80, pinky: 80 }
+    }
   },
-  M: {
-    letter: 'M',
+  Y: {
+    letter: 'Y',
     type: 'CONSONANT',
-    description: 'Dominant three fingers (index, middle, ring) rest across open flat left palm',
+    description: 'Dominant thumb and index form V-notch resting on upright non-dominant index',
     duration_ms: 650,
-    dominant_hand: 'both'
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -12, y: 15, z: -10 }, left_wrist: { x: 5, y: -10, z: 5 } },
+    finger_curls: {
+      right: { thumb: 0, index: 0, middle: 85, ring: 85, pinky: 85 },
+      left: { thumb: 80, index: 0, middle: 80, ring: 80, pinky: 80 }
+    }
   },
-  N: {
-    letter: 'N',
+  Z: {
+    letter: 'Z',
     type: 'CONSONANT',
-    description: 'Dominant two fingers (index, middle) rest across open flat left palm',
-    duration_ms: 650,
-    dominant_hand: 'both'
-  },
-  P: {
-    letter: 'P',
-    type: 'CONSONANT',
-    description: 'Dominant thumb and index form circle touching extended upright left index finger',
-    duration_ms: 650,
-    dominant_hand: 'both'
-  },
-  T: {
-    letter: 'T',
-    type: 'CONSONANT',
-    description: 'Dominant index finger touches the outer edge of open non-dominant hand',
-    duration_ms: 600,
-    dominant_hand: 'both'
+    description: 'Dominant index finger draws a Z trajectory across open non-dominant palm',
+    duration_ms: 700,
+    dominant_hand: 'both',
+    rotations: { right_wrist: { x: -14, y: 16, z: -10 }, left_wrist: { x: 10, y: -12, z: 8 } },
+    finger_curls: {
+      right: { thumb: 65, index: 0, middle: 80, ring: 80, pinky: 80 },
+      left: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 }
+    }
   }
 });
 

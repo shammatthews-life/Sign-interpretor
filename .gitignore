@@ -25,3 +25,6 @@ runtime/
 
 # ASR benchmark fixtures derived from externally sourced recordings
 tools/asr/benchmark_audio/*.wav
+
+# Local backup checkpoints
+backup/
