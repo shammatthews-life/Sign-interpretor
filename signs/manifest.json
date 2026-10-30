@@ -1,7 +1,10 @@
 {
   "manifest_version": "1.0.0",
-  "total_playable_signs": 182,
-  "authoring_standard": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+  "schema_version": "2.0.0",
+  "generated_at": "2026-10-31T02:20:00+05:30",
+  "phase": "H21",
+  "total_signs": 207,
+  "total_playable_signs": 207,
   "signs": [
     {
       "sign_id": "action",
@@ -55,6 +58,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "art",
+      "display_name": "Art",
+      "gloss": "ART",
+      "lexical_type": "ISL Lexical Sign (Creative / Visual)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "art.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "ask",
       "display_name": "Ask",
       "gloss": "ASK",
@@ -86,6 +106,23 @@
       },
       "file_name": "attention.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "audience",
+      "display_name": "Audience",
+      "gloss": "AUDIENCE",
+      "lexical_type": "ISL Lexical Sign (Public Discourse / People)",
+      "duration_ms": 1400,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "audience.json",
+      "involved_bones_count": 7,
       "keyframe_count": 5
     },
     {
@@ -412,6 +449,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "college",
+      "display_name": "College",
+      "gloss": "COLLEGE",
+      "lexical_type": "ISL Lexical Sign (Academic / Institutional)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "college.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "combination",
       "display_name": "Combination",
       "gloss": "COMBINATION",
@@ -582,6 +636,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "draw",
+      "display_name": "Draw",
+      "gloss": "DRAW",
+      "lexical_type": "ISL Lexical Sign (Creative / Visual)",
+      "duration_ms": 1250,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "draw.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "drink",
       "display_name": "Drink",
       "gloss": "DRINK",
@@ -630,6 +701,40 @@
       },
       "file_name": "eat.json",
       "involved_bones_count": 5,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "energy",
+      "display_name": "Energy",
+      "gloss": "ENERGY",
+      "lexical_type": "ISL Lexical Sign (Kinetic / Physical)",
+      "duration_ms": 1300,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "energy.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "example",
+      "display_name": "Example",
+      "gloss": "EXAMPLE",
+      "lexical_type": "ISL Lexical Sign (Academic / Pedagogical)",
+      "duration_ms": 1350,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "example.json",
+      "involved_bones_count": 6,
       "keyframe_count": 5
     },
     {
@@ -817,6 +922,23 @@
       },
       "file_name": "friend.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "game",
+      "display_name": "Game",
+      "gloss": "GAME",
+      "lexical_type": "ISL Lexical Sign (Activity / Sports)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "game.json",
+      "involved_bones_count": 6,
       "keyframe_count": 5
     },
     {
@@ -1246,6 +1368,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "lead",
+      "display_name": "Lead",
+      "gloss": "LEAD",
+      "lexical_type": "ISL Lexical Sign (Leadership / Action)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "lead.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "learn",
       "display_name": "Learn",
       "gloss": "LEARN",
@@ -1365,6 +1504,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "line",
+      "display_name": "Line",
+      "gloss": "LINE",
+      "lexical_type": "ISL Lexical Sign (Descriptive / Spatial)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "line.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "long",
       "display_name": "Long",
       "gloss": "LONG",
@@ -1430,6 +1586,23 @@
       },
       "file_name": "love.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "mark",
+      "display_name": "Mark",
+      "gloss": "MARK",
+      "lexical_type": "ISL Lexical Sign (Action / Evaluation)",
+      "duration_ms": 1200,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "mark.json",
+      "involved_bones_count": 6,
       "keyframe_count": 5
     },
     {
@@ -1740,6 +1913,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "note",
+      "display_name": "Note",
+      "gloss": "NOTE",
+      "lexical_type": "ISL Lexical Sign (Academic / Written)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "note.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "now",
       "display_name": "Now",
       "gloss": "NOW",
@@ -1876,6 +2066,40 @@
       "keyframe_count": 4
     },
     {
+      "sign_id": "parent",
+      "display_name": "Parent",
+      "gloss": "PARENT",
+      "lexical_type": "ISL Lexical Sign (Everyday / Family)",
+      "duration_ms": 1350,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "parent.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "pause",
+      "display_name": "Pause",
+      "gloss": "PAUSE",
+      "lexical_type": "ISL Lexical Sign (Discourse / Action)",
+      "duration_ms": 1200,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "pause.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "people",
       "display_name": "People",
       "gloss": "PEOPLE",
@@ -1944,6 +2168,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "plan",
+      "display_name": "Plan",
+      "gloss": "PLAN",
+      "lexical_type": "ISL Lexical Sign (Cognitive / Administrative)",
+      "duration_ms": 1350,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "plan.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "point",
       "display_name": "Point",
       "gloss": "POINT",
@@ -1959,6 +2200,40 @@
       "file_name": "point.json",
       "involved_bones_count": 5,
       "keyframe_count": 4
+    },
+    {
+      "sign_id": "posture",
+      "display_name": "Posture",
+      "gloss": "POSTURE",
+      "lexical_type": "ISL Lexical Sign (Physical / Body)",
+      "duration_ms": 1350,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "posture.json",
+      "involved_bones_count": 7,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "power",
+      "display_name": "Power",
+      "gloss": "POWER",
+      "lexical_type": "ISL Lexical Sign (Strength / Capacity)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "power.json",
+      "involved_bones_count": 7,
+      "keyframe_count": 5
     },
     {
       "sign_id": "practice",
@@ -2114,6 +2389,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "reason",
+      "display_name": "Reason",
+      "gloss": "REASON",
+      "lexical_type": "ISL Lexical Sign (Academic / Cognitive)",
+      "duration_ms": 1300,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "reason.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "remember",
       "display_name": "Remember",
       "gloss": "REMEMBER",
@@ -2162,6 +2454,23 @@
       },
       "file_name": "room.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "rule",
+      "display_name": "Rule",
+      "gloss": "RULE",
+      "lexical_type": "ISL Lexical Sign (Legal / Administrative)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "rule.json",
+      "involved_bones_count": 6,
       "keyframe_count": 5
     },
     {
@@ -2335,6 +2644,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "simple",
+      "display_name": "Simple",
+      "gloss": "SIMPLE",
+      "lexical_type": "ISL Lexical Sign (Adjective / Evaluation)",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "simple.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "six",
       "display_name": "Six",
       "gloss": "SIX",
@@ -2454,6 +2780,40 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "space",
+      "display_name": "Space",
+      "gloss": "SPACE",
+      "lexical_type": "ISL Lexical Sign (Spatial / Dimensional)",
+      "duration_ms": 1350,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "space.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "speed",
+      "display_name": "Speed",
+      "gloss": "SPEED",
+      "lexical_type": "ISL Lexical Sign (Measurement / Kinetic)",
+      "duration_ms": 1200,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "speed.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "stage",
       "display_name": "Stage",
       "gloss": "STAGE",
@@ -2485,6 +2845,23 @@
       },
       "file_name": "stand.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "step",
+      "display_name": "Step",
+      "gloss": "STEP",
+      "lexical_type": "ISL Lexical Sign (Procedural Action)",
+      "duration_ms": 1200,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "step.json",
+      "involved_bones_count": 4,
       "keyframe_count": 5
     },
     {
@@ -2554,6 +2931,23 @@
       "file_name": "system.json",
       "involved_bones_count": 9,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "teach",
+      "display_name": "Teach",
+      "gloss": "TEACH",
+      "lexical_type": "ISL Lexical Sign (Academic / Educational)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "teach.json",
+      "involved_bones_count": 7,
+      "keyframe_count": 4
     },
     {
       "sign_id": "teacher",
@@ -2672,6 +3066,40 @@
       },
       "file_name": "today.json",
       "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "topic",
+      "display_name": "Topic",
+      "gloss": "TOPIC",
+      "lexical_type": "ISL Lexical Sign (Academic / Discourse)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "topic.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "train",
+      "display_name": "Train",
+      "gloss": "TRAIN",
+      "lexical_type": "ISL Lexical Sign (Educational / Practice)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "train.json",
+      "involved_bones_count": 6,
       "keyframe_count": 5
     },
     {

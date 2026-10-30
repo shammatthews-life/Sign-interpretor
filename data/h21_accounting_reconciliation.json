@@ -1,0 +1,39 @@
+{
+  "phase": "H21",
+  "canonical_total_spoken_tokens": 23258,
+  "total_accounted_for": 23258,
+  "accounting_discrepancy": 0,
+  "silent_token_loss": 0,
+  "is_100_percent_accounted": true,
+  "disposition_breakdown": {
+    "GRAMMAR_OMISSION": {
+      "occurrences": 9096,
+      "percentage": 39.11
+    },
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
+      "occurrences": 8966,
+      "percentage": 38.55
+    },
+    "SUBTITLE_FALLBACK": {
+      "occurrences": 3560,
+      "percentage": 15.31
+    },
+    "PHRASE_TRANSLATED": {
+      "occurrences": 1415,
+      "percentage": 6.08
+    },
+    "FINGERSPELLED": {
+      "occurrences": 220,
+      "percentage": 0.95
+    },
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": {
+      "occurrences": 1,
+      "percentage": 0.0
+    }
+  },
+  "communicative_coverage": {
+    "communicated_tokens": 19697,
+    "coverage_percentage": 84.69
+  },
+  "playable_signs_count": 207
+}

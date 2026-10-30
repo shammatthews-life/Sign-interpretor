@@ -671,3 +671,29 @@ Investigated and resolved the 243-token discrepancy in the Phase H19 summary tab
 - **Phase H20 Suite:** [`tools/validate_phase_h20_parallel_execution.mjs`](../tools/validate_phase_h20_parallel_execution.mjs): **8/8 PASS**.
 - Zero regressions across prior validation suites (`validate_phase_h19_coverage_optimization.mjs`, `validate_phase_h18_100_concept_expansion.mjs`, `validate_phase_h17_complete_corpus.mjs`, `validate_phase_h16_bulk_expansion.mjs`, `validate_phase_h15_corpus_lexicon.mjs`, `validate_phase_h14_visual_and_extension.mjs`, `validate_phase_h13_motion_and_subtitle.mjs`, `validate_phase_h8_extension_youtube.mjs`, `validate_sign_library.py`).
 - `git diff --check`: 0 errors.
+
+---
+---
+
+## X. Phase H21 40-Minute Deep Execution & Live Demonstration Hardening Report
+
+Documented in detail in [`docs/h21_deep_execution_report.md`](h21_deep_execution_report.md).
+
+### 1. Corpus Coverage Progression & Final Accounting
+- **Total Spoken Tokens:** **23,258 / 23,258 (100.0%)** accounted for with **0 silent token loss**.
+- **Playable Sign Library:** Expanded from 182 to **207 Schema 2.0.0 signs** in [`signs/manifest.json`](signs/manifest.json) (+25 high-frequency authored signs).
+- **Playable Sign Occurrences:** Rose from 8,885 (38.20%) to **8,966 occurrences (38.55%)** (+81 occurrences).
+- **Communicative Coverage:** Reached **84.69% (19,697 tokens)** (+81 tokens over H20).
+- **Subtitle Fallback Pool:** Reduced from 3,627 (15.59%) down to **3,560 occurrences (15.31%)** (-67 occurrences).
+- **Dictionary References Converted to Motions:** 14 additional tokens converted from pending reference into playable signs (1 remaining).
+
+### 2. Four Parallel Workstreams
+- **Worker 1 (500 Concepts & 25 Authored Signs):** Built historical exclusion list (652 items), mined 1,471 remaining fallback concepts ([`data/h21_remaining_fallback_frequency.csv`](../data/h21_remaining_fallback_frequency.csv)), processed 500 new concepts across 10 batch checkpoints of 50 each ([`data/h21_batch01_checkpoint.json`](../data/h21_batch01_checkpoint.json) through `batch10` and [`data/h21_500_processed_concepts.json`](../data/h21_500_processed_concepts.json)). Authored 25 Schema 2.0.0 signs: `art`, `audience`, `college`, `draw`, `energy`, `example`, `game`, `lead`, `line`, `mark`, `note`, `parent`, `pause`, `plan`, `posture`, `power`, `reason`, `rule`, `simple`, `space`, `speed`, `step`, `teach`, `topic`, `train`.
+- **Worker 2 (Phrase Mining & Morphology):** Mined 200 phrase candidates ([`data/h21_200_phrase_candidates.json`](../data/h21_200_phrase_candidates.json)), researched top 100 in depth ([`data/h21_top100_phrase_research.json`](../data/h21_top100_phrase_research.json), [`data/h21_phrase_dictionary.json`](../data/h21_phrase_dictionary.json), [`data/h21_phrase_evidence.json`](../data/h21_phrase_evidence.json)), and produced morphological inflection audit ([`data/h21_morphology_audit.json`](../data/h21_morphology_audit.json)).
+- **Worker 3 (YouTube Timeline Synchronization):** Hardened [`extension/content/timeline-synchronizer.js`](../extension/content/timeline-synchronizer.js) with bounded queue (100 capacity), `rebind()` for SPA video element replacement, seek queue cancellation (`RESET_AVATAR`), and playback rate adaptation (`SET_PLAYBACK_RATE`). Verified in [`docs/h21_youtube_playback_verification.md`](h21_youtube_playback_verification.md).
+- **Worker 4 (Actual Chrome End-to-End Acceptance):** Benchmarked 207-sign preloading in 348 ms (< 2,000 ms ceiling), steady 60.0 FPS animation, 154 MB memory footprint, and authored 5-minute live demonstration script in [`docs/h21_demo_acceptance_checklist.md`](h21_demo_acceptance_checklist.md) and [`docs/h21_demo_script.md`](h21_demo_script.md).
+
+### 3. Master Test Suite & Regression Verification
+- **Phase H21 Suite:** [`tools/validate_phase_h21_deep_execution.mjs`](../tools/validate_phase_h21_deep_execution.mjs): **8/8 PASS**.
+- Zero regressions across prior validation suites (`validate_phase_h20_parallel_execution.mjs`, `validate_phase_h19_coverage_optimization.mjs`, `validate_phase_h18_100_concept_expansion.mjs`, `validate_phase_h17_complete_corpus.mjs`, `validate_phase_h16_bulk_expansion.mjs`, `validate_phase_h15_corpus_lexicon.mjs`, `validate_phase_h14_visual_and_extension.mjs`, `validate_phase_h13_motion_and_subtitle.mjs`, `validate_phase_h8_extension_youtube.mjs`, `validate_sign_library.py`).
+- `git diff --check`: 0 errors.

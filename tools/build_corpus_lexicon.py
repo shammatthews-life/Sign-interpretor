@@ -170,7 +170,9 @@ PLAYABLE_SIGNS = {
     # Phase H20 High-Impact Lexical Signs
     "base", "volume", "point", "matter", "structure", "communication",
     "paper", "board", "hope", "bond", "combination", "resource", "range",
-    "fine", "somewhere"
+    "fine", "somewhere",
+    # Phase H21 High-Impact Lexical Signs
+    "art", "audience", "college", "draw", "energy", "example", "game", "lead", "line", "mark", "note", "parent", "pause", "plan", "posture", "power", "reason", "rule", "simple", "space", "speed", "step", "teach", "topic", "train"
 }
 
 # Structural ISL Function Words (Grammar Omissions)
@@ -384,6 +386,37 @@ LEMMA_MAP = {
     "he's": "he", "she's": "she", "there's": "there", "that's": "that", "what's": "what",
     "i've": "i", "you've": "you", "i'll": "i",
     "gonna": "go", "wanna": "want",
+        # Phase H21 Inflection Mappings
+    "steps": "step",
+    "stepping": "step",
+    "audiences": "audience",
+    "pauses": "pause",
+    "pausing": "pause",
+    "rules": "rule",
+    "lines": "line",
+    "spaces": "space",
+    "powers": "power",
+    "games": "game",
+    "speeds": "speed",
+    "postures": "posture",
+    "leads": "lead",
+    "leading": "lead",
+    "notes": "note",
+    "plans": "plan",
+    "planning": "plan",
+    "trains": "train",
+    "training": "train",
+    "draws": "draw",
+    "drawing": "draw",
+    "marks": "mark",
+    "marking": "mark",
+    "reasons": "reason",
+    "examples": "example",
+    "topics": "topic",
+    "colleges": "college",
+    "parents": "parent",
+    "teaches": "teach",
+    "teaching": "teach",
     "don't": "not", "can't": "not"
 }
 
@@ -475,8 +508,11 @@ def analyze_corpus():
                 idx += len(p_tokens)
                 continue
 
-            # Determine lemma
-            lemma = LEMMA_MAP.get(token, token)
+            # Determine lemma (playable signs take precedence)
+            if token in PLAYABLE_SIGNS:
+                lemma = token
+            else:
+                lemma = LEMMA_MAP.get(token, token)
 
             # Check if playable sign exists
             if lemma in PLAYABLE_SIGNS:

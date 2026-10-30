@@ -1,0 +1,42 @@
+{
+  "phase": "H21",
+  "total_mined_phrases": 200,
+  "top_researched_phrases": 100,
+  "inflection_categories": {
+    "participles": [
+      "delivering",
+      "speaking",
+      "listening",
+      "learning",
+      "improving",
+      "giving"
+    ],
+    "plurals": [
+      "techniques",
+      "presentations",
+      "slides",
+      "stories",
+      "questions",
+      "notes",
+      "levels",
+      "steps"
+    ],
+    "contractions": [
+      "you'll",
+      "haven't",
+      "isn't",
+      "we've",
+      "it's",
+      "that's",
+      "there's"
+    ],
+    "modals": [
+      "should",
+      "could",
+      "would",
+      "must",
+      "can"
+    ]
+  },
+  "longest_match_precedence_policy": "Longest matched multiword phrase always takes precedence over individual word tokens; matched words are consumed exactly once."
+}

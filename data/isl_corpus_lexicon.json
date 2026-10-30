@@ -715,51 +715,6 @@
     "fallback_required": false
   },
   {
-    "concept_id": "people",
-    "lemma": "people",
-    "surface_forms": [
-      "audience",
-      "kid",
-      "kids",
-      "man",
-      "men",
-      "people",
-      "person",
-      "woman",
-      "women"
-    ],
-    "frequency": 195,
-    "example_sentences": [
-      "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
-      "Welcome beautiful people all around the world",
-      "We've got people from UK, Croatia, Switzerland,"
-    ],
-    "timestamps": [
-      [
-        74.29,
-        80.45
-      ],
-      [
-        107.03,
-        110.79
-      ],
-      [
-        118.95,
-        122.23
-      ]
-    ],
-    "semantic_category": "Everyday",
-    "dictionary_match": true,
-    "dictionary_entry": "People",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "PLAYABLE_SIGN",
-    "sign_id": "people",
-    "motion_status": "playable",
-    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
     "concept_id": "what",
     "lemma": "what",
     "surface_forms": [
@@ -833,6 +788,50 @@
     "sign_variants": [],
     "translation_strategy": "PLAYABLE_SIGN",
     "sign_id": "we",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "people",
+    "lemma": "people",
+    "surface_forms": [
+      "kid",
+      "kids",
+      "man",
+      "men",
+      "people",
+      "person",
+      "woman",
+      "women"
+    ],
+    "frequency": 165,
+    "example_sentences": [
+      "Welcome beautiful people all around the world",
+      "We've got people from UK, Croatia, Switzerland,",
+      "to being a confident person, delivering a great presentation in these three sessions."
+    ],
+    "timestamps": [
+      [
+        107.03,
+        110.79
+      ],
+      [
+        118.95,
+        122.23
+      ],
+      [
+        196.07,
+        201.19
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "People",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "people",
     "motion_status": "playable",
     "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
@@ -3402,6 +3401,43 @@
     "sign_id": null,
     "motion_status": "PHRASE_SEQUENCE",
     "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "audience",
+    "lemma": "audience",
+    "surface_forms": [
+      "audience"
+    ],
+    "frequency": 30,
+    "example_sentences": [
+      "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
+      "Chest out, arms relaxed, angle toward the audience, and speak slowly.",
+      "will have on my audience."
+    ],
+    "timestamps": [
+      [
+        74.29,
+        80.45
+      ],
+      [
+        2668.32,
+        2687.46
+      ],
+      [
+        2916.18,
+        2918.22
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Audience",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "audience",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
   },
   {
@@ -7674,16 +7710,16 @@
         1056.18
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Lead",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "lead",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "powerpoint",
@@ -8060,45 +8096,6 @@
     "fallback_required": false
   },
   {
-    "concept_id": "paper",
-    "lemma": "paper",
-    "surface_forms": [
-      "notes",
-      "paper",
-      "papers"
-    ],
-    "frequency": 10,
-    "example_sentences": [
-      "So make sure you have a pen and a paper,",
-      "I also want to say this, please take out pens and papers and whatever you need to write",
-      "if you have a pen around you and a pen and paper."
-    ],
-    "timestamps": [
-      [
-        91.69,
-        95.33
-      ],
-      [
-        204.03,
-        209.35
-      ],
-      [
-        1903.8,
-        1908.77
-      ]
-    ],
-    "semantic_category": "Everyday",
-    "dictionary_match": true,
-    "dictionary_entry": "Paper",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "PLAYABLE_SIGN",
-    "sign_id": "paper",
-    "motion_status": "playable",
-    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
     "concept_id": "probably",
     "lemma": "probably",
     "surface_forms": [
@@ -8439,6 +8436,44 @@
     "fallback_required": true
   },
   {
+    "concept_id": "paper",
+    "lemma": "paper",
+    "surface_forms": [
+      "paper",
+      "papers"
+    ],
+    "frequency": 9,
+    "example_sentences": [
+      "So make sure you have a pen and a paper,",
+      "I also want to say this, please take out pens and papers and whatever you need to write",
+      "if you have a pen around you and a pen and paper."
+    ],
+    "timestamps": [
+      [
+        91.69,
+        95.33
+      ],
+      [
+        204.03,
+        209.35
+      ],
+      [
+        1903.8,
+        1908.77
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Paper",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "paper",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
     "concept_id": "am",
     "lemma": "am",
     "surface_forms": [
@@ -8589,6 +8624,44 @@
     "sign_id": null,
     "motion_status": "FINGERSPELLED_SEQUENCE",
     "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "example",
+    "lemma": "example",
+    "surface_forms": [
+      "example",
+      "examples"
+    ],
+    "frequency": 9,
+    "example_sentences": [
+      "So this is just one example of what you usually experience when you do this.",
+      "examples of what these can look like so that you, after this challenge, can create your own",
+      "You've probably heard that if you're, let's put it, I'll give you an example."
+    ],
+    "timestamps": [
+      [
+        1134.98,
+        1139.48
+      ],
+      [
+        2272.0,
+        2277.04
+      ],
+      [
+        3510.08,
+        3514.88
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Example",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "example",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
   },
   {
@@ -9449,6 +9522,44 @@
     "fallback_required": false
   },
   {
+    "concept_id": "reason",
+    "lemma": "reason",
+    "surface_forms": [
+      "reason",
+      "reasons"
+    ],
+    "frequency": 8,
+    "example_sentences": [
+      "So we backtracked the reason to this and that was he was giving, he was given criticism",
+      "He had so much passion, it became my passion which is today the reason I teach the very same",
+      "It is you giving a reason for listening to the next bit."
+    ],
+    "timestamps": [
+      [
+        924.46,
+        930.1
+      ],
+      [
+        4097.52,
+        4103.2
+      ],
+      [
+        4320.36,
+        4325.36
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Reason",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "reason",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
     "concept_id": "part",
     "lemma": "part",
     "surface_forms": [
@@ -9990,6 +10101,44 @@
     "fallback_required": true
   },
   {
+    "concept_id": "parent",
+    "lemma": "parent",
+    "surface_forms": [
+      "parent",
+      "parents"
+    ],
+    "frequency": 8,
+    "example_sentences": [
+      "You know, are you a parent? Are you a parent? You know that this is a brilliant way of",
+      "You know, are you a parent? Are you a parent? You know that this is a brilliant way of",
+      "But there's a parent, you know, like,"
+    ],
+    "timestamps": [
+      [
+        4523.78,
+        4530.1
+      ],
+      [
+        4523.78,
+        4530.1
+      ],
+      [
+        4539.74,
+        4540.94
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Parent",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "parent",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
     "concept_id": "sell",
     "lemma": "sell",
     "surface_forms": [
@@ -10064,6 +10213,44 @@
     "fallback_required": true
   },
   {
+    "concept_id": "pause",
+    "lemma": "pause",
+    "surface_forms": [
+      "pause",
+      "pauses"
+    ],
+    "frequency": 8,
+    "example_sentences": [
+      "So I look up, I pause, I do an audible inhale, I do a self-laughter.",
+      "So pause climax, audible inhale, pays volume, self laughter.",
+      "I pause, pace of voice."
+    ],
+    "timestamps": [
+      [
+        5476.31,
+        5484.67
+      ],
+      [
+        5556.16,
+        5561.32
+      ],
+      [
+        5684.57,
+        5686.29
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Pause",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "pause",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
     "concept_id": "lars",
     "lemma": "lars",
     "surface_forms": [
@@ -10136,6 +10323,44 @@
     "motion_status": "NO_MOTION_ASSET",
     "linguistic_review_status": "UNREVIEWED",
     "fallback_required": true
+  },
+  {
+    "concept_id": "step",
+    "lemma": "step",
+    "surface_forms": [
+      "step",
+      "steps"
+    ],
+    "frequency": 7,
+    "example_sentences": [
+      "and bring you a few steps closer to being more confident, more clear,",
+      "from the 110-step chart of excellence communication.",
+      "We have the 110 steps of excellent communication and the final one which is about mindset."
+    ],
+    "timestamps": [
+      [
+        14.45,
+        21.45
+      ],
+      [
+        43.77,
+        47.81
+      ],
+      [
+        285.51,
+        291.79
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Step",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "step",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "watch",
@@ -10841,78 +11066,42 @@
     "fallback_required": true
   },
   {
-    "concept_id": "reason",
-    "lemma": "reason",
+    "concept_id": "train",
+    "lemma": "train",
     "surface_forms": [
-      "reason"
+      "train",
+      "training"
     ],
     "frequency": 7,
     "example_sentences": [
-      "So we backtracked the reason to this and that was he was giving, he was given criticism",
-      "He had so much passion, it became my passion which is today the reason I teach the very same",
-      "It is you giving a reason for listening to the next bit."
+      "reduced levels of testosterone, you'd lose your train of thought.",
+      "from this three-day training,",
+      "Why you can't find it anywhere else in any other public speaking training or any public speaking book in the world?"
     ],
     "timestamps": [
       [
-        924.46,
-        930.1
+        1036.22,
+        1042.7
       ],
       [
-        4097.52,
-        4103.2
+        4984.84,
+        4986.32
       ],
       [
-        4320.36,
-        4325.36
+        5311.84,
+        5317.76
       ]
     ],
-    "semantic_category": "Academic",
+    "semantic_category": "Everyday",
     "dictionary_match": true,
-    "dictionary_entry": "Reason",
+    "dictionary_entry": "Train",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "example",
-    "lemma": "example",
-    "surface_forms": [
-      "example"
-    ],
-    "frequency": 7,
-    "example_sentences": [
-      "So this is just one example of what you usually experience when you do this.",
-      "You've probably heard that if you're, let's put it, I'll give you an example.",
-      "and new waves and so on, your emotions are contagious. To give an example, you went to school, I went to"
-    ],
-    "timestamps": [
-      [
-        1134.98,
-        1139.48
-      ],
-      [
-        3510.08,
-        3514.88
-      ],
-      [
-        3986.31,
-        3992.79
-      ]
-    ],
-    "semantic_category": "Academic",
-    "dictionary_match": true,
-    "dictionary_entry": "Example",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "train",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "prior",
@@ -11618,43 +11807,6 @@
     "motion_status": "playable",
     "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
-  },
-  {
-    "concept_id": "steps",
-    "lemma": "steps",
-    "surface_forms": [
-      "steps"
-    ],
-    "frequency": 6,
-    "example_sentences": [
-      "and bring you a few steps closer to being more confident, more clear,",
-      "We have the 110 steps of excellent communication and the final one which is about mindset.",
-      "these were the 110 steps of excellent communication."
-    ],
-    "timestamps": [
-      [
-        14.45,
-        21.45
-      ],
-      [
-        285.51,
-        291.79
-      ],
-      [
-        2484.43,
-        2487.99
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
   },
   {
     "concept_id": "live",
@@ -16175,43 +16327,6 @@
     "fallback_required": true
   },
   {
-    "concept_id": "training",
-    "lemma": "training",
-    "surface_forms": [
-      "training"
-    ],
-    "frequency": 5,
-    "example_sentences": [
-      "from this three-day training,",
-      "Why you can't find it anywhere else in any other public speaking training or any public speaking book in the world?",
-      "to never attend a training in public speaking, to never engage with another public speaking coach"
-    ],
-    "timestamps": [
-      [
-        4984.84,
-        4986.32
-      ],
-      [
-        5311.84,
-        5317.76
-      ],
-      [
-        5328.16,
-        5334.24
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
     "concept_id": "mini",
     "lemma": "mini",
     "surface_forms": [
@@ -17495,16 +17610,16 @@
         6036.34
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Power",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "power",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "replace",
@@ -18901,16 +19016,16 @@
         5609.24
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Teach",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "teach",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "filled",
@@ -18973,80 +19088,6 @@
       [
         5378.4,
         5382.08
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "parent",
-    "lemma": "parent",
-    "surface_forms": [
-      "parent"
-    ],
-    "frequency": 4,
-    "example_sentences": [
-      "You know, are you a parent? Are you a parent? You know that this is a brilliant way of",
-      "You know, are you a parent? Are you a parent? You know that this is a brilliant way of",
-      "But there's a parent, you know, like,"
-    ],
-    "timestamps": [
-      [
-        4523.78,
-        4530.1
-      ],
-      [
-        4523.78,
-        4530.1
-      ],
-      [
-        4539.74,
-        4540.94
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "parents",
-    "lemma": "parents",
-    "surface_forms": [
-      "parents"
-    ],
-    "frequency": 4,
-    "example_sentences": [
-      "best combination in the world. You know this as a parent and we're very good at that as parents",
-      "The parents who were having a picnic, they packed it up and left.",
-      "You can see the parents eating their picnics."
-    ],
-    "timestamps": [
-      [
-        4564.94,
-        4571.02
-      ],
-      [
-        5912.78,
-        5915.68
-      ],
-      [
-        5962.1,
-        5965.84
       ]
     ],
     "semantic_category": "Uncategorized Lexicon",
@@ -19306,43 +19347,6 @@
       [
         5360.72,
         5363.6
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "pause",
-    "lemma": "pause",
-    "surface_forms": [
-      "pause"
-    ],
-    "frequency": 4,
-    "example_sentences": [
-      "So I look up, I pause, I do an audible inhale, I do a self-laughter.",
-      "So pause climax, audible inhale, pays volume, self laughter.",
-      "I pause, pace of voice."
-    ],
-    "timestamps": [
-      [
-        5476.31,
-        5484.67
-      ],
-      [
-        5556.16,
-        5561.32
-      ],
-      [
-        5684.57,
-        5686.29
       ]
     ],
     "semantic_category": "Uncategorized Lexicon",
@@ -19844,43 +19848,6 @@
       [
         8154.51,
         8158.19
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "pauses",
-    "lemma": "pauses",
-    "surface_forms": [
-      "pauses"
-    ],
-    "frequency": 4,
-    "example_sentences": [
-      "And I'm going to not use any pauses.",
-      "Then I'm going to add pauses and then I'm going to add filler sounds.",
-      "but David, JP Phillips, your pauses, they suck. And I'm like, fair enough, and let me add pauses."
-    ],
-    "timestamps": [
-      [
-        7848.16,
-        7851.32
-      ],
-      [
-        7851.32,
-        7854.4
-      ],
-      [
-        7879.52,
-        7888.56
       ]
     ],
     "semantic_category": "Uncategorized Lexicon",
@@ -23028,16 +22995,16 @@
         1922.25
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Draw",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "draw",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "wow",
@@ -27171,16 +27138,16 @@
         1643.14
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Simple",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "simple",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "anxious",
@@ -29025,38 +28992,6 @@
       [
         1045.94,
         1049.9
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "train",
-    "lemma": "train",
-    "surface_forms": [
-      "train"
-    ],
-    "frequency": 2,
-    "example_sentences": [
-      "reduced levels of testosterone, you'd lose your train of thought.",
-      "to me? Or are you thinking? Or have you lost your train of thought? Or are you afraid"
-    ],
-    "timestamps": [
-      [
-        1036.22,
-        1042.7
-      ],
-      [
-        7711.8,
-        7719.32
       ]
     ],
     "semantic_category": "Uncategorized Lexicon",
@@ -31151,38 +31086,6 @@
     "fallback_required": true
   },
   {
-    "concept_id": "examples",
-    "lemma": "examples",
-    "surface_forms": [
-      "examples"
-    ],
-    "frequency": 2,
-    "example_sentences": [
-      "examples of what these can look like so that you, after this challenge, can create your own",
-      "I'm going to give you an example, two examples."
-    ],
-    "timestamps": [
-      [
-        2272.0,
-        2277.04
-      ],
-      [
-        7152.3,
-        7154.78
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
     "concept_id": "root",
     "lemma": "root",
     "surface_forms": [
@@ -31843,16 +31746,16 @@
         6906.06
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Posture",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "posture",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "hunting",
@@ -31971,16 +31874,16 @@
         5209.12
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Space",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "space",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "thirdly",
@@ -32173,6 +32076,39 @@
     "motion_status": "NO_MOTION_ASSET",
     "linguistic_review_status": "UNREVIEWED",
     "fallback_required": true
+  },
+  {
+    "concept_id": "note",
+    "lemma": "note",
+    "surface_forms": [
+      "note",
+      "notes"
+    ],
+    "frequency": 2,
+    "example_sentences": [
+      "and nobody ever takes note of it",
+      "You've taken notes, you've been inspired,"
+    ],
+    "timestamps": [
+      [
+        3361.55,
+        3363.55
+      ],
+      [
+        8865.68,
+        8867.92
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Note",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "note",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "microsoft",
@@ -37699,33 +37635,6 @@
     "fallback_required": true
   },
   {
-    "concept_id": "step",
-    "lemma": "step",
-    "surface_forms": [
-      "step"
-    ],
-    "frequency": 1,
-    "example_sentences": [
-      "from the 110-step chart of excellence communication."
-    ],
-    "timestamps": [
-      [
-        43.77,
-        47.81
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
     "concept_id": "excellence",
     "lemma": "excellence",
     "surface_forms": [
@@ -40291,8 +40200,8 @@
     "fallback_required": true
   },
   {
-    "concept_id": "rules",
-    "lemma": "rules",
+    "concept_id": "rule",
+    "lemma": "rule",
     "surface_forms": [
       "rules"
     ],
@@ -40306,16 +40215,16 @@
         854.1
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Rule",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "rule",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "month",
@@ -47020,33 +46929,6 @@
       [
         3319.76,
         3328.32
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "note",
-    "lemma": "note",
-    "surface_forms": [
-      "note"
-    ],
-    "frequency": 1,
-    "example_sentences": [
-      "and nobody ever takes note of it"
-    ],
-    "timestamps": [
-      [
-        3361.55,
-        3363.55
       ]
     ],
     "semantic_category": "Uncategorized Lexicon",
@@ -54027,8 +53909,8 @@
     "fallback_required": true
   },
   {
-    "concept_id": "games",
-    "lemma": "games",
+    "concept_id": "game",
+    "lemma": "game",
     "surface_forms": [
       "games"
     ],
@@ -54042,16 +53924,16 @@
         5787.48
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Game",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "game",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "neat",
@@ -56715,16 +56597,16 @@
         6632.99
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Mark",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "mark",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "j",
@@ -58740,16 +58622,16 @@
         7271.22
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Line",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "line",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "generic",
@@ -59440,33 +59322,6 @@
       [
         7678.32,
         7684.32
-      ]
-    ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
-  },
-  {
-    "concept_id": "reasons",
-    "lemma": "reasons",
-    "surface_forms": [
-      "reasons"
-    ],
-    "frequency": 1,
-    "example_sentences": [
-      "That's not good, my friend, because look at this hand. There are five reasons for you"
-    ],
-    "timestamps": [
-      [
-        7695.44,
-        7700.16
       ]
     ],
     "semantic_category": "Uncategorized Lexicon",
@@ -61818,16 +61673,16 @@
         8564.97
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Speed",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "speed",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "itself",

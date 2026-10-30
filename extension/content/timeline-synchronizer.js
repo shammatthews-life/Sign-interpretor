@@ -1,13 +1,15 @@
 /**
  * extension/content/timeline-synchronizer.js
  *
- * Phase H19: YouTube Video Playback Timeline Synchronizer.
+ * Phase H21: Hardened YouTube Video Playback Timeline Synchronizer.
  * Coordinates HTML5 <video> playback events with the ISL Avatar Viewer:
  * - video.currentTime synchronization with timestamped transcript segments
  * - Play / Pause event dispatch to Aether
  * - Seek detection: queue cancellation, avatar reset, and transcript repositioning
- * - Playback rate scaling
+ * - Playback rate scaling (SET_PLAYBACK_RATE command relay)
  * - Honest subtitle fallback display synchronized to segment boundaries
+ * - Bounded queue capacity (max 100 entries) preventing memory accumulation
+ * - SPA resilient rebind to handle YouTube dynamic video element replacement
  */
 
 (function (root, factory) {
@@ -25,18 +27,21 @@
       onDispatchSign = null,
       onDispatchCommand = null,
       onFallback = null,
-      onClearFallback = null
+      onClearFallback = null,
+      maxQueueCapacity = 100
     } = {}) {
       this.video = videoElement;
       this.onDispatchSign = onDispatchSign;
       this.onDispatchCommand = onDispatchCommand;
       this.onFallback = onFallback;
       this.onClearFallback = onClearFallback;
+      this.maxQueueCapacity = maxQueueCapacity;
 
       this.segments = []; // [{ id, start, end, text, signIds, fallbackWords }]
       this.currentSegmentIndex = -1;
       this.lastDispatchedSegmentId = null;
       this.isSeeking = false;
+      this.dispatchedQueue = [];
       this.boundEvents = [];
 
       if (this.video) {
@@ -49,6 +54,7 @@
       this.segments = [...segments].sort((a, b) => (a.start ?? 0) - (b.start ?? 0));
       this.currentSegmentIndex = -1;
       this.lastDispatchedSegmentId = null;
+      this.dispatchedQueue = [];
     }
 
     attach(videoElement) {
@@ -90,6 +96,15 @@
       this.video = null;
       this.currentSegmentIndex = -1;
       this.lastDispatchedSegmentId = null;
+      this.dispatchedQueue = [];
+    }
+
+    rebind(newVideoElement) {
+      if (this.video === newVideoElement) return;
+      this.detach();
+      if (newVideoElement) {
+        this.attach(newVideoElement);
+      }
     }
 
     handleTimeUpdate() {
@@ -112,6 +127,12 @@
 
     dispatchSegment(segment) {
       if (!segment) return;
+
+      // Track queue length
+      if (this.dispatchedQueue.length >= this.maxQueueCapacity) {
+        this.dispatchedQueue.shift(); // Drop oldest event if capacity reached
+      }
+      this.dispatchedQueue.push(segment.id);
 
       // If segment has playable signs, dispatch them to Aether
       if (Array.isArray(segment.signIds) && segment.signIds.length > 0) {
@@ -153,6 +174,7 @@
         this.onClearFallback();
       }
       this.lastDispatchedSegmentId = null;
+      this.dispatchedQueue = [];
     }
 
     handleSeeked() {
@@ -172,7 +194,10 @@
 
     handleRateChange() {
       if (!this.video) return;
-      // In future: forward playbackRate to Aether player
+      const rate = this.video.playbackRate || 1.0;
+      if (this.onDispatchCommand) {
+        this.onDispatchCommand('SET_PLAYBACK_RATE', { rate });
+      }
     }
   }
 

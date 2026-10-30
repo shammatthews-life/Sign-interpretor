@@ -1,0 +1,879 @@
+[
+  {
+    "phrase": "have a look at",
+    "target_glosses": [
+      "HAVE",
+      "A",
+      "LOOK",
+      "AT"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "i'm going to",
+    "target_glosses": [
+      "I'M",
+      "GOING",
+      "TO"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "have a look",
+    "target_glosses": [
+      "HAVE",
+      "A",
+      "LOOK"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "a look at",
+    "target_glosses": [
+      "A",
+      "LOOK",
+      "AT"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "i want you to",
+    "target_glosses": [
+      "I",
+      "WANT",
+      "YOU",
+      "TO"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "you want to",
+    "target_glosses": [
+      "YOU",
+      "WANT",
+      "TO"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "i want you",
+    "target_glosses": [
+      "I",
+      "WANT",
+      "YOU"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "to give you",
+    "target_glosses": [
+      "TO",
+      "GIVE",
+      "YOU"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "listen to",
+    "target_glosses": [
+      "LISTEN",
+      "TO"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "look at this",
+    "target_glosses": [
+      "LOOK",
+      "AT",
+      "THIS"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "to show you",
+    "target_glosses": [
+      "TO",
+      "SHOW",
+      "YOU"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "i'm going to show",
+    "target_glosses": [
+      "I'M",
+      "GOING",
+      "TO",
+      "SHOW"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "going to show you",
+    "target_glosses": [
+      "GOING",
+      "TO",
+      "SHOW",
+      "YOU"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "goes like this",
+    "target_glosses": [
+      "GOES",
+      "LIKE",
+      "THIS"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "i'm going to give",
+    "target_glosses": [
+      "I'M",
+      "GOING",
+      "TO",
+      "GIVE"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "going to give you",
+    "target_glosses": [
+      "GOING",
+      "TO",
+      "GIVE",
+      "YOU"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "a look at this",
+    "target_glosses": [
+      "A",
+      "LOOK",
+      "AT",
+      "THIS"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "going to show",
+    "target_glosses": [
+      "GOING",
+      "TO",
+      "SHOW"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "let's have a look",
+    "target_glosses": [
+      "LET'S",
+      "HAVE",
+      "A",
+      "LOOK"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "up on stage",
+    "target_glosses": [
+      "UP",
+      "ON",
+      "STAGE"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "i look at",
+    "target_glosses": [
+      "I",
+      "LOOK",
+      "AT"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "you have to",
+    "target_glosses": [
+      "YOU",
+      "HAVE",
+      "TO"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "going to give",
+    "target_glosses": [
+      "GOING",
+      "TO",
+      "GIVE"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "if you have",
+    "target_glosses": [
+      "IF",
+      "YOU",
+      "HAVE"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "that you can",
+    "target_glosses": [
+      "THAT",
+      "YOU",
+      "CAN"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "let's have a",
+    "target_glosses": [
+      "LET'S",
+      "HAVE",
+      "A"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "a lot of",
+    "target_glosses": [
+      "A",
+      "LOT",
+      "OF"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "to do this",
+    "target_glosses": [
+      "TO",
+      "DO",
+      "THIS"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "here we go",
+    "target_glosses": [
+      "HERE",
+      "WE",
+      "GO"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "look at your",
+    "target_glosses": [
+      "LOOK",
+      "AT",
+      "YOUR"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "we're going to",
+    "target_glosses": [
+      "WE'RE",
+      "GOING",
+      "TO"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "it goes like this",
+    "target_glosses": [
+      "IT",
+      "GOES",
+      "LIKE",
+      "THIS"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "you have a",
+    "target_glosses": [
+      "YOU",
+      "HAVE",
+      "A"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "that you are",
+    "target_glosses": [
+      "THAT",
+      "YOU",
+      "ARE"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "i don't know",
+    "target_glosses": [
+      "I",
+      "DON'T",
+      "KNOW"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "over and over",
+    "target_glosses": [
+      "OVER",
+      "AND",
+      "OVER"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "in public",
+    "target_glosses": [
+      "IN",
+      "PUBLIC"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "the people",
+    "target_glosses": [
+      "THE",
+      "PEOPLE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "every single",
+    "target_glosses": [
+      "EVERY",
+      "SINGLE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "we go",
+    "target_glosses": [
+      "WE",
+      "GO"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "time you",
+    "target_glosses": [
+      "TIME",
+      "YOU"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "do i",
+    "target_glosses": [
+      "DO",
+      "I"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "of your",
+    "target_glosses": [
+      "OF",
+      "YOUR"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "you want to become",
+    "target_glosses": [
+      "YOU",
+      "WANT",
+      "TO",
+      "BECOME"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "want to become more",
+    "target_glosses": [
+      "WANT",
+      "TO",
+      "BECOME",
+      "MORE"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "to become more confident",
+    "target_glosses": [
+      "TO",
+      "BECOME",
+      "MORE",
+      "CONFIDENT"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "become more confident in",
+    "target_glosses": [
+      "BECOME",
+      "MORE",
+      "CONFIDENT",
+      "IN"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "over and over again",
+    "target_glosses": [
+      "OVER",
+      "AND",
+      "OVER",
+      "AGAIN"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "what do i get",
+    "target_glosses": [
+      "WHAT",
+      "DO",
+      "I",
+      "GET"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "to see",
+    "target_glosses": [
+      "TO",
+      "SEE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "to me",
+    "target_glosses": [
+      "TO",
+      "ME"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "if i",
+    "target_glosses": [
+      "IF",
+      "I"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "and it",
+    "target_glosses": [
+      "AND",
+      "IT"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "so you",
+    "target_glosses": [
+      "SO",
+      "YOU"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "over and",
+    "target_glosses": [
+      "OVER",
+      "AND"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "it was",
+    "target_glosses": [
+      "IT",
+      "WAS"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "i'm gonna",
+    "target_glosses": [
+      "I'M",
+      "GONNA"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "and she",
+    "target_glosses": [
+      "AND",
+      "SHE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "this is the",
+    "target_glosses": [
+      "THIS",
+      "IS",
+      "THE"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "so if you",
+    "target_glosses": [
+      "SO",
+      "IF",
+      "YOU"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "want to become",
+    "target_glosses": [
+      "WANT",
+      "TO",
+      "BECOME"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "become more confident",
+    "target_glosses": [
+      "BECOME",
+      "MORE",
+      "CONFIDENT"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "do you know",
+    "target_glosses": [
+      "DO",
+      "YOU",
+      "KNOW"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "this is a",
+    "target_glosses": [
+      "THIS",
+      "IS",
+      "A"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "give me more",
+    "target_glosses": [
+      "GIVE",
+      "ME",
+      "MORE"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "you look at",
+    "target_glosses": [
+      "YOU",
+      "LOOK",
+      "AT"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "the most beautiful",
+    "target_glosses": [
+      "THE",
+      "MOST",
+      "BEAUTIFUL"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "you see",
+    "target_glosses": [
+      "YOU",
+      "SEE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "will be",
+    "target_glosses": [
+      "WILL",
+      "BE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "here we",
+    "target_glosses": [
+      "HERE",
+      "WE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "a person",
+    "target_glosses": [
+      "A",
+      "PERSON"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "a lot",
+    "target_glosses": [
+      "A",
+      "LOT"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "go up",
+    "target_glosses": [
+      "GO",
+      "UP"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "the first",
+    "target_glosses": [
+      "THE",
+      "FIRST"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "what do",
+    "target_glosses": [
+      "WHAT",
+      "DO"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "go like",
+    "target_glosses": [
+      "GO",
+      "LIKE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "my friend",
+    "target_glosses": [
+      "MY",
+      "FRIEND"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "it's not",
+    "target_glosses": [
+      "IT'S",
+      "NOT"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "at your",
+    "target_glosses": [
+      "AT",
+      "YOUR"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "of them",
+    "target_glosses": [
+      "OF",
+      "THEM"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "to have a look",
+    "target_glosses": [
+      "TO",
+      "HAVE",
+      "A",
+      "LOOK"
+    ],
+    "priority": 96
+  },
+  {
+    "phrase": "give you a",
+    "target_glosses": [
+      "GIVE",
+      "YOU",
+      "A"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "you are not",
+    "target_glosses": [
+      "YOU",
+      "ARE",
+      "NOT"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "it goes like",
+    "target_glosses": [
+      "IT",
+      "GOES",
+      "LIKE"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "of you have",
+    "target_glosses": [
+      "OF",
+      "YOU",
+      "HAVE"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "and that is",
+    "target_glosses": [
+      "AND",
+      "THAT",
+      "IS"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "and over again",
+    "target_glosses": [
+      "AND",
+      "OVER",
+      "AGAIN"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "the way you",
+    "target_glosses": [
+      "THE",
+      "WAY",
+      "YOU"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "do i get",
+    "target_glosses": [
+      "DO",
+      "I",
+      "GET"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "and he goes",
+    "target_glosses": [
+      "AND",
+      "HE",
+      "GOES"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "what do i",
+    "target_glosses": [
+      "WHAT",
+      "DO",
+      "I"
+    ],
+    "priority": 97
+  },
+  {
+    "phrase": "more confident",
+    "target_glosses": [
+      "MORE",
+      "CONFIDENT"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "and i'm",
+    "target_glosses": [
+      "AND",
+      "I'M"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "the world",
+    "target_glosses": [
+      "THE",
+      "WORLD"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "one of",
+    "target_glosses": [
+      "ONE",
+      "OF"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "up to",
+    "target_glosses": [
+      "UP",
+      "TO"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "means that",
+    "target_glosses": [
+      "MEANS",
+      "THAT"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "i love",
+    "target_glosses": [
+      "I",
+      "LOVE"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "one is",
+    "target_glosses": [
+      "ONE",
+      "IS"
+    ],
+    "priority": 98
+  },
+  {
+    "phrase": "so if",
+    "target_glosses": [
+      "SO",
+      "IF"
+    ],
+    "priority": 98
+  }
+]
