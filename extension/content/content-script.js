@@ -85,6 +85,9 @@
     }
     const command = payload.command;
     if (!Object.values(contract.AETHER_COMMANDS).includes(command)) return;
+    if (command === contract.AETHER_COMMANDS.PLAY_SIGN && ui) {
+      ui.setUnavailableFallback(null);
+    }
     if (!iframe.contentWindow) {
       pendingAetherCommands.push(payload);
       return;
@@ -148,6 +151,13 @@
 
       if (message.type === contract.MESSAGE_TYPES.AETHER_COMMAND && message.payload) {
         forwardAetherCommand(message.payload);
+        sendResponse({ received: true });
+        return true;
+      }
+
+      if (message.type === contract.MESSAGE_TYPES.UNAVAILABLE_FALLBACK && message.payload) {
+        forwardAetherCommand({ command: contract.AETHER_COMMANDS.RESET_AVATAR });
+        if (ui) ui.setUnavailableFallback(message.payload.originalWord || message.payload.text || message.payload.word);
         sendResponse({ received: true });
         return true;
       }

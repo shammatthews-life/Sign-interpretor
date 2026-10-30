@@ -82,6 +82,7 @@
     SIGN_STARTED: 'SIGN_STARTED',
     SIGN_FINISHED: 'SIGN_FINISHED',
     SIGN_UNAVAILABLE: 'SIGN_UNAVAILABLE',
+    UNAVAILABLE_FALLBACK: 'UNAVAILABLE_FALLBACK',
 
     // H7 YouTube job lifecycle
     YOUTUBE_PROCESS: 'YOUTUBE_PROCESS',
@@ -155,7 +156,8 @@
         currentSign: null,
         queuedSigns: [],
         completedSigns: [],
-        unavailableConcepts: [] // [{ word, reason }]
+        unavailableConcepts: [], // [{ word, reason }]
+        unavailableFallback: null
       },
 
       youtube: {
@@ -176,6 +178,7 @@
         currentSign: null,
         queuedSigns: [],
         unavailableConcepts: [],
+        unavailableFallback: null,
         error: null
       },
 

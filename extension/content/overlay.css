@@ -275,6 +275,44 @@
 }
 
 /* Aether Avatar Integration Section */
+/* Unavailable Subtitle Fallback (Phase H13) */
+.isl-unavailable-subtitle {
+  margin-top: 6px;
+  padding: 8px 12px;
+  background: rgba(218, 54, 51, 0.12);
+  border: 1px solid rgba(248, 81, 73, 0.4);
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.isl-unavailable-subtitle.hidden {
+  display: none;
+}
+
+.isl-unavailable-sub-header {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #f85149;
+  margin-bottom: 4px;
+}
+
+.isl-unavailable-sub-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f0f6fc;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+
 #isl-aether-container {
   width: 100%;
   height: 200px;

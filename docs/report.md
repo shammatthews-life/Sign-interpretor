@@ -396,3 +396,34 @@ Original Batch 1 priority list is now 100% authored, playable, and Schema 2.0.0 
 - `HOW` ([`signs/how.json`](signs/how.json)): 94 occurrences (authored in H12)
 - `NOT` ([`signs/not.json`](signs/not.json)): 93 occurrences
 - `WATER` ([`signs/water.json`](signs/water.json)): authored in H11
+
+---
+---
+
+## P. Phase H13 Evidence-Based ISL Motion Authoring & Unavailable-Word Subtitle System
+
+Documented in detail in [`docs/h13_motion_authoring_and_subtitle_fallback.md`](h13_motion_authoring_and_subtitle_fallback.md).
+
+### 1. Batch 2 Authoring (Schema 2.0.0)
+Authored and integrated 6 priority ISL motions from the `MXKkXXYUxBc` lecture corpus:
+- [`signs/your.json`](signs/your.json): 275 occurrences. Possessive pronoun; flat B-handshape facing addressee (1200 ms).
+- [`signs/my.json`](signs/my.json): 144 occurrences. Possessive pronoun; flat B-handshape resting on center chest (1200 ms).
+- [`signs/have.json`](signs/have.json): 257 occurrences. Two-handed possessive verb; curved cupped hands contacting torso (1400 ms).
+- [`signs/want.json`](signs/want.json): 129 occurrences. Two-handed volitional verb; open claw hands pulling toward torso (1400 ms).
+- [`signs/look.json`](signs/look.json): 151 occurrences. Directional visual verb; V-handshape pointing toward visual target (1300 ms).
+- [`signs/see.json`](signs/see.json): 97 occurrences. Visual perception verb; V-handshape moving forward along line of sight (1300 ms).
+
+All authored motions are classified as `IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW` to maintain scientific integrity until certified by native Deaf ISL signers.
+
+### 2. Unavailable-Word Subtitle Fallback System
+Implemented a fallback UI directly below the Aether avatar canvas in `#isl-accessibility-overlay-root`:
+- **Header:** `"ISL translation not available in this translator"`.
+- **Text Rendering:** Safe `textContent` display of the exact spoken English word/phrase from the transcript segment.
+- **Playback Behavior:** When an unavailable concept is encountered, Aether resets to neutral and the subtitle appears. When the next playable sign starts, the subtitle is automatically dismissed.
+- **Natural Grammar Omission:** English auxiliary verbs and articles (`is`, `are`, `be`, `the`, `a`, `to`, `of`) omitted by natural ISL syntax are classified under `GRAMMAR_OMISSION` and bypass the unavailable warning display.
+
+### 3. Measured Corpus Impact on `MXKkXXYUxBc`
+- **Playable Sign Library:** Expanded from 9 to **15 signs**.
+- **Playable Tokens in Lecture:** Increased from 2,089 to **3,142 spoken words (13.51%)** (+1,053 tokens).
+- **Combined Communicative Coverage:** Expanded from 7,118 to **8,171 spoken words (35.14%)**.
+- **Validation:** 100% pass on [`tools/validate_phase_h13_motion_and_subtitle.mjs`](../tools/validate_phase_h13_motion_and_subtitle.mjs) with zero regressions across all previous test suites.

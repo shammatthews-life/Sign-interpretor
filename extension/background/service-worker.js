@@ -64,23 +64,33 @@ function broadcastStateUpdate(state) {
 function dispatchPlayableSigns(youtube) {
   if (!youtube?.jobId || !youtube.resultReady || dispatchedYoutubeJobs.has(youtube.jobId)) return;
   const signs = Array.isArray(youtube.playableSigns) ? youtube.playableSigns : [];
+  const unavailable = Array.isArray(youtube.unavailableConcepts) ? youtube.unavailableConcepts : [];
   dispatchedYoutubeJobs.add(youtube.jobId);
-  if (!signs.length) return;
 
   const sendToTab = (tabId) => {
     if (!tabId) return;
-    const commandFor = (command, signId) => self.ISLMessageContract.createMessage(
-      self.ISLMessageContract.MESSAGE_TYPES.AETHER_COMMAND,
-      { command, signId, source: 'youtube', jobId: youtube.jobId }
-    );
-    chrome.tabs.sendMessage(tabId, commandFor('PLAY_SIGN', signs[0]), () => {
-      if (chrome.runtime.lastError) console.warn('[ISL Service Worker] Aether command could not reach active tab:', chrome.runtime.lastError.message);
-    });
-    signs.slice(1).forEach(signId => {
-      chrome.tabs.sendMessage(tabId, commandFor('QUEUE_SIGN', signId), () => {
-        if (chrome.runtime.lastError) console.warn('[ISL Service Worker] Aether queue command failed:', chrome.runtime.lastError.message);
+    if (signs.length) {
+      const commandFor = (command, signId) => self.ISLMessageContract.createMessage(
+        self.ISLMessageContract.MESSAGE_TYPES.AETHER_COMMAND,
+        { command, signId, source: 'youtube', jobId: youtube.jobId }
+      );
+      chrome.tabs.sendMessage(tabId, commandFor('PLAY_SIGN', signs[0]), () => {
+        if (chrome.runtime.lastError) console.warn('[ISL Service Worker] Aether command could not reach active tab:', chrome.runtime.lastError.message);
       });
-    });
+      signs.slice(1).forEach(signId => {
+        chrome.tabs.sendMessage(tabId, commandFor('QUEUE_SIGN', signId), () => {
+          if (chrome.runtime.lastError) console.warn('[ISL Service Worker] Aether queue command failed:', chrome.runtime.lastError.message);
+        });
+      });
+    } else if (unavailable.length) {
+      const fallbackMsg = self.ISLMessageContract.createMessage(
+        self.ISLMessageContract.MESSAGE_TYPES.UNAVAILABLE_FALLBACK,
+        { originalWord: unavailable[0].word || unavailable[0], reason: unavailable[0].reason || 'MOTION_NOT_AUTHORED', jobId: youtube.jobId }
+      );
+      chrome.tabs.sendMessage(tabId, fallbackMsg, () => {
+        if (chrome.runtime.lastError) { /* ignore */ }
+      });
+    }
   };
 
   if (activeYoutubeTabId) {

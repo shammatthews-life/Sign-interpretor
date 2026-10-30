@@ -1,0 +1,125 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "want",
+  "metadata": {
+    "display_name": "Want",
+    "gloss": "WANT",
+    "language": "ISL",
+    "lexical_type": "Volitional verb; two-handed claw handshape pulling toward body",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Both hands reach forward with palms up in curved claw handshapes, then pull horizontally back toward the torso while curling fingers slightly to express desire."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1400,
+    "dominant_hand": "both",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_L_Clavicle",
+      "Bip001_L_UpperArm",
+      "Bip001_L_Forearm",
+      "Bip001_L_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 350,
+        "label": "Reach Forward with Open Curved Palms",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 6, "z": -2 },
+          "Bip001_R_UpperArm": { "x": 10, "y": 5, "z": -50 },
+          "Bip001_R_Forearm": { "x": 0, "y": 20, "z": -55 },
+          "Bip001_R_Hand": { "x": -20, "y": 10, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": -6, "z": 2 },
+          "Bip001_L_UpperArm": { "x": 10, "y": -5, "z": 50 },
+          "Bip001_L_Forearm": { "x": 0, "y": -20, "z": 55 },
+          "Bip001_L_Hand": { "x": -20, "y": -10, "z": 0 },
+          "Bip001_Head": { "x": 2, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 30, "index": 35, "middle": 35, "ring": 35, "pinky": 35 }
+      },
+      {
+        "time_ms": 750,
+        "label": "Pull Inward Contracting into Claw",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": -8, "y": -10, "z": -35 },
+          "Bip001_R_Forearm": { "x": 0, "y": 15, "z": -70 },
+          "Bip001_R_Hand": { "x": -10, "y": 15, "z": 5 },
+          "Bip001_L_Clavicle": { "x": 0, "y": -4, "z": 2 },
+          "Bip001_L_UpperArm": { "x": -8, "y": 10, "z": 35 },
+          "Bip001_L_Forearm": { "x": 0, "y": -15, "z": 70 },
+          "Bip001_L_Hand": { "x": -10, "y": -15, "z": -5 },
+          "Bip001_Head": { "x": 3, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 45, "index": 55, "middle": 55, "ring": 55, "pinky": 55 }
+      },
+      {
+        "time_ms": 1100,
+        "label": "Hold Claw Gesture Near Body",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 3, "z": -1 },
+          "Bip001_R_UpperArm": { "x": -6, "y": -8, "z": -30 },
+          "Bip001_R_Forearm": { "x": 0, "y": 10, "z": -60 },
+          "Bip001_R_Hand": { "x": -8, "y": 10, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": -3, "z": 1 },
+          "Bip001_L_UpperArm": { "x": -6, "y": 8, "z": 30 },
+          "Bip001_L_Forearm": { "x": 0, "y": -10, "z": 60 },
+          "Bip001_L_Hand": { "x": -8, "y": -10, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 40, "index": 50, "middle": 50, "ring": 50, "pinky": 50 }
+      },
+      {
+        "time_ms": 1400,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      }
+    ]
+  }
+}

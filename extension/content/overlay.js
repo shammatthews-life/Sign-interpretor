@@ -135,6 +135,12 @@
                   <p style="font-size: 10px; color: #58a6ff;">http://localhost:8000</p>
                 </div>
               </div>
+
+              <!-- Unavailable Subtitle Fallback (Phase H13) -->
+              <div id="isl-unavailable-subtitle" class="isl-unavailable-subtitle hidden">
+                <div class="isl-unavailable-sub-header">ISL translation not available in this translator</div>
+                <div id="isl-unavailable-sub-text" class="isl-unavailable-sub-text"></div>
+              </div>
               <div class="isl-aether-controls">
                 <button id="btn-avatar-hello" class="isl-btn" title="Play HELLO">HELLO</button>
                 <button id="btn-avatar-good" class="isl-btn" title="Queue GOOD">+GOOD</button>
@@ -255,6 +261,8 @@
         aetherContainer: this.shadowRoot.getElementById('isl-aether-container'),
         aetherIframe: this.shadowRoot.getElementById('isl-aether-iframe'),
         aetherFallback: this.shadowRoot.getElementById('isl-aether-fallback'),
+        unavailableSubtitle: this.shadowRoot.getElementById('isl-unavailable-subtitle'),
+        unavailableSubText: this.shadowRoot.getElementById('isl-unavailable-sub-text'),
         btnAvatarHello: this.shadowRoot.getElementById('btn-avatar-hello'),
         btnAvatarGood: this.shadowRoot.getElementById('btn-avatar-good'),
         btnAvatarMorning: this.shadowRoot.getElementById('btn-avatar-morning'),
@@ -395,6 +403,17 @@
       }
     }
 
+    setUnavailableFallback(originalWord = null) {
+      if (!this.elements.unavailableSubtitle || !this.elements.unavailableSubText) return;
+      if (originalWord) {
+        this.elements.unavailableSubText.textContent = String(originalWord);
+        this.elements.unavailableSubtitle.classList.remove('hidden');
+      } else {
+        this.elements.unavailableSubtitle.classList.add('hidden');
+        this.elements.unavailableSubText.textContent = '';
+      }
+    }
+
     toggleMinimize() {
       this.isMinimized = !this.isMinimized;
       this.elements.container.classList.toggle('minimized', this.isMinimized);
@@ -500,6 +519,14 @@
       } else {
         el.boxUnavailable.classList.add('hidden');
         el.listUnavailable.innerHTML = '';
+      }
+
+      // 5b. Unavailable Subtitle Fallback directly below Aether (Phase H13)
+      const fallbackWord = queue.unavailableFallback || state.youtube?.unavailableFallback;
+      if (fallbackWord) {
+        this.setUnavailableFallback(fallbackWord);
+      } else if (queue.currentSign) {
+        this.setUnavailableFallback(null);
       }
 
       // 6. Demo mode state

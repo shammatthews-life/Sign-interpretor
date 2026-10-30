@@ -62,7 +62,8 @@ export function processSegments(segments, translator = null) {
       candidate_sign_ids: rep.motion_candidate_sign_ids || [],
       playable_signs: rep.sign_ids || [],
       unavailable_concepts: rep.unavailable_signs || [],
-      unknown_terms: rep.unknown_terms || []
+      unknown_terms: rep.unknown_terms || [],
+      grammar_omissions: rep.grammar_omissions || []
     };
   });
 }
