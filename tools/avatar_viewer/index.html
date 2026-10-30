@@ -1040,7 +1040,7 @@
         signPlayer = new SignAnimationPlayer(fbx, bonesMap, HandRig);
         try {
           signLibrary = new SignLibrary();
-          const preload = await signLibrary.preload(['hello', 'good', 'morning', 'water', 'you', 'i', 'what', 'not', 'how', 'your', 'my', 'have', 'want', 'look', 'see', 'go', 'do', 'people', 'one', 'when', 'now', 'more']);
+          const preload = await signLibrary.preload(['hello', 'good', 'morning', 'water', 'you', 'i', 'what', 'not', 'how', 'your', 'my', 'have', 'want', 'look', 'see', 'go', 'do', 'people', 'one', 'when', 'now', 'more', 'like', 'can', 'know', 'think', 'say', 'time', 'give', 'we', 'they', 'will', 'two', 'yes', 'no', 'come', 'learn']);
           const failed = preload.filter(item => item.status === 'rejected');
           if (failed.length) throw failed[0].reason;
           const hello = signLibrary.getPlayable('hello', bonesMap);
@@ -1048,7 +1048,7 @@
           document.getElementById('sign-scrubber').max = hello.duration_ms;
           document.getElementById('txt-total-duration').textContent = hello.duration_ms + ' ms';
           signScheduler = new SignScheduler(signPlayer, signLibrary, bonesMap, renderQueueState, event => { playbackTimings.push(event); renderTiming(); });
-          setSequenceStatus('Library preloaded: 22 ISL signs (HELLO, GOOD, MORNING, WATER, YOU, I, WHAT, NOT, HOW, YOUR, MY, HAVE, WANT, LOOK, SEE, GO, DO, PEOPLE, ONE, WHEN, NOW, MORE) are playable.');
+          setSequenceStatus('Library preloaded: 37 ISL signs (HELLO, GOOD, MORNING, WATER, YOU, I, WHAT, NOT, HOW, YOUR, MY, HAVE, WANT, LOOK, SEE, GO, DO, PEOPLE, ONE, WHEN, NOW, MORE, LIKE, CAN, KNOW, THINK, SAY, TIME, GIVE, WE, THEY, WILL, TWO, YES, NO, COME, LEARN) are playable.');
           console.log('[ISL Library] Preloaded:', preload.map(item => item.id).join(', '));
         } catch (err) {
           setSequenceStatus(`Library error: ${err.message}`, true);

@@ -5,22 +5,22 @@
   "total_spoken_tokens": 23258,
   "total_tokens_accounted_for": 23258,
   "disposition_coverage_percent": 100.0,
-  "unique_lemmas_count": 2259,
+  "unique_lemmas_count": 2173,
   "dispositions": {
-    "GRAMMAR_OMISSION": 6532,
-    "SUBTITLE_FALLBACK": 11227,
-    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 764,
-    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 4041,
-    "FINGERSPELLED": 125,
-    "PHRASE_TRANSLATED": 569
+    "GRAMMAR_OMISSION": 9464,
+    "PHRASE_TRANSLATED": 749,
+    "SUBTITLE_FALLBACK": 6015,
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 223,
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 6645,
+    "FINGERSPELLED": 162
   },
   "percentages": {
-    "GRAMMAR_OMISSION": 28.08,
-    "SUBTITLE_FALLBACK": 48.27,
-    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 3.28,
-    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 17.37,
-    "FINGERSPELLED": 0.54,
-    "PHRASE_TRANSLATED": 2.45
+    "GRAMMAR_OMISSION": 40.69,
+    "PHRASE_TRANSLATED": 3.22,
+    "SUBTITLE_FALLBACK": 25.86,
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 0.96,
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 28.57,
+    "FINGERSPELLED": 0.7
   },
   "islrtc_acknowledgement": "Lexical concepts, category schemas, and sign references cite the Indian Sign Language Research and Training Centre (ISLRTC), Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment, Government of India. Permitted for non-commercial research and accessibility technology development."
 }

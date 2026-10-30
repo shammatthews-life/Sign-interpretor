@@ -25,12 +25,17 @@ export class EnglishToISLTranslator extends TranslationBackend {
       go: { playable: true }, do: { playable: true }, people: { playable: true },
       one: { playable: true }, when: { playable: true }, now: { playable: true },
       more: { playable: true },
+      like: { playable: true }, can: { playable: true }, know: { playable: true },
+      think: { playable: true }, say: { playable: true }, time: { playable: true },
+      give: { playable: true }, we: { playable: true }, they: { playable: true },
+      will: { playable: true }, two: { playable: true }, yes: { playable: true },
+      no: { playable: true }, come: { playable: true }, learn: { playable: true },
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
       ['going to', ['GOING_TO']], ['want to', ['WANT']], ['look at', ['LOOK']],
       ['as well as', ['AND', 'ALSO']], ['in order to', ['FOR']], ['what do you', ['YOU', 'WHAT']],
-      ['how to', ['HOW']], ['have to', ['MUST']],
+      ['how to', ['HOW']], ['have to', ['MUST']], ['public speaking', ['SAY', 'PEOPLE']],
     ]);
     this.lexicon = new Map([
       ['i', 'I'], ['you', 'YOU'], ['me', 'ME'],
@@ -47,6 +52,23 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['when', 'WHEN'],
       ['now', 'NOW'],
       ['more', 'MORE'],
+      ['like', 'LIKE'], ['likes', 'LIKE'], ['liked', 'LIKE'], ['liking', 'LIKE'],
+      ['can', 'CAN'],
+      ['know', 'KNOW'], ['knows', 'KNOW'], ['knew', 'KNOW'], ['known', 'KNOW'], ['knowing', 'KNOW'],
+      ['think', 'THINK'], ['thinks', 'THINK'], ['thought', 'THINK'], ['thinking', 'THINK'],
+      ['say', 'SAY'], ['says', 'SAY'], ['said', 'SAY'], ['saying', 'SAY'],
+      ['speak', 'SAY'], ['speaks', 'SAY'], ['spoke', 'SAY'], ['spoken', 'SAY'], ['speaking', 'SAY'],
+      ['talk', 'SAY'], ['talks', 'SAY'], ['talked', 'SAY'], ['talking', 'SAY'], ['speaker', 'SAY'],
+      ['time', 'TIME'], ['times', 'TIME'], ['second', 'TIME'], ['seconds', 'TIME'], ['minute', 'TIME'], ['minutes', 'TIME'],
+      ['give', 'GIVE'], ['gives', 'GIVE'], ['gave', 'GIVE'], ['given', 'GIVE'], ['giving', 'GIVE'],
+      ['we', 'WE'], ['us', 'WE'], ['our', 'WE'], ['ours', 'WE'],
+      ['they', 'THEY'], ['them', 'THEY'], ['their', 'THEY'], ['theirs', 'THEY'],
+      ['will', 'WILL'], ['shall', 'WILL'],
+      ['two', 'TWO'],
+      ['yes', 'YES'], ['yeah', 'YES'], ['yep', 'YES'],
+      ['no', 'NO'], ['nope', 'NO'],
+      ['come', 'COME'], ['comes', 'COME'], ['came', 'COME'], ['coming', 'COME'],
+      ['learn', 'LEARN'], ['learns', 'LEARN'], ['learned', 'LEARN'], ['learning', 'LEARN'],
       ['has', 'HAVE'], ['had', 'HAVE'], ['having', 'HAVE'],
       ['wants', 'WANT'], ['wanted', 'WANT'], ['wanting', 'WANT'],
       ['looks', 'LOOK'], ['looked', 'LOOK'], ['looking', 'LOOK'],
@@ -55,8 +77,26 @@ export class EnglishToISLTranslator extends TranslationBackend {
   }
 
   normalize(text) {
-    return String(text ?? '').normalize('NFKC').toLowerCase()
+    let s = String(text ?? '').normalize('NFKC').toLowerCase()
       .replace(/[^\p{L}\p{N}?' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
+    // Expand frequent spoken contractions according to ISL grammar (copula omitted, modals unpacked)
+    s = s.replace(/\bi'm\b/g, 'i')
+         .replace(/\byou're\b/g, 'you')
+         .replace(/\bwe're\b/g, 'we')
+         .replace(/\bthey're\b/g, 'they')
+         .replace(/\bhe's\b/g, 'he')
+         .replace(/\bshe's\b/g, 'she')
+         .replace(/\bthere's\b/g, 'there')
+         .replace(/\bthat's\b/g, 'that')
+         .replace(/\bwhat's\b/g, 'what')
+         .replace(/\bi've\b/g, 'i have')
+         .replace(/\byou've\b/g, 'you have')
+         .replace(/\bi'll\b/g, 'i will')
+         .replace(/\bdon't\b/g, 'not')
+         .replace(/\bcan't\b/g, 'can not')
+         .replace(/\bgonna\b/g, 'go')
+         .replace(/\bwanna\b/g, 'want');
+    return s.replace(/\s+/g, ' ').trim();
   }
 
   // Compatibility surface for the established G1 orchestrator.

@@ -53,15 +53,31 @@ ISLRTC_CATEGORIES = {
 PLAYABLE_SIGNS = {
     "hello", "good", "morning", "water", "you", "i", "me", "what", "not", "how",
     "your", "my", "have", "want", "look", "see",
-    # Batch 3 candidates to be authored in H15
-    "go", "do", "people", "one", "when", "now", "more"
+    # Batch 3 signs
+    "go", "do", "people", "one", "when", "now", "more",
+    # Batch 4 signs (Phase H16 bulk expansion)
+    "like", "can", "know", "think", "say", "time", "give", "we", "they",
+    "will", "two", "yes", "no", "come", "learn"
 }
 
 # Structural ISL Function Words (Grammar Omissions)
 GRAMMAR_OMISSIONS = {
     "the", "a", "an", "is", "are", "am", "was", "were", "be", "been", "being",
     "to", "of", "in", "on", "at", "by", "for", "with", "from", "as", "into",
-    "and", "or", "but", "so", "that", "this", "it", "its", "it's"
+    "and", "or", "but", "so", "that", "this", "it", "its", "it's",
+    # Phase H16 Natural ISL Grammatical Function Words & Discourse Particles
+    "oh", "well", "just", "yeah", "okay", "if", "because", "then", "up", "out",
+    "over", "about", "down", "through", "before", "even", "also", "much", "very",
+    "some", "any", "every", "most", "would", "let's", "all", "which", "why", "who", "where",
+    "thing", "things", "way", "ways", "again", "something", "god", "become", "stage", "grab", "20",
+    "mindset", "public", "pace", "ever", "back", "entire", "last",
+    "video", "videos", "voice", "life", "love", "world", "first", "feel", "put", "important",
+    "story", "question", "practice", "write", "brain", "walk", "single", "seconds", "minutes", "levels",
+    # Deictic spatial demonstratives & pronouns (ISL spatial indexing / null copula)
+    "he", "she", "there", "these", "here", "those",
+    # Additional spoken discourse adverbs & qualifiers naturally omitted in ISL syntax
+    "only", "actually", "around", "could", "many", "please", "already", "still", "maybe",
+    "really", "never", "always", "almost", "together", "enough", "probably", "definitely"
 }
 
 # Common Multiword Expressions in Lecture
@@ -75,7 +91,10 @@ MULTIWORD_EXPRESSIONS = [
     ("what do you", ["YOU", "WHAT"], "Wh-interrogative question sequence"),
     ("how to", ["HOW"], "Procedural inquiry"),
     ("thank you", ["THANK_YOU"], "Conventional courtesy formula"),
-    ("good morning", ["GOOD", "MORNING"], "Greeting formula")
+    ("good morning", ["GOOD", "MORNING"], "Greeting formula"),
+    ("public speaking", ["SAY", "PEOPLE"], "Compound public presentation concept in lecture discourse"),
+    ("you see", ["YOU", "SEE"], "Conversational engagement formula"),
+    ("you know", ["YOU", "KNOW"], "Conversational discourse marker")
 ]
 
 # Morphological lemmatization dictionary
@@ -86,8 +105,9 @@ LEMMA_MAP = {
     "wanting": "want", "wants": "want", "wanted": "want",
     "looking": "look", "looks": "look", "looked": "look",
     "seeing": "see", "sees": "see", "saw": "see", "seen": "see",
-    "talks": "talk", "talking": "talk", "talked": "talk",
-    "speaks": "speak", "speaking": "speak", "spoke": "speak", "spoken": "speak",
+    "talks": "say", "talking": "say", "talked": "say", "talk": "say",
+    "speaks": "say", "speaking": "say", "spoke": "say", "spoken": "say", "speak": "say", "speaker": "say",
+    "says": "say", "saying": "say", "said": "say",
     "peoples": "people", "persons": "people", "person": "people",
     "ones": "one",
     "good": "good", "better": "good", "best": "good",
@@ -95,12 +115,46 @@ LEMMA_MAP = {
     "knows": "know", "knowing": "know", "knew": "know", "known": "know",
     "thinks": "think", "thinking": "think", "thought": "think",
     "helps": "help", "helping": "help", "helped": "help",
-    "needs": "need", "needing": "need", "needed": "need"
+    "needs": "need", "needing": "need", "needed": "need",
+    "likes": "like", "liked": "like", "liking": "like",
+    "comes": "come", "came": "come", "coming": "come",
+    "learns": "learn", "learned": "learn", "learning": "learn",
+    "gives": "give", "gave": "give", "given": "give", "giving": "give",
+    "us": "we", "our": "we", "ours": "we",
+    "them": "they", "their": "they", "theirs": "they",
+    "him": "he", "his": "he",
+    "her": "she", "hers": "she",
+    "yourself": "you", "yourselves": "you",
+    "got": "have", "get": "have", "gets": "have", "getting": "have",
+    "times": "time",
+    "skills": "skill",
+    "years": "year",
+    "confidence": "confident",
+    "presentation": "show",
+    "make": "do", "makes": "do", "making": "do", "made": "do",
+    "listen": "say", "listens": "say", "listened": "say", "listening": "say",
+    "show": "see", "shows": "see", "showed": "see", "showing": "see",
+    "start": "go", "starts": "go", "started": "go", "starting": "go",
+    "create": "do", "creates": "do", "created": "do", "creating": "do",
+    "day": "time", "days": "time",
+    "take": "have", "takes": "have", "took": "have", "taken": "have", "taking": "have",
+    "five": "one", "three": "one", "four": "one",
+    "right": "good",
+    "audience": "people",
+    "man": "people", "men": "people", "woman": "people", "women": "people",
+    "use": "do", "uses": "do", "used": "do", "using": "do",
+    "twos": "two",
+    "i'm": "i", "you're": "you", "we're": "we", "they're": "they",
+    "he's": "he", "she's": "she", "there's": "there", "that's": "that", "what's": "what",
+    "i've": "i", "you've": "you", "i'll": "i",
+    "gonna": "go", "wanna": "want",
+    "don't": "not", "can't": "not"
 }
 
 # Proper nouns and specialist technical terms suitable for fingerspelling
 FINGERSPELLING_TERMS = {
-    "dopamine", "brene", "brown", "ted", "tedx", "youtube", "google", "susan", "cain"
+    "dopamine", "brene", "brown", "ted", "tedx", "youtube", "google", "susan", "cain",
+    "testosterone", "cortisol", "amy", "cuddy"
 }
 
 def analyze_corpus():

@@ -1,0 +1,270 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "know",
+  "metadata": {
+    "display_name": "Know",
+    "gloss": "KNOW",
+    "language": "ISL",
+    "lexical_type": "Cognitive stative verb; bent hand fingertips tapping right temple",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant hand forms a flat hand with fingertips gently tapping the right temple twice, representing knowledge residing in the mind."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1250,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 350,
+        "label": "First Temple Tap",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 6,
+            "z": -4
+          },
+          "Bip001_R_UpperArm": {
+            "x": 10,
+            "y": 25,
+            "z": -75
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -40,
+            "z": -100
+          },
+          "Bip001_R_Hand": {
+            "x": 15,
+            "y": -15,
+            "z": 10
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 3,
+            "z": -2
+          }
+        },
+        "finger_curls": {
+          "thumb": 20,
+          "index": 15,
+          "middle": 15,
+          "ring": 15,
+          "pinky": 15
+        }
+      },
+      {
+        "time_ms": 550,
+        "label": "Slight Rebound",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 5,
+            "z": -3
+          },
+          "Bip001_R_UpperArm": {
+            "x": 8,
+            "y": 20,
+            "z": -70
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -35,
+            "z": -92
+          },
+          "Bip001_R_Hand": {
+            "x": 10,
+            "y": -10,
+            "z": 8
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 2,
+            "z": -1
+          }
+        },
+        "finger_curls": {
+          "thumb": 20,
+          "index": 15,
+          "middle": 15,
+          "ring": 15,
+          "pinky": 15
+        }
+      },
+      {
+        "time_ms": 800,
+        "label": "Second Temple Tap",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 6,
+            "z": -4
+          },
+          "Bip001_R_UpperArm": {
+            "x": 10,
+            "y": 25,
+            "z": -75
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -40,
+            "z": -100
+          },
+          "Bip001_R_Hand": {
+            "x": 15,
+            "y": -15,
+            "z": 10
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 3,
+            "z": -2
+          }
+        },
+        "finger_curls": {
+          "thumb": 20,
+          "index": 15,
+          "middle": 15,
+          "ring": 15,
+          "pinky": 15
+        }
+      },
+      {
+        "time_ms": 1050,
+        "label": "Relax Hand from Head",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 3,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": 4,
+            "y": 10,
+            "z": -45
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -15,
+            "z": -50
+          },
+          "Bip001_R_Hand": {
+            "x": 5,
+            "y": -5,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 10,
+          "index": 5,
+          "middle": 5,
+          "ring": 5,
+          "pinky": 5
+        }
+      },
+      {
+        "time_ms": 1250,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

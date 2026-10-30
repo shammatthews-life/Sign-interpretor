@@ -488,3 +488,48 @@ Authored and integrated 7 new priority ISL motions from the corpus, expanding th
 ### 4. Verification
 - 100% pass on [`tools/validate_phase_h15_corpus_lexicon.mjs`](../tools/validate_phase_h15_corpus_lexicon.mjs).
 - Zero regressions across all prior validation suites.
+
+
+---
+---
+
+## S. Phase H16 Large-Scale Vocabulary Expansion, Motion Authoring & Multi-Token Resolution
+
+Documented in detail in [`docs/h16_remaining_vocabulary_research.md`](h16_remaining_vocabulary_research.md).
+
+### 1. High-Volume Occurrence Resolution (Target: >= 5,000 Occurrences)
+Addressed the remaining 11,991 unaddressed token occurrences from Phase H15 across the canonical 23,258-token lecture transcript (`MXKkXXYUxBc`):
+- **Phase H15 Unaddressed Baseline:** 11,991 occurrences (11,227 subtitle fallback + 764 motion pending).
+- **Phase H16 Remaining Unaddressed:** 6,238 occurrences (6,015 subtitle fallback + 223 motion pending).
+- **Total Occurrences Resolved in Phase H16:** **5,753 occurrences** (Target of 5,000 exceeded by +753).
+- **Communicative Coverage Jump:** Increased from 48.45% (11,267 occurrences) to **73.18% (17,020 occurrences)**.
+- **Token Accounting Integrity:** **100.0% (23,258 / 23,258 tokens)** preserved with zero silent loss.
+
+### 2. Batch 4 Motion Authoring (Schema 2.0.0)
+Authored and integrated 15 high-frequency ISLRTC-documented motions into `signs/`, expanding the playable library from **22 signs to 37 playable signs**:
+- [`signs/like.json`](signs/like.json) (201 occ): Chest-to-pinch affinity verb (1200 ms).
+- [`signs/can.json`](signs/can.json) (124 occ): S-fist downward firm nod modal (1100 ms).
+- [`signs/know.json`](signs/know.json) (75 occ): Temple double-tap cognitive verb (1250 ms).
+- [`signs/think.json`](signs/think.json) (45 occ): Index temple reflective gaze verb (1200 ms).
+- [`signs/say.json`](signs/say.json) (91 occ): Outward rolling mouth communication verb (1150 ms).
+- [`signs/time.json`](signs/time.json) (54 occ): Dual-arm watch locus wrist tap (1300 ms).
+- [`signs/give.json`](signs/give.json) (73 occ): Forward cupped offering transfer verb (1200 ms).
+- [`signs/we.json`](signs/we.json) (127 occ): First-person plural chest sweep deictic pronoun (1250 ms).
+- [`signs/they.json`](signs/they.json) (123 occ): Third-person plural lateral pointing arc (1150 ms).
+- [`signs/will.json`](signs/will.json) (72 occ): Flat hand future temporal space push (1100 ms).
+- [`signs/two.json`](signs/two.json) (47 occ): Upright V-handshape numeral (1100 ms).
+- [`signs/yes.json`](signs/yes.json) (31 occ): S-fist downward nodding affirmation (1200 ms).
+- [`signs/no.json`](signs/no.json) (42 occ): Double snap close negative particle (1150 ms).
+- [`signs/come.json`](signs/come.json) (20 occ): Supinated beckon directional verb (1150 ms).
+- [`signs/learn.json`](signs/learn.json) (25 occ): Dual-arm palm-to-forehead cognitive acquisition verb (1350 ms).
+
+### 3. Syntactic, Contraction & Deictic Rules
+- **Contraction Unpacking:** Automatically unpacks `i'm`, `you're`, `we're`, `they're`, `i've`, `you've`, `i'll`, `don't`, `can't`, `gonna`, `wanna` into core ISL lexical items and copula omissions.
+- **Spatial Deictic Indexing:** Mapped third-person pronouns and demonstratives (`he`, `she`, `there`, `these`, `here`, `those`) to spatial loci.
+- **Discourse Fillers & Particles:** Formalized `GRAMMAR_OMISSION` mappings for conversational fillers (`oh`, `well`, `just`, `yeah`, `okay`) and grammatical particles.
+- **Compound Multiwords:** Registered `public speaking` -> `['SAY', 'PEOPLE']`, `you see` -> `['YOU', 'SEE']`.
+
+### 4. Verification & Validation
+- **Phase H16 Suite:** [`tools/validate_phase_h16_bulk_expansion.mjs`](../tools/validate_phase_h16_bulk_expansion.mjs) (4/4 PASS).
+- **All 37 Signs Preloaded:** Initialized and verified in [`tools/avatar_viewer/index.html`](../tools/avatar_viewer/index.html) and `SignLibrary.js`.
+- **Regression Suite:** Zero regressions across [`tools/validate_phase_h15_corpus_lexicon.mjs`](../tools/validate_phase_h15_corpus_lexicon.mjs), [`tools/validate_phase_h14_visual_and_extension.mjs`](../tools/validate_phase_h14_visual_and_extension.mjs), [`tools/validate_phase_h13_motion_and_subtitle.mjs`](../tools/validate_phase_h13_motion_and_subtitle.mjs), [`tools/validate_phase_h8_extension_youtube.mjs`](../tools/validate_phase_h8_extension_youtube.mjs), and [`tools/validate_phase_g3_translation.mjs`](../tools/validate_phase_g3_translation.mjs).
