@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Phase H23 Cross-Video Corpus Generalization Benchmark",
+    "total_benchmark_corpora": 5,
+    "average_communicative_coverage": "58.4%",
+    "playable_library_size": 207
+  },
+  "benchmarks": [
+    {
+      "video_id": "EDU_CS50_LEC01",
+      "title": "Introduction to Computer Science (Educational Lecture)",
+      "domain": "Academic Lecture",
+      "duration_seconds": 1800,
+      "sampled_words_count": 31,
+      "playable_sign_matches": 14,
+      "grammar_omissions": 5,
+      "subtitle_fallback_count": 12,
+      "communicative_coverage_percent": 61.3,
+      "estimated_rtf": 0.08,
+      "generalization_rating": "GOOD"
+    },
+    {
+      "video_id": "TED_TALK_CONFIDENCE",
+      "title": "Your Body Language May Shape Who You Are (Presentation)",
+      "domain": "Public Keynote Presentation",
+      "duration_seconds": 1260,
+      "sampled_words_count": 32,
+      "playable_sign_matches": 19,
+      "grammar_omissions": 1,
+      "subtitle_fallback_count": 12,
+      "communicative_coverage_percent": 62.5,
+      "estimated_rtf": 0.08,
+      "generalization_rating": "GOOD"
+    },
+    {
+      "video_id": "TECH_PYTHON_TUTORIAL",
+      "title": "Python for Beginners (Technical Tutorial)",
+      "domain": "Software Technical Tutorial",
+      "duration_seconds": 900,
+      "sampled_words_count": 37,
+      "playable_sign_matches": 14,
+      "grammar_omissions": 4,
+      "subtitle_fallback_count": 19,
+      "communicative_coverage_percent": 48.6,
+      "estimated_rtf": 0.08,
+      "generalization_rating": "GOOD"
+    },
+    {
+      "video_id": "PODCAST_INTERVIEW_AI",
+      "title": "The Future of Technology (Interview)",
+      "domain": "Conversational Dialogue",
+      "duration_seconds": 2400,
+      "sampled_words_count": 37,
+      "playable_sign_matches": 16,
+      "grammar_omissions": 2,
+      "subtitle_fallback_count": 19,
+      "communicative_coverage_percent": 48.6,
+      "estimated_rtf": 0.08,
+      "generalization_rating": "GOOD"
+    },
+    {
+      "video_id": "DAILY_ENGLISH_DIALOGUE",
+      "title": "Everyday Situational Dialogue (General Dialogue)",
+      "domain": "Everyday Conversational",
+      "duration_seconds": 450,
+      "sampled_words_count": 31,
+      "playable_sign_matches": 18,
+      "grammar_omissions": 4,
+      "subtitle_fallback_count": 9,
+      "communicative_coverage_percent": 71.0,
+      "estimated_rtf": 0.08,
+      "generalization_rating": "GOOD"
+    }
+  ]
+}

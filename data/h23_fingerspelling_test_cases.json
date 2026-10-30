@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "title": "Phase H23 Fingerspelling Benchmark & Technical Term Test Suite",
+    "total_test_cases": 24,
+    "manual_alphabet_type": "ISLRTC Official Two-Handed Manual Alphabet"
+  },
+  "cases": [
+    {
+      "case_id": 1,
+      "category": "CONSECUTIVE_VOWELS",
+      "word": "AUDIO",
+      "character_length": 5,
+      "vowel_count": 4,
+      "calculated_duration_ms": 3350,
+      "keyframe_count": 7,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 2,
+      "category": "CONSECUTIVE_VOWELS",
+      "word": "QUEUE",
+      "character_length": 5,
+      "vowel_count": 4,
+      "calculated_duration_ms": 3350,
+      "keyframe_count": 7,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 3,
+      "category": "CONSECUTIVE_VOWELS",
+      "word": "EAGLE",
+      "character_length": 5,
+      "vowel_count": 3,
+      "calculated_duration_ms": 3350,
+      "keyframe_count": 7,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 4,
+      "category": "CONSECUTIVE_VOWELS",
+      "word": "IDEA",
+      "character_length": 4,
+      "vowel_count": 3,
+      "calculated_duration_ms": 2800,
+      "keyframe_count": 6,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 5,
+      "category": "CONSECUTIVE_VOWELS",
+      "word": "AREA",
+      "character_length": 4,
+      "vowel_count": 3,
+      "calculated_duration_ms": 2800,
+      "keyframe_count": 6,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 6,
+      "category": "REPEATED_LETTERS",
+      "word": "BUFFETT",
+      "character_length": 7,
+      "vowel_count": 2,
+      "calculated_duration_ms": 4450,
+      "keyframe_count": 9,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 7,
+      "category": "REPEATED_LETTERS",
+      "word": "CLASS",
+      "character_length": 5,
+      "vowel_count": 1,
+      "calculated_duration_ms": 3350,
+      "keyframe_count": 7,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 8,
+      "category": "REPEATED_LETTERS",
+      "word": "LOOK",
+      "character_length": 4,
+      "vowel_count": 2,
+      "calculated_duration_ms": 2800,
+      "keyframe_count": 6,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 9,
+      "category": "REPEATED_LETTERS",
+      "word": "SEE",
+      "character_length": 3,
+      "vowel_count": 2,
+      "calculated_duration_ms": 2250,
+      "keyframe_count": 5,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 10,
+      "category": "REPEATED_LETTERS",
+      "word": "SPEED",
+      "character_length": 5,
+      "vowel_count": 2,
+      "calculated_duration_ms": 3350,
+      "keyframe_count": 7,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 11,
+      "category": "PROPER_NOUNS",
+      "word": "DAVID",
+      "character_length": 5,
+      "vowel_count": 2,
+      "calculated_duration_ms": 3350,
+      "keyframe_count": 7,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 12,
+      "category": "PROPER_NOUNS",
+      "word": "WARREN",
+      "character_length": 6,
+      "vowel_count": 2,
+      "calculated_duration_ms": 3900,
+      "keyframe_count": 8,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 13,
+      "category": "PROPER_NOUNS",
+      "word": "STEVE",
+      "character_length": 5,
+      "vowel_count": 2,
+      "calculated_duration_ms": 3350,
+      "keyframe_count": 7,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 14,
+      "category": "PROPER_NOUNS",
+      "word": "JOBS",
+      "character_length": 4,
+      "vowel_count": 1,
+      "calculated_duration_ms": 2800,
+      "keyframe_count": 6,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 15,
+      "category": "PROPER_NOUNS",
+      "word": "CALIFORNIA",
+      "character_length": 10,
+      "vowel_count": 5,
+      "calculated_duration_ms": 6100,
+      "keyframe_count": 12,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 16,
+      "category": "TECHNICAL_ACRONYMS",
+      "word": "SQL",
+      "character_length": 3,
+      "vowel_count": 0,
+      "calculated_duration_ms": 2250,
+      "keyframe_count": 5,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 17,
+      "category": "TECHNICAL_ACRONYMS",
+      "word": "CPU",
+      "character_length": 3,
+      "vowel_count": 1,
+      "calculated_duration_ms": 2250,
+      "keyframe_count": 5,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 18,
+      "category": "TECHNICAL_ACRONYMS",
+      "word": "RAM",
+      "character_length": 3,
+      "vowel_count": 1,
+      "calculated_duration_ms": 2250,
+      "keyframe_count": 5,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 19,
+      "category": "TECHNICAL_ACRONYMS",
+      "word": "HTML",
+      "character_length": 4,
+      "vowel_count": 0,
+      "calculated_duration_ms": 2800,
+      "keyframe_count": 6,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 20,
+      "category": "TECHNICAL_ACRONYMS",
+      "word": "API",
+      "character_length": 3,
+      "vowel_count": 2,
+      "calculated_duration_ms": 2250,
+      "keyframe_count": 5,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 21,
+      "category": "LONG_WORDS",
+      "word": "COMMUNICATION",
+      "character_length": 13,
+      "vowel_count": 6,
+      "calculated_duration_ms": 7750,
+      "keyframe_count": 15,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 22,
+      "category": "LONG_WORDS",
+      "word": "SYNCHRONICITY",
+      "character_length": 13,
+      "vowel_count": 3,
+      "calculated_duration_ms": 7750,
+      "keyframe_count": 15,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 23,
+      "category": "LONG_WORDS",
+      "word": "PRESENTATION",
+      "character_length": 12,
+      "vowel_count": 5,
+      "calculated_duration_ms": 7200,
+      "keyframe_count": 14,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    },
+    {
+      "case_id": 24,
+      "category": "LONG_WORDS",
+      "word": "DISAMBIGUATION",
+      "character_length": 14,
+      "vowel_count": 7,
+      "calculated_duration_ms": 8300,
+      "keyframe_count": 16,
+      "neutral_lead_in_ms": 300,
+      "neutral_lead_out_ms": 300,
+      "vowel_target_fingers": {
+        "A": "thumb",
+        "E": "index",
+        "I": "middle",
+        "O": "ring",
+        "U": "pinky"
+      },
+      "status": "VALIDATED_SCHEMA_2_0_0"
+    }
+  ]
+}

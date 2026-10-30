@@ -1,0 +1,2510 @@
+{
+  "metadata": {
+    "title": "Phase H23 High-Priority 100-Sign Linguistic Evidence Registry",
+    "total_signs": 100,
+    "approved_by_external_reviewer": 0,
+    "pending_review": 100
+  },
+  "signs": [
+    {
+      "sign_id": "action",
+      "gloss": "ACTION",
+      "display_name": "Action",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/action",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "add",
+      "gloss": "ADD",
+      "display_name": "Add",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/add",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "answer",
+      "gloss": "ANSWER",
+      "display_name": "Answer",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/answer",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "art",
+      "gloss": "ART",
+      "display_name": "Art",
+      "dominant_hand": "both",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/art",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "ask",
+      "gloss": "ASK",
+      "display_name": "Ask",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/ask",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "attention",
+      "gloss": "ATTENTION",
+      "display_name": "Attention",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/attention",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "audience",
+      "gloss": "AUDIENCE",
+      "display_name": "Audience",
+      "dominant_hand": "both",
+      "duration_ms": 1400,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/audience",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "bad",
+      "gloss": "BAD",
+      "display_name": "Bad",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/bad",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "base",
+      "gloss": "BASE",
+      "display_name": "Base",
+      "dominant_hand": "both",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/base",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "beautiful",
+      "gloss": "BEAUTIFUL",
+      "display_name": "Beautiful",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/beautiful",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "board",
+      "gloss": "BOARD",
+      "display_name": "Board",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/board",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "body",
+      "gloss": "BODY",
+      "display_name": "Body",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/body",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "bond",
+      "gloss": "BOND",
+      "display_name": "Bond",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/bond",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "book",
+      "gloss": "BOOK",
+      "display_name": "Book",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/book",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "brain",
+      "gloss": "BRAIN",
+      "display_name": "Brain",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/brain",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "build",
+      "gloss": "BUILD",
+      "display_name": "Build",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/build",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "call",
+      "gloss": "CALL",
+      "display_name": "Call",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/call",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "camera",
+      "gloss": "CAMERA",
+      "display_name": "Camera",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/camera",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "can",
+      "gloss": "CAN",
+      "display_name": "Can",
+      "dominant_hand": "right",
+      "duration_ms": 1100,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/can",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "case",
+      "gloss": "CASE",
+      "display_name": "Case",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/case",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "catch",
+      "gloss": "CATCH",
+      "display_name": "Catch",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/catch",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "challenge",
+      "gloss": "CHALLENGE",
+      "display_name": "Challenge",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/challenge",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "change",
+      "gloss": "CHANGE",
+      "display_name": "Change",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/change",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "class",
+      "gloss": "CLASS",
+      "display_name": "Class",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/class",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "clean",
+      "gloss": "CLEAN",
+      "display_name": "Clean",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/clean",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "clear",
+      "gloss": "CLEAR",
+      "display_name": "Clear",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/clear",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "college",
+      "gloss": "COLLEGE",
+      "display_name": "College",
+      "dominant_hand": "both",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/college",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "combination",
+      "gloss": "COMBINATION",
+      "display_name": "Combination",
+      "dominant_hand": "both",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/combination",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "come",
+      "gloss": "COME",
+      "display_name": "Come",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/come",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "communication",
+      "gloss": "COMMUNICATION",
+      "display_name": "Communication",
+      "dominant_hand": "both",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/communication",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "computer",
+      "gloss": "COMPUTER",
+      "display_name": "Computer",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/computer",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "confident",
+      "gloss": "CONFIDENT",
+      "display_name": "Confident",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/confident",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "dark",
+      "gloss": "DARK",
+      "display_name": "Dark",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/dark",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "dead",
+      "gloss": "DEAD",
+      "display_name": "Dead",
+      "dominant_hand": "both",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/dead",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "different",
+      "gloss": "DIFFERENT",
+      "display_name": "Different",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/different",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "do",
+      "gloss": "DO",
+      "display_name": "Do",
+      "dominant_hand": "both",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/do",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "doctor",
+      "gloss": "DOCTOR",
+      "display_name": "Doctor",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/doctor",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "draw",
+      "gloss": "DRAW",
+      "display_name": "Draw",
+      "dominant_hand": "right",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/draw",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "drink",
+      "gloss": "DRINK",
+      "display_name": "Drink",
+      "dominant_hand": "right",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/drink",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "easy",
+      "gloss": "EASY",
+      "display_name": "Easy",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/easy",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "eat",
+      "gloss": "EAT",
+      "display_name": "Eat",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/eat",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "energy",
+      "gloss": "ENERGY",
+      "display_name": "Energy",
+      "dominant_hand": "right",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/energy",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "example",
+      "gloss": "EXAMPLE",
+      "display_name": "Example",
+      "dominant_hand": "both",
+      "duration_ms": 1350,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/example",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "eye",
+      "gloss": "EYE",
+      "display_name": "Eye",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/eye",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "fast",
+      "gloss": "FAST",
+      "display_name": "Fast",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/fast",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "fear",
+      "gloss": "FEAR",
+      "display_name": "Fear",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/fear",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "feel",
+      "gloss": "FEEL",
+      "display_name": "Feel",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/feel",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "find",
+      "gloss": "FIND",
+      "display_name": "Find",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/find",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "fine",
+      "gloss": "FINE",
+      "display_name": "Fine",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/fine",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "finish",
+      "gloss": "FINISH",
+      "display_name": "Finish",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/finish",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "fire",
+      "gloss": "FIRE",
+      "display_name": "Fire",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/fire",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "first",
+      "gloss": "FIRST",
+      "display_name": "First",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/first",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "flower",
+      "gloss": "FLOWER",
+      "display_name": "Flower",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/flower",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "friend",
+      "gloss": "FRIEND",
+      "display_name": "Friend",
+      "dominant_hand": "both",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/friend",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "game",
+      "gloss": "GAME",
+      "display_name": "Game",
+      "dominant_hand": "both",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/game",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "gesture",
+      "gloss": "GESTURE",
+      "display_name": "Gesture",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/gesture",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "give",
+      "gloss": "GIVE",
+      "display_name": "Give",
+      "dominant_hand": "right",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/give",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "go",
+      "gloss": "GO",
+      "display_name": "Go",
+      "dominant_hand": "right",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/go",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "good",
+      "gloss": "GOOD",
+      "display_name": "Good",
+      "dominant_hand": "right",
+      "duration_ms": 1700,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/good",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "great",
+      "gloss": "GREAT",
+      "display_name": "Great",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/great",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "hand",
+      "gloss": "HAND",
+      "display_name": "Hand",
+      "dominant_hand": "both",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/hand",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "happy",
+      "gloss": "HAPPY",
+      "display_name": "Happy",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/happy",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "hard",
+      "gloss": "HARD",
+      "display_name": "Hard",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/hard",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "have",
+      "gloss": "HAVE",
+      "display_name": "Have",
+      "dominant_hand": "both",
+      "duration_ms": 1400,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/have",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "head",
+      "gloss": "HEAD",
+      "display_name": "Head",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/head",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "hear",
+      "gloss": "HEAR",
+      "display_name": "Hear",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/hear",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "heart",
+      "gloss": "HEART",
+      "display_name": "Heart",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/heart",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "hello",
+      "gloss": "HELLO",
+      "display_name": "Hello",
+      "dominant_hand": "right",
+      "duration_ms": 2000,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/hello",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "help",
+      "gloss": "HELP",
+      "display_name": "Help",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/help",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "high",
+      "gloss": "HIGH",
+      "display_name": "High",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/high",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "hold",
+      "gloss": "HOLD",
+      "display_name": "Hold",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/hold",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "hope",
+      "gloss": "HOPE",
+      "display_name": "Hope",
+      "dominant_hand": "both",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/hope",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "how",
+      "gloss": "HOW",
+      "display_name": "How",
+      "dominant_hand": "both",
+      "duration_ms": 1400,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/how",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "i",
+      "gloss": "I",
+      "display_name": "I",
+      "dominant_hand": "right",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/i",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "idea",
+      "gloss": "IDEA",
+      "display_name": "Idea",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/idea",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "imagine",
+      "gloss": "IMAGINE",
+      "display_name": "Imagine",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/imagine",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "important",
+      "gloss": "IMPORTANT",
+      "display_name": "Important",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/important",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "keep",
+      "gloss": "KEEP",
+      "display_name": "Keep",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/keep",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "know",
+      "gloss": "KNOW",
+      "display_name": "Know",
+      "dominant_hand": "right",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/know",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "later",
+      "gloss": "LATER",
+      "display_name": "Later",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/later",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "lead",
+      "gloss": "LEAD",
+      "display_name": "Lead",
+      "dominant_hand": "both",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/lead",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "learn",
+      "gloss": "LEARN",
+      "display_name": "Learn",
+      "dominant_hand": "both",
+      "duration_ms": 1350,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/learn",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "left",
+      "gloss": "LEFT",
+      "display_name": "Left",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/left",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "lesson",
+      "gloss": "LESSON",
+      "display_name": "Lesson",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/lesson",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "level",
+      "gloss": "LEVEL",
+      "display_name": "Level",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/level",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "life",
+      "gloss": "LIFE",
+      "display_name": "Life",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/life",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "light",
+      "gloss": "LIGHT",
+      "display_name": "Light",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/light",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "like",
+      "gloss": "LIKE",
+      "display_name": "Like",
+      "dominant_hand": "right",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/like",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "line",
+      "gloss": "LINE",
+      "display_name": "Line",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/line",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "long",
+      "gloss": "LONG",
+      "display_name": "Long",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/long",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "look",
+      "gloss": "LOOK",
+      "display_name": "Look",
+      "dominant_hand": "right",
+      "duration_ms": 1300,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/look",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "lose",
+      "gloss": "LOSE",
+      "display_name": "Lose",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/lose",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "love",
+      "gloss": "LOVE",
+      "display_name": "Love",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/love",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "mark",
+      "gloss": "MARK",
+      "display_name": "Mark",
+      "dominant_hand": "both",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/mark",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "matter",
+      "gloss": "MATTER",
+      "display_name": "Matter",
+      "dominant_hand": "both",
+      "duration_ms": 1200,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/matter",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "mean",
+      "gloss": "MEAN",
+      "display_name": "Mean",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/mean",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "meet",
+      "gloss": "MEET",
+      "display_name": "Meet",
+      "dominant_hand": "both",
+      "duration_ms": 1250,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/meet",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Open-B / Index Point / Clasp",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "mind",
+      "gloss": "MIND",
+      "display_name": "Mind",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/mind",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "mindset",
+      "gloss": "MINDSET",
+      "display_name": "Mindset",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/mindset",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
+      "sign_id": "mine",
+      "gloss": "MINE",
+      "display_name": "Mine",
+      "dominant_hand": "right",
+      "duration_ms": 1150,
+      "islrtc_dictionary_reference": "https://islrtc.nic.in/isl-dictionary/mine",
+      "islrtc_source_authority": "ISLRTC 10,000-Term Dictionary (Govt. of India)",
+      "lifecycle_stages": {
+        "dictionary_reference_found": true,
+        "video_reference_inspected": true,
+        "motion_authored": true,
+        "technically_playable": true,
+        "visual_quality_inspected": true,
+        "linguistically_reviewed": false,
+        "native_deaf_approval_received": false
+      },
+      "phonological_components": {
+        "handshape": "Dominant Index / Flat Hand",
+        "orientation": "Palm inward / forward",
+        "location": "Neutral signing space / Chest level",
+        "movement": "Deliberate stroke with complete neutral return"
+      },
+      "status_label": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    }
+  ]
+}

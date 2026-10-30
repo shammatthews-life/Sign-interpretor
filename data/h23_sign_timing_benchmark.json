@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Phase H23 Sign Duration & Speech Rate Adaptation Benchmark",
+    "total_scenarios_evaluated": 5,
+    "max_safe_speedup_factor": 1.35,
+    "neutral_margin_minimum_ms": 80
+  },
+  "scenarios": [
+    {
+      "scenario_id": "TC_01_COMFORTABLE",
+      "spoken_text": "Good morning to you all.",
+      "speech_duration_ms": 2800,
+      "resolved_glosses": [
+        "GOOD",
+        "MORNING",
+        "YOU"
+      ],
+      "authored_duration_ms": 3200,
+      "timing_ratio": 1.14,
+      "classification": "COMFORTABLE_TIMING",
+      "adaptation_policy": "Normal 1.0x playback rate with standard 100ms ease transitions."
+    },
+    {
+      "scenario_id": "TC_02_COMPRESSED",
+      "spoken_text": "You can see people right here.",
+      "speech_duration_ms": 2200,
+      "resolved_glosses": [
+        "YOU",
+        "CAN",
+        "SEE",
+        "PEOPLE",
+        "HERE"
+      ],
+      "authored_duration_ms": 5500,
+      "timing_ratio": 2.5,
+      "classification": "COMPRESSED_TIMING",
+      "adaptation_policy": "Compress keyframe playback rate by 1.25x and shorten neutral holding margins."
+    },
+    {
+      "scenario_id": "TC_03_OVERLAPPING_BURST",
+      "spoken_text": "What are you going to do now?",
+      "speech_duration_ms": 1500,
+      "resolved_glosses": [
+        "YOU",
+        "DO",
+        "NOW",
+        "WHAT"
+      ],
+      "authored_duration_ms": 4400,
+      "timing_ratio": 2.93,
+      "classification": "OVERLAPPING_BURST",
+      "adaptation_policy": "Enforce bounded queue cap (100); apply WH-final priority; omit non-critical transitional holds."
+    },
+    {
+      "scenario_id": "TC_04_UNAVAILABLE_FALLBACK",
+      "spoken_text": "SQL Server QUIK format configuration.",
+      "speech_duration_ms": 2600,
+      "resolved_glosses": [],
+      "authored_duration_ms": 0,
+      "timing_ratio": 0.0,
+      "classification": "UNAVAILABLE_SIGN_FALLBACK",
+      "adaptation_policy": "Avatar holds neutral rest pose; subtitle pill displays exact text for 2500ms."
+    },
+    {
+      "scenario_id": "TC_05_SEEK_CANCELLED",
+      "spoken_text": "Let us talk about presentation structure...",
+      "speech_duration_ms": 3500,
+      "resolved_glosses": [
+        "TALK",
+        "PRESENTATION",
+        "STRUCTURE"
+      ],
+      "authored_duration_ms": 3600,
+      "timing_ratio": 1.03,
+      "classification": "SEEK_CANCELLED",
+      "adaptation_policy": "User scrubs video; RESET_AVATAR purges queue immediately to prevent stale gestures."
+    }
+  ]
+}

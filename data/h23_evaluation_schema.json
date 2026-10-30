@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "H23 ISL Translator Multidimensional Evaluation Schema",
+  "type": "object",
+  "required": [
+    "evaluation_version",
+    "timestamp",
+    "evaluation_dimensions",
+    "metrics",
+    "overall_system_score"
+  ],
+  "properties": {
+    "evaluation_version": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "evaluation_dimensions": {
+      "type": "object",
+      "properties": {
+        "D01_asr_word_recognition": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string", "enum": ["AUTOMATED", "HUMAN_REVIEWED"] }
+          }
+        },
+        "D02_concept_normalization": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string" }
+          }
+        },
+        "D03_english_to_isl_gloss_transformation": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string" }
+          }
+        },
+        "D04_phrase_recognition": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string" }
+          }
+        },
+        "D05_sign_library_resolution": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string" }
+          }
+        },
+        "D06_animation_execution": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string" }
+          }
+        },
+        "D07_playback_synchronization": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string" }
+          }
+        },
+        "D08_subtitle_fallback_accuracy": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string" }
+          }
+        },
+        "D09_linguistic_authenticity": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string", "enum": ["HUMAN_REVIEWED"] }
+          }
+        },
+        "D10_full_system_reliability": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": "string" },
+            "target": { "type": "number" },
+            "formula": { "type": "string" },
+            "verification_type": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

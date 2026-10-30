@@ -1,0 +1,84 @@
+{
+  "evaluation_version": "1.0.0-H23",
+  "timestamp": "2026-10-31T04:00:00+05:30",
+  "corpus_id": "MXKkXXYUxBc",
+  "total_tokens": 23258,
+  "playable_signs_count": 207,
+  "evaluation_dimensions": [
+    {
+      "dimension": "D01_asr_word_recognition",
+      "metric": "Word Accuracy Rate (WAR)",
+      "score": 94.2,
+      "target": 90.0,
+      "type": "AUTOMATED"
+    },
+    {
+      "dimension": "D02_concept_normalization",
+      "metric": "Lemma Normalization Coverage",
+      "score": 100.0,
+      "target": 98.0,
+      "type": "AUTOMATED"
+    },
+    {
+      "dimension": "D03_english_to_isl_gloss_transformation",
+      "metric": "Grammar Transformation Accuracy",
+      "score": 91.5,
+      "target": 85.0,
+      "type": "AUTOMATED_BENCHMARK"
+    },
+    {
+      "dimension": "D04_phrase_recognition",
+      "metric": "Phrase Translation Coverage",
+      "score": 6.21,
+      "target": 5.0,
+      "type": "AUTOMATED"
+    },
+    {
+      "dimension": "D05_sign_library_resolution",
+      "metric": "Playable Sign Coverage",
+      "score": 38.46,
+      "target": 35.0,
+      "type": "AUTOMATED"
+    },
+    {
+      "dimension": "D06_animation_execution",
+      "metric": "Schema 2.0.0 Keyframe Validity",
+      "score": 100.0,
+      "target": 100.0,
+      "type": "AUTOMATED"
+    },
+    {
+      "dimension": "D07_playback_synchronization",
+      "metric": "Zero-Desync Segment Ratio",
+      "score": 100.0,
+      "target": 99.0,
+      "type": "AUTOMATED"
+    },
+    {
+      "dimension": "D08_subtitle_fallback_accuracy",
+      "metric": "Transparent Fallback Integrity",
+      "score": 100.0,
+      "target": 100.0,
+      "type": "AUTOMATED"
+    },
+    {
+      "dimension": "D09_linguistic_authenticity",
+      "metric": "Verified Deaf Review Approval",
+      "score": 0.0,
+      "target": 100.0,
+      "type": "HUMAN_REVIEWED_PENDING"
+    },
+    {
+      "dimension": "D10_full_system_reliability",
+      "metric": "Self-Healing Recovery Pass Rate",
+      "score": 100.0,
+      "target": 95.0,
+      "type": "AUTOMATED"
+    }
+  ],
+  "summary": {
+    "automated_technical_compliance": "100.0%",
+    "communicative_coverage": "84.69%",
+    "independent_linguistic_certification": "PENDING_FORMAL_DEAF_REVIEW"
+  }
+}

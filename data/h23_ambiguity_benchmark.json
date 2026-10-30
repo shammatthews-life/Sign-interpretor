@@ -1,0 +1,665 @@
+{
+  "metadata": {
+    "title": "Phase H23 Contextual Ambiguity and Homonym Disambiguation Benchmark",
+    "total_homonyms_evaluated": 20
+  },
+  "ambiguity_cases": [
+    {
+      "homonym": "right",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "DIRECTION",
+          "isl_gloss": "RIGHT (spatial index)",
+          "example": "look to your right"
+        },
+        {
+          "sense": "CORRECT",
+          "isl_gloss": "CORRECT / TRUE",
+          "example": "that is right"
+        },
+        {
+          "sense": "DISCOURSE_MARKER",
+          "isl_gloss": "ALL-RIGHT / AGREE",
+          "example": "right, let us begin"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 30.45,
+          "sentence": "which we delivered live right here in our studio."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 131.99,
+          "sentence": "All right, beautiful to see you all."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 147.91,
+          "sentence": "right?"
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "left",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "DIRECTION",
+          "isl_gloss": "LEFT (spatial index)",
+          "example": "on the left side"
+        },
+        {
+          "sense": "DEPARTURE_PAST",
+          "isl_gloss": "GO-AWAY / FINISH",
+          "example": "he left the room"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 1936.52,
+          "sentence": "Actually looks quite sensible for being a left hand."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 2988.26,
+          "sentence": "I'm done with it. So we've got five minutes left until I go up. I start walking with a"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 3122.66,
+          "sentence": "So I've still got one minute left now before I go up on stage."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "like",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "SIMILARITY_PREPOSITION",
+          "isl_gloss": "SAME / SIMILAR",
+          "example": "sounds like a bell"
+        },
+        {
+          "sense": "AFFECTION_VERB",
+          "isl_gloss": "LIKE (chest clasp)",
+          "example": "I like this topic"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 69.49,
+          "sentence": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 301.79,
+          "sentence": "So if you like this session, make sure you pick up this book."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 383.5,
+          "sentence": "You may have prepared, like, weeks, your presentation,"
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "well",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "DISCOURSE_FILLER",
+          "isl_gloss": "OMITTED_OR_PAUSE",
+          "example": "well, let us see"
+        },
+        {
+          "sense": "HEALTH_ADVERB",
+          "isl_gloss": "GOOD / HEALTHY",
+          "example": "he did very well"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 114.03,
+          "sentence": "This is, well, this is my view of you."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 251.43,
+          "sentence": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 760.38,
+          "sentence": "Well, look at this."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "kind",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "KIND",
+          "example": "standard usage of kind"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of kind"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 1079.82,
+          "sentence": "Dopamine is kind of the life force for many of us."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 1320.36,
+          "sentence": "Why did you stop it? That wasn't very kind of you."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 2711.34,
+          "sentence": "and males, they walk differently. So when you see them come out of the movies, they kind"
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "light",
+      "total_occurrences_found": 0,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "LIGHT",
+          "example": "standard usage of light"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of light"
+        }
+      ],
+      "transcript_contexts": [],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "change",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "CHANGE",
+          "example": "standard usage of change"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of change"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 1287.26,
+          "sentence": "I've never been given the chance before, but he is hoping it will change."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 2186.81,
+          "sentence": "What I want you to see is change your perspective on failures. Invite them. Be proud of them."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 2631.11,
+          "sentence": "to change a couple of things."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "point",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "ARGUMENT_NOUN",
+          "isl_gloss": "POINT / IDEA",
+          "example": "make a good point"
+        },
+        {
+          "sense": "DEICTIC_VERB",
+          "isl_gloss": "POINT-AT (index gesture)",
+          "example": "point at the screen"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 5421.43,
+          "sentence": "Good, Gary, you are on point, my man. Yes, here we go. So these are the ways I did it."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 6176.65,
+          "sentence": "So understanding public speaking from a different point of view."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 8213.79,
+          "sentence": "he's like, I can't take it, I get your point David."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "mean",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "MEAN",
+          "example": "standard usage of mean"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of mean"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 446.64,
+          "sentence": "hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 550.2,
+          "sentence": "doesn't mean that you are suddenly super confident"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 623.24,
+          "sentence": "What I mean with that is that this one's skill base, but what on earth is this?"
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "fine",
+      "total_occurrences_found": 0,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "FINE",
+          "example": "standard usage of fine"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of fine"
+        }
+      ],
+      "transcript_contexts": [],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "close",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "CLOSE",
+          "example": "standard usage of close"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of close"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 1774.18,
+          "sentence": "Last year I think I went to close to 30 countries."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 4211.33,
+          "sentence": "out there. Nothing comes close to it. Maybe metaphors, but they're really small stories."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 6591.45,
+          "sentence": "So I spent close to seven years."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "present",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "PRESENT",
+          "example": "standard usage of present"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of present"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 251.43,
+          "sentence": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 1028.94,
+          "sentence": "and present. But if I were to give you a devil's cocktail with high levels of cortisol, adrenaline,"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 5539.68,
+          "sentence": "I wouldn't need to do all that, but if I don't do all that, I don't look present."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "make",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "MAKE",
+          "example": "standard usage of make"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of make"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 91.69,
+          "sentence": "So make sure you have a pen and a paper,"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 265.01,
+          "sentence": "Now in my world, there are three pillars that make us great presenters and great public speakers."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 301.79,
+          "sentence": "So if you like this session, make sure you pick up this book."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "get",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "GET",
+          "example": "standard usage of get"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of get"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 554.6,
+          "sentence": "So just get that into your head that your confidence is per skill"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 783.5,
+          "sentence": "when it came to critical feedbacks, if any one of you were to get critical"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 1084.78,
+          "sentence": "It's the feeling when we get up in the morning"
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "take",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "TAKE",
+          "example": "standard usage of take"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of take"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 204.03,
+          "sentence": "I also want to say this, please take out pens and papers and whatever you need to write"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 355.82,
+          "sentence": "I try to take people on an emotional ride."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 415.0,
+          "sentence": "I want you to take with you that the case is often this one, which is that confidence is"
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "run",
+      "total_occurrences_found": 0,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "RUN",
+          "example": "standard usage of run"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of run"
+        }
+      ],
+      "transcript_contexts": [],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "turn",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "TURN",
+          "example": "standard usage of turn"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of turn"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 1471.24,
+          "sentence": "Something where you truly feel when you turn off the video and you stand up and you walk"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 1596.82,
+          "sentence": "for the next coming four weeks. So if it's public speaking, well if you turn those words around"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 5759.96,
+          "sentence": "then turn on color. I remember the first time I did this, I went like, oh my god. And I felt like"
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "play",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "PLAY",
+          "example": "standard usage of play"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of play"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 433.8,
+          "sentence": "And you play a couple of matches, you win, you do some really good, nice moves, and your"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 446.64,
+          "sentence": "hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 589.64,
+          "sentence": "better as a public speaker. And as I said, the more you play basketball, the better you"
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "sound",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "SOUND",
+          "example": "standard usage of sound"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of sound"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 2734.37,
+          "sentence": "of the Re-Knife. They don't make a sound, but just by the way they walk, can you tell"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 4479.62,
+          "sentence": "placed as a rhetorical question, it would sound like this. What is the most important"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 4643.8,
+          "sentence": "So it could sound like this the next time you do it."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    },
+    {
+      "homonym": "over",
+      "total_occurrences_found": 3,
+      "senses_documented": [
+        {
+          "sense": "PRIMARY_LEXICAL",
+          "isl_gloss": "OVER",
+          "example": "standard usage of over"
+        },
+        {
+          "sense": "SECONDARY_METAPHORICAL",
+          "isl_gloss": "SUBTITLE_FALLBACK",
+          "example": "idiomatic context of over"
+        }
+      ],
+      "transcript_contexts": [
+        {
+          "segment_id": null,
+          "timestamp": 58.53,
+          "sentence": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+        },
+        {
+          "segment_id": null,
+          "timestamp": 80.45,
+          "sentence": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+        },
+        {
+          "segment_id": null,
+          "timestamp": 116.63,
+          "sentence": "There's pictures all over the place."
+        }
+      ],
+      "disambiguation_strategy": "CONTEXTUAL_N_GRAM_AND_POS",
+      "fallback_policy": "If disambiguation confidence < 80%, fallback to subtitle display to prevent misleading gestures."
+    }
+  ]
+}

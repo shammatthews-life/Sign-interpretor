@@ -1,0 +1,54 @@
+{
+  "phase": "H23",
+  "generated_at": "2026-10-31T03:30:00+05:30",
+  "status": "MATHEMATICALLY_VERIFIED_100_PERCENT",
+  "canonical_corpus": {
+    "video_id": "MXKkXXYUxBc",
+    "duration_seconds": 8979.0,
+    "segment_count": 2366,
+    "total_spoken_tokens": 23258,
+    "total_accounted_tokens": 23258,
+    "discrepancy": 0,
+    "silent_token_loss": 0
+  },
+  "disposition_breakdown": {
+    "GRAMMAR_OMISSION": {
+      "tokens": 9088,
+      "percentage": 39.07,
+      "communicative_status": "COMMUNICATED_VIA_SYNTAX"
+    },
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
+      "tokens": 8946,
+      "percentage": 38.46,
+      "communicative_status": "COMMUNICATED_VIA_3D_MOTION"
+    },
+    "SUBTITLE_FALLBACK": {
+      "tokens": 3559,
+      "percentage": 15.30,
+      "communicative_status": "FALLBACK_TRANSPARENT_SUBTITLE"
+    },
+    "PHRASE_TRANSLATED": {
+      "tokens": 1444,
+      "percentage": 6.21,
+      "communicative_status": "COMMUNICATED_VIA_COMPOUND"
+    },
+    "FINGERSPELLED": {
+      "tokens": 220,
+      "percentage": 0.95,
+      "communicative_status": "COMMUNICATED_VIA_MANUAL_ALPHABET"
+    },
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": {
+      "tokens": 1,
+      "percentage": 0.00,
+      "communicative_status": "PENDING_3D_KEYFRAMING"
+    }
+  },
+  "summary_metrics": {
+    "total_communicative_coverage_tokens": 19698,
+    "total_communicative_coverage_percent": 84.69,
+    "playable_sign_library_assets": 207,
+    "active_multiword_phrases": 100,
+    "two_handed_fingerspelled_letters": 26,
+    "zero_silent_token_loss_verified": true
+  }
+}

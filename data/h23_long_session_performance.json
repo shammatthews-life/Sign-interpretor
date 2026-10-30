@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-30T21:41:46.076Z",
+  "total_signs": 207,
+  "total_payload_kb": 1272.1,
+  "preload_ms": 53,
+  "preload_heap_growth_mb": 1.14,
+  "simulated_session_ticks": 5000,
+  "session_execution_ms": 4,
+  "final_heap_mb": 6.82,
+  "final_rss_mb": 40.82,
+  "long_session_heap_drift_mb": 0.51,
+  "fps_steady": 60
+}
