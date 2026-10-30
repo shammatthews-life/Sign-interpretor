@@ -17,7 +17,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       thank_you: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
       drink: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
       help: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, need: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
-      how: { playable: false, reason: 'MOTION_NOT_AUTHORED' }, tomorrow: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
+      how: { playable: true }, tomorrow: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
@@ -25,7 +25,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
     this.lexicon = new Map([
       ['i', 'I'], ['you', 'YOU'], ['me', 'ME'], ['drink', 'DRINK'], ['water', 'WATER'],
       ['help', 'HELP'], ['need', 'NEED'], ['hello', 'HELLO'], ['good', 'GOOD'], ['morning', 'MORNING'],
-      ['what', 'WHAT'], ['not', 'NOT'],
+      ['what', 'WHAT'], ['not', 'NOT'], ['how', 'HOW'],
     ]);
   }
 

@@ -366,3 +366,33 @@ Reprocessing the full 2,366 transcript segments through `EnglishToISLTranslator`
   - `morning`: 3 occurrences
   - `hello`: 3 occurrences
 - **Unavailable Occurrences Reduced:** Dropped from **1,880 down to only 115** occurrences (94.5% concept resolution).
+---
+---
+
+## O. Phase H12 Full 23,049-Word Corpus Audit & ISL Expansion Plan
+
+A complete audit of all 23,256 spoken words and 2,366 segments in `MXKkXXYUxBc` was conducted and documented in [`docs/h12_corpus_vocabulary_audit.md`](h12_corpus_vocabulary_audit.md).
+
+### 1. Corpus Statistics
+- **Total Spoken Tokens:** 23,256
+- **Unique Surface Words:** 2,286
+- **Unique Normalized Lemmas:** 1,981
+- **Top 100 Lemmas:** Cover **15,158 tokens (65.18%)** of the entire lecture.
+- **Top 250 Lemmas:** Cover **18,495 tokens (79.53%)**.
+- **Top 500 Lemmas:** Cover **20,562 tokens (88.42%)**.
+
+### 2. Multi-Denominator Coverage Truth
+- **Total ASR Tokens:** 23,256 words recognized.
+- **Spoken Word Playable Coverage:** **2,089 / 23,256 tokens (8.98%)** are directly signed by our playable library.
+- **Structural Function Words:** **5,029 / 23,256 tokens (21.62%)** are English function words (`be`, `the`, `a`, `to`, `of`, `in`, `and`) that are naturally omitted or spatially indexed in ISL grammar.
+- **Combined Communicative Coverage:** **7,118 / 23,256 tokens (30.61%)** are structurally or lexically accounted for.
+- **Unresolved Spoken Tokens:** 16,138 tokens (69.39%), prioritizable through the Top 100 lemma list.
+
+### 3. Reconciled Batch 1 & Authoring Status
+Original Batch 1 priority list is now 100% authored, playable, and Schema 2.0.0 validated:
+- `YOU` ([`signs/you.json`](signs/you.json)): 1,003 occurrences
+- `I` / `ME` ([`signs/i.json`](signs/i.json)): 672 occurrences
+- `WHAT` ([`signs/what.json`](signs/what.json)): 158 occurrences
+- `HOW` ([`signs/how.json`](signs/how.json)): 94 occurrences (authored in H12)
+- `NOT` ([`signs/not.json`](signs/not.json)): 93 occurrences
+- `WATER` ([`signs/water.json`](signs/water.json)): authored in H11
