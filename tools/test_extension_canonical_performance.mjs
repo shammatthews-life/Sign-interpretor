@@ -6,7 +6,8 @@
  * Verifies:
  * 1. Extension Overlay mounts with Right Sidebar view and bottom-right docked Aether avatar.
  * 2. Full simulation across 2,366 segments of runtime/youtube/MXKkXXYUxBc/transcript.json.
- * 3. Execution of newly added ISL vocabulary (increase, little, rest, let, able, part, big, etc.).
+ * 3. Execution of newly added ISL vocabulary (increase, little, rest, let, able, part, big,
+ *    perspective, after, angle, wise, outside, remove, sell, momentum, bring, pen, nervous, feedback, quick, etc.).
  * 4. Transparent Subtitle Fallback directly beneath Aether for un-signable terms.
  * 5. Clean layout toggling between Right Sidebar Dock and Floating Window.
  * 6. Zero memory leaks, zero XSS vulnerabilities, zero unhandled rejections.
@@ -200,10 +201,13 @@ let fallbackActivations = 0;
 let activeSignUpdates = 0;
 let newVocabTriggered = 0;
 
-const newVocabSet = new Set([
+const fullH24VocabSet = new Set([
   'increase', 'little', 'rest', 'let', 'able', 'part', 'big', 'stop',
   'watch', 'chart', 'subject', 'culture', 'product', 'audio', 'positive',
-  'trust', 'match'
+  'trust', 'match',
+  'perspective', 'after', 'angle', 'wise', 'outside', 'remove', 'sell',
+  'momentum', 'bring', 'pen', 'nervous', 'feedback', 'quick', 'earth',
+  'far', 'instance'
 ]);
 
 const tStart = performance.now();
@@ -214,7 +218,7 @@ for (let i = 0; i < segments.length; i++) {
 
   // Check if any newly authored words appear in this segment
   const words = text.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
-  const matchedNewVocab = words.filter(w => newVocabSet.has(w));
+  const matchedNewVocab = words.filter(w => fullH24VocabSet.has(w));
   if (matchedNewVocab.length > 0) {
     newVocabTriggered += matchedNewVocab.length;
   }
@@ -274,7 +278,7 @@ console.log(`  Fallback Subtitle Events: ${fallbackActivations}`);
 console.log(`  Elapsed Simulation Time:  ${tElapsedMs} ms (< 500 ms target)`);
 
 assert.equal(handledSegments, segments.length, 'All 2,366 segments must be processed without loss.');
-assert(newVocabTriggered > 80, `Expected > 80 new vocab occurrences, observed ${newVocabTriggered}`);
+assert(newVocabTriggered > 150, `Expected > 150 new vocab occurrences, observed ${newVocabTriggered}`);
 assert(Number(tElapsedMs) < 1000, 'Performance must be high-throughput (< 1000 ms)');
 
 console.log('\n======================================================================');

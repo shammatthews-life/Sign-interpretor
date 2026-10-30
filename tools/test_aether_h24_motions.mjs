@@ -3,19 +3,24 @@ import fs from 'fs';
 import path from 'path';
 
 console.log('====================================================');
-console.log('TESTING AETHER AVATAR PERFORMANCE ON 17 NEW SIGNS');
+console.log('TESTING AETHER AVATAR PERFORMANCE ON ALL 33 H24 SIGNS');
 console.log('====================================================');
 
-const newSignIds = [
+const h24SignIds = [
+  // Batch 1
   'increase', 'little', 'rest', 'let', 'able', 'part', 'big', 'stop',
   'watch', 'chart', 'subject', 'culture', 'product', 'audio', 'positive',
-  'trust', 'match'
+  'trust', 'match',
+  // Batch 2
+  'perspective', 'after', 'angle', 'wise', 'outside', 'remove', 'sell',
+  'momentum', 'bring', 'pen', 'nervous', 'feedback', 'quick', 'earth',
+  'far', 'instance'
 ];
 
 let allPassed = true;
 const results = [];
 
-for (const id of newSignIds) {
+for (const id of h24SignIds) {
   const filePath = path.resolve('signs', `${id}.json`);
   if (!fs.existsSync(filePath)) {
     console.error(`FAIL: Missing sign file signs/${id}.json`);
@@ -73,7 +78,6 @@ for (const id of newSignIds) {
 
   for (let t = 0; t <= motion.duration_ms; t += dt) {
     sampleCount++;
-    // Linear / easeInOutQuad interpolation between enclosing keyframes
     let kfBefore = kfs[0];
     let kfAfter = kfs[kfs.length - 1];
     for (let i = 0; i < kfs.length - 1; i++) {
@@ -109,13 +113,13 @@ for (const id of newSignIds) {
   });
 }
 
-console.log(`\nVerified ${results.length}/17 signs on Aether Rig:`);
+console.log(`\nVerified ${results.length}/33 signs on Aether Rig:`);
 results.forEach(r => {
-  console.log(`  ✓ ${r.sign_id.padEnd(10)} [${r.gloss.padEnd(10)}] - ${r.duration_ms}ms, ${r.keyframes} kfs, max_rot: ${r.max_joint_rotation_rad} rad -> ${r.aether_status}`);
+  console.log(`  ✓ ${r.sign_id.padEnd(12)} [${r.gloss.padEnd(12)}] - ${r.duration_ms}ms, ${r.keyframes} kfs, max_rot: ${r.max_joint_rotation_rad} rad -> ${r.aether_status}`);
 });
 
-if (allPassed && results.length === 17) {
-  console.log('\nSUCCESS: Avatar Aether performs all 17 new actions smoothly and accurately with zero clipping!');
+if (allPassed && results.length === 33) {
+  console.log('\nSUCCESS: Avatar Aether performs all 33 new actions smoothly and accurately with zero clipping!');
 } else {
   console.error('\nFAILURE: Some signs failed verification.');
   process.exit(1);

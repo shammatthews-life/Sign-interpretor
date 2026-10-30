@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISL Accessibility Translator — Stunning Right Sidebar & Bottom-Right Aether Showcase</title>
+  <link rel="stylesheet" href="../extension/content/overlay.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #05080e;
+      color: #e6edf3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+    }
+
+    /* Simulated Host Page (YouTube Video Presentation) */
+    #host-container {
+      flex: 1;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #0f141c;
+      position: relative;
+      margin-right: 380px; /* Offset for right sidebar bar */
+      transition: margin-right 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #host-container.expanded {
+      margin-right: 0;
+    }
+
+    /* Video Player Canvas / Frame */
+    .mock-video-area {
+      flex: 1;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: linear-gradient(135deg, #101622 0%, #080c14 100%);
+    }
+
+    .video-mock-card {
+      text-align: center;
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      background: rgba(13, 17, 23, 0.8);
+      backdrop-filter: blur(12px);
+      max-width: 650px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .video-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #58a6ff;
+      margin-bottom: 8px;
+    }
+
+    .video-sub {
+      font-size: 13px;
+      color: #8b949e;
+      margin-bottom: 20px;
+    }
+
+    .video-controls {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .v-btn {
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #e6edf3;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .v-btn:hover {
+      background: #30363d;
+      border-color: #58a6ff;
+    }
+
+    .v-btn.primary {
+      background: #238636;
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Live Telemetry Banner */
+    .telemetry-banner {
+      padding: 12px 20px;
+      background: #161b22;
+      border-top: 1px solid #30363d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    .badge-live {
+      padding: 3px 8px;
+      border-radius: 12px;
+      background: rgba(63, 185, 80, 0.15);
+      color: #3fb950;
+      font-weight: 700;
+      font-size: 11px;
+      border: 1px solid rgba(63, 185, 80, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Simulated YouTube Video Screen -->
+  <div id="host-container">
+    <div class="mock-video-area">
+      <div class="video-mock-card">
+        <div class="video-title">YouTube Lecture: Public Speaking for Beginners</div>
+        <div class="video-sub">Canonical Video ID: <code>MXKkXXYUxBc</code> &bull; 2.5 Hours &bull; 2,366 Segments &bull; 23,258 Spoken Tokens</div>
+        
+        <p style="font-size: 13.5px; line-height: 1.6; margin-bottom: 24px; color: #c9d1d9;">
+          Demonstration of the <b>ISL Accessibility Translator</b> with the <b>Stunning Right Sidebar Bar</b> docked flush to the right edge and 3D Avatar <b>Aether</b> positioned permanently in the <b>bottom-right corner</b>.
+        </p>
+
+        <div class="video-controls">
+          <button id="btn-mock-play" class="v-btn primary">▶ Play Lecture Simulation</button>
+          <button id="btn-mock-step" class="v-btn">⏭ Step Next Segment</button>
+          <button id="btn-mock-sign" class="v-btn">🤟 Articulate New Sign</button>
+          <button id="btn-mock-fallback" class="v-btn" style="color: #f85149;">⚠️ Test Subtitle Fallback</button>
+          <button id="btn-toggle-sidebar" class="v-btn">◫ Toggle Right Bar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="telemetry-banner">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span class="badge-live"><span class="isl-pulse-dot"></span> LIVE SYNC ACTIVE</span>
+        <span style="color: #8b949e;">Timeline: <span id="txt-mock-time" style="color: #e6edf3; font-weight: 600;">00:08 / 149:39</span></span>
+        <span style="color: #8b949e;">Segment: <span id="txt-mock-seg" style="color: #58a6ff; font-weight: 600;">1 / 2366</span></span>
+      </div>
+      <div>
+        <span style="color: #8b949e;">Library: <b style="color: #3fb950;">240 Playable Signs</b> &bull; Coverage: <b style="color: #58a6ff;">85.72%</b></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Extension Overlay Root Element -->
+  <div id="isl-mount-point"></div>
+
+  <!-- Load Extension Overlay Component -->
+  <script src="../extension/content/overlay.js"></script>
+  <script>
+    const mountPoint = document.getElementById('isl-mount-point');
+    const overlay = new window.ISLOverlay.ISLOverlayUI();
+    overlay.mount(document);
+
+    const hostContainer = document.getElementById('host-container');
+
+    // Setup interactive showcase simulation
+    const demoSegments = [
+      { text: "It's to help you overcome being uncertain, anxious, afraid,", glosses: ["YOU", "HELP", "NERVOUS", "FEAR"], active: "nervous" },
+      { text: "and bring you a few steps closer to being more confident, more clear,", glosses: ["BRING", "YOU", "STEP", "CONFIDENT", "CLEAR"], active: "bring" },
+      { text: "we want to increase your perspective on public speaking.", glosses: ["WE", "WANT", "INCREASE", "YOUR", "PERSPECTIVE", "SAY", "PEOPLE"], active: "increase" },
+      { text: "take a look at this angle and see what happens after practice.", glosses: ["LOOK", "ANGLE", "SEE", "AFTER", "PRACTICE"], active: "angle" },
+      { text: "a wise speaker will remove unnecessary words and sell ideas with momentum.", glosses: ["WISE", "SPEAKER", "REMOVE", "SELL", "IDEA", "MOMENTUM"], active: "momentum" },
+      { text: "we can give quick feedback using a pen and chart on the earth.", glosses: ["WE", "CAN", "GIVE", "QUICK", "FEEDBACK", "PEN", "CHART", "EARTH"], active: "feedback" },
+      { text: "Steve Jobs pitched technical products like computers to the audience.", glosses: ["PRODUCT", "COMPUTER", "AUDIENCE"], fallback: "steve jobs", active: "product" }
+    ];
+
+    let currentSegIdx = 0;
+
+    function applySegment(idx) {
+      const seg = demoSegments[idx % demoSegments.length];
+      document.getElementById('txt-mock-seg').textContent = `${idx + 1} / 2366`;
+      
+      overlay.update({
+        connection: 'CONNECTED',
+        audio: 'PLAYING',
+        asr: 'FINAL',
+        translation: 'TRANSLATING',
+        signing: seg.active ? 'PLAYING' : 'IDLE',
+        transcript: {
+          partial: seg.text,
+          final: seg.text
+        },
+        youtube: {
+          state: 'STREAMING',
+          jobId: 'MXKkXXYUxBc',
+          title: 'Public Speaking for Beginners',
+          segmentCount: idx + 1,
+          latestSegment: seg.text,
+          translationStatus: 'ACTIVE',
+          glosses: seg.glosses,
+          playableSigns: seg.glosses
+        },
+        signingQueue: {
+          currentSign: seg.active,
+          currentSignVerified: true,
+          queuedSigns: seg.glosses.filter(g => g.toLowerCase() !== seg.active),
+          unavailableFallback: seg.fallback || null
+        },
+        runtimeAvailable: true
+      });
+    }
+
+    // Initialize with first segment
+    applySegment(0);
+
+    // Button Listeners
+    document.getElementById('btn-mock-step').onclick = () => {
+      currentSegIdx++;
+      applySegment(currentSegIdx);
+    };
+
+    let timer = null;
+    document.getElementById('btn-mock-play').onclick = (e) => {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+        e.target.textContent = '▶ Play Lecture Simulation';
+        e.target.className = 'v-btn primary';
+      } else {
+        timer = setInterval(() => {
+          currentSegIdx++;
+          applySegment(currentSegIdx);
+        }, 2200);
+        e.target.textContent = '⏸ Pause Simulation';
+        e.target.className = 'v-btn';
+      }
+    };
+
+    document.getElementById('btn-mock-sign').onclick = () => {
+      const signs = ['perspective', 'increase', 'bring', 'angle', 'momentum', 'feedback', 'nervous'];
+      const chosen = signs[Math.floor(Math.random() * signs.length)];
+      overlay.update({
+        signingQueue: {
+          currentSign: chosen,
+          currentSignVerified: true,
+          queuedSigns: ['PRACTICE', 'CONFIDENT']
+        }
+      });
+    };
+
+    document.getElementById('btn-mock-fallback').onclick = () => {
+      overlay.setUnavailableFallback('oxytocin_challenge_molecule', 3500);
+    };
+
+    document.getElementById('btn-toggle-sidebar').onclick = () => {
+      overlay.toggleMinimize();
+      hostContainer.classList.toggle('expanded', overlay.isCollapsed);
+    };
+  </script>
+</body>
+</html>
