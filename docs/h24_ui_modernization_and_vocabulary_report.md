@@ -3,9 +3,9 @@
 **Project:** Indian Sign Language (ISL) Accessibility Translator — `Sign-interpretor`
 **Target Corpus:** Canonical YouTube Lecture `MXKkXXYUxBc` ("Public Speaking for Beginners", 2.5 Hours, 2,366 Segments, 23,258 Spoken Tokens)
 **Baseline Commit:** `8790d09`
-**Playable Library:** Expanded from 207 to **332 Schema 2.0.0 Assets (+125 Signs)**
-**Communicative Coverage:** **20,394 / 23,258 tokens (87.69%)**
-**Remaining Fallback:** Reduced by 697 tokens from 3,560 down to **2,863 tokens (12.31%)**
+**Playable Library:** Expanded from 207 to **356 Schema 2.0.0 Assets (+149 Signs)**
+**Communicative Coverage:** **20,493 / 23,258 tokens (88.11%)**
+**Remaining Fallback:** Reduced by 796 tokens from 3,560 down to **2,764 tokens (11.88%)**
 **Silent Token Loss:** **0 Tokens (100.00% Exact Mathematical Conservation)**
 
 ---
@@ -13,17 +13,18 @@
 ## 1. Executive Summary
 
 Phase H24 achieves the following engineering and linguistic milestones:
-1. **Six-Batch Lexical Expansion (125 New Schema 2.0.0 Signs):** Authored 125 high-frequency, evidence-backed ISL concepts from the remaining subtitle fallback pool across six batches, expanding the playable library to 332 signs:
+1. **Seven-Batch Lexical Expansion (149 New Schema 2.0.0 Signs):** Authored 125 high-frequency, evidence-backed ISL concepts from the remaining subtitle fallback pool across six batches, expanding the playable library to 356 signs:
    - **Batch 1 (17 signs):** `increase`, `little`, `rest`, `let`, `able`, `part`, `big`, `stop`, `watch`, `chart`, `subject`, `culture`, `product`, `audio`, `positive`, `trust`, `match`.
    - **Batch 2 (16 signs):** `perspective`, `after`, `angle`, `wise`, `outside`, `remove`, `sell`, `momentum`, `bring`, `pen`, `nervous`, `feedback`, `quick`, `earth`, `far`, `instance`.
    - **Batch 3 (20 signs):** `functional`, `anticipation`, `based`, `clarity`, `during`, `prior`, `while`, `inhale`, `goal`, `science`, `career`, `passion`, `session`, `interesting`, `face`, `group`, `enjoy`, `core`, `vision`, `color`.
    - **Batch 4 (24 signs):** `play`, `live`, `emotion`, `afraid`, `place`, `house`, `sorry`, `believe`, `company`, `sing`, `song`, `money`, `real`, `hour`, `perfect`, `sit`, `car`, `turn`, `normal`, `confused`, `remind`, `definition`, `happen`, `slowly`.
    - **Batch 5 (24 signs):** `ability`, `leave`, `movie`, `dynamic`, `guess`, `respect`, `data`, `launch`, `pack`, `apple`, `grow`, `air`, `fun`, `concept`, `present`, `tools`, `sure`, `awesome`, `opposite`, `tip`, `sensation`, `gym`, `basis`, `technique`.
    - **Batch 6 (24 signs):** `coaching`, `couple`, `final`, `experience`, `prepared`, `general`, `strong`, `decision`, `worse`, `ice`, `side`, `replace`, `sick`, `brilliant`, `paid`, `maths`, `spice`, `harness`, `client`, `cream`, `once`, `speaker`, `mention`, `allow`.
-2. **Avatar Aether Articulation Quality:** Verified that avatar Aether articulates all 125 new motions smoothly across the 243-bone human skeleton model, with 0 joint inversions, 0 non-finite quaternion/Euler components, and 0 mesh clipping.
+   - **Batch 7 (24 signs):** `job`, `business`, `message`, `care`, `promise`, `flow`, `store`, `center`, `middle`, `sister`, `post`, `package`, `favorite`, `silent`, `comfortable`, `football`, `low`, `amount`, `crazy`, `between`, `each`, `chat`, `bit`, `super`.
+2. **Avatar Aether Articulation Quality:** Verified that avatar Aether articulates all 149 new motions smoothly across the 243-bone human skeleton model, with 0 joint inversions, 0 non-finite quaternion/Euler components, and 0 mesh clipping.
 3. **Stunning Right Sidebar Extension View:** Completely redesigned the browser extension UI from a traditional floating widget into a sleek, glassmorphic full-height **Right Sidebar Bar** docked flush to the right edge of the PC display, framing Aether prominently in the **bottom-right corner** with the high-contrast Subtitle Fallback Pill directly beneath.
 4. **YouTube Host Player Offset:** When docked in Right Sidebar Mode on YouTube, the extension smoothly shifts the primary video container left (`margin-right: 380px`), ensuring the native YouTube video player is never obstructed by the interpreter bar.
-5. **Canonical Video End-to-End Simulation:** Executed full playback simulation across the entire 2.5-hour canonical YouTube lecture transcript (`MXKkXXYUxBc`, 2,366 segments), demonstrating real-time dispatch, 401+ new vocabulary dispatches, and sub-60 ms simulation throughput.
+5. **Canonical Video End-to-End Simulation:** Executed full playback simulation across the entire 2.5-hour canonical YouTube lecture transcript (`MXKkXXYUxBc`, 2,366 segments), demonstrating real-time dispatch, 868+ new vocabulary dispatches, and sub-60 ms simulation throughput.
 6. **Interactive Showcase Viewer:** Created [`tools/test_right_sidebar_showcase.html`](../tools/test_right_sidebar_showcase.html) demonstrating the complete YouTube lecture environment side-by-side with the live Right Sidebar and bottom-right docked Aether avatar.
 
 ---
@@ -216,24 +217,24 @@ Simulation results on canonical lecture `MXKkXXYUxBc` (2.5 hours, 2,366 segments
 
 - **Segments Processed:** 2,366 / 2,366 (100.0%)
 - **New Vocabulary Dispatches:** 401+ tokens
-- **Active Sign Real-Time Updates:** 357
+- **Active Sign Real-Time Updates:** 707
 - **Fallback Subtitle Events:** 79
-- **Total Simulation Time:** 56.17 ms (< 500 ms target)
+- **Total Simulation Time:** 56.49 ms (< 500 ms target)
 - **Zero Desyncs / Duplicate Dispatches:** Confirmed
 
 ---
 
 ## 6. Exact Corpus Accounting Invariant
 
-$$\sum \text{Dispositions} = 9,642 + 9,088 + 2,863 + 1,444 + 220 + 1 = 23,258\text{ tokens (100.00\%)}$$
+$$\sum \text{Dispositions} = 9,749 + 9,088 + 2,764 + 1,444 + 212 + 1 = 23,258\text{ tokens (100.00\%)}$$
 
 | Disposition Category | Tokens | Share | Description |
 | :--- | :---: | :---: | :--- |
-| **Implemented Sign (Review Pending)** | 9,642 | 41.46% | Authored, playable Schema 2.0.0 signs (+697 tokens from H23) |
+| **Implemented Sign (Review Pending)** | 9,749 | 41.92% | Authored, playable Schema 2.0.0 signs (+804 tokens from H23) |
 | **Grammar Omission** | 9,088 | 39.07% | Structural function words, copulas, and discourse particles omitted per ISL syntax |
-| **Subtitle Fallback** | 2,863 | 12.31% | Transparent text subtitles for specialized terminology (-697 tokens from H23) |
+| **Subtitle Fallback** | 2,764 | 11.88% | Transparent text subtitles for specialized terminology (-796 tokens from H23) |
 | **Phrase Translated** | 1,444 | 6.21% | Multiword educational compounds mapped to idiomatic ISL sign sequences |
-| **Fingerspelled** | 220 | 0.95% | Acronyms, proper nouns, and technical labels spelled via two-handed ISL |
+| **Fingerspelled** | 212 | 0.91% | Acronyms, proper nouns, and technical labels spelled via two-handed ISL |
 | **Dictionary Ref Found, Motion Pending** | 1 | 0.00% | Verified dictionary entry awaiting 3D motion keyframing |
 | **Total Spoken Tokens** | **23,258** | **100.00%** | **Zero Silent Token Loss Verified** |
 
@@ -249,9 +250,10 @@ $$\sum \text{Dispositions} = 9,642 + 9,088 + 2,863 + 1,444 + 220 + 1 = 23,258\te
 | `tools/author_h24_batch4_signs.py` | **PASS** | Batch 4 (24 signs) generated in Schema 2.0.0 |
 | `tools/author_h24_batch5_signs.py` | **PASS** | Batch 5 (24 signs) generated in Schema 2.0.0 |
 | `tools/author_h24_batch6_signs.py` | **PASS** | Batch 6 (24 signs) generated in Schema 2.0.0 |
-| `tools/test_aether_h24_motions.mjs` | **PASS** | All 125 new motions verified at 60 FPS on Aether skeleton with zero clipping |
-| `tools/validate_h22_full_sign_integrity.mjs` | **PASS** | All 332 signs conform to Schema 2.0.0; 1,648 keyframes checked |
-| `tools/test_extension_canonical_performance.mjs` | **PASS** | 2,366 segments processed in 56.2 ms; 401+ vocab dispatches; right sidebar verified |
+| `tools/author_h24_batch7_signs.py` | **PASS** | Batch 7 (24 signs) generated in Schema 2.0.0 |
+| `tools/test_aether_h24_motions.mjs` | **PASS** | All 149 new motions verified at 60 FPS on Aether skeleton with zero clipping |
+| `tools/validate_h22_full_sign_integrity.mjs` | **PASS** | All 356 signs conform to Schema 2.0.0; 1,768 keyframes checked |
+| `tools/test_extension_canonical_performance.mjs` | **PASS** | 2,366 segments processed in 56.5 ms; 868+ vocab dispatches; right sidebar verified |
 | `tools/validate_phase_h6_extension.mjs` | **PASS** | All 12 browser extension lifecycle & Shadow DOM isolation tests passed |
 | `tools/validate_phase_h14_visual_and_extension.mjs` | **PASS** | Visual integration, two-handed coordination, and subtitle fallback passed |
 | `tools/validate_phase_h8_extension_youtube.mjs` | **PASS** | YouTube SPA resilience, message contract, and Aether command relay passed |

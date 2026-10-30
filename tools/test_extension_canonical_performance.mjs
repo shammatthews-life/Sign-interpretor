@@ -17,8 +17,11 @@ import path from 'path';
 import assert from 'node:assert/strict';
 import { performance } from 'perf_hooks';
 
+const manifest = JSON.parse(fs.readFileSync('signs/manifest.json', 'utf8'));
+const totalSignCount = manifest.signs ? manifest.signs.length : 356;
+
 console.log('======================================================================');
-console.log('TESTING EXTENSION PERFORMANCE ON CANONICAL VIDEO MXKkXXYUxBc (332 SIGNS)');
+console.log(`TESTING EXTENSION PERFORMANCE ON CANONICAL VIDEO MXKkXXYUxBc (${totalSignCount} SIGNS)`);
 console.log('======================================================================');
 
 // 1. Proven Mock DOM Environment
@@ -201,15 +204,39 @@ let activeSignUpdates = 0;
 let newVocabTriggered = 0;
 
 const fullH24VocabSet = new Set([
+  // Batch 1 (17)
   'increase', 'little', 'rest', 'let', 'able', 'part', 'big', 'stop',
   'watch', 'chart', 'subject', 'culture', 'product', 'audio', 'positive',
   'trust', 'match',
+  // Batch 2 (16)
   'perspective', 'after', 'angle', 'wise', 'outside', 'remove', 'sell',
   'momentum', 'bring', 'pen', 'nervous', 'feedback', 'quick', 'earth',
   'far', 'instance',
+  // Batch 3 (20)
   'functional', 'anticipation', 'based', 'clarity', 'during', 'prior',
   'while', 'inhale', 'goal', 'science', 'career', 'passion', 'session',
-  'interesting', 'face', 'group', 'enjoy', 'core', 'vision', 'color'
+  'interesting', 'face', 'group', 'enjoy', 'core', 'vision', 'color',
+  // Batch 4 (24)
+  'play', 'live', 'emotion', 'afraid', 'place', 'house', 'sorry',
+  'believe', 'company', 'sing', 'song', 'money', 'real', 'hour',
+  'perfect', 'sit', 'car', 'turn', 'normal', 'confused', 'remind',
+  'definition', 'happen', 'slowly',
+  // Batch 5 (24)
+  'ability', 'leave', 'movie', 'dynamic', 'guess', 'respect',
+  'data', 'launch', 'pack', 'apple', 'grow', 'air',
+  'fun', 'concept', 'present', 'tools', 'sure', 'awesome',
+  'opposite', 'tip', 'sensation', 'gym', 'basis', 'technique',
+  // Batch 6 (24)
+  'coaching', 'couple', 'final', 'experience', 'prepared',
+  'general', 'strong', 'decision', 'worse', 'ice',
+  'side', 'replace', 'sick', 'brilliant', 'paid',
+  'maths', 'spice', 'harness', 'client', 'cream',
+  'once', 'speaker', 'mention', 'allow',
+  // Batch 7 (24)
+  'job', 'business', 'message', 'care', 'promise', 'flow',
+  'store', 'center', 'middle', 'sister', 'post', 'package',
+  'favorite', 'silent', 'comfortable', 'football', 'low', 'amount',
+  'crazy', 'between', 'each', 'chat', 'bit', 'super'
 ]);
 
 const tStart = performance.now();

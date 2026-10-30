@@ -5,8 +5,8 @@
   "discrepancy": 0,
   "silent_token_loss": 0,
   "communicative_coverage": {
-    "tokens": 20394,
-    "percentage": 87.69
+    "tokens": 20493,
+    "percentage": 88.11
   },
   "dispositions": {
     "GRAMMAR_OMISSION": {
@@ -14,20 +14,20 @@
       "percentage": 39.07
     },
     "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
-      "tokens": 9642,
-      "percentage": 41.46
+      "tokens": 9749,
+      "percentage": 41.92
     },
     "SUBTITLE_FALLBACK": {
-      "tokens": 2863,
-      "percentage": 12.31
+      "tokens": 2764,
+      "percentage": 11.88
     },
     "PHRASE_TRANSLATED": {
       "tokens": 1444,
       "percentage": 6.21
     },
     "FINGERSPELLED": {
-      "tokens": 220,
-      "percentage": 0.95
+      "tokens": 212,
+      "percentage": 0.91
     },
     "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": {
       "tokens": 1,

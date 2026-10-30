@@ -184,7 +184,9 @@ PLAYABLE_SIGNS = {
     # Phase H24 Batch 5 Signs (24 authentic signs covering 125+ tokens, passing 300 milestone)
     "ability", "leave", "movie", "dynamic", "guess", "respect", "data", "launch", "pack", "apple", "grow", "air", "fun", "concept", "present", "tools", "sure", "awesome", "opposite", "tip", "sensation", "gym", "basis", "technique",
     # Phase H24 Batch 6 Signs (24 authentic signs covering 115+ tokens, total 332 signs)
-    "coaching", "couple", "final", "experience", "prepared", "general", "strong", "decision", "worse", "ice", "side", "replace", "sick", "brilliant", "paid", "maths", "spice", "harness", "client", "cream", "once", "speaker", "mention", "allow"
+    "coaching", "couple", "final", "experience", "prepared", "general", "strong", "decision", "worse", "ice", "side", "replace", "sick", "brilliant", "paid", "maths", "spice", "harness", "client", "cream", "once", "speaker", "mention", "allow",
+    # Phase H24 Batch 7 Signs (24 authentic signs, total 356 signs)
+    "job", "business", "message", "care", "promise", "flow", "store", "center", "middle", "sister", "post", "package", "favorite", "silent", "comfortable", "football", "low", "amount", "crazy", "between", "each", "chat", "bit", "super"
 }
 
 # Structural ISL Function Words (Grammar Omissions)
