@@ -427,3 +427,26 @@ Implemented a fallback UI directly below the Aether avatar canvas in `#isl-acces
 - **Playable Tokens in Lecture:** Increased from 2,089 to **3,142 spoken words (13.51%)** (+1,053 tokens).
 - **Combined Communicative Coverage:** Expanded from 7,118 to **8,171 spoken words (35.14%)**.
 - **Validation:** 100% pass on [`tools/validate_phase_h13_motion_and_subtitle.mjs`](../tools/validate_phase_h13_motion_and_subtitle.mjs) with zero regressions across all previous test suites.
+
+---
+---
+
+## Q. Phase H14 Visual & Extension Integration Verification
+
+Documented in detail in [`docs/h14_visual_and_extension_verification.md`](h14_visual_and_extension_verification.md).
+
+### 1. Verification of the 15-Sign Library
+All 15 authored motions (`hello`, `good`, `morning`, `water`, `you`, `i`, `what`, `not`, `how`, `your`, `my`, `have`, `want`, `look`, `see`) were verified for:
+- Finger articulation curls (`thumb`, `index`, `middle`, `ring`, `pinky`).
+- Two-handed coordination across symmetrical Left and Right rigs (`WHAT`, `HOW`, `HAVE`, `WANT`, `MORNING`).
+- Exact terminal keyframe return to anatomical neutral `{ x: 0, y: 0, z: 0 }`.
+
+### 2. Extension Subtitle & Reading Persistence
+- Implemented a 2500 ms minimum persistence timer on the unavailable subtitle fallback to ensure human readability.
+- Clear cancellation triggers when a subsequent playable sign starts.
+- Safe `textContent` sanitization blocks transcript script injection.
+
+### 3. Review Status Distinction & Mixed-Sentence Support
+- In `#isl-overlay-container`, active signs display a dedicated `[PENDING REVIEW]` or `[VERIFIED]` badge.
+- Added deterministic scenario `mixed_sentence` (`"I want your dopamine"`) demonstrating interleaving between playable signs and unavailable word fallbacks.
+- Verified by [`tools/validate_phase_h14_visual_and_extension.mjs`](../tools/validate_phase_h14_visual_and_extension.mjs) (PASS 1 through 7).

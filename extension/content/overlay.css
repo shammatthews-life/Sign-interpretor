@@ -524,3 +524,26 @@
   70% { box-shadow: 0 0 0 6px rgba(88, 166, 255, 0); }
   100% { box-shadow: 0 0 0 0 rgba(88, 166, 255, 0); }
 }
+.isl-badge-review {
+  font-size: 9px;
+  background: rgba(210, 153, 34, 0.15);
+  color: #d29922;
+  border: 1px solid rgba(210, 153, 34, 0.4);
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.isl-badge-review.verified {
+  background: rgba(46, 160, 67, 0.15);
+  color: #3fb950;
+  border-color: rgba(46, 160, 67, 0.4);
+}
+
+.isl-badge-review.hidden {
+  display: none;
+}

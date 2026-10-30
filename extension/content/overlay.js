@@ -185,6 +185,7 @@
               <div>
                 <span class="isl-sublabel">Active Sign: </span>
                 <span id="pill-active-sign" class="isl-sign-tag isl-sign-active" style="display: none;">NONE</span>
+                <span id="pill-review-badge" class="isl-badge-review hidden">Pending Review</span>
                 <span id="txt-no-active" style="color: #8b949e; font-size: 11px;">None</span>
               </div>
               <div style="margin-top: 6px;">
@@ -211,6 +212,7 @@
                 <select id="select-demo-scenario" class="isl-select">
                   <option value="greeting">Greeting: "Hello good morning"</option>
                   <option value="missing_concept">Missing Concept: "I need water"</option>
+                  <option value="mixed_sentence">Mixed: "I want your dopamine"</option>
                 </select>
               </div>
               <div class="isl-btn-row">
@@ -294,6 +296,7 @@
 
         // Signing
         pillActiveSign: this.shadowRoot.getElementById('pill-active-sign'),
+        pillReviewBadge: this.shadowRoot.getElementById('pill-review-badge'),
         txtNoActive: this.shadowRoot.getElementById('txt-no-active'),
         boxQueuedSigns: this.shadowRoot.getElementById('box-queued-signs'),
         boxUnavailable: this.shadowRoot.getElementById('box-unavailable-container'),
@@ -403,11 +406,24 @@
       }
     }
 
-    setUnavailableFallback(originalWord = null) {
+    setUnavailableFallback(originalWord = null, durationMs = 2500) {
       if (!this.elements.unavailableSubtitle || !this.elements.unavailableSubText) return;
+      if (this.fallbackTimer) {
+        clearTimeout(this.fallbackTimer);
+        this.fallbackTimer = null;
+      }
       if (originalWord) {
         this.elements.unavailableSubText.textContent = String(originalWord);
         this.elements.unavailableSubtitle.classList.remove('hidden');
+        if (durationMs > 0) {
+          this.fallbackTimer = setTimeout(() => {
+            if (this.elements.unavailableSubtitle) {
+              this.elements.unavailableSubtitle.classList.add('hidden');
+              this.elements.unavailableSubText.textContent = '';
+            }
+            this.fallbackTimer = null;
+          }, durationMs);
+        }
       } else {
         this.elements.unavailableSubtitle.classList.add('hidden');
         this.elements.unavailableSubText.textContent = '';
@@ -497,9 +513,18 @@
         el.pillActiveSign.style.display = 'inline-block';
         el.pillActiveSign.textContent = queue.currentSign.toUpperCase();
         el.txtNoActive.style.display = 'none';
+        if (el.pillReviewBadge) {
+          const isVerified = queue.currentSignVerified === true;
+          el.pillReviewBadge.textContent = isVerified ? 'Verified' : 'Pending Review';
+          el.pillReviewBadge.className = isVerified ? 'isl-badge-review verified' : 'isl-badge-review';
+          el.pillReviewBadge.classList.remove('hidden');
+        }
       } else {
         el.pillActiveSign.style.display = 'none';
         el.txtNoActive.style.display = 'inline';
+        if (el.pillReviewBadge) {
+          el.pillReviewBadge.classList.add('hidden');
+        }
       }
 
       if (queue.queuedSigns && queue.queuedSigns.length) {

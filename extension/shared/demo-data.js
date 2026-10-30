@@ -243,6 +243,118 @@
           }
         }
       ]
+    },
+
+    mixed_sentence: {
+      id: 'mixed_sentence',
+      title: 'Mixed Sentence: "I want your dopamine"',
+      description: 'Verifies seamless transition between playable ISL signs and honest subtitle fallback for unsupported words',
+      steps: [
+        {
+          stepIndex: 1,
+          description: 'Partial transcript "I" → Aether executes playable sign I (Pending Review)',
+          audio: 'LISTENING',
+          asr: 'PARTIAL',
+          transcript: { partial: 'i', final: '' },
+          translation: {
+            status: 'SUPPORTED',
+            gloss: 'I',
+            glossSequence: ['I'],
+            candidateSignIds: ['i'],
+            playableSignIds: ['i'],
+            unavailableSignIds: [],
+            unknownTerms: [],
+            trace: [{ stage: 'lexicon_lookup', detail: 'Matched pronoun: i' }]
+          },
+          signing: 'PLAYING',
+          signingQueue: {
+            currentSign: 'i',
+            currentSignVerified: false,
+            queuedSigns: [],
+            completedSigns: [],
+            unavailableConcepts: [],
+            unavailableFallback: null
+          }
+        },
+        {
+          stepIndex: 2,
+          description: 'Partial transcript updates to "I want" → Two-handed sign WANT queued and executed',
+          audio: 'LISTENING',
+          asr: 'PARTIAL',
+          transcript: { partial: 'i want', final: '' },
+          translation: {
+            status: 'SUPPORTED',
+            gloss: 'I WANT',
+            glossSequence: ['I', 'WANT'],
+            candidateSignIds: ['i', 'want'],
+            playableSignIds: ['i', 'want'],
+            unavailableSignIds: [],
+            unknownTerms: [],
+            trace: [{ stage: 'lexicon_lookup', detail: 'Matched verb: want' }]
+          },
+          signing: 'PLAYING',
+          signingQueue: {
+            currentSign: 'want',
+            currentSignVerified: false,
+            queuedSigns: [],
+            completedSigns: ['i'],
+            unavailableConcepts: [],
+            unavailableFallback: null
+          }
+        },
+        {
+          stepIndex: 3,
+          description: 'Partial transcript updates to "I want your" → Sign YOUR executed with flat B-handshape',
+          audio: 'LISTENING',
+          asr: 'PARTIAL',
+          transcript: { partial: 'i want your', final: '' },
+          translation: {
+            status: 'SUPPORTED',
+            gloss: 'I WANT YOUR',
+            glossSequence: ['I', 'WANT', 'YOUR'],
+            candidateSignIds: ['i', 'want', 'your'],
+            playableSignIds: ['i', 'want', 'your'],
+            unavailableSignIds: [],
+            unknownTerms: [],
+            trace: [{ stage: 'lexicon_lookup', detail: 'Matched pronoun: your' }]
+          },
+          signing: 'PLAYING',
+          signingQueue: {
+            currentSign: 'your',
+            currentSignVerified: false,
+            queuedSigns: [],
+            completedSigns: ['i', 'want'],
+            unavailableConcepts: [],
+            unavailableFallback: null
+          }
+        },
+        {
+          stepIndex: 4,
+          description: 'Final transcript "I want your dopamine" → Unsupported concept "dopamine" triggers neutral pose and subtitle fallback',
+          audio: 'IDLE',
+          asr: 'FINAL',
+          transcript: { partial: 'i want your dopamine', final: 'i want your dopamine' },
+          translation: {
+            status: 'UNCERTAIN',
+            gloss: 'I WANT YOUR',
+            glossSequence: ['I', 'WANT', 'YOUR'],
+            candidateSignIds: ['i', 'want', 'your'],
+            playableSignIds: ['i', 'want', 'your'],
+            unavailableSignIds: [],
+            unknownTerms: ['DOPAMINE'],
+            trace: [{ stage: 'unknown_terms', detail: 'Unresolved technical term: DOPAMINE' }]
+          },
+          signing: 'UNAVAILABLE',
+          signingQueue: {
+            currentSign: null,
+            currentSignVerified: false,
+            queuedSigns: [],
+            completedSigns: ['i', 'want', 'your'],
+            unavailableConcepts: [{ word: 'dopamine', reason: 'MOTION_NOT_AUTHORED' }],
+            unavailableFallback: 'dopamine'
+          }
+        }
+      ]
     }
   };
 
