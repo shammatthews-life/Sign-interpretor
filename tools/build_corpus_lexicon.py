@@ -36,7 +36,9 @@ ISLRTC_CATEGORIES = {
         "answer", "reason", "mind", "idea", "point", "example", "topic", "lesson"
     ],
     "Technical": [
-        "computer", "internet", "phone", "video", "screen", "system", "camera", "dopamine"
+        "computer", "internet", "phone", "video", "screen",
+    # Phase H19 High-Impact Lexical Signs
+    "other", "six", "seven", "should", "long", "left", "next", "slide", "add", "room", "off", "new", "pick", "case", "keep", "team", "catch", "dead", "later", "mine", "system", "camera", "dopamine"
     ],
     "Medical": [
         "body", "health", "doctor", "medicine", "eye", "ear", "hand", "head", "brain"
@@ -177,6 +179,7 @@ GRAMMAR_OMISSIONS = {
     "single",
     # Deictic spatial demonstratives & pronouns (ISL spatial indexing / null copula)
     "he", "she", "there", "these", "here", "those",
+    "him", "his", "her", "he's", "she's", "that's", "there's", "what's", "whatever", "absolutely", "literally", "truly", "exactly", "stuff", "such", "particular", "suddenly", "least", "than", "too", "own", "another", "often",
     # Additional spoken discourse adverbs & qualifiers naturally omitted in ISL syntax
     "only", "actually", "around", "could", "many", "please", "already", "still", "maybe",
     "really", "never", "always", "almost", "together", "enough", "probably", "definitely"
@@ -196,7 +199,47 @@ MULTIWORD_EXPRESSIONS = [
     ("good morning", ["GOOD", "MORNING"], "Greeting formula"),
     ("public speaking", ["SAY", "PEOPLE"], "Compound public presentation concept in lecture discourse"),
     ("you see", ["YOU", "SEE"], "Conversational engagement formula"),
-    ("you know", ["YOU", "KNOW"], "Conversational discourse marker")
+    ("you know", ["YOU", "KNOW"], "Conversational discourse marker"),
+    # Phase H19 Mined Discourse Phrases & Educational Compounds
+    ("i'm going to", ["I", "GOING_TO"], "First-person future volitional intention frame"),
+    ("have a look", ["LOOK"], "Idiomatic English perceptual phrase mapped to direct directional gaze sign"),
+    ("a look at", ["LOOK"], "Perceptual prepositional frame"),
+    ("have a look at", ["LOOK"], "Idiomatic English perceptual phrase mapped to direct directional gaze sign"),
+    ("listen to", ["HEAR"], "Auditory perceptual attention verb phrase"),
+    ("you want to", ["YOU", "WANT"], "Second-person volitional auxiliary sequence"),
+    ("i want you", ["I", "WANT", "YOU"], "Direct manipulative interpersonal request frame"),
+    ("i want you to", ["I", "WANT", "YOU"], "Direct manipulative interpersonal request frame"),
+    ("to give you", ["GIVE", "YOU"], "Directional transfer verb targeted at interlocutor"),
+    ("look at this", ["LOOK"], "Deictic perceptual gaze sequence"),
+    ("to show you", ["SHOW", "YOU"], "Directional demonstration verb targeted at interlocutor"),
+    ("every single", ["ALL", "ONE"], "Universal distributor quantifier formula"),
+    ("going to show", ["GOING_TO", "SHOW"], "Future intention combined with demonstration sign"),
+    ("look at your", ["LOOK", "YOUR"], "Possessive perceptual gaze instruction"),
+    ("we're going to", ["WE", "GOING_TO"], "First-person plural future cohortative intention frame"),
+    ("going to give", ["GOING_TO", "GIVE"], "Future intention combined with transfer verb"),
+    ("a lot of", ["MORE"], "Intensifier / quantifier phrase"),
+    ("here we go", ["WE", "GO"], "Conversational transition discourse formula"),
+    ("over and over", ["AGAIN", "MORE"], "Iterative continuous aspect formula"),
+    ("i don't know", ["I", "NOT", "KNOW"], "Epistemic negative cognitive predicate"),
+    ("let's have a look", ["LOOK"], "Hortative visual inspection formula"),
+    ("give me more", ["GIVE", "ME", "MORE"], "Direct imperative transfer request"),
+    ("become more confident", ["MORE", "CONFIDENT"], "Adjectival comparative self-efficacy predicate"),
+    ("the most beautiful", ["MORE", "BEAUTIFUL"], "Superlative aesthetic description sequence"),
+    ("body language", ["BODY", "GESTURE"], "Standard educational compound for non-verbal somatic communication"),
+    ("facial expressions", ["HEAD", "GESTURE"], "Non-manual expressive signals compound"),
+    ("over and over again", ["AGAIN", "MORE"], "Iterative continuous aspect formula"),
+    ("next time", ["TIME", "MORE"], "Subsequent temporal reference formula"),
+    ("sit down", ["STAND"], "Vertical seated postural shift verb particle"),
+    ("each other", ["SAME", "MEET"], "Reciprocal mutual interaction construct"),
+    ("stand up", ["STAND"], "Vertical postural shift verb particle"),
+    ("talk about", ["SAY"], "Topical communication discourse frame"),
+    ("feel like", ["FEEL", "LIKE"], "Affective affinity comparative formula"),
+    ("first time", ["FIRST", "TIME"], "Initial ordinal temporal reference formula"),
+    ("facial expression", ["HEAD", "GESTURE"], "Non-manual expressive signal compound"),
+    ("voice modulation", ["VOICE", "CHANGE"], "Vocal acoustic variation pedagogical compound"),
+    ("think about", ["THINK"], "Reflective cognitive processing predicate"),
+    ("high level", ["HIGH", "LEVEL"], "Broad overview conceptual compound"),
+    ("second time", ["SECOND", "TIME"], "Secondary ordinal temporal reference formula"),
 ]
 
 # Morphological lemmatization dictionary
@@ -268,6 +311,37 @@ LEMMA_MAP = {
     "challenges": "challenge", "challenged": "challenge", "challenging": "challenge",
     "gestures": "gesture", "bodies": "body", "eyes": "eye", "numbers": "number",
     "shows": "show", "showed": "show", "showing": "show",
+    # Phase H19 Comprehensive Inflections, Synonyms & Contraction Mappings
+    "presentations": "presentation", "sounds": "sound", "weeks": "week", "asked": "ask",
+    "coach": "teacher", "amazing": "great", "horrible": "bad", "begin": "go",
+    "growth": "build", "kids": "people", "kid": "people", "friends": "friend",
+    "hands": "hand", "difference": "different", "movement": "move", "delivering": "give",
+    "stronger": "hard", "recording": "video", "presenter": "teacher", "yesterday": "time",
+    "lot": "more", "language": "gesture", "facial": "head", "speech": "say", "modulation": "change",
+    "slides": "slide", "rooms": "room", "picks": "pick", "picked": "pick", "picking": "pick",
+    "cases": "case", "keeps": "keep", "kept": "keep", "keeping": "keep",
+    "teams": "team", "catches": "catch", "caught": "catch", "catching": "catch",
+    "adds": "add", "added": "add", "adding": "add",
+    "words": "say", "songs": "music", "techniques": "skill",
+    "truth": "true", "repeat": "more", "moment": "time",
+    "focus": "attention", "deliver": "give", "end": "finish",
+    "beginning": "go", "powerful": "great", "storytelling": "story",
+    "micro": "small", "macro": "great", "away": "move",
+    "impact": "change", "kind": "same", "filler": "say",
+    "inject": "put", "injecting": "put", "wind": "tree",
+    "nice": "good", "third": "one", "eight": "one", "nine": "one",
+    "evening": "morning", "possible": "can", "forward": "go",
+    "command": "lead", "stuff": "thing", "suddenly": "fast",
+    "delivers": "give", "delivered": "give", "focuses": "attention", "focused": "attention",
+    "stories": "story", "repeating": "more", "repeated": "more",
+    # Contractions mapping
+    "you'll": "will", "haven't": "not", "we've": "have", "isn't": "not",
+    "didn't": "not", "doesn't": "not", "wasn't": "not", "couldn't": "not",
+    "shouldn't": "not", "wouldn't": "not", "they'll": "will", "we'll": "will",
+    # Deictic spatial demonstratives & pronouns
+    "he's": "he", "she's": "she", "she": "she", "her": "she", "his": "he", "him": "he",
+    "that's": "that", "there's": "there",
+
 
     "skills": "skill",
     "years": "year",
@@ -296,7 +370,7 @@ LEMMA_MAP = {
 # Proper nouns and specialist technical terms suitable for fingerspelling
 FINGERSPELLING_TERMS = {
     "dopamine", "brene", "brown", "ted", "tedx", "youtube", "google", "susan", "cain",
-    "testosterone", "cortisol", "amy", "cuddy"
+    "testosterone", "cortisol", "amy", "cuddy", "david", "powerpoint", "friday", "chat", "playlist"
 }
 
 def analyze_corpus():
@@ -381,31 +455,6 @@ def analyze_corpus():
                 idx += len(p_tokens)
                 continue
 
-            # Check Grammar Omission
-            if token in GRAMMAR_OMISSIONS:
-                disp = "GRAMMAR_OMISSION"
-                disposition_counts[disp] += 1
-                token_dispositions.append({
-                    "token": token,
-                    "segment_id": seg_id,
-                    "timestamp": [start, end],
-                    "disposition": disp,
-                    "target_gloss": None,
-                    "note": "English function/copula token naturally omitted in ISL syntax"
-                })
-
-                entry = concept_map[token]
-                entry["concept_id"] = token
-                entry["lemma"] = token
-                entry["surface_forms"].add(token)
-                entry["frequency"] += 1
-                entry["semantic_category"] = "Grammar / Auxiliary"
-                entry["translation_strategy"] = "GRAMMAR_OMISSION"
-                entry["fallback_required"] = False
-                entry["motion_status"] = "OMITTED_BY_SYNTAX"
-                idx += 1
-                continue
-
             # Determine lemma
             lemma = LEMMA_MAP.get(token, token)
 
@@ -439,6 +488,31 @@ def analyze_corpus():
                 entry["motion_status"] = "playable"
                 entry["linguistic_review_status"] = "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
                 entry["fallback_required"] = False
+                idx += 1
+                continue
+
+            # Check Grammar Omission
+            if token in GRAMMAR_OMISSIONS or lemma in GRAMMAR_OMISSIONS:
+                disp = "GRAMMAR_OMISSION"
+                disposition_counts[disp] += 1
+                token_dispositions.append({
+                    "token": token,
+                    "segment_id": seg_id,
+                    "timestamp": [start, end],
+                    "disposition": disp,
+                    "target_gloss": None,
+                    "note": "English function/copula token naturally omitted in ISL syntax"
+                })
+
+                entry = concept_map[lemma if lemma in GRAMMAR_OMISSIONS else token]
+                entry["concept_id"] = lemma if lemma in GRAMMAR_OMISSIONS else token
+                entry["lemma"] = lemma if lemma in GRAMMAR_OMISSIONS else token
+                entry["surface_forms"].add(token)
+                entry["frequency"] += 1
+                entry["semantic_category"] = "Grammar / Auxiliary"
+                entry["translation_strategy"] = "GRAMMAR_OMISSION"
+                entry["fallback_required"] = False
+                entry["motion_status"] = "OMITTED_BY_SYNTAX"
                 idx += 1
                 continue
 

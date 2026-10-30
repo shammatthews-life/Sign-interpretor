@@ -1,0 +1,808 @@
+{
+  "batch_number": 3,
+  "concept_range": "101-150",
+  "concepts_count": 50,
+  "total_occurrences": 384,
+  "concepts": [
+    {
+      "rank": 101,
+      "lemma": "new",
+      "surface_forms": [
+        "new"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.18,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "new",
+      "resolved_gloss": "NEW",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/new.json",
+      "example_context": "You can't keep going around injecting new"
+    },
+    {
+      "rank": 102,
+      "lemma": "wise",
+      "surface_forms": [
+        "wise"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.18,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "two meters wide, shoulder-wise. His name is Arthur Brumer, he sounds like a bear,"
+    },
+    {
+      "rank": 103,
+      "lemma": "friday",
+      "surface_forms": [
+        "friday"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.18,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "FINGERSPELLED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FS:FRIDAY",
+      "evidence_rationale": "Proper noun or technical brand name rendered via ISL manual alphabet",
+      "example_context": "what's happening on Friday?"
+    },
+    {
+      "rank": 104,
+      "lemma": "communication",
+      "surface_forms": [
+        "communication"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "from the 110-step chart of excellence communication."
+    },
+    {
+      "rank": 105,
+      "lemma": "paper",
+      "surface_forms": [
+        "paper"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "So make sure you have a pen and a paper,"
+    },
+    {
+      "rank": 106,
+      "lemma": "hands",
+      "surface_forms": [
+        "hands"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "hand",
+      "resolved_gloss": "HAND",
+      "evidence_rationale": "Plural inflection of HAND",
+      "example_context": "no? Are you ready to be challenged? I want to say two hands in the air if you're ready to be"
+    },
+    {
+      "rank": 107,
+      "lemma": "delivering",
+      "surface_forms": [
+        "delivering"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "give",
+      "resolved_gloss": "GIVE",
+      "evidence_rationale": "ISLRTC transfer verb: impart/give presentation",
+      "example_context": "which can literally transform you into being a nervous wreck, delivering a bad presentation,"
+    },
+    {
+      "rank": 108,
+      "lemma": "presenter",
+      "surface_forms": [
+        "presenter"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "teacher",
+      "resolved_gloss": "TEACHER",
+      "evidence_rationale": "Role noun: speaker/presenter",
+      "example_context": "presentations, in meetings, in negotiations, as a leader, as a presenter, as a coach, doesn't"
+    },
+    {
+      "rank": 109,
+      "lemma": "pick",
+      "surface_forms": [
+        "pick"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "pick",
+      "resolved_gloss": "PICK",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/pick.json",
+      "example_context": "So if you like this session, make sure you pick up this book."
+    },
+    {
+      "rank": 110,
+      "lemma": "case",
+      "surface_forms": [
+        "case"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "case",
+      "resolved_gloss": "CASE",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/case.json",
+      "example_context": "I want you to take with you that the case is often this one, which is that confidence is"
+    },
+    {
+      "rank": 111,
+      "lemma": "chat",
+      "surface_forms": [
+        "chat"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "FINGERSPELLED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FS:CHAT",
+      "evidence_rationale": "Proper noun or technical brand name rendered via ISL manual alphabet",
+      "example_context": "Give it a quick think and write it in the chat."
+    },
+    {
+      "rank": 112,
+      "lemma": "recording",
+      "surface_forms": [
+        "recording"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "video",
+      "resolved_gloss": "VIDEO",
+      "evidence_rationale": "Media synonym: captured audio-visual content",
+      "example_context": "presenting ideas, recording videos."
+    },
+    {
+      "rank": 113,
+      "lemma": "stronger",
+      "surface_forms": [
+        "stronger"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "hard",
+      "resolved_gloss": "HARD",
+      "evidence_rationale": "Comparative adjective: firmer/stronger",
+      "example_context": "fire and it becomes stronger and stronger. This is your skill. This is your skill in becoming"
+    },
+    {
+      "rank": 114,
+      "lemma": "difference",
+      "surface_forms": [
+        "difference"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "different",
+      "resolved_gloss": "DIFFERENT",
+      "evidence_rationale": "Nominal derivation of DIFFERENT",
+      "example_context": "And that makes a huge difference in your life."
+    },
+    {
+      "rank": 115,
+      "lemma": "instead",
+      "surface_forms": [
+        "instead"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I know, I can't do that. That is you having a fixed mindset. But if you instead say,"
+    },
+    {
+      "rank": 116,
+      "lemma": "able",
+      "surface_forms": [
+        "able"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "mentioned growth mindset. We won't be able to go through all of these, but when we"
+    },
+    {
+      "rank": 117,
+      "lemma": "ago",
+      "surface_forms": [
+        "ago"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "rank": 118,
+      "lemma": "quite",
+      "surface_forms": [
+        "quite"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "rank": 119,
+      "lemma": "part",
+      "surface_forms": [
+        "part"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "introduce you to the concept of the Angels and the Devil's Cocktail, which is part of the book."
+    },
+    {
+      "rank": 120,
+      "lemma": "oxytocin",
+      "surface_forms": [
+        "oxytocin"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "testosterone and maybe some oxytocin in there as well. I'll ask you to drink that."
+    },
+    {
+      "rank": 121,
+      "lemma": "momentum",
+      "surface_forms": [
+        "momentum"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Focus, motivation, direction, and momentum."
+    },
+    {
+      "rank": 122,
+      "lemma": "big",
+      "surface_forms": [
+        "big"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "It's a big town."
+    },
+    {
+      "rank": 123,
+      "lemma": "stop",
+      "surface_forms": [
+        "stop"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Why did you stop it David?"
+    },
+    {
+      "rank": 124,
+      "lemma": "bit",
+      "surface_forms": [
+        "bit"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "They all look a bit edgy these flowers."
+    },
+    {
+      "rank": 125,
+      "lemma": "outside",
+      "surface_forms": [
+        "outside"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I was outside of the pub, and when he scored, just prior to him scoring, there were, I don't know,"
+    },
+    {
+      "rank": 126,
+      "lemma": "expressions",
+      "surface_forms": [
+        "expressions"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "you have facial expressions and so on and so forth."
+    },
+    {
+      "rank": 127,
+      "lemma": "remove",
+      "surface_forms": [
+        "remove"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "It is something that you can in no way or form remove."
+    },
+    {
+      "rank": 128,
+      "lemma": "anticipation",
+      "surface_forms": [
+        "anticipation"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "write this sentence down is the anticipation of reward. That's what dopamine is, the anticipation"
+    },
+    {
+      "rank": 129,
+      "lemma": "sell",
+      "surface_forms": [
+        "sell"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "This I love this one. Sell your slide. Okay so it goes like this."
+    },
+    {
+      "rank": 130,
+      "lemma": "based",
+      "surface_forms": [
+        "based"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "indeed. Maybe not the most beautiful one I've seen, but it does summarize, you know, based on how"
+    },
+    {
+      "rank": 131,
+      "lemma": "lars",
+      "surface_forms": [
+        "lars"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.16,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "His name was Lars."
+    },
+    {
+      "rank": 132,
+      "lemma": "bring",
+      "surface_forms": [
+        "bring"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "and bring you a few steps closer to being more confident, more clear,"
+    },
+    {
+      "rank": 133,
+      "lemma": "watch",
+      "surface_forms": [
+        "watch"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "What you're about to watch is a special compilation of a three-day public speaking challenge"
+    },
+    {
+      "rank": 134,
+      "lemma": "we'll",
+      "surface_forms": [
+        "we'll"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "CONTRACTION_UNPACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WE WILL",
+      "evidence_rationale": "Spoken contraction unpacked into core ISL lexical items: WE WILL",
+      "example_context": "We'll begin with mindset and confidence."
+    },
+    {
+      "rank": 135,
+      "lemma": "chart",
+      "surface_forms": [
+        "chart"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "from the 110-step chart of excellence communication."
+    },
+    {
+      "rank": 136,
+      "lemma": "subject",
+      "surface_forms": [
+        "subject"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "on this particular subject."
+    },
+    {
+      "rank": 137,
+      "lemma": "during",
+      "surface_forms": [
+        "during"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I've gathered during my 25 year career as a public speaker"
+    },
+    {
+      "rank": 138,
+      "lemma": "25",
+      "surface_forms": [
+        "25"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Numeral",
+      "semantic_category": "Numeral",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I've gathered during my 25 year career as a public speaker"
+    },
+    {
+      "rank": 139,
+      "lemma": "pen",
+      "surface_forms": [
+        "pen"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "So make sure you have a pen and a paper,"
+    },
+    {
+      "rank": 140,
+      "lemma": "sweden",
+      "surface_forms": [
+        "sweden"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "to the lovely country of Sweden."
+    },
+    {
+      "rank": 141,
+      "lemma": "nervous",
+      "surface_forms": [
+        "nervous"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "which can literally transform you into being a nervous wreck, delivering a bad presentation,"
+    },
+    {
+      "rank": 142,
+      "lemma": "far",
+      "surface_forms": [
+        "far"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "to give you a concept of how important this is for any public speaker, at the far end"
+    },
+    {
+      "rank": 143,
+      "lemma": "per",
+      "surface_forms": [
+        "per"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "and then you have a per-skill confidence."
+    },
+    {
+      "rank": 144,
+      "lemma": "instance",
+      "surface_forms": [
+        "instance"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "So, for instance, if you were to be not very confident in basketball, but you start playing"
+    },
+    {
+      "rank": 145,
+      "lemma": "quick",
+      "surface_forms": [
+        "quick"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Give it a quick think and write it in the chat."
+    },
+    {
+      "rank": 146,
+      "lemma": "super",
+      "surface_forms": [
+        "super"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Just because you are super confident in storytelling"
+    },
+    {
+      "rank": 147,
+      "lemma": "logs",
+      "surface_forms": [
+        "logs"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "And the fire, you can imagine this being logs thrown on a fire,"
+    },
+    {
+      "rank": 148,
+      "lemma": "earth",
+      "surface_forms": [
+        "earth"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "What I mean with that is that this one's skill base, but what on earth is this?"
+    },
+    {
+      "rank": 149,
+      "lemma": "feedback",
+      "surface_forms": [
+        "feedback"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "feedback, people with a fixed mindset had a decrease in their ability of the"
+    },
+    {
+      "rank": 150,
+      "lemma": "won't",
+      "surface_forms": [
+        "won't"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.14,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "mentioned growth mindset. We won't be able to go through all of these, but when we"
+    }
+  ]
+}

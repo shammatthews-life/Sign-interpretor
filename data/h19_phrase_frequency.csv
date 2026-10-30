@@ -1,0 +1,40 @@
+phrase,token_count,occurrences,total_tokens_affected,target_glosses,semantic_category,evidence_reference,linguistic_note
+i'm going to,3,40,120,I|GOING_TO,Grammatical Aspect,ISLRTC Grammar / Intention,First-person future volitional intention frame
+have a look,3,38,114,LOOK,Perceptual / Directive,ISLRTC Everyday / Gaze,Idiomatic English perceptual phrase mapped to direct directional gaze sign
+a look at,3,37,111,LOOK,Perceptual / Directive,ISLRTC Everyday / Gaze,Perceptual prepositional frame
+have a look at,4,35,140,LOOK,Perceptual / Directive,ISLRTC Everyday / Gaze,Idiomatic English perceptual phrase mapped to direct directional gaze sign
+listen to,2,31,62,HEAR,Perceptual Verb,ISLRTC Medical / Auditory,Auditory perceptual attention verb phrase
+you want to,3,27,81,YOU|WANT,Modal / Volitional,ISLRTC Volitional,Second-person volitional auxiliary sequence
+i want you,3,26,78,I|WANT|YOU,Modal / Directive,ISLRTC Volitional,Direct manipulative interpersonal request frame
+i want you to,4,25,100,I|WANT|YOU,Modal / Directive,ISLRTC Volitional,Direct manipulative interpersonal request frame
+to give you,3,25,75,GIVE|YOU,Directional Verb,ISLRTC Everyday / Transfer,Directional transfer verb targeted at interlocutor
+look at this,3,20,60,LOOK,Perceptual / Directive,ISLRTC Everyday / Gaze,Deictic perceptual gaze sequence
+to show you,3,20,60,SHOW|YOU,Directional Verb,ISLRTC Academic / Demonstration,Directional demonstration verb targeted at interlocutor
+every single,2,16,32,ALL|ONE,Quantifier,ISLRTC Everyday / Scope,Universal distributor quantifier formula
+going to show,3,15,45,GOING_TO|SHOW,Pedagogical,ISLRTC Academic / Demonstration,Future intention combined with demonstration sign
+look at your,3,12,36,LOOK|YOUR,Directive,ISLRTC Everyday / Pronoun,Possessive perceptual gaze instruction
+we're going to,3,12,36,WE|GOING_TO,Grammatical Aspect,ISLRTC Grammar / Intention,First-person plural future cohortative intention frame
+going to give,3,12,36,GOING_TO|GIVE,Pedagogical,ISLRTC Everyday / Transfer,Future intention combined with transfer verb
+a lot of,3,12,36,MORE,Quantifier,ISLRTC Everyday / Quantity,Intensifier / quantifier phrase
+here we go,3,12,36,WE|GO,Discourse Particle,ISLRTC Discourse,Conversational transition discourse formula
+over and over,3,11,33,AGAIN|MORE,Aspectual Compound,ISLRTC Aspect / Repetition,Iterative continuous aspect formula
+i don't know,3,11,33,I|NOT|KNOW,Cognitive / Negation,ISLRTC Everyday / Cognition,Epistemic negative cognitive predicate
+let's have a look,4,10,40,LOOK,Perceptual / Directive,ISLRTC Everyday / Gaze,Hortative visual inspection formula
+give me more,3,10,30,GIVE|ME|MORE,Directive,ISLRTC Everyday / Transfer,Direct imperative transfer request
+become more confident,3,10,30,MORE|CONFIDENT,Pedagogical / State,ISLRTC Academic / State,Adjectival comparative self-efficacy predicate
+the most beautiful,3,10,30,MORE|BEAUTIFUL,Descriptive,ISLRTC Everyday / Quality,Superlative aesthetic description sequence
+body language,2,8,16,BODY|GESTURE,Domain Compound,ISLRTC Academic / Non-verbal,Standard educational compound for non-verbal somatic communication
+facial expressions,2,8,16,HEAD|GESTURE,Domain Compound,ISLRTC Academic / Non-manual,Non-manual expressive signals compound
+over and over again,4,8,32,AGAIN|MORE,Aspectual Compound,ISLRTC Aspect / Repetition,Iterative continuous aspect formula
+next time,2,7,14,TIME|MORE,Temporal Deictic,ISLRTC Everyday / Time,Subsequent temporal reference formula
+sit down,2,5,10,STAND,Locomotion / Posture,ISLRTC Everyday / Posture,Vertical seated postural shift verb particle
+each other,2,5,10,SAME|MEET,Grammatical Relation,ISLRTC Everyday / Reciprocal,Reciprocal mutual interaction construct
+stand up,2,3,6,STAND,Locomotion / Posture,ISLRTC Everyday / Posture,Vertical postural shift verb particle
+talk about,2,3,6,SAY,Discourse Verb,ISLRTC Everyday / Utterance,Topical communication discourse frame
+feel like,2,3,6,FEEL|LIKE,Comparative State,ISLRTC Everyday / Affective,Affective affinity comparative formula
+first time,2,3,6,FIRST|TIME,Temporal Deictic,ISLRTC Everyday / Time,Initial ordinal temporal reference formula
+facial expression,2,2,4,HEAD|GESTURE,Domain Compound,ISLRTC Academic / Non-manual,Non-manual expressive signal compound
+voice modulation,2,2,4,VOICE|CHANGE,Domain Compound,ISLRTC Academic / Vocal,Vocal acoustic variation pedagogical compound
+think about,2,2,4,THINK,Cognitive Verb,ISLRTC Everyday / Cognition,Reflective cognitive processing predicate
+high level,2,2,4,HIGH|LEVEL,Academic Compound,ISLRTC Academic / Scope,Broad overview conceptual compound
+second time,2,1,2,SECOND|TIME,Temporal Deictic,ISLRTC Everyday / Time,Secondary ordinal temporal reference formula

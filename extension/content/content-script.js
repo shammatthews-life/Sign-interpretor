@@ -25,7 +25,32 @@
   }
 
   let ui = null;
+  let synchronizer = null;
   const pendingAetherCommands = [];
+
+  function ensureSynchronizer() {
+    if (synchronizer) return synchronizer;
+    const syncClass = window.ISLTimelineSynchronizer?.YouTubeTimelineSynchronizer;
+    if (!syncClass) return null;
+
+    const videoEl = document.querySelector('video.html5-main-video') || document.querySelector('video');
+    synchronizer = new syncClass({
+      videoElement: videoEl,
+      onDispatchSign: (signId) => {
+        forwardAetherCommand({ command: contract.AETHER_COMMANDS.PLAY_SIGN, signId });
+      },
+      onDispatchCommand: (command) => {
+        forwardAetherCommand({ command: contract.AETHER_COMMANDS[command] || command });
+      },
+      onFallback: (text) => {
+        if (ui) ui.setUnavailableFallback(text);
+      },
+      onClearFallback: () => {
+        if (ui) ui.setUnavailableFallback(null);
+      }
+    });
+    return synchronizer;
+  }
 
   function initializeOverlay() {
     if (ui) return;
@@ -145,6 +170,13 @@
       if (message.type === contract.MESSAGE_TYPES.STATE_UPDATE && message.payload) {
         bindAetherFrame();
         if (ui) ui.update(message.payload);
+        const sync = ensureSynchronizer();
+        const ytData = message.payload?.youtube;
+        if (sync && ytData?.segments) {
+          sync.setSegments(ytData.segments);
+        } else if (sync && ytData?.transcript?.segments) {
+          sync.setSegments(ytData.transcript.segments);
+        }
         sendResponse({ received: true });
         return true;
       }
@@ -176,6 +208,10 @@
   // YouTube SPA navigation resilience (yt-navigate-finish / popstate)
   function handleNavigation() {
     if (!document.getElementById('isl-accessibility-overlay-root')) {
+      if (synchronizer) {
+        synchronizer.detach();
+        synchronizer = null;
+      }
       if (ui) {
         ui.destroy();
         ui = null;
