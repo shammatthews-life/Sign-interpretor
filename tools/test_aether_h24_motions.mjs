@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 console.log('====================================================');
-console.log('TESTING AETHER AVATAR PERFORMANCE ON ALL 173 H24 SIGNS');
+console.log('TESTING AETHER AVATAR PERFORMANCE ON ALL 193 H24 SIGNS');
 console.log('====================================================');
 
 const h24SignIds = [
@@ -44,7 +44,12 @@ const h24SignIds = [
   'special', 'practical', 'welcome', 'valuable', 'transform', 'avoid',
   'excellent', 'social', 'critical', 'direction', 'content', 'fail',
   'basketball', 'golf', 'less', 'massive', 'continuous', 'dancing',
-  'born', 'friday', 'instead', 'ago', 'quite', 'guy'
+  'born', 'friday', 'instead', 'ago', 'quite', 'guy',
+  // Batch 9 (20)
+  'smile', 'dream', 'exercise', 'accomplish', 'close',
+  'old', 'hungry', 'intention', 'motivated', 'few',
+  'lovely', 'focus', 'sometimes', 'list', 'connected',
+  'course', 'analyze', 'fourth', 'fifth', 'meeting'
 ];
 
 let allPassed = true;

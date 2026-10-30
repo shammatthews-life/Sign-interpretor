@@ -241,7 +241,12 @@ const fullH24VocabSet = new Set([
   'special', 'practical', 'welcome', 'valuable', 'transform', 'avoid',
   'excellent', 'social', 'critical', 'direction', 'content', 'fail',
   'basketball', 'golf', 'less', 'massive', 'continuous', 'dancing',
-  'born', 'friday', 'instead', 'ago', 'quite', 'guy'
+  'born', 'friday', 'instead', 'ago', 'quite', 'guy',
+  // Batch 9 (20)
+  'smile', 'dream', 'exercise', 'accomplish', 'close',
+  'old', 'hungry', 'intention', 'motivated', 'few',
+  'lovely', 'focus', 'sometimes', 'list', 'connected',
+  'course', 'analyze', 'fourth', 'fifth', 'meeting'
 ]);
 
 const tStart = performance.now();
