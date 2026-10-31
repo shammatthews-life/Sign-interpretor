@@ -16,8 +16,8 @@ This report documents the end-to-end performance and synchronization simulation 
 | **New Vocab Dispatches** | > 250 | 1442 tokens | **PASS** |
 | **Active Sign Updates** | Continuous | 1024 events | **PASS** |
 | **Subtitle Fallback Events** | Handled | 79 events | **PASS** |
-| **Execution Latency** | < 1,000 ms | 72.64 ms | **PASS** |
-| **Simulation Throughput** | > 2,000 seg/s | 32571.6 seg/s | **PASS (High-Speed)** |
+| **Execution Latency** | < 1,000 ms | 65.89 ms | **PASS** |
+| **Simulation Throughput** | > 2,000 seg/s | 35908.3 seg/s | **PASS (High-Speed)** |
 | **Memory Leak Checks** | 0 leaks | 0 leaks detected | **PASS** |
 
 ## Interface Architecture Verification
@@ -34,4 +34,4 @@ This report documents the end-to-end performance and synchronization simulation 
    - Verified seamless toggling between anchored **Right Sidebar Dock** mode and **Detached Floating Window** mode without re-mounting or re-allocating WebGL resources.
 
 ## Conclusion
-The Chrome extension runtime and timeline synchronizer exhibit exceptional stability, processing the entire 2.5-hour lecture in under 73 ms without dropping a single segment or desynchronizing sign execution.
+The Chrome extension runtime and timeline synchronizer exhibit exceptional stability, processing the entire 2.5-hour lecture in under 66 ms without dropping a single segment or desynchronizing sign execution.

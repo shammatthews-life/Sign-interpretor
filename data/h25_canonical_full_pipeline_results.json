@@ -11,8 +11,8 @@
   "newVocabTokensDispatched": 1442,
   "activeSignUpdates": 1024,
   "fallbackSubtitleEvents": 79,
-  "throughputSegmentsPerSec": 32571.6,
-  "elapsedTimeMs": 72.64,
+  "throughputSegmentsPerSec": 35908.3,
+  "elapsedTimeMs": 65.89,
   "uiLayout": {
     "sidebarPosition": "RIGHT_SIDEBAR",
     "avatarDock": "BOTTOM_RIGHT",
@@ -22,5 +22,5 @@
   "memoryLeaksDetected": false,
   "xssVulnerabilitiesDetected": false,
   "status": "PASSED_FLAWLESS",
-  "timestamp": "2026-10-31T01:35:45.277Z"
+  "timestamp": "2026-10-31T02:07:02.202Z"
 }
