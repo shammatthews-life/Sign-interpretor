@@ -78,6 +78,22 @@ scripts can create local fixtures with
 `tools/asr/generate_benchmark_audio.py` after reviewing the upstream source
 terms.
 
+The local ASR service requires NVIDIA CUDA by default and pins inference to
+CUDA device index 0 with `float16`; it fails with an actionable error instead
+of silently falling back to CPU. `GPU_PREFERRED` allows an explicit CPU
+fallback, while `CPU_TEST_ONLY` is reserved for tests and diagnostics. Verify
+the installed NVIDIA driver, CTranslate2 runtime, cached model, and a real
+short inference with:
+
+```powershell
+.\.venv\Scripts\python.exe tools\diagnose_nvidia_gpu.py
+```
+
+The diagnostic writes its verification and sampled telemetry to
+`data/h33_nvidia_gpu_verification.json` and
+`data/h33_nvidia_gpu_telemetry.json`. It uses the locally cached `base.en`
+model and canonical WAV by default; it does not download model weights.
+
 ---
 
 ## IMPORTANT LIMITATION

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "NOT RUN",
+  "linguistic_review_status": "NOT REVIEWED IN H33",
+  "qualified_linguistic_review_completed": false,
+  "sign_count_reported_by_h32": 570,
+  "required_sign_classification": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+  "approval_changes_made": false,
+  "reason": "No qualified Deaf/native ISL reviewer participated in this H33 execution."
+}

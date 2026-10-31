@@ -114,7 +114,15 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         if self.path.startswith("/asr/"):
             try:
                 body = self._read_json_body()
-                if self.path == "/asr/start": result = ASR_SERVICE.start(**{key: body[key] for key in ("model", "device", "compute_type", "async_worker") if key in body})
+                if self.path == "/asr/start":
+                    options = {
+                        key: body[key]
+                        for key in ("model", "device", "compute_type", "execution_mode", "device_index", "async_worker")
+                        if key in body
+                    }
+                    if options.get("execution_mode") == "CPU_TEST_ONLY":
+                        raise ValueError("CPU_TEST_ONLY is only available to local tests and diagnostics.")
+                    result = ASR_SERVICE.start(**options)
                 elif self.path == "/asr/chunk": result = ASR_SERVICE.accept(body)
                 elif self.path == "/asr/status": result = ASR_SERVICE.status()
                 else: result = ASR_SERVICE.control(self.path.rsplit("/", 1)[-1])

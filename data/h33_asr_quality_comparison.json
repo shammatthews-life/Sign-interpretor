@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "NOT RUN",
+  "reference_corpus": null,
+  "normalization_rules": null,
+  "full_corpus_wer_pct": null,
+  "full_corpus_cer_pct": null,
+  "h31_comparison": null,
+  "reason": "No full H33 transcript or independent full-corpus reference comparison was generated."
+}

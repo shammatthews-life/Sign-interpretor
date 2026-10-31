@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "BLOCKED",
+  "nvidia_cuda_short_inference": "PASS",
+  "production_service_cuda_smoke_test": "PASS",
+  "full_canonical_asr": "BLOCKED",
+  "full_corpus_accuracy": "NOT RUN",
+  "cold_warm_product_ttfs": "NOT RUN",
+  "dispatch_accounting": "NOT RUN",
+  "long_session_reliability": "NOT RUN",
+  "chrome_user_acceptance": "MANUAL ACCEPTANCE REQUIRED",
+  "qualified_isl_review": "NOT RUN",
+  "push_performed": false
+}

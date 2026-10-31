@@ -1,10 +1,4 @@
-"""Small local HTTP-facing bridge from F1 canonical chunks to ASR backends.
-
-Phase F2.5 enhancements:
-- Automatic GPU auto-detection (NVIDIA CUDA float16 when available, CPU int8 fallback)
-- Asynchronous worker support with non-blocking audio ingestion
-- Real-time diagnostic telemetry (worker state, queue size, backlog, RTF, latencies)
-"""
+"""Local HTTP-facing bridge with explicit GPU-required production execution."""
 from __future__ import annotations
 
 import base64
@@ -12,7 +6,8 @@ from time import perf_counter
 from typing import Any
 import numpy as np
 
-from .streaming_asr import FasterWhisperBackend, StreamingASRBackend, ensure_cuda_support
+from .gpu_execution import ExecutionMode, resolve_execution_configuration
+from .streaming_asr import FasterWhisperBackend, StreamingASRBackend
 
 
 class LocalASRService:
@@ -26,43 +21,43 @@ class LocalASRService:
         self.last_final = ""
         self.last_rtf = None
         self.stream_started_at_ms = None
+        self.execution_mode: ExecutionMode = "GPU_REQUIRED"
+        self.device_index: int | None = 0
+        self.fallback_reason: str | None = None
 
     def start(
         self,
         *,
-        model: str = "tiny.en",
+        model: str = "base.en",
         device: str | None = None,
         compute_type: str | None = None,
+        execution_mode: ExecutionMode = "GPU_REQUIRED",
+        device_index: int = 0,
         async_worker: bool = True,
         minimum_decode_ms: int = 1000,
         decode_hop_ms: int = 750,
         rolling_window_ms: int = 4000,
     ) -> dict[str, Any]:
         if self.backend is None:
-            # Auto-detect device if unspecified
-            if device is None:
-                has_cuda = ensure_cuda_support()
-                try:
-                    import ctranslate2
-                    has_cuda = has_cuda and (ctranslate2.get_cuda_device_count() > 0)
-                except Exception:
-                    has_cuda = False
-
-                if has_cuda:
-                    device = "cuda"
-                    if compute_type is None:
-                        compute_type = "float16"
-                else:
-                    device = "cpu"
-                    if compute_type is None:
-                        compute_type = "int8"
-            elif compute_type is None:
-                compute_type = "float16" if device == "cuda" else "int8"
+            resolved = resolve_execution_configuration(
+                execution_mode,
+                device=device,
+                device_index=device_index,
+                compute_type=compute_type,
+            )
+            device = resolved["device"]
+            compute_type = resolved["compute_type"]
+            device_index = resolved["device_index"]
+            self.execution_mode = execution_mode
+            self.device_index = device_index
+            self.fallback_reason = resolved["fallback_reason"]
 
             self.backend = self.backend_factory(
                 model,
                 device=device,
                 compute_type=compute_type,
+                device_index=device_index if device_index is not None else 0,
+                execution_mode=execution_mode,
                 async_worker=async_worker,
                 minimum_decode_ms=minimum_decode_ms,
                 decode_hop_ms=decode_hop_ms,
@@ -128,9 +123,20 @@ class LocalASRService:
         return {
             "state": backend.state if backend else "stopped",
             "worker_state": worker_state,
-            "model": getattr(backend, "model_name", "tiny.en"),
-            "device": getattr(backend, "device", "cpu"),
-            "compute_type": getattr(backend, "compute_type", "int8"),
+            "model": getattr(backend, "model_name", "base.en"),
+            "device": getattr(
+                backend,
+                "device",
+                "cuda" if self.execution_mode == "GPU_REQUIRED" else "cpu",
+            ),
+            "compute_type": getattr(
+                backend,
+                "compute_type",
+                "float16" if self.execution_mode != "CPU_TEST_ONLY" else "int8",
+            ),
+            "execution_mode": self.execution_mode,
+            "device_index": self.device_index,
+            "fallback_reason": self.fallback_reason,
             "audio_duration_ms": self.audio_duration_ms,
             "audio_received_sec": round(self.audio_duration_ms / 1000.0, 2),
             "asr_queue": queue_size,

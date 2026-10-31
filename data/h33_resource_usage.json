@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "SHORT CUDA DIAGNOSTIC MEASURED; FULL VIDEO NOT RUN",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "dedicated_memory_total_mb": 6141,
+    "sampled_memory_peak_mb": 291,
+    "sampled_utilization_max_pct": 43,
+    "python_pid_observed_by_nvidia_smi": 21644
+  },
+  "system_memory": {
+    "total_ram_gib": 15.23,
+    "available_ram_min_during_diagnostic_gib": 2.01,
+    "available_ram_after_diagnostic_gib": 2.56,
+    "python_working_set_peak_mb": 612.67,
+    "python_private_memory_peak_mb": 1653.88
+  },
+  "measurement_scope": "Ten repeated five-second inferences plus model load and warm-up; not a full-video resource profile.",
+  "full_video_peak_ram_mb": null,
+  "full_video_peak_vram_mb": null
+}

@@ -43,7 +43,7 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "tools"))
 
-from asr.streaming_asr import ensure_cuda_support
+from asr.gpu_execution import ExecutionMode, resolve_execution_configuration
 
 # Supported YouTube URL patterns
 YOUTUBE_URL_PATTERNS = [
@@ -317,6 +317,8 @@ def transcribe_audio_file(
     model_name: str = "base.en",
     device: Optional[str] = None,
     compute_type: Optional[str] = None,
+    execution_mode: ExecutionMode = "GPU_REQUIRED",
+    device_index: int = 0,
     force: bool = False,
     on_progress: Optional[Callable[[str, float], None]] = None,
 ) -> Dict[str, Any]:
@@ -338,22 +340,21 @@ def transcribe_audio_file(
     if on_progress:
         on_progress("TRANSCRIBING", 0.8)
 
-    # Determine device and compute type
-    if device is None:
-        has_cuda = ensure_cuda_support()
-        try:
-            import ctranslate2
-            has_cuda = has_cuda and (ctranslate2.get_cuda_device_count() > 0)
-        except Exception:
-            has_cuda = False
-        device = "cuda" if has_cuda else "cpu"
-
-    if compute_type is None:
-        compute_type = "float16" if device == "cuda" else "int8"
+    resolved = resolve_execution_configuration(
+        execution_mode,
+        device=device,
+        device_index=device_index,
+        compute_type=compute_type,
+    )
+    device = resolved["device"]
+    compute_type = resolved["compute_type"]
 
     from faster_whisper import WhisperModel
 
-    model = WhisperModel(model_name, device=device, compute_type=compute_type)
+    model_options: dict[str, Any] = {"device": device, "compute_type": compute_type}
+    if device == "cuda":
+        model_options["device_index"] = device_index
+    model = WhisperModel(model_name, **model_options)
 
     t_start = time.perf_counter()
     segments_generator, info = model.transcribe(
@@ -383,7 +384,10 @@ def transcribe_audio_file(
     result_data = {
         "model": model_name,
         "device": device,
+        "device_index": device_index if device == "cuda" else None,
         "compute_type": compute_type,
+        "execution_mode": execution_mode,
+        "fallback_reason": resolved["fallback_reason"],
         "language": getattr(info, "language", "en"),
         "audio_duration_s": round(audio_duration, 3),
         "transcription_time_s": round(t_transcribe, 3),
@@ -474,6 +478,8 @@ def process_youtube_video(
     output_base_dir: Optional[Path] = None,
     force: bool = False,
     model_name: str = "base.en",
+    execution_mode: ExecutionMode = "GPU_REQUIRED",
+    device_index: int = 0,
     on_progress: Optional[Callable[[str, float], None]] = None,
 ) -> Dict[str, Any]:
     """End-to-end YouTube ingestion, ASR, and ISL translation pipeline."""
@@ -509,6 +515,8 @@ def process_youtube_video(
         audio_path,
         video_dir,
         model_name=model_name,
+        execution_mode=execution_mode,
+        device_index=device_index,
         force=force,
         on_progress=on_progress,
     )

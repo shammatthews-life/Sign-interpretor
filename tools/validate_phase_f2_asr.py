@@ -9,6 +9,21 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from asr.streaming_asr import FasterWhisperBackend, TranscriptEvent, TranscriptStabilizer
 from asr.asr_service import LocalASRService
+from asr.gpu_execution import CudaExecutionError, resolve_execution_configuration
+
+cpu_test_config = resolve_execution_configuration("CPU_TEST_ONLY")
+assert cpu_test_config["device"] == "cpu" and cpu_test_config["compute_type"] == "int8"
+preferred_cpu_config = resolve_execution_configuration("GPU_PREFERRED", device="cpu")
+assert preferred_cpu_config["device"] == "cpu" and preferred_cpu_config["fallback_reason"]
+default_service = LocalASRService()
+assert default_service.status()["device"] == "cuda"
+assert default_service.status()["execution_mode"] == "GPU_REQUIRED"
+try:
+    resolve_execution_configuration("GPU_REQUIRED", device="cpu")
+except CudaExecutionError:
+    pass
+else:
+    raise AssertionError("GPU_REQUIRED must reject CPU selection rather than silently fall back.")
 
 
 class Segment:
@@ -132,7 +147,7 @@ class ServiceBackend:
     def reset(self): self.state = "stopped"
 
 service = LocalASRService(ServiceBackend)
-assert service.start(model="fake")["state"] == "running"
+assert service.start(model="fake", execution_mode="CPU_TEST_ONLY")["state"] == "running"
 raw = np.zeros(1600, dtype="<f4").tobytes()
 response = service.accept({"samples_base64": base64.b64encode(raw).decode(), "audio_start_ms": 0, "audio_end_ms": 100})
 assert response["status"]["audio_duration_ms"] == 100, "F1-to-ASR service bridge did not account for canonical chunk."
@@ -150,7 +165,7 @@ assert service.backend.flush_calls == 1, "ASR flush event was requested or recor
 assert record_calls == 1, "ASR flush event was recorded more than once."
 assert service.control("pause")["state"] == "paused"
 assert service.control("reset")["audio_duration_ms"] == 0
-assert service.start(model="fake")["state"] == "running", "ASR service did not restart after reset."
+assert service.start(model="fake", execution_mode="CPU_TEST_ONLY")["state"] == "running", "ASR service did not restart after reset."
 response = service.accept({"samples_base64": base64.b64encode(raw).decode(), "audio_start_ms": 0, "audio_end_ms": 100})
 assert response["status"]["audio_duration_ms"] == 100, "Restart retained stale ASR audio duration."
 

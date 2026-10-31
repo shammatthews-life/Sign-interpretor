@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "SOURCE VERIFIED; FRESH FULL ASR NOT RUN",
+  "video_id": "MXKkXXYUxBc",
+  "video_url": "https://www.youtube.com/watch?v=MXKkXXYUxBc",
+  "audio_path": "runtime/youtube/MXKkXXYUxBc/audio_16k.wav",
+  "audio_sha256": "67ff8eccd4caa269742395e1f1a45c1790d4d5982e4b95ccbe2167558561a512",
+  "audio_format": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate_hz": 16000,
+    "duration_s": 8978.9010625
+  },
+  "download_timing_s": null,
+  "fresh_full_video_asr_performed": false,
+  "note": "The local WAV was read for hashing and a five-second diagnostic prefix. It was not fully transcribed during H33."
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "NOT RUN",
+  "continuous_session_duration_s": null,
+  "segments_processed": null,
+  "queue_overflows": null,
+  "silent_token_loss": null,
+  "memory_growth_mb": null,
+  "reason": "A long-duration production session was not executed in H33."
+}

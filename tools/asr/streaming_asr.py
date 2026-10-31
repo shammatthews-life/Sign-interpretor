@@ -19,6 +19,8 @@ from typing import Callable, Iterable, Optional
 
 import numpy as np
 
+from .gpu_execution import ExecutionMode, verify_nvidia_cuda
+
 
 def ensure_cuda_support() -> bool:
     """Ensure CUDA 12 libraries are discoverable on Windows for CTranslate2."""
@@ -153,10 +155,14 @@ class FasterWhisperBackend(StreamingASRBackend):
         model_factory: Optional[Callable[..., object]] = None,
         on_event: Optional[Callable[[TranscriptEvent], None]] = None,
         async_worker: bool = False,
+        device_index: int = 0,
+        execution_mode: ExecutionMode | None = None,
     ) -> None:
         self.model_name = model_name
         self.device = device
         self.compute_type = compute_type
+        self.device_index = device_index
+        self.execution_mode = execution_mode
         self.sample_rate = sample_rate
         self.minimum_decode_ms = minimum_decode_ms
         self.decode_hop_ms = decode_hop_ms
@@ -214,15 +220,28 @@ class FasterWhisperBackend(StreamingASRBackend):
         if self.async_worker and self._worker_thread and self._worker_thread.is_alive():
             raise RuntimeError("The previous ASR worker is still stopping; retry after it exits.")
 
-        if self.device == "cuda":
-            ensure_cuda_support()
+        if self.execution_mode == "GPU_REQUIRED":
+            verify_nvidia_cuda(self.device_index, self.compute_type)
+        elif self.device == "cuda":
+            if not ensure_cuda_support():
+                raise RuntimeError(
+                    "CUDA was explicitly selected but CTranslate2 reports no usable "
+                    "CUDA device; no CPU fallback was performed."
+                )
+            verify_nvidia_cuda(self.device_index, self.compute_type)
 
         if self.model is None:
+            model_options: dict[str, object] = {
+                "device": self.device,
+                "compute_type": self.compute_type,
+            }
+            if self.device == "cuda":
+                model_options["device_index"] = self.device_index
             if self.model_factory:
-                self.model = self.model_factory(self.model_name, device=self.device, compute_type=self.compute_type)
+                self.model = self.model_factory(self.model_name, **model_options)
             else:
                 from faster_whisper import WhisperModel
-                self.model = WhisperModel(self.model_name, device=self.device, compute_type=self.compute_type)
+                self.model = WhisperModel(self.model_name, **model_options)
 
         self.state = "running"
         self._worker_state = "IDLE"

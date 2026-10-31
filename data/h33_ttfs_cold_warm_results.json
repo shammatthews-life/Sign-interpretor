@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "NOT RUN",
+  "cold_trials": [],
+  "warm_trials": [],
+  "cold_model_load_ms": null,
+  "cold_product_ttfs_ms": null,
+  "warm_ttfs_p50_ms": null,
+  "warm_ttfs_p95_ms": null,
+  "reason": "The CUDA diagnostic measured model load and inference only; it did not measure URL submission through the first visible Aether frame."
+}

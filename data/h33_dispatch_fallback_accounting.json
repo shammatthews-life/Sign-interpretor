@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "NOT RUN",
+  "counts": {
+    "generated_gloss": null,
+    "playable_sign_dispatched": null,
+    "subtitle_fallback": null,
+    "unavailable_sign": null,
+    "unknown_concept": null,
+    "other_permitted_handling": null,
+    "unaccounted_occurrence": null
+  },
+  "every_occurrence_has_unique_id": null,
+  "every_occurrence_has_exactly_one_final_disposition": null,
+  "reason": "Existing H32 aggregate counts were not treated as H33 event-level evidence."
+}

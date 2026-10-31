@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "BLOCKED",
+  "full_video_asr_performed": false,
+  "source_manifest": "data/h33_canonical_source_manifest.json",
+  "model_configuration": {
+    "target_model": "base.en",
+    "target_device": "cuda",
+    "target_device_index": 0,
+    "target_compute_type": "float16",
+    "target_batch_size": 4,
+    "target_core_chunk_s": 10,
+    "target_context_overlap_s": 0.25
+  },
+  "actual_duration_s": null,
+  "processing_duration_s": null,
+  "effective_throughput_x": null,
+  "segment_count": null,
+  "token_count": null,
+  "duplicate_finalized_words": null,
+  "missing_chunk_intervals": null,
+  "timestamp_offset_validation": "NOT RUN",
+  "reason": "No fresh uncached full-duration progressive hybrid run was performed."
+}

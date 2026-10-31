@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "NOT RUN",
+  "full_video_observations": [],
+  "full_video_throughput_x": null,
+  "h32_reference": {
+    "sample_duration_s": 300,
+    "reported_throughput_x": 64.5,
+    "classification": "SLICE MEASUREMENT WITH FULL-DURATION PROJECTION"
+  },
+  "reason": "No H33 full-duration or reproducible sustained-throughput benchmark was run."
+}

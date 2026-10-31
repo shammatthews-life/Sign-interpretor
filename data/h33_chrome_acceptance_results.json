@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "MANUAL ACCEPTANCE REQUIRED",
+  "interactive_installed_extension_tested": false,
+  "results": {
+    "extension_installation": "NOT RUN",
+    "popup_submission": "NOT RUN",
+    "local_runtime_api": "NOT RUN",
+    "progressive_processing": "NOT RUN",
+    "transcript_and_translation_delivery": "NOT RUN",
+    "aether_overlay_and_sign_dispatch": "NOT RUN",
+    "subtitle_fallback": "NOT RUN",
+    "pause_resume_and_playback_speed": "NOT RUN",
+    "seek_cancel_reload_navigation_and_worker_restart": "NOT RUN",
+    "backend_restart": "NOT RUN",
+    "webgl_renderer": "NOT RUN"
+  },
+  "reason": "Interactive installed Chrome acceptance and chrome://gpu inspection were not performed."
+}

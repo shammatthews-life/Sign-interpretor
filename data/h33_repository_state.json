@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "BLOCKED",
+  "repository": {
+    "path": "D:\\sign interpretor",
+    "branch": "r1-articulation-coverage-and-report",
+    "audit_head_sha": "b0b11afde3c914a748a96aede43123e4d16a6a36",
+    "h32_commit_verified": true,
+    "h31_commit_verified": true,
+    "initial_remote_divergence": "ahead 47",
+    "push_performed": false
+  },
+  "preexisting_worktree_changes_preserved": [
+    "data/h32_execution_checkpoint.json",
+    "data/h32_initial_baseline.json",
+    "data/h32_resource_usage.json",
+    "docs/h32_final_performance_report.md",
+    "docs/h32_resource_optimization_report.md",
+    "docs/report.md",
+    "tools/benchmark_h32_chunking.py",
+    "tools/benchmark_h32_hybrid_asr.py",
+    "tools/validate_h32_complete_project.mjs",
+    "tools/verify_h32_translation_and_resources.mjs"
+  ],
+  "h33_gpu_diagnostic": "PASS",
+  "h33_production_service_cuda_smoke_test": "PASS",
+  "full_canonical_asr": "BLOCKED",
+  "full_corpus_accuracy": "NOT RUN",
+  "product_ttfs": "NOT RUN",
+  "dispatch_accounting": "NOT RUN",
+  "chrome_user_acceptance": "MANUAL ACCEPTANCE REQUIRED",
+  "blocker": "The existing H32 benchmark measures a 300-second canonical slice and projects full-video time; it does not provide verified full-video hybrid execution evidence. A bounded full-duration progressive ASR run and its end-to-end validations were not completed."
+}

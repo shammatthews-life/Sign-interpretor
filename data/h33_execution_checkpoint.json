@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "mission": "NVIDIA CUDA enforcement and full canonical production acceptance",
+  "status": "BLOCKED",
+  "completed": [
+    "Verified local H32 and H31 commit objects and intended branch.",
+    "Added GPU_REQUIRED, GPU_PREFERRED, and CPU_TEST_ONLY execution policies.",
+    "Made production ASR and YouTube transcription default to GPU_REQUIRED on NVIDIA CUDA device 0 with float16.",
+    "Added real CUDA inference and nvidia-smi telemetry diagnostic.",
+    "Ran ten fresh five-second inferences through the cached base.en model on the NVIDIA GPU.",
+    "Ran a real five-second transcript through the production LocalASRService in GPU_REQUIRED mode.",
+    "Passed focused ASR unit checks and H32/H31/H30 regression validators."
+  ],
+  "evidence": {
+    "repository_state": "data/h33_repository_state.json",
+    "gpu_verification": "data/h33_nvidia_gpu_verification.json",
+    "gpu_telemetry": "data/h33_nvidia_gpu_telemetry.json",
+    "system_memory": "data/h33_system_memory_telemetry.json"
+  },
+  "acceptance": {
+    "nvidia_cuda_short_inference": "PASS",
+    "full_canonical_video_asr": "BLOCKED",
+    "full_corpus_wer_cer": "NOT RUN",
+    "cold_warm_product_ttfs": "NOT RUN",
+    "occurrence_level_dispatch_reconciliation": "NOT RUN",
+    "interactive_chrome_acceptance": "MANUAL ACCEPTANCE REQUIRED",
+    "linguistic_review": "NOT RUN"
+  },
+  "blocked_reason": "The local H32 benchmark only measures a 300-second slice and extrapolates the 8,979-second duration. The requested full-video progressive execution and related end-to-end evidence have not been independently implemented or run.",
+  "regression_results": {
+    "focused_asr_tests": "PASS",
+    "python_compile": "PASS",
+    "h32_validator": "PASS",
+    "h31_validator": "PASS",
+    "h30_validator": "PASS"
+  },
+  "push_performed": false
+}

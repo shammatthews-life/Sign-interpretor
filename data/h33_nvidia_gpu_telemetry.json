@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "created_at_utc": "2026-10-31T08:41:02.225380+00:00",
+  "gpu_samples_during_inference": [
+    {
+      "timestamp_utc": "2026-10-31T08:41:09.291414+00:00",
+      "device_index": 0,
+      "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "driver_version": "592.82",
+      "utilization_gpu_pct": 3.0,
+      "memory_used_mb": 259.0,
+      "memory_total_mb": 6141.0,
+      "temperature_c": 47.0
+    },
+    {
+      "timestamp_utc": "2026-10-31T08:41:09.665840+00:00",
+      "device_index": 0,
+      "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "driver_version": "592.82",
+      "utilization_gpu_pct": 43.0,
+      "memory_used_mb": 291.0,
+      "memory_total_mb": 6141.0,
+      "temperature_c": 49.0
+    }
+  ],
+  "compute_process_samples_during_inference": [
+    {
+      "available": true,
+      "processes": [
+        {
+          "pid": 21644,
+          "process_name": "C:\\Users\\SHARON\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "memory_used_mb": null
+        }
+      ]
+    },
+    {
+      "available": true,
+      "processes": [
+        {
+          "pid": 21644,
+          "process_name": "C:\\Users\\SHARON\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "memory_used_mb": null
+        }
+      ]
+    }
+  ],
+  "memory_samples": [
+    {
+      "timestamp_utc": "2026-10-31T08:41:09.379257+00:00",
+      "process": {
+        "pid": 21644,
+        "working_set_mb": 608.62,
+        "peak_working_set_mb": 611.69,
+        "private_memory_mb": 1652.95
+      },
+      "system": {
+        "total_ram_gib": 15.23,
+        "available_ram_gib": 2.01,
+        "used_percent": 86
+      }
+    },
+    {
+      "timestamp_utc": "2026-10-31T08:41:09.754138+00:00",
+      "process": {
+        "pid": 21644,
+        "working_set_mb": 609.56,
+        "peak_working_set_mb": 612.67,
+        "private_memory_mb": 1653.88
+      },
+      "system": {
+        "total_ram_gib": 15.23,
+        "available_ram_gib": 2.03,
+        "used_percent": 86
+      }
+    }
+  ],
+  "gpu_before_model_load": {
+    "timestamp_utc": "2026-10-31T08:41:06.523760+00:00",
+    "device_index": 0,
+    "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "driver_version": "592.82",
+    "utilization_gpu_pct": 0.0,
+    "memory_used_mb": 0.0,
+    "memory_total_mb": 6141.0,
+    "temperature_c": 47.0
+  },
+  "memory_before_model_load": {
+    "process": {
+      "pid": 21644,
+      "working_set_mb": 184.26,
+      "peak_working_set_mb": 191.95,
+      "private_memory_mb": 264.3
+    },
+    "system": {
+      "total_ram_gib": 15.23,
+      "available_ram_gib": 2.41,
+      "used_percent": 84
+    }
+  },
+  "gpu_after_model_load": {
+    "timestamp_utc": "2026-10-31T08:41:08.772155+00:00",
+    "device_index": 0,
+    "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "driver_version": "592.82",
+    "utilization_gpu_pct": 0.0,
+    "memory_used_mb": 241.0,
+    "memory_total_mb": 6141.0,
+    "temperature_c": 47.0
+  },
+  "memory_after_model_load": {
+    "process": {
+      "pid": 21644,
+      "working_set_mb": 332.51,
+      "peak_working_set_mb": 453.76,
+      "private_memory_mb": 1015.05
+    },
+    "system": {
+      "total_ram_gib": 15.23,
+      "available_ram_gib": 2.27,
+      "used_percent": 85
+    }
+  },
+  "gpu_before_inference": {
+    "timestamp_utc": "2026-10-31T08:41:09.201407+00:00",
+    "device_index": 0,
+    "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "driver_version": "592.82",
+    "utilization_gpu_pct": 3.0,
+    "memory_used_mb": 259.0,
+    "memory_total_mb": 6141.0,
+    "temperature_c": 47.0
+  },
+  "memory_before_inference": {
+    "process": {
+      "pid": 21644,
+      "working_set_mb": 605.07,
+      "peak_working_set_mb": 605.11,
+      "private_memory_mb": 1457.73
+    },
+    "system": {
+      "total_ram_gib": 15.23,
+      "available_ram_gib": 2.01,
+      "used_percent": 86
+    }
+  },
+  "gpu_after_inference": {
+    "timestamp_utc": "2026-10-31T08:41:10.041601+00:00",
+    "device_index": 0,
+    "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "driver_version": "592.82",
+    "utilization_gpu_pct": 47.0,
+    "memory_used_mb": 259.0,
+    "memory_total_mb": 6141.0,
+    "temperature_c": 50.0
+  },
+  "memory_after_inference": {
+    "process": {
+      "pid": 21644,
+      "working_set_mb": 609.54,
+      "peak_working_set_mb": 612.67,
+      "private_memory_mb": 1589.69
+    },
+    "system": {
+      "total_ram_gib": 15.23,
+      "available_ram_gib": 2.04,
+      "used_percent": 86
+    }
+  }
+}

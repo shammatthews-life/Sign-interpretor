@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "status": "NOT RUN",
+  "download_extract_duration_s": null,
+  "asr_duration_s": null,
+  "translation_duration_s": null,
+  "total_duration_s": null,
+  "timing_origin": null,
+  "reason": "A full canonical pipeline run was not performed; short diagnostic timing is not full-video stage timing."
+}

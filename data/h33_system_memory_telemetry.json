@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "phase": "H33",
+  "source": "data/h33_nvidia_gpu_telemetry.json plus Windows GlobalMemoryStatusEx sampling",
+  "status": "MEASURED",
+  "total_system_ram_gib": 15.23,
+  "during_diagnostic": {
+    "available_ram_min_gib": 2.01,
+    "available_ram_max_gib": 2.41,
+    "used_percent_min": 84,
+    "used_percent_max": 86,
+    "python_working_set_peak_mb": 612.67,
+    "python_private_memory_peak_mb": 1653.88
+  },
+  "after_diagnostic": {
+    "captured_at": "2026-10-31T14:11:14.9194491+05:30",
+    "available_ram_gib": 2.56,
+    "used_percent": 83
+  },
+  "gpu_memory_during_inference_mb": {
+    "sampled_min": 259,
+    "sampled_peak": 291,
+    "total": 6141
+  },
+  "full_video_run_allowed": false,
+  "reason": "The available memory was constrained during the model diagnostic, and a verified bounded full-video H32 hybrid runner is not present."
+}
