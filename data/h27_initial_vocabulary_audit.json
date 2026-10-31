@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "title": "Phase H27 Initial Project & Transcript Audit",
+    "phase": "H27",
+    "git_head_commit": "4ea8648",
+    "git_branch": "r1-articulation-coverage-and-report",
+    "working_tree_clean": true
+  },
+  "canonical_transcript": {
+    "video_id": "MXKkXXYUxBc",
+    "duration_seconds": 8979.0,
+    "segment_count": 2366,
+    "total_tokenized_words": 23256,
+    "unique_surface_words_count": 2286,
+    "top_10_surface_words": [
+      [
+        "you",
+        1003
+      ],
+      [
+        "to",
+        713
+      ],
+      [
+        "and",
+        673
+      ],
+      [
+        "the",
+        656
+      ],
+      [
+        "i",
+        580
+      ],
+      [
+        "a",
+        525
+      ],
+      [
+        "this",
+        471
+      ],
+      [
+        "is",
+        449
+      ],
+      [
+        "that",
+        439
+      ],
+      [
+        "of",
+        340
+      ]
+    ]
+  },
+  "existing_components": {
+    "manifest_signs_count": 562,
+    "lexicon_concepts_count": 2059,
+    "h26_unresolved_inventory_count": 1388,
+    "coverage_accounting": {
+      "total_spoken_tokens": 23258,
+      "dispositions": {
+        "GRAMMAR_OMISSION": 9064,
+        "PHRASE_TRANSLATED": 1444,
+        "SUBTITLE_FALLBACK": 2239,
+        "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 10308,
+        "FINGERSPELLED": 203
+      },
+      "communicative_coverage_tokens": 21019
+    }
+  },
+  "discrepancies_and_observations": {
+    "surface_words_missing_from_lexicon_forms": 4,
+    "note": "The canonical transcript contains 23,258 token occurrences across exactly 2286 unique surface words. The previous H26 campaign audited 1,388 unresolved concepts. Phase H27 must build exhaustive inventories for ALL 2286 unique surface words, their morphological derivations, and distinct contextual senses with zero silent loss."
+  }
+}

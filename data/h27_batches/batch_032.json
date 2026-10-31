@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "batch_id": "batch_032",
+    "phase": "H27",
+    "concept_range": "1551 to 1600",
+    "batch_concept_count": 50,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_retriev",
+      "lemma": "retriev",
+      "definition": "General contextual sense for 'retriev'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "RETRIEV",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "retrieved"
+      ],
+      "frequency": 1,
+      "sample_sentence": "endless, whole, to never be retrieved again."
+    },
+    {
+      "concept_id": "concept_sixth",
+      "lemma": "sixth",
+      "definition": "General contextual sense for 'sixth'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SIXTH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "sixth"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Fair enough, we are going to leave that fifth, sixth tip I gave you. That means"
+    },
+    {
+      "concept_id": "concept_sav",
+      "lemma": "sav",
+      "definition": "General contextual sense for 'sav'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SAV",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "saved"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Well, the thing is this, I've saved the best for last."
+    },
+    {
+      "concept_id": "concept_dopement",
+      "lemma": "dopement",
+      "definition": "General contextual sense for 'dopement'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DOPEMENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "dopement"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Micro-dopement ways."
+    },
+    {
+      "concept_id": "concept_seventh",
+      "lemma": "seventh",
+      "definition": "General contextual sense for 'seventh'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SEVENTH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "seventh"
+      ],
+      "frequency": 1,
+      "sample_sentence": "The seventh micro dopamine injection tool."
+    },
+    {
+      "concept_id": "concept_flip",
+      "lemma": "flip",
+      "definition": "General contextual sense for 'flip'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FLIP",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "flip"
+      ],
+      "frequency": 1,
+      "sample_sentence": "This is me using a flip chart."
+    },
+    {
+      "concept_id": "concept_professor",
+      "lemma": "professor",
+      "definition": "General contextual sense for 'professor'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PROFESSOR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "professor"
+      ],
+      "frequency": 1,
+      "sample_sentence": "We have a professor in Sweden who is a world-renowned presenter of statistics."
+    },
+    {
+      "concept_id": "concept_renown",
+      "lemma": "renown",
+      "definition": "General contextual sense for 'renown'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "RENOWN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "renowned"
+      ],
+      "frequency": 1,
+      "sample_sentence": "We have a professor in Sweden who is a world-renowned presenter of statistics."
+    },
+    {
+      "concept_id": "concept_popcorn",
+      "lemma": "popcorn",
+      "definition": "General contextual sense for 'popcorn'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "POPCORN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "popcorn"
+      ],
+      "frequency": 1,
+      "sample_sentence": "fill an arena of 20,000 people who paid money, who bought popcorn, to watch a guy talk about"
+    },
+    {
+      "concept_id": "concept_toilet",
+      "lemma": "toilet",
+      "definition": "General contextual sense for 'toilet'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TOILET",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "toilet"
+      ],
+      "frequency": 1,
+      "sample_sentence": "When he presented, he didn't just have slides, he used toilet rolls to represent bar charts,"
+    },
+    {
+      "concept_id": "concept_bar",
+      "lemma": "bar",
+      "definition": "General contextual sense for 'bar'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BAR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "bar"
+      ],
+      "frequency": 1,
+      "sample_sentence": "When he presented, he didn't just have slides, he used toilet rolls to represent bar charts,"
+    },
+    {
+      "concept_id": "concept_doll",
+      "lemma": "doll",
+      "definition": "General contextual sense for 'doll'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DOLL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "dolls"
+      ],
+      "frequency": 1,
+      "sample_sentence": "he used paper dolls to represent statistics, he used Legos when speaking to Bill Gates"
+    },
+    {
+      "concept_id": "concept_lego",
+      "lemma": "lego",
+      "definition": "General contextual sense for 'lego'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "LEGO",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "legos"
+      ],
+      "frequency": 1,
+      "sample_sentence": "he used paper dolls to represent statistics, he used Legos when speaking to Bill Gates"
+    },
+    {
+      "concept_id": "concept_gate",
+      "lemma": "gate",
+      "definition": "General contextual sense for 'gate'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "gates"
+      ],
+      "frequency": 1,
+      "sample_sentence": "he used paper dolls to represent statistics, he used Legos when speaking to Bill Gates"
+    },
+    {
+      "concept_id": "concept_demonstrate",
+      "lemma": "demonstrate",
+      "definition": "General contextual sense for 'demonstrate'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DEMONSTRATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "demonstrate"
+      ],
+      "frequency": 1,
+      "sample_sentence": "to demonstrate."
+    },
+    {
+      "concept_id": "concept_beer",
+      "lemma": "beer",
+      "definition": "General contextual sense for 'beer'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BEER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "beer"
+      ],
+      "frequency": 1,
+      "sample_sentence": "When I worked with him once, he had beer crates, 300 of them building things on stage."
+    },
+    {
+      "concept_id": "concept_crate",
+      "lemma": "crate",
+      "definition": "General contextual sense for 'crate'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CRATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "crates"
+      ],
+      "frequency": 1,
+      "sample_sentence": "When I worked with him once, he had beer crates, 300 of them building things on stage."
+    },
+    {
+      "concept_id": "concept_geniu",
+      "lemma": "geniu",
+      "definition": "General contextual sense for 'geniu'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GENIU",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "genius"
+      ],
+      "frequency": 1,
+      "sample_sentence": "The guy was a genius."
+    },
+    {
+      "concept_id": "concept_spectacular",
+      "lemma": "spectacular",
+      "definition": "General contextual sense for 'spectacular'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SPECTACULAR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "spectacular"
+      ],
+      "frequency": 1,
+      "sample_sentence": "like a spectacular meal?"
+    },
+    {
+      "concept_id": "concept_italy",
+      "lemma": "italy",
+      "definition": "General contextual sense for 'italy'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ITALY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "italy"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Maybe it was in Italy, Spain, America, Thailand,"
+    },
+    {
+      "concept_id": "concept_spain",
+      "lemma": "spain",
+      "definition": "General contextual sense for 'spain'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SPAIN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "spain"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Maybe it was in Italy, Spain, America, Thailand,"
+    },
+    {
+      "concept_id": "concept_america",
+      "lemma": "america",
+      "definition": "General contextual sense for 'america'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "AMERICA",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "america"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Maybe it was in Italy, Spain, America, Thailand,"
+    },
+    {
+      "concept_id": "concept_thailand",
+      "lemma": "thailand",
+      "definition": "General contextual sense for 'thailand'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "THAILAND",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "thailand"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Maybe it was in Italy, Spain, America, Thailand,"
+    },
+    {
+      "concept_id": "concept_memory",
+      "lemma": "memory",
+      "definition": "General contextual sense for 'memory'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "memory",
+      "isl_gloss": "MEMORY",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "memory"
+      ],
+      "frequency": 1,
+      "sample_sentence": "but I think all of you have a memory"
+    },
+    {
+      "concept_id": "concept_outstand",
+      "lemma": "outstand",
+      "definition": "General contextual sense for 'outstand'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OUTSTAND",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "outstanding"
+      ],
+      "frequency": 1,
+      "sample_sentence": "of an outstanding meal that you had."
+    },
+    {
+      "concept_id": "concept_degree",
+      "lemma": "degree",
+      "definition": "General contextual sense for 'degree'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DEGREE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "degree"
+      ],
+      "frequency": 1,
+      "sample_sentence": "to such a degree that you wanna go back there,"
+    },
+    {
+      "concept_id": "concept_rouseling",
+      "lemma": "rouseling",
+      "definition": "General contextual sense for 'rouseling'",
+      "part_of_speech": "VERB_PARTICIPLE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ROUSELING",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "rouselings"
+      ],
+      "frequency": 1,
+      "sample_sentence": "If they are well-spiced, like Hans-Rouselings, like mine,"
+    },
+    {
+      "concept_id": "concept_replicate",
+      "lemma": "replicate",
+      "definition": "General contextual sense for 'replicate'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "REPLICATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "replicate"
+      ],
+      "frequency": 1,
+      "sample_sentence": "They will want to replicate it,"
+    },
+    {
+      "concept_id": "concept_who've",
+      "lemma": "who've",
+      "definition": "General contextual sense for 'who've'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WHO'VE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "who've"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I have fans who've watched some of my TEDx talks"
+    },
+    {
+      "concept_id": "concept_assembl",
+      "lemma": "assembl",
+      "definition": "General contextual sense for 'assembl'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ASSEMBL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "assembling"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I spent five years assembling every spice I could find."
+    },
+    {
+      "concept_id": "concept_stock",
+      "lemma": "stock",
+      "definition": "General contextual sense for 'stock'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "STOCK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "stock"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Actually, I was in stock of all places and I was doing a keynote and it went really well."
+    },
+    {
+      "concept_id": "concept_panic",
+      "lemma": "panic",
+      "definition": "General contextual sense for 'panic'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PANIC",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "panic"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And then the guy after me, there was a break, the guy after me came up to me in panic and he looked at me and he said, David, that was horrible."
+    },
+    {
+      "concept_id": "concept_when'",
+      "lemma": "when'",
+      "definition": "General contextual sense for 'when''",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WHEN'",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "when's"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And I'm like, when's your presentation?"
+    },
+    {
+      "concept_id": "concept_shove",
+      "lemma": "shove",
+      "definition": "General contextual sense for 'shove'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SHOVE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "shove"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and just shove them into your presentation."
+    },
+    {
+      "concept_id": "concept_customer",
+      "lemma": "customer",
+      "definition": "General contextual sense for 'customer'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CUSTOMER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "customer"
+      ],
+      "frequency": 1,
+      "sample_sentence": "We added a customer interaction."
+    },
+    {
+      "concept_id": "concept_interaction",
+      "lemma": "interaction",
+      "definition": "General contextual sense for 'interaction'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INTERACTION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "interaction"
+      ],
+      "frequency": 1,
+      "sample_sentence": "We added a customer interaction."
+    },
+    {
+      "concept_id": "concept_updat",
+      "lemma": "updat",
+      "definition": "General contextual sense for 'updat'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "UPDAT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "updated"
+      ],
+      "frequency": 1,
+      "sample_sentence": "He updated his presentation."
+    },
+    {
+      "concept_id": "concept_addition",
+      "lemma": "addition",
+      "definition": "General contextual sense for 'addition'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ADDITION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "addition"
+      ],
+      "frequency": 1,
+      "sample_sentence": "that this is almost like no addition at all to all of you. For all of you have the resource pack,"
+    },
+    {
+      "concept_id": "concept_thumb",
+      "lemma": "thumb",
+      "definition": "General contextual sense for 'thumb'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "THUMB",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "thumbs"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Is it beneficial? Thumbs up. Right. It's unheard of. Do you know why the stuff I give you is unheard of?"
+    },
+    {
+      "concept_id": "concept_embark",
+      "lemma": "embark",
+      "definition": "General contextual sense for 'embark'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EMBARK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "embark"
+      ],
+      "frequency": 1,
+      "sample_sentence": "No where. Because when I was 20 and I decided to embark on this career, I consciously decided to never read a book on public speaking,"
+    },
+    {
+      "concept_id": "concept_consciously",
+      "lemma": "consciously",
+      "definition": "General contextual sense for 'consciously'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CONSCIOUSLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "consciously"
+      ],
+      "frequency": 1,
+      "sample_sentence": "No where. Because when I was 20 and I decided to embark on this career, I consciously decided to never read a book on public speaking,"
+    },
+    {
+      "concept_id": "concept_attend",
+      "lemma": "attend",
+      "definition": "General contextual sense for 'attend'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ATTEND",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "attend"
+      ],
+      "frequency": 1,
+      "sample_sentence": "to never attend a training in public speaking, to never engage with another public speaking coach"
+    },
+    {
+      "concept_id": "concept_engage",
+      "lemma": "engage",
+      "definition": "General contextual sense for 'engage'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ENGAGE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "engage"
+      ],
+      "frequency": 1,
+      "sample_sentence": "to never attend a training in public speaking, to never engage with another public speaking coach"
+    },
+    {
+      "concept_id": "concept_regard",
+      "lemma": "regard",
+      "definition": "General contextual sense for 'regard'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "REGARD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "regards"
+      ],
+      "frequency": 1,
+      "sample_sentence": "in regards to skills, never. Because I knew that that would influence my creations."
+    },
+    {
+      "concept_id": "concept_influence",
+      "lemma": "influence",
+      "definition": "General contextual sense for 'influence'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INFLUENCE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "influence"
+      ],
+      "frequency": 1,
+      "sample_sentence": "in regards to skills, never. Because I knew that that would influence my creations."
+    },
+    {
+      "concept_id": "concept_creation",
+      "lemma": "creation",
+      "definition": "General contextual sense for 'creation'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CREATION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "creations"
+      ],
+      "frequency": 1,
+      "sample_sentence": "in regards to skills, never. Because I knew that that would influence my creations."
+    },
+    {
+      "concept_id": "concept_influenc",
+      "lemma": "influenc",
+      "definition": "General contextual sense for 'influenc'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INFLUENC",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "influenced"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So I've never ever been influenced by another public speaker and therefore,"
+    },
+    {
+      "concept_id": "concept_therefore",
+      "lemma": "therefore",
+      "definition": "General contextual sense for 'therefore'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "THEREFORE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "therefore"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So I've never ever been influenced by another public speaker and therefore,"
+    },
+    {
+      "concept_id": "concept_unique",
+      "lemma": "unique",
+      "definition": "General contextual sense for 'unique'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "UNIQUE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "unique"
+      ],
+      "frequency": 1,
+      "sample_sentence": "my TEDx talks and my content is so unique that you do not find it anywhere else."
+    },
+    {
+      "concept_id": "concept_rare",
+      "lemma": "rare",
+      "definition": "General contextual sense for 'rare'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "RARE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "rare"
+      ],
+      "frequency": 1,
+      "sample_sentence": "which is quite rare when it comes to public speaking."
+    }
+  ]
+}

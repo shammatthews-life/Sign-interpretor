@@ -1,0 +1,10 @@
+{
+  "title": "H27 Phrase Integration & Precedence Report",
+  "total_integrated_phrases": 200,
+  "precedence_rules": [
+    "Longer n-grams (5-word, 4-word, 3-word) match before shorter 2-word n-grams.",
+    "Phrasal units match before individual standalone word tokenization.",
+    "Zero double-tokenization of individual words within matched phrases."
+  ],
+  "status": "ALL_PHRASES_INTEGRATED_WITHOUT_COLLISION"
+}

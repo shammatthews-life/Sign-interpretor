@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "batch_id": "batch_027",
+    "phase": "H27",
+    "concept_range": "1301 to 1350",
+    "batch_concept_count": 50,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_opportunity",
+      "lemma": "opportunity",
+      "definition": "General contextual sense for 'opportunity'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OPPORTUNITY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "opportunity"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Whenever you're uncomfortable, you have the opportunity"
+    },
+    {
+      "concept_id": "concept_tricky",
+      "lemma": "tricky",
+      "definition": "General contextual sense for 'tricky'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TRICKY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tricky"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Now the tricky thing with testosterone is that the videos"
+    },
+    {
+      "concept_id": "concept_potentially",
+      "lemma": "potentially",
+      "definition": "General contextual sense for 'potentially'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "POTENTIALLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "potentially"
+      ],
+      "frequency": 1,
+      "sample_sentence": "videos that create or potentially can create testosterone in us, they have to be relatable."
+    },
+    {
+      "concept_id": "concept_jackson",
+      "lemma": "jackson",
+      "definition": "General contextual sense for 'jackson'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "JACKSON",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "jackson"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So say, for instance, that I'll take, let's see, I'll find a name, Ross Jackson. I see him up there,"
+    },
+    {
+      "concept_id": "concept_hate",
+      "lemma": "hate",
+      "definition": "General contextual sense for 'hate'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "hates"
+      ],
+      "frequency": 1,
+      "sample_sentence": "now of Manchester United winning, his testosterone levels would increase. But if he hates Manchester"
+    },
+    {
+      "concept_id": "concept_arsenal",
+      "lemma": "arsenal",
+      "definition": "General contextual sense for 'arsenal'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ARSENAL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "arsenal"
+      ],
+      "frequency": 1,
+      "sample_sentence": "United. He loves Arsenal. His testosterone levels will crash. So the two videos I'm going to show you"
+    },
+    {
+      "concept_id": "concept_crash",
+      "lemma": "crash",
+      "definition": "General contextual sense for 'crash'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CRASH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "crash"
+      ],
+      "frequency": 1,
+      "sample_sentence": "United. He loves Arsenal. His testosterone levels will crash. So the two videos I'm going to show you"
+    },
+    {
+      "concept_id": "concept_fascinat",
+      "lemma": "fascinat",
+      "definition": "General contextual sense for 'fascinat'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FASCINAT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "fascinating"
+      ],
+      "frequency": 1,
+      "sample_sentence": "root for when they win. Because listen to this very fascinating fact. When people, when the fans"
+    },
+    {
+      "concept_id": "concept_fact",
+      "lemma": "fact",
+      "definition": "General contextual sense for 'fact'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FACT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "fact"
+      ],
+      "frequency": 1,
+      "sample_sentence": "root for when they win. Because listen to this very fascinating fact. When people, when the fans"
+    },
+    {
+      "concept_id": "concept_evident",
+      "lemma": "evident",
+      "definition": "General contextual sense for 'evident'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EVIDENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "evident"
+      ],
+      "frequency": 1,
+      "sample_sentence": "of the losing team playing football, when their team loses, it's evident that testosterone can"
+    },
+    {
+      "concept_id": "concept_drop",
+      "lemma": "drop",
+      "definition": "General contextual sense for 'drop'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DROP",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "drop"
+      ],
+      "frequency": 1,
+      "sample_sentence": "drop by as much as 20%. While the fans of the winning team can have an sudden increase of testosterone"
+    },
+    {
+      "concept_id": "concept_sudden",
+      "lemma": "sudden",
+      "definition": "General contextual sense for 'sudden'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SUDDEN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "sudden"
+      ],
+      "frequency": 1,
+      "sample_sentence": "drop by as much as 20%. While the fans of the winning team can have an sudden increase of testosterone"
+    },
+    {
+      "concept_id": "concept_victoriou",
+      "lemma": "victoriou",
+      "definition": "General contextual sense for 'victoriou'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "VICTORIOU",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "victorious"
+      ],
+      "frequency": 1,
+      "sample_sentence": "victorious after testosterone levels can increase. So we can have a look at, I'm half British,"
+    },
+    {
+      "concept_id": "concept_half",
+      "lemma": "half",
+      "definition": "General contextual sense for 'half'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HALF",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "half"
+      ],
+      "frequency": 1,
+      "sample_sentence": "victorious after testosterone levels can increase. So we can have a look at, I'm half British,"
+    },
+    {
+      "concept_id": "concept_beckham'",
+      "lemma": "beckham'",
+      "definition": "General contextual sense for 'beckham''",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BECKHAM'",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "beckham's"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and we can have a look at David Beckham's golden goal. I was in England at the time,"
+    },
+    {
+      "concept_id": "concept_golden",
+      "lemma": "golden",
+      "definition": "General contextual sense for 'golden'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GOLDEN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "golden"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and we can have a look at David Beckham's golden goal. I was in England at the time,"
+    },
+    {
+      "concept_id": "concept_england",
+      "lemma": "england",
+      "definition": "General contextual sense for 'england'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ENGLAND",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "england"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and we can have a look at David Beckham's golden goal. I was in England at the time,"
+    },
+    {
+      "concept_id": "concept_500",
+      "lemma": "500",
+      "definition": "General contextual sense for '500'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "500",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "500"
+      ],
+      "frequency": 1,
+      "sample_sentence": "500 British people in there and the pub had never been a silent. It was more silent than midnight."
+    },
+    {
+      "concept_id": "concept_midnight",
+      "lemma": "midnight",
+      "definition": "General contextual sense for 'midnight'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MIDNIGHT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "midnight"
+      ],
+      "frequency": 1,
+      "sample_sentence": "500 British people in there and the pub had never been a silent. It was more silent than midnight."
+    },
+    {
+      "concept_id": "concept_charg",
+      "lemma": "charg",
+      "definition": "General contextual sense for 'charg'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CHARG",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "charging"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And he was charging up for the goal and when he scores they went absolutely ballistic."
+    },
+    {
+      "concept_id": "concept_score",
+      "lemma": "score",
+      "definition": "General contextual sense for 'score'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SCORE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "scores"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And he was charging up for the goal and when he scores they went absolutely ballistic."
+    },
+    {
+      "concept_id": "concept_ballistic",
+      "lemma": "ballistic",
+      "definition": "General contextual sense for 'ballistic'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BALLISTIC",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "ballistic"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And he was charging up for the goal and when he scores they went absolutely ballistic."
+    },
+    {
+      "concept_id": "concept_shown",
+      "lemma": "shown",
+      "definition": "General contextual sense for 'shown'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SHOWN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "shown"
+      ],
+      "frequency": 1,
+      "sample_sentence": "has also shown that it can increase testosterone but only if you can relate to the character."
+    },
+    {
+      "concept_id": "concept_character",
+      "lemma": "character",
+      "definition": "General contextual sense for 'character'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CHARACTER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "character"
+      ],
+      "frequency": 1,
+      "sample_sentence": "has also shown that it can increase testosterone but only if you can relate to the character."
+    },
+    {
+      "concept_id": "concept_consider",
+      "lemma": "consider",
+      "definition": "General contextual sense for 'consider'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CONSIDER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "consider"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Do you exercise? Do you consider you informative and psychologically stressful?"
+    },
+    {
+      "concept_id": "concept_informative",
+      "lemma": "informative",
+      "definition": "General contextual sense for 'informative'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INFORMATIVE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "informative"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Do you exercise? Do you consider you informative and psychologically stressful?"
+    },
+    {
+      "concept_id": "concept_psychologically",
+      "lemma": "psychologically",
+      "definition": "General contextual sense for 'psychologically'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PSYCHOLOGICALLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "psychologically"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Do you exercise? Do you consider you informative and psychologically stressful?"
+    },
+    {
+      "concept_id": "concept_stressful",
+      "lemma": "stressful",
+      "definition": "General contextual sense for 'stressful'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "STRESSFUL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "stressful"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Do you exercise? Do you consider you informative and psychologically stressful?"
+    },
+    {
+      "concept_id": "concept_alcohol",
+      "lemma": "alcohol",
+      "definition": "General contextual sense for 'alcohol'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ALCOHOL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "alcohol"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Sometimes. How much alcohol do you consume?"
+    },
+    {
+      "concept_id": "concept_occupation",
+      "lemma": "occupation",
+      "definition": "General contextual sense for 'occupation'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OCCUPATION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "occupation"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Too much. What is your occupation?"
+    },
+    {
+      "concept_id": "concept_why'",
+      "lemma": "why'",
+      "definition": "General contextual sense for 'why''",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WHY'",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "why's"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And why's that?"
+    },
+    {
+      "concept_id": "concept_appreciate",
+      "lemma": "appreciate",
+      "definition": "General contextual sense for 'appreciate'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "APPRECIATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "appreciate"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Who doesn't appreciate the occasional twist, mister?"
+    },
+    {
+      "concept_id": "concept_occasional",
+      "lemma": "occasional",
+      "definition": "General contextual sense for 'occasional'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OCCASIONAL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "occasional"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Who doesn't appreciate the occasional twist, mister?"
+    },
+    {
+      "concept_id": "concept_twist",
+      "lemma": "twist",
+      "definition": "General contextual sense for 'twist'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TWIST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "twist"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Who doesn't appreciate the occasional twist, mister?"
+    },
+    {
+      "concept_id": "concept_mister",
+      "lemma": "mister",
+      "definition": "General contextual sense for 'mister'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MISTER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "mister"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Who doesn't appreciate the occasional twist, mister?"
+    },
+    {
+      "concept_id": "concept_beach",
+      "lemma": "beach",
+      "definition": "General contextual sense for 'beach'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BEACH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "beach"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Welcome, Mr. Beach."
+    },
+    {
+      "concept_id": "concept_hell",
+      "lemma": "hell",
+      "definition": "General contextual sense for 'hell'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HELL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "hell"
+      ],
+      "frequency": 1,
+      "sample_sentence": "What the hell have you been?"
+    },
+    {
+      "concept_id": "concept_007",
+      "lemma": "007",
+      "definition": "General contextual sense for '007'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "007",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "007"
+      ],
+      "frequency": 1,
+      "sample_sentence": "007 reporting for duty."
+    },
+    {
+      "concept_id": "concept_report",
+      "lemma": "report",
+      "definition": "General contextual sense for 'report'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "REPORT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "reporting"
+      ],
+      "frequency": 1,
+      "sample_sentence": "007 reporting for duty."
+    },
+    {
+      "concept_id": "concept_duty",
+      "lemma": "duty",
+      "definition": "General contextual sense for 'duty'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DUTY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "duty"
+      ],
+      "frequency": 1,
+      "sample_sentence": "007 reporting for duty."
+    },
+    {
+      "concept_id": "concept_somewhat",
+      "lemma": "somewhat",
+      "definition": "General contextual sense for 'somewhat'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SOMEWHAT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "somewhat"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I'm a man, I can relate to somewhat that I would like to be like James Bond, so my testosterone levels are increased."
+    },
+    {
+      "concept_id": "concept_necessary",
+      "lemma": "necessary",
+      "definition": "General contextual sense for 'necessary'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "NECESSARY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "necessary"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Create your playlist, add your five videos into it, so that you can create this on command when needed, when necessary."
+    },
+    {
+      "concept_id": "concept_communicate",
+      "lemma": "communicate",
+      "definition": "General contextual sense for 'communicate'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "COMMUNICATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "communicate"
+      ],
+      "frequency": 1,
+      "sample_sentence": "These are the 110 ways that we can use to communicate with other people."
+    },
+    {
+      "concept_id": "concept_choos",
+      "lemma": "choos",
+      "definition": "General contextual sense for 'choos'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CHOOS",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "choosing"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So this is your somatic nervous system. This is you choosing to do this with your hand. Well done."
+    },
+    {
+      "concept_id": "concept_state",
+      "lemma": "state",
+      "definition": "General contextual sense for 'state'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "STATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "state"
+      ],
+      "frequency": 1,
+      "sample_sentence": "state in you. So the way you walk can impact the way you feel. You've probably felt this so many"
+    },
+    {
+      "concept_id": "concept_greek",
+      "lemma": "greek",
+      "definition": "General contextual sense for 'greek'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GREEK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "greek"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I know, a Greek god. He's got perfect teeth, perfect skin, perfect eyes. And he walks in with"
+    },
+    {
+      "concept_id": "concept_tooth",
+      "lemma": "tooth",
+      "definition": "General contextual sense for 'tooth'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TOOTH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "teeth"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I know, a Greek god. He's got perfect teeth, perfect skin, perfect eyes. And he walks in with"
+    },
+    {
+      "concept_id": "concept_skin",
+      "lemma": "skin",
+      "definition": "General contextual sense for 'skin'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SKIN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "skin"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I know, a Greek god. He's got perfect teeth, perfect skin, perfect eyes. And he walks in with"
+    },
+    {
+      "concept_id": "concept_grace",
+      "lemma": "grace",
+      "definition": "General contextual sense for 'grace'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GRACE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "grace"
+      ],
+      "frequency": 1,
+      "sample_sentence": "such grace and he shakes my hand and feels like I'm knocked out. You know, like this guy is the"
+    },
+    {
+      "concept_id": "concept_shake",
+      "lemma": "shake",
+      "definition": "General contextual sense for 'shake'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SHAKE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "shakes"
+      ],
+      "frequency": 1,
+      "sample_sentence": "such grace and he shakes my hand and feels like I'm knocked out. You know, like this guy is the"
+    }
+  ]
+}

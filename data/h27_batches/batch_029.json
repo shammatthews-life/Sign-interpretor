@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "batch_id": "batch_029",
+    "phase": "H27",
+    "concept_range": "1401 to 1450",
+    "batch_concept_count": 50,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_obnoxiou",
+      "lemma": "obnoxiou",
+      "definition": "General contextual sense for 'obnoxiou'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OBNOXIOU",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "obnoxious"
+      ],
+      "frequency": 1,
+      "sample_sentence": "created now, you will be seen as obnoxious."
+    },
+    {
+      "concept_id": "concept_humble",
+      "lemma": "humble",
+      "definition": "General contextual sense for 'humble'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HUMBLE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "humble"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You'll be seen in non-humble."
+    },
+    {
+      "concept_id": "concept_dude",
+      "lemma": "dude",
+      "definition": "General contextual sense for 'dude'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DUDE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "dude"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Come here dude."
+    },
+    {
+      "concept_id": "concept_daughter",
+      "lemma": "daughter",
+      "definition": "General contextual sense for 'daughter'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DAUGHTER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "daughter"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I look at a video like this or I look at photos of my daughter."
+    },
+    {
+      "concept_id": "concept_chosen",
+      "lemma": "chosen",
+      "definition": "General contextual sense for 'chosen'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CHOSEN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "chosen"
+      ],
+      "frequency": 1,
+      "sample_sentence": "where I've chosen how to feel where my emotions are picked by me and not by"
+    },
+    {
+      "concept_id": "concept_default",
+      "lemma": "default",
+      "definition": "General contextual sense for 'default'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DEFAULT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "default"
+      ],
+      "frequency": 1,
+      "sample_sentence": "default. This is the first level of all great public speaking,"
+    },
+    {
+      "concept_id": "concept_requir",
+      "lemma": "requir",
+      "definition": "General contextual sense for 'requir'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "REQUIR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "required"
+      ],
+      "frequency": 1,
+      "sample_sentence": "How can you grab, what is required"
+    },
+    {
+      "concept_id": "concept_person'",
+      "lemma": "person'",
+      "definition": "General contextual sense for 'person''",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PERSON'",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "person's"
+      ],
+      "frequency": 1,
+      "sample_sentence": "to grab a person's attention and hold it for hours on end?"
+    },
+    {
+      "concept_id": "concept_bor",
+      "lemma": "bor",
+      "definition": "General contextual sense for 'bor'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BOR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "boring"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You've probably sat through super boring presentations"
+    },
+    {
+      "concept_id": "concept_asleep",
+      "lemma": "asleep",
+      "definition": "General contextual sense for 'asleep'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ASLEEP",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "asleep"
+      ],
+      "frequency": 1,
+      "sample_sentence": "presentation is seeing people fall asleep looking at their mobile phones. This is the opposite."
+    },
+    {
+      "concept_id": "concept_engagement",
+      "lemma": "engagement",
+      "definition": "General contextual sense for 'engagement'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ENGAGEMENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "engagement"
+      ],
+      "frequency": 1,
+      "sample_sentence": "This is where you get engagement, big eyes, almost like looking at you in a wondrous way,"
+    },
+    {
+      "concept_id": "concept_wondrou",
+      "lemma": "wondrou",
+      "definition": "General contextual sense for 'wondrou'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WONDROU",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "wondrous"
+      ],
+      "frequency": 1,
+      "sample_sentence": "This is where you get engagement, big eyes, almost like looking at you in a wondrous way,"
+    },
+    {
+      "concept_id": "concept_wisdom",
+      "lemma": "wisdom",
+      "definition": "General contextual sense for 'wisdom'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WISDOM",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "wisdom"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Now, I want to share a couple of words of wisdom from another legend in the business,"
+    },
+    {
+      "concept_id": "concept_legend",
+      "lemma": "legend",
+      "definition": "General contextual sense for 'legend'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "LEGEND",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "legend"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Now, I want to share a couple of words of wisdom from another legend in the business,"
+    },
+    {
+      "concept_id": "concept_agent",
+      "lemma": "agent",
+      "definition": "General contextual sense for 'agent'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "AGENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "agent"
+      ],
+      "frequency": 1,
+      "sample_sentence": "What they wanna hear is, here's how you get an agent,"
+    },
+    {
+      "concept_id": "concept_script",
+      "lemma": "script",
+      "definition": "General contextual sense for 'script'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SCRIPT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "script"
+      ],
+      "frequency": 1,
+      "sample_sentence": "here's how you write a script, here's how you do this,"
+    },
+    {
+      "concept_id": "concept_covid",
+      "lemma": "covid",
+      "definition": "General contextual sense for 'covid'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "COVID",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "covid"
+      ],
+      "frequency": 1,
+      "sample_sentence": "how often? Microsoft did a study on this during COVID and they gave us a number. I want you to"
+    },
+    {
+      "concept_id": "concept_julia",
+      "lemma": "julia",
+      "definition": "General contextual sense for 'julia'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "JULIA",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "julia"
+      ],
+      "frequency": 1,
+      "sample_sentence": "We got every 10 seconds there from Julia, 30 from Anders,"
+    },
+    {
+      "concept_id": "concept_ander",
+      "lemma": "ander",
+      "definition": "General contextual sense for 'ander'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ANDER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "anders"
+      ],
+      "frequency": 1,
+      "sample_sentence": "We got every 10 seconds there from Julia, 30 from Anders,"
+    },
+    {
+      "concept_id": "concept_emily",
+      "lemma": "emily",
+      "definition": "General contextual sense for 'emily'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EMILY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "emily"
+      ],
+      "frequency": 1,
+      "sample_sentence": "8 seconds Emily, 20."
+    },
+    {
+      "concept_id": "concept_plodia",
+      "lemma": "plodia",
+      "definition": "General contextual sense for 'plodia'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PLODIA",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "plodia"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Plodia, 5 minutes."
+    },
+    {
+      "concept_id": "concept_3",
+      "lemma": "3",
+      "definition": "General contextual sense for '3'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "3",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "3"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Every 6 seconds, every 3..."
+    },
+    {
+      "concept_id": "concept_1",
+      "lemma": "1",
+      "definition": "General contextual sense for '1'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "1",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "1"
+      ],
+      "frequency": 1,
+      "sample_sentence": "1,000 seconds, 20, not much, 7, 5, 30."
+    },
+    {
+      "concept_id": "concept_7",
+      "lemma": "7",
+      "definition": "General contextual sense for '7'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "7",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "7"
+      ],
+      "frequency": 1,
+      "sample_sentence": "1,000 seconds, 20, not much, 7, 5, 30."
+    },
+    {
+      "concept_id": "concept_goldfish",
+      "lemma": "goldfish",
+      "definition": "General contextual sense for 'goldfish'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GOLDFISH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "goldfish"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It is less than a goldfish."
+    },
+    {
+      "concept_id": "concept_corridor",
+      "lemma": "corridor",
+      "definition": "General contextual sense for 'corridor'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CORRIDOR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "corridor"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You're sitting in the school corridor, you're looking at your phone, you've got Snapchat"
+    },
+    {
+      "concept_id": "concept_snapchat",
+      "lemma": "snapchat",
+      "definition": "General contextual sense for 'snapchat'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SNAPCHAT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "snapchat"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You're sitting in the school corridor, you're looking at your phone, you've got Snapchat"
+    },
+    {
+      "concept_id": "concept_kid'",
+      "lemma": "kid'",
+      "definition": "General contextual sense for 'kid''",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "KID'",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "kid's"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And the dopamine level hitting that kid's brain is literally like this."
+    },
+    {
+      "concept_id": "concept_1902",
+      "lemma": "1902",
+      "definition": "General contextual sense for '1902'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "1902",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "1902"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It is time for history lesson 1902, boom."
+    },
+    {
+      "concept_id": "concept_adult",
+      "lemma": "adult",
+      "definition": "General contextual sense for 'adult'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ADULT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "adults"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in"
+    },
+    {
+      "concept_id": "concept_develop",
+      "lemma": "develop",
+      "definition": "General contextual sense for 'develop'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DEVELOP",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "develop"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in"
+    },
+    {
+      "concept_id": "concept_adhd",
+      "lemma": "adhd",
+      "definition": "General contextual sense for 'adhd'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ADHD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "adhd"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in"
+    },
+    {
+      "concept_id": "concept_symptom",
+      "lemma": "symptom",
+      "definition": "General contextual sense for 'symptom'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SYMPTOM",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "symptoms"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Problem is though, studies show that adults or kids, they develop ADHD-like symptoms in"
+    },
+    {
+      "concept_id": "concept_algorithm",
+      "lemma": "algorithm",
+      "definition": "General contextual sense for 'algorithm'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ALGORITHM",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "algorithms"
+      ],
+      "frequency": 1,
+      "sample_sentence": "only eight weeks if they look at algorithms of Instagram, TikTok, Facebook, YouTube for"
+    },
+    {
+      "concept_id": "concept_facebook",
+      "lemma": "facebook",
+      "definition": "General contextual sense for 'facebook'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FACEBOOK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "facebook"
+      ],
+      "frequency": 1,
+      "sample_sentence": "only eight weeks if they look at algorithms of Instagram, TikTok, Facebook, YouTube for"
+    },
+    {
+      "concept_id": "concept_accustom",
+      "lemma": "accustom",
+      "definition": "General contextual sense for 'accustom'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ACCUSTOM",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "accustomed"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So they are accustomed to a certain dopamine flow."
+    },
+    {
+      "concept_id": "concept_achiev",
+      "lemma": "achiev",
+      "definition": "General contextual sense for 'achiev'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ACHIEV",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "achieving"
+      ],
+      "frequency": 1,
+      "sample_sentence": "How do you know that you are not achieving dopamine?"
+    },
+    {
+      "concept_id": "concept_scribbl",
+      "lemma": "scribbl",
+      "definition": "General contextual sense for 'scribbl'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SCRIBBL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "scribbling"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I can't, oh, and they start scribbling something"
+    },
+    {
+      "concept_id": "concept_dread",
+      "lemma": "dread",
+      "definition": "General contextual sense for 'dread'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DREAD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "dread"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and start dread-day dreaming."
+    },
+    {
+      "concept_id": "concept_wander",
+      "lemma": "wander",
+      "definition": "General contextual sense for 'wander'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WANDER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "wandering"
+      ],
+      "frequency": 1,
+      "sample_sentence": "They start wandering off."
+    },
+    {
+      "concept_id": "concept_swip",
+      "lemma": "swip",
+      "definition": "General contextual sense for 'swip'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SWIP",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "swiping"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and they keep swiping under the side of the table."
+    },
+    {
+      "concept_id": "concept_moan",
+      "lemma": "moan",
+      "definition": "General contextual sense for 'moan'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MOAN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "moan"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And you can literally hear the moan of enjoyment"
+    },
+    {
+      "concept_id": "concept_drug",
+      "lemma": "drug",
+      "definition": "General contextual sense for 'drug'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DRUG",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "drug"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You have to be the best drug dealer in the room."
+    },
+    {
+      "concept_id": "concept_dealer",
+      "lemma": "dealer",
+      "definition": "General contextual sense for 'dealer'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DEALER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "dealer"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You have to be the best drug dealer in the room."
+    },
+    {
+      "concept_id": "concept_neuro",
+      "lemma": "neuro",
+      "definition": "General contextual sense for 'neuro'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "NEURO",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "neuro"
+      ],
+      "frequency": 1,
+      "sample_sentence": "inject dopamine into the neuro system of the people sitting in the audience. The question then is,"
+    },
+    {
+      "concept_id": "concept_dm'",
+      "lemma": "dm'",
+      "definition": "General contextual sense for 'dm''",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DM'",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "dm's"
+      ],
+      "frequency": 1,
+      "sample_sentence": "around you. Imagine that. That's almost like somebody sent me, no, two people sent me DM's yesterday on"
+    },
+    {
+      "concept_id": "concept_magician",
+      "lemma": "magician",
+      "definition": "General contextual sense for 'magician'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MAGICIAN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "magician"
+      ],
+      "frequency": 1,
+      "sample_sentence": "my God, you're a magician, man."
+    },
+    {
+      "concept_id": "concept_nano",
+      "lemma": "nano",
+      "definition": "General contextual sense for 'nano'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "NANO",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "nano"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I think I call that one nano, probably not, but..."
+    },
+    {
+      "concept_id": "concept_medium",
+      "lemma": "medium",
+      "definition": "General contextual sense for 'medium'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MEDIUM",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "medium"
+      ],
+      "frequency": 1,
+      "sample_sentence": "The three levels, big ones, medium ones, small ones,"
+    },
+    {
+      "concept_id": "concept_macroy",
+      "lemma": "macroy",
+      "definition": "General contextual sense for 'macroy'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MACROY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "macroy"
+      ],
+      "frequency": 1,
+      "sample_sentence": "The macroy in the beginning is where you make a promise to the people that you're"
+    }
+  ]
+}

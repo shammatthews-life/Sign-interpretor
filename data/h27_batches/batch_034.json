@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "batch_id": "batch_034",
+    "phase": "H27",
+    "concept_range": "1651 to 1700",
+    "batch_concept_count": 50,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_admit",
+      "lemma": "admit",
+      "definition": "General contextual sense for 'admit'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ADMIT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "admit"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I admit it."
+    },
+    {
+      "concept_id": "concept_television",
+      "lemma": "television",
+      "definition": "General contextual sense for 'television'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TELEVISION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "television"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Because don't you agree that when you watch a television show or when you watch a movie,"
+    },
+    {
+      "concept_id": "concept_ignite",
+      "lemma": "ignite",
+      "definition": "General contextual sense for 'ignite'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "IGNITE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "ignites"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and it says suddenly based on a true story, feels like your entire brain ignites."
+    },
+    {
+      "concept_id": "concept_email",
+      "lemma": "email",
+      "definition": "General contextual sense for 'email'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EMAIL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "email"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You'll obviously see camera three, email, whee!"
+    },
+    {
+      "concept_id": "concept_whee",
+      "lemma": "whee",
+      "definition": "General contextual sense for 'whee'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WHEE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "whee"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You'll obviously see camera three, email, whee!"
+    },
+    {
+      "concept_id": "concept_module",
+      "lemma": "module",
+      "definition": "General contextual sense for 'module'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MODULE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "modules"
+      ],
+      "frequency": 1,
+      "sample_sentence": "what are the three most important modules from my life"
+    },
+    {
+      "concept_id": "concept_crowd",
+      "lemma": "crowd",
+      "definition": "General contextual sense for 'crowd'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CROWD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "crowd"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It actually gets easier, the bigger the crowd is."
+    },
+    {
+      "concept_id": "concept_smok",
+      "lemma": "smok",
+      "definition": "General contextual sense for 'smok'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SMOK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "smoked"
+      ],
+      "frequency": 1,
+      "sample_sentence": "but if you don't have high level of clarity, you're smoked anyway."
+    },
+    {
+      "concept_id": "concept_referenc",
+      "lemma": "referenc",
+      "definition": "General contextual sense for 'referenc'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "REFERENC",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "referencing"
+      ],
+      "frequency": 1,
+      "sample_sentence": "referencing that as we go along. If you haven't got it yet I'll ask you able to just post a"
+    },
+    {
+      "concept_id": "concept_yet",
+      "lemma": "yet",
+      "definition": "General contextual sense for 'yet'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "YET",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "yet"
+      ],
+      "frequency": 1,
+      "sample_sentence": "referencing that as we go along. If you haven't got it yet I'll ask you able to just post a"
+    },
+    {
+      "concept_id": "concept_influential",
+      "lemma": "influential",
+      "definition": "General contextual sense for 'influential'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INFLUENTIAL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "influential"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Love those words, one of them, I guess, most influential financial people in the world describes"
+    },
+    {
+      "concept_id": "concept_financial",
+      "lemma": "financial",
+      "definition": "General contextual sense for 'financial'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FINANCIAL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "financial"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Love those words, one of them, I guess, most influential financial people in the world describes"
+    },
+    {
+      "concept_id": "concept_invest",
+      "lemma": "invest",
+      "definition": "General contextual sense for 'invest'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INVEST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "invest"
+      ],
+      "frequency": 1,
+      "sample_sentence": "it as an asset which you invest in, which you can make use of 50, 60 years to go ahead. But also,"
+    },
+    {
+      "concept_id": "concept_ahead",
+      "lemma": "ahead",
+      "definition": "General contextual sense for 'ahead'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "AHEAD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "ahead"
+      ],
+      "frequency": 1,
+      "sample_sentence": "it as an asset which you invest in, which you can make use of 50, 60 years to go ahead. But also,"
+    },
+    {
+      "concept_id": "concept_treat",
+      "lemma": "treat",
+      "definition": "General contextual sense for 'treat'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TREAT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "treat"
+      ],
+      "frequency": 1,
+      "sample_sentence": "at the same time, it's a liability if you don't. So always treat public speaking from that perspective."
+    },
+    {
+      "concept_id": "concept_switch",
+      "lemma": "switch",
+      "definition": "General contextual sense for 'switch'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SWITCH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "switch"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And the second thing I want to say about this is this, what happens if we switch those words"
+    },
+    {
+      "concept_id": "concept_machine",
+      "lemma": "machine",
+      "definition": "General contextual sense for 'machine'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MACHINE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "machine"
+      ],
+      "frequency": 1,
+      "sample_sentence": "by the coffee machine with your kids, with your friends,"
+    },
+    {
+      "concept_id": "concept_spouse",
+      "lemma": "spouse",
+      "definition": "General contextual sense for 'spouse'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SPOUSE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "spouse"
+      ],
+      "frequency": 1,
+      "sample_sentence": "with your spouse, with your colleagues,"
+    },
+    {
+      "concept_id": "concept_flawless",
+      "lemma": "flawless",
+      "definition": "General contextual sense for 'flawless'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FLAWLESS",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "flawless"
+      ],
+      "frequency": 1,
+      "sample_sentence": "when you go up on stage, you're flawless."
+    },
+    {
+      "concept_id": "concept_craziest",
+      "lemma": "craziest",
+      "definition": "General contextual sense for 'craziest'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CRAZIEST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "craziest"
+      ],
+      "frequency": 1,
+      "sample_sentence": "which is by far the craziest thing I've ever done."
+    },
+    {
+      "concept_id": "concept_mathematical",
+      "lemma": "mathematical",
+      "definition": "General contextual sense for 'mathematical'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MATHEMATICAL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "mathematical"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I started seeing people like almost like mathematical patterns when they moved,"
+    },
+    {
+      "concept_id": "concept_explain",
+      "lemma": "explain",
+      "definition": "General contextual sense for 'explain'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "explain",
+      "isl_gloss": "EXPLAIN",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "explain"
+      ],
+      "frequency": 1,
+      "sample_sentence": "The best way to explain this is have you seen Sherlock Holmes?"
+    },
+    {
+      "concept_id": "concept_sherlock",
+      "lemma": "sherlock",
+      "definition": "General contextual sense for 'sherlock'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SHERLOCK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "sherlock"
+      ],
+      "frequency": 1,
+      "sample_sentence": "The best way to explain this is have you seen Sherlock Holmes?"
+    },
+    {
+      "concept_id": "concept_holme",
+      "lemma": "holme",
+      "definition": "General contextual sense for 'holme'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HOLME",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "holmes"
+      ],
+      "frequency": 1,
+      "sample_sentence": "The best way to explain this is have you seen Sherlock Holmes?"
+    },
+    {
+      "concept_id": "concept_tv",
+      "lemma": "tv",
+      "definition": "General contextual sense for 'tv'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TV",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tv"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Have you seen his movies or TV shows?"
+    },
+    {
+      "concept_id": "concept_detective",
+      "lemma": "detective",
+      "definition": "General contextual sense for 'detective'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DETECTIVE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "detective"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So he's a British detective and he goes around and he's like,"
+    },
+    {
+      "concept_id": "concept_shoelace",
+      "lemma": "shoelace",
+      "definition": "General contextual sense for 'shoelace'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SHOELACE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "shoelace"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So he goes like, well, your shoelace is tied with a right hand,"
+    },
+    {
+      "concept_id": "concept_tied",
+      "lemma": "tied",
+      "definition": "General contextual sense for 'tied'",
+      "part_of_speech": "VERB_PAST",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TIED",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tied"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So he goes like, well, your shoelace is tied with a right hand,"
+    },
+    {
+      "concept_id": "concept_must",
+      "lemma": "must",
+      "definition": "General contextual sense for 'must'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MUST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "must"
+      ],
+      "frequency": 1,
+      "sample_sentence": "That means that you must have killed this person."
+    },
+    {
+      "concept_id": "concept_wesberg",
+      "lemma": "wesberg",
+      "definition": "General contextual sense for 'wesberg'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WESBERG",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "wesberg"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and I go, I look at Tina Wesberg, for instance,"
+    },
+    {
+      "concept_id": "concept_john'",
+      "lemma": "john'",
+      "definition": "General contextual sense for 'john''",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "JOHN'",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "john's"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Why is John's head slightly tilted to the right?"
+    },
+    {
+      "concept_id": "concept_vicker",
+      "lemma": "vicker",
+      "definition": "General contextual sense for 'vicker'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "VICKER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "vickers"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Why is Vickers head slightly tilted to the right?"
+    },
+    {
+      "concept_id": "concept_guinea",
+      "lemma": "guinea",
+      "definition": "General contextual sense for 'guinea'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GUINEA",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "guinea"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Suzanne, if your guinea pig dies,"
+    },
+    {
+      "concept_id": "concept_pig",
+      "lemma": "pig",
+      "definition": "General contextual sense for 'pig'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PIG",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "pig"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Suzanne, if your guinea pig dies,"
+    },
+    {
+      "concept_id": "concept_die",
+      "lemma": "die",
+      "definition": "General contextual sense for 'die'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DIE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "dies"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Suzanne, if your guinea pig dies,"
+    },
+    {
+      "concept_id": "concept_automatic",
+      "lemma": "automatic",
+      "definition": "General contextual sense for 'automatic'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "AUTOMATIC",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "automatic"
+      ],
+      "frequency": 1,
+      "sample_sentence": "my automatic human response would be,"
+    },
+    {
+      "concept_id": "concept_response",
+      "lemma": "response",
+      "definition": "General contextual sense for 'response'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "RESPONSE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "response"
+      ],
+      "frequency": 1,
+      "sample_sentence": "my automatic human response would be,"
+    },
+    {
+      "concept_id": "concept_verbally",
+      "lemma": "verbally",
+      "definition": "General contextual sense for 'verbally'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "VERBALLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "verbally"
+      ],
+      "frequency": 1,
+      "sample_sentence": "you are signaling non-verbally to me,"
+    },
+    {
+      "concept_id": "concept_aww",
+      "lemma": "aww",
+      "definition": "General contextual sense for 'aww'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "AWW",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "aww"
+      ],
+      "frequency": 1,
+      "sample_sentence": "you're going, aww."
+    },
+    {
+      "concept_id": "concept_empathy",
+      "lemma": "empathy",
+      "definition": "General contextual sense for 'empathy'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EMPATHY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "empathy"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So you're showing empathy,"
+    },
+    {
+      "concept_id": "concept_induc",
+      "lemma": "induc",
+      "definition": "General contextual sense for 'induc'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INDUC",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "inducing"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and that is by inducing oxytocin."
+    },
+    {
+      "concept_id": "concept_tilter",
+      "lemma": "tilter",
+      "definition": "General contextual sense for 'tilter'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TILTER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tilters"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and I've got like 20% head tilters"
+    },
+    {
+      "concept_id": "concept_42",
+      "lemma": "42",
+      "definition": "General contextual sense for '42'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "42",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "42"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's so remarkable because when I start the talk, I say, in 42 minutes from now, 80% of"
+    },
+    {
+      "concept_id": "concept_gaiman",
+      "lemma": "gaiman",
+      "definition": "General contextual sense for 'gaiman'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GAIMAN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "gaiman"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So a second thing that, well, let's have a look at Vicki Gaiman, she's nodding her"
+    },
+    {
+      "concept_id": "concept_instinctively",
+      "lemma": "instinctively",
+      "definition": "General contextual sense for 'instinctively'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INSTINCTIVELY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "instinctively"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Like, you don't know that affects me, but you do it instinctively because you are a good listener."
+    },
+    {
+      "concept_id": "concept_listener",
+      "lemma": "listener",
+      "definition": "General contextual sense for 'listener'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "LISTENER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "listener"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Like, you don't know that affects me, but you do it instinctively because you are a good listener."
+    },
+    {
+      "concept_id": "concept_tilther",
+      "lemma": "tilther",
+      "definition": "General contextual sense for 'tilther'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TILTHER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tilther"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So, having a look at Tina again, she's a head-tilther and she's a head-nodder."
+    },
+    {
+      "concept_id": "concept_nodder",
+      "lemma": "nodder",
+      "definition": "General contextual sense for 'nodder'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "NODDER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "nodder"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So, having a look at Tina again, she's a head-tilther and she's a head-nodder."
+    },
+    {
+      "concept_id": "concept_avi",
+      "lemma": "avi",
+      "definition": "General contextual sense for 'avi'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "AVI",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "avi"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So you want me to use these skills, but that's weird, Avi."
+    },
+    {
+      "concept_id": "concept_sw",
+      "lemma": "sw",
+      "definition": "General contextual sense for 'sw'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SW",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "swing"
+      ],
+      "frequency": 1,
+      "sample_sentence": "If you're going to learn a new golf swing,"
+    }
+  ]
+}

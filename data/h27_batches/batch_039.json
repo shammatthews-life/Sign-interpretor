@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "batch_id": "batch_039",
+    "phase": "H27",
+    "concept_range": "1901 to 1916",
+    "batch_concept_count": 16,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_regularly",
+      "lemma": "regularly",
+      "definition": "General contextual sense for 'regularly'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "REGULARLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "regularly"
+      ],
+      "frequency": 1,
+      "sample_sentence": "when you practice regularly and challenge yourself."
+    },
+    {
+      "concept_id": "concept_blueprint",
+      "lemma": "blueprint",
+      "definition": "General contextual sense for 'blueprint'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BLUEPRINT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "blueprint"
+      ],
+      "frequency": 1,
+      "sample_sentence": "inside the speaking blueprint."
+    },
+    {
+      "concept_id": "concept_code",
+      "lemma": "code",
+      "definition": "General contextual sense for 'code'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CODE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "code"
+      ],
+      "frequency": 1,
+      "sample_sentence": "the turbo program, high on live, and the communication code,"
+    },
+    {
+      "concept_id": "concept_extensive",
+      "lemma": "extensive",
+      "definition": "General contextual sense for 'extensive'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EXTENSIVE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "extensive"
+      ],
+      "frequency": 1,
+      "sample_sentence": "which is an extensive or a three level video course"
+    },
+    {
+      "concept_id": "concept_150",
+      "lemma": "150",
+      "definition": "General contextual sense for '150'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "150",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "150"
+      ],
+      "frequency": 1,
+      "sample_sentence": "with over 150 instructional videos and exercises."
+    },
+    {
+      "concept_id": "concept_instructional",
+      "lemma": "instructional",
+      "definition": "General contextual sense for 'instructional'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INSTRUCTIONAL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "instructional"
+      ],
+      "frequency": 1,
+      "sample_sentence": "with over 150 instructional videos and exercises."
+    },
+    {
+      "concept_id": "concept_unlock",
+      "lemma": "unlock",
+      "definition": "General contextual sense for 'unlock'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "UNLOCK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "unlock"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's only when you challenge yourself that you unlock the greatest opportunities to grow as a person and in this case as a communicator."
+    },
+    {
+      "concept_id": "concept_opportunitie",
+      "lemma": "opportunitie",
+      "definition": "General contextual sense for 'opportunitie'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OPPORTUNITIE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "opportunities"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's only when you challenge yourself that you unlock the greatest opportunities to grow as a person and in this case as a communicator."
+    },
+    {
+      "concept_id": "concept_communicator",
+      "lemma": "communicator",
+      "definition": "General contextual sense for 'communicator'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "COMMUNICATOR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "communicator"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's only when you challenge yourself that you unlock the greatest opportunities to grow as a person and in this case as a communicator."
+    },
+    {
+      "concept_id": "concept_cost",
+      "lemma": "cost",
+      "definition": "General contextual sense for 'cost'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "cost",
+      "isl_gloss": "COST",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "cost"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And if you watch this far, we can both agree. This is for you. So do get signed up. It's not one of those programs that cost you thousands of dollars."
+    },
+    {
+      "concept_id": "concept_tiny",
+      "lemma": "tiny",
+      "definition": "General contextual sense for 'tiny'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TINY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tiny"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's a tiny entrance fee and you're going to become part of a supporter community where you challenge yourself."
+    },
+    {
+      "concept_id": "concept_entrance",
+      "lemma": "entrance",
+      "definition": "General contextual sense for 'entrance'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ENTRANCE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "entrance"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's a tiny entrance fee and you're going to become part of a supporter community where you challenge yourself."
+    },
+    {
+      "concept_id": "concept_fee",
+      "lemma": "fee",
+      "definition": "General contextual sense for 'fee'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FEE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "fee"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's a tiny entrance fee and you're going to become part of a supporter community where you challenge yourself."
+    },
+    {
+      "concept_id": "concept_supporter",
+      "lemma": "supporter",
+      "definition": "General contextual sense for 'supporter'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SUPPORTER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "supporter"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's a tiny entrance fee and you're going to become part of a supporter community where you challenge yourself."
+    },
+    {
+      "concept_id": "concept_commit",
+      "lemma": "commit",
+      "definition": "General contextual sense for 'commit'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "COMMIT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "commit"
+      ],
+      "frequency": 1,
+      "sample_sentence": "If you learn from others and you'll share your wins and I promise you this, if you commit"
+    },
+    {
+      "concept_id": "concept_cheer",
+      "lemma": "cheer",
+      "definition": "General contextual sense for 'cheer'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CHEER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "cheers"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and I'll see you on day one. Cheers!"
+    }
+  ]
+}

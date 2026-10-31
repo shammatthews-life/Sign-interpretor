@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "batch_id": "batch_033",
+    "phase": "H27",
+    "concept_range": "1601 to 1650",
+    "batch_concept_count": 50,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_sensual",
+      "lemma": "sensual",
+      "definition": "General contextual sense for 'sensual'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SENSUAL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "sensual"
+      ],
+      "frequency": 1,
+      "sample_sentence": "These are sensual."
+    },
+    {
+      "concept_id": "concept_pair",
+      "lemma": "pair",
+      "definition": "General contextual sense for 'pair'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PAIR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "pair"
+      ],
+      "frequency": 1,
+      "sample_sentence": "under a pair of five seconds and they affected your biochemistry. What were they? Give me"
+    },
+    {
+      "concept_id": "concept_silence",
+      "lemma": "silence",
+      "definition": "General contextual sense for 'silence'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "silence",
+      "isl_gloss": "SILENCE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "silence"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Somebody said silence. Oh, there, Gary, look up, smile and chuckle and pointed."
+    },
+    {
+      "concept_id": "concept_chuckle",
+      "lemma": "chuckle",
+      "definition": "General contextual sense for 'chuckle'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CHUCKLE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "chuckle"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Somebody said silence. Oh, there, Gary, look up, smile and chuckle and pointed."
+    },
+    {
+      "concept_id": "concept_paus",
+      "lemma": "paus",
+      "definition": "General contextual sense for 'paus'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PAUS",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "paused"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So write this down for yourself. I paused. I did an audible inhale through my nose."
+    },
+    {
+      "concept_id": "concept_suspension",
+      "lemma": "suspension",
+      "definition": "General contextual sense for 'suspension'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SUSPENSION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "suspension"
+      ],
+      "frequency": 1,
+      "sample_sentence": "the post-bill suspension, the audible inhale,"
+    },
+    {
+      "concept_id": "concept_gotta",
+      "lemma": "gotta",
+      "definition": "General contextual sense for 'gotta'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GOTTA",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "gotta"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's gotta be something amazing."
+    },
+    {
+      "concept_id": "concept_emotionally",
+      "lemma": "emotionally",
+      "definition": "General contextual sense for 'emotionally'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EMOTIONALLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "emotionally"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You can also look down where you, but that is more finding something emotionally powerful."
+    },
+    {
+      "concept_id": "concept_douchein",
+      "lemma": "douchein",
+      "definition": "General contextual sense for 'douchein'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DOUCHEIN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "douchein"
+      ],
+      "frequency": 1,
+      "sample_sentence": "to him, so maybe it's exciting to me. And then the final one is what is called a douchein smile,"
+    },
+    {
+      "concept_id": "concept_photovase",
+      "lemma": "photovase",
+      "definition": "General contextual sense for 'photovase'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PHOTOVASE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "photovase"
+      ],
+      "frequency": 1,
+      "sample_sentence": "where you smiley with your own photovase, which is just an extension of the self-laughter"
+    },
+    {
+      "concept_id": "concept_climax",
+      "lemma": "climax",
+      "definition": "General contextual sense for 'climax'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CLIMAX",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "climax"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So pause climax, audible inhale, pays volume, self laughter."
+    },
+    {
+      "concept_id": "concept_pay",
+      "lemma": "pay",
+      "definition": "General contextual sense for 'pay'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PAY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "pays"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So pause climax, audible inhale, pays volume, self laughter."
+    },
+    {
+      "concept_id": "concept_preferably",
+      "lemma": "preferably",
+      "definition": "General contextual sense for 'preferably'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PREFERABLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "preferably"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Please write your answers down on a piece of paper or preferably on a document on your"
+    },
+    {
+      "concept_id": "concept_document",
+      "lemma": "document",
+      "definition": "General contextual sense for 'document'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DOCUMENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "document"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Please write your answers down on a piece of paper or preferably on a document on your"
+    },
+    {
+      "concept_id": "concept_paste",
+      "lemma": "paste",
+      "definition": "General contextual sense for 'paste'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PASTE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "paste"
+      ],
+      "frequency": 1,
+      "sample_sentence": "computer, because when you come back after this one minute video, I want you to paste"
+    },
+    {
+      "concept_id": "concept_mundane",
+      "lemma": "mundane",
+      "definition": "General contextual sense for 'mundane'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MUNDANE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "mundane"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It was mundane."
+    },
+    {
+      "concept_id": "concept_pocket",
+      "lemma": "pocket",
+      "definition": "General contextual sense for 'pocket'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "POCKET",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "pocket"
+      ],
+      "frequency": 1,
+      "sample_sentence": "She had an apple in her pocket and she picked it up and placed it on the floor."
+    },
+    {
+      "concept_id": "concept_floor",
+      "lemma": "floor",
+      "definition": "General contextual sense for 'floor'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FLOOR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "floor"
+      ],
+      "frequency": 1,
+      "sample_sentence": "She had an apple in her pocket and she picked it up and placed it on the floor."
+    },
+    {
+      "concept_id": "concept_circle",
+      "lemma": "circle",
+      "definition": "General contextual sense for 'circle'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CIRCLE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "circle"
+      ],
+      "frequency": 1,
+      "sample_sentence": "She asked the class to stand in a circle and kick it to each other."
+    },
+    {
+      "concept_id": "concept_cut",
+      "lemma": "cut",
+      "definition": "General contextual sense for 'cut'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CUT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "cut"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Friday came, the teacher took out a knife and cut that apple in the middle."
+    },
+    {
+      "concept_id": "concept_brownness",
+      "lemma": "brownness",
+      "definition": "General contextual sense for 'brownness'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BROWNNESS",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "brownness"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And now you can see the brownness, the bruises, the squishiness."
+    },
+    {
+      "concept_id": "concept_squishiness",
+      "lemma": "squishiness",
+      "definition": "General contextual sense for 'squishiness'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SQUISHINESS",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "squishiness"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And now you can see the brownness, the bruises, the squishiness."
+    },
+    {
+      "concept_id": "concept_hurtful",
+      "lemma": "hurtful",
+      "definition": "General contextual sense for 'hurtful'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HURTFUL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "hurtful"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Bullying isn't just hurtful on the outside."
+    },
+    {
+      "concept_id": "concept_rot",
+      "lemma": "rot",
+      "definition": "General contextual sense for 'rot'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ROT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "rot"
+      ],
+      "frequency": 1,
+      "sample_sentence": "for the rest of the year to see it slowly rot"
+    },
+    {
+      "concept_id": "concept_student",
+      "lemma": "student",
+      "definition": "General contextual sense for 'student'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "STUDENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "students"
+      ],
+      "frequency": 1,
+      "sample_sentence": "to remind the students to respect each other."
+    },
+    {
+      "concept_id": "concept_inspiration",
+      "lemma": "inspiration",
+      "definition": "General contextual sense for 'inspiration'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INSPIRATION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "inspiration"
+      ],
+      "frequency": 1,
+      "sample_sentence": "give each other some inspiration"
+    },
+    {
+      "concept_id": "concept_background",
+      "lemma": "background",
+      "definition": "General contextual sense for 'background'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BACKGROUND",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "background"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Absolute, the background music makes"
+    },
+    {
+      "concept_id": "concept_jona",
+      "lemma": "jona",
+      "definition": "General contextual sense for 'jona'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "JONA",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "jonas"
+      ],
+      "frequency": 1,
+      "sample_sentence": "facial expressions, these are brilliant Jonas, that's a great list you got there man."
+    },
+    {
+      "concept_id": "concept_tri",
+      "lemma": "tri",
+      "definition": "General contextual sense for 'tri'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TRI",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tried"
+      ],
+      "frequency": 1,
+      "sample_sentence": "If you've never tried this, try this because it's mad."
+    },
+    {
+      "concept_id": "concept_mad",
+      "lemma": "mad",
+      "definition": "General contextual sense for 'mad'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MAD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "mad"
+      ],
+      "frequency": 1,
+      "sample_sentence": "If you've never tried this, try this because it's mad."
+    },
+    {
+      "concept_id": "concept_setting",
+      "lemma": "setting",
+      "definition": "General contextual sense for 'setting'",
+      "part_of_speech": "VERB_PARTICIPLE",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "setting",
+      "isl_gloss": "SETTING",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "settings"
+      ],
+      "frequency": 1,
+      "sample_sentence": "If you have your mobile phone, you can go into settings and set it on grayscale."
+    },
+    {
+      "concept_id": "concept_lick",
+      "lemma": "lick",
+      "definition": "General contextual sense for 'lick'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "LICK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "lick"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I wanted to lick the display. You know, like, oh, because my brain went, oh my god, there's so much"
+    },
+    {
+      "concept_id": "concept_display",
+      "lemma": "display",
+      "definition": "General contextual sense for 'display'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DISPLAY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "display"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I wanted to lick the display. You know, like, oh, because my brain went, oh my god, there's so much"
+    },
+    {
+      "concept_id": "concept_app",
+      "lemma": "app",
+      "definition": "General contextual sense for 'app'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "APP",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "apps"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Why do you think apps, children, games, and so on,"
+    },
+    {
+      "concept_id": "concept_child",
+      "lemma": "child",
+      "definition": "General contextual sense for 'child'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CHILD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "children"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Why do you think apps, children, games, and so on,"
+    },
+    {
+      "concept_id": "concept_game",
+      "lemma": "game",
+      "definition": "General contextual sense for 'game'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "game",
+      "isl_gloss": "GAME",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "games"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Why do you think apps, children, games, and so on,"
+    },
+    {
+      "concept_id": "concept_neat",
+      "lemma": "neat",
+      "definition": "General contextual sense for 'neat'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "NEAT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "neat"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's a nice, neat way for them to create dopamine."
+    },
+    {
+      "concept_id": "concept_wish",
+      "lemma": "wish",
+      "definition": "General contextual sense for 'wish'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WISH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "wish"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Add them, feel them, see them, test them if you wish,"
+    },
+    {
+      "concept_id": "concept_conclud",
+      "lemma": "conclud",
+      "definition": "General contextual sense for 'conclud'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CONCLUD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "concluded"
+      ],
+      "frequency": 1,
+      "sample_sentence": "We have concluded this evening when it comes to dopamine."
+    },
+    {
+      "concept_id": "concept_east",
+      "lemma": "east",
+      "definition": "General contextual sense for 'east'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EAST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "east"
+      ],
+      "frequency": 1,
+      "sample_sentence": "the Middle East."
+    },
+    {
+      "concept_id": "concept_liv",
+      "lemma": "liv",
+      "definition": "General contextual sense for 'liv'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "LIV",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "lived"
+      ],
+      "frequency": 1,
+      "sample_sentence": "In this quaint little house lived two sisters."
+    },
+    {
+      "concept_id": "concept_rowl",
+      "lemma": "rowl",
+      "definition": "General contextual sense for 'rowl'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ROWL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "rowl"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And this particular day, it turned into a rowl,"
+    },
+    {
+      "concept_id": "concept_contest",
+      "lemma": "contest",
+      "definition": "General contextual sense for 'contest'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CONTEST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "contest"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Let's have a contest."
+    },
+    {
+      "concept_id": "concept_arch",
+      "lemma": "arch",
+      "definition": "General contextual sense for 'arch'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ARCH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "arch"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And so the day grew, they went up to the arch,"
+    },
+    {
+      "concept_id": "concept_guest",
+      "lemma": "guest",
+      "definition": "General contextual sense for 'guest'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GUEST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "guest"
+      ],
+      "frequency": 1,
+      "sample_sentence": "The story said, please be my guest."
+    },
+    {
+      "concept_id": "concept_vein",
+      "lemma": "vein",
+      "definition": "General contextual sense for 'vein'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "VEIN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "veins"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Truth, filled her chest, allowed confidence to flow through her veins,"
+    },
+    {
+      "concept_id": "concept_ran",
+      "lemma": "ran",
+      "definition": "General contextual sense for 'ran'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "RAN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "ran"
+      ],
+      "frequency": 1,
+      "sample_sentence": "She walked down, and the kids who played football, they ran away."
+    },
+    {
+      "concept_id": "concept_herself",
+      "lemma": "herself",
+      "definition": "General contextual sense for 'herself'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HERSELF",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "herself"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So she asked herself, can I be more beautiful in any way?"
+    },
+    {
+      "concept_id": "concept_unbutton",
+      "lemma": "unbutton",
+      "definition": "General contextual sense for 'unbutton'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "UNBUTTON",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "unbuttoned"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So she unbuttoned her cloak and she let it go and there she was entirely naked."
+    },
+    {
+      "concept_id": "concept_scatter",
+      "lemma": "scatter",
+      "definition": "General contextual sense for 'scatter'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SCATTER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "scattered"
+      ],
+      "frequency": 1,
+      "sample_sentence": "This time, everyone scattered."
+    }
+  ]
+}

@@ -1,0 +1,829 @@
+{
+  "metadata": {
+    "batch_id": "batch_008",
+    "phase": "H27",
+    "concept_range": "351 to 400",
+    "batch_concept_count": 50,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_guy",
+      "lemma": "guy",
+      "definition": "General contextual sense for 'guy'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "guy",
+      "isl_gloss": "GUY",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "guy"
+      ],
+      "frequency": 9,
+      "sample_sentence": "such grace and he shakes my hand and feels like I'm knocked out. You know, like this guy is the"
+    },
+    {
+      "concept_id": "concept_emotion",
+      "lemma": "emotion",
+      "definition": "General contextual sense for 'emotion'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "emotion",
+      "isl_gloss": "EMOTION",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "emotion",
+        "emotions"
+      ],
+      "frequency": 9,
+      "sample_sentence": "where I've chosen how to feel where my emotions are picked by me and not by"
+    },
+    {
+      "concept_id": "concept_boom",
+      "lemma": "boom",
+      "definition": "General contextual sense for 'boom'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "boom",
+      "isl_gloss": "BOOM",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "boom"
+      ],
+      "frequency": 9,
+      "sample_sentence": "It is time for history lesson 1902, boom."
+    },
+    {
+      "concept_id": "concept_wise",
+      "lemma": "wise",
+      "definition": "General contextual sense for 'wise'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "wise",
+      "isl_gloss": "WISE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "wise"
+      ],
+      "frequency": 9,
+      "sample_sentence": "two meters wide, shoulder-wise. His name is Arthur Brumer, he sounds like a bear,"
+    },
+    {
+      "concept_id": "concept_friday",
+      "lemma": "friday",
+      "definition": "General contextual sense for 'friday'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "friday",
+      "isl_gloss": "FRIDAY",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "friday"
+      ],
+      "frequency": 9,
+      "sample_sentence": "what's happening on Friday?"
+    },
+    {
+      "concept_id": "concept_clear",
+      "lemma": "clear",
+      "definition": "General contextual sense for 'clear'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "clear",
+      "isl_gloss": "CLEAR",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "clear"
+      ],
+      "frequency": 8,
+      "sample_sentence": "and bring you a few steps closer to being more confident, more clear,"
+    },
+    {
+      "concept_id": "concept_communication",
+      "lemma": "communication",
+      "definition": "General contextual sense for 'communication'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "communication",
+      "isl_gloss": "COMMUNICATION",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "communication"
+      ],
+      "frequency": 8,
+      "sample_sentence": "from the 110-step chart of excellence communication."
+    },
+    {
+      "concept_id": "concept_hour",
+      "lemma": "hour",
+      "definition": "General contextual sense for 'hour'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "hour",
+      "isl_gloss": "HOUR",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "hour",
+        "hours"
+      ],
+      "frequency": 8,
+      "sample_sentence": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+    },
+    {
+      "concept_id": "concept_pen",
+      "lemma": "pen",
+      "definition": "General contextual sense for 'pen'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "pen",
+      "isl_gloss": "PEN",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "pen",
+        "pens"
+      ],
+      "frequency": 8,
+      "sample_sentence": "So make sure you have a pen and a paper,"
+    },
+    {
+      "concept_id": "concept_place",
+      "lemma": "place",
+      "definition": "General contextual sense for 'place'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "place",
+      "isl_gloss": "PLACE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "place",
+        "places"
+      ],
+      "frequency": 8,
+      "sample_sentence": "There's pictures all over the place."
+    },
+    {
+      "concept_id": "concept_tip",
+      "lemma": "tip",
+      "definition": "General contextual sense for 'tip'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "tip",
+      "isl_gloss": "TIP",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "tip",
+        "tips"
+      ],
+      "frequency": 8,
+      "sample_sentence": "on because there's going to be hordes of awesome tips and techniques."
+    },
+    {
+      "concept_id": "concept_present",
+      "lemma": "present",
+      "definition": "General contextual sense for 'present'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "present",
+      "isl_gloss": "PRESENT",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "present",
+        "presented",
+        "presenting"
+      ],
+      "frequency": 8,
+      "sample_sentence": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+    },
+    {
+      "concept_id": "concept_chat",
+      "lemma": "chat",
+      "definition": "General contextual sense for 'chat'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "chat",
+      "isl_gloss": "CHAT",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "chat"
+      ],
+      "frequency": 8,
+      "sample_sentence": "Give it a quick think and write it in the chat."
+    },
+    {
+      "concept_id": "concept_log",
+      "lemma": "log",
+      "definition": "General contextual sense for 'log'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "LOG",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "log",
+        "logs"
+      ],
+      "frequency": 8,
+      "sample_sentence": "And the fire, you can imagine this being logs thrown on a fire,"
+    },
+    {
+      "concept_id": "concept_stronger",
+      "lemma": "stronger",
+      "definition": "General contextual sense for 'stronger'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "STRONGER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "stronger"
+      ],
+      "frequency": 8,
+      "sample_sentence": "fire and it becomes stronger and stronger. This is your skill. This is your skill in becoming"
+    },
+    {
+      "concept_id": "concept_difference",
+      "lemma": "difference",
+      "definition": "General contextual sense for 'difference'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DIFFERENCE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "difference"
+      ],
+      "frequency": 8,
+      "sample_sentence": "And that makes a huge difference in your life."
+    },
+    {
+      "concept_id": "concept_study",
+      "lemma": "study",
+      "definition": "General contextual sense for 'study'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "study",
+      "isl_gloss": "STUDY",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "study",
+        "studying"
+      ],
+      "frequency": 8,
+      "sample_sentence": "This first study was done on math grades before and after the intervention."
+    },
+    {
+      "concept_id": "concept_feedback",
+      "lemma": "feedback",
+      "definition": "General contextual sense for 'feedback'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "feedback",
+      "isl_gloss": "FEEDBACK",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "feedback",
+        "feedbacks"
+      ],
+      "frequency": 8,
+      "sample_sentence": "when it came to critical feedbacks, if any one of you were to get critical"
+    },
+    {
+      "concept_id": "concept_instead",
+      "lemma": "instead",
+      "definition": "General contextual sense for 'instead'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "instead",
+      "isl_gloss": "INSTEAD",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "instead"
+      ],
+      "frequency": 8,
+      "sample_sentence": "I know, I can't do that. That is you having a fixed mindset. But if you instead say,"
+    },
+    {
+      "concept_id": "concept_able",
+      "lemma": "able",
+      "definition": "General contextual sense for 'able'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "able",
+      "isl_gloss": "ABLE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "able"
+      ],
+      "frequency": 8,
+      "sample_sentence": "mentioned growth mindset. We won't be able to go through all of these, but when we"
+    },
+    {
+      "concept_id": "concept_ago",
+      "lemma": "ago",
+      "definition": "General contextual sense for 'ago'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "ago",
+      "isl_gloss": "AGO",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "ago"
+      ],
+      "frequency": 8,
+      "sample_sentence": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "concept_id": "concept_quite",
+      "lemma": "quite",
+      "definition": "General contextual sense for 'quite'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "quite",
+      "isl_gloss": "QUITE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "quite"
+      ],
+      "frequency": 8,
+      "sample_sentence": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "concept_id": "concept_problem",
+      "lemma": "problem",
+      "definition": "General contextual sense for 'problem'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "problem",
+      "isl_gloss": "PROBLEM",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "problem"
+      ],
+      "frequency": 8,
+      "sample_sentence": "And he said, well, I've got no problem presenting to you, one person."
+    },
+    {
+      "concept_id": "concept_reason",
+      "lemma": "reason",
+      "definition": "General contextual sense for 'reason'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "reason",
+      "isl_gloss": "REASON",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "reason",
+        "reasons"
+      ],
+      "frequency": 8,
+      "sample_sentence": "So we backtracked the reason to this and that was he was giving, he was given criticism"
+    },
+    {
+      "concept_id": "concept_part",
+      "lemma": "part",
+      "definition": "General contextual sense for 'part'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "part",
+      "isl_gloss": "PART",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "part"
+      ],
+      "frequency": 8,
+      "sample_sentence": "introduce you to the concept of the Angels and the Devil's Cocktail, which is part of the book."
+    },
+    {
+      "concept_id": "concept_oxytocin",
+      "lemma": "oxytocin",
+      "definition": "General contextual sense for 'oxytocin'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OXYTOCIN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "oxytocin"
+      ],
+      "frequency": 8,
+      "sample_sentence": "testosterone and maybe some oxytocin in there as well. I'll ask you to drink that."
+    },
+    {
+      "concept_id": "concept_almost",
+      "lemma": "almost",
+      "definition": "General contextual sense for 'almost'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ALMOST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "almost"
+      ],
+      "frequency": 8,
+      "sample_sentence": "You will suddenly become more confident, bold, daring, driven, magnetic almost,"
+    },
+    {
+      "concept_id": "concept_decision",
+      "lemma": "decision",
+      "definition": "General contextual sense for 'decision'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "decision",
+      "isl_gloss": "DECISION",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "decision",
+        "decisions"
+      ],
+      "frequency": 8,
+      "sample_sentence": "your decision making would become worse."
+    },
+    {
+      "concept_id": "concept_momentum",
+      "lemma": "momentum",
+      "definition": "General contextual sense for 'momentum'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "momentum",
+      "isl_gloss": "MOMENTUM",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "momentum"
+      ],
+      "frequency": 8,
+      "sample_sentence": "Focus, motivation, direction, and momentum."
+    },
+    {
+      "concept_id": "concept_big",
+      "lemma": "big",
+      "definition": "General contextual sense for 'big'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "big",
+      "isl_gloss": "BIG",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "big"
+      ],
+      "frequency": 8,
+      "sample_sentence": "It's a big town."
+    },
+    {
+      "concept_id": "concept_bit",
+      "lemma": "bit",
+      "definition": "General contextual sense for 'bit'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "bit",
+      "isl_gloss": "BIT",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "bit"
+      ],
+      "frequency": 8,
+      "sample_sentence": "They all look a bit edgy these flowers."
+    },
+    {
+      "concept_id": "concept_keep",
+      "lemma": "keep",
+      "definition": "General contextual sense for 'keep'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "keep",
+      "isl_gloss": "KEEP",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "keep",
+        "keeps"
+      ],
+      "frequency": 8,
+      "sample_sentence": "answers, right? This may happen. If you keep repeating those stories, you are"
+    },
+    {
+      "concept_id": "concept_outside",
+      "lemma": "outside",
+      "definition": "General contextual sense for 'outside'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "outside",
+      "isl_gloss": "OUTSIDE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "outside"
+      ],
+      "frequency": 8,
+      "sample_sentence": "I was outside of the pub, and when he scored, just prior to him scoring, there were, I don't know,"
+    },
+    {
+      "concept_id": "concept_school",
+      "lemma": "school",
+      "definition": "General contextual sense for 'school'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "school",
+      "isl_gloss": "SCHOOL",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "school",
+        "schools"
+      ],
+      "frequency": 8,
+      "sample_sentence": "You're sitting in the school corridor, you're looking at your phone, you've got Snapchat"
+    },
+    {
+      "concept_id": "concept_remove",
+      "lemma": "remove",
+      "definition": "General contextual sense for 'remove'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "remove",
+      "isl_gloss": "REMOVE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "remove"
+      ],
+      "frequency": 8,
+      "sample_sentence": "It is something that you can in no way or form remove."
+    },
+    {
+      "concept_id": "concept_anticipation",
+      "lemma": "anticipation",
+      "definition": "General contextual sense for 'anticipation'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "anticipation",
+      "isl_gloss": "ANTICIPATION",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "anticipation"
+      ],
+      "frequency": 8,
+      "sample_sentence": "write this sentence down is the anticipation of reward. That's what dopamine is, the anticipation"
+    },
+    {
+      "concept_id": "concept_parent",
+      "lemma": "parent",
+      "definition": "General contextual sense for 'parent'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "parent",
+      "isl_gloss": "PARENT",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "parent",
+        "parents"
+      ],
+      "frequency": 8,
+      "sample_sentence": "You know, are you a parent? Are you a parent? You know that this is a brilliant way of"
+    },
+    {
+      "concept_id": "concept_sell",
+      "lemma": "sell",
+      "definition": "General contextual sense for 'sell'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "sell",
+      "isl_gloss": "SELL",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "sell"
+      ],
+      "frequency": 8,
+      "sample_sentence": "This I love this one. Sell your slide. Okay so it goes like this."
+    },
+    {
+      "concept_id": "concept_bas",
+      "lemma": "bas",
+      "definition": "General contextual sense for 'bas'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BAS",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "based"
+      ],
+      "frequency": 8,
+      "sample_sentence": "indeed. Maybe not the most beautiful one I've seen, but it does summarize, you know, based on how"
+    },
+    {
+      "concept_id": "concept_pause",
+      "lemma": "pause",
+      "definition": "General contextual sense for 'pause'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "pause",
+      "isl_gloss": "PAUSE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "pause",
+        "pauses"
+      ],
+      "frequency": 8,
+      "sample_sentence": "So I look up, I pause, I do an audible inhale, I do a self-laughter."
+    },
+    {
+      "concept_id": "concept_lar",
+      "lemma": "lar",
+      "definition": "General contextual sense for 'lar'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "LAR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "lars"
+      ],
+      "frequency": 8,
+      "sample_sentence": "His name was Lars."
+    },
+    {
+      "concept_id": "concept_br",
+      "lemma": "br",
+      "definition": "General contextual sense for 'br'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "bring"
+      ],
+      "frequency": 7,
+      "sample_sentence": "and bring you a few steps closer to being more confident, more clear,"
+    },
+    {
+      "concept_id": "concept_step",
+      "lemma": "step",
+      "definition": "General contextual sense for 'step'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "step",
+      "isl_gloss": "STEP",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "step",
+        "steps"
+      ],
+      "frequency": 7,
+      "sample_sentence": "and bring you a few steps closer to being more confident, more clear,"
+    },
+    {
+      "concept_id": "concept_tedx",
+      "lemma": "tedx",
+      "definition": "General contextual sense for 'tedx'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TEDX",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tedx"
+      ],
+      "frequency": 7,
+      "sample_sentence": "and I'm best known for my TEDx talks,"
+    },
+    {
+      "concept_id": "concept_subject",
+      "lemma": "subject",
+      "definition": "General contextual sense for 'subject'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "subject",
+      "isl_gloss": "SUBJECT",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "subject"
+      ],
+      "frequency": 7,
+      "sample_sentence": "on this particular subject."
+    },
+    {
+      "concept_id": "concept_dur",
+      "lemma": "dur",
+      "definition": "General contextual sense for 'dur'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DUR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "during"
+      ],
+      "frequency": 7,
+      "sample_sentence": "I've gathered during my 25 year career as a public speaker"
+    },
+    {
+      "concept_id": "concept_25",
+      "lemma": "25",
+      "definition": "General contextual sense for '25'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "25",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "25"
+      ],
+      "frequency": 7,
+      "sample_sentence": "I've gathered during my 25 year career as a public speaker"
+    },
+    {
+      "concept_id": "concept_sweden",
+      "lemma": "sweden",
+      "definition": "General contextual sense for 'sweden'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "sweden",
+      "isl_gloss": "SWEDEN",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "sweden"
+      ],
+      "frequency": 7,
+      "sample_sentence": "to the lovely country of Sweden."
+    },
+    {
+      "concept_id": "concept_nervou",
+      "lemma": "nervou",
+      "definition": "General contextual sense for 'nervou'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "NERVOU",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "nervous"
+      ],
+      "frequency": 7,
+      "sample_sentence": "which can literally transform you into being a nervous wreck, delivering a bad presentation,"
+    },
+    {
+      "concept_id": "concept_session",
+      "lemma": "session",
+      "definition": "General contextual sense for 'session'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "session",
+      "isl_gloss": "SESSION",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "session",
+        "sessions"
+      ],
+      "frequency": 7,
+      "sample_sentence": "to being a confident person, delivering a great presentation in these three sessions."
+    }
+  ]
+}

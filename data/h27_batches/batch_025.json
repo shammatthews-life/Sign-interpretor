@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "batch_id": "batch_025",
+    "phase": "H27",
+    "concept_range": "1201 to 1250",
+    "batch_concept_count": 50,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_choice",
+      "lemma": "choice",
+      "definition": "General contextual sense for 'choice'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CHOICE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "choice"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Now this is a choice that you make in life. When you're asked to do a talk, when you're"
+    },
+    {
+      "concept_id": "concept_father",
+      "lemma": "father",
+      "definition": "General contextual sense for 'father'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FATHER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "father"
+      ],
+      "frequency": 1,
+      "sample_sentence": "see my mother and my father, they could not, I can't do that. Oh, it's the worst thing"
+    },
+    {
+      "concept_id": "concept_evolve",
+      "lemma": "evolve",
+      "definition": "General contextual sense for 'evolve'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EVOLVE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "evolve"
+      ],
+      "frequency": 1,
+      "sample_sentence": "brain, and that will help you evolve as a public speaker. Other things that impact your"
+    },
+    {
+      "concept_id": "concept_rule",
+      "lemma": "rule",
+      "definition": "General contextual sense for 'rule'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "rule",
+      "isl_gloss": "RULE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "rules"
+      ],
+      "frequency": 1,
+      "sample_sentence": "your fire is limiting beliefs, values and rules, focus questions, and as I"
+    },
+    {
+      "concept_id": "concept_critically",
+      "lemma": "critically",
+      "definition": "General contextual sense for 'critically'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CRITICALLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "critically"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "concept_id": "concept_hr",
+      "lemma": "hr",
+      "definition": "General contextual sense for 'hr'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "hr"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "concept_id": "concept_manager",
+      "lemma": "manager",
+      "definition": "General contextual sense for 'manager'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MANAGER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "manager"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "concept_id": "concept_president",
+      "lemma": "president",
+      "definition": "General contextual sense for 'president'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PRESIDENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "president"
+      ],
+      "frequency": 1,
+      "sample_sentence": "a president of the company who is panicking because he can't do public speaking."
+    },
+    {
+      "concept_id": "concept_panick",
+      "lemma": "panick",
+      "definition": "General contextual sense for 'panick'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PANICK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "panicking"
+      ],
+      "frequency": 1,
+      "sample_sentence": "a president of the company who is panicking because he can't do public speaking."
+    },
+    {
+      "concept_id": "concept_sublime",
+      "lemma": "sublime",
+      "definition": "General contextual sense for 'sublime'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SUBLIME",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "sublime"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And it was sublime."
+    },
+    {
+      "concept_id": "concept_stellar",
+      "lemma": "stellar",
+      "definition": "General contextual sense for 'stellar'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "STELLAR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "stellar"
+      ],
+      "frequency": 1,
+      "sample_sentence": "That presentation was so stellar."
+    },
+    {
+      "concept_id": "concept_soon",
+      "lemma": "soon",
+      "definition": "General contextual sense for 'soon'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SOON",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "soon"
+      ],
+      "frequency": 1,
+      "sample_sentence": "But as soon as there's 10 or more suddenly, I can't."
+    },
+    {
+      "concept_id": "concept_backtrack",
+      "lemma": "backtrack",
+      "definition": "General contextual sense for 'backtrack'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BACKTRACK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "backtracked"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So we backtracked the reason to this and that was he was giving, he was given criticism"
+    },
+    {
+      "concept_id": "concept_criticism",
+      "lemma": "criticism",
+      "definition": "General contextual sense for 'criticism'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CRITICISM",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "criticism"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So we backtracked the reason to this and that was he was giving, he was given criticism"
+    },
+    {
+      "concept_id": "concept_recent",
+      "lemma": "recent",
+      "definition": "General contextual sense for 'recent'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "RECENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "recent"
+      ],
+      "frequency": 1,
+      "sample_sentence": "So he showed me a video of his most recent presentation and it absolutely sucked."
+    },
+    {
+      "concept_id": "concept_introduce",
+      "lemma": "introduce",
+      "definition": "General contextual sense for 'introduce'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "INTRODUCE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "introduce"
+      ],
+      "frequency": 1,
+      "sample_sentence": "introduce you to the concept of the Angels and the Devil's Cocktail, which is part of the book."
+    },
+    {
+      "concept_id": "concept_offer",
+      "lemma": "offer",
+      "definition": "General contextual sense for 'offer'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OFFER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "offer"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And an Angels Cocktail can go like this. If I were to offer you an Angels Cocktail, well,"
+    },
+    {
+      "concept_id": "concept_prop",
+      "lemma": "prop",
+      "definition": "General contextual sense for 'prop'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PROP",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "prop"
+      ],
+      "frequency": 1,
+      "sample_sentence": "let's have a prop for that. And it goes like this. Nice levels of dopamine, nice levels of"
+    },
+    {
+      "concept_id": "concept_drink",
+      "lemma": "drink",
+      "definition": "General contextual sense for 'drink'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "drink",
+      "isl_gloss": "DRINK",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "drink"
+      ],
+      "frequency": 1,
+      "sample_sentence": "testosterone and maybe some oxytocin in there as well. I'll ask you to drink that."
+    },
+    {
+      "concept_id": "concept_bold",
+      "lemma": "bold",
+      "definition": "General contextual sense for 'bold'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BOLD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "bold"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You will suddenly become more confident, bold, daring, driven, magnetic almost,"
+    },
+    {
+      "concept_id": "concept_driven",
+      "lemma": "driven",
+      "definition": "General contextual sense for 'driven'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DRIVEN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "driven"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You will suddenly become more confident, bold, daring, driven, magnetic almost,"
+    },
+    {
+      "concept_id": "concept_magnetic",
+      "lemma": "magnetic",
+      "definition": "General contextual sense for 'magnetic'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MAGNETIC",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "magnetic"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You will suddenly become more confident, bold, daring, driven, magnetic almost,"
+    },
+    {
+      "concept_id": "concept_cortisol",
+      "lemma": "cortisol",
+      "definition": "General contextual sense for 'cortisol'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CORTISOL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "cortisol"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and present. But if I were to give you a devil's cocktail with high levels of cortisol, adrenaline,"
+    },
+    {
+      "concept_id": "concept_adrenaline",
+      "lemma": "adrenaline",
+      "definition": "General contextual sense for 'adrenaline'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ADRENALINE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "adrenaline"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and present. But if I were to give you a devil's cocktail with high levels of cortisol, adrenaline,"
+    },
+    {
+      "concept_id": "concept_tunnel",
+      "lemma": "tunnel",
+      "definition": "General contextual sense for 'tunnel'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TUNNEL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tunnel"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You'd become tunnel-visioned instead of holistic."
+    },
+    {
+      "concept_id": "concept_holistic",
+      "lemma": "holistic",
+      "definition": "General contextual sense for 'holistic'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HOLISTIC",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "holistic"
+      ],
+      "frequency": 1,
+      "sample_sentence": "You'd become tunnel-visioned instead of holistic."
+    },
+    {
+      "concept_id": "concept_force",
+      "lemma": "force",
+      "definition": "General contextual sense for 'force'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FORCE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "force"
+      ],
+      "frequency": 1,
+      "sample_sentence": "Dopamine is kind of the life force for many of us."
+    },
+    {
+      "concept_id": "concept_snack",
+      "lemma": "snack",
+      "definition": "General contextual sense for 'snack'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SNACK",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "snacks"
+      ],
+      "frequency": 1,
+      "sample_sentence": "or eating some snacks or looking at Netflix."
+    },
+    {
+      "concept_id": "concept_netflix",
+      "lemma": "netflix",
+      "definition": "General contextual sense for 'netflix'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "NETFLIX",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "netflix"
+      ],
+      "frequency": 1,
+      "sample_sentence": "or eating some snacks or looking at Netflix."
+    },
+    {
+      "concept_id": "concept_laugh",
+      "lemma": "laugh",
+      "definition": "General contextual sense for 'laugh'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "laugh",
+      "isl_gloss": "LAUGH",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "laugh"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I know exactly who to call when I want to laugh and create endorphins."
+    },
+    {
+      "concept_id": "concept_endorphin",
+      "lemma": "endorphin",
+      "definition": "General contextual sense for 'endorphin'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ENDORPHIN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "endorphins"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I know exactly who to call when I want to laugh and create endorphins."
+    },
+    {
+      "concept_id": "concept_uplift",
+      "lemma": "uplift",
+      "definition": "General contextual sense for 'uplift'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "UPLIFT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "uplifted"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I know exactly who to call when I want to be uplifted, which is serotonin."
+    },
+    {
+      "concept_id": "concept_serotonin",
+      "lemma": "serotonin",
+      "definition": "General contextual sense for 'serotonin'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SEROTONIN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "serotonin"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I know exactly who to call when I want to be uplifted, which is serotonin."
+    },
+    {
+      "concept_id": "concept_accordingly",
+      "lemma": "accordingly",
+      "definition": "General contextual sense for 'accordingly'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "ACCORDINGLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "accordingly"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I think you have categorized your friends accordingly."
+    },
+    {
+      "concept_id": "concept_se",
+      "lemma": "se",
+      "definition": "General contextual sense for 'se'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "se"
+      ],
+      "frequency": 1,
+      "sample_sentence": "But you just haven't done it according to the substance per se."
+    },
+    {
+      "concept_id": "concept_talent",
+      "lemma": "talent",
+      "definition": "General contextual sense for 'talent'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TALENT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "talent"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's a video of a woman, her name is Susan Boyle, and she was a British Got Talent."
+    },
+    {
+      "concept_id": "concept_audition",
+      "lemma": "audition",
+      "definition": "General contextual sense for 'audition'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "AUDITION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "audition"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's an amazing audition."
+    },
+    {
+      "concept_id": "concept_groundbreakingly",
+      "lemma": "groundbreakingly",
+      "definition": "General contextual sense for 'groundbreakingly'",
+      "part_of_speech": "ADVERB",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GROUNDBREAKINGLY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "groundbreakingly"
+      ],
+      "frequency": 1,
+      "sample_sentence": "she is absolutely groundbreakingly brilliant at singing."
+    },
+    {
+      "concept_id": "concept_greater",
+      "lemma": "greater",
+      "definition": "General contextual sense for 'greater'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GREATER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "greater"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and then greater and then amazing"
+    },
+    {
+      "concept_id": "concept_painful",
+      "lemma": "painful",
+      "definition": "General contextual sense for 'painful'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PAINFUL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "painful"
+      ],
+      "frequency": 1,
+      "sample_sentence": "and then suddenly it's gonna be painful"
+    },
+    {
+      "concept_id": "concept_blythe",
+      "lemma": "blythe",
+      "definition": "General contextual sense for 'blythe'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BLYTHE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "blythe"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I am from Blythe, wouldn't you, Bathgate, West Lothian?"
+    },
+    {
+      "concept_id": "concept_bathgate",
+      "lemma": "bathgate",
+      "definition": "General contextual sense for 'bathgate'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BATHGATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "bathgate"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I am from Blythe, wouldn't you, Bathgate, West Lothian?"
+    },
+    {
+      "concept_id": "concept_west",
+      "lemma": "west",
+      "definition": "General contextual sense for 'west'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WEST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "west"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I am from Blythe, wouldn't you, Bathgate, West Lothian?"
+    },
+    {
+      "concept_id": "concept_lothian",
+      "lemma": "lothian",
+      "definition": "General contextual sense for 'lothian'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "LOTHIAN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "lothian"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I am from Blythe, wouldn't you, Bathgate, West Lothian?"
+    },
+    {
+      "concept_id": "concept_town",
+      "lemma": "town",
+      "definition": "General contextual sense for 'town'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TOWN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "town"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's a big town."
+    },
+    {
+      "concept_id": "concept_collection",
+      "lemma": "collection",
+      "definition": "General contextual sense for 'collection'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "COLLECTION",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "collection"
+      ],
+      "frequency": 1,
+      "sample_sentence": "It's a sort of collection of villages."
+    },
+    {
+      "concept_id": "concept_professional",
+      "lemma": "professional",
+      "definition": "General contextual sense for 'professional'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "PROFESSIONAL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "professional"
+      ],
+      "frequency": 1,
+      "sample_sentence": "I'm trying to be a professional singer."
+    },
+    {
+      "concept_id": "concept_hasn't",
+      "lemma": "hasn't",
+      "definition": "General contextual sense for 'hasn't'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HASN'T",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "hasn't"
+      ],
+      "frequency": 1,
+      "sample_sentence": "And why hasn't it worked out so far, Susan?"
+    },
+    {
+      "concept_id": "concept_successful",
+      "lemma": "successful",
+      "definition": "General contextual sense for 'successful'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "SUCCESSFUL",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "successful"
+      ],
+      "frequency": 1,
+      "sample_sentence": "OK, and who would you like to be as successful as?"
+    },
+    {
+      "concept_id": "concept_tonight",
+      "lemma": "tonight",
+      "definition": "General contextual sense for 'tonight'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TONIGHT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "tonight"
+      ],
+      "frequency": 1,
+      "sample_sentence": "What are you going to sing tonight?"
+    }
+  ]
+}

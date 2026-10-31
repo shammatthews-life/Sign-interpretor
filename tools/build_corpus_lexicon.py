@@ -206,7 +206,9 @@ PLAYABLE_SIGNS = {
     # Phase H25 New Signs (30 authentic ISL signs reaching 550 total signs)
     "fix", "realize", "notice", "limit", "substance", "cover", "risk", "safe", "guide", "memory", "join", "explain", "complex", "nature", "weather", "plant", "animal", "mountain", "river", "ocean", "bridge", "market", "cost", "rich", "weak", "heavy", "shadow", "mirror", "window", "wall",
     # Phase H26 New Signs
-    "protect", "prepare", "control", "silence", "tomorrow", "yesterday", "pitch", "tone", "volume", "judge", "complain", "excuse", "negative"
+    "protect", "prepare", "control", "silence", "tomorrow", "yesterday", "pitch", "tone", "volume", "judge", "complain", "excuse", "negative",
+    # Phase H27 New Signs (566 total signs)
+    "gossip", "honesty", "integrity", "warmup"
 }
 
 # Structural ISL Function Words (Grammar Omissions)

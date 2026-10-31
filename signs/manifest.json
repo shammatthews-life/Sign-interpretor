@@ -3,7 +3,7 @@
   "schema_version": "2.0.0",
   "generated_at": "2026-10-31T03:30:00Z",
   "phase": "H24",
-  "total_signs": 562,
+  "total_signs": 566,
   "total_playable_signs": 550,
   "signs": [
     {
@@ -3458,6 +3458,17 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "gossip",
+      "display_name": "Gossip",
+      "gloss": "GOSSIP",
+      "file": "signs/gossip.json",
+      "category": "Social",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1150
+    },
+    {
       "sign_id": "grab",
       "display_name": "Grab",
       "gloss": "GRAB",
@@ -3866,6 +3877,17 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "honesty",
+      "display_name": "Honesty",
+      "gloss": "HONESTY",
+      "file": "signs/honesty.json",
+      "category": "Concept",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1200
+    },
+    {
       "sign_id": "hope",
       "display_name": "Hope",
       "gloss": "HOPE",
@@ -4153,6 +4175,17 @@
       "file_name": "instead.json",
       "involved_bones_count": 6,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "integrity",
+      "display_name": "Integrity",
+      "gloss": "INTEGRITY",
+      "file": "signs/integrity.json",
+      "category": "Concept",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "right",
+      "duration_ms": 1150
     },
     {
       "sign_id": "intention",
@@ -9036,6 +9069,17 @@
       "file_name": "want.json",
       "involved_bones_count": 9,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "warmup",
+      "display_name": "Warmup",
+      "gloss": "WARMUP",
+      "file": "signs/warmup.json",
+      "category": "Action",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1250
     },
     {
       "sign_id": "watch",

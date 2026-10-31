@@ -1,0 +1,841 @@
+{
+  "metadata": {
+    "batch_id": "batch_003",
+    "phase": "H27",
+    "concept_range": "101 to 150",
+    "batch_concept_count": 50,
+    "total_inventory_size": 1916
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_create",
+      "lemma": "create",
+      "definition": "General contextual sense for 'create'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "CREATE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "create",
+        "creates"
+      ],
+      "frequency": 37,
+      "sample_sentence": "I create visual worlds that are so beyond everyone's normal life"
+    },
+    {
+      "concept_id": "concept_would",
+      "lemma": "would",
+      "definition": "General contextual sense for 'would'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WOULD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "would"
+      ],
+      "frequency": 37,
+      "sample_sentence": "and how much would that truly help you"
+    },
+    {
+      "concept_id": "concept_down",
+      "lemma": "down",
+      "definition": "General contextual sense for 'down'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DOWN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "down"
+      ],
+      "frequency": 36,
+      "sample_sentence": "But it comes down to the work that you put into it."
+    },
+    {
+      "concept_id": "concept_become",
+      "lemma": "become",
+      "definition": "General contextual sense for 'become'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BECOME",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "became",
+        "become",
+        "becomes",
+        "becoming"
+      ],
+      "frequency": 36,
+      "sample_sentence": "You harness your mindset, you become great in your content, and you're in your delivery."
+    },
+    {
+      "concept_id": "concept_god",
+      "lemma": "god",
+      "definition": "General contextual sense for 'god'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GOD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "god"
+      ],
+      "frequency": 36,
+      "sample_sentence": "asked to do public speaking, and you say, oh my god, now I can't do that, you should"
+    },
+    {
+      "concept_id": "concept_testosterone",
+      "lemma": "testosterone",
+      "definition": "General contextual sense for 'testosterone'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "TESTOSTERONE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "testosterone"
+      ],
+      "frequency": 36,
+      "sample_sentence": "But the wind that blows is rather two things which is dopamine and testosterone."
+    },
+    {
+      "concept_id": "concept_five",
+      "lemma": "five",
+      "definition": "General contextual sense for 'five'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "FIVE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "five"
+      ],
+      "frequency": 36,
+      "sample_sentence": "Make sure you have five or six songs."
+    },
+    {
+      "concept_id": "concept_three",
+      "lemma": "three",
+      "definition": "General contextual sense for 'three'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "THREE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "three"
+      ],
+      "frequency": 35,
+      "sample_sentence": "What you're about to watch is a special compilation of a three-day public speaking challenge"
+    },
+    {
+      "concept_id": "concept_walk",
+      "lemma": "walk",
+      "definition": "General contextual sense for 'walk'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "walk",
+      "isl_gloss": "WALK",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "walk",
+        "walked",
+        "walking",
+        "walks"
+      ],
+      "frequency": 35,
+      "sample_sentence": "lean in and you'll walk away with practical tools"
+    },
+    {
+      "concept_id": "concept_second",
+      "lemma": "second",
+      "definition": "General contextual sense for 'second'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "second",
+      "isl_gloss": "SECOND",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "second",
+        "seconds"
+      ],
+      "frequency": 35,
+      "sample_sentence": "continuous improvement in their ability to understand maths. In this second study"
+    },
+    {
+      "concept_id": "concept_every",
+      "lemma": "every",
+      "definition": "General contextual sense for 'every'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EVERY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "every"
+      ],
+      "frequency": 35,
+      "sample_sentence": "because you do it every single day."
+    },
+    {
+      "concept_id": "concept_their",
+      "lemma": "their",
+      "definition": "General contextual sense for 'their'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "THEIR",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "their"
+      ],
+      "frequency": 34,
+      "sample_sentence": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+    },
+    {
+      "concept_id": "concept_day",
+      "lemma": "day",
+      "definition": "General contextual sense for 'day'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DAY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "day",
+        "days"
+      ],
+      "frequency": 33,
+      "sample_sentence": "What you're about to watch is a special compilation of a three-day public speaking challenge"
+    },
+    {
+      "concept_id": "concept_most",
+      "lemma": "most",
+      "definition": "General contextual sense for 'most'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MOST",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "most"
+      ],
+      "frequency": 33,
+      "sample_sentence": "and we'll finish off with the most impactful delivery skills"
+    },
+    {
+      "concept_id": "concept_ask",
+      "lemma": "ask",
+      "definition": "General contextual sense for 'ask'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "ask",
+      "isl_gloss": "ASK",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "ask",
+        "asked",
+        "asking",
+        "asks"
+      ],
+      "frequency": 33,
+      "sample_sentence": "become confident because confidence is per skill in this matter. But if someone asks you,"
+    },
+    {
+      "concept_id": "concept_question",
+      "lemma": "question",
+      "definition": "General contextual sense for 'question'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "question",
+      "isl_gloss": "QUESTION",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "question",
+        "questions"
+      ],
+      "frequency": 33,
+      "sample_sentence": "good at playing golf and that you are naturally confident in it. So the first question I want"
+    },
+    {
+      "concept_id": "concept_right_right_direction",
+      "lemma": "right",
+      "definition": "Toward the right-hand side",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "RIGHT",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "right"
+      ],
+      "frequency": 32,
+      "sample_sentence": "which we delivered live right here in our studio."
+    },
+    {
+      "concept_id": "concept_use",
+      "lemma": "use",
+      "definition": "General contextual sense for 'use'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "USE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "use",
+        "uses"
+      ],
+      "frequency": 32,
+      "sample_sentence": "So it's going to be loads of stuff which you can actually use in your everyday life, in"
+    },
+    {
+      "concept_id": "concept_us",
+      "lemma": "us",
+      "definition": "General contextual sense for 'us'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "US",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "us",
+        "using"
+      ],
+      "frequency": 32,
+      "sample_sentence": "Now in my world, there are three pillars that make us great presenters and great public speakers."
+    },
+    {
+      "concept_id": "concept_even",
+      "lemma": "even",
+      "definition": "General contextual sense for 'even'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EVEN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "even",
+        "evening"
+      ],
+      "frequency": 31,
+      "sample_sentence": "Thank you for being here this evening."
+    },
+    {
+      "concept_id": "concept_yes",
+      "lemma": "yes",
+      "definition": "General contextual sense for 'yes'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "yes",
+      "isl_gloss": "YES",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "yes"
+      ],
+      "frequency": 31,
+      "sample_sentence": "challenge. Yes, you've probably seen that. Yes. That means that I will be challenging you."
+    },
+    {
+      "concept_id": "concept_audience",
+      "lemma": "audience",
+      "definition": "General contextual sense for 'audience'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "audience",
+      "isl_gloss": "AUDIENCE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "audience"
+      ],
+      "frequency": 30,
+      "sample_sentence": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience"
+    },
+    {
+      "concept_id": "concept_were",
+      "lemma": "were",
+      "definition": "General contextual sense for 'were'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route D: Grammatical or spatial construction",
+      "sign_id": null,
+      "isl_gloss": "WERE",
+      "evidence_source": "ISL Spatial Grammar Rules",
+      "review_status": "VERIFIED_ISL_EVIDENCE",
+      "surface_forms": [
+        "were"
+      ],
+      "frequency": 30,
+      "sample_sentence": "So, for instance, if you were to be not very confident in basketball, but you start playing"
+    },
+    {
+      "concept_id": "concept_thing",
+      "lemma": "thing",
+      "definition": "General contextual sense for 'thing'",
+      "part_of_speech": "VERB_PARTICIPLE",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "THING",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "things"
+      ],
+      "frequency": 30,
+      "sample_sentence": "It's two massively different things."
+    },
+    {
+      "concept_id": "concept_level",
+      "lemma": "level",
+      "definition": "General contextual sense for 'level'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "level",
+      "isl_gloss": "LEVEL",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "level",
+        "levels"
+      ],
+      "frequency": 30,
+      "sample_sentence": "you have to level up in that skill, right?"
+    },
+    {
+      "concept_id": "concept_learn",
+      "lemma": "learn",
+      "definition": "General contextual sense for 'learn'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "learn",
+      "isl_gloss": "LEARN",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "learn",
+        "learned",
+        "learning"
+      ],
+      "frequency": 30,
+      "sample_sentence": "and stronger and stronger. The more logs you throw onto it, the more you learn and the"
+    },
+    {
+      "concept_id": "concept_did",
+      "lemma": "did",
+      "definition": "General contextual sense for 'did'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "DID",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "did",
+        "didn't"
+      ],
+      "frequency": 30,
+      "sample_sentence": "believed do they understand maths? The kids who said that they did had a"
+    },
+    {
+      "concept_id": "concept_okay",
+      "lemma": "okay",
+      "definition": "General contextual sense for 'okay'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "OKAY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "okay"
+      ],
+      "frequency": 30,
+      "sample_sentence": "Okay, music, coaching, observing, yoga."
+    },
+    {
+      "concept_id": "concept_confident",
+      "lemma": "confident",
+      "definition": "General contextual sense for 'confident'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "confident",
+      "isl_gloss": "CONFIDENT",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "confident"
+      ],
+      "frequency": 29,
+      "sample_sentence": "and bring you a few steps closer to being more confident, more clear,"
+    },
+    {
+      "concept_id": "concept_beautiful",
+      "lemma": "beautiful",
+      "definition": "General contextual sense for 'beautiful'",
+      "part_of_speech": "ADJECTIVE",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "beautiful",
+      "isl_gloss": "BEAUTIFUL",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "beautiful"
+      ],
+      "frequency": 29,
+      "sample_sentence": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience"
+    },
+    {
+      "concept_id": "concept_stage",
+      "lemma": "stage",
+      "definition": "General contextual sense for 'stage'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "stage",
+      "isl_gloss": "STAGE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "stage"
+      ],
+      "frequency": 29,
+      "sample_sentence": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+    },
+    {
+      "concept_id": "concept_very",
+      "lemma": "very",
+      "definition": "General contextual sense for 'very'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "VERY",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "very"
+      ],
+      "frequency": 29,
+      "sample_sentence": "So, for instance, if you were to be not very confident in basketball, but you start playing"
+    },
+    {
+      "concept_id": "concept_where",
+      "lemma": "where",
+      "definition": "General contextual sense for 'where'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "WHERE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "where"
+      ],
+      "frequency": 29,
+      "sample_sentence": "I'm going to show you two studies, one where people have a growth mindset, where they say"
+    },
+    {
+      "concept_id": "concept_attention",
+      "lemma": "attention",
+      "definition": "General contextual sense for 'attention'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "attention",
+      "isl_gloss": "ATTENTION",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "attention"
+      ],
+      "frequency": 28,
+      "sample_sentence": "We'll move into the science of capturing attention,"
+    },
+    {
+      "concept_id": "concept_make",
+      "lemma": "make",
+      "definition": "General contextual sense for 'make'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "MAKE",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "made",
+        "make",
+        "makes",
+        "making"
+      ],
+      "frequency": 28,
+      "sample_sentence": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+    },
+    {
+      "concept_id": "concept_yourself",
+      "lemma": "yourself",
+      "definition": "General contextual sense for 'yourself'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "YOURSELF",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "yourself"
+      ],
+      "frequency": 28,
+      "sample_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+    },
+    {
+      "concept_id": "concept_gonna",
+      "lemma": "gonna",
+      "definition": "General contextual sense for 'gonna'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "GONNA",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "gonna"
+      ],
+      "frequency": 28,
+      "sample_sentence": "I'm gonna do this, oh, I've got a to-do list"
+    },
+    {
+      "concept_id": "concept_build",
+      "lemma": "build",
+      "definition": "General contextual sense for 'build'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "build",
+      "isl_gloss": "BUILD",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "build",
+        "building",
+        "builds",
+        "built"
+      ],
+      "frequency": 28,
+      "sample_sentence": "because dopamine builds on dopamine."
+    },
+    {
+      "concept_id": "concept_voice",
+      "lemma": "voice",
+      "definition": "General contextual sense for 'voice'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "voice",
+      "isl_gloss": "VOICE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "voice"
+      ],
+      "frequency": 28,
+      "sample_sentence": "I'm going to give you now and I want you to specifically listen to my voice now and when"
+    },
+    {
+      "concept_id": "concept_year",
+      "lemma": "year",
+      "definition": "General contextual sense for 'year'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "year",
+      "isl_gloss": "YEAR",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "year",
+        "years"
+      ],
+      "frequency": 27,
+      "sample_sentence": "I've gathered during my 25 year career as a public speaker"
+    },
+    {
+      "concept_id": "concept_love",
+      "lemma": "love",
+      "definition": "General contextual sense for 'love'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "love",
+      "isl_gloss": "LOVE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "love",
+        "loves"
+      ],
+      "frequency": 27,
+      "sample_sentence": "challenge, yes? All right, that's amazing. I love it. Love it."
+    },
+    {
+      "concept_id": "concept_his",
+      "lemma": "his",
+      "definition": "General contextual sense for 'his'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HIS",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "his"
+      ],
+      "frequency": 27,
+      "sample_sentence": "And suddenly his brain had created this limiting belief that whenever he stood in a larger"
+    },
+    {
+      "concept_id": "concept_pace",
+      "lemma": "pace",
+      "definition": "General contextual sense for 'pace'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "pace",
+      "isl_gloss": "PACE",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "pace"
+      ],
+      "frequency": 27,
+      "sample_sentence": "So you have pace, you have volume,"
+    },
+    {
+      "concept_id": "concept_grab",
+      "lemma": "grab",
+      "definition": "General contextual sense for 'grab'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "grab",
+      "isl_gloss": "GRAB",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "grab",
+        "grabs"
+      ],
+      "frequency": 27,
+      "sample_sentence": "how can anyone learn how to grab"
+    },
+    {
+      "concept_id": "concept_been",
+      "lemma": "been",
+      "definition": "General contextual sense for 'been'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "BEEN",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "been"
+      ],
+      "frequency": 26,
+      "sample_sentence": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+    },
+    {
+      "concept_id": "concept_yeah",
+      "lemma": "yeah",
+      "definition": "General contextual sense for 'yeah'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "YEAH",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "yeah"
+      ],
+      "frequency": 26,
+      "sample_sentence": "Yeah, we'll wing it right now."
+    },
+    {
+      "concept_id": "concept_head",
+      "lemma": "head",
+      "definition": "General contextual sense for 'head'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "head",
+      "isl_gloss": "HEAD",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "head",
+        "heading"
+      ],
+      "frequency": 26,
+      "sample_sentence": "So just get that into your head that your confidence is per skill"
+    },
+    {
+      "concept_id": "concept_had",
+      "lemma": "had",
+      "definition": "General contextual sense for 'had'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "HAD",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "had"
+      ],
+      "frequency": 26,
+      "sample_sentence": "believed do they understand maths? The kids who said that they did had a"
+    },
+    {
+      "concept_id": "concept_first",
+      "lemma": "first",
+      "definition": "General contextual sense for 'first'",
+      "part_of_speech": "NOUN_VERB_GENERAL",
+      "handling_route": "Route A: Established direct ISL sign",
+      "sign_id": "first",
+      "isl_gloss": "FIRST",
+      "evidence_source": "ISLRTC Standard / signs/manifest.json",
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "surface_forms": [
+        "first"
+      ],
+      "frequency": 25,
+      "sample_sentence": "that it's time to begin. Our first session today is about confidence on command. And"
+    },
+    {
+      "concept_id": "concept_ever",
+      "lemma": "ever",
+      "definition": "General contextual sense for 'ever'",
+      "part_of_speech": "NOUN",
+      "handling_route": "Route F: Research required or honest fallback",
+      "sign_id": null,
+      "isl_gloss": "EVER",
+      "evidence_source": "Transcript Fallback Pool",
+      "review_status": "NO_RELIABLE_MAPPING_FOUND",
+      "surface_forms": [
+        "ever"
+      ],
+      "frequency": 25,
+      "sample_sentence": "Has anyone of you ever been in a situation similar to this?"
+    }
+  ]
+}

@@ -565,7 +565,12 @@ export class EnglishToISLTranslator extends TranslationBackend {
       judge: { playable: true },
       complain: { playable: true },
       excuse: { playable: true },
-      negative: { playable: true }
+      negative: { playable: true },
+      // Phase H27 Playable Signs (reaching 566 total signs)
+      gossip: { playable: true },
+      honesty: { playable: true },
+      integrity: { playable: true },
+      warmup: { playable: true }
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],

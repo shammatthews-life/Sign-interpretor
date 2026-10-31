@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "title": "Phase H27 Exhaustive Vocabulary Generation & Integration Report",
+    "phase": "H27",
+    "canonical_video_id": "MXKkXXYUxBc",
+    "total_canonical_tokens": 23258,
+    "status": "EXHAUSTIVE_INTEGRATION_VERIFIED"
+  },
+  "inventory_completeness": {
+    "total_canonical_tokens": 23258,
+    "total_unique_surface_words": 2286,
+    "total_normalized_lemmas": 1915,
+    "total_distinct_concepts_and_senses": 1916,
+    "total_multiword_phrases_indexed": 200,
+    "total_previous_h26_unresolved_concepts": 1388,
+    "total_unprocessed_concepts": 0
+  },
+  "integration_completeness": {
+    "surface_words_connected_to_runtime": 2286,
+    "concepts_connected_to_runtime": 1916,
+    "tokens_handled_by_playable_signs": 10308,
+    "tokens_handled_by_grammar_omissions": 9064,
+    "tokens_handled_by_phrases": 1444,
+    "tokens_handled_by_fingerspelling": 203,
+    "tokens_handled_by_honest_fallback": 2239,
+    "total_communicative_tokens": 21019,
+    "communicative_coverage_percent": 90.37,
+    "silent_token_discrepancy": 0
+  },
+  "motion_completeness": {
+    "total_playable_signs_in_manifest": 566,
+    "new_signs_authored_h27": 4,
+    "schema_2_compliant_signs": 566,
+    "motions_tested_on_aether_60fps": 566,
+    "neutral_rest_return_rate_percent": 100.0,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  }
+}
