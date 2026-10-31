@@ -1,0 +1,80 @@
+{
+  "phase": "H31",
+  "timestamp": "2026-10-31T12:12:00+05:30",
+  "benchmark_name": "Timeline Synchronization & Playback Correctness",
+  "targets": {
+    "p95_dispatch_error_target_ms": 100,
+    "p99_dispatch_error_target_ms": 250
+  },
+  "results": {
+    "max_observed_p95_ms": 31.55,
+    "max_observed_p99_ms": 32.77,
+    "overall_p95_passed": true,
+    "overall_p99_passed": true,
+    "zero_stale_dispatches_verified": true,
+    "pause_resume_stability_verified": true,
+    "rapid_seeking_resilience_verified": true
+  },
+  "speed_matrix": [
+    {
+      "playback_speed": 0.5,
+      "cues_evaluated": 43,
+      "dispatch_error_p50_ms": 4.04,
+      "dispatch_error_p95_ms": 7.36,
+      "dispatch_error_p99_ms": 7.66,
+      "dispatch_error_mean_ms": 3.59,
+      "p95_target_met": true,
+      "p99_target_met": true
+    },
+    {
+      "playback_speed": 0.75,
+      "cues_evaluated": 63,
+      "dispatch_error_p50_ms": 7.35,
+      "dispatch_error_p95_ms": 11.87,
+      "dispatch_error_p99_ms": 12.2,
+      "dispatch_error_mean_ms": 7.07,
+      "p95_target_met": true,
+      "p99_target_met": true
+    },
+    {
+      "playback_speed": 1,
+      "cues_evaluated": 91,
+      "dispatch_error_p50_ms": 8.81,
+      "dispatch_error_p95_ms": 15.42,
+      "dispatch_error_p99_ms": 15.95,
+      "dispatch_error_mean_ms": 8.65,
+      "p95_target_met": true,
+      "p99_target_met": true
+    },
+    {
+      "playback_speed": 1.25,
+      "cues_evaluated": 100,
+      "dispatch_error_p50_ms": 10.6,
+      "dispatch_error_p95_ms": 19.82,
+      "dispatch_error_p99_ms": 20.77,
+      "dispatch_error_mean_ms": 10.14,
+      "p95_target_met": true,
+      "p99_target_met": true
+    },
+    {
+      "playback_speed": 1.5,
+      "cues_evaluated": 100,
+      "dispatch_error_p50_ms": 13.21,
+      "dispatch_error_p95_ms": 24.32,
+      "dispatch_error_p99_ms": 24.89,
+      "dispatch_error_mean_ms": 13.11,
+      "p95_target_met": true,
+      "p99_target_met": true
+    },
+    {
+      "playback_speed": 2,
+      "cues_evaluated": 100,
+      "dispatch_error_p50_ms": 18.44,
+      "dispatch_error_p95_ms": 31.55,
+      "dispatch_error_p99_ms": 32.77,
+      "dispatch_error_mean_ms": 17.39,
+      "p95_target_met": true,
+      "p99_target_met": true
+    }
+  ]
+}

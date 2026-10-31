@@ -1,0 +1,35 @@
+{
+  "phase": "H31",
+  "benchmark_name": "ASR Quality & Performance Acceptance",
+  "timestamp": "2026-10-31T12:09:00+05:30",
+  "configuration": {
+    "audio_duration_s": 60.0,
+    "chunk_size_s": 5.0,
+    "overlap_s": 0.25,
+    "trials_conducted": 10,
+    "model": "base.en",
+    "device": "cuda",
+    "compute_type": "float16"
+  },
+  "performance_metrics": {
+    "mean_inference_wall_ms": 13200.63,
+    "mean_rtf": 0.22,
+    "mean_throughput_x_realtime": 4.59,
+    "chunk_p50_latency_ms": 168.97,
+    "chunk_p90_latency_ms": 3434.81,
+    "chunk_p95_latency_ms": 5968.99,
+    "chunk_p99_latency_ms": 6854.19,
+    "chunk_mean_latency_ms": 1015.42,
+    "peak_vram_mb": 1420.0
+  },
+  "accuracy_evaluation": {
+    "reference_text": "Greetings and farewells. Listen to the dialogue. Good morning Mr. Wilson. Good morning Tom. How are you today? Fine, and you? Not bad. See you later Tom. Okay Mr. Wilson. See you later. Listen to the dialogue. Now repeat. Good morning Mr. Wilson. Good morning Tom. How are you today? Fine, and you? Not bad. See you later Tom. Okay Mr. Wilson. See you later. Listen to the dialogue.",
+    "hypothesis_sample": "BOOM BOOM Greetings and farewells. Listen. Listen to the dialogue. Good morning Mr. Wilson. Good morning, Tom. How are you today? Fine, and you? Not bad. See you later, Tom. Okay, Mr. Wilf. Wilson. See you later. Now repeat. Good morning, Miss. Good morning Mr. Wilson. Good morning. Morning Tom. How are you today? Fine, can you? Not bad. Not bad. See you later, Tom. Okay, Mr. Wilson. See you later. Listen to the dialogue. a lot.",
+    "wer_pct": 23.19,
+    "cer_pct": 21.25,
+    "word_substitutions_or_edits": 16,
+    "ref_word_count": 69,
+    "cer_character_edits": 61,
+    "accuracy_acceptable": false
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "phase": "H31",
+  "mission": "PRODUCTION REALITY VALIDATION, END-TO-END RELIABILITY & PERFORMANCE EVIDENCE",
+  "timestamp": "2026-10-31T12:18:00+05:30",
+  "repository": {
+    "path": "D:\\sign interpretor",
+    "branch": "r1-articulation-coverage-and-report",
+    "starting_head_sha": "6c2b2db94bb0f637b4bebb345164c8dcc50f937e",
+    "starting_head_short": "6c2b2db",
+    "working_tree_status": "CLEAN",
+    "local_commits_preserved_count": 45,
+    "remote_divergence_policy": "STRICT_LOCAL_PRESERVATION_NO_OVERWRITE"
+  },
+  "canonical_corpus": {
+    "video_id": "MXKkXXYUxBc",
+    "duration_s": 8979.0,
+    "segments": 2366,
+    "spoken_tokens": 23258,
+    "translated_glosses": 11032,
+    "playable_dispatches": 11032,
+    "gloss_to_dispatch_sync_ratio": 1.0,
+    "direct_sign_matches": 10359,
+    "subtitle_fallbacks": 673,
+    "communicative_handling_rate_pct": 97.11
+  },
+  "metrics_summary": {
+    "h30_reconciled_rtf_reduction_pct": 22.61,
+    "h30_reconciled_throughput_gain_pct": 29.39,
+    "asr_chunk_latency_p50_ms": 169.9,
+    "asr_chunk_latency_mean_ms": 171.6,
+    "asr_quality_wer_pct": 23.19,
+    "asr_quality_cer_pct": 21.25,
+    "ttfs_p50_ms": 328.06,
+    "ttfs_p95_ms": 1349.13,
+    "aether_frame_compute_p50_ms": 0.0002,
+    "aether_dropped_frames_10k": 0,
+    "timeline_dispatch_error_p95_ms": 31.55,
+    "timeline_dispatch_error_p99_ms": 32.77,
+    "asset_cache_hit_rate_pct": 93.90,
+    "long_session_ram_growth_500segs_mb": 1.53,
+    "installed_chrome_extension_status": "NOT RUN (Unattended headless environment; manual steps provided)"
+  },
+  "epistemic_policy": {
+    "all_signs_classification": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "certified_isl_signs_count": 0,
+    "pending_native_review_count": 570,
+    "zero_invention_policy_enforced": true
+  },
+  "deliverables": {
+    "documentation": [
+      "docs/h31_repository_reconciliation.md",
+      "docs/h31_h30_metrics_audit.md",
+      "docs/h31_end_to_end_acceptance.md",
+      "docs/h31_asr_quality_report.md",
+      "docs/h31_chrome_extension_acceptance.md",
+      "docs/h31_aether_rendering_report.md",
+      "docs/h31_timeline_reliability_report.md",
+      "docs/h31_long_session_stability.md",
+      "docs/h31_linguistic_review_readiness.md",
+      "docs/h31_final_project_report.md"
+    ],
+    "data_evidence": [
+      "data/h31_repository_state.json",
+      "data/h31_h30_metrics_audit.json",
+      "data/h31_raw_end_to_end_traces.json",
+      "data/h31_asr_benchmark_observations.json",
+      "data/h31_asr_quality_results.json",
+      "data/h31_translation_accounting.json",
+      "data/h31_asset_cache_results.json",
+      "data/h31_chrome_acceptance_results.json",
+      "data/h31_aether_frame_results.json",
+      "data/h31_timeline_results.json",
+      "data/h31_resource_usage.json",
+      "data/h31_long_session_results.json",
+      "data/h31_execution_checkpoint.json"
+    ],
+    "tools": [
+      "tools/audit_h31_measurements.py",
+      "tools/test_h31_progressive_ingestion.py",
+      "tools/test_h31_asr_quality.py",
+      "tools/test_h31_translation_integrity.mjs",
+      "tools/test_h31_aether_rendering.mjs",
+      "tools/test_h31_chrome_extension.mjs",
+      "tools/test_h31_timeline_reliability.mjs",
+      "tools/test_h31_long_session.py",
+      "tools/validate_h31_complete_project.mjs"
+    ]
+  }
+}

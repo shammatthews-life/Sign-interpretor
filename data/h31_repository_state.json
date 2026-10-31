@@ -1,0 +1,76 @@
+{
+  "phase": "H31",
+  "timestamp": "2026-10-31T12:05:00+05:30",
+  "git": {
+    "head_sha": "6c2b2db94bb0f637b4bebb345164c8dcc50f937e",
+    "head_short": "6c2b2db",
+    "branch": "r1-articulation-coverage-and-report",
+    "remote_url": "https://github.com/shammatthews-life/Sign-interpretor.git",
+    "remote_reported_commit": "2608ba357c70e030d4ad9063d988fb09a22d150d",
+    "status": "clean",
+    "local_commit_ahead_count": 45,
+    "local_commits_preserved": true
+  },
+  "h30_deliverables": {
+    "docs/h30_final_project_report.md": {
+      "exists": true,
+      "size_bytes": 8253
+    },
+    "docs/h30_performance_methodology.md": {
+      "exists": true,
+      "size_bytes": 1984
+    },
+    "docs/h30_full_video_acceptance.md": {
+      "exists": true,
+      "size_bytes": 2634
+    },
+    "docs/h30_execution_timeline.md": {
+      "exists": true,
+      "size_bytes": 6199
+    },
+    "docs/h30_pipeline_optimization_report.md": {
+      "exists": true,
+      "size_bytes": 3772
+    },
+    "data/h30_raw_benchmark_observations.json": {
+      "exists": true,
+      "size_bytes": 11286
+    },
+    "data/h30_pipeline_waterfall.json": {
+      "exists": true,
+      "size_bytes": 1360
+    },
+    "data/h30_incremental_asr_results.json": {
+      "exists": true,
+      "size_bytes": 4976
+    },
+    "data/h30_aether_render_results.json": {
+      "exists": true,
+      "size_bytes": 608
+    },
+    "data/h30_execution_checkpoint.json": {
+      "exists": true,
+      "size_bytes": 2308
+    },
+    "tools/benchmark_h30_asr.py": {
+      "exists": false,
+      "size_bytes": 0
+    },
+    "tools/benchmark_h30_end_to_end.py": {
+      "exists": true,
+      "size_bytes": 10462
+    },
+    "tools/benchmark_h30_gpu.py": {
+      "exists": true,
+      "size_bytes": 8014
+    },
+    "tools/benchmark_h30_asset_preload.mjs": {
+      "exists": true,
+      "size_bytes": 5845
+    },
+    "tools/validate_h30_complete_project.mjs": {
+      "exists": true,
+      "size_bytes": 5008
+    }
+  }
+}

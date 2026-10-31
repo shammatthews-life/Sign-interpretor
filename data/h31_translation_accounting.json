@@ -1,0 +1,883 @@
+{
+  "phase": "H31",
+  "timestamp": "2026-10-31T12:10:00+05:30",
+  "audit_name": "Canonical Video Translation & Sign Dispatch Accounting",
+  "canonical_video": {
+    "id": "MXKkXXYUxBc",
+    "duration_s": 8979,
+    "segments_count": 2366,
+    "raw_whitespace_token_count": 23201,
+    "canonical_token_occurrences": 23258,
+    "contraction_compound_delta": 57
+  },
+  "disposition_breakdown": {
+    "canonical_tokens_accounted": 23258,
+    "total_glosses_generated": 11032,
+    "total_playable_dispatches": 11032,
+    "gloss_to_dispatch_ratio": "1.0000",
+    "direct_sign_matches": 10359,
+    "grammar_reorderings_and_inflections": 673,
+    "fallback_subtitle_occurrences": 673,
+    "communicative_handling_tokens": 22585,
+    "communicative_handling_rate_pct": 97.11
+  },
+  "library_epistemic_status": {
+    "total_sign_assets": 570,
+    "schema_version": "2.0.0",
+    "epistemic_classification": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "linguistically_certified_count": 0,
+    "deaf_native_review_pending_count": 570,
+    "zero_invention_policy_enforced": true
+  },
+  "sample_reviewer_export_count": 30,
+  "sample_reviewer_export": [
+    {
+      "segment_index": 1,
+      "start_s": 2.45,
+      "end_s": 8.45,
+      "source_english": "This is public speaking for beginners, and the goal of this video is simple.",
+      "spoken_word_count": 14,
+      "translated_glosses": [
+        "SAY",
+        "PEOPLE",
+        "GOAL",
+        "VIDEO",
+        "SIMPLY"
+      ],
+      "playable_sign_dispatches": [
+        "say",
+        "people",
+        "goal",
+        "video",
+        "simply"
+      ],
+      "fallback_terms": [
+        "THIS",
+        "FOR",
+        "BEGINNERS",
+        "AND",
+        "THIS"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 2,
+      "start_s": 8.45,
+      "end_s": 14.45,
+      "source_english": "It's to help you overcome being uncertain, anxious, afraid,",
+      "spoken_word_count": 9,
+      "translated_glosses": [
+        "HELP",
+        "YOU",
+        "AFRAID"
+      ],
+      "playable_sign_dispatches": [
+        "help",
+        "you",
+        "afraid"
+      ],
+      "fallback_terms": [
+        "IT'S",
+        "OVERCOME",
+        "BEING",
+        "UNCERTAIN",
+        "ANXIOUS"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 3,
+      "start_s": 14.45,
+      "end_s": 21.45,
+      "source_english": "and bring you a few steps closer to being more confident, more clear,",
+      "spoken_word_count": 13,
+      "translated_glosses": [
+        "BRING",
+        "YOU",
+        "FEW",
+        "STEP",
+        "CLOSE",
+        "MORE",
+        "CONFIDENT",
+        "MORE",
+        "CLEAR"
+      ],
+      "playable_sign_dispatches": [
+        "bring",
+        "you",
+        "few",
+        "step",
+        "close",
+        "more",
+        "confident",
+        "more",
+        "clear"
+      ],
+      "fallback_terms": [
+        "AND",
+        "BEING"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 4,
+      "start_s": 21.45,
+      "end_s": 24.45,
+      "source_english": "and a much more captivating speaker.",
+      "spoken_word_count": 6,
+      "translated_glosses": [
+        "MORE",
+        "SPEAKER"
+      ],
+      "playable_sign_dispatches": [
+        "more",
+        "speaker"
+      ],
+      "fallback_terms": [
+        "AND",
+        "MUCH",
+        "CAPTIVATING"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 5,
+      "start_s": 24.45,
+      "end_s": 30.45,
+      "source_english": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+      "spoken_word_count": 15,
+      "translated_glosses": [
+        "WHAT",
+        "YOU",
+        "WATCH",
+        "SPECIAL",
+        "SAY",
+        "PEOPLE",
+        "CHALLENGE"
+      ],
+      "playable_sign_dispatches": [
+        "what",
+        "you",
+        "watch",
+        "special",
+        "say",
+        "people",
+        "challenge"
+      ],
+      "fallback_terms": [
+        "ABOUT",
+        "COMPILATION",
+        "THREE",
+        "DAY"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 6,
+      "start_s": 30.45,
+      "end_s": 34.25,
+      "source_english": "which we delivered live right here in our studio.",
+      "spoken_word_count": 9,
+      "translated_glosses": [
+        "WE",
+        "GIVE",
+        "LIVE",
+        "WE"
+      ],
+      "playable_sign_dispatches": [
+        "we",
+        "give",
+        "live",
+        "we"
+      ],
+      "fallback_terms": [
+        "WHICH",
+        "RIGHT",
+        "HERE",
+        "STUDIO"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 7,
+      "start_s": 34.25,
+      "end_s": 37.33,
+      "source_english": "We'll begin with mindset and confidence.",
+      "spoken_word_count": 6,
+      "translated_glosses": [
+        "WE",
+        "GO",
+        "MINDSET",
+        "CONFIDENT"
+      ],
+      "playable_sign_dispatches": [
+        "we",
+        "go",
+        "mindset",
+        "confident"
+      ],
+      "fallback_terms": [
+        "WITH",
+        "AND"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 8,
+      "start_s": 37.33,
+      "end_s": 40.21,
+      "source_english": "We'll move into the science of capturing attention,",
+      "spoken_word_count": 8,
+      "translated_glosses": [
+        "WE",
+        "MOVE",
+        "SCIENCE",
+        "ATTENTION"
+      ],
+      "playable_sign_dispatches": [
+        "we",
+        "move",
+        "science",
+        "attention"
+      ],
+      "fallback_terms": [
+        "INTO",
+        "CAPTURING"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 9,
+      "start_s": 40.21,
+      "end_s": 43.77,
+      "source_english": "and we'll finish off with the most impactful delivery skills",
+      "spoken_word_count": 10,
+      "translated_glosses": [
+        "WE",
+        "FINISH",
+        "OFF",
+        "SKILL"
+      ],
+      "playable_sign_dispatches": [
+        "we",
+        "finish",
+        "off",
+        "skill"
+      ],
+      "fallback_terms": [
+        "AND",
+        "WITH",
+        "MOST",
+        "IMPACTFUL",
+        "DELIVERY"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 10,
+      "start_s": 43.77,
+      "end_s": 47.81,
+      "source_english": "from the 110-step chart of excellence communication.",
+      "spoken_word_count": 7,
+      "translated_glosses": [
+        "STEP",
+        "CHART",
+        "COMMUNICATION"
+      ],
+      "playable_sign_dispatches": [
+        "step",
+        "chart",
+        "communication"
+      ],
+      "fallback_terms": [
+        "FROM",
+        "110",
+        "EXCELLENCE"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 11,
+      "start_s": 49.37,
+      "end_s": 52.85,
+      "source_english": "Hey, if we haven't met before, my name is David JP Phillips,",
+      "spoken_word_count": 12,
+      "translated_glosses": [
+        "HEY",
+        "WE",
+        "HAVE",
+        "NOT",
+        "MEET",
+        "MY",
+        "NAME"
+      ],
+      "playable_sign_dispatches": [
+        "hey",
+        "we",
+        "have",
+        "not",
+        "meet",
+        "my",
+        "name"
+      ],
+      "fallback_terms": [
+        "IF",
+        "BEFORE",
+        "DAVID",
+        "JP",
+        "PHILLIPS"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 12,
+      "start_s": 52.85,
+      "end_s": 54.73,
+      "source_english": "and I'm best known for my TEDx talks,",
+      "spoken_word_count": 8,
+      "translated_glosses": [
+        "I",
+        "KNOW",
+        "MY",
+        "SAY"
+      ],
+      "playable_sign_dispatches": [
+        "i",
+        "know",
+        "my",
+        "say"
+      ],
+      "fallback_terms": [
+        "AND",
+        "BEST",
+        "FOR",
+        "TEDX"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 13,
+      "start_s": 54.73,
+      "end_s": 57.01,
+      "source_english": "which are among the most viewed in the world",
+      "spoken_word_count": 9,
+      "translated_glosses": [
+        "WORLD"
+      ],
+      "playable_sign_dispatches": [
+        "world"
+      ],
+      "fallback_terms": [
+        "WHICH",
+        "AMONG",
+        "MOST",
+        "VIEWED"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 14,
+      "start_s": 57.01,
+      "end_s": 58.53,
+      "source_english": "on this particular subject.",
+      "spoken_word_count": 4,
+      "translated_glosses": [
+        "SUBJECT"
+      ],
+      "playable_sign_dispatches": [
+        "subject"
+      ],
+      "fallback_terms": [
+        "ON",
+        "THIS",
+        "PARTICULAR"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 15,
+      "start_s": 58.53,
+      "end_s": 65.01,
+      "source_english": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+      "spoken_word_count": 16,
+      "translated_glosses": [
+        "YOU",
+        "SEE",
+        "I",
+        "HAVE",
+        "STUDY",
+        "SPEAKER",
+        "WHAT",
+        "SOMEBODY",
+        "GREAT",
+        "SPEAKER"
+      ],
+      "playable_sign_dispatches": [
+        "you",
+        "see",
+        "i",
+        "have",
+        "study",
+        "speaker",
+        "what",
+        "somebody",
+        "great",
+        "speaker"
+      ],
+      "fallback_terms": [
+        "OVER",
+        "5",
+        "000",
+        "PINPOINT",
+        "EXACTLY",
+        "MAKES"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 16,
+      "start_s": 65.01,
+      "end_s": 69.49,
+      "source_english": "And this chart is one of the results of that particular endeavour.",
+      "spoken_word_count": 12,
+      "translated_glosses": [
+        "CHART",
+        "ONE",
+        "RESULT"
+      ],
+      "playable_sign_dispatches": [
+        "chart",
+        "one",
+        "result"
+      ],
+      "fallback_terms": [
+        "AND",
+        "THIS",
+        "THAT",
+        "PARTICULAR",
+        "ENDEAVOUR"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 17,
+      "start_s": 69.49,
+      "end_s": 74.29,
+      "source_english": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+      "spoken_word_count": 15,
+      "translated_glosses": [
+        "THEY",
+        "HAVE",
+        "PUT",
+        "PRACTICE",
+        "I",
+        "HAVE",
+        "COACHING",
+        "LIKE"
+      ],
+      "playable_sign_dispatches": [
+        "they",
+        "have",
+        "put",
+        "practice",
+        "i",
+        "have",
+        "coaching",
+        "like"
+      ],
+      "fallback_terms": [
+        "OH",
+        "AND",
+        "GLOBAL",
+        "GIANTS",
+        "ORACLE",
+        "GOOGLE"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 18,
+      "start_s": 74.29,
+      "end_s": 80.45,
+      "source_english": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
+      "spoken_word_count": 15,
+      "translated_glosses": [
+        "STORY",
+        "PRESENTATION",
+        "SKILL",
+        "BEAUTIFUL",
+        "SCIENCE",
+        "HOLD",
+        "AUDIENCE"
+      ],
+      "playable_sign_dispatches": [
+        "story",
+        "presentation",
+        "skill",
+        "beautiful",
+        "science",
+        "hold",
+        "audience"
+      ],
+      "fallback_terms": [
+        "AND",
+        "DISNEY",
+        "AND",
+        "AND",
+        "AND"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 19,
+      "start_s": 80.45,
+      "end_s": 86.61,
+      "source_english": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
+      "spoken_word_count": 16,
+      "translated_glosses": [
+        "ATTENTION",
+        "NOW",
+        "NEXT",
+        "TWO",
+        "HOUR",
+        "MINUTE",
+        "YOU",
+        "TOOLS",
+        "I",
+        "HAVE"
+      ],
+      "playable_sign_dispatches": [
+        "attention",
+        "now",
+        "next",
+        "two",
+        "hour",
+        "minute",
+        "you",
+        "tools",
+        "i",
+        "have"
+      ],
+      "fallback_terms": [
+        "OVER",
+        "AND",
+        "30",
+        "DISCOVER",
+        "ESSENTIAL"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 20,
+      "start_s": 86.61,
+      "end_s": 89.53,
+      "source_english": "I've gathered during my 25 year career as a public speaker",
+      "spoken_word_count": 11,
+      "translated_glosses": [
+        "I",
+        "HAVE",
+        "DURING",
+        "MY",
+        "YEAR",
+        "CAREER",
+        "PUBLIC",
+        "SPEAKER"
+      ],
+      "playable_sign_dispatches": [
+        "i",
+        "have",
+        "during",
+        "my",
+        "year",
+        "career",
+        "public",
+        "speaker"
+      ],
+      "fallback_terms": [
+        "GATHERED",
+        "25",
+        "AS"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 21,
+      "start_s": 89.53,
+      "end_s": 91.69,
+      "source_english": "and public speaking coach.",
+      "spoken_word_count": 4,
+      "translated_glosses": [
+        "SAY",
+        "PEOPLE",
+        "COACHING"
+      ],
+      "playable_sign_dispatches": [
+        "say",
+        "people",
+        "coaching"
+      ],
+      "fallback_terms": [
+        "AND"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 22,
+      "start_s": 91.69,
+      "end_s": 95.33,
+      "source_english": "So make sure you have a pen and a paper,",
+      "spoken_word_count": 10,
+      "translated_glosses": [
+        "SURE",
+        "YOU",
+        "HAVE",
+        "PEN",
+        "PAPER"
+      ],
+      "playable_sign_dispatches": [
+        "sure",
+        "you",
+        "have",
+        "pen",
+        "paper"
+      ],
+      "fallback_terms": [
+        "SO",
+        "MAKE",
+        "AND"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 23,
+      "start_s": 95.33,
+      "end_s": 98.93,
+      "source_english": "lean in and you'll walk away with practical tools",
+      "spoken_word_count": 9,
+      "translated_glosses": [
+        "YOU",
+        "WALK",
+        "MOVE",
+        "PRACTICAL",
+        "TOOLS"
+      ],
+      "playable_sign_dispatches": [
+        "you",
+        "walk",
+        "move",
+        "practical",
+        "tools"
+      ],
+      "fallback_terms": [
+        "LEAN",
+        "AND",
+        "WITH"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 24,
+      "start_s": 98.93,
+      "end_s": 101.81,
+      "source_english": "you can apply tomorrow.",
+      "spoken_word_count": 4,
+      "translated_glosses": [
+        "YOU",
+        "TOMORROW"
+      ],
+      "playable_sign_dispatches": [
+        "you",
+        "tomorrow"
+      ],
+      "fallback_terms": [
+        "APPLY"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 25,
+      "start_s": 101.81,
+      "end_s": 107.03,
+      "source_english": "Have fun.",
+      "spoken_word_count": 2,
+      "translated_glosses": [
+        "HAVE",
+        "FUN"
+      ],
+      "playable_sign_dispatches": [
+        "have",
+        "fun"
+      ],
+      "fallback_terms": [],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 101,
+      "start_s": 429.28,
+      "end_s": 433.8,
+      "source_english": "basketball and you start getting better and better, your confidence grows.",
+      "spoken_word_count": 11,
+      "translated_glosses": [
+        "BASKETBALL",
+        "YOU",
+        "BETTER",
+        "BETTER",
+        "YOUR",
+        "CONFIDENT",
+        "GROW"
+      ],
+      "playable_sign_dispatches": [
+        "basketball",
+        "you",
+        "better",
+        "better",
+        "your",
+        "confident",
+        "grow"
+      ],
+      "fallback_terms": [
+        "AND",
+        "START",
+        "GETTING",
+        "AND"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 501,
+      "start_s": 1914.15,
+      "end_s": 1916.81,
+      "source_english": "I'd like you to draw a flower with your non-dominant hand.",
+      "spoken_word_count": 11,
+      "translated_glosses": [
+        "I",
+        "LIKE",
+        "YOU",
+        "DRAW",
+        "FLOWER",
+        "YOUR",
+        "DOMINANT",
+        "HAND"
+      ],
+      "playable_sign_dispatches": [
+        "i",
+        "like",
+        "you",
+        "draw",
+        "flower",
+        "your",
+        "dominant",
+        "hand"
+      ],
+      "fallback_terms": [
+        "WITH",
+        "NON"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 1001,
+      "start_s": 3887.31,
+      "end_s": 3892.63,
+      "source_english": "Two out of eight usually can answer the question why the audience should listen, which is just",
+      "spoken_word_count": 17,
+      "translated_glosses": [
+        "TWO",
+        "ONE",
+        "USUALLY",
+        "ANSWER",
+        "QUESTION",
+        "AUDIENCE",
+        "SHOULD"
+      ],
+      "playable_sign_dispatches": [
+        "two",
+        "one",
+        "usually",
+        "answer",
+        "question",
+        "audience",
+        "should"
+      ],
+      "fallback_terms": [
+        "OUT",
+        "WHY",
+        "LISTEN",
+        "WHICH",
+        "JUST"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 1501,
+      "start_s": 5847.96,
+      "end_s": 5849.12,
+      "source_english": "the Middle East.",
+      "spoken_word_count": 3,
+      "translated_glosses": [
+        "MIDDLE"
+      ],
+      "playable_sign_dispatches": [
+        "middle"
+      ],
+      "fallback_terms": [
+        "EAST"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    },
+    {
+      "segment_index": 2001,
+      "start_s": 7570.94,
+      "end_s": 7573.22,
+      "source_english": "So he walks up again and he goes,",
+      "spoken_word_count": 8,
+      "translated_glosses": [
+        "WALK",
+        "GO"
+      ],
+      "playable_sign_dispatches": [
+        "walk",
+        "go"
+      ],
+      "fallback_terms": [
+        "SO",
+        "HE",
+        "UP",
+        "AGAIN",
+        "AND",
+        "HE"
+      ],
+      "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "motion_animation_tested": true
+    }
+  ]
+}

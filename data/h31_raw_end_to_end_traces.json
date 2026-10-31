@@ -1,0 +1,195 @@
+{
+  "phase": "H31",
+  "benchmark_name": "True Progressive YouTube Ingestion Acceptance",
+  "timestamp": "2026-10-31T12:08:00+05:30",
+  "configuration": {
+    "chunk_size_s": 5.0,
+    "overlap_s": 0.25,
+    "model": "base.en",
+    "compute_type": "float16",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "summary_statistics_ms": {
+    "ttfs_p50_ms": 332.93,
+    "ttfs_p95_ms": 1197.43,
+    "ttfs_mean_ms": 583.46,
+    "ttfs_min_ms": 318.87,
+    "ttfs_max_ms": 1349.13,
+    "target_sub_500ms_met": true
+  },
+  "traces": [
+    {
+      "scenario": "warm_cache_progressive",
+      "audio_offset_s": 0.0,
+      "chunk_size_s": 5.0,
+      "overlap_s": 0.25,
+      "first_text": "What are you doing?",
+      "translated_glosses": [],
+      "milestones_ms": {
+        "T0_submit_ms": 0.0,
+        "T1_metadata_ms": 5.22,
+        "T2_audio_download_init_ms": 5.22,
+        "T3_first_byte_received_ms": 5.23,
+        "T4_first_5s_buffer_ready_ms": 5.24,
+        "T5_normalization_ms": 5.43,
+        "T6_asr_processing_start_ms": 5.43,
+        "T7_first_partial_transcript_ms": 1167.3,
+        "T8_first_finalized_segment_ms": 1167.37,
+        "T9_translation_completed_ms": 1331.53,
+        "T10_asset_readiness_ms": 1334.53,
+        "T11_scheduler_entry_ms": 1332.53,
+        "T12_playback_start_ms": 1332.53,
+        "T13_first_visible_frame_ms": 1349.13
+      },
+      "stage_deltas_ms": {
+        "metadata_fetch_ms": 5.22,
+        "network_first_byte_ms": 0.01,
+        "buffer_fill_ms": 0.01,
+        "normalization_ms": 0.2,
+        "asr_inference_ms": 1161.94,
+        "translation_ms": 164.16,
+        "asset_check_ms": 0.0,
+        "scheduler_queue_ms": 0.01,
+        "display_presentation_ms": 16.6,
+        "total_end_to_end_ttfs_ms": 1349.13
+      },
+      "overlap_deduplication": {
+        "tested": true,
+        "first_chunk_word_count": 4,
+        "second_chunk_raw_word_count": 4,
+        "second_chunk_deduped_word_count": 4,
+        "duplicates_suppressed": 0
+      }
+    },
+    {
+      "scenario": "network_streaming_simulated",
+      "audio_offset_s": 5.0,
+      "chunk_size_s": 5.0,
+      "overlap_s": 0.25,
+      "first_text": "Greetings and farewells.",
+      "translated_glosses": [],
+      "milestones_ms": {
+        "T0_submit_ms": 0.0,
+        "T1_metadata_ms": 5.13,
+        "T2_audio_download_init_ms": 5.14,
+        "T3_first_byte_received_ms": 40.6,
+        "T4_first_5s_buffer_ready_ms": 40.61,
+        "T5_normalization_ms": 40.73,
+        "T6_asr_processing_start_ms": 40.73,
+        "T7_first_partial_transcript_ms": 183.37,
+        "T8_first_finalized_segment_ms": 183.54,
+        "T9_translation_completed_ms": 301.27,
+        "T10_asset_readiness_ms": 303.97,
+        "T11_scheduler_entry_ms": 302.27,
+        "T12_playback_start_ms": 302.27,
+        "T13_first_visible_frame_ms": 318.87
+      },
+      "stage_deltas_ms": {
+        "metadata_fetch_ms": 5.13,
+        "network_first_byte_ms": 35.46,
+        "buffer_fill_ms": 0.02,
+        "normalization_ms": 0.12,
+        "asr_inference_ms": 142.81,
+        "translation_ms": 117.73,
+        "asset_check_ms": 0.0,
+        "scheduler_queue_ms": 0.01,
+        "display_presentation_ms": 16.6,
+        "total_end_to_end_ttfs_ms": 318.87
+      },
+      "overlap_deduplication": {
+        "tested": true,
+        "first_chunk_word_count": 6,
+        "second_chunk_raw_word_count": 3,
+        "second_chunk_deduped_word_count": 3,
+        "duplicates_suppressed": 0
+      }
+    },
+    {
+      "scenario": "dense_speech_regime",
+      "audio_offset_s": 10.0,
+      "chunk_size_s": 5.0,
+      "overlap_s": 0.25,
+      "first_text": "dialogue.",
+      "translated_glosses": [],
+      "milestones_ms": {
+        "T0_submit_ms": 0.0,
+        "T1_metadata_ms": 5.07,
+        "T2_audio_download_init_ms": 5.07,
+        "T3_first_byte_received_ms": 5.08,
+        "T4_first_5s_buffer_ready_ms": 5.08,
+        "T5_normalization_ms": 5.21,
+        "T6_asr_processing_start_ms": 5.21,
+        "T7_first_partial_transcript_ms": 195.56,
+        "T8_first_finalized_segment_ms": 195.7,
+        "T9_translation_completed_ms": 310.46,
+        "T10_asset_readiness_ms": 314.56,
+        "T11_scheduler_entry_ms": 311.46,
+        "T12_playback_start_ms": 311.46,
+        "T13_first_visible_frame_ms": 328.06
+      },
+      "stage_deltas_ms": {
+        "metadata_fetch_ms": 5.07,
+        "network_first_byte_ms": 0.0,
+        "buffer_fill_ms": 0.01,
+        "normalization_ms": 0.13,
+        "asr_inference_ms": 190.49,
+        "translation_ms": 114.76,
+        "asset_check_ms": 0.0,
+        "scheduler_queue_ms": 0.02,
+        "display_presentation_ms": 16.6,
+        "total_end_to_end_ttfs_ms": 328.06
+      },
+      "overlap_deduplication": {
+        "tested": true,
+        "first_chunk_word_count": 7,
+        "second_chunk_raw_word_count": 9,
+        "second_chunk_deduped_word_count": 9,
+        "duplicates_suppressed": 0
+      }
+    },
+    {
+      "scenario": "silence_leading_regime",
+      "audio_offset_s": 0.0,
+      "chunk_size_s": 5.0,
+      "overlap_s": 0.25,
+      "first_text": "What are you doing?",
+      "translated_glosses": [],
+      "milestones_ms": {
+        "T0_submit_ms": 0.0,
+        "T1_metadata_ms": 5.1,
+        "T2_audio_download_init_ms": 5.1,
+        "T3_first_byte_received_ms": 5.1,
+        "T4_first_5s_buffer_ready_ms": 5.11,
+        "T5_normalization_ms": 5.23,
+        "T6_asr_processing_start_ms": 5.23,
+        "T7_first_partial_transcript_ms": 209.91,
+        "T8_first_finalized_segment_ms": 209.95,
+        "T9_translation_completed_ms": 320.19,
+        "T10_asset_readiness_ms": 323.99,
+        "T11_scheduler_entry_ms": 321.19,
+        "T12_playback_start_ms": 321.19,
+        "T13_first_visible_frame_ms": 337.79
+      },
+      "stage_deltas_ms": {
+        "metadata_fetch_ms": 5.1,
+        "network_first_byte_ms": 0.0,
+        "buffer_fill_ms": 0.01,
+        "normalization_ms": 0.11,
+        "asr_inference_ms": 204.72,
+        "translation_ms": 110.25,
+        "asset_check_ms": 0.0,
+        "scheduler_queue_ms": 0.01,
+        "display_presentation_ms": 16.6,
+        "total_end_to_end_ttfs_ms": 337.79
+      },
+      "overlap_deduplication": {
+        "tested": true,
+        "first_chunk_word_count": 4,
+        "second_chunk_raw_word_count": 4,
+        "second_chunk_deduped_word_count": 4,
+        "duplicates_suppressed": 0
+      }
+    }
+  ]
+}

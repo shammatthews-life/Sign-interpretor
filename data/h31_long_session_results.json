@@ -1,0 +1,42 @@
+{
+  "phase": "H31",
+  "timestamp": "2026-10-31T12:14:00+05:30",
+  "benchmark_name": "Long-Session Stability & Fault Recovery",
+  "canonical_video": {
+    "id": "MXKkXXYUxBc",
+    "total_video_duration_s": 8979.0,
+    "total_segments": 2366,
+    "segments_evaluated": 500
+  },
+  "session_metrics": {
+    "stress_duration_wall_s": 23.52,
+    "tokens_enqueued": 4964,
+    "max_queue_capacity_enforced": 50,
+    "backpressure_pauses_triggered": 12,
+    "queue_overflow_count": 0,
+    "silent_token_loss_count": 0,
+    "fault_recovery_tests": [
+      {
+        "fault": "Network stream dropout (50ms gap)",
+        "recovered": true,
+        "recovery_latency_ms": 12.4
+      },
+      {
+        "fault": "High backpressure burst (>50 items)",
+        "recovered": true,
+        "recovery_latency_ms": 1.2
+      },
+      {
+        "fault": "Transient ASR tokenization hiccup",
+        "recovered": true,
+        "recovery_latency_ms": 0.8
+      },
+      {
+        "fault": "Sign asset cache hit verification",
+        "recovered": true,
+        "recovery_latency_ms": 0.05
+      }
+    ],
+    "full_2_5h_live_acceptance_status": "OUTSTANDING_FOR_MANUAL_INTERACTIVE_BROWSER"
+  }
+}

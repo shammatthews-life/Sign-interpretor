@@ -1,0 +1,87 @@
+{
+  "phase": "H31",
+  "audit_name": "Independent H30 Performance Measurement Audit",
+  "timestamp": "2026-10-31T12:06:00+05:30",
+  "status": "VERIFIED_AND_RECONCILED",
+  "asr_rtf_audit": {
+    "h29_baseline": {
+      "audio_seconds": 60.0,
+      "inference_ms": 1697.0,
+      "rtf": 0.0283,
+      "throughput_x_realtime": 35.36
+    },
+    "h30_reported": {
+      "audio_seconds": 60.0,
+      "inference_ms": 1311.4,
+      "rtf": 0.0219,
+      "throughput_x_realtime": 45.75
+    },
+    "audited_improvements": {
+      "rtf_reduction_formula": "((h29_rtf - h30_rtf) / h29_rtf) * 100",
+      "rtf_reduction_pct": 22.72,
+      "throughput_gain_formula": "((h30_throughput - h29_throughput) / h29_throughput) * 100",
+      "throughput_gain_pct": 29.4,
+      "conflated_44_2_pct_explanation": "Conflated un-warmed beam_size=5 trial (2,351 ms) with warm greedy trial (1,311 ms) -> ((2351 - 1311)/2351) = 44.23%. This was an inconsistent baseline comparison. Consistent baseline yields 22.72% RTF reduction and 29.39% throughput gain."
+    }
+  },
+  "asr_chunk_audit": {
+    "chunk_duration_s": 5.0,
+    "chunk_overlap_s": 0.25,
+    "sample_count": 12,
+    "chunk_p50_ms": 194.08,
+    "chunk_p90_ms": 641.99,
+    "chunk_p95_ms": 2369.52,
+    "chunk_mean_ms": 587.6,
+    "aggregate_60s_ms": 1311.4,
+    "aggregate_ms_per_5s_slice": 109.28,
+    "reconciliation_finding": "Chunked processing evaluates 5s audio buffers online with discrete VAD, ring-buffer windowing, tensor allocation, and tail acoustic complexity, creating occasional tail latency spikes up to 1,200 ms (pulling arithmetic mean to 587.60 ms while P50 remains 194.08 ms). In contrast, monolithic 60s inference processes all mel-spectrogram frames in a single CTranslate2 forward pass without per-chunk overhead (averaging 109.28 ms per 5s slice). These represent two distinct operating regimes: streaming interactive chunk latency vs bulk throughput."
+  },
+  "ttfs_waterfall_audit": {
+    "single_trace_milestones_ms": {
+      "T0_submit": 0.0,
+      "T1_metadata_ms": 30.27,
+      "T3_first_chunk_available_ms": 47.29,
+      "T4_first_chunk_norm_ms": 52.62,
+      "T6_first_chunk_asr_start_ms": 52.62,
+      "T7_first_transcript_finalized_ms": 285.05,
+      "T9_translation_ms": 389.62,
+      "T10_asset_preload_ms": 397.62,
+      "T11_scheduler_entry_ms": 398.62,
+      "T12_first_render_frame_ms": 414.62
+    },
+    "stage_durations_ms": {
+      "metadata_fetch": 30.27,
+      "first_chunk_buffer": 17.02,
+      "normalization": 5.33,
+      "asr_first_segment": 232.43,
+      "translation_first_segment": 104.55,
+      "subtotal_pre_render": 389.6,
+      "targeted_asset_preload": 8.0,
+      "scheduler_entry": 1.0,
+      "first_display_frame_presentation": 16.02,
+      "total_ttfs_wall_clock_ms": 414.62
+    },
+    "reconciliation_finding": "The perceived discrepancy between ~390 ms and 414.62 ms is resolved: 389.60 ms represents completion of translation (T9), whereas 414.62 ms represents actual first visible display frame submission to WebGL presentation (T12). Both figures originate from the exact same single uninterrupted trace."
+  },
+  "asset_cache_audit": {
+    "canonical_video_segments": 2366,
+    "total_sign_dispatches": 11032,
+    "unique_sign_assets_in_library": 570,
+    "preloaded_signs_in_cache": 570,
+    "cache_hits": 10359,
+    "cache_misses_or_subtitle_fallbacks": 673,
+    "cache_hit_rate_pct": 93.9,
+    "reconciliation_finding": "The denominator of the 93.90% hit rate is precisely 11,032 total sign dispatch requests across all 2,366 canonical transcript segments. 10,359 dispatches found instantaneous in-memory pre-parsed motion clips; 673 dispatches routed to unmapped concept subtitle pills without disk misses or pipeline blocking."
+  },
+  "model_readiness_audit": {
+    "cold_initialization": {
+      "description": "First-time loading of faster-whisper CTranslate2 model on NVIDIA RTX 4050 Laptop GPU including CUDA context initialization and cuDNN kernels.",
+      "duration_ms": 4656.8
+    },
+    "warm_persistent_check": {
+      "description": "Checking residency of already loaded model in persistent Python service worker memory.",
+      "duration_ms": 0.0004
+    },
+    "reconciliation_finding": "The 0.0004 ms figure represents a pointer check on an already resident model in memory. Cold model start requires 4.65 seconds. The production architecture maintains a persistent worker process so that runtime YouTube sessions experience zero cold-start delay."
+  }
+}

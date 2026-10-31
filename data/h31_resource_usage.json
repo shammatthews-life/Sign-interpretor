@@ -1,0 +1,63 @@
+{
+  "phase": "H31",
+  "timestamp": "2026-10-31T12:14:00+05:30",
+  "benchmark_name": "Resource Usage & Hardware Orchestration",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "vram_total_mb": 6141.0,
+    "cpu_cores": 12,
+    "ram_total_mb": 16384.0
+  },
+  "measurements": {
+    "ram_initial_mb": 26.23,
+    "ram_final_mb": 27.76,
+    "ram_growth_mb": 1.53,
+    "ram_samples_mb": [
+      27.71,
+      27.73,
+      27.73,
+      27.74,
+      27.75,
+      27.75,
+      27.75,
+      27.75,
+      27.75,
+      27.75,
+      27.75,
+      27.75,
+      27.75,
+      27.75,
+      27.76,
+      27.76,
+      27.76,
+      27.76,
+      27.76,
+      27.76
+    ],
+    "gpu_vram_initial_mb": 0.0,
+    "gpu_vram_final_mb": 177.0,
+    "gpu_vram_samples_mb": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      8.0,
+      85.0,
+      177.0
+    ],
+    "bounded_memory_growth": true
+  }
+}
