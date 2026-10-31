@@ -630,6 +630,7 @@
     import { LiveSpeechSession } from './LiveSpeechSession.mjs';
     import { SignLibrary, SignLibraryError } from './SignLibrary.js';
     import { SignScheduler } from './SignScheduler.js';
+    import { takePendingAetherEvent } from './PendingAetherQueue.js';
     import { SentenceProcessor } from './SentenceProcessor.js';
     import { EnglishToISLTranslator } from './EnglishToISLTranslator.js';
     import { SignAuthoringController } from './SignAuthoringController.js';
@@ -1566,6 +1567,7 @@
     }
 
     function sendAetherAck(event, eventId, status, reason = '') {
+      if (!eventId) return;
       window.parent.postMessage({
         type: 'ISL_AETHER_ACK',
         eventId,
@@ -1574,25 +1576,56 @@
       }, event.origin);
     }
 
-    function rememberAetherEvent(eventId, result) {
-      processedAetherEvents.set(eventId, result);
+    function aetherCommandIdentity(data) {
+      const values = [
+        data.command,
+        data.signId ?? null,
+        data.jobId ?? null,
+        data.cueId ?? null,
+        data.targetEventId ?? null,
+        data.occurrenceIndex ?? null,
+        data.cueStartSeconds ?? null,
+        data.cueEndSeconds ?? null,
+        data.rate ?? null
+      ];
+      return values.map(value => {
+        if (value === null) return 'null';
+        if (typeof value === 'string') return `string:${value}`;
+        if (typeof value === 'number' && Number.isFinite(value)) return `number:${value}`;
+        if (typeof value === 'boolean') return `boolean:${value}`;
+        return `invalid:${typeof value}`;
+      }).join('\u0000');
+    }
+
+    function rememberAetherEvent(eventId, result, data) {
+      processedAetherEvents.set(eventId, { ...result, identity: aetherCommandIdentity(data) });
       if (processedAetherEvents.size > 5000) {
         processedAetherEvents.delete(processedAetherEvents.keys().next().value);
       }
     }
 
+    function rejectAetherCommand(event, eventId, data, reason) {
+      if (!eventId || eventId.length > 256) return;
+      const response = { status: 'rejected', reason };
+      rememberAetherEvent(eventId, response, data);
+      sendAetherAck(event, eventId, response.status, response.reason);
+    }
+
     function acceptAetherSign(data, event, sendAck = true) {
-      if (data.command === 'PLAY_SIGN') signScheduler.cancel();
       const result = signScheduler.enqueue(
         data.signId,
         data.eventId,
         data.cueId ?? null,
-        data.jobId ?? null
+        data.jobId ?? null,
+        {
+          cueStartSeconds: data.cueStartSeconds ?? null,
+          cueEndSeconds: data.cueEndSeconds ?? null
+        }
       );
       const response = result.accepted
         ? { status: 'accepted', reason: '' }
         : { status: 'rejected', reason: result.reason };
-      rememberAetherEvent(data.eventId, response);
+      rememberAetherEvent(data.eventId, response, data);
       if (sendAck) sendAetherAck(event, data.eventId, response.status, response.reason);
     }
 
@@ -1604,7 +1637,11 @@
           || (data.jobId === activeAetherCue.jobId && data.cueId === activeAetherCue.cueId);
         pendingAetherEvents.delete(eventId);
         if (isCurrentCue) acceptAetherSign(data, event);
-        else sendAetherAck(event, eventId, 'rejected', 'CUE_EXPIRED_BEFORE_ACCEPTANCE');
+        else {
+          const response = { status: 'cancelled', reason: 'CUE_EXPIRED_BEFORE_ACCEPTANCE' };
+          rememberAetherEvent(eventId, response, data);
+          sendAetherAck(event, eventId, response.status, response.reason);
+        }
       }
     }
 
@@ -1617,22 +1654,47 @@
       const eventId = typeof data.eventId === 'string' ? data.eventId : '';
       if (eventId && processedAetherEvents.has(eventId)) {
         const previous = processedAetherEvents.get(eventId);
-        sendAetherAck(event, eventId, previous.status, previous.reason);
+        if (previous.identity !== aetherCommandIdentity(data)) {
+          sendAetherAck(event, eventId, 'rejected', 'EVENT_ID_CONFLICT');
+        } else {
+          sendAetherAck(event, eventId, previous.status, previous.reason);
+        }
         return;
       }
 
       switch (data.command) {
         case 'PLAY_SIGN':
         case 'QUEUE_SIGN': {
-          if (!/^[a-z0-9_]{1,80}$/.test(data.signId || '') || !eventId || eventId.length > 256) {
-            if (eventId) sendAetherAck(event, eventId, 'rejected', 'INVALID_SIGN_COMMAND');
+          if (!/^[a-z0-9_]{1,80}$/.test(data.signId || '')
+            || !eventId || eventId.length > 256
+            || (data.jobId !== undefined && data.jobId !== null
+              && (typeof data.jobId !== 'string' || !data.jobId || data.jobId.length > 256))
+            || (data.cueId !== undefined && data.cueId !== null
+              && (typeof data.cueId !== 'string' || !data.cueId || data.cueId.length > 256))
+            || (data.cueId !== undefined && data.cueId !== null
+              && (data.jobId === undefined || data.jobId === null))) {
+            rejectAetherCommand(event, eventId, data, 'INVALID_SIGN_COMMAND');
+            return;
+          }
+          if ((data.cueStartSeconds !== undefined && data.cueStartSeconds !== null
+              && (!Number.isFinite(data.cueStartSeconds) || data.cueStartSeconds < 0))
+            || (data.cueEndSeconds !== undefined && data.cueEndSeconds !== null
+              && (!Number.isFinite(data.cueEndSeconds) || data.cueEndSeconds <= 0))
+            || (data.cueStartSeconds != null && data.cueEndSeconds != null
+              && data.cueEndSeconds <= data.cueStartSeconds)) {
+            rejectAetherCommand(event, eventId, data, 'INVALID_CUE_TIMING');
             return;
           }
           if (!signScheduler) {
-            if (!pendingAetherEvents.has(eventId)) {
+            const pending = pendingAetherEvents.get(eventId);
+            if (pending && aetherCommandIdentity(pending.data) !== aetherCommandIdentity(data)) {
+              sendAetherAck(event, eventId, 'rejected', 'EVENT_ID_CONFLICT');
+              return;
+            }
+            if (!pending) {
               if (pendingAetherEvents.size >= 256) {
                 const rejected = { status: 'rejected', reason: 'VIEWER_STARTUP_QUEUE_FULL' };
-                rememberAetherEvent(eventId, rejected);
+                rememberAetherEvent(eventId, rejected, data);
                 sendAetherAck(event, eventId, rejected.status, rejected.reason);
                 return;
               }
@@ -1644,20 +1706,74 @@
           acceptAetherSign(data, event);
           break;
         }
-        case 'CUE_TRANSITION':
-          if ((data.jobId === null || typeof data.jobId === 'string')
-            && (data.cueId === null || typeof data.cueId === 'string')) {
+        case 'CUE_TRANSITION': {
+          if (!eventId || eventId.length > 256
+            || !((data.jobId === null && data.cueId === null)
+              || (typeof data.jobId === 'string' && data.jobId.length > 0
+                && data.jobId.length <= 256
+                && (data.cueId === null
+                  || (typeof data.cueId === 'string' && data.cueId.length > 0 && data.cueId.length <= 256))))) {
+            rejectAetherCommand(event, eventId, data, 'INVALID_CUE_TRANSITION');
+            return;
+          }
+          {
             activeAetherCue = { jobId: data.jobId, cueId: data.cueId };
             for (const [pendingEventId, pending] of pendingAetherEvents) {
               const { jobId, cueId } = pending.data;
               if (jobId !== null && jobId !== undefined
                 && (jobId !== activeAetherCue.jobId || cueId !== activeAetherCue.cueId)) {
                 pendingAetherEvents.delete(pendingEventId);
+                const response = { status: 'cancelled', reason: 'CUE_EXPIRED_BEFORE_ACCEPTANCE' };
+                rememberAetherEvent(pendingEventId, response, pending.data);
+                sendAetherAck(pending.event, pendingEventId, response.status, response.reason);
               }
             }
             if (signScheduler) signScheduler.advanceCue(data.jobId, data.cueId);
           }
+          const response = { status: 'accepted', reason: '' };
+          rememberAetherEvent(eventId, response, data);
+          sendAetherAck(event, eventId, response.status, response.reason);
           break;
+        }
+        case 'CANCEL_JOB': {
+          if (!eventId || eventId.length > 256
+            || typeof data.jobId !== 'string' || !data.jobId || data.jobId.length > 256) {
+            rejectAetherCommand(event, eventId, data, 'INVALID_JOB_CANCELLATION');
+            return;
+          }
+          for (const [pendingEventId, pending] of pendingAetherEvents) {
+            if (pending.data.jobId === data.jobId) {
+              pendingAetherEvents.delete(pendingEventId);
+              const response = { status: 'cancelled', reason: 'JOB_CANCELLED_BEFORE_ACCEPTANCE' };
+              rememberAetherEvent(pendingEventId, response, pending.data);
+              sendAetherAck(pending.event, pendingEventId, response.status, response.reason);
+            }
+          }
+          if (signScheduler) signScheduler.cancelJob(data.jobId);
+          const response = { status: 'accepted', reason: '' };
+          rememberAetherEvent(eventId, response, data);
+          sendAetherAck(event, eventId, response.status, response.reason);
+          break;
+        }
+        case 'CANCEL_EVENT': {
+          if (!eventId || eventId.length > 256
+            || typeof data.targetEventId !== 'string' || !data.targetEventId || data.targetEventId.length > 256) {
+            rejectAetherCommand(event, eventId, data, 'INVALID_EVENT_CANCELLATION');
+            return;
+          }
+          const pending = takePendingAetherEvent(pendingAetherEvents, data.targetEventId);
+          if (pending) {
+            const response = { status: 'cancelled', reason: 'DELIVERY_TIMEOUT' };
+            rememberAetherEvent(data.targetEventId, response, pending.data);
+            sendAetherAck(pending.event, data.targetEventId, response.status, response.reason);
+          } else if (signScheduler) {
+            signScheduler.cancelEvent(data.targetEventId, 'DELIVERY_TIMEOUT');
+          }
+          const response = { status: 'accepted', reason: '' };
+          rememberAetherEvent(eventId, response, data);
+          sendAetherAck(event, eventId, response.status, response.reason);
+          break;
+        }
         case 'PAUSE':
           if (signScheduler) signScheduler.pause();
           break;
@@ -1670,7 +1786,18 @@
           }
           break;
         case 'RESET_AVATAR':
+          for (const [pendingEventId, pending] of pendingAetherEvents) {
+            pendingAetherEvents.delete(pendingEventId);
+            const response = { status: 'cancelled', reason: 'AVATAR_RESET' };
+            rememberAetherEvent(pendingEventId, response, pending.data);
+            sendAetherAck(pending.event, pendingEventId, response.status, response.reason);
+          }
           if (signScheduler) signScheduler.cancel();
+          break;
+        default:
+          if (eventId) {
+            rejectAetherCommand(event, eventId, data, 'UNKNOWN_COMMAND');
+          }
           break;
       }
     });

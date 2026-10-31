@@ -41,6 +41,7 @@
       "js": [
         "shared/message-contract.js",
         "shared/youtube-cue-manifest.js",
+        "shared/aether-playback.js",
         "content/overlay.js",
         "content/timeline-synchronizer.js",
         "content/content-script.js"

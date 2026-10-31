@@ -18,8 +18,9 @@
 
   const contract = window.ISLMessageContract;
   const overlayUI = window.ISLOverlay?.ISLOverlayUI;
+  const playbackProtocol = window.ISLAetherPlayback;
 
-  if (!contract || !overlayUI) {
+  if (!contract || !overlayUI || !playbackProtocol) {
     console.error('[ISL Content Script] Required dependencies missing from page context.');
     return;
   }
@@ -40,13 +41,19 @@
   let activeCueJobId = null;
   const requestedCueJobs = new Map();
   const deliveredOccurrenceIds = new Set();
+  const deliveredCommandIdentities = new Map();
   const pendingAetherCommands = [];
   const inFlightAetherCommands = new Map();
+  const playbackLedger = new playbackProtocol.AetherPlaybackLedger();
+  const playbackWatchdogs = new Map();
+  const playbackEventVideoIds = new Map();
   let videoElementObserver = null;
   const MAX_PENDING_AETHER_COMMANDS = 256;
   const MAX_IN_FLIGHT_AETHER_COMMANDS = 64;
   const MAX_AETHER_DELIVERY_ATTEMPTS = 20;
   const AETHER_ACK_TIMEOUT_MS = 1000;
+  const AETHER_START_TIMEOUT_MS = 180000;
+  const AETHER_MAX_PLAYBACK_TIMEOUT_MS = 300000;
 
   function getCurrentVideoId() {
     const result = contract.validateYouTubeUrl(window.location.href);
@@ -127,6 +134,7 @@
     });
 
     ui.mount(document);
+    bindAetherFrame();
 
     // Fetch initial state from service worker
     if (typeof chrome !== 'undefined' && chrome.runtime?.sendMessage) {
@@ -140,11 +148,24 @@
             return;
           }
           if (response?.success && response.payload) {
-            ui.update(response.payload);
+            ui.update(stateForCurrentTab(response.payload));
           }
         }
       );
     }
+  }
+
+  function stateForCurrentTab(state) {
+    if (!state?.youtube?.videoId || state.youtube.videoId === getCurrentVideoId()) return state;
+    const initial = contract.createInitialState();
+    return {
+      ...state,
+      transcript: initial.transcript,
+      representation: initial.representation,
+      signingQueue: initial.signingQueue,
+      signing: initial.signing,
+      youtube: initial.youtube
+    };
   }
 
   function handleUserAction(actionType, payload) {
@@ -157,14 +178,10 @@
         return;
       }
       if (response?.payload) {
-        ui.update(response.payload);
+        ui.update(stateForCurrentTab(response.payload));
       }
     });
 
-    // If action is an Aether command, postMessage to local iframe if present
-    if (actionType === contract.MESSAGE_TYPES.AETHER_COMMAND) {
-      forwardAetherCommand(payload);
-    }
   }
 
   function showAetherDeliveryFailure(payload, reason) {
@@ -178,10 +195,154 @@
     });
   }
 
+  function aetherPayloadIdentity(payload) {
+    return JSON.stringify([
+      payload.command,
+      payload.signId ?? null,
+      payload.jobId ?? null,
+      payload.cueId ?? null,
+      payload.targetEventId ?? null,
+      payload.cueStartSeconds ?? null,
+      payload.cueEndSeconds ?? null
+    ]);
+  }
+
+  function relayPlaybackEvent(event, videoId = playbackEventVideoIds.get(event.eventId) || currentVideoId) {
+    const video = getVideoElement();
+    const belongsToCurrentVideo = videoId === getCurrentVideoId();
+    const videoTimeSeconds = belongsToCurrentVideo && Number.isFinite(video?.currentTime) ? video.currentTime : null;
+    const cueBoundary = event.type === 'playback_start'
+      ? event.cueStartSeconds
+      : event.type === 'playback_end' ? event.cueEndSeconds : null;
+    const timingErrorMs = cueBoundary !== null && cueBoundary !== undefined && videoTimeSeconds !== null
+      ? Math.round((videoTimeSeconds - cueBoundary) * 1000)
+      : null;
+    sendRuntimeMessage(contract.createMessage(contract.MESSAGE_TYPES.AETHER_PLAYBACK_STATE, {
+      protocol_version: 1,
+      video_id: videoId,
+      job_id: event.jobId,
+      cue_id: event.cueId,
+      event_id: event.eventId,
+      event_type: event.type,
+      sign_id: event.id,
+      at_ms: event.atMs,
+      received_at: Date.now(),
+      video_time_seconds: videoTimeSeconds,
+      video_paused: Boolean(video?.paused),
+      playback_rate: Number.isFinite(video?.playbackRate) ? video.playbackRate : null,
+      cue_start_seconds: event.cueStartSeconds ?? null,
+      cue_end_seconds: event.cueEndSeconds ?? null,
+      timing_error_ms: timingErrorMs,
+      reason: event.reason || null
+    })).then(response => {
+      if (!response?.success) {
+        console.warn('[ISL Content Script] Playback lifecycle event was rejected:', response?.error || event.type);
+      }
+    }).catch(error => {
+      console.warn('[ISL Content Script] Unable to report playback lifecycle event:', error.message);
+    });
+  }
+
+  function clearPlaybackWatchdog(eventId) {
+    const watchdog = playbackWatchdogs.get(eventId);
+    if (watchdog) clearTimeout(watchdog.timer);
+    playbackWatchdogs.delete(eventId);
+  }
+
+  function armPlaybackWatchdog(event, delayMs) {
+    clearPlaybackWatchdog(event.eventId);
+    const watchdog = { event, delayMs, timer: null };
+    watchdog.timer = setTimeout(() => {
+      if (getVideoElement()?.paused) {
+        armPlaybackWatchdog(event, delayMs);
+        return;
+      }
+      const eventVideoId = playbackEventVideoIds.get(event.eventId) || '';
+      const state = playbackLedger.get(event.eventId, eventVideoId);
+      if (!state || ['playback_end', 'playback_cancelled', 'playback_failed', 'playback_rejected', 'playback_timeout'].includes(state.status)) {
+        clearPlaybackWatchdog(event.eventId);
+        return;
+      }
+      const timeoutEvent = {
+        ...event,
+        type: 'playback_timeout',
+        atMs: performance.now(),
+        reason: state.status === 'accepted' ? 'PLAYBACK_START_TIMEOUT' : 'PLAYBACK_COMPLETION_TIMEOUT'
+      };
+      const recorded = playbackLedger.record(timeoutEvent, eventVideoId);
+      if (recorded.valid && recorded.accepted) {
+        relayPlaybackEvent(timeoutEvent, eventVideoId);
+        const cancelEventId = `${event.eventId}:timeout-cancel`;
+        forwardAetherCommand({
+          command: contract.AETHER_COMMANDS.CANCEL_EVENT,
+          eventId: cancelEventId,
+          targetEventId: event.eventId,
+          jobId: event.jobId,
+          cueId: event.cueId
+        });
+        showAetherDeliveryFailure({ signId: event.id, eventId: event.eventId }, timeoutEvent.reason);
+      }
+      clearPlaybackWatchdog(event.eventId);
+    }, delayMs);
+    playbackWatchdogs.set(event.eventId, watchdog);
+  }
+
+  function handleAetherLifecycle(event) {
+    const validation = playbackProtocol.validateLifecycleEvent(event);
+    if (!validation.valid) {
+      console.warn('[ISL Content Script] Ignoring malformed Aether lifecycle event:', validation.error);
+      return;
+    }
+    const eventVideoId = playbackEventVideoIds.get(event.eventId) || currentVideoId || '';
+    if (!playbackEventVideoIds.has(event.eventId) && eventVideoId) {
+      playbackEventVideoIds.set(event.eventId, eventVideoId);
+      while (playbackEventVideoIds.size > 5000) {
+        playbackEventVideoIds.delete(playbackEventVideoIds.keys().next().value);
+      }
+    }
+    const result = playbackLedger.record(event, eventVideoId);
+    if (!result.valid) {
+      console.warn('[ISL Content Script] Ignoring invalid Aether lifecycle transition:', result.error);
+      return;
+    }
+    if (result.duplicate) return;
+    relayPlaybackEvent(event, eventVideoId);
+    if (event.type === 'accepted') {
+      armPlaybackWatchdog(event, AETHER_START_TIMEOUT_MS);
+    } else if (event.type === 'playback_start') {
+      const video = getVideoElement();
+      const rate = Number.isFinite(video?.playbackRate) && video.playbackRate > 0 ? video.playbackRate : 1;
+      const duration = Number.isFinite(event.durationMs) ? event.durationMs : 0;
+      const completionTimeout = Math.min(
+        AETHER_MAX_PLAYBACK_TIMEOUT_MS,
+        Math.max(15000, Math.ceil(duration / rate * 4 + 10000))
+      );
+      armPlaybackWatchdog(event, completionTimeout);
+    } else {
+      clearPlaybackWatchdog(event.eventId);
+      if (event.type === 'playback_failed') {
+        showAetherDeliveryFailure({ signId: event.id, eventId: event.eventId }, event.reason || 'Animation failed');
+      }
+    }
+  }
+
   function queueAetherCommand(payload) {
-    if (payload.eventId && (deliveredOccurrenceIds.has(payload.eventId)
-      || inFlightAetherCommands.has(payload.eventId)
-      || pendingAetherCommands.some(item => item.eventId === payload.eventId))) return;
+    if (payload.eventId && deliveredOccurrenceIds.has(payload.eventId)) {
+      if (deliveredCommandIdentities.get(payload.eventId) !== aetherPayloadIdentity(payload)) {
+        showAetherDeliveryFailure(payload, 'Aether event ID was reused for a different command');
+      }
+      return;
+    }
+    if (payload.eventId) {
+      const current = inFlightAetherCommands.get(payload.eventId)?.payload
+        || pendingAetherCommands.find(item => item.eventId === payload.eventId);
+      if (current) {
+        if (aetherPayloadIdentity(current) !== aetherPayloadIdentity(payload)) {
+          showAetherDeliveryFailure(payload, 'Aether event ID was reused for a different command');
+        }
+        return;
+      }
+    }
     if (pendingAetherCommands.length >= MAX_PENDING_AETHER_COMMANDS) {
       showAetherDeliveryFailure(payload, 'Aether delivery queue is full');
       return;
@@ -203,7 +364,10 @@
         jobId: payload.jobId,
         occurrenceIndex: payload.occurrenceIndex,
         eventId,
-        rate: payload.rate
+        rate: payload.rate,
+        targetEventId: payload.targetEventId,
+        cueStartSeconds: payload.cueStartSeconds,
+        cueEndSeconds: payload.cueEndSeconds
       }, origin);
     } catch (error) {
       if (eventId) inFlightAetherCommands.delete(eventId);
@@ -231,7 +395,12 @@
       console.warn('[ISL Content Script] Ignoring invalid Aether command:', command);
       return;
     }
-    if (payload.eventId && deliveredOccurrenceIds.has(payload.eventId)) return;
+    if (payload.eventId && deliveredOccurrenceIds.has(payload.eventId)) {
+      if (deliveredCommandIdentities.get(payload.eventId) !== aetherPayloadIdentity(payload)) {
+        showAetherDeliveryFailure(payload, 'Aether event ID was reused for a different command');
+      }
+      return;
+    }
     if (command === contract.AETHER_COMMANDS.RESET_AVATAR) {
       for (const [eventId, entry] of inFlightAetherCommands) {
         clearTimeout(entry.timer);
@@ -239,6 +408,19 @@
       }
       for (let index = pendingAetherCommands.length - 1; index >= 0; index -= 1) {
         if (pendingAetherCommands[index].eventId) pendingAetherCommands.splice(index, 1);
+      }
+    } else if (command === contract.AETHER_COMMANDS.CANCEL_JOB) {
+      const belongsToJob = item => item.jobId === payload.jobId
+        && (item.command === contract.AETHER_COMMANDS.PLAY_SIGN
+          || item.command === contract.AETHER_COMMANDS.QUEUE_SIGN);
+      for (let index = pendingAetherCommands.length - 1; index >= 0; index -= 1) {
+        if (belongsToJob(pendingAetherCommands[index])) pendingAetherCommands.splice(index, 1);
+      }
+      for (const [eventId, entry] of inFlightAetherCommands) {
+        if (belongsToJob(entry.payload)) {
+          clearTimeout(entry.timer);
+          inFlightAetherCommands.delete(eventId);
+        }
       }
     } else if (command === contract.AETHER_COMMANDS.CUE_TRANSITION) {
       const isSignCommand = item => item.command === contract.AETHER_COMMANDS.PLAY_SIGN
@@ -300,9 +482,14 @@
     if (event.source !== iframe.contentWindow || event.origin !== expectedOrigin) return false;
     if (data?.type === 'ISL_AETHER_LIFECYCLE') {
       console.info('[ISL Content Script] Aether playback lifecycle:', data.event);
+      handleAetherLifecycle(data.event);
       return true;
     }
     if (data?.type !== 'ISL_AETHER_ACK' || typeof data.eventId !== 'string') return false;
+    if (!['accepted', 'retry', 'rejected', 'cancelled'].includes(data.status)) {
+      console.warn('[ISL Content Script] Ignoring malformed Aether acknowledgement:', data.eventId);
+      return true;
+    }
     const entry = inFlightAetherCommands.get(data.eventId);
     if (!entry) return true;
     if (data.status === 'retry' && entry.attempts < MAX_AETHER_DELIVERY_ATTEMPTS) {
@@ -318,10 +505,13 @@
     inFlightAetherCommands.delete(data.eventId);
     if (data.status === 'accepted') {
       deliveredOccurrenceIds.add(data.eventId);
+      deliveredCommandIdentities.set(data.eventId, aetherPayloadIdentity(entry.payload));
       if (deliveredOccurrenceIds.size > 5000) {
-        deliveredOccurrenceIds.delete(deliveredOccurrenceIds.values().next().value);
+        const oldestEventId = deliveredOccurrenceIds.values().next().value;
+        deliveredOccurrenceIds.delete(oldestEventId);
+        deliveredCommandIdentities.delete(oldestEventId);
       }
-    } else {
+    } else if (data.status === 'rejected') {
       showAetherDeliveryFailure(entry.payload, data.reason || 'Aether rejected the command');
     }
     flushAetherCommands();
@@ -332,7 +522,19 @@
     const iframe = ui?.elements?.aetherIframe;
     if (iframe && !iframe.__islLoadBound) {
       iframe.__islLoadBound = true;
-      iframe.addEventListener('load', flushAetherCommands);
+      iframe.addEventListener('load', () => {
+        let origin;
+        try {
+          origin = new URL(iframe.src).origin;
+        } catch (error) {
+          console.warn('[ISL Content Script] Loaded Aether frame has an invalid origin:', error.message);
+          return;
+        }
+        for (const [eventId, entry] of inFlightAetherCommands) {
+          postAetherCommand(entry.payload, iframe, origin, entry.attempts + 1);
+        }
+        flushAetherCommands();
+      });
     }
   }
 
@@ -381,11 +583,16 @@
       currentVideoId = videoId;
       activeCueJobId = payload.job_id;
       deliveredOccurrenceIds.clear();
+      deliveredCommandIdentities.clear();
       acknowledgeCueManifest(payload.job_id, videoId, manifest.fingerprint);
     })().catch(async error => {
       if (getCurrentVideoId() === videoId
         && (!activeCueJobId || activeCueJobId === payload.job_id)) {
-        forwardAetherCommand({ command: contract.AETHER_COMMANDS.RESET_AVATAR });
+        forwardAetherCommand({
+          command: contract.AETHER_COMMANDS.CANCEL_JOB,
+          jobId: payload.job_id,
+          eventId: `${payload.job_id}:cue-error:${Date.now()}`
+        });
         ui?.setUnavailableFallback(`Video translation unavailable: ${error.message}`, 0);
         try {
           await sendRuntimeMessage(contract.createMessage(contract.MESSAGE_TYPES.YOUTUBE_CUES_ERROR, {
@@ -433,7 +640,11 @@
       || event.data?.type !== 'ISL_AETHER_STATE') return;
     chrome.runtime.sendMessage(contract.createMessage(
       contract.MESSAGE_TYPES.AETHER_PLAYBACK_STATE,
-      event.data.state || {}
+      {
+        kind: 'snapshot',
+        video_id: getCurrentVideoId(),
+        state: event.data.state || {}
+      }
     ), response => {
       if (chrome.runtime.lastError) console.warn('[ISL Content Script] Aether state relay failed:', chrome.runtime.lastError.message);
       else if (!response?.success) console.warn('[ISL Content Script] Aether state relay was rejected.');
@@ -447,7 +658,7 @@
 
       if (message.type === contract.MESSAGE_TYPES.STATE_UPDATE && message.payload) {
         bindAetherFrame();
-        if (ui) ui.update(message.payload);
+        if (ui) ui.update(stateForCurrentTab(message.payload));
         sendResponse({ received: true });
         return true;
       }
@@ -468,7 +679,6 @@
         if (message.payload.video_id === getCurrentVideoId()) {
           activeCueJobId = message.payload.job_id || null;
           if (synchronizer) synchronizer.setSegments([], activeCueJobId);
-          forwardAetherCommand({ command: contract.AETHER_COMMANDS.RESET_AVATAR });
           ui?.setUnavailableFallback('Video translation is processing; sign playback is paused.', 0);
         }
         sendResponse({ received: true });
@@ -503,11 +713,13 @@
   function handleNavigation() {
     const nextVideoId = getCurrentVideoId();
     if (nextVideoId !== currentVideoId) {
+      if (synchronizer) synchronizer.setSegments([], null);
+      for (const eventId of playbackWatchdogs.keys()) clearPlaybackWatchdog(eventId);
       currentVideoId = nextVideoId;
       activeCueJobId = null;
       requestedCueJobs.clear();
       deliveredOccurrenceIds.clear();
-      if (synchronizer) synchronizer.setSegments([], null);
+      deliveredCommandIdentities.clear();
       if (ui) ui.setUnavailableFallback(null);
     }
     if (!document.getElementById('isl-accessibility-overlay-root')) {

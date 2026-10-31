@@ -28,6 +28,7 @@
       this.activeCueId = null;
       this.activeCueKey = null;
       this.activationSequence = 0;
+      this.commandSequence = 0;
       this.activeJobId = null;
       this.isSeeking = false;
       this.boundEvents = [];
@@ -185,7 +186,11 @@
       const segment = index < 0 ? null : this.segments[index];
       if (!segment) {
         if (this.activeCueId !== null) {
-          this.onDispatchCommand?.('CUE_TRANSITION', { jobId: this.activeJobId, cueId: null });
+          this.onDispatchCommand?.('CUE_TRANSITION', {
+            jobId: this.activeJobId,
+            cueId: null,
+            eventId: this.nextCommandEventId('cue', null)
+          });
           this.clearActiveCue();
         }
         return;
@@ -203,7 +208,8 @@
       this.activeCueId = activationId;
       this.onDispatchCommand?.('CUE_TRANSITION', {
         jobId: this.activeJobId,
-        cueId: segment.id
+        cueId: segment.id,
+        eventId: this.nextCommandEventId('cue', segment.id)
       });
       if (segment.signIds.length) {
         this.onClearFallback?.();
@@ -214,7 +220,9 @@
             jobId: this.activeJobId,
             occurrenceIndex,
             eventId: `${activationId}:${occurrence?.occurrence_id || `sign:${occurrenceIndex}`}`,
-            command: 'QUEUE_SIGN'
+            command: 'QUEUE_SIGN',
+            cueStartSeconds: segment.start,
+            cueEndSeconds: segment.end
           });
         });
       }
@@ -254,7 +262,15 @@
     }
 
     cancelPlayback() {
-      this.onDispatchCommand?.('RESET_AVATAR');
+      if (!this.activeJobId) return;
+      this.onDispatchCommand?.('CANCEL_JOB', {
+        jobId: this.activeJobId,
+        eventId: this.nextCommandEventId('cancel', null)
+      });
+    }
+
+    nextCommandEventId(kind, cueId) {
+      return `${this.activeJobId || 'manual'}:${kind}:${cueId || 'none'}:${++this.commandSequence}`;
     }
 
     handleRateChange() {

@@ -60,6 +60,11 @@ test('activates only the current cue once and preserves repeated sign occurrence
   ]);
   assert.ok(firstDelivery[0][2].eventId.endsWith('first:0'));
   assert.ok(firstDelivery[1][2].eventId.endsWith('first:1'));
+  assert.equal(firstDelivery[0][2].cueStartSeconds, 0);
+  assert.equal(firstDelivery[0][2].cueEndSeconds, 2);
+  const firstTransition = events.find(event => event[0] === 'command' && event[1] === 'CUE_TRANSITION');
+  assert.equal(typeof firstTransition[2].eventId, 'string');
+  assert.equal(firstTransition[2].jobId, 'job-a');
   video.currentTime = 2;
   video.emit('timeupdate');
   assert.ok(events.some(event => event[0] === 'fallback' && event[1].includes('not available')));
@@ -133,7 +138,10 @@ test('seek cancels stale playback and activates only the destination cue or fall
   events.length = 0;
   video.emit('seeking');
   video.currentTime = 5.5;
-  assert.ok(events.some(event => event[0] === 'command' && event[1] === 'RESET_AVATAR'));
+  assert.ok(events.some(event => event[0] === 'command' && event[1] === 'CANCEL_JOB'));
+  const cancellation = events.find(event => event[0] === 'command' && event[1] === 'CANCEL_JOB');
+  assert.equal(cancellation[2].jobId, 'job-seek');
+  assert.equal(typeof cancellation[2].eventId, 'string');
   video.emit('seeked');
   assert.equal(events.filter(event => event[0] === 'sign').length, 0);
   assert.ok(events.some(event => event[0] === 'fallback' && event[1].includes('UNKNOWN')));
