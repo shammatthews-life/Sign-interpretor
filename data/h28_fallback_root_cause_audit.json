@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Phase H28 Fallback Root Cause & Linguistic Classification Audit",
+    "phase": "H28",
+    "total_fallback_tokens": 2239,
+    "total_fallback_concepts": 1382
+  },
+  "causes_breakdown": {
+    "Cause 1: Reliable sign exists but missing from library": {
+      "concept_count": 0,
+      "token_count": 0,
+      "sample_lemmas": []
+    },
+    "Cause 2: Existing sign exists but not connected to translator": {
+      "concept_count": 0,
+      "token_count": 0,
+      "sample_lemmas": []
+    },
+    "Cause 3: Existing sign exists but concept ID incorrect": {
+      "concept_count": 0,
+      "token_count": 0,
+      "sample_lemmas": []
+    },
+    "Cause 4: Phrase exists but matching failed": {
+      "concept_count": 0,
+      "token_count": 0,
+      "sample_lemmas": []
+    },
+    "Cause 5: Morphology unsupported": {
+      "concept_count": 0,
+      "token_count": 0,
+      "sample_lemmas": []
+    },
+    "Cause 6: Contextual ambiguity remains unresolved": {
+      "concept_count": 0,
+      "token_count": 0,
+      "sample_lemmas": []
+    },
+    "Cause 7: Technical or proper noun requiring fingerspelling": {
+      "concept_count": 0,
+      "token_count": 0,
+      "sample_lemmas": []
+    },
+    "Cause 8: No reliable ISL mapping identified (honest fallback)": {
+      "concept_count": 1382,
+      "token_count": 2239,
+      "sample_lemmas": [
+        "10",
+        "30",
+        "110",
+        "000",
+        "50",
+        "oxytocin",
+        "lars",
+        "25",
+        "per",
+        "logs"
+      ]
+    },
+    "Cause 9: Specialist linguistic review required": {
+      "concept_count": 0,
+      "token_count": 0,
+      "sample_lemmas": []
+    }
+  }
+}

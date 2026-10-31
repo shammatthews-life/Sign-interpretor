@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Phase H28 Corpus Grammar Omission Quality & Linguistic Defense Audit",
+    "phase": "H28",
+    "total_grammar_omission_tokens": 9064,
+    "audited_categories_count": 5,
+    "disposition": "GRAMMAR_OMISSION"
+  },
+  "grammar_categories": {
+    "Articles (Definite & Indefinite)": {
+      "tokens": [
+        "the",
+        "a",
+        "an"
+      ],
+      "corpus_occurrences": 1782,
+      "isl_linguistic_justification": "Indian Sign Language has no definite ('the') or indefinite ('a', 'an') articles. Specificity and definiteness are expressed spatially using deictic pointing (IX) or spatial locus establishment, not separate lexical signs."
+    },
+    "Copulas & Auxiliary Verbs": {
+      "tokens": [
+        "is",
+        "are",
+        "am",
+        "was",
+        "were",
+        "be",
+        "been",
+        "being"
+      ],
+      "corpus_occurrences": 2456,
+      "isl_linguistic_justification": "ISL is a copula-drop language. Predicative adjectives and nominal predicates attach directly to subjects without equative linking verbs (e.g., 'SHE TEACHER', 'HE TIRED'). Auxiliary verbs are expressed by aspectual modulation or modal particles."
+    },
+    "Prepositions with Spatial Sign Incorporation": {
+      "tokens": [
+        "of",
+        "to",
+        "in",
+        "at",
+        "for",
+        "with",
+        "by",
+        "from",
+        "on"
+      ],
+      "corpus_occurrences": 2218,
+      "isl_linguistic_justification": "Spatial relationships in ISL are conveyed through classifier predicates, direction of verb movement, and spatial loci rather than independent monosyllabic English prepositions."
+    },
+    "Discourse Fillers & Spoken Particles": {
+      "tokens": [
+        "um",
+        "uh",
+        "like",
+        "you_know",
+        "well",
+        "so",
+        "actually",
+        "basically"
+      ],
+      "corpus_occurrences": 1640,
+      "isl_linguistic_justification": "Spoken English phonetic pause fillers do not carry semantic content in sign language interpretation and are omitted to avoid cognitive overload and interpretation lag."
+    },
+    "Connectives & Conjunctions (Non-manual marking)": {
+      "tokens": [
+        "that",
+        "and",
+        "or",
+        "but"
+      ],
+      "corpus_occurrences": 968,
+      "isl_linguistic_justification": "Coordination in ISL is signaled via head tilts, body shifts, and prosodic pauses between clause boundaries. Clausal subordination is marked non-manually via brow raise and forward head positioning."
+    }
+  }
+}

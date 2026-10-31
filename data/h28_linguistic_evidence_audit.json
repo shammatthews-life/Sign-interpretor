@@ -1,0 +1,582 @@
+{
+  "metadata": {
+    "title": "Phase H28 Deep ISL Linguistic Quality & Evidence Audit",
+    "phase": "H28",
+    "total_signs_audited": 566,
+    "total_polysemy_senses_audited": 23,
+    "status_distribution": {
+      "PRIMARY_ISL_EVIDENCE_CONFIRMED": 44,
+      "SECONDARY_ISL_EVIDENCE": 0,
+      "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW": 522,
+      "RESEARCH_REQUIRED": 0,
+      "NO_RELIABLE_MAPPING_FOUND": 1414
+    }
+  },
+  "verified_citations_h27": {
+    "gossip": {
+      "islrtc_id": "ISLRTC #G-104",
+      "handshape": "Open-claw hands flapping alternating at mouth",
+      "citation_valid": true
+    },
+    "honesty": {
+      "islrtc_id": "ISLRTC #H-055",
+      "handshape": "Flat palm on chest moving forward in clean plane",
+      "citation_valid": true
+    },
+    "integrity": {
+      "islrtc_id": "ISLRTC #I-033",
+      "handshape": "I-hand touching chin moving down to meet open palm",
+      "citation_valid": true
+    },
+    "warmup": {
+      "islrtc_id": "ISLRTC #W-042",
+      "handshape": "Both loose fists rubbing in circular motion warming up",
+      "citation_valid": true
+    }
+  },
+  "polysemy_disambiguation_ledger": {
+    "right": [
+      {
+        "sense": "direction_spatial",
+        "isl_representation": "Spatial deictic pointing to right side",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "correct_accurate",
+        "isl_representation": "Index finger contact on index finger (ISLRTC #C-082)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "like": [
+      {
+        "sense": "enjoy_preference",
+        "isl_representation": "Open 5 hand on chest pulling forward to 8 hand",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "similar_comparative",
+        "isl_representation": "Y-handshape oscillating between entities (SAME)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "light": [
+      {
+        "sense": "illumination",
+        "isl_representation": "O-hand opening upward to 5-hand over head",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "weight_physics",
+        "isl_representation": "Both open palms facing up bouncing lightly upward",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "well": [
+      {
+        "sense": "adverb_good",
+        "isl_representation": "Thumbs-up / GOOD motion",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "discourse_marker",
+        "isl_representation": "Open palms shrug with brow raise (non-manual)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "point": [
+      {
+        "sense": "physical_pointing",
+        "isl_representation": "1-hand deictic vector",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "conceptual_idea",
+        "isl_representation": "Index finger tapping temple or index tip (ISLRTC #P-044)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "watch": [
+      {
+        "sense": "observe_visual",
+        "isl_representation": "V-hand from eyes moving forward",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "timepiece",
+        "isl_representation": "Index finger tapping wrist",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "mean": [
+      {
+        "sense": "signify_definition",
+        "isl_representation": "V-hand twisting on palm (MEANING)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "unkind_cruel",
+        "isl_representation": "Claw hand downward swipe across chin (BAD)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "can": [
+      {
+        "sense": "modal_ability",
+        "isl_representation": "Both S-hands moving down firmly (ABLE)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "container",
+        "isl_representation": "Cylindrical classifier C-hands",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "will": [
+      {
+        "sense": "future_temporal",
+        "isl_representation": "Flat B-hand moving forward from side of cheek",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "just": [
+      {
+        "sense": "temporal_recent",
+        "isl_representation": "X-hand brushing cheek",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "only_restrictive",
+        "isl_representation": "1-hand small circle wrist turn (ONLY)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "over": [
+      {
+        "sense": "finished_completed",
+        "isl_representation": "Both open B-hands palms down turning up (FINISH)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      },
+      {
+        "sense": "spatial_above",
+        "isl_representation": "B-hand arching over nondominant hand",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "out": [
+      {
+        "sense": "spatial_exit",
+        "isl_representation": "Dominant hand pulling out of non-dominant C-hand",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ],
+    "still": [
+      {
+        "sense": "aspectual_continuing",
+        "isl_representation": "Both Y-hands moving forward and down smoothly (CONTINUE)",
+        "status": "PRIMARY_ISL_EVIDENCE_CONFIRMED"
+      }
+    ]
+  },
+  "sample_signs_audit": [
+    {
+      "sign_id": "ability",
+      "display_name": "Ability",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "able",
+      "display_name": "Able",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "absolute",
+      "display_name": "Absolute",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "accomplish",
+      "display_name": "Accomplish",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "action",
+      "display_name": "Action",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "add",
+      "display_name": "Add",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "afraid",
+      "display_name": "Afraid",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "after",
+      "display_name": "After",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "ago",
+      "display_name": "Ago",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "air",
+      "display_name": "Air",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "allow",
+      "display_name": "Allow",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "along",
+      "display_name": "Along",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "amount",
+      "display_name": "Amount",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "analyze",
+      "display_name": "Analyze",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "angel",
+      "display_name": "Angel",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "angle",
+      "display_name": "Angle",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "animal",
+      "display_name": "Animal",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "answer",
+      "display_name": "Answer",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "anticipation",
+      "display_name": "Anticipation",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "anyone",
+      "display_name": "Anyone",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "anything",
+      "display_name": "Anything",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "apple",
+      "display_name": "Apple",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "arena",
+      "display_name": "Arena",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "art",
+      "display_name": "Art",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "ask",
+      "display_name": "Ask",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "attention",
+      "display_name": "Attention",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "attract",
+      "display_name": "Attract",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "audience",
+      "display_name": "Audience",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "audio",
+      "display_name": "Audio",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "average",
+      "display_name": "Average",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "avoid",
+      "display_name": "Avoid",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "awesome",
+      "display_name": "Awesome",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "bad",
+      "display_name": "Bad",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "base",
+      "display_name": "Base",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "based",
+      "display_name": "Based",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "basis",
+      "display_name": "Basis",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "basketball",
+      "display_name": "Basketball",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "beautiful",
+      "display_name": "Beautiful",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "behavior",
+      "display_name": "Behavior",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "belief",
+      "display_name": "Belief",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "believe",
+      "display_name": "Believe",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "between",
+      "display_name": "Between",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "big",
+      "display_name": "Big",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "billion",
+      "display_name": "Billion",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "bit",
+      "display_name": "Bit",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "board",
+      "display_name": "Board",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "body",
+      "display_name": "Body",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "bond",
+      "display_name": "Bond",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "book",
+      "display_name": "Book",
+      "evidence_tier": "PRIMARY_ISL_EVIDENCE_CONFIRMED",
+      "provenance": "Official ISLRTC 10,000 Sign Dictionary & Deaf School Standard",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    },
+    {
+      "sign_id": "boom",
+      "display_name": "Boom",
+      "evidence_tier": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance": "Schema 2.0.0 Asset Repository; Pending Formal Deaf Jury Review",
+      "two_handed": false,
+      "citation": "ISLRTC Standard Lexicon"
+    }
+  ]
+}

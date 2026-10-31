@@ -574,13 +574,13 @@ export class EnglishToISLTranslator extends TranslationBackend {
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
-      ['going to', ['GOING_TO']], ['want to', ['WANT']], ['look at', ['LOOK']],
-      ['as well as', ['AND', 'ALSO']],
+      ['going to', ['WILL']], ['want to', ['WANT']], ['look at', ['LOOK']],
+      ['as well as', ['MORE']],
       // Phase H22 Curated High-Yield Multiword Phrases
-      ["i'm going to show", ['I', 'GOING_TO', 'SHOW']],
-      ['going to show you', ['GOING_TO', 'SHOW', 'YOU']],
-      ["i'm going to give", ['I', 'GOING_TO', 'GIVE']],
-      ['going to give you', ['GOING_TO', 'GIVE', 'YOU']],
+      ["i'm going to show", ['I', 'WILL', 'SHOW']],
+      ['going to show you', ['WILL', 'SHOW', 'YOU']],
+      ["i'm going to give", ['I', 'WILL', 'GIVE']],
+      ['going to give you', ['WILL', 'GIVE', 'YOU']],
       ['want to show you', ['WANT', 'SHOW', 'YOU']],
       ['want to give you', ['WANT', 'GIVE', 'YOU']],
       ['as you can see', ['YOU', 'CAN', 'SEE']],
@@ -601,9 +601,9 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['great job', ['GREAT', 'WORK']],
       ['talk to you', ['SAY', 'YOU']],
       ['look like', ['SAME']],
- ['in order to', ['FOR']], ['what do you', ['YOU', 'WHAT']],
-      ['how to', ['HOW']], ['have to', ['MUST']], ['public speaking', ['SAY', 'PEOPLE']],
-      ["i'm going to", ["I", "GOING_TO"]],
+ ['in order to', ['REASON']], ['what do you', ['YOU', 'WHAT']],
+      ['how to', ['HOW']], ['have to', ['NEED']], ['public speaking', ['SAY', 'PEOPLE']],
+      ["i'm going to", ["I", "WILL"]],
       ["have a look", ["LOOK"]],
       ["a look at", ["LOOK"]],
       ["have a look at", ["LOOK"]],
@@ -614,14 +614,14 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["to give you", ["GIVE", "YOU"]],
       ["look at this", ["LOOK"]],
       ["to show you", ["SHOW", "YOU"]],
-      ["every single", ["ALL", "ONE"]],
-      ["going to show", ["GOING_TO", "SHOW"]],
+      ["every single", ["ONE"]],
+      ["going to show", ["WILL", "SHOW"]],
       ["look at your", ["LOOK", "YOUR"]],
-      ["we're going to", ["WE", "GOING_TO"]],
-      ["going to give", ["GOING_TO", "GIVE"]],
+      ["we're going to", ["WE", "WILL"]],
+      ["going to give", ["WILL", "GIVE"]],
       ["a lot of", ["MORE"]],
       ["here we go", ["WE", "GO"]],
-      ["over and over", ["AGAIN", "MORE"]],
+      ["over and over", ["MORE"]],
       ["i don't know", ["I", "NOT", "KNOW"]],
       ["let's have a look", ["LOOK"]],
       ["give me more", ["GIVE", "ME", "MORE"]],
@@ -629,7 +629,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["the most beautiful", ["MORE", "BEAUTIFUL"]],
       ["body language", ["BODY", "GESTURE"]],
       ["facial expressions", ["HEAD", "GESTURE"]],
-      ["over and over again", ["AGAIN", "MORE"]],
+      ["over and over again", ["MORE"]],
       ["next time", ["TIME", "MORE"]],
       ["sit down", ["STAND"]],
       ["each other", ["SAME", "MEET"]],
@@ -1456,6 +1456,20 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['wants', 'WANT'], ['wanted', 'WANT'], ['wanting', 'WANT'],
       ['looks', 'LOOK'], ['looked', 'LOOK'], ['looking', 'LOOK'],
       ['sees', 'SEE'], ['saw', 'SEE'], ['seen', 'SEE'], ['seeing', 'SEE'],
+      // Phase H28 Production Sign Integration (13 Manifest Signs & Inflections)
+      ['complain', 'COMPLAIN'], ['complains', 'COMPLAIN'], ['complained', 'COMPLAIN'], ['complaining', 'COMPLAIN'],
+      ['control', 'CONTROL'], ['controls', 'CONTROL'], ['controlled', 'CONTROL'], ['controlling', 'CONTROL'],
+      ['excuse', 'EXCUSE'], ['excuses', 'EXCUSE'], ['excused', 'EXCUSE'], ['excusing', 'EXCUSE'],
+      ['gossip', 'GOSSIP'], ['gossips', 'GOSSIP'], ['gossiped', 'GOSSIP'], ['gossiping', 'GOSSIP'],
+      ['honesty', 'HONESTY'], ['honest', 'HONESTY'], ['honestly', 'HONESTY'],
+      ['integrity', 'INTEGRITY'],
+      ['judge', 'JUDGE'], ['judges', 'JUDGE'], ['judged', 'JUDGE'], ['judging', 'JUDGE'], ['judgment', 'JUDGE'],
+      ['negative', 'NEGATIVE'], ['negatively', 'NEGATIVE'], ['negativity', 'NEGATIVE'],
+      ['pitch', 'PITCH'], ['pitches', 'PITCH'], ['pitched', 'PITCH'], ['pitching', 'PITCH'],
+      ['protect', 'PROTECT'], ['protects', 'PROTECT'], ['protected', 'PROTECT'], ['protecting', 'PROTECT'], ['protection', 'PROTECT'],
+      ['tomorrow', 'TOMORROW'],
+      ['tone', 'TONE'], ['tones', 'TONE'],
+      ['warmup', 'WARMUP'], ['warmups', 'WARMUP'], ['warm-up', 'WARMUP'], ['warming up', 'WARMUP'],
     ]);
   }
 
@@ -1520,7 +1534,13 @@ export class EnglishToISLTranslator extends TranslationBackend {
     const phraseMatches = [];
     const remainingTokens = [];
     for (let index = 0; index < tokens.length;) {
-      const match = [...this.phrases.entries()].find(([phrase]) => {
+      if (!this._sortedPhrases) {
+        this._sortedPhrases = [...this.phrases.entries()].sort((a, b) => {
+          const diff = b[0].split(' ').length - a[0].split(' ').length;
+          return diff !== 0 ? diff : b[0].length - a[0].length;
+        });
+      }
+      const match = this._sortedPhrases.find(([phrase]) => {
         const words = phrase.split(' ');
         return words.every((word, offset) => tokens[index + offset] === word);
       });

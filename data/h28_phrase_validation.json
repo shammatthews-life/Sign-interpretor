@@ -1,0 +1,2911 @@
+{
+  "metadata": {
+    "title": "Phase H28 200-Phrase Translation & Grammar Validation",
+    "phase": "H28",
+    "total_phrases": 200,
+    "playable_phrases_count": 139,
+    "grammatical_collocations_count": 61
+  },
+  "phrases": [
+    {
+      "phrase_id": "phrase_0001",
+      "expression": "this is",
+      "frequency": 97,
+      "raw_gloss_sequence": [
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0002",
+      "expression": "going to",
+      "frequency": 85,
+      "raw_gloss_sequence": [
+        "GOING"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0003",
+      "expression": "if you",
+      "frequency": 85,
+      "raw_gloss_sequence": [
+        "IF",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0004",
+      "expression": "look at",
+      "frequency": 82,
+      "raw_gloss_sequence": [
+        "LOOK",
+        "AT"
+      ],
+      "resolved_gloss_sequence": [
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0005",
+      "expression": "have a",
+      "frequency": 68,
+      "raw_gloss_sequence": [
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0006",
+      "expression": "and i",
+      "frequency": 67,
+      "raw_gloss_sequence": [
+        "AND",
+        "I"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0007",
+      "expression": "you have",
+      "frequency": 63,
+      "raw_gloss_sequence": [
+        "YOU",
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0008",
+      "expression": "want to",
+      "frequency": 63,
+      "raw_gloss_sequence": [
+        "WANT"
+      ],
+      "resolved_gloss_sequence": [
+        "WANT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0009",
+      "expression": "i want",
+      "frequency": 58,
+      "raw_gloss_sequence": [
+        "I",
+        "WANT"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "WANT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0010",
+      "expression": "you can",
+      "frequency": 57,
+      "raw_gloss_sequence": [
+        "YOU",
+        "CAN"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "CAN"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0011",
+      "expression": "like this",
+      "frequency": 49,
+      "raw_gloss_sequence": [
+        "LIKE",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [
+        "LIKE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0012",
+      "expression": "and then",
+      "frequency": 49,
+      "raw_gloss_sequence": [
+        "AND",
+        "THEN"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0013",
+      "expression": "that you",
+      "frequency": 48,
+      "raw_gloss_sequence": [
+        "THAT",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0014",
+      "expression": "do you",
+      "frequency": 48,
+      "raw_gloss_sequence": [
+        "DO",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "DO",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0015",
+      "expression": "and you",
+      "frequency": 48,
+      "raw_gloss_sequence": [
+        "AND",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0016",
+      "expression": "give you",
+      "frequency": 46,
+      "raw_gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0017",
+      "expression": "you are",
+      "frequency": 46,
+      "raw_gloss_sequence": [
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0018",
+      "expression": "you to",
+      "frequency": 43,
+      "raw_gloss_sequence": [
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0019",
+      "expression": "to be",
+      "frequency": 42,
+      "raw_gloss_sequence": [
+        "BE"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0020",
+      "expression": "that is",
+      "frequency": 42,
+      "raw_gloss_sequence": [
+        "THAT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0021",
+      "expression": "when you",
+      "frequency": 42,
+      "raw_gloss_sequence": [
+        "WHEN",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "WHEN",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0022",
+      "expression": "i'm going",
+      "frequency": 40,
+      "raw_gloss_sequence": [
+        "I'M",
+        "GOING"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0023",
+      "expression": "i'm going to",
+      "frequency": 40,
+      "raw_gloss_sequence": [
+        "I'M",
+        "GOING"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0024",
+      "expression": "a look",
+      "frequency": 40,
+      "raw_gloss_sequence": [
+        "LOOK"
+      ],
+      "resolved_gloss_sequence": [
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0025",
+      "expression": "public speaking",
+      "frequency": 38,
+      "raw_gloss_sequence": [
+        "PUBLIC",
+        "SPEAKING"
+      ],
+      "resolved_gloss_sequence": [
+        "PUBLIC"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0026",
+      "expression": "have a look",
+      "frequency": 38,
+      "raw_gloss_sequence": [
+        "HAVE",
+        "LOOK"
+      ],
+      "resolved_gloss_sequence": [
+        "HAVE",
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0027",
+      "expression": "you know",
+      "frequency": 38,
+      "raw_gloss_sequence": [
+        "YOU",
+        "KNOW"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "KNOW"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0028",
+      "expression": "is the",
+      "frequency": 37,
+      "raw_gloss_sequence": [
+        "IS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0029",
+      "expression": "a look at",
+      "frequency": 37,
+      "raw_gloss_sequence": [
+        "LOOK",
+        "AT"
+      ],
+      "resolved_gloss_sequence": [
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0030",
+      "expression": "to do",
+      "frequency": 37,
+      "raw_gloss_sequence": [
+        "DO"
+      ],
+      "resolved_gloss_sequence": [
+        "DO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0031",
+      "expression": "you want",
+      "frequency": 36,
+      "raw_gloss_sequence": [
+        "YOU",
+        "WANT"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "WANT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0032",
+      "expression": "have a look at",
+      "frequency": 35,
+      "raw_gloss_sequence": [
+        "HAVE",
+        "LOOK",
+        "AT"
+      ],
+      "resolved_gloss_sequence": [
+        "HAVE",
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 4
+    },
+    {
+      "phrase_id": "phrase_0033",
+      "expression": "you go",
+      "frequency": 32,
+      "raw_gloss_sequence": [
+        "YOU",
+        "GO"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "GO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0034",
+      "expression": "in your",
+      "frequency": 31,
+      "raw_gloss_sequence": [
+        "IN",
+        "YOUR"
+      ],
+      "resolved_gloss_sequence": [
+        "YOUR"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0035",
+      "expression": "you do",
+      "frequency": 31,
+      "raw_gloss_sequence": [
+        "YOU",
+        "DO"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "DO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0036",
+      "expression": "listen to",
+      "frequency": 31,
+      "raw_gloss_sequence": [
+        "LISTEN"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0037",
+      "expression": "of you",
+      "frequency": 30,
+      "raw_gloss_sequence": [
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0038",
+      "expression": "is this",
+      "frequency": 30,
+      "raw_gloss_sequence": [
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0039",
+      "expression": "my god",
+      "frequency": 30,
+      "raw_gloss_sequence": [
+        "MY",
+        "GOD"
+      ],
+      "resolved_gloss_sequence": [
+        "MY"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0040",
+      "expression": "do this",
+      "frequency": 30,
+      "raw_gloss_sequence": [
+        "DO",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [
+        "DO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0041",
+      "expression": "want you",
+      "frequency": 29,
+      "raw_gloss_sequence": [
+        "WANT",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "WANT",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0042",
+      "expression": "is a",
+      "frequency": 28,
+      "raw_gloss_sequence": [
+        "IS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0043",
+      "expression": "when i",
+      "frequency": 28,
+      "raw_gloss_sequence": [
+        "WHEN",
+        "I"
+      ],
+      "resolved_gloss_sequence": [
+        "WHEN",
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0044",
+      "expression": "oh my",
+      "frequency": 28,
+      "raw_gloss_sequence": [
+        "OH",
+        "MY"
+      ],
+      "resolved_gloss_sequence": [
+        "MY"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0045",
+      "expression": "oh my god",
+      "frequency": 28,
+      "raw_gloss_sequence": [
+        "OH",
+        "MY",
+        "GOD"
+      ],
+      "resolved_gloss_sequence": [
+        "MY"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0046",
+      "expression": "and he",
+      "frequency": 28,
+      "raw_gloss_sequence": [
+        "AND",
+        "HE"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0047",
+      "expression": "which is",
+      "frequency": 27,
+      "raw_gloss_sequence": [
+        "WHICH"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0048",
+      "expression": "this one",
+      "frequency": 27,
+      "raw_gloss_sequence": [
+        "THIS",
+        "ONE"
+      ],
+      "resolved_gloss_sequence": [
+        "ONE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0049",
+      "expression": "want you to",
+      "frequency": 27,
+      "raw_gloss_sequence": [
+        "WANT",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "WANT",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0050",
+      "expression": "you want to",
+      "frequency": 27,
+      "raw_gloss_sequence": [
+        "YOU",
+        "WANT"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "WANT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0051",
+      "expression": "i can't",
+      "frequency": 27,
+      "raw_gloss_sequence": [
+        "I",
+        "CAN'T"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0052",
+      "expression": "to give",
+      "frequency": 26,
+      "raw_gloss_sequence": [
+        "GIVE"
+      ],
+      "resolved_gloss_sequence": [
+        "GIVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0053",
+      "expression": "it is",
+      "frequency": 26,
+      "raw_gloss_sequence": [
+        "IT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0054",
+      "expression": "i want you",
+      "frequency": 26,
+      "raw_gloss_sequence": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0055",
+      "expression": "show you",
+      "frequency": 26,
+      "raw_gloss_sequence": [
+        "SHOW",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "SHOW",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0056",
+      "expression": "to give you",
+      "frequency": 25,
+      "raw_gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0057",
+      "expression": "i want you to",
+      "frequency": 25,
+      "raw_gloss_sequence": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 4
+    },
+    {
+      "phrase_id": "phrase_0058",
+      "expression": "on stage",
+      "frequency": 24,
+      "raw_gloss_sequence": [
+        "ON",
+        "STAGE"
+      ],
+      "resolved_gloss_sequence": [
+        "STAGE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0059",
+      "expression": "to this",
+      "frequency": 24,
+      "raw_gloss_sequence": [
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0060",
+      "expression": "is that",
+      "frequency": 24,
+      "raw_gloss_sequence": [
+        "THAT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0061",
+      "expression": "you will",
+      "frequency": 24,
+      "raw_gloss_sequence": [
+        "YOU",
+        "WILL"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "WILL"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0062",
+      "expression": "what is",
+      "frequency": 24,
+      "raw_gloss_sequence": [
+        "WHAT"
+      ],
+      "resolved_gloss_sequence": [
+        "WHAT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0063",
+      "expression": "the most",
+      "frequency": 23,
+      "raw_gloss_sequence": [
+        "MOST"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0064",
+      "expression": "and they",
+      "frequency": 23,
+      "raw_gloss_sequence": [
+        "AND",
+        "THEY"
+      ],
+      "resolved_gloss_sequence": [
+        "THEY"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0065",
+      "expression": "so i",
+      "frequency": 23,
+      "raw_gloss_sequence": [
+        "SO",
+        "I"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0066",
+      "expression": "at the",
+      "frequency": 22,
+      "raw_gloss_sequence": [
+        "AT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0067",
+      "expression": "at this",
+      "frequency": 22,
+      "raw_gloss_sequence": [
+        "AT",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0068",
+      "expression": "and that",
+      "frequency": 22,
+      "raw_gloss_sequence": [
+        "AND",
+        "THAT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0069",
+      "expression": "to show",
+      "frequency": 22,
+      "raw_gloss_sequence": [
+        "SHOW"
+      ],
+      "resolved_gloss_sequence": [
+        "SHOW"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0070",
+      "expression": "you a",
+      "frequency": 21,
+      "raw_gloss_sequence": [
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0071",
+      "expression": "are you",
+      "frequency": 21,
+      "raw_gloss_sequence": [
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0072",
+      "expression": "i want to",
+      "frequency": 21,
+      "raw_gloss_sequence": [
+        "I",
+        "WANT"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "WANT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0073",
+      "expression": "i look",
+      "frequency": 21,
+      "raw_gloss_sequence": [
+        "I",
+        "LOOK"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0074",
+      "expression": "have to",
+      "frequency": 21,
+      "raw_gloss_sequence": [
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0075",
+      "expression": "look at this",
+      "frequency": 20,
+      "raw_gloss_sequence": [
+        "LOOK",
+        "AT",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0076",
+      "expression": "goes like",
+      "frequency": 20,
+      "raw_gloss_sequence": [
+        "GOES",
+        "LIKE"
+      ],
+      "resolved_gloss_sequence": [
+        "LIKE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0077",
+      "expression": "to show you",
+      "frequency": 20,
+      "raw_gloss_sequence": [
+        "SHOW",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "SHOW",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0078",
+      "expression": "to go",
+      "frequency": 20,
+      "raw_gloss_sequence": [
+        "GO"
+      ],
+      "resolved_gloss_sequence": [
+        "GO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0079",
+      "expression": "all of",
+      "frequency": 20,
+      "raw_gloss_sequence": [
+        "ALL"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0080",
+      "expression": "to you",
+      "frequency": 20,
+      "raw_gloss_sequence": [
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0081",
+      "expression": "i think",
+      "frequency": 19,
+      "raw_gloss_sequence": [
+        "I",
+        "THINK"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "THINK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0082",
+      "expression": "it's a",
+      "frequency": 19,
+      "raw_gloss_sequence": [
+        "IT'S"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0083",
+      "expression": "is it",
+      "frequency": 19,
+      "raw_gloss_sequence": [
+        "IT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0084",
+      "expression": "for you",
+      "frequency": 19,
+      "raw_gloss_sequence": [
+        "FOR",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0085",
+      "expression": "i don't",
+      "frequency": 19,
+      "raw_gloss_sequence": [
+        "I",
+        "DON'T"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0086",
+      "expression": "i just",
+      "frequency": 19,
+      "raw_gloss_sequence": [
+        "I",
+        "JUST"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0087",
+      "expression": "as a",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "AS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0088",
+      "expression": "i do",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "I",
+        "DO"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "DO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0089",
+      "expression": "your presentation",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "YOUR",
+        "PRESENTATION"
+      ],
+      "resolved_gloss_sequence": [
+        "YOUR",
+        "PRESENTATION"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0090",
+      "expression": "good at",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "GOOD",
+        "AT"
+      ],
+      "resolved_gloss_sequence": [
+        "GOOD"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0091",
+      "expression": "have you",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "HAVE",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "HAVE",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0092",
+      "expression": "i was",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "I",
+        "WAS"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0093",
+      "expression": "i have",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "I",
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0094",
+      "expression": "these are",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "THESE"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0095",
+      "expression": "i get",
+      "frequency": 18,
+      "raw_gloss_sequence": [
+        "I",
+        "GET"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0096",
+      "expression": "we have",
+      "frequency": 17,
+      "raw_gloss_sequence": [
+        "WE",
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "WE",
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0097",
+      "expression": "how to",
+      "frequency": 17,
+      "raw_gloss_sequence": [
+        "HOW"
+      ],
+      "resolved_gloss_sequence": [
+        "HOW"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0098",
+      "expression": "what you",
+      "frequency": 17,
+      "raw_gloss_sequence": [
+        "WHAT",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "WHAT",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0099",
+      "expression": "i said",
+      "frequency": 17,
+      "raw_gloss_sequence": [
+        "I",
+        "SAID"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0100",
+      "expression": "do it",
+      "frequency": 17,
+      "raw_gloss_sequence": [
+        "DO",
+        "IT"
+      ],
+      "resolved_gloss_sequence": [
+        "DO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0101",
+      "expression": "the best",
+      "frequency": 17,
+      "raw_gloss_sequence": [
+        "BEST"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0102",
+      "expression": "the way",
+      "frequency": 17,
+      "raw_gloss_sequence": [
+        "WAY"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0103",
+      "expression": "up on",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "UP",
+        "ON"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0104",
+      "expression": "in public",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "IN",
+        "PUBLIC"
+      ],
+      "resolved_gloss_sequence": [
+        "PUBLIC"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0105",
+      "expression": "goes like this",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "GOES",
+        "LIKE",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [
+        "LIKE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0106",
+      "expression": "the people",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "PEOPLE"
+      ],
+      "resolved_gloss_sequence": [
+        "PEOPLE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0107",
+      "expression": "every single",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "EVERY",
+        "SINGLE"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0108",
+      "expression": "we go",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "WE",
+        "GO"
+      ],
+      "resolved_gloss_sequence": [
+        "WE",
+        "GO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0109",
+      "expression": "time you",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "TIME",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "TIME",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0110",
+      "expression": "do i",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "DO",
+        "I"
+      ],
+      "resolved_gloss_sequence": [
+        "DO",
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0111",
+      "expression": "of your",
+      "frequency": 16,
+      "raw_gloss_sequence": [
+        "YOUR"
+      ],
+      "resolved_gloss_sequence": [
+        "YOUR"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0112",
+      "expression": "to see",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "SEE"
+      ],
+      "resolved_gloss_sequence": [
+        "SEE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0113",
+      "expression": "to me",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "ME"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0114",
+      "expression": "if i",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "IF",
+        "I"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0115",
+      "expression": "so you",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "SO",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0116",
+      "expression": "going to show",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "GOING",
+        "SHOW"
+      ],
+      "resolved_gloss_sequence": [
+        "SHOW"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0117",
+      "expression": "i'm going to show",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "I'M",
+        "GOING",
+        "SHOW"
+      ],
+      "resolved_gloss_sequence": [
+        "SHOW"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 4
+    },
+    {
+      "phrase_id": "phrase_0118",
+      "expression": "over and",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "OVER",
+        "AND"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0119",
+      "expression": "a presentation",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "PRESENTATION"
+      ],
+      "resolved_gloss_sequence": [
+        "PRESENTATION"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0120",
+      "expression": "it was",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "IT",
+        "WAS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0121",
+      "expression": "i'm gonna",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "I'M",
+        "GONNA"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0122",
+      "expression": "and she",
+      "frequency": 15,
+      "raw_gloss_sequence": [
+        "AND",
+        "SHE"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0123",
+      "expression": "you see",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "YOU",
+        "SEE"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "SEE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0124",
+      "expression": "that i",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "THAT",
+        "I"
+      ],
+      "resolved_gloss_sequence": [
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0125",
+      "expression": "will be",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "WILL",
+        "BE"
+      ],
+      "resolved_gloss_sequence": [
+        "WILL"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0126",
+      "expression": "here we",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "HERE",
+        "WE"
+      ],
+      "resolved_gloss_sequence": [
+        "WE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0127",
+      "expression": "a person",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "PERSON"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0128",
+      "expression": "a lot",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "LOT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0129",
+      "expression": "go up",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "GO",
+        "UP"
+      ],
+      "resolved_gloss_sequence": [
+        "GO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0130",
+      "expression": "the first",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "FIRST"
+      ],
+      "resolved_gloss_sequence": [
+        "FIRST"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0131",
+      "expression": "what do",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "WHAT",
+        "DO"
+      ],
+      "resolved_gloss_sequence": [
+        "WHAT",
+        "DO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0132",
+      "expression": "going to show you",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "GOING",
+        "SHOW",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "SHOW",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 4
+    },
+    {
+      "phrase_id": "phrase_0133",
+      "expression": "i'm going to show you",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "I'M",
+        "GOING",
+        "SHOW",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "SHOW",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 5
+    },
+    {
+      "phrase_id": "phrase_0134",
+      "expression": "go like",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "GO",
+        "LIKE"
+      ],
+      "resolved_gloss_sequence": [
+        "GO",
+        "LIKE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0135",
+      "expression": "my friend",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "MY",
+        "FRIEND"
+      ],
+      "resolved_gloss_sequence": [
+        "MY",
+        "FRIEND"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0136",
+      "expression": "it's not",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "IT'S",
+        "NOT"
+      ],
+      "resolved_gloss_sequence": [
+        "NOT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0137",
+      "expression": "at your",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "AT",
+        "YOUR"
+      ],
+      "resolved_gloss_sequence": [
+        "YOUR"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0138",
+      "expression": "of them",
+      "frequency": 14,
+      "raw_gloss_sequence": [
+        "THEM"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0139",
+      "expression": "more confident",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "MORE",
+        "CONFIDENT"
+      ],
+      "resolved_gloss_sequence": [
+        "MORE",
+        "CONFIDENT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0140",
+      "expression": "and i'm",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "AND",
+        "I'M"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0141",
+      "expression": "the world",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "WORLD"
+      ],
+      "resolved_gloss_sequence": [
+        "WORLD"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0142",
+      "expression": "one of",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "ONE"
+      ],
+      "resolved_gloss_sequence": [
+        "ONE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0143",
+      "expression": "up to",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "UP"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0144",
+      "expression": "means that",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "MEANS",
+        "THAT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0145",
+      "expression": "i love",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "I",
+        "LOVE"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "LOVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0146",
+      "expression": "up on stage",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "UP",
+        "ON",
+        "STAGE"
+      ],
+      "resolved_gloss_sequence": [
+        "STAGE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0147",
+      "expression": "one is",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "ONE"
+      ],
+      "resolved_gloss_sequence": [
+        "ONE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0148",
+      "expression": "so if",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "SO",
+        "IF"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0149",
+      "expression": "confident in",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "CONFIDENT",
+        "IN"
+      ],
+      "resolved_gloss_sequence": [
+        "CONFIDENT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0150",
+      "expression": "in this",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "IN",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0151",
+      "expression": "but if",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "BUT",
+        "IF"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0152",
+      "expression": "so the",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "SO"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0153",
+      "expression": "i look at",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "I",
+        "LOOK",
+        "AT"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0154",
+      "expression": "you have to",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "YOU",
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0155",
+      "expression": "and it's",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "AND",
+        "IT'S"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0156",
+      "expression": "don't know",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "DON'T",
+        "KNOW"
+      ],
+      "resolved_gloss_sequence": [
+        "KNOW"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0157",
+      "expression": "not a",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "NOT"
+      ],
+      "resolved_gloss_sequence": [
+        "NOT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0158",
+      "expression": "with a",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "WITH"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0159",
+      "expression": "of these",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "THESE"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0160",
+      "expression": "as well",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "AS",
+        "WELL"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0161",
+      "expression": "give me",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "GIVE",
+        "ME"
+      ],
+      "resolved_gloss_sequence": [
+        "GIVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0162",
+      "expression": "you don't",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "YOU",
+        "DON'T"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0163",
+      "expression": "like i",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "LIKE",
+        "I"
+      ],
+      "resolved_gloss_sequence": [
+        "LIKE",
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0164",
+      "expression": "for the",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "FOR"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0165",
+      "expression": "with your",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "WITH",
+        "YOUR"
+      ],
+      "resolved_gloss_sequence": [
+        "YOUR"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0166",
+      "expression": "i go",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "I",
+        "GO"
+      ],
+      "resolved_gloss_sequence": [
+        "I",
+        "GO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0167",
+      "expression": "they will",
+      "frequency": 13,
+      "raw_gloss_sequence": [
+        "THEY",
+        "WILL"
+      ],
+      "resolved_gloss_sequence": [
+        "THEY",
+        "WILL"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0168",
+      "expression": "to say",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "SAY"
+      ],
+      "resolved_gloss_sequence": [
+        "SAY"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0169",
+      "expression": "going to give",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "GOING",
+        "GIVE"
+      ],
+      "resolved_gloss_sequence": [
+        "GIVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0170",
+      "expression": "i'm going to give",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "I'M",
+        "GOING",
+        "GIVE"
+      ],
+      "resolved_gloss_sequence": [
+        "GIVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 4
+    },
+    {
+      "phrase_id": "phrase_0171",
+      "expression": "going to give you",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "GOING",
+        "GIVE",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 4
+    },
+    {
+      "phrase_id": "phrase_0172",
+      "expression": "i'm going to give you",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "I'M",
+        "GOING",
+        "GIVE",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 5
+    },
+    {
+      "phrase_id": "phrase_0173",
+      "expression": "you've got",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "YOU'VE",
+        "GOT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0174",
+      "expression": "a look at this",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "LOOK",
+        "AT",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 4
+    },
+    {
+      "phrase_id": "phrase_0175",
+      "expression": "have a look at this",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "HAVE",
+        "LOOK",
+        "AT",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [
+        "HAVE",
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 5
+    },
+    {
+      "phrase_id": "phrase_0176",
+      "expression": "what i",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "WHAT",
+        "I"
+      ],
+      "resolved_gloss_sequence": [
+        "WHAT",
+        "I"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0177",
+      "expression": "when we",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "WHEN",
+        "WE"
+      ],
+      "resolved_gloss_sequence": [
+        "WHEN",
+        "WE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0178",
+      "expression": "can you",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "CAN",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "CAN",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0179",
+      "expression": "to become",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "BECOME"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0180",
+      "expression": "is so",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "SO"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0181",
+      "expression": "if you have",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "IF",
+        "YOU",
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0182",
+      "expression": "how you",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "HOW",
+        "YOU"
+      ],
+      "resolved_gloss_sequence": [
+        "HOW",
+        "YOU"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0183",
+      "expression": "that you can",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "THAT",
+        "YOU",
+        "CAN"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "CAN"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0184",
+      "expression": "let's have",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "LET'S",
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0185",
+      "expression": "let's have a",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "LET'S",
+        "HAVE"
+      ],
+      "resolved_gloss_sequence": [
+        "HAVE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0186",
+      "expression": "it's the",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "IT'S"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0187",
+      "expression": "and so",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "AND",
+        "SO"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0188",
+      "expression": "you look",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "YOU",
+        "LOOK"
+      ],
+      "resolved_gloss_sequence": [
+        "YOU",
+        "LOOK"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0189",
+      "expression": "lot of",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "LOT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0190",
+      "expression": "a lot of",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "LOT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0191",
+      "expression": "to do this",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "DO",
+        "THIS"
+      ],
+      "resolved_gloss_sequence": [
+        "DO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0192",
+      "expression": "here we go",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "HERE",
+        "WE",
+        "GO"
+      ],
+      "resolved_gloss_sequence": [
+        "WE",
+        "GO"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0193",
+      "expression": "and over",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "AND",
+        "OVER"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0194",
+      "expression": "look at your",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "LOOK",
+        "AT",
+        "YOUR"
+      ],
+      "resolved_gloss_sequence": [
+        "LOOK",
+        "YOUR"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0195",
+      "expression": "out of",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "OUT"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0196",
+      "expression": "your audience",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "YOUR",
+        "AUDIENCE"
+      ],
+      "resolved_gloss_sequence": [
+        "YOUR",
+        "AUDIENCE"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0197",
+      "expression": "we're going",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "WE'RE",
+        "GOING"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0198",
+      "expression": "we're going to",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "WE'RE",
+        "GOING"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 3
+    },
+    {
+      "phrase_id": "phrase_0199",
+      "expression": "he goes",
+      "frequency": 12,
+      "raw_gloss_sequence": [
+        "HE",
+        "GOES"
+      ],
+      "resolved_gloss_sequence": [],
+      "is_grammatical_collocation": true,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    },
+    {
+      "phrase_id": "phrase_0200",
+      "expression": "the next",
+      "frequency": 11,
+      "raw_gloss_sequence": [
+        "NEXT"
+      ],
+      "resolved_gloss_sequence": [
+        "NEXT"
+      ],
+      "is_grammatical_collocation": false,
+      "evidence_source": "Canonical Transcript Collocation Inventory",
+      "matching_priority": 2
+    }
+  ]
+}

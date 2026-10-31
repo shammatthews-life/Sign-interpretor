@@ -1,0 +1,1015 @@
+{
+  "metadata": {
+    "title": "Phase H28 Whole-Library Aether 60 FPS Kinematic Articulation Audit",
+    "phase": "H28",
+    "timestamp": "2026-10-31T03:38:00.989Z",
+    "total_signs": 566,
+    "total_sampled_frames": 42327
+  },
+  "metrics": {
+    "neutral_rest_pass_rate": "100.00%",
+    "anatomical_safety_rate": "100.00%"
+  },
+  "results": [
+    {
+      "sign_id": "ability",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "able",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "absolute",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "accomplish",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "action",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "add",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.047,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "afraid",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "after",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "ago",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.95,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "air",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "allow",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "along",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "amount",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "analyze",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "angel",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "angle",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "animal",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "answer",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.047,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "anticipation",
+      "keyframes": 5,
+      "duration_ms": 1350,
+      "sampled_frames": 81,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "anyone",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.65,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "anything",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.6,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "apple",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 1,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "arena",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.85,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "art",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "ask",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.047,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "attention",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "attract",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "audience",
+      "keyframes": 5,
+      "duration_ms": 1400,
+      "sampled_frames": 84,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "audio",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 1.1,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "average",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "avoid",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.65,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "awesome",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "bad",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "base",
+      "keyframes": 4,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 1.012,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "based",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "basis",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "basketball",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.85,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "beautiful",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.71,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "behavior",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "belief",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.85,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "believe",
+      "keyframes": 5,
+      "duration_ms": 1350,
+      "sampled_frames": 81,
+      "max_rotation_amplitude_rad": 1,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "between",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "big",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "billion",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "bit",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "board",
+      "keyframes": 4,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.012,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "body",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "bond",
+      "keyframes": 4,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.012,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "book",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.187,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "boom",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.6,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "born",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "brain",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.71,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "break",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "breathe",
+      "keyframes": 3,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.4,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "bridge",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "brilliant",
+      "keyframes": 5,
+      "duration_ms": 1350,
+      "sampled_frames": 81,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "bring",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "build",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "burden",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "business",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "buy",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.65,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "call",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.047,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "camera",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "can",
+      "keyframes": 5,
+      "duration_ms": 1100,
+      "sampled_frames": 66,
+      "max_rotation_amplitude_rad": 1.309,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "cannot",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "car",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "care",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.85,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "career",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "case",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.047,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "catch",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.047,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "center",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "certain",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.85,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "challenge",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "change",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "chart",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "chat",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "chest",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.85,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "clarity",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "class",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "clean",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "clear",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 1.134,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "client",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "cloak",
+      "keyframes": 5,
+      "duration_ms": 1250,
+      "sampled_frames": 75,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "close",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "coaching",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.8,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "college",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "color",
+      "keyframes": 5,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "combination",
+      "keyframes": 4,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 1.012,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "come",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.187,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "comfortable",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "communication",
+      "keyframes": 4,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 1.012,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "company",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.7,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "complain",
+      "keyframes": 3,
+      "duration_ms": 1200,
+      "sampled_frames": 72,
+      "max_rotation_amplitude_rad": 0.6,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "complex",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.65,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "computer",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.047,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "concept",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "conductor",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.65,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "conference",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.75,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "confident",
+      "keyframes": 5,
+      "duration_ms": 1150,
+      "sampled_frames": 69,
+      "max_rotation_amplitude_rad": 1.047,
+      "unit_basis": "DEGREES_CONVERTED_TO_RAD",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    },
+    {
+      "sign_id": "confused",
+      "keyframes": 5,
+      "duration_ms": 1300,
+      "sampled_frames": 78,
+      "max_rotation_amplitude_rad": 0.9,
+      "unit_basis": "DIRECT_RADIANS",
+      "neutral_rest": true,
+      "safe_amplitude": true
+    }
+  ]
+}

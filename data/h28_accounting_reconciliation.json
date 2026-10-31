@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "title": "Phase H28 Canonical Accounting & Mathematical Reconciliation",
+    "phase": "H28",
+    "canonical_video": "MXKkXXYUxBc",
+    "total_segments": 2366,
+    "total_canonical_tokens": 23258
+  },
+  "issue_a_token_discrepancy": {
+    "description": "Reconciliation of 23,256 (H27 Surface Inventory) vs 23,258 (Final Corpus Accounting)",
+    "reported_surface_occurrences": 23256,
+    "reported_corpus_tokens": 23258,
+    "discrepancy": 2,
+    "root_cause": "Unicode Latin-1 character '\u00fc' (U+00FC) in Segment #1274 ('His name is Hans R\u00fcsling.'). Python's \\b regex boundary treats '\u00fc' as \\w, preventing \\b[a-zA-Z0-9']+\\b from matching ASCII fragments 'r' and 'sling' which were adjacent to \\w, thus dropping 2 tokens. The bcl tokenizer [a-z0-9]+(?:'[a-z0-9]+)? matched both fragments as independent tokens (23,256 + 2 = 23,258).",
+    "affected_segment": {
+      "segment_index": 1274,
+      "segment_id": 1275,
+      "raw_text": "His name is Hans R\u00fcsling.",
+      "ext_tokens": [
+        "his",
+        "name",
+        "is",
+        "hans"
+      ],
+      "bcl_tokens": [
+        "his",
+        "name",
+        "is",
+        "hans",
+        "r",
+        "sling"
+      ]
+    },
+    "resolution": "Adopt standardized unicode-aware tokenization rule preserving exactly 23,258 canonical tokens with stable identifiers MXKkXXYUxBc:S0001:T0001 to MXKkXXYUxBc:S2366:T0006."
+  },
+  "issue_b_gloss_dispatch_discrepancy": {
+    "description": "Reconciliation of 10,898 generated glosses vs 10,762 playable sign dispatches (136-output difference)",
+    "total_glosses_generated": 10898,
+    "total_playable_dispatches": 10762,
+    "difference": 136,
+    "root_cause": "Multi-word phrase translation rules emitted 7 non-lexicalized or modal glosses lacking corresponding asset IDs in motionCatalog, which were filtered out by translator line 1594 (filter(id => this.motionCatalog[id])).",
+    "breakdown": {
+      "GOING_TO": {
+        "occurrences": 85,
+        "phrase_sources": [
+          "going to",
+          "i'm going to",
+          "going to show",
+          "going to give",
+          "we're going to"
+        ],
+        "linguistic_role": "Future aspect marker (should map to WILL in ISL)",
+        "in_manifest": false
+      },
+      "MUST": {
+        "occurrences": 21,
+        "phrase_sources": [
+          "have to"
+        ],
+        "linguistic_role": "Modal necessity (should map to NEED in ISL)",
+        "in_manifest": false
+      },
+      "ALL": {
+        "occurrences": 16,
+        "phrase_sources": [
+          "every single -> ['ALL', 'ONE']"
+        ],
+        "linguistic_role": "Universal quantifier (ALL lacks authored motion; ONE is playable)",
+        "in_manifest": false
+      },
+      "AGAIN": {
+        "occurrences": 9,
+        "phrase_sources": [
+          "over and over",
+          "over and over again -> ['AGAIN', 'MORE']"
+        ],
+        "linguistic_role": "Iterative aspect (AGAIN lacks authored motion; MORE is playable)",
+        "in_manifest": false
+      },
+      "FOR": {
+        "occurrences": 3,
+        "phrase_sources": [
+          "in order to -> ['FOR']"
+        ],
+        "linguistic_role": "Purposive conjunction (should map to REASON in ISL)",
+        "in_manifest": false
+      },
+      "AND": {
+        "occurrences": 1,
+        "phrase_sources": [
+          "as well as -> ['AND', 'ALSO']"
+        ],
+        "linguistic_role": "Additive coordinator (non-lexicalized in ISL)",
+        "in_manifest": false
+      },
+      "ALSO": {
+        "occurrences": 1,
+        "phrase_sources": [
+          "as well as -> ['AND', 'ALSO']"
+        ],
+        "linguistic_role": "Additive focus particle (non-lexicalized in ISL)",
+        "in_manifest": false
+      }
+    },
+    "sum_of_unmapped_glosses": 136,
+    "exact_match": true
+  },
+  "issue_c_corpus_token_accounting": {
+    "status": "MATHEMATICALLY_VERIFIED",
+    "canonical_total_tokens": 23258,
+    "calculated_sum": 23258,
+    "discrepancy": 0,
+    "silent_token_loss": 0,
+    "communicative_coverage": {
+      "tokens": 21019,
+      "percentage": 90.37
+    },
+    "dispositions": {
+      "GRAMMAR_OMISSION": {
+        "tokens": 9064,
+        "percentage": 38.97
+      },
+      "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
+        "tokens": 10308,
+        "percentage": 44.32
+      },
+      "SUBTITLE_FALLBACK": {
+        "tokens": 2239,
+        "percentage": 9.63
+      },
+      "PHRASE_TRANSLATED": {
+        "tokens": 1444,
+        "percentage": 6.21
+      },
+      "FINGERSPELLED": {
+        "tokens": 203,
+        "percentage": 0.87
+      },
+      "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": {
+        "tokens": 0,
+        "percentage": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "canonical_video": "MXKkXXYUxBc",
+  "total_segments": 2366,
+  "total_playable_dispatches": 10884,
+  "total_fallback_subtitles": 8489,
+  "elapsed_ms": 662.43,
+  "rapid_seeks_tested": 4,
+  "playback_rates_tested": [
+    0.5,
+    1,
+    1.5,
+    2
+  ]
+}

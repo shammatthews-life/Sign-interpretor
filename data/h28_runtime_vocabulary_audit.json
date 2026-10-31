@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Phase H28 Production Runtime Vocabulary Audit",
+    "phase": "H28",
+    "timestamp": "2026-10-31T03:25:19.145Z",
+    "total_surface_words": 2286,
+    "total_lemmas": 1915,
+    "total_concepts": 1916,
+    "silently_missing_items": 0
+  },
+  "summary": {
+    "playable_sign_words": 901,
+    "grammar_omission_words": 17,
+    "fallback_words": 1368,
+    "missing_items_count": 0
+  },
+  "concepts_audited": 1916,
+  "surface_words_audited": 2286
+}

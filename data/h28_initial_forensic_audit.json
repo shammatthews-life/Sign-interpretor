@@ -1,0 +1,28 @@
+{
+  "audit_timestamp": "2026-10-31T08:45:00+05:30",
+  "git_head_commit": "314dd0e",
+  "branch": "r1-articulation-coverage-and-report",
+  "working_tree_clean": true,
+  "canonical_transcript": "runtime/youtube/MXKkXXYUxBc/transcript.json",
+  "canonical_segments": 2366,
+  "canonical_tokens": 23258,
+  "manifest_signs_count": 566,
+  "audited_issues": {
+    "two_token_discrepancy": {
+      "status": "RESOLVED",
+      "delta": 2,
+      "cause": "Latin-1 umlaut in Segment #1274"
+    },
+    "136_output_difference": {
+      "status": "RESOLVED",
+      "delta": 136,
+      "cause": "7 unmapped phrase-rule glosses filtered at translator runtime"
+    },
+    "linguistic_status": {
+      "status": "AUDITING",
+      "implemented_signs_tokens": 10308,
+      "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "action": "Workstream C systematic evidence verification"
+    }
+  }
+}
