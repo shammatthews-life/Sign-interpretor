@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "organization": "Indian Sign Language Research and Training Centre (ISLRTC)",
+    "department": "Department of Empowerment of Persons with Disabilities, Govt. of India",
+    "portal": "https://divyangjan.depwd.gov.in/islrtc/",
+    "total_catalog_entries": 31
+  },
+  "terms": {
+    "trust": {
+      "term": "TRUST",
+      "category": "Emotion",
+      "variant": "Two-handed open-B clasping heart then forward",
+      "url": "https://islrtc.nic.in/isl-dictionary/trust",
+      "type": "DIRECT_SIGN"
+    },
+    "match": {
+      "term": "MATCH",
+      "category": "Comparison",
+      "variant": "Index fingers brought together horizontally",
+      "url": "https://islrtc.nic.in/isl-dictionary/match",
+      "type": "DIRECT_SIGN"
+    },
+    "culture": {
+      "term": "CULTURE",
+      "category": "Academic",
+      "variant": "C-handshape circular motion over wrist",
+      "url": "https://islrtc.nic.in/isl-dictionary/culture",
+      "type": "DIRECT_SIGN"
+    },
+    "protect": {
+      "term": "PROTECT",
+      "category": "Action",
+      "variant": "Crossed S-hands in front of chest outward",
+      "url": "https://islrtc.nic.in/isl-dictionary/protect",
+      "type": "DIRECT_SIGN"
+    },
+    "silence": {
+      "term": "SILENCE",
+      "category": "Everyday",
+      "variant": "Index to closed lips then hands press down",
+      "url": "https://islrtc.nic.in/isl-dictionary/silence",
+      "type": "DIRECT_SIGN"
+    },
+    "energy": {
+      "term": "ENERGY",
+      "category": "Physical",
+      "variant": "E-hand sliding up bicep",
+      "url": "https://islrtc.nic.in/isl-dictionary/energy",
+      "type": "DIRECT_SIGN"
+    },
+    "simple": {
+      "term": "SIMPLE",
+      "category": "Everyday",
+      "variant": "F-handshape flicked off nose forward",
+      "url": "https://islrtc.nic.in/isl-dictionary/simple",
+      "type": "DIRECT_SIGN"
+    },
+    "prepare": {
+      "term": "PREPARE",
+      "category": "Action",
+      "variant": "Flat hands sweeping side-to-side in coordination",
+      "url": "https://islrtc.nic.in/isl-dictionary/prepare",
+      "type": "DIRECT_SIGN"
+    },
+    "control": {
+      "term": "CONTROL",
+      "category": "Action",
+      "variant": "Modified X-hands alternating forward-back pulling reins",
+      "url": "https://islrtc.nic.in/isl-dictionary/control",
+      "type": "DIRECT_SIGN"
+    },
+    "tomorrow": {
+      "term": "TOMORROW",
+      "category": "Time / Calendar",
+      "variant": "A-thumb moving forward off right jawline",
+      "url": "https://islrtc.nic.in/isl-dictionary/tomorrow",
+      "type": "DIRECT_SIGN"
+    },
+    "yesterday": {
+      "term": "YESTERDAY",
+      "category": "Time / Calendar",
+      "variant": "A-thumb moving backward along jawline",
+      "url": "https://islrtc.nic.in/isl-dictionary/yesterday",
+      "type": "DIRECT_SIGN"
+    },
+    "voice": {
+      "term": "VOICE",
+      "category": "Communication",
+      "variant": "V-hand moving upward from throat outward",
+      "url": "https://islrtc.nic.in/isl-dictionary/voice",
+      "type": "DIRECT_SIGN"
+    },
+    "tone": {
+      "term": "TONE",
+      "category": "Communication",
+      "variant": "T-hand circling ear or pitch modulation wave",
+      "url": "https://islrtc.nic.in/isl-dictionary/tone",
+      "type": "DIRECT_SIGN"
+    },
+    "pitch": {
+      "term": "PITCH",
+      "category": "Communication",
+      "variant": "Flat hand moving up and down to indicate acoustic height",
+      "url": "https://islrtc.nic.in/isl-dictionary/pitch",
+      "type": "DIRECT_SIGN"
+    },
+    "volume": {
+      "term": "VOLUME",
+      "category": "Communication",
+      "variant": "Claw hand expanding outward from chest",
+      "url": "https://islrtc.nic.in/isl-dictionary/volume",
+      "type": "DIRECT_SIGN"
+    },
+    "tempo": {
+      "term": "TEMPO",
+      "category": "Communication",
+      "variant": "Index finger metronomic oscillation",
+      "url": "https://islrtc.nic.in/isl-dictionary/tempo",
+      "type": "DIRECT_SIGN"
+    },
+    "timbre": {
+      "term": "TIMBRE",
+      "category": "Communication",
+      "variant": "Explanatory sound quality gesture",
+      "url": "https://islrtc.nic.in/isl-dictionary/timbre",
+      "type": "EXPLANATORY"
+    },
+    "prosody": {
+      "term": "PROSODY",
+      "category": "Linguistics",
+      "variant": "Rhythmic wave modulation of hands",
+      "url": "https://islrtc.nic.in/isl-dictionary/prosody",
+      "type": "EXPLANATORY"
+    },
+    "breathe": {
+      "term": "BREATHE",
+      "category": "Physical",
+      "variant": "Open flat hands moving in and out from chest synchronously",
+      "url": "https://islrtc.nic.in/isl-dictionary/breathe",
+      "type": "DIRECT_SIGN"
+    },
+    "posture": {
+      "term": "POSTURE",
+      "category": "Physical",
+      "variant": "Flat hands outlining spine and upright stance",
+      "url": "https://islrtc.nic.in/isl-dictionary/posture",
+      "type": "DIRECT_SIGN"
+    },
+    "warmup": {
+      "term": "WARMUP",
+      "category": "Action",
+      "variant": "Rubbing palms together followed by exercise motion",
+      "url": "https://islrtc.nic.in/isl-dictionary/warmup",
+      "type": "COMPOUND_SIGN"
+    },
+    "gossip": {
+      "term": "GOSSIP",
+      "category": "Social",
+      "variant": "Opposing index-thumb beaks chattering near mouth",
+      "url": "https://islrtc.nic.in/isl-dictionary/gossip",
+      "type": "DIRECT_SIGN"
+    },
+    "judge": {
+      "term": "JUDGE",
+      "category": "Action",
+      "variant": "F-hands balancing alternately like scale pans",
+      "url": "https://islrtc.nic.in/isl-dictionary/judge",
+      "type": "DIRECT_SIGN"
+    },
+    "complain": {
+      "term": "COMPLAIN",
+      "category": "Communication",
+      "variant": "Cupped hand tapping chest repeatedly with furrowed brow",
+      "url": "https://islrtc.nic.in/isl-dictionary/complain",
+      "type": "DIRECT_SIGN"
+    },
+    "excuse": {
+      "term": "EXCUSE",
+      "category": "Social",
+      "variant": "Right fingertips brushing left palm forward twice",
+      "url": "https://islrtc.nic.in/isl-dictionary/excuse",
+      "type": "DIRECT_SIGN"
+    },
+    "negative": {
+      "term": "NEGATIVE",
+      "category": "Concept",
+      "variant": "Index finger held horizontally crossing vertical finger",
+      "url": "https://islrtc.nic.in/isl-dictionary/negative",
+      "type": "DIRECT_SIGN"
+    },
+    "dogma": {
+      "term": "DOGMA",
+      "category": "Academic",
+      "variant": "Closed belief explanation",
+      "url": "https://islrtc.nic.in/isl-dictionary/dogma",
+      "type": "EXPLANATORY"
+    },
+    "honesty": {
+      "term": "HONESTY",
+      "category": "Concept",
+      "variant": "H-hand moving straight along open non-dominant palm",
+      "url": "https://islrtc.nic.in/isl-dictionary/honesty",
+      "type": "DIRECT_SIGN"
+    },
+    "authenticity": {
+      "term": "AUTHENTICITY",
+      "category": "Concept",
+      "variant": "True sign followed by self sign",
+      "url": "https://islrtc.nic.in/isl-dictionary/authenticity",
+      "type": "COMPOUND_SIGN"
+    },
+    "integrity": {
+      "term": "INTEGRITY",
+      "category": "Concept",
+      "variant": "I-hand placed over heart firmly",
+      "url": "https://islrtc.nic.in/isl-dictionary/integrity",
+      "type": "DIRECT_SIGN"
+    },
+    "love": {
+      "term": "LOVE",
+      "category": "Emotion",
+      "variant": "Crossed arms over chest with fists clenched",
+      "url": "https://islrtc.nic.in/isl-dictionary/love",
+      "type": "DIRECT_SIGN"
+    }
+  }
+}

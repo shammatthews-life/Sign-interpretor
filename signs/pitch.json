@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "pitch",
+  "metadata": {
+    "display_name": "Pitch",
+    "gloss": "PITCH",
+    "language": "ISL",
+    "lexical_type": "ISL Lexical Sign (Communication)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC #P-144. Right flat hand adjusting vertical height in front of chest."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1150,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral_Rest",
+        "easing": "linear",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      {
+        "time_ms": 575,
+        "label": "PITCH_Stroke",
+        "easing": "ease-in-out",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.4,
+            "y": 0.15,
+            "z": -0.25
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.5,
+            "y": 0.1,
+            "z": 0.2
+          },
+          "Bip001_R_Hand": {
+            "x": 0.35,
+            "y": 0.05,
+            "z": 0.0
+          }
+        }
+      },
+      {
+        "time_ms": 1150,
+        "label": "Neutral_Return",
+        "easing": "ease-out",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      }
+    ]
+  }
+}

@@ -3,7 +3,7 @@
   "schema_version": "2.0.0",
   "generated_at": "2026-10-31T03:30:00Z",
   "phase": "H24",
-  "total_signs": 550,
+  "total_signs": 562,
   "total_playable_signs": 550,
   "signs": [
     {
@@ -1571,6 +1571,17 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "complain",
+      "display_name": "Complain",
+      "gloss": "COMPLAIN",
+      "file": "signs/complain.json",
+      "category": "Communication",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "right",
+      "duration_ms": 1200
+    },
+    {
       "sign_id": "complex",
       "display_name": "Complex",
       "gloss": "COMPLEX",
@@ -1756,6 +1767,17 @@
       "file_name": "continuous.json",
       "involved_bones_count": 6,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "control",
+      "display_name": "Control",
+      "gloss": "CONTROL",
+      "file": "signs/control.json",
+      "category": "Action",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1300
     },
     {
       "sign_id": "cool",
@@ -2555,6 +2577,17 @@
       "file_name": "excellent.json",
       "involved_bones_count": 4,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "excuse",
+      "display_name": "Excuse",
+      "gloss": "EXCUSE",
+      "file": "signs/excuse.json",
+      "category": "Social",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1250
     },
     {
       "sign_id": "exercise",
@@ -4190,6 +4223,17 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "judge",
+      "display_name": "Judge",
+      "gloss": "JUDGE",
+      "file": "signs/judge.json",
+      "category": "Action",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1250
+    },
+    {
       "sign_id": "keep",
       "display_name": "Keep",
       "gloss": "KEEP",
@@ -5381,6 +5425,17 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "negative",
+      "display_name": "Negative",
+      "gloss": "NEGATIVE",
+      "file": "signs/negative.json",
+      "category": "Concept",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1150
+    },
+    {
       "sign_id": "nervous",
       "display_name": "Nervous",
       "gloss": "NERVOUS",
@@ -6112,6 +6167,17 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "pitch",
+      "display_name": "Pitch",
+      "gloss": "PITCH",
+      "file": "signs/pitch.json",
+      "category": "Communication",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "right",
+      "duration_ms": 1150
+    },
+    {
       "sign_id": "place",
       "display_name": "Place",
       "gloss": "PLACE",
@@ -6316,6 +6382,17 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "prepare",
+      "display_name": "Prepare",
+      "gloss": "PREPARE",
+      "file": "signs/prepare.json",
+      "category": "Action",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1250
+    },
+    {
       "sign_id": "prepared",
       "display_name": "Prepared",
       "gloss": "PREPARED",
@@ -6433,6 +6510,17 @@
       "file_name": "promise.json",
       "involved_bones_count": 6,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "protect",
+      "display_name": "Protect",
+      "gloss": "PROTECT",
+      "file": "signs/protect.json",
+      "category": "Action",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "both",
+      "duration_ms": 1200
     },
     {
       "sign_id": "proven",
@@ -7368,6 +7456,17 @@
       "file_name": "side.json",
       "involved_bones_count": 4,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "silence",
+      "display_name": "Silence",
+      "gloss": "SILENCE",
+      "file": "signs/silence.json",
+      "category": "Everyday",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "right",
+      "duration_ms": 1200
     },
     {
       "sign_id": "silent",
@@ -8424,6 +8523,28 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "tomorrow",
+      "display_name": "Tomorrow",
+      "gloss": "TOMORROW",
+      "file": "signs/tomorrow.json",
+      "category": "Time / Calendar",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "right",
+      "duration_ms": 1050
+    },
+    {
+      "sign_id": "tone",
+      "display_name": "Tone",
+      "gloss": "TONE",
+      "file": "signs/tone.json",
+      "category": "Communication",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "right",
+      "duration_ms": 1100
+    },
+    {
       "sign_id": "tools",
       "display_name": "Tools",
       "gloss": "TOOLS",
@@ -9323,6 +9444,17 @@
       "file_name": "yes.json",
       "involved_bones_count": 5,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "yesterday",
+      "display_name": "Yesterday",
+      "gloss": "YESTERDAY",
+      "file": "signs/yesterday.json",
+      "category": "Time / Calendar",
+      "status": "playable",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "dominant_hand": "right",
+      "duration_ms": 1050
     },
     {
       "sign_id": "you",

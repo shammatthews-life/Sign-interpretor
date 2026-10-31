@@ -913,3 +913,42 @@ Documented in detail in [`docs/h25_final_report.md`](h25_final_report.md) and [`
 - `node tools/validate_phase_h8_extension_youtube.mjs`: **PASS (14/14 CHECKS GREEN)**
 - `node tools/validate_phase_h14_visual_and_extension.mjs`: **PASS (7/7 CHECKS GREEN)**
 - `git diff --check`: **0 ERRORS**
+
+
+---
+---
+
+## AC. Phase H26 Complete Remaining ISL Vocabulary Campaign Report
+
+Documented in detail in [`docs/h26_final_project_report.md`](h26_final_project_report.md), [`docs/h26_vocabulary_completion_report.md`](h26_vocabulary_completion_report.md), and [`docs/h26_execution_timeline.md`](h26_execution_timeline.md).
+
+### 1. Key Accomplishments & Metrics
+- **Forensic Resolution of H25 14-Token Discrepancy:** Proved that 13 tokens were converted to playable signs in H25 Task 05 and 1 token (`tomorrow`) was isolated under pending motion, strictly reconciling the 2,260 research tokens with the 2,246 final fallback tokens. Documented in [`docs/h26_accounting_discrepancy_audit.md`](h26_accounting_discrepancy_audit.md) and [`data/h26_h25_discrepancy_resolution.json`](../data/h26_h25_discrepancy_resolution.json).
+- **100% Unresolved Concept Classification (14 Batches):** Evaluated and classified every single one of the **1,388 remaining concepts** across 14 consecutive batches ([`data/h26_batch01.json`](../data/h26_batch01.json) through [`data/h26_batch14.json`](../data/h26_batch14.json) and consolidated [`data/h26_all_processed_concepts.json`](../data/h26_all_processed_concepts.json)). **Zero unclassified concepts remain.**
+- **Playable Sign Library Milestone:** Expanded to **562 Schema 2.0.0 signs** in [`signs/manifest.json`](../signs/manifest.json), adding high-frequency official ISLRTC signs (`voice`, `breathe`, `trust`, `protect`, `prepare`, `control`, `silence`, `tomorrow`, `yesterday`, `pitch`, `tone`, `volume`, `posture`, `judge`, `complain`, `excuse`, `negative`, `love`).
+- **Aether 60 FPS Kinematics & Avatar Verification:** 100% of newly authored signs passed 60 FPS continuous sampling with safe human rotations ($\le 1.10\text{ rad}$), 0 mesh clipping, and strict neutral returns in [`tools/test_aether_h26_motions.mjs`](../tools/test_aether_h26_motions.mjs). Whole-library regression validated all 562 signs across 2,763 keyframes in [`tools/validate_h26_full_sign_library.mjs`](../tools/validate_h26_full_sign_library.mjs).
+- **Canonical Corpus Token Accounting Invariant:**
+  - Total Spoken Tokens: **23,258 (100.0%)**
+  - Implemented Signs (`IMPLEMENTED_PENDING_LINGUISTIC_REVIEW`): **10,308 tokens (44.32%)**
+  - Grammatical Omissions (`GRAMMAR_OMISSION`): **9,064 tokens (38.97%)**
+  - Phrase Translations (`PHRASE_TRANSLATED`): **1,444 tokens (6.21%)**
+  - Fingerspelled Proper Nouns (`FINGERSPELLED`): **203 tokens (0.87%)**
+  - Dictionary Reference Pending: **0 tokens (0.00%)**
+  - Subtitle Fallbacks (`SUBTITLE_FALLBACK`): **2,239 tokens (9.63%)**
+  - **Total Communicative Coverage:** **21,019 tokens (90.37%)**
+  - **Silent Token Discrepancy:** **Exactly 0 tokens (0.00% loss)**
+- **Full 2.5-Hour Video & Sentence Acceptance:** 100 / 100 real sentences translated and articulated cleanly; all 2,366 segments of `MXKkXXYUxBc` simulated with 0 dropped events, 0 desyncs, and 4 rapid seeks handled with clean queue resets.
+
+### 2. Master Verification Matrix
+- `node tools/validate_h26_complete_vocabulary.mjs`: **PASS (ALL 6 SECTIONS GREEN)**
+- `node tools/validate_h26_full_sign_library.mjs`: **PASS (562/562 SIGNS VALIDATED)**
+- `node tools/test_aether_h26_motions.mjs`: **PASS (18/18 MOTIONS PERFECT)**
+- `python tools/validate_h22_corpus_accounting.py`: **PASS (23,258 TOKENS, 0 DISCREPANCY)**
+- `node tools/test_h26_sentence_and_youtube_acceptance.mjs`: **PASS (100/100 SENTENCES & 2,366 SEGS GREEN)**
+- `node tools/test_h26_full_translation.mjs`: **PASS (2,366 SEGS REPROCESSED)**
+- `node tools/validate_phase_h6_extension.mjs`: **PASS (12/12 EXTENSION CHECKS GREEN)**
+- `node tools/validate_phase_h8_extension_youtube.mjs`: **PASS (14/14 CHECKS GREEN)**
+- `node tools/validate_phase_h14_visual_and_extension.mjs`: **PASS (7/7 CHECKS GREEN)**
+- `node tools/validate_h23_project_release.mjs`: **PASS (8/8 CHECKS GREEN)**
+- `node tools/validate_h23_full_regression.mjs`: **PASS (8/8 REGRESSIONS GREEN)**
+- `git diff --check`: **0 ERRORS**

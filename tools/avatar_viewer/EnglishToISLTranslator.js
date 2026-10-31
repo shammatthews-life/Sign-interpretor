@@ -21,7 +21,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       thank_you: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
       drink: { playable: true },
       help: { playable: true }, need: { playable: true },
-      how: { playable: true }, tomorrow: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
+      how: { playable: true }, tomorrow: { playable: true },
       go: { playable: true }, do: { playable: true }, people: { playable: true },
       one: { playable: true }, when: { playable: true }, now: { playable: true },
       more: { playable: true },
@@ -552,7 +552,20 @@ export class EnglishToISLTranslator extends TranslationBackend {
       shadow: { playable: true },
       mirror: { playable: true },
       window: { playable: true },
-      wall: { playable: true }
+      wall: { playable: true },
+      // Phase H26 Playable Signs (reaching 562 total signs)
+      protect: { playable: true },
+      prepare: { playable: true },
+      control: { playable: true },
+      silence: { playable: true },
+      yesterday: { playable: true },
+      pitch: { playable: true },
+      tone: { playable: true },
+      volume: { playable: true },
+      judge: { playable: true },
+      complain: { playable: true },
+      excuse: { playable: true },
+      negative: { playable: true }
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],

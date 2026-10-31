@@ -1,0 +1,826 @@
+{
+  "metadata": {
+    "title": "H26 High-Frequency Unavailable Concepts Completion Audit",
+    "phase": "H26",
+    "top_concepts_audited_count": 50,
+    "summary_counts": {
+      "CANDIDATE_FOR_NEW_DIRECT_SIGN": 0,
+      "MORPHOLOGY_ALIAS_TO_EXISTING": 2,
+      "FINGERSPELLED_PROPER_NOUN": 0,
+      "DISCOURSE_OR_GRAMMAR_MARKER": 1,
+      "CONFIRMED_SUBTITLE_FALLBACK": 47
+    }
+  },
+  "category_breakdown": {
+    "CANDIDATE_FOR_NEW_DIRECT_SIGN": [],
+    "MORPHOLOGY_ALIAS_TO_EXISTING": [
+      {
+        "lemma": "happening",
+        "frequency": 6,
+        "category": "MORPHOLOGY_ALIAS_TO_EXISTING",
+        "action": "Add translator alias to root sign 'happen'",
+        "islrtc_ref": "Inflection of playable sign happen",
+        "expected_token_impact": 6
+      },
+      {
+        "lemma": "playing",
+        "frequency": 6,
+        "category": "MORPHOLOGY_ALIAS_TO_EXISTING",
+        "action": "Add translator alias to root sign 'play'",
+        "islrtc_ref": "Inflection of playable sign play",
+        "expected_token_impact": 6
+      }
+    ],
+    "FINGERSPELLED_PROPER_NOUN": [],
+    "DISCOURSE_OR_GRAMMAR_MARKER": [
+      {
+        "lemma": "ha",
+        "frequency": 5,
+        "category": "DISCOURSE_OR_GRAMMAR_MARKER",
+        "action": "Map to non-manual marker / discourse interjection",
+        "islrtc_ref": "ISL Grammar Non-Manual Marker",
+        "expected_token_impact": 5
+      }
+    ],
+    "CONFIRMED_SUBTITLE_FALLBACK": [
+      {
+        "lemma": "10",
+        "frequency": 16,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "30",
+        "frequency": 13,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "110",
+        "frequency": 11,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "000",
+        "frequency": 9,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "50",
+        "frequency": 9,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "lars",
+        "frequency": 8,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "oxytocin",
+        "frequency": 8,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "100",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "12",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "13",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "25",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "45",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "logs",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "non",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "per",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "rhetorical",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "won't",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "y",
+        "frequency": 7,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "bigger",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "bop",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "fixed",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "happens",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "here's",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "i'd",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "movies",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "obviously",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "ok",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "one's",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "realized",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "specifically",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "spices",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "usually",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "whenever",
+        "frequency": 6,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "60",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "audible",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "blah",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "british",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "clients",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "cocktail",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "covered",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "either",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "else",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "grows",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "happened",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "immediately",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "instagram",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      },
+      {
+        "lemma": "james",
+        "frequency": 5,
+        "category": "CONFIRMED_SUBTITLE_FALLBACK",
+        "action": "Preserve transparent subtitle fallback pill below avatar",
+        "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+        "expected_token_impact": 0
+      }
+    ]
+  },
+  "audited_concepts": [
+    {
+      "lemma": "10",
+      "frequency": 16,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "30",
+      "frequency": 13,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "110",
+      "frequency": 11,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "000",
+      "frequency": 9,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "50",
+      "frequency": 9,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "lars",
+      "frequency": 8,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "oxytocin",
+      "frequency": 8,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "100",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "12",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "13",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "25",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "45",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "logs",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "non",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "per",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "rhetorical",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "won't",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "y",
+      "frequency": 7,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "bigger",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "bop",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "fixed",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "happening",
+      "frequency": 6,
+      "category": "MORPHOLOGY_ALIAS_TO_EXISTING",
+      "action": "Add translator alias to root sign 'happen'",
+      "islrtc_ref": "Inflection of playable sign happen",
+      "expected_token_impact": 6
+    },
+    {
+      "lemma": "happens",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "here's",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "i'd",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "movies",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "obviously",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "ok",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "one's",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "playing",
+      "frequency": 6,
+      "category": "MORPHOLOGY_ALIAS_TO_EXISTING",
+      "action": "Add translator alias to root sign 'play'",
+      "islrtc_ref": "Inflection of playable sign play",
+      "expected_token_impact": 6
+    },
+    {
+      "lemma": "realized",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "specifically",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "spices",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "usually",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "whenever",
+      "frequency": 6,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "60",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "audible",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "blah",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "british",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "clients",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "cocktail",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "covered",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "either",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "else",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "grows",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "ha",
+      "frequency": 5,
+      "category": "DISCOURSE_OR_GRAMMAR_MARKER",
+      "action": "Map to non-manual marker / discourse interjection",
+      "islrtc_ref": "ISL Grammar Non-Manual Marker",
+      "expected_token_impact": 5
+    },
+    {
+      "lemma": "happened",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "immediately",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "instagram",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    },
+    {
+      "lemma": "james",
+      "frequency": 5,
+      "category": "CONFIRMED_SUBTITLE_FALLBACK",
+      "action": "Preserve transparent subtitle fallback pill below avatar",
+      "islrtc_ref": "Unattested in standardized ISLRTC lexical dictionary",
+      "expected_token_impact": 0
+    }
+  ]
+}

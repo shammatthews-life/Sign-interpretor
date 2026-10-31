@@ -1228,48 +1228,6 @@
     "fallback_required": false
   },
   {
-    "concept_id": "time",
-    "lemma": "time",
-    "surface_forms": [
-      "day",
-      "days",
-      "moment",
-      "time",
-      "times",
-      "yesterday"
-    ],
-    "frequency": 99,
-    "example_sentences": [
-      "What you're about to watch is a special compilation of a three-day public speaking challenge",
-      "During these three days, I am not kidding around. Your time is valuable. My time is valuable. I want",
-      "During these three days, I am not kidding around. Your time is valuable. My time is valuable. I want"
-    ],
-    "timestamps": [
-      [
-        24.45,
-        30.45
-      ],
-      [
-        154.59,
-        162.83
-      ],
-      [
-        154.59,
-        162.83
-      ]
-    ],
-    "semantic_category": "Everyday",
-    "dictionary_match": true,
-    "dictionary_entry": "Time",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "PLAYABLE_SIGN",
-    "sign_id": "time",
-    "motion_status": "playable",
-    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
     "concept_id": "will",
     "lemma": "will",
     "surface_forms": [
@@ -1327,6 +1285,47 @@
     "sign_id": null,
     "motion_status": "OMITTED_BY_SYNTAX",
     "linguistic_review_status": "NONE",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "time",
+    "lemma": "time",
+    "surface_forms": [
+      "day",
+      "days",
+      "moment",
+      "time",
+      "times"
+    ],
+    "frequency": 93,
+    "example_sentences": [
+      "What you're about to watch is a special compilation of a three-day public speaking challenge",
+      "During these three days, I am not kidding around. Your time is valuable. My time is valuable. I want",
+      "During these three days, I am not kidding around. Your time is valuable. My time is valuable. I want"
+    ],
+    "timestamps": [
+      [
+        24.45,
+        30.45
+      ],
+      [
+        154.59,
+        162.83
+      ],
+      [
+        154.59,
+        162.83
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Time",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "time",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
   },
   {
@@ -13412,6 +13411,43 @@
     "sign_variants": [],
     "translation_strategy": "PLAYABLE_SIGN",
     "sign_id": "range",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "yesterday",
+    "lemma": "yesterday",
+    "surface_forms": [
+      "yesterday"
+    ],
+    "frequency": 6,
+    "example_sentences": [
+      "I love science, as you heard yesterday, when we went through the likes of testosterone and",
+      "We went through dopamine yesterday as well, but we went through dopamine from a confidence",
+      "around you. Imagine that. That's almost like somebody sent me, no, two people sent me DM's yesterday on"
+    ],
+    "timestamps": [
+      [
+        3489.04,
+        3493.08
+      ],
+      [
+        3496.04,
+        3500.52
+      ],
+      [
+        3694.36,
+        3700.2
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Yesterday",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "yesterday",
     "motion_status": "playable",
     "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
@@ -32072,16 +32108,16 @@
         4841.99
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Control",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "control",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "space",
@@ -36138,16 +36174,16 @@
         8063.68
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Pitch",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "pitch",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "62",
@@ -38155,11 +38191,11 @@
     "dictionary_entry": "Tomorrow",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "MOTION_NOT_AUTHORED",
-    "linguistic_review_status": "DICTIONARY_VERIFIED_PENDING_MOTION",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "tomorrow",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "country",
@@ -39257,16 +39293,16 @@
         373.18
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Excuse",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "excuse",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "preparation",
@@ -53182,16 +53218,16 @@
         5421.43
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Silence",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "silence",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "chuckle",
@@ -61282,16 +61318,16 @@
         8413.07
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Negative",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "negative",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "correctly",

@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "silence",
+  "metadata": {
+    "display_name": "Silence",
+    "gloss": "SILENCE",
+    "language": "ISL",
+    "lexical_type": "ISL Lexical Sign (Everyday)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC #S-118. Index to closed lips, followed by dual open palms pressing downward."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1200,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral_Rest",
+        "easing": "linear",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      {
+        "time_ms": 600,
+        "label": "SILENCE_Stroke",
+        "easing": "ease-in-out",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.55,
+            "y": 0.15,
+            "z": -0.3
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.65,
+            "y": 0.1,
+            "z": 0.35
+          },
+          "Bip001_R_Hand": {
+            "x": 0.25,
+            "y": 0.05,
+            "z": 0.0
+          }
+        }
+      },
+      {
+        "time_ms": 1200,
+        "label": "Neutral_Return",
+        "easing": "ease-out",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      }
+    ]
+  }
+}

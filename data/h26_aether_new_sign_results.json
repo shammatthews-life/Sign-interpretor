@@ -1,0 +1,205 @@
+{
+  "tested_signs_count": 18,
+  "passed_count": 18,
+  "failed_count": 0,
+  "results": [
+    {
+      "sign_id": "voice",
+      "display_name": "Voice",
+      "keyframes_count": 3,
+      "duration_ms": 1100,
+      "sampled_frames_60fps": 66,
+      "max_rotation_amplitude_rad": 0.55,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "breathe",
+      "display_name": "Breathe",
+      "keyframes_count": 3,
+      "duration_ms": 1300,
+      "sampled_frames_60fps": 78,
+      "max_rotation_amplitude_rad": 0.4,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "trust",
+      "display_name": "Trust",
+      "keyframes_count": 3,
+      "duration_ms": 1250,
+      "sampled_frames_60fps": 75,
+      "max_rotation_amplitude_rad": 0.6,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "protect",
+      "display_name": "Protect",
+      "keyframes_count": 3,
+      "duration_ms": 1200,
+      "sampled_frames_60fps": 72,
+      "max_rotation_amplitude_rad": 0.55,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "prepare",
+      "display_name": "Prepare",
+      "keyframes_count": 3,
+      "duration_ms": 1250,
+      "sampled_frames_60fps": 75,
+      "max_rotation_amplitude_rad": 0.45,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "control",
+      "display_name": "Control",
+      "keyframes_count": 3,
+      "duration_ms": 1300,
+      "sampled_frames_60fps": 78,
+      "max_rotation_amplitude_rad": 0.6,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "silence",
+      "display_name": "Silence",
+      "keyframes_count": 3,
+      "duration_ms": 1200,
+      "sampled_frames_60fps": 72,
+      "max_rotation_amplitude_rad": 0.65,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "tomorrow",
+      "display_name": "Tomorrow",
+      "keyframes_count": 3,
+      "duration_ms": 1050,
+      "sampled_frames_60fps": 63,
+      "max_rotation_amplitude_rad": 0.6,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "yesterday",
+      "display_name": "Yesterday",
+      "keyframes_count": 3,
+      "duration_ms": 1050,
+      "sampled_frames_60fps": 63,
+      "max_rotation_amplitude_rad": 0.55,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "pitch",
+      "display_name": "Pitch",
+      "keyframes_count": 3,
+      "duration_ms": 1150,
+      "sampled_frames_60fps": 69,
+      "max_rotation_amplitude_rad": 0.5,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "tone",
+      "display_name": "Tone",
+      "keyframes_count": 3,
+      "duration_ms": 1100,
+      "sampled_frames_60fps": 66,
+      "max_rotation_amplitude_rad": 0.65,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "volume",
+      "display_name": "Volume",
+      "keyframes_count": 3,
+      "duration_ms": 1200,
+      "sampled_frames_60fps": 72,
+      "max_rotation_amplitude_rad": 0.45,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "posture",
+      "display_name": "Posture",
+      "keyframes_count": 3,
+      "duration_ms": 1150,
+      "sampled_frames_60fps": 69,
+      "max_rotation_amplitude_rad": 0.5,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "judge",
+      "display_name": "Judge",
+      "keyframes_count": 3,
+      "duration_ms": 1250,
+      "sampled_frames_60fps": 75,
+      "max_rotation_amplitude_rad": 0.55,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "complain",
+      "display_name": "Complain",
+      "keyframes_count": 3,
+      "duration_ms": 1200,
+      "sampled_frames_60fps": 72,
+      "max_rotation_amplitude_rad": 0.6,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "excuse",
+      "display_name": "Excuse",
+      "keyframes_count": 3,
+      "duration_ms": 1250,
+      "sampled_frames_60fps": 75,
+      "max_rotation_amplitude_rad": 0.55,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "negative",
+      "display_name": "Negative",
+      "keyframes_count": 3,
+      "duration_ms": 1150,
+      "sampled_frames_60fps": 69,
+      "max_rotation_amplitude_rad": 0.5,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    },
+    {
+      "sign_id": "love",
+      "display_name": "Love",
+      "keyframes_count": 3,
+      "duration_ms": 1300,
+      "sampled_frames_60fps": 78,
+      "max_rotation_amplitude_rad": 0.65,
+      "neutral_start_and_end": true,
+      "safe_anatomical_bounds": true,
+      "status": "PERFECT_ARTICULATION"
+    }
+  ]
+}

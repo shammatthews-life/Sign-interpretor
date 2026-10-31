@@ -1,0 +1,15 @@
+{
+  "phase": "H26",
+  "videoId": "MXKkXXYUxBc",
+  "total_segments": 2366,
+  "processed_segments": 2366,
+  "dropped_segments": 0,
+  "timeline_desyncs": 0,
+  "elapsed_ms": 795.79,
+  "throughput_seg_per_sec": 2973.1,
+  "signs_dispatched": 10762,
+  "fallbacks_handled": 3,
+  "seeks_handled": 4,
+  "pauses_handled": 3,
+  "status": "PASSED_FLAWLESS"
+}

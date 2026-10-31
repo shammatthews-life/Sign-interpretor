@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "Phase H26 Final Canonical Token Accounting",
+    "phase": "H26",
+    "video_id": "MXKkXXYUxBc",
+    "validation_status": "MATHEMATICALLY_VERIFIED"
+  },
+  "canonical_totals": {
+    "total_spoken_tokens": 23258,
+    "calculated_dispositions_sum": 23258,
+    "silent_token_discrepancy": 0,
+    "communicative_coverage_tokens": 21019,
+    "communicative_coverage_percent": 90.37
+  },
+  "disposition_breakdown": {
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": {
+      "tokens": 10308,
+      "percent": 44.32,
+      "description": "Playable Schema 2.0.0 signs articulated in WebGL avatar runtime"
+    },
+    "GRAMMAR_OMISSION": {
+      "tokens": 9064,
+      "percent": 38.97,
+      "description": "Natural ISL grammatical particles, copulas, and directional inflections"
+    },
+    "PHRASE_TRANSLATED": {
+      "tokens": 1444,
+      "percent": 6.21,
+      "description": "Contextual multiword expressions and idioms translated as coherent sign sequences"
+    },
+    "FINGERSPELLED": {
+      "tokens": 203,
+      "percent": 0.87,
+      "description": "Two-handed ISL fingerspelled proper names, geography, and technical acronyms"
+    },
+    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": {
+      "tokens": 0,
+      "percent": 0.0,
+      "description": "All previously pending references successfully implemented"
+    },
+    "SUBTITLE_FALLBACK": {
+      "tokens": 2239,
+      "percent": 9.63,
+      "description": "Terms without standardized ISL lexical signs displayed honestly below avatar"
+    }
+  },
+  "sign_library_metrics": {
+    "total_playable_signs": 562,
+    "new_signs_authored_h26": 12,
+    "total_schema_2_compliant": 562
+  }
+}

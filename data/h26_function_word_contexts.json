@@ -1,0 +1,478 @@
+{
+  "metadata": {
+    "title": "H26 Contextual Disambiguation Rationale for 10 Critical Function Words",
+    "phase": "H26"
+  },
+  "words": {
+    "to": {
+      "functional_category": "Preposition / Infinitive Marker",
+      "isl_handling_strategy": "SPATIAL_DIRECTIONAL_INCORPORATION",
+      "contextual_rationale": "In ISL, prepositional directionality is inflected directly into the vector trajectory of directional verbs (e.g., GO, BRING, SEND) rather than signed as a standalone manual token. Infinitive 'to' has no manual counterpart in natural sign syntax.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "It's to help you overcome being uncertain, anxious, afraid,",
+          "timestamp": [
+            8.45,
+            14.45
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "and bring you a few steps closer to being more confident, more clear,",
+          "timestamp": [
+            14.45,
+            21.45
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+          "timestamp": [
+            24.45,
+            30.45
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+          "timestamp": [
+            58.53,
+            65.01
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+          "timestamp": [
+            69.49,
+            74.29
+          ]
+        }
+      ]
+    },
+    "up": {
+      "functional_category": "Particle / Spatial Adverb",
+      "isl_handling_strategy": "PHYSICAL_PATH_MODIFIER_OR_PHRASE",
+      "contextual_rationale": "When used in phrasal verbs ('warm up', 'stand up'), 'up' is incorporated into the unitary sign motion. When indicating vertical elevation ('hands up'), signed with deictic spatial elevation.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "You've signed up to something which is called a challenge,",
+          "timestamp": [
+            144.55,
+            147.91
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "Because this isn't up to me. I'm here. I will give you the skills and the tools and the techniques,",
+          "timestamp": [
+            180.43,
+            187.15
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "walks up on stage fearful, well, their output and what they present will be severely impacted",
+          "timestamp": [
+            251.43,
+            259.51
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "So if you like this session, make sure you pick up this book.",
+          "timestamp": [
+            301.79,
+            305.39
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "go up and still to some extent you fail in your presentation.",
+          "timestamp": [
+            392.6,
+            397.72
+          ]
+        }
+      ]
+    },
+    "out": {
+      "functional_category": "Particle / Spatial Direction",
+      "isl_handling_strategy": "EGOCENTRIC_VECTOR_PATH",
+      "contextual_rationale": "In phrasal verbs ('find out', 'speak out'), handled contextually via compound signs. When directional, articulated via outward sagittal stroke from neutral space.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "I also want to say this, please take out pens and papers and whatever you need to write",
+          "timestamp": [
+            204.03,
+            209.35
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "It just came out in Japan, which I think looks a lot more interesting than the English version,",
+          "timestamp": [
+            308.63,
+            314.35
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "If the wind is strong enough, it can put out your fire.",
+          "timestamp": [
+            615.0,
+            619.04
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "any longer and it's like the wind is putting out your fire. What on earth is going on?",
+          "timestamp": [
+            656.44,
+            661.16
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "again and that allowed him then to go out and deliver a great presentation again.",
+          "timestamp": [
+            956.74,
+            963.38
+          ]
+        }
+      ]
+    },
+    "over": {
+      "functional_category": "Preposition / Aspectual Marker",
+      "isl_handling_strategy": "TEMPORAL_DURATION_OR_SPATIAL_ARC",
+      "contextual_rationale": "In 'over time', translated via elongated circular aspect. In 'over there', translated with distal deictic index.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+          "timestamp": [
+            58.53,
+            65.01
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
+          "timestamp": [
+            80.45,
+            86.61
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "There's pictures all over the place.",
+          "timestamp": [
+            116.63,
+            118.95
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "over here we have fear, and at the far end over here we have confidence. If a person",
+          "timestamp": [
+            245.55,
+            251.43
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "Can you please fly over and have a look at it?",
+          "timestamp": [
+            891.9,
+            894.58
+          ]
+        }
+      ]
+    },
+    "about": {
+      "functional_category": "Topic Marker / Approximation",
+      "isl_handling_strategy": "TOPIC_FRAME_OR_APPROXIMATION",
+      "contextual_rationale": "When introducing a topic ('talk about X'), topic is fronted in ISL SOV syntax (X TALK). When indicating numeric approximation ('about ten'), expressed via oscillating claw handshape.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+          "timestamp": [
+            24.45,
+            30.45
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "that it's time to begin. Our first session today is about confidence on command. And",
+          "timestamp": [
+            231.59,
+            239.59
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "We have the 110 steps of excellent communication and the final one which is about mindset.",
+          "timestamp": [
+            285.51,
+            291.79
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "When we talk about confidence and confidence on command, there's two perspectives.",
+          "timestamp": [
+            397.72,
+            403.44
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "The first thing I want to give you is growth mindset. You've probably heard about this",
+          "timestamp": [
+            661.16,
+            667.0
+          ]
+        }
+      ]
+    },
+    "just": {
+      "functional_category": "Focus Adverb / Temporal Marker",
+      "isl_handling_strategy": "NON_MANUAL_FACIAL_MARKER_OR_ONLY",
+      "contextual_rationale": "Expressing recency ('just happened') uses shoulder-raise non-manual marker. Expressing restriction ('just five minutes') uses lexical sign ONLY.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "Mayorka, I'm going to Mayorka in just a couple of weeks.",
+          "timestamp": [
+            122.23,
+            124.91
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "It just came out in Japan, which I think looks a lot more interesting than the English version,",
+          "timestamp": [
+            308.63,
+            314.35
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "Sorry, but I'll just wing this.",
+          "timestamp": [
+            350.1,
+            352.1
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally",
+          "timestamp": [
+            446.64,
+            451.24
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "in just walking up to strangers and talking to them?",
+          "timestamp": [
+            475.44,
+            478.44
+          ]
+        }
+      ]
+    },
+    "right": {
+      "functional_category": "Spatial Direction / Discourse Affirmation",
+      "isl_handling_strategy": "DISAMBIGUATED_SIGN_OR_AFFIRMATION",
+      "contextual_rationale": "Directional 'right' signs toward the right lateral plane. Tag-question 'right?' signs with nod and questioning brow furrow (non-manual). 'Right now' signs temporal CURRENT.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "which we delivered live right here in our studio.",
+          "timestamp": [
+            30.45,
+            34.25
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "All right, beautiful to see you all.",
+          "timestamp": [
+            131.99,
+            134.71
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "right?",
+          "timestamp": [
+            147.91,
+            148.91
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "challenge, yes? All right, that's amazing. I love it. Love it.",
+          "timestamp": [
+            175.87,
+            179.95
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "Yeah, we'll wing it right now.",
+          "timestamp": [
+            353.1,
+            355.82
+          ]
+        }
+      ]
+    },
+    "still": {
+      "functional_category": "Aspectual Continuative / Adjective",
+      "isl_handling_strategy": "CONTINUATIVE_ASPECT_STILL",
+      "contextual_rationale": "Continuative aspect ('still speaking') uses forward dual-palm dip STILL sign. Physical immobility ('sit still') uses QUIET/FREEZE classifier.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "go up and still to some extent you fail in your presentation.",
+          "timestamp": [
+            392.6,
+            397.72
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "So it still equates to a nice work-life balance.",
+          "timestamp": [
+            1786.78,
+            1791.06
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "So I've still got one minute left now before I go up on stage.",
+          "timestamp": [
+            3122.66,
+            3129.44
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "but it still triggers them.",
+          "timestamp": [
+            4507.14,
+            4508.34
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "that is speaking in public. You can still use your dopamine tricks. You can still use your confidence",
+          "timestamp": [
+            6249.0,
+            6255.64
+          ]
+        }
+      ]
+    },
+    "well": {
+      "functional_category": "Discourse Interjection / Quality Adverb",
+      "isl_handling_strategy": "DISCOURSE_OPENER_OR_GOOD",
+      "contextual_rationale": "As a spoken stall ('well, you see'), omitted in manual channel. As manner adverb ('he speaks well'), mapped to sign GOOD.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "This is, well, this is my view of you.",
+          "timestamp": [
+            114.03,
+            116.63
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "walks up on stage fearful, well, their output and what they present will be severely impacted",
+          "timestamp": [
+            251.43,
+            259.51
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "Well, look at this.",
+          "timestamp": [
+            760.38,
+            762.24
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "And he said, well, I've got no problem presenting to you, one person.",
+          "timestamp": [
+            914.14,
+            919.66
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "And an Angels Cocktail can go like this. If I were to offer you an Angels Cocktail, well,",
+          "timestamp": [
+            999.66,
+            1006.38
+          ]
+        }
+      ]
+    },
+    "like": {
+      "functional_category": "Comparative Preposition / Verb / Filler",
+      "isl_handling_strategy": "SIMILAR_SIGN_OR_FACIAL_MARKER",
+      "contextual_rationale": "As comparative ('like an animal'), signs SAME/SIMILAR. As verbal preference ('I like this'), signs LIKE with 8-handshape. As spoken filler ('it's like...'), omitted in manual stream.",
+      "sample_contexts": [
+        {
+          "segment_id": null,
+          "text": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+          "timestamp": [
+            69.49,
+            74.29
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "So if you like this session, make sure you pick up this book.",
+          "timestamp": [
+            301.79,
+            305.39
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "You may have prepared, like, weeks, your presentation,",
+          "timestamp": [
+            383.5,
+            387.34
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "any longer and it's like the wind is putting out your fire. What on earth is going on?",
+          "timestamp": [
+            656.44,
+            661.16
+          ]
+        },
+        {
+          "segment_id": null,
+          "text": "concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,",
+          "timestamp": [
+            667.0,
+            674.56
+          ]
+        }
+      ]
+    }
+  }
+}

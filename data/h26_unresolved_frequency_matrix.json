@@ -1,0 +1,141 @@
+{
+  "total_unresolved_concepts": 1388,
+  "total_unresolved_tokens": 2247,
+  "frequency_distribution": {
+    "16": {
+      "concept_count": 1,
+      "token_sum": 16,
+      "sample_lemmas": [
+        "10"
+      ]
+    },
+    "13": {
+      "concept_count": 1,
+      "token_sum": 13,
+      "sample_lemmas": [
+        "30"
+      ]
+    },
+    "11": {
+      "concept_count": 1,
+      "token_sum": 11,
+      "sample_lemmas": [
+        "110"
+      ]
+    },
+    "9": {
+      "concept_count": 2,
+      "token_sum": 18,
+      "sample_lemmas": [
+        "000",
+        "50"
+      ]
+    },
+    "8": {
+      "concept_count": 2,
+      "token_sum": 16,
+      "sample_lemmas": [
+        "lars",
+        "oxytocin"
+      ]
+    },
+    "7": {
+      "concept_count": 11,
+      "token_sum": 77,
+      "sample_lemmas": [
+        "100",
+        "12",
+        "13",
+        "25",
+        "45",
+        "logs",
+        "non",
+        "per"
+      ]
+    },
+    "6": {
+      "concept_count": 17,
+      "token_sum": 102,
+      "sample_lemmas": [
+        "bigger",
+        "bop",
+        "fixed",
+        "happening",
+        "happens",
+        "here's",
+        "i'd",
+        "movies"
+      ]
+    },
+    "5": {
+      "concept_count": 25,
+      "token_sum": 125,
+      "sample_lemmas": [
+        "60",
+        "audible",
+        "blah",
+        "british",
+        "clients",
+        "cocktail",
+        "covered",
+        "either"
+      ]
+    },
+    "4": {
+      "concept_count": 32,
+      "token_sum": 128,
+      "sample_lemmas": [
+        "2",
+        "400",
+        "44",
+        "5",
+        "55",
+        "allowed",
+        "anymore",
+        "anywhere"
+      ]
+    },
+    "3": {
+      "concept_count": 76,
+      "token_sum": 228,
+      "sample_lemmas": [
+        "136",
+        "15",
+        "300",
+        "4",
+        "8",
+        "80",
+        "90",
+        "angels"
+      ]
+    },
+    "2": {
+      "concept_count": 293,
+      "token_sum": 586,
+      "sample_lemmas": [
+        "108",
+        "16",
+        "1st",
+        "236",
+        "24",
+        "40",
+        "47",
+        "6"
+      ]
+    },
+    "1": {
+      "concept_count": 927,
+      "token_sum": 927,
+      "sample_lemmas": [
+        "007",
+        "1",
+        "10th",
+        "11",
+        "14",
+        "150",
+        "1902",
+        "23"
+      ]
+    }
+  }
+}

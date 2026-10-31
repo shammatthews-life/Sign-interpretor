@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "title": "H26 Morphology, Grammar & Function-Word Audit",
+    "phase": "H26",
+    "total_grammatical_entries": 110,
+    "total_omitted_tokens": 9064,
+    "linguistic_framework": "Indian Sign Language Syntax & Spatial Morphosyntax (ISLRTC Standard)"
+  },
+  "functional_word_classes": {
+    "articles": [
+      "the",
+      "a",
+      "an"
+    ],
+    "copulas_and_auxiliaries": [
+      "is",
+      "are",
+      "am",
+      "was",
+      "were",
+      "be",
+      "been",
+      "being",
+      "do",
+      "does",
+      "did",
+      "have",
+      "has",
+      "had"
+    ],
+    "prepositions": [
+      "of",
+      "to",
+      "in",
+      "for",
+      "on",
+      "with",
+      "at",
+      "by",
+      "from"
+    ],
+    "conjunctions": [
+      "and",
+      "that",
+      "but",
+      "or",
+      "as",
+      "if",
+      "than"
+    ],
+    "pronoun_deictics": [
+      "it",
+      "there",
+      "this"
+    ]
+  },
+  "audited_entries_sample": [
+    {
+      "lemma": "and",
+      "frequency": 664,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "the",
+      "frequency": 645,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "to",
+      "frequency": 483,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "that",
+      "frequency": 482,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "a",
+      "frequency": 473,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "this",
+      "frequency": 471,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "is",
+      "frequency": 449,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "of",
+      "frequency": 326,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "it",
+      "frequency": 306,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "in",
+      "frequency": 305,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "so",
+      "frequency": 301,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "on",
+      "frequency": 162,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "it's",
+      "frequency": 156,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "he",
+      "frequency": 152,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "if",
+      "frequency": 147,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "are",
+      "frequency": 142,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "but",
+      "frequency": 123,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "for",
+      "frequency": 122,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "be",
+      "frequency": 117,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "just",
+      "frequency": 113,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "at",
+      "frequency": 110,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "with",
+      "frequency": 95,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "because",
+      "frequency": 92,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "was",
+      "frequency": 90,
+      "category": "Grammar / Auxiliary"
+    },
+    {
+      "lemma": "as",
+      "frequency": 89,
+      "category": "Grammar / Auxiliary"
+    }
+  ]
+}

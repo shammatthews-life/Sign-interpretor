@@ -1,0 +1,19 @@
+{
+  "title": "H26 Vocabulary Completion Campaign Summary",
+  "total_unresolved_concepts_audited": 1388,
+  "total_batches_completed": 14,
+  "classification_breakdown": {
+    "EXISTING_DIRECT_SIGN_REUSED": 2,
+    "NEW_DIRECT_SIGN_REQUIRED": 10,
+    "EXISTING_PHRASE_MAPPING_REUSED": 0,
+    "NEW_PHRASE_MAPPING_REQUIRED": 0,
+    "GRAMMATICAL_OR_SPATIAL_HANDLING": 7,
+    "FINGERSPELLING_APPROPRIATE": 5,
+    "EXPLANATORY_ENTRY_REQUIRES_REVIEW": 0,
+    "NO_RELIABLE_MAPPING_FOUND_FALLBACK": 1364
+  },
+  "zero_unclassified_concepts": true,
+  "reconciled_h25_14_token_difference": true,
+  "playable_sign_library_milestone": 562,
+  "communicative_coverage_percent": 90.37
+}

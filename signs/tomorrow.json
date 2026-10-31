@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "tomorrow",
+  "metadata": {
+    "display_name": "Tomorrow",
+    "gloss": "TOMORROW",
+    "language": "ISL",
+    "lexical_type": "ISL Lexical Sign (Time / Calendar)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC #T-042. A-thumb moving forward in gentle arc off right cheekbone."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1050,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral_Rest",
+        "easing": "linear",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      {
+        "time_ms": 525,
+        "label": "TOMORROW_Stroke",
+        "easing": "ease-in-out",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.5,
+            "y": 0.2,
+            "z": -0.35
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.6,
+            "y": 0.15,
+            "z": 0.3
+          },
+          "Bip001_R_Hand": {
+            "x": 0.3,
+            "y": 0.1,
+            "z": -0.05
+          }
+        }
+      },
+      {
+        "time_ms": 1050,
+        "label": "Neutral_Return",
+        "easing": "ease-out",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      }
+    ]
+  }
+}

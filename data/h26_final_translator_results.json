@@ -1,0 +1,345 @@
+{
+  "metadata": {
+    "title": "H26 Production Translator Full Corpus Reprocessing Results",
+    "phase": "H26",
+    "videoId": "MXKkXXYUxBc",
+    "segments_processed": 2366,
+    "total_spoken_words": 23258,
+    "glosses_generated": 10898,
+    "playable_signs_dispatched": 10762,
+    "unavailable_fallbacks": 3,
+    "grammar_omissions_handled": 3518
+  },
+  "sample_segments": [
+    {
+      "segment_index": 1,
+      "source_text": "This is public speaking for beginners, and the goal of this video is simple.",
+      "gloss_sequence": [
+        "SAY",
+        "PEOPLE",
+        "GOAL",
+        "VIDEO",
+        "SIMPLY"
+      ],
+      "playable_signs": [
+        "say",
+        "people",
+        "goal",
+        "video",
+        "simply"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 2,
+      "source_text": "It's to help you overcome being uncertain, anxious, afraid,",
+      "gloss_sequence": [
+        "HELP",
+        "YOU",
+        "AFRAID"
+      ],
+      "playable_signs": [
+        "help",
+        "you",
+        "afraid"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 3,
+      "source_text": "and bring you a few steps closer to being more confident, more clear,",
+      "gloss_sequence": [
+        "BRING",
+        "YOU",
+        "FEW",
+        "STEP",
+        "CLOSE",
+        "MORE",
+        "CONFIDENT",
+        "MORE",
+        "CLEAR"
+      ],
+      "playable_signs": [
+        "bring",
+        "you",
+        "few",
+        "step",
+        "close",
+        "more",
+        "confident",
+        "more",
+        "clear"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 4,
+      "source_text": "and a much more captivating speaker.",
+      "gloss_sequence": [
+        "MORE",
+        "SPEAKER"
+      ],
+      "playable_signs": [
+        "more",
+        "speaker"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 5,
+      "source_text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+      "gloss_sequence": [
+        "WHAT",
+        "YOU",
+        "WATCH",
+        "SPECIAL",
+        "SAY",
+        "PEOPLE",
+        "CHALLENGE"
+      ],
+      "playable_signs": [
+        "what",
+        "you",
+        "watch",
+        "special",
+        "say",
+        "people",
+        "challenge"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 6,
+      "source_text": "which we delivered live right here in our studio.",
+      "gloss_sequence": [
+        "WE",
+        "GIVE",
+        "LIVE",
+        "WE"
+      ],
+      "playable_signs": [
+        "we",
+        "give",
+        "live",
+        "we"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 7,
+      "source_text": "We'll begin with mindset and confidence.",
+      "gloss_sequence": [
+        "WE",
+        "GO",
+        "MINDSET",
+        "CONFIDENT"
+      ],
+      "playable_signs": [
+        "we",
+        "go",
+        "mindset",
+        "confident"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 8,
+      "source_text": "We'll move into the science of capturing attention,",
+      "gloss_sequence": [
+        "WE",
+        "MOVE",
+        "SCIENCE",
+        "ATTENTION"
+      ],
+      "playable_signs": [
+        "we",
+        "move",
+        "science",
+        "attention"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 9,
+      "source_text": "and we'll finish off with the most impactful delivery skills",
+      "gloss_sequence": [
+        "WE",
+        "FINISH",
+        "OFF",
+        "SKILL"
+      ],
+      "playable_signs": [
+        "we",
+        "finish",
+        "off",
+        "skill"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 10,
+      "source_text": "from the 110-step chart of excellence communication.",
+      "gloss_sequence": [
+        "STEP",
+        "CHART",
+        "COMMUNICATION"
+      ],
+      "playable_signs": [
+        "step",
+        "chart",
+        "communication"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 251,
+      "source_text": "Dopamine is kind of the life force for many of us.",
+      "gloss_sequence": [
+        "SAME",
+        "LIFE",
+        "WE"
+      ],
+      "playable_signs": [
+        "same",
+        "life",
+        "we"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 501,
+      "source_text": "I'd like you to draw a flower with your non-dominant hand.",
+      "gloss_sequence": [
+        "LIKE",
+        "YOU",
+        "DRAW",
+        "FLOWER",
+        "YOUR",
+        "DOMINANT",
+        "HAND"
+      ],
+      "playable_signs": [
+        "like",
+        "you",
+        "draw",
+        "flower",
+        "your",
+        "dominant",
+        "hand"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 751,
+      "source_text": "And look at this particular combination.",
+      "gloss_sequence": [
+        "LOOK",
+        "COMBINATION"
+      ],
+      "playable_signs": [
+        "look",
+        "combination"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 1001,
+      "source_text": "Two out of eight usually can answer the question why the audience should listen, which is just",
+      "gloss_sequence": [
+        "TWO",
+        "ONE",
+        "ANSWER",
+        "QUESTION",
+        "AUDIENCE",
+        "SHOULD"
+      ],
+      "playable_signs": [
+        "two",
+        "one",
+        "answer",
+        "question",
+        "audience",
+        "should"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 1251,
+      "source_text": "Fair enough, we are going to leave that fifth, sixth tip I gave you. That means",
+      "gloss_sequence": [
+        "FAIR",
+        "WE",
+        "GOING_TO",
+        "LEAVE",
+        "FIFTH",
+        "TIP",
+        "I",
+        "GIVE",
+        "YOU",
+        "MEAN"
+      ],
+      "playable_signs": [
+        "fair",
+        "we",
+        "leave",
+        "fifth",
+        "tip",
+        "i",
+        "give",
+        "you",
+        "mean"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 1501,
+      "source_text": "the Middle East.",
+      "gloss_sequence": [
+        "MIDDLE"
+      ],
+      "playable_signs": [
+        "middle"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 1751,
+      "source_text": "I just wanted to check.",
+      "gloss_sequence": [
+        "I",
+        "WANT"
+      ],
+      "playable_signs": [
+        "i",
+        "want"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 2001,
+      "source_text": "So he walks up again and he goes,",
+      "gloss_sequence": [
+        "WALK",
+        "GO"
+      ],
+      "playable_signs": [
+        "walk",
+        "go"
+      ],
+      "unavailable_fallbacks": []
+    },
+    {
+      "segment_index": 2251,
+      "source_text": "and this format is not a foundation of all subsequent SQL Server QUIKIs",
+      "gloss_sequence": [
+        "NOT",
+        "SERVER"
+      ],
+      "playable_signs": [
+        "not",
+        "server"
+      ],
+      "unavailable_fallbacks": []
+    }
+  ]
+}

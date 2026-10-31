@@ -1,0 +1,100 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "tone",
+  "metadata": {
+    "display_name": "Tone",
+    "gloss": "TONE",
+    "language": "ISL",
+    "lexical_type": "ISL Lexical Sign (Communication)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC #T-115. T-handshape tracing subtle acoustic resonance circle near ear."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1100,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral_Rest",
+        "easing": "linear",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      {
+        "time_ms": 550,
+        "label": "TONE_Stroke",
+        "easing": "ease-in-out",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.5,
+            "y": 0.25,
+            "z": -0.3
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.65,
+            "y": 0.2,
+            "z": 0.3
+          },
+          "Bip001_R_Hand": {
+            "x": 0.2,
+            "y": 0.1,
+            "z": 0.0
+          }
+        }
+      },
+      {
+        "time_ms": 1100,
+        "label": "Neutral_Return",
+        "easing": "ease-out",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Bip001_R_Hand": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      }
+    ]
+  }
+}

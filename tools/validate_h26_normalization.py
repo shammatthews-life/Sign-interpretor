@@ -1,0 +1,161 @@
+# tools/validate_h26_normalization.py
+import json
+import re
+from pathlib import Path
+
+PROJECT_ROOT = Path("d:/sign interpretor")
+
+NORMALIZATION_RULES = {
+    "metadata": {
+        "title": "H26 Advanced Concept Normalization & Lemmatization System",
+        "version": "1.0.0",
+        "phase": "H26",
+        "description": "Rules for morphological reduction, contraction expansion, and semantic disambiguation for ISL translation."
+    },
+    "contractions": {
+        "it's": ["it", "is"],
+        "that's": ["that", "is"],
+        "what's": ["what", "is"],
+        "there's": ["there", "is"],
+        "here's": ["here", "is"],
+        "don't": ["do", "not"],
+        "didn't": ["did", "not"],
+        "doesn't": ["does", "not"],
+        "can't": ["can", "not"],
+        "cannot": ["can", "not"],
+        "won't": ["will", "not"],
+        "i'm": ["i", "am"],
+        "you're": ["you", "are"],
+        "we're": ["we", "are"],
+        "they're": ["they", "are"],
+        "i've": ["i", "have"],
+        "you've": ["you", "have"],
+        "we've": ["we", "have"],
+        "they've": ["they", "have"],
+        "i'll": ["i", "will"],
+        "you'll": ["you", "will"],
+        "we'll": ["we", "will"],
+        "they'll": ["they", "will"],
+        "let's": ["let", "us"]
+    },
+    "irregular_verbs": {
+        "went": "go", "gone": "go", "going": "go", "goes": "go",
+        "spoke": "speak", "spoken": "speak", "speaking": "speak", "speaks": "speak",
+        "saw": "see", "seen": "see", "seeing": "see", "sees": "see",
+        "took": "take", "taken": "take", "taking": "take", "takes": "take",
+        "gave": "give", "given": "give", "giving": "give", "gives": "give",
+        "knew": "know", "known": "know", "knowing": "know", "knows": "know",
+        "felt": "feel", "feeling": "feel", "feels": "feel",
+        "found": "find", "finding": "find", "finds": "find",
+        "heard": "hear", "hearing": "hear", "hears": "hear",
+        "stood": "stand", "standing": "stand", "stands": "stand",
+        "told": "tell", "telling": "tell", "tells": "tell",
+        "built": "build", "building": "build", "builds": "build",
+        "bought": "buy", "buying": "buy", "buys": "buy",
+        "thought": "think", "thinking": "think", "thinks": "think",
+        "became": "become", "becoming": "become", "becomes": "become",
+        "came": "come", "coming": "come", "comes": "come",
+        "made": "make", "making": "make", "makes": "make",
+        "wrote": "write", "written": "write", "writing": "write", "writes": "write",
+        "read": "read", "reading": "read", "reads": "read",
+        "taught": "teach", "teaching": "teach", "teaches": "teach"
+    },
+    "irregular_nouns": {
+        "people": "person",
+        "children": "child",
+        "men": "man",
+        "women": "woman",
+        "feet": "foot",
+        "teeth": "tooth",
+        "mice": "mouse"
+    },
+    "comparative_superlative": {
+        "better": {"base": "good", "degree": "comparative"},
+        "best": {"base": "good", "degree": "superlative"},
+        "worse": {"base": "bad", "degree": "comparative"},
+        "worst": {"base": "bad", "degree": "superlative"},
+        "faster": {"base": "fast", "degree": "comparative"},
+        "fastest": {"base": "fast", "degree": "superlative"},
+        "bigger": {"base": "big", "degree": "comparative"},
+        "biggest": {"base": "big", "degree": "superlative"},
+        "smaller": {"base": "small", "degree": "comparative"},
+        "smallest": {"base": "small", "degree": "superlative"},
+        "longer": {"base": "long", "degree": "comparative"},
+        "longest": {"base": "long", "degree": "superlative"}
+    },
+    "polysemy_disambiguation": {
+        "lie": {
+            "senses": [
+                {"sense_id": "lie_untruth", "definition": "A false statement intentionally made", "isl_strategy": "LEXICAL_SIGN", "sign_alias": "lie"},
+                {"sense_id": "lie_recline", "definition": "To assume a horizontal resting position", "isl_strategy": "CLASSIFIER_V_POSTURE"}
+            ],
+            "default": "lie_untruth"
+        },
+        "left": {
+            "senses": [
+                {"sense_id": "left_direction", "definition": "Toward the left-hand side", "isl_strategy": "SPATIAL_DEICTIC_LEFT", "sign_alias": "left"},
+                {"sense_id": "left_departed", "definition": "Departed or remaining", "isl_strategy": "LEXICAL_SIGN", "sign_alias": "leave"}
+            ],
+            "default": "left_direction"
+        },
+        "right": {
+            "senses": [
+                {"sense_id": "right_direction", "definition": "Toward the right-hand side", "isl_strategy": "SPATIAL_DEICTIC_RIGHT", "sign_alias": "right"},
+                {"sense_id": "right_correct", "definition": "Correct, accurate, proper", "isl_strategy": "LEXICAL_SIGN", "sign_alias": "true"}
+            ],
+            "default": "right_correct"
+        },
+        "light": {
+            "senses": [
+                {"sense_id": "light_illumination", "definition": "Illumination, brightness", "isl_strategy": "LEXICAL_SIGN", "sign_alias": "light"},
+                {"sense_id": "light_weight", "definition": "Low in weight, not heavy", "isl_strategy": "LEXICAL_SIGN", "sign_alias": "weak"}
+            ],
+            "default": "light_illumination"
+        },
+        "mean": {
+            "senses": [
+                {"sense_id": "mean_signify", "definition": "To signify, intend, convey meaning", "isl_strategy": "LEXICAL_SIGN", "sign_alias": "meaning"},
+                {"sense_id": "mean_average", "definition": "Mathematical middle value", "isl_strategy": "FINGERSPELLED"}
+            ],
+            "default": "mean_signify"
+        },
+        "watch": {
+            "senses": [
+                {"sense_id": "watch_observe", "definition": "To look attentively", "isl_strategy": "LEXICAL_SIGN", "sign_alias": "look"},
+                {"sense_id": "watch_timepiece", "definition": "A small clock worn on wrist", "isl_strategy": "MIMETIC_WRIST_TAP", "sign_alias": "time"}
+            ],
+            "default": "watch_observe"
+        }
+    }
+}
+
+def validate_and_save():
+    out_path = PROJECT_ROOT / "data" / "h26_normalization_rules.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(NORMALIZATION_RULES, f, indent=2)
+
+    print(f"Saved {out_path}")
+
+    # Validation unit tests
+    rules = NORMALIZATION_RULES
+    assert len(rules["contractions"]) >= 20, "Must have >= 20 contractions"
+    assert len(rules["irregular_verbs"]) >= 30, "Must have >= 30 irregular verbs"
+    assert len(rules["polysemy_disambiguation"]) >= 6, "Must disambiguate >= 6 polysemous terms"
+
+    # Test contractions
+    assert rules["contractions"]["can't"] == ["can", "not"]
+    assert rules["contractions"]["it's"] == ["it", "is"]
+
+    # Test irregular verbs
+    assert rules["irregular_verbs"]["went"] == "go"
+    assert rules["irregular_verbs"]["thought"] == "think"
+
+    # Test polysemy
+    assert "lie" in rules["polysemy_disambiguation"]
+    assert "right" in rules["polysemy_disambiguation"]
+    assert "watch" in rules["polysemy_disambiguation"]
+
+    print("PASS: Advanced normalization and lemmatization rules validated.")
+
+if __name__ == "__main__":
+    validate_and_save()

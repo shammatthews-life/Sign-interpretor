@@ -5,22 +5,20 @@
   "total_spoken_tokens": 23258,
   "total_tokens_accounted_for": 23258,
   "disposition_coverage_percent": 100.0,
-  "unique_lemmas_count": 2058,
+  "unique_lemmas_count": 2059,
   "dispositions": {
     "GRAMMAR_OMISSION": 9064,
     "PHRASE_TRANSLATED": 1444,
-    "SUBTITLE_FALLBACK": 2246,
-    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 10300,
-    "FINGERSPELLED": 203,
-    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 1
+    "SUBTITLE_FALLBACK": 2239,
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 10308,
+    "FINGERSPELLED": 203
   },
   "percentages": {
     "GRAMMAR_OMISSION": 38.97,
     "PHRASE_TRANSLATED": 6.21,
-    "SUBTITLE_FALLBACK": 9.66,
-    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 44.29,
-    "FINGERSPELLED": 0.87,
-    "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 0.0
+    "SUBTITLE_FALLBACK": 9.63,
+    "IMPLEMENTED_PENDING_LINGUISTIC_REVIEW": 44.32,
+    "FINGERSPELLED": 0.87
   },
   "islrtc_acknowledgement": "Lexical concepts, category schemas, and sign references cite the Indian Sign Language Research and Training Centre (ISLRTC), Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment, Government of India. Permitted for non-commercial research and accessibility technology development."
 }

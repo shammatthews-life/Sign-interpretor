@@ -1,0 +1,101 @@
+{
+  "status": "EXACT_RECONCILIATION_RESOLVED",
+  "h25_initial_research_pool": {
+    "concepts_count": 1398,
+    "tokens_count": 2260,
+    "breakdown": {
+      "subtitle_fallback_pre_h25": 2259,
+      "dictionary_reference_pending": 1,
+      "total": 2260
+    }
+  },
+  "h25_final_canonical_accounting": {
+    "concepts_count": 1388,
+    "tokens_count": 2247,
+    "dispositions": {
+      "SUBTITLE_FALLBACK": 2246,
+      "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING": 1,
+      "combined_unresolved_pool": 2247
+    }
+  },
+  "discrepancy_analysis": {
+    "initial_research_tokens": 2260,
+    "final_canonical_subtitle_fallback": 2246,
+    "apparent_difference": 14,
+    "exact_mathematical_components": {
+      "h25_newly_implemented_signs_tokens": 13,
+      "dictionary_reference_pending_isolation_token": 1,
+      "sum_reconciled": 14
+    }
+  },
+  "newly_implemented_h25_concepts": [
+    {
+      "lemma": "mirror",
+      "frequency": 2,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "notice",
+      "frequency": 2,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "market",
+      "frequency": 2,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "substance",
+      "frequency": 1,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "animal",
+      "frequency": 1,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "complex",
+      "frequency": 1,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "memory",
+      "frequency": 1,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "explain",
+      "frequency": 1,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "cover",
+      "frequency": 1,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    },
+    {
+      "lemma": "cost",
+      "frequency": 1,
+      "old_strategy": "SUBTITLE_FALLBACK",
+      "new_strategy": "PLAYABLE_SIGN"
+    }
+  ],
+  "dictionary_reference_pending_concept": {
+    "lemma": "tomorrow",
+    "frequency": 1,
+    "semantic_category": "Time / Calendar",
+    "disposition": "DICTIONARY_REFERENCE_AVAILABLE_BUT_MOTION_PENDING"
+  },
+  "verified_canonical_token_count": 23258,
+  "verified_silent_token_loss": 0
+}
