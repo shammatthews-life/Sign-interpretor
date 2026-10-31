@@ -1,0 +1,24 @@
+{
+  "phase": "H32",
+  "timestamp": "2026-10-31T12:48:00+05:30",
+  "audit_name": "ASR Redundant Rolling-Window Computation Audit",
+  "legacy_configuration": {
+    "rolling_window_ms": 4000,
+    "decode_hop_ms": 750,
+    "redundancy_ratio": 5.33,
+    "redundancy_percentage": 81.25
+  },
+  "audio_corpus": {
+    "audio_duration_s": 60.0,
+    "total_decode_hops": 80,
+    "total_audio_computed_s": 320.0,
+    "redundant_audio_computed_s": 260.0
+  },
+  "performance_impact": {
+    "mean_inference_per_hop_ms": 4.03,
+    "estimated_total_wall_ms": 322.28,
+    "effective_streaming_throughput_x": 186.17,
+    "h31_reported_streaming_throughput_x": 4.5,
+    "finding": "The 4,000 ms window with 750 ms hop forces 5.33x redundant audio processing, meaning 81.25% of all transcription is redundant overlapping audio. Eliminating repeated window processing and transitioning to fixed-core intervals immediately unlocks a 4-5x speedup."
+  }
+}

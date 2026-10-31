@@ -1,0 +1,61 @@
+{
+  "phase": "H32",
+  "chunk_size_s": 10.0,
+  "results": [
+    {
+      "chunk_size_s": 10.0,
+      "overlap_s": 0.0,
+      "total_chunks": 6,
+      "total_wall_ms": 1508.88,
+      "throughput_x_realtime": 39.76,
+      "rtf": 0.0251,
+      "wer_pct": 13.04,
+      "cer_pct": 11.5,
+      "finalized_word_count": 71
+    },
+    {
+      "chunk_size_s": 10.0,
+      "overlap_s": 0.25,
+      "total_chunks": 7,
+      "total_wall_ms": 1648.67,
+      "throughput_x_realtime": 36.39,
+      "rtf": 0.0275,
+      "wer_pct": 11.59,
+      "cer_pct": 11.15,
+      "finalized_word_count": 69
+    },
+    {
+      "chunk_size_s": 10.0,
+      "overlap_s": 0.5,
+      "total_chunks": 7,
+      "total_wall_ms": 4689.4,
+      "throughput_x_realtime": 12.79,
+      "rtf": 0.0782,
+      "wer_pct": 15.94,
+      "cer_pct": 14.63,
+      "finalized_word_count": 72
+    },
+    {
+      "chunk_size_s": 10.0,
+      "overlap_s": 0.75,
+      "total_chunks": 7,
+      "total_wall_ms": 1676.57,
+      "throughput_x_realtime": 35.79,
+      "rtf": 0.0279,
+      "wer_pct": 13.04,
+      "cer_pct": 12.89,
+      "finalized_word_count": 70
+    },
+    {
+      "chunk_size_s": 10.0,
+      "overlap_s": 1.0,
+      "total_chunks": 7,
+      "total_wall_ms": 2004.02,
+      "throughput_x_realtime": 29.94,
+      "rtf": 0.0334,
+      "wer_pct": 10.14,
+      "cer_pct": 9.76,
+      "finalized_word_count": 68
+    }
+  ]
+}

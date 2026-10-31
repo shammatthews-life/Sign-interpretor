@@ -1,0 +1,37 @@
+{
+  "phase": "H32",
+  "timestamp": "2026-10-31T12:53:00+05:30",
+  "audit_name": "Translation Integrity & Asset Cache Decoupling",
+  "canonical_corpus": {
+    "video_id": "MXKkXXYUxBc",
+    "segments_count": 2366,
+    "canonical_tokens_accounted": 23258,
+    "raw_whitespace_tokens": 23201
+  },
+  "translation_metrics": {
+    "total_glosses_generated": 11032,
+    "total_playable_dispatches": 11032,
+    "gloss_to_dispatch_sync_ratio": "1.0000",
+    "translation_wall_time_ms": 220.22,
+    "mean_segment_translation_ms": 0.0931,
+    "translation_regression_detected": false
+  },
+  "asset_cache_distinction": {
+    "total_sign_dispatches": 11032,
+    "direct_sign_matches": 10359,
+    "direct_sign_resolution_rate_pct": 93.9,
+    "subtitle_fallbacks_unmapped_concepts": 673,
+    "in_memory_preloaded_signs": 570,
+    "in_memory_cache_hits": 10359,
+    "disk_fetches_during_playback": 0,
+    "missing_assets": 0,
+    "evictions": 0,
+    "clarification": "A direct sign resolution percentage (93.90%) describes lexical coverage of spoken concepts. In contrast, runtime asset cache performance is 100% hit rate with zero disk misses, zero network stalls, and zero evictions because all 570 required signs are resident in pre-parsed RAM."
+  },
+  "epistemic_policy": {
+    "all_signs_classification": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "certified_isl_signs": 0,
+    "pending_native_review": 570,
+    "zero_invention_policy_enforced": true
+  }
+}

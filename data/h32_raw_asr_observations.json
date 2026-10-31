@@ -1,0 +1,11 @@
+{
+  "phase": "H32",
+  "benchmark_name": "Raw Hybrid ASR Observations",
+  "timestamp": "2026-10-31T12:51:00+05:30",
+  "lane1_prefix_latency_ms": 119.02,
+  "lane2_bulk_latency_ms": 1666.84,
+  "total_wall_ms": 1785.86,
+  "effective_throughput_x": 33.6,
+  "effective_rtf": 0.0298,
+  "transcription_hypothesis": "Greetings and farewells. Listen to the dialogue. Good morning, Mr. Wilson. Good morning, Tom. How are you today? Fine, and you? Not bad. See you later, Tom. Okay, Mr. Wilson. See you later. Now, repeat. Good morning, Mr. Wilson. Good morning, Tom. How are you today? Fine, and you? Not bad. See you later, Tom. Okay, Mr. Wilson. See you later. Listen to the dialogue."
+}

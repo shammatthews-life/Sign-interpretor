@@ -1,0 +1,17 @@
+{
+  "phase": "H32",
+  "benchmark_name": "ASR Ground-Truth Accuracy Verification",
+  "timestamp": "2026-10-31T12:51:00+05:30",
+  "ground_truth_reference": "Greetings and farewells. Listen to the dialogue. Good morning Mr. Wilson. Good morning Tom. How are you today? Fine, and you? Not bad. See you later Tom. Okay Mr. Wilson. See you later. Listen to the dialogue. Now repeat. Good morning Mr. Wilson. Good morning Tom. How are you today? Fine, and you? Not bad. See you later Tom. Okay Mr. Wilson. See you later. Listen to the dialogue.",
+  "h31_baseline": {
+    "wer_pct": 23.19,
+    "cer_pct": 21.25
+  },
+  "h32_hybrid_result": {
+    "wer_pct": 5.8,
+    "cer_pct": 6.62,
+    "wer_reduction_pct": 74.99,
+    "cer_reduction_pct": 68.85,
+    "target_accuracy_preserved": true
+  }
+}

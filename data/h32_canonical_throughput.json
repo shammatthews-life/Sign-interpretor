@@ -1,0 +1,15 @@
+{
+  "phase": "H32",
+  "canonical_benchmark": {
+    "canonical_video_id": "MXKkXXYUxBc",
+    "total_canonical_duration_s": 8978.9010625,
+    "evaluated_slice_duration_s": 300.0,
+    "inference_wall_ms": 4651.34,
+    "measured_throughput_x_realtime": 64.5,
+    "measured_rtf": 0.0155,
+    "projected_full_8979s_processing_time_s": 139.21,
+    "target_20x_met": true,
+    "aspirational_30x_met": true,
+    "segments_emitted_in_slice": 11
+  }
+}

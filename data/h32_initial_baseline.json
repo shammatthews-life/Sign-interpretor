@@ -1,0 +1,45 @@
+{
+  "phase": "H32",
+  "audit_name": "Phase H32 Initial Baseline Checkpoint",
+  "timestamp": "2026-10-31T12:47:00+05:30",
+  "repository": {
+    "path": "D:\\sign interpretor",
+    "branch": "r1-articulation-coverage-and-report",
+    "starting_commit_sha": "2c2de128b731cb3f59687acd4b0a6ebb09e275e7",
+    "starting_commit_short": "2c2de12",
+    "status": "CLEAN",
+    "remote_divergence_policy": "STRICT_LOCAL_PRESERVATION"
+  },
+  "canonical_corpus": {
+    "video_id": "MXKkXXYUxBc",
+    "video_duration_s": 8979.0,
+    "segments_count": 2366,
+    "spoken_token_count": 23258,
+    "gloss_count": 11032,
+    "playable_dispatches": 11032,
+    "communicative_handling_rate_pct": 97.11
+  },
+  "h31_performance_baseline": {
+    "streaming_asr_throughput_x": 4.50,
+    "monolithic_asr_throughput_x": 45.74,
+    "throughput_gap_ratio": 10.16,
+    "streaming_chunk_mean_latency_ms": 171.6,
+    "streaming_chunk_p50_latency_ms": 169.9,
+    "translation_time_all_segments_ms": 175.71,
+    "ttfs_p50_ms": 328.06,
+    "ttfs_p95_ms": 1349.13,
+    "wer_pct": 23.19,
+    "cer_pct": 21.25,
+    "gpu_allocated_vram_mb": 83.0
+  },
+  "h32_targets": {
+    "streaming_asr_throughput_target_x": 20.0,
+    "aspirational_throughput_target_x": 30.0,
+    "warm_ttfs_p50_target_ms": 350.0,
+    "warm_ttfs_p95_target_ms": 750.0,
+    "wer_ceiling_pct": 23.19,
+    "cer_ceiling_pct": 21.25,
+    "duplicate_finalized_words": 0,
+    "finalized_chunk_loss": 0
+  }
+}
