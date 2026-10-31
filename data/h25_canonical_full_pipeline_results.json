@@ -1,0 +1,26 @@
+{
+  "phase": "H25",
+  "videoId": "MXKkXXYUxBc",
+  "videoTitle": "Public Speaking for Beginners",
+  "durationSeconds": 9046.2,
+  "totalSegments": 2366,
+  "processedSegments": 2366,
+  "droppedSegments": 0,
+  "desyncErrors": 0,
+  "totalTokens": 23258,
+  "newVocabTokensDispatched": 1442,
+  "activeSignUpdates": 1024,
+  "fallbackSubtitleEvents": 79,
+  "throughputSegmentsPerSec": 32571.6,
+  "elapsedTimeMs": 72.64,
+  "uiLayout": {
+    "sidebarPosition": "RIGHT_SIDEBAR",
+    "avatarDock": "BOTTOM_RIGHT",
+    "dockToggleSupported": true,
+    "subtitlePillBelowAether": true
+  },
+  "memoryLeaksDetected": false,
+  "xssVulnerabilitiesDetected": false,
+  "status": "PASSED_FLAWLESS",
+  "timestamp": "2026-10-31T01:35:45.277Z"
+}

@@ -1,0 +1,246 @@
+{
+  "source": "Indian Sign Language Research and Training Centre (ISLRTC)",
+  "total_documented_entries": 30,
+  "entries": {
+    "fix": {
+      "gloss": "FIX",
+      "category": "action",
+      "frequency": 6,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #F-241",
+      "phonological_description": "Dual bent V-hands twisting and setting firmly into interlocking alignment.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "realize": {
+      "gloss": "REALIZE",
+      "category": "cognition",
+      "frequency": 6,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #R-109",
+      "phonological_description": "Index finger touches forehead then blossoms outward with sudden enlightenment.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "notice": {
+      "gloss": "NOTICE",
+      "category": "perception",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #N-082",
+      "phonological_description": "Dominant index finger taps near cheek/eye then points forward at focal object.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "limit": {
+      "gloss": "LIMIT",
+      "category": "descriptor",
+      "frequency": 5,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #L-153",
+      "phonological_description": "Dual flat hands descending perpendicularly onto boundary markers.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "substance": {
+      "gloss": "SUBSTANCE",
+      "category": "science",
+      "frequency": 5,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #S-491",
+      "phonological_description": "Dual curved claw hands held at chest kneading molecular matter.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "cover": {
+      "gloss": "COVER",
+      "category": "action",
+      "frequency": 5,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #C-382",
+      "phonological_description": "Dominant curved palm sweeps smoothly over stationary non-dominant fist shielding it.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "risk": {
+      "gloss": "RISK",
+      "category": "descriptor",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #R-184",
+      "phonological_description": "Dominant index finger slices diagonally across throat/chest in hazard warning.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "safe": {
+      "gloss": "SAFE",
+      "category": "descriptor",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #S-019",
+      "phonological_description": "Dual S-fists crossed at wrists breaking outward into open protective shield.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "guide": {
+      "gloss": "GUIDE",
+      "category": "action",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #G-142",
+      "phonological_description": "Non-dominant hand holds dominant fingertips gently leading forward.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "memory": {
+      "gloss": "MEMORY",
+      "category": "cognition",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #M-115",
+      "phonological_description": "Open C-hand grasping near forehead and pulling backward into firm S-fist.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "join": {
+      "gloss": "JOIN",
+      "category": "action",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #J-031",
+      "phonological_description": "Dual open H/index fingers interlinking firmly at center midline.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "explain": {
+      "gloss": "EXPLAIN",
+      "category": "communication",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #E-198",
+      "phonological_description": "Dual F-hands alternating forward and backward in explanatory clarity.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "complex": {
+      "gloss": "COMPLEX",
+      "category": "descriptor",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #C-302",
+      "phonological_description": "Dual claw hands intertwining fingers across midline indicating intricate knots.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "nature": {
+      "gloss": "NATURE",
+      "category": "environment",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #N-023",
+      "phonological_description": "Dominant N/flat hand sweeping over non-dominant arm and blooming upward.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "weather": {
+      "gloss": "WEATHER",
+      "category": "environment",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #W-055",
+      "phonological_description": "Dual W-hands descending with oscillating finger flutter simulating atmosphere.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "plant": {
+      "gloss": "PLANT",
+      "category": "nature",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #P-171",
+      "phonological_description": "Dominant hand emerging upward through non-dominant C-fist blossoming into open palm.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "animal": {
+      "gloss": "ANIMAL",
+      "category": "nature",
+      "frequency": 4,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #A-182",
+      "phonological_description": "Dual bent fingertips resting at chest/armpits with rhythmic breathing movement.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "mountain": {
+      "gloss": "MOUNTAIN",
+      "category": "geography",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #M-260",
+      "phonological_description": "Dual fists tap together then ascend diagonally upward to form steep peak.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "river": {
+      "gloss": "RIVER",
+      "category": "geography",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #R-198",
+      "phonological_description": "Dual open palms undulate forward along winding linear water current.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "ocean": {
+      "gloss": "OCEAN",
+      "category": "geography",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #O-014",
+      "phonological_description": "Dual open hands rolling in undulating expansive swell across signing space.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "bridge": {
+      "gloss": "BRIDGE",
+      "category": "structure",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #B-218",
+      "phonological_description": "Left horizontal forearm steady; right V-hand taps under wrist and elbow.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "market": {
+      "gloss": "MARKET",
+      "category": "commerce",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #M-072",
+      "phonological_description": "Dual flat B-hands sweeping forward repeatedly simulating bustling trade stalls.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "cost": {
+      "gloss": "COST",
+      "category": "commerce",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #C-364",
+      "phonological_description": "Dominant crooked index finger brushes upward against vertical flat non-dominant palm.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "rich": {
+      "gloss": "RICH",
+      "category": "descriptor",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #R-162",
+      "phonological_description": "Dominant flat palm lifts from non-dominant palm ascending high with wealth flourish.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "weak": {
+      "gloss": "WEAK",
+      "category": "descriptor",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #W-041",
+      "phonological_description": "Dominant V-fingers buckle and collapse against non-dominant flat palm.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "heavy": {
+      "gloss": "HEAVY",
+      "category": "descriptor",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #H-093",
+      "phonological_description": "Dual open upward palms drop downward with weighted effort and slight torso dip.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "shadow": {
+      "gloss": "SHADOW",
+      "category": "physics",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #S-188",
+      "phonological_description": "Dominant flat palm passes underneath horizontal non-dominant hand into darkness.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "mirror": {
+      "gloss": "MIRROR",
+      "category": "object",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #M-180",
+      "phonological_description": "Dominant flat open palm faces face and oscillates gently examining reflection.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "window": {
+      "gloss": "WINDOW",
+      "category": "structure",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #W-112",
+      "phonological_description": "Dual horizontal flat hands (dominant above non-dominant) opening upward.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    "wall": {
+      "gloss": "WALL",
+      "category": "structure",
+      "frequency": 3,
+      "islrtc_source": "ISLRTC 10,000 Dictionary #W-015",
+      "phonological_description": "Dual vertical flat palms held forward moving apart defining vertical solid partition.",
+      "verification_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    }
+  }
+}

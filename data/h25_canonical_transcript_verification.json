@@ -1,0 +1,16 @@
+{
+  "file_path": "d:\\sign interpretor\\runtime\\youtube\\MXKkXXYUxBc\\transcript.json",
+  "file_exists": true,
+  "valid_json": true,
+  "video_id": "MXKkXXYUxBc",
+  "video_title": "Public Speaking for Beginners",
+  "audio_duration_s": 8978.901,
+  "transcription_model": "base.en",
+  "segment_count": 2366,
+  "segment_count_target_matched": true,
+  "canonical_tokens_accounted": 23258,
+  "raw_tokens_detected": 23201,
+  "empty_segments": 0,
+  "monotonic_timestamps": true,
+  "verification_status": "CANONICAL_TRANSCRIPT_VERIFIED_VALID"
+}

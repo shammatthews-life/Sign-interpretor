@@ -707,3 +707,54 @@
 .isl-badge-review.hidden {
   display: none;
 }
+
+/* Phase H25 Premium Polish: Accessible Focus States & Responsive Viewports */
+.isl-btn:focus-visible,
+.isl-icon-btn:focus-visible,
+.isl-select:focus-visible,
+#isl-sidebar-toggle-handle:focus-visible {
+  outline: 2px solid #58a6ff !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 12px rgba(88, 166, 255, 0.6) !important;
+}
+
+/* 1366x768 and Moderate Displays */
+@media screen and (max-width: 1366px) {
+  #isl-overlay-container:not(.floating-mode) {
+    width: 340px;
+  }
+  .isl-aether-viewport {
+    height: 200px;
+  }
+}
+
+/* 1024x768 and Compact Laptops */
+@media screen and (max-width: 1024px) {
+  #isl-overlay-container:not(.floating-mode) {
+    width: 310px;
+  }
+  .isl-aether-viewport {
+    height: 180px;
+  }
+  .isl-app-title {
+    font-size: 12px;
+  }
+}
+
+/* 768p and Narrow Viewports (Responsive Bottom Drawer Mode) */
+@media screen and (max-width: 768px) {
+  #isl-overlay-container:not(.floating-mode) {
+    width: 100vw;
+    height: 48vh;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-left: none;
+    border-top: 1px solid rgba(88, 166, 255, 0.45);
+    box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.85);
+  }
+  .isl-aether-viewport {
+    height: 160px;
+  }
+}

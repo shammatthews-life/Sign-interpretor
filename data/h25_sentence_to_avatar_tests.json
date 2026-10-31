@@ -1,0 +1,348 @@
+{
+  "total_sentence_tests": 10,
+  "passed_tests": 10,
+  "failed_tests": 0,
+  "tests": [
+    {
+      "test_id": 1,
+      "category": "H25 New Vocabulary Declarative",
+      "input_sentence": "We can fix the complex machine and notice natural balance.",
+      "output_glosses": [
+        "WE",
+        "FIX",
+        "COMPLEX",
+        "NOTICE",
+        "NATURE"
+      ],
+      "playable_sign_ids": [
+        "we",
+        "fix",
+        "complex",
+        "notice",
+        "nature"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "WE",
+        "CAN",
+        "FIX",
+        "COMPLEX",
+        "NOTICE",
+        "NATURE"
+      ],
+      "matched_concept_count": 5,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 2,
+      "category": "Topography & Environmental",
+      "input_sentence": "The river and ocean flow around the high mountain and strong bridge.",
+      "output_glosses": [
+        "RIVER",
+        "OCEAN",
+        "FLOW",
+        "HIGH",
+        "MOUNTAIN",
+        "STRONG",
+        "BRIDGE"
+      ],
+      "playable_sign_ids": [
+        "river",
+        "ocean",
+        "flow",
+        "high",
+        "mountain",
+        "strong",
+        "bridge"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "RIVER",
+        "OCEAN",
+        "FLOW",
+        "HIGH",
+        "MOUNTAIN",
+        "STRONG",
+        "BRIDGE"
+      ],
+      "matched_concept_count": 7,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 3,
+      "category": "Cognitive & Explanation",
+      "input_sentence": "I realize the guide can explain our memory and safe path.",
+      "output_glosses": [
+        "I",
+        "REALIZE",
+        "GUIDE",
+        "EXPLAIN",
+        "WE",
+        "MEMORY",
+        "SAFE",
+        "ROAD"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "realize",
+        "guide",
+        "explain",
+        "we",
+        "memory",
+        "safe",
+        "road"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "I",
+        "REALIZE",
+        "GUIDE",
+        "CAN",
+        "EXPLAIN",
+        "OUR",
+        "MEMORY",
+        "SAFE"
+      ],
+      "matched_concept_count": 6,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 4,
+      "category": "Wh-Question Transformation",
+      "input_sentence": "What is the cost of the market product?",
+      "output_glosses": [
+        "WHAT",
+        "COST",
+        "MARKET",
+        "PRODUCT"
+      ],
+      "playable_sign_ids": [
+        "what",
+        "cost",
+        "market",
+        "product"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "COST",
+        "MARKET",
+        "PRODUCT",
+        "WHAT"
+      ],
+      "matched_concept_count": 4,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 5,
+      "category": "Negation & Modal Modulation",
+      "input_sentence": "You should not risk your health when you are weak.",
+      "output_glosses": [
+        "YOU",
+        "SHOULD",
+        "NOT",
+        "RISK",
+        "YOUR",
+        "WHEN",
+        "YOU",
+        "WEAK"
+      ],
+      "playable_sign_ids": [
+        "you",
+        "should",
+        "not",
+        "risk",
+        "your",
+        "when",
+        "you",
+        "weak"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "YOU",
+        "SHOULD",
+        "NOT",
+        "RISK",
+        "YOUR",
+        "WEAK"
+      ],
+      "matched_concept_count": 6,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 6,
+      "category": "Multiword Idiomatic Expression",
+      "input_sentence": "In order to have a look at body language, watch each other right now.",
+      "output_glosses": [
+        "FOR",
+        "LOOK",
+        "BODY",
+        "GESTURE",
+        "WATCH",
+        "SAME",
+        "MEET",
+        "NOW"
+      ],
+      "playable_sign_ids": [
+        "look",
+        "body",
+        "gesture",
+        "watch",
+        "same",
+        "meet",
+        "now"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "FOR",
+        "GOAL",
+        "LOOK",
+        "BODY",
+        "WATCH",
+        "EACH",
+        "NOW"
+      ],
+      "matched_concept_count": 5,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 7,
+      "category": "Physical Environment & Objects",
+      "input_sentence": "The heavy shadow behind the window and wall conceals the mirror.",
+      "output_glosses": [
+        "HEAVY",
+        "SHADOW",
+        "WINDOW",
+        "WALL",
+        "MIRROR"
+      ],
+      "playable_sign_ids": [
+        "heavy",
+        "shadow",
+        "window",
+        "wall",
+        "mirror"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "HEAVY",
+        "SHADOW",
+        "WINDOW",
+        "WALL",
+        "MIRROR"
+      ],
+      "matched_concept_count": 5,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 8,
+      "category": "Mixed Sign & Subtitle Fallback",
+      "input_sentence": "Lars pitched the MacBook with high oxytocin in Sweden.",
+      "output_glosses": [
+        "HIGH",
+        "SWEDEN"
+      ],
+      "playable_sign_ids": [
+        "high",
+        "sweden"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "MACBOOK",
+        "SWEDEN"
+      ],
+      "matched_concept_count": 1,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 9,
+      "category": "Long Compound Lecture Segment",
+      "input_sentence": "We welcome everyone to this special conference where prepared speakers inspire our soul and decide future goals.",
+      "output_glosses": [
+        "WE",
+        "WELCOME",
+        "SPECIAL",
+        "CONFERENCE",
+        "PREPARED",
+        "SPEAKER",
+        "WE",
+        "SOUL",
+        "DECIDE",
+        "GOAL"
+      ],
+      "playable_sign_ids": [
+        "we",
+        "welcome",
+        "special",
+        "conference",
+        "prepared",
+        "speaker",
+        "we",
+        "soul",
+        "decide",
+        "goal"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "WELCOME",
+        "SPECIAL",
+        "CONFERENCE",
+        "PREPARED",
+        "SPEAKER",
+        "SOUL",
+        "DECIDE",
+        "FUTURE",
+        "GOAL"
+      ],
+      "matched_concept_count": 8,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    },
+    {
+      "test_id": 10,
+      "category": "Sequential Chaining & Repeated Concepts",
+      "input_sentence": "First of all, plant the tree, water the plant, and watch the animal grow.",
+      "output_glosses": [
+        "FIRST",
+        "PLANT",
+        "TREE",
+        "WATER",
+        "PLANT",
+        "WATCH",
+        "ANIMAL",
+        "GROW"
+      ],
+      "playable_sign_ids": [
+        "first",
+        "plant",
+        "tree",
+        "water",
+        "plant",
+        "watch",
+        "animal",
+        "grow"
+      ],
+      "unavailable_fallback_terms": [],
+      "expected_key_concepts": [
+        "FIRST",
+        "PLANT",
+        "TREE",
+        "WATER",
+        "PLANT",
+        "WATCH",
+        "ANIMAL",
+        "GROW"
+      ],
+      "matched_concept_count": 8,
+      "all_sign_ids_in_manifest": true,
+      "test_passed": true
+    }
+  ]
+}

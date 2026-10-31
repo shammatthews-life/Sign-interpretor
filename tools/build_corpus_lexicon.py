@@ -202,7 +202,9 @@ PLAYABLE_SIGNS = {
     # Phase H24 Batch 14 Signs (20 authentic signs reaching landmark 500 signs milestone)
     "test", "village", "street", "cloak", "average", "dry", "attract", "grab", "send", "behavior", "effect", "belief", "failure", "gray", "nowhere", "burden", "observant", "kid", "set", "result",
     # Phase H24 Batch 15 Signs (20 authentic signs reaching 520 signs milestone)
-    "may", "hey", "boom", "sweden", "everything", "somebody", "anyone", "anything", "nothing", "until", "weird", "along", "quarter", "tumble", "fill", "danger", "conductor", "lie", "luxury", "turbo"
+    "may", "hey", "boom", "sweden", "everything", "somebody", "anyone", "anything", "nothing", "until", "weird", "along", "quarter", "tumble", "fill", "danger", "conductor", "lie", "luxury", "turbo",
+    # Phase H25 New Signs (30 authentic ISL signs reaching 550 total signs)
+    "fix", "realize", "notice", "limit", "substance", "cover", "risk", "safe", "guide", "memory", "join", "explain", "complex", "nature", "weather", "plant", "animal", "mountain", "river", "ocean", "bridge", "market", "cost", "rich", "weak", "heavy", "shadow", "mirror", "window", "wall"
 }
 
 # Structural ISL Function Words (Grammar Omissions)

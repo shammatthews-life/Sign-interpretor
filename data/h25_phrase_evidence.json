@@ -1,0 +1,436 @@
+{
+  "evidence_source": "Canonical Transcript MXKkXXYUxBc N-gram Collocation Analysis",
+  "documented_phrases": 50,
+  "entries": {
+    "this is": {
+      "frequency": 97,
+      "gloss_sequence": [
+        "THIS"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "going to": {
+      "frequency": 85,
+      "gloss_sequence": [
+        "GOING"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "if you": {
+      "frequency": 85,
+      "gloss_sequence": [
+        "IF",
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "look at": {
+      "frequency": 82,
+      "gloss_sequence": [
+        "LOOK",
+        "AT"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "have a": {
+      "frequency": 68,
+      "gloss_sequence": [
+        "HAVE"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "and i": {
+      "frequency": 67,
+      "gloss_sequence": [
+        "AND",
+        "I"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "you have": {
+      "frequency": 63,
+      "gloss_sequence": [
+        "YOU",
+        "HAVE"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "want to": {
+      "frequency": 63,
+      "gloss_sequence": [
+        "WANT"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "in the": {
+      "frequency": 59,
+      "gloss_sequence": [
+        "IN"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "i want": {
+      "frequency": 58,
+      "gloss_sequence": [
+        "I",
+        "WANT"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "you can": {
+      "frequency": 57,
+      "gloss_sequence": [
+        "YOU",
+        "CAN"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "like this": {
+      "frequency": 49,
+      "gloss_sequence": [
+        "LIKE",
+        "THIS"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "and then": {
+      "frequency": 49,
+      "gloss_sequence": [
+        "AND",
+        "THEN"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "that you": {
+      "frequency": 48,
+      "gloss_sequence": [
+        "THAT",
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "do you": {
+      "frequency": 48,
+      "gloss_sequence": [
+        "DO",
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "and you": {
+      "frequency": 48,
+      "gloss_sequence": [
+        "AND",
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "give you": {
+      "frequency": 46,
+      "gloss_sequence": [
+        "GIVE",
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "you are": {
+      "frequency": 46,
+      "gloss_sequence": [
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "you to": {
+      "frequency": 43,
+      "gloss_sequence": [
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "to be": {
+      "frequency": 42,
+      "gloss_sequence": [
+        "BE"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "that is": {
+      "frequency": 42,
+      "gloss_sequence": [
+        "THAT"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "when you": {
+      "frequency": 42,
+      "gloss_sequence": [
+        "WHEN",
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "to the": {
+      "frequency": 40,
+      "gloss_sequence": [
+        "TO"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "i'm going": {
+      "frequency": 40,
+      "gloss_sequence": [
+        "I'M",
+        "GOING"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "a look": {
+      "frequency": 40,
+      "gloss_sequence": [
+        "LOOK"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "and the": {
+      "frequency": 39,
+      "gloss_sequence": [
+        "AND"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "public speaking": {
+      "frequency": 38,
+      "gloss_sequence": [
+        "PUBLIC",
+        "SPEAKING"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "to do": {
+      "frequency": 38,
+      "gloss_sequence": [
+        "DO"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "you know": {
+      "frequency": 38,
+      "gloss_sequence": [
+        "YOU",
+        "KNOW"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "is the": {
+      "frequency": 37,
+      "gloss_sequence": [
+        "IS"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "you want": {
+      "frequency": 36,
+      "gloss_sequence": [
+        "YOU",
+        "WANT"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "of the": {
+      "frequency": 33,
+      "gloss_sequence": [
+        "OF"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "you go": {
+      "frequency": 32,
+      "gloss_sequence": [
+        "YOU",
+        "GO"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "in your": {
+      "frequency": 31,
+      "gloss_sequence": [
+        "YOUR"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "you do": {
+      "frequency": 31,
+      "gloss_sequence": [
+        "YOU",
+        "DO"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "of you": {
+      "frequency": 30,
+      "gloss_sequence": [
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "is this": {
+      "frequency": 30,
+      "gloss_sequence": [
+        "THIS"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "my god": {
+      "frequency": 30,
+      "gloss_sequence": [
+        "MY",
+        "GOD"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "do this": {
+      "frequency": 30,
+      "gloss_sequence": [
+        "DO",
+        "THIS"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "want you": {
+      "frequency": 29,
+      "gloss_sequence": [
+        "WANT",
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "is a": {
+      "frequency": 28,
+      "gloss_sequence": [
+        "IS"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "when i": {
+      "frequency": 28,
+      "gloss_sequence": [
+        "WHEN",
+        "I"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "oh my": {
+      "frequency": 28,
+      "gloss_sequence": [
+        "OH",
+        "MY"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "oh my god": {
+      "frequency": 28,
+      "gloss_sequence": [
+        "OH",
+        "MY",
+        "GOD"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "and he": {
+      "frequency": 28,
+      "gloss_sequence": [
+        "AND",
+        "HE"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "which is": {
+      "frequency": 27,
+      "gloss_sequence": [
+        "WHICH"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "this one": {
+      "frequency": 27,
+      "gloss_sequence": [
+        "THIS",
+        "ONE"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "want you to": {
+      "frequency": 27,
+      "gloss_sequence": [
+        "WANT",
+        "YOU"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "i can't": {
+      "frequency": 27,
+      "gloss_sequence": [
+        "I",
+        "CAN'T"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    },
+    "to give": {
+      "frequency": 26,
+      "gloss_sequence": [
+        "GIVE"
+      ],
+      "syntactic_rationale": "High-frequency multiword discourse formula mapped without word-for-word copula distortion.",
+      "precedence": "MULTIWORD_OVER_UNIGRAM"
+    }
+  }
+}

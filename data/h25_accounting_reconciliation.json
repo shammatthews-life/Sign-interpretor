@@ -1,0 +1,43 @@
+{
+  "corpus": "runtime/youtube/MXKkXXYUxBc/transcript.json",
+  "total_canonical_spoken_tokens": 23258,
+  "calculated_dispositions_sum": 23258,
+  "discrepancy": 0,
+  "dispositions": {
+    "IMPLEMENTED_REVIEW_PENDING": {
+      "tokens": 10300,
+      "share_percent": 44.29,
+      "description": "Playable 3D Schema 2.0.0 signs (550 assets total)"
+    },
+    "GRAMMAR_OMISSION": {
+      "tokens": 9064,
+      "share_percent": 38.97,
+      "description": "Syntactic function words, copulas, and discourse particles omitted per ISL grammar"
+    },
+    "SUBTITLE_FALLBACK": {
+      "tokens": 2246,
+      "share_percent": 9.66,
+      "description": "Transparent subtitle display for specialized terms (reduced by 1,314 from 3,560 baseline)"
+    },
+    "PHRASE_TRANSLATED": {
+      "tokens": 1444,
+      "share_percent": 6.21,
+      "description": "Multiword educational compounds mapped to idiomatic ISL sign sequences"
+    },
+    "FINGERSPELLED": {
+      "tokens": 203,
+      "share_percent": 0.87,
+      "description": "Proper nouns and acronyms articulated via two-handed ISL manual alphabet"
+    },
+    "DICTIONARY_PENDING": {
+      "tokens": 1,
+      "share_percent": 0.0,
+      "description": "Monitored dictionary reference pending 3D motion"
+    }
+  },
+  "communicative_coverage": {
+    "tokens": 21011,
+    "share_percent": 90.34
+  },
+  "accounting_invariant_status": "STRICT_CONSERVATION_VERIFIED"
+}

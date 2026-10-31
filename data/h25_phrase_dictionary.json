@@ -1,0 +1,962 @@
+{
+  "total_phrases": 100,
+  "dictionary": {
+    "this is": {
+      "phrase": "this is",
+      "frequency": 97,
+      "target_glosses": [
+        "THIS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "going to": {
+      "phrase": "going to",
+      "frequency": 85,
+      "target_glosses": [
+        "GOING"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "if you": {
+      "phrase": "if you",
+      "frequency": 85,
+      "target_glosses": [
+        "IF",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "look at": {
+      "phrase": "look at",
+      "frequency": 82,
+      "target_glosses": [
+        "LOOK",
+        "AT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "have a": {
+      "phrase": "have a",
+      "frequency": 68,
+      "target_glosses": [
+        "HAVE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "and i": {
+      "phrase": "and i",
+      "frequency": 67,
+      "target_glosses": [
+        "AND",
+        "I"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you have": {
+      "phrase": "you have",
+      "frequency": 63,
+      "target_glosses": [
+        "YOU",
+        "HAVE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "want to": {
+      "phrase": "want to",
+      "frequency": 63,
+      "target_glosses": [
+        "WANT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "in the": {
+      "phrase": "in the",
+      "frequency": 59,
+      "target_glosses": [
+        "IN"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i want": {
+      "phrase": "i want",
+      "frequency": 58,
+      "target_glosses": [
+        "I",
+        "WANT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you can": {
+      "phrase": "you can",
+      "frequency": 57,
+      "target_glosses": [
+        "YOU",
+        "CAN"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "like this": {
+      "phrase": "like this",
+      "frequency": 49,
+      "target_glosses": [
+        "LIKE",
+        "THIS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "and then": {
+      "phrase": "and then",
+      "frequency": 49,
+      "target_glosses": [
+        "AND",
+        "THEN"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "that you": {
+      "phrase": "that you",
+      "frequency": 48,
+      "target_glosses": [
+        "THAT",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "do you": {
+      "phrase": "do you",
+      "frequency": 48,
+      "target_glosses": [
+        "DO",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "and you": {
+      "phrase": "and you",
+      "frequency": 48,
+      "target_glosses": [
+        "AND",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "give you": {
+      "phrase": "give you",
+      "frequency": 46,
+      "target_glosses": [
+        "GIVE",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you are": {
+      "phrase": "you are",
+      "frequency": 46,
+      "target_glosses": [
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you to": {
+      "phrase": "you to",
+      "frequency": 43,
+      "target_glosses": [
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "to be": {
+      "phrase": "to be",
+      "frequency": 42,
+      "target_glosses": [
+        "BE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "that is": {
+      "phrase": "that is",
+      "frequency": 42,
+      "target_glosses": [
+        "THAT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "when you": {
+      "phrase": "when you",
+      "frequency": 42,
+      "target_glosses": [
+        "WHEN",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "to the": {
+      "phrase": "to the",
+      "frequency": 40,
+      "target_glosses": [
+        "TO"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i'm going": {
+      "phrase": "i'm going",
+      "frequency": 40,
+      "target_glosses": [
+        "I'M",
+        "GOING"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "a look": {
+      "phrase": "a look",
+      "frequency": 40,
+      "target_glosses": [
+        "LOOK"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "and the": {
+      "phrase": "and the",
+      "frequency": 39,
+      "target_glosses": [
+        "AND"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "public speaking": {
+      "phrase": "public speaking",
+      "frequency": 38,
+      "target_glosses": [
+        "PUBLIC",
+        "SPEAKING"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "to do": {
+      "phrase": "to do",
+      "frequency": 38,
+      "target_glosses": [
+        "DO"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you know": {
+      "phrase": "you know",
+      "frequency": 38,
+      "target_glosses": [
+        "YOU",
+        "KNOW"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "is the": {
+      "phrase": "is the",
+      "frequency": 37,
+      "target_glosses": [
+        "IS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you want": {
+      "phrase": "you want",
+      "frequency": 36,
+      "target_glosses": [
+        "YOU",
+        "WANT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "of the": {
+      "phrase": "of the",
+      "frequency": 33,
+      "target_glosses": [
+        "OF"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you go": {
+      "phrase": "you go",
+      "frequency": 32,
+      "target_glosses": [
+        "YOU",
+        "GO"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "in your": {
+      "phrase": "in your",
+      "frequency": 31,
+      "target_glosses": [
+        "YOUR"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you do": {
+      "phrase": "you do",
+      "frequency": 31,
+      "target_glosses": [
+        "YOU",
+        "DO"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "of you": {
+      "phrase": "of you",
+      "frequency": 30,
+      "target_glosses": [
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "is this": {
+      "phrase": "is this",
+      "frequency": 30,
+      "target_glosses": [
+        "THIS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "my god": {
+      "phrase": "my god",
+      "frequency": 30,
+      "target_glosses": [
+        "MY",
+        "GOD"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "do this": {
+      "phrase": "do this",
+      "frequency": 30,
+      "target_glosses": [
+        "DO",
+        "THIS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "want you": {
+      "phrase": "want you",
+      "frequency": 29,
+      "target_glosses": [
+        "WANT",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "is a": {
+      "phrase": "is a",
+      "frequency": 28,
+      "target_glosses": [
+        "IS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "when i": {
+      "phrase": "when i",
+      "frequency": 28,
+      "target_glosses": [
+        "WHEN",
+        "I"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "oh my": {
+      "phrase": "oh my",
+      "frequency": 28,
+      "target_glosses": [
+        "OH",
+        "MY"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "oh my god": {
+      "phrase": "oh my god",
+      "frequency": 28,
+      "target_glosses": [
+        "OH",
+        "MY",
+        "GOD"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "and he": {
+      "phrase": "and he",
+      "frequency": 28,
+      "target_glosses": [
+        "AND",
+        "HE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "which is": {
+      "phrase": "which is",
+      "frequency": 27,
+      "target_glosses": [
+        "WHICH"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "this one": {
+      "phrase": "this one",
+      "frequency": 27,
+      "target_glosses": [
+        "THIS",
+        "ONE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "want you to": {
+      "phrase": "want you to",
+      "frequency": 27,
+      "target_glosses": [
+        "WANT",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i can't": {
+      "phrase": "i can't",
+      "frequency": 27,
+      "target_glosses": [
+        "I",
+        "CAN'T"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "to give": {
+      "phrase": "to give",
+      "frequency": 26,
+      "target_glosses": [
+        "GIVE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "it is": {
+      "phrase": "it is",
+      "frequency": 26,
+      "target_glosses": [
+        "IT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "show you": {
+      "phrase": "show you",
+      "frequency": 26,
+      "target_glosses": [
+        "SHOW",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "on stage": {
+      "phrase": "on stage",
+      "frequency": 24,
+      "target_glosses": [
+        "ON",
+        "STAGE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "to this": {
+      "phrase": "to this",
+      "frequency": 24,
+      "target_glosses": [
+        "THIS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "is that": {
+      "phrase": "is that",
+      "frequency": 24,
+      "target_glosses": [
+        "THAT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you will": {
+      "phrase": "you will",
+      "frequency": 24,
+      "target_glosses": [
+        "YOU",
+        "WILL"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "the most": {
+      "phrase": "the most",
+      "frequency": 23,
+      "target_glosses": [
+        "MOST"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "and they": {
+      "phrase": "and they",
+      "frequency": 23,
+      "target_glosses": [
+        "AND",
+        "THEY"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "so i": {
+      "phrase": "so i",
+      "frequency": 23,
+      "target_glosses": [
+        "SO",
+        "I"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "what is": {
+      "phrase": "what is",
+      "frequency": 23,
+      "target_glosses": [
+        "WHAT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "at the": {
+      "phrase": "at the",
+      "frequency": 22,
+      "target_glosses": [
+        "AT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "at this": {
+      "phrase": "at this",
+      "frequency": 22,
+      "target_glosses": [
+        "AT",
+        "THIS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "in a": {
+      "phrase": "in a",
+      "frequency": 22,
+      "target_glosses": [
+        "IN"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "and that": {
+      "phrase": "and that",
+      "frequency": 22,
+      "target_glosses": [
+        "AND",
+        "THAT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "to show": {
+      "phrase": "to show",
+      "frequency": 22,
+      "target_glosses": [
+        "SHOW"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "you a": {
+      "phrase": "you a",
+      "frequency": 21,
+      "target_glosses": [
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "are you": {
+      "phrase": "are you",
+      "frequency": 21,
+      "target_glosses": [
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i want to": {
+      "phrase": "i want to",
+      "frequency": 21,
+      "target_glosses": [
+        "I",
+        "WANT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i look": {
+      "phrase": "i look",
+      "frequency": 21,
+      "target_glosses": [
+        "I",
+        "LOOK"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "have to": {
+      "phrase": "have to",
+      "frequency": 21,
+      "target_glosses": [
+        "HAVE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "goes like": {
+      "phrase": "goes like",
+      "frequency": 20,
+      "target_glosses": [
+        "GOES",
+        "LIKE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "to go": {
+      "phrase": "to go",
+      "frequency": 20,
+      "target_glosses": [
+        "GO"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "all of": {
+      "phrase": "all of",
+      "frequency": 20,
+      "target_glosses": [
+        "ALL"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "to you": {
+      "phrase": "to you",
+      "frequency": 20,
+      "target_glosses": [
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i think": {
+      "phrase": "i think",
+      "frequency": 19,
+      "target_glosses": [
+        "I",
+        "THINK"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "it's a": {
+      "phrase": "it's a",
+      "frequency": 19,
+      "target_glosses": [
+        "IT'S"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "is it": {
+      "phrase": "is it",
+      "frequency": 19,
+      "target_glosses": [
+        "IT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "for you": {
+      "phrase": "for you",
+      "frequency": 19,
+      "target_glosses": [
+        "FOR",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i don't": {
+      "phrase": "i don't",
+      "frequency": 19,
+      "target_glosses": [
+        "I",
+        "DON'T"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i just": {
+      "phrase": "i just",
+      "frequency": 19,
+      "target_glosses": [
+        "I",
+        "JUST"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "as a": {
+      "phrase": "as a",
+      "frequency": 18,
+      "target_glosses": [
+        "AS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i do": {
+      "phrase": "i do",
+      "frequency": 18,
+      "target_glosses": [
+        "I",
+        "DO"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "your presentation": {
+      "phrase": "your presentation",
+      "frequency": 18,
+      "target_glosses": [
+        "YOUR",
+        "PRESENTATION"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "good at": {
+      "phrase": "good at",
+      "frequency": 18,
+      "target_glosses": [
+        "GOOD",
+        "AT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "have you": {
+      "phrase": "have you",
+      "frequency": 18,
+      "target_glosses": [
+        "HAVE",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i was": {
+      "phrase": "i was",
+      "frequency": 18,
+      "target_glosses": [
+        "I",
+        "WAS"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i have": {
+      "phrase": "i have",
+      "frequency": 18,
+      "target_glosses": [
+        "I",
+        "HAVE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "these are": {
+      "phrase": "these are",
+      "frequency": 18,
+      "target_glosses": [
+        "THESE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i get": {
+      "phrase": "i get",
+      "frequency": 18,
+      "target_glosses": [
+        "I",
+        "GET"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "we have": {
+      "phrase": "we have",
+      "frequency": 17,
+      "target_glosses": [
+        "WE",
+        "HAVE"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "how to": {
+      "phrase": "how to",
+      "frequency": 17,
+      "target_glosses": [
+        "HOW"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "what you": {
+      "phrase": "what you",
+      "frequency": 17,
+      "target_glosses": [
+        "WHAT",
+        "YOU"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "i said": {
+      "phrase": "i said",
+      "frequency": 17,
+      "target_glosses": [
+        "I",
+        "SAID"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "do it": {
+      "phrase": "do it",
+      "frequency": 17,
+      "target_glosses": [
+        "DO",
+        "IT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "the best": {
+      "phrase": "the best",
+      "frequency": 17,
+      "target_glosses": [
+        "BEST"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "the way": {
+      "phrase": "the way",
+      "frequency": 17,
+      "target_glosses": [
+        "WAY"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "up on": {
+      "phrase": "up on",
+      "frequency": 16,
+      "target_glosses": [
+        "UP",
+        "ON"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "a presentation": {
+      "phrase": "a presentation",
+      "frequency": 15,
+      "target_glosses": [
+        "PRESENTATION"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "that i": {
+      "phrase": "that i",
+      "frequency": 14,
+      "target_glosses": [
+        "THAT",
+        "I"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    },
+    "confident in": {
+      "phrase": "confident in",
+      "frequency": 13,
+      "target_glosses": [
+        "CONFIDENT"
+      ],
+      "isl_rule": "Idiomatic Head Sign or Ordered Gloss Sequence",
+      "status": "VALIDATED_SYNTACTIC_CANDIDATE"
+    }
+  }
+}

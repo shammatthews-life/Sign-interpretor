@@ -1,0 +1,605 @@
+{
+  "total_mined_candidates": 120,
+  "candidates": [
+    {
+      "rank": 1,
+      "phrase": "this is",
+      "frequency": 97,
+      "word_count": 2
+    },
+    {
+      "rank": 2,
+      "phrase": "going to",
+      "frequency": 85,
+      "word_count": 2
+    },
+    {
+      "rank": 3,
+      "phrase": "if you",
+      "frequency": 85,
+      "word_count": 2
+    },
+    {
+      "rank": 4,
+      "phrase": "look at",
+      "frequency": 82,
+      "word_count": 2
+    },
+    {
+      "rank": 5,
+      "phrase": "have a",
+      "frequency": 68,
+      "word_count": 2
+    },
+    {
+      "rank": 6,
+      "phrase": "and i",
+      "frequency": 67,
+      "word_count": 2
+    },
+    {
+      "rank": 7,
+      "phrase": "you have",
+      "frequency": 63,
+      "word_count": 2
+    },
+    {
+      "rank": 8,
+      "phrase": "want to",
+      "frequency": 63,
+      "word_count": 2
+    },
+    {
+      "rank": 9,
+      "phrase": "in the",
+      "frequency": 59,
+      "word_count": 2
+    },
+    {
+      "rank": 10,
+      "phrase": "i want",
+      "frequency": 58,
+      "word_count": 2
+    },
+    {
+      "rank": 11,
+      "phrase": "you can",
+      "frequency": 57,
+      "word_count": 2
+    },
+    {
+      "rank": 12,
+      "phrase": "like this",
+      "frequency": 49,
+      "word_count": 2
+    },
+    {
+      "rank": 13,
+      "phrase": "and then",
+      "frequency": 49,
+      "word_count": 2
+    },
+    {
+      "rank": 14,
+      "phrase": "that you",
+      "frequency": 48,
+      "word_count": 2
+    },
+    {
+      "rank": 15,
+      "phrase": "do you",
+      "frequency": 48,
+      "word_count": 2
+    },
+    {
+      "rank": 16,
+      "phrase": "and you",
+      "frequency": 48,
+      "word_count": 2
+    },
+    {
+      "rank": 17,
+      "phrase": "give you",
+      "frequency": 46,
+      "word_count": 2
+    },
+    {
+      "rank": 18,
+      "phrase": "you are",
+      "frequency": 46,
+      "word_count": 2
+    },
+    {
+      "rank": 19,
+      "phrase": "you to",
+      "frequency": 43,
+      "word_count": 2
+    },
+    {
+      "rank": 20,
+      "phrase": "to be",
+      "frequency": 42,
+      "word_count": 2
+    },
+    {
+      "rank": 21,
+      "phrase": "that is",
+      "frequency": 42,
+      "word_count": 2
+    },
+    {
+      "rank": 22,
+      "phrase": "when you",
+      "frequency": 42,
+      "word_count": 2
+    },
+    {
+      "rank": 23,
+      "phrase": "to the",
+      "frequency": 40,
+      "word_count": 2
+    },
+    {
+      "rank": 24,
+      "phrase": "i'm going",
+      "frequency": 40,
+      "word_count": 2
+    },
+    {
+      "rank": 25,
+      "phrase": "a look",
+      "frequency": 40,
+      "word_count": 2
+    },
+    {
+      "rank": 26,
+      "phrase": "and the",
+      "frequency": 39,
+      "word_count": 2
+    },
+    {
+      "rank": 27,
+      "phrase": "public speaking",
+      "frequency": 38,
+      "word_count": 2
+    },
+    {
+      "rank": 28,
+      "phrase": "to do",
+      "frequency": 38,
+      "word_count": 2
+    },
+    {
+      "rank": 29,
+      "phrase": "you know",
+      "frequency": 38,
+      "word_count": 2
+    },
+    {
+      "rank": 30,
+      "phrase": "is the",
+      "frequency": 37,
+      "word_count": 2
+    },
+    {
+      "rank": 31,
+      "phrase": "you want",
+      "frequency": 36,
+      "word_count": 2
+    },
+    {
+      "rank": 32,
+      "phrase": "of the",
+      "frequency": 33,
+      "word_count": 2
+    },
+    {
+      "rank": 33,
+      "phrase": "you go",
+      "frequency": 32,
+      "word_count": 2
+    },
+    {
+      "rank": 34,
+      "phrase": "in your",
+      "frequency": 31,
+      "word_count": 2
+    },
+    {
+      "rank": 35,
+      "phrase": "you do",
+      "frequency": 31,
+      "word_count": 2
+    },
+    {
+      "rank": 36,
+      "phrase": "of you",
+      "frequency": 30,
+      "word_count": 2
+    },
+    {
+      "rank": 37,
+      "phrase": "is this",
+      "frequency": 30,
+      "word_count": 2
+    },
+    {
+      "rank": 38,
+      "phrase": "my god",
+      "frequency": 30,
+      "word_count": 2
+    },
+    {
+      "rank": 39,
+      "phrase": "do this",
+      "frequency": 30,
+      "word_count": 2
+    },
+    {
+      "rank": 40,
+      "phrase": "want you",
+      "frequency": 29,
+      "word_count": 2
+    },
+    {
+      "rank": 41,
+      "phrase": "is a",
+      "frequency": 28,
+      "word_count": 2
+    },
+    {
+      "rank": 42,
+      "phrase": "when i",
+      "frequency": 28,
+      "word_count": 2
+    },
+    {
+      "rank": 43,
+      "phrase": "oh my",
+      "frequency": 28,
+      "word_count": 2
+    },
+    {
+      "rank": 44,
+      "phrase": "oh my god",
+      "frequency": 28,
+      "word_count": 3
+    },
+    {
+      "rank": 45,
+      "phrase": "and he",
+      "frequency": 28,
+      "word_count": 2
+    },
+    {
+      "rank": 46,
+      "phrase": "which is",
+      "frequency": 27,
+      "word_count": 2
+    },
+    {
+      "rank": 47,
+      "phrase": "this one",
+      "frequency": 27,
+      "word_count": 2
+    },
+    {
+      "rank": 48,
+      "phrase": "want you to",
+      "frequency": 27,
+      "word_count": 3
+    },
+    {
+      "rank": 49,
+      "phrase": "i can't",
+      "frequency": 27,
+      "word_count": 2
+    },
+    {
+      "rank": 50,
+      "phrase": "to give",
+      "frequency": 26,
+      "word_count": 2
+    },
+    {
+      "rank": 51,
+      "phrase": "it is",
+      "frequency": 26,
+      "word_count": 2
+    },
+    {
+      "rank": 52,
+      "phrase": "show you",
+      "frequency": 26,
+      "word_count": 2
+    },
+    {
+      "rank": 53,
+      "phrase": "on stage",
+      "frequency": 24,
+      "word_count": 2
+    },
+    {
+      "rank": 54,
+      "phrase": "to this",
+      "frequency": 24,
+      "word_count": 2
+    },
+    {
+      "rank": 55,
+      "phrase": "is that",
+      "frequency": 24,
+      "word_count": 2
+    },
+    {
+      "rank": 56,
+      "phrase": "you will",
+      "frequency": 24,
+      "word_count": 2
+    },
+    {
+      "rank": 57,
+      "phrase": "the most",
+      "frequency": 23,
+      "word_count": 2
+    },
+    {
+      "rank": 58,
+      "phrase": "and they",
+      "frequency": 23,
+      "word_count": 2
+    },
+    {
+      "rank": 59,
+      "phrase": "so i",
+      "frequency": 23,
+      "word_count": 2
+    },
+    {
+      "rank": 60,
+      "phrase": "what is",
+      "frequency": 23,
+      "word_count": 2
+    },
+    {
+      "rank": 61,
+      "phrase": "at the",
+      "frequency": 22,
+      "word_count": 2
+    },
+    {
+      "rank": 62,
+      "phrase": "at this",
+      "frequency": 22,
+      "word_count": 2
+    },
+    {
+      "rank": 63,
+      "phrase": "in a",
+      "frequency": 22,
+      "word_count": 2
+    },
+    {
+      "rank": 64,
+      "phrase": "and that",
+      "frequency": 22,
+      "word_count": 2
+    },
+    {
+      "rank": 65,
+      "phrase": "to show",
+      "frequency": 22,
+      "word_count": 2
+    },
+    {
+      "rank": 66,
+      "phrase": "you a",
+      "frequency": 21,
+      "word_count": 2
+    },
+    {
+      "rank": 67,
+      "phrase": "are you",
+      "frequency": 21,
+      "word_count": 2
+    },
+    {
+      "rank": 68,
+      "phrase": "i want to",
+      "frequency": 21,
+      "word_count": 3
+    },
+    {
+      "rank": 69,
+      "phrase": "i look",
+      "frequency": 21,
+      "word_count": 2
+    },
+    {
+      "rank": 70,
+      "phrase": "have to",
+      "frequency": 21,
+      "word_count": 2
+    },
+    {
+      "rank": 71,
+      "phrase": "goes like",
+      "frequency": 20,
+      "word_count": 2
+    },
+    {
+      "rank": 72,
+      "phrase": "to go",
+      "frequency": 20,
+      "word_count": 2
+    },
+    {
+      "rank": 73,
+      "phrase": "all of",
+      "frequency": 20,
+      "word_count": 2
+    },
+    {
+      "rank": 74,
+      "phrase": "to you",
+      "frequency": 20,
+      "word_count": 2
+    },
+    {
+      "rank": 75,
+      "phrase": "i think",
+      "frequency": 19,
+      "word_count": 2
+    },
+    {
+      "rank": 76,
+      "phrase": "it's a",
+      "frequency": 19,
+      "word_count": 2
+    },
+    {
+      "rank": 77,
+      "phrase": "is it",
+      "frequency": 19,
+      "word_count": 2
+    },
+    {
+      "rank": 78,
+      "phrase": "for you",
+      "frequency": 19,
+      "word_count": 2
+    },
+    {
+      "rank": 79,
+      "phrase": "i don't",
+      "frequency": 19,
+      "word_count": 2
+    },
+    {
+      "rank": 80,
+      "phrase": "i just",
+      "frequency": 19,
+      "word_count": 2
+    },
+    {
+      "rank": 81,
+      "phrase": "as a",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 82,
+      "phrase": "i do",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 83,
+      "phrase": "your presentation",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 84,
+      "phrase": "good at",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 85,
+      "phrase": "have you",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 86,
+      "phrase": "i was",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 87,
+      "phrase": "i have",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 88,
+      "phrase": "these are",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 89,
+      "phrase": "i get",
+      "frequency": 18,
+      "word_count": 2
+    },
+    {
+      "rank": 90,
+      "phrase": "we have",
+      "frequency": 17,
+      "word_count": 2
+    },
+    {
+      "rank": 91,
+      "phrase": "how to",
+      "frequency": 17,
+      "word_count": 2
+    },
+    {
+      "rank": 92,
+      "phrase": "what you",
+      "frequency": 17,
+      "word_count": 2
+    },
+    {
+      "rank": 93,
+      "phrase": "i said",
+      "frequency": 17,
+      "word_count": 2
+    },
+    {
+      "rank": 94,
+      "phrase": "do it",
+      "frequency": 17,
+      "word_count": 2
+    },
+    {
+      "rank": 95,
+      "phrase": "the best",
+      "frequency": 17,
+      "word_count": 2
+    },
+    {
+      "rank": 96,
+      "phrase": "the way",
+      "frequency": 17,
+      "word_count": 2
+    },
+    {
+      "rank": 97,
+      "phrase": "up on",
+      "frequency": 16,
+      "word_count": 2
+    },
+    {
+      "rank": 98,
+      "phrase": "a presentation",
+      "frequency": 15,
+      "word_count": 2
+    },
+    {
+      "rank": 99,
+      "phrase": "that i",
+      "frequency": 14,
+      "word_count": 2
+    },
+    {
+      "rank": 100,
+      "phrase": "confident in",
+      "frequency": 13,
+      "word_count": 2
+    }
+  ]
+}
