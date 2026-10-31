@@ -1,0 +1,19 @@
+{
+  "phase": "H30",
+  "total_manifest_signs": 570,
+  "upfront_loading": {
+    "signs_loaded": 570,
+    "elapsed_ms": 415.4,
+    "memory_mb": 3.2
+  },
+  "progressive_horizon_loading": {
+    "initial_window_seconds": 20,
+    "initial_signs_loaded": 503,
+    "initial_elapsed_ms": 9.35,
+    "startup_speedup_multiplier": 44.4,
+    "total_cache_hits": 7557,
+    "total_cache_misses": 491,
+    "cache_hit_rate_pct": 93.9,
+    "mean_dynamic_fetch_ms": 0.682
+  }
+}

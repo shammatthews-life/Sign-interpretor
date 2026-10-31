@@ -1,0 +1,42 @@
+{
+  "phase": "H30",
+  "audio_source": "runtime/h29_benchmark_60s.wav",
+  "legacy_batch": {
+    "mode": "LEGACY_BATCH",
+    "T0_submit": 0.0,
+    "T1_metadata_ms": 50.18,
+    "T2_audio_extract_start_ms": 50.18,
+    "T3_full_audio_available_ms": 63.04,
+    "T4_audio_norm_ms": 143.18,
+    "T5_model_cold_load_ms": 4656.8,
+    "T6_asr_start_ms": 4656.8,
+    "T7_first_transcript_finalized_ms": 8468.63,
+    "T8_tokenization_ms": 8468.63,
+    "T9_translation_ms": 9951.49,
+    "T10_asset_preload_ms": 10101.49,
+    "T11_scheduler_entry_ms": 10106.49,
+    "T12_first_render_frame_ms": 10122.49,
+    "time_to_first_rendered_sign_ms": 10122.49
+  },
+  "h30_progressive": {
+    "mode": "H30_PROGRESSIVE",
+    "T0_submit": 0.0,
+    "T1_metadata_ms": 30.27,
+    "T2_audio_extract_start_ms": 30.27,
+    "T3_first_chunk_available_ms": 47.29,
+    "T4_first_chunk_norm_ms": 52.62,
+    "T5_model_warm_ready_ms": 52.62,
+    "T6_first_chunk_asr_start_ms": 52.62,
+    "T7_first_transcript_finalized_ms": 285.05,
+    "T8_tokenization_ms": 285.07,
+    "T9_translation_ms": 389.62,
+    "T10_targeted_asset_preload_ms": 397.62,
+    "T11_scheduler_entry_ms": 398.62,
+    "T12_first_render_frame_ms": 414.62,
+    "time_to_first_rendered_sign_ms": 414.62
+  },
+  "latency_reduction": {
+    "delta_ms": 9707.87,
+    "percentage_faster": 95.9
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "phase": "H30",
+  "audio_source": "runtime/h29_benchmark_60s.wav",
+  "streaming_chunk_size_s": 5.0,
+  "total_segments_finalized": 23,
+  "total_words": 73,
+  "finalization_latencies_ms": {
+    "mean": 824.93,
+    "p50": 226.12,
+    "p90": 2856.23,
+    "p95": 2856.28,
+    "p99": 4937.16
+  },
+  "timeline_emission_log": [
+    {
+      "segment_index": 1,
+      "text": "What?",
+      "audio_time_range": "0.59s - 1.05s",
+      "wall_time_emitted_ms": 683.28,
+      "processing_lag_ms": -366.72
+    },
+    {
+      "segment_index": 2,
+      "text": "What?",
+      "audio_time_range": "1.55s - 1.71s",
+      "wall_time_emitted_ms": 683.33,
+      "processing_lag_ms": -1026.67
+    },
+    {
+      "segment_index": 3,
+      "text": "Greetings and farewells.",
+      "audio_time_range": "6.07s - 8.05s",
+      "wall_time_emitted_ms": 901.42,
+      "processing_lag_ms": -7148.58
+    },
+    {
+      "segment_index": 4,
+      "text": "Listen to the",
+      "audio_time_range": "9.03s - 9.95s",
+      "wall_time_emitted_ms": 901.49,
+      "processing_lag_ms": -9048.51
+    },
+    {
+      "segment_index": 5,
+      "text": "dialogue.",
+      "audio_time_range": "10.00s - 10.50s",
+      "wall_time_emitted_ms": 1145.27,
+      "processing_lag_ms": -9354.73
+    },
+    {
+      "segment_index": 6,
+      "text": "Good morning, Mr. Wilson.",
+      "audio_time_range": "11.72s - 13.26s",
+      "wall_time_emitted_ms": 1145.35,
+      "processing_lag_ms": -12114.65
+    },
+    {
+      "segment_index": 7,
+      "text": "Good morning.",
+      "audio_time_range": "13.82s - 14.80s",
+      "wall_time_emitted_ms": 1145.4,
+      "processing_lag_ms": -13654.6
+    },
+    {
+      "segment_index": 8,
+      "text": "Tom. How are you today? Fine, and you? Not...",
+      "audio_time_range": "15.00s - 19.98s",
+      "wall_time_emitted_ms": 1343.04,
+      "processing_lag_ms": -18636.96
+    },
+    {
+      "segment_index": 9,
+      "text": "bad. See you later, Tom.",
+      "audio_time_range": "20.00s - 22.14s",
+      "wall_time_emitted_ms": 1592.93,
+      "processing_lag_ms": -20547.07
+    },
+    {
+      "segment_index": 10,
+      "text": "Okay, Mr. Wilson. See you.",
+      "audio_time_range": "22.94s - 24.98s",
+      "wall_time_emitted_ms": 1593.0,
+      "processing_lag_ms": -23387.0
+    },
+    {
+      "segment_index": 11,
+      "text": "you later.",
+      "audio_time_range": "25.00s - 25.36s",
+      "wall_time_emitted_ms": 4518.7,
+      "processing_lag_ms": -20841.3
+    },
+    {
+      "segment_index": 12,
+      "text": "Now repeat.",
+      "audio_time_range": "26.00s - 27.00s",
+      "wall_time_emitted_ms": 4518.85,
+      "processing_lag_ms": -22481.15
+    },
+    {
+      "segment_index": 13,
+      "text": "Good morning Mr. Wilson.",
+      "audio_time_range": "27.74s - 29.16s",
+      "wall_time_emitted_ms": 4518.88,
+      "processing_lag_ms": -24641.12
+    },
+    {
+      "segment_index": 14,
+      "text": "Wilson.",
+      "audio_time_range": "29.16s - 29.42s",
+      "wall_time_emitted_ms": 4518.91,
+      "processing_lag_ms": -24901.09
+    },
+    {
+      "segment_index": 15,
+      "text": "A",
+      "audio_time_range": "29.68s - 29.78s",
+      "wall_time_emitted_ms": 4518.94,
+      "processing_lag_ms": -25261.06
+    },
+    {
+      "segment_index": 16,
+      "text": "1-",
+      "audio_time_range": "29.78s - 29.94s",
+      "wall_time_emitted_ms": 4518.99,
+      "processing_lag_ms": -25421.01
+    },
+    {
+      "segment_index": 17,
+      "text": "Good morning Tom. How are you?",
+      "audio_time_range": "32.58s - 34.98s",
+      "wall_time_emitted_ms": 4738.45,
+      "processing_lag_ms": -30241.55
+    },
+    {
+      "segment_index": 18,
+      "text": "you today.",
+      "audio_time_range": "35.00s - 35.32s",
+      "wall_time_emitted_ms": 5005.12,
+      "processing_lag_ms": -30314.88
+    },
+    {
+      "segment_index": 19,
+      "text": "Fine, and you...",
+      "audio_time_range": "38.84s - 39.98s",
+      "wall_time_emitted_ms": 5005.23,
+      "processing_lag_ms": -34974.77
+    },
+    {
+      "segment_index": 20,
+      "text": "Not bad. See you later, Tom.",
+      "audio_time_range": "40.00s - 44.92s",
+      "wall_time_emitted_ms": 5224.35,
+      "processing_lag_ms": -39695.65
+    },
+    {
+      "segment_index": 21,
+      "text": "Okay, Mr. Wh-",
+      "audio_time_range": "48.89s - 49.97s",
+      "wall_time_emitted_ms": 5396.57,
+      "processing_lag_ms": -44573.43
+    },
+    {
+      "segment_index": 22,
+      "text": "Wilson, see you later!",
+      "audio_time_range": "50.00s - 51.38s",
+      "wall_time_emitted_ms": 10938.39,
+      "processing_lag_ms": -40441.61
+    },
+    {
+      "segment_index": 23,
+      "text": "Listen to the dialogue.",
+      "audio_time_range": "55.69s - 57.05s",
+      "wall_time_emitted_ms": 11112.16,
+      "processing_lag_ms": -45937.84
+    }
+  ]
+}

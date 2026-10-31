@@ -1,0 +1,59 @@
+{
+  "phase": "H30",
+  "timestamp": "2026-10-31T05:18:05Z",
+  "git_state": {
+    "head": "7ffcf00d8fa786c5084e20795314d15b25470ff7",
+    "branch": "r1-articulation-coverage-and-report",
+    "is_clean": false,
+    "status": "?? tools/build_h30_baseline_audit.py"
+  },
+  "hardware": {
+    "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "vram_total_mib": 6141.0,
+    "driver_version": "592.82"
+  },
+  "canonical_transcript": {
+    "segments_count": 2366,
+    "total_tokens": 23201,
+    "video_duration_s": 8970.16,
+    "theoretical_60fps_frames": 538209
+  },
+  "h29_reported_metrics": {
+    "asr_real_time_factor": 0.0283,
+    "asr_speedup": "35.35x",
+    "asr_60s_inference_ms": 1697.46,
+    "asr_reported_p50_ms": 0.02,
+    "pipeline_total_translation_ms": 865.74,
+    "pipeline_mean_segment_ms": 0.3648,
+    "pipeline_p50_ms": 0.2879,
+    "pipeline_p99_ms": 1.3878,
+    "pipeline_max_ms": 5.5271,
+    "active_playable_signs": 570,
+    "canonical_segments": 2366,
+    "canonical_tokens": 23258,
+    "total_glosses": 11032,
+    "total_playable_dispatches": 11032,
+    "fallback_occurrences": 2226,
+    "reported_simulated_frames": 661920
+  },
+  "investigated_discrepancies": [
+    {
+      "metric": "ASR P50 Latency (Reported: 0.02 ms)",
+      "finding": "ARTIFACT_OF_GENERATOR_YIELD",
+      "root_cause": "In tools/benchmark_h29_asr.py, latency was recorded as (cur_time - prev_time) inside `for seg in segments:`. Faster-whisper returns a Python generator where the first segment blocks on full batch acoustic inference (taking ~1,600 ms), while subsequent segments are already decoded and held in an in-memory buffer. The iteration between already-decoded tuples takes 0.00002 seconds (~0.02 ms). True acoustic inference latency per 3s chunk is 80-120 ms.",
+      "correction_action": "Measure discrete acoustic chunk processing with dedicated timing per chunk."
+    },
+    {
+      "metric": "Max Segment Translation Latency (Reported: 5.5271 ms vs < 5.0 ms target)",
+      "finding": "COLD_START_JIT_WARMUP_DEFICIT",
+      "root_cause": "In Node.js V8 execution, Segment 0 triggers RegExp compilation, prototype instantiation, and Map sorting for phrase matching. Segment 0 took 5.527 ms. All subsequent 2,365 segments executed in < 1.4 ms. Because initialization was not explicitly warmed before time measurement, cold-start JIT overhead polluted segment 0 and breached the 5.0 ms threshold.",
+      "correction_action": "Introduce explicit pre-warmup pass in translator lifecycle prior to segment ingestion."
+    },
+    {
+      "metric": "Frame Count Discrepancy (Reported: 661,920 vs Theoretical: 538,740 at 60 FPS)",
+      "finding": "CONFLATION_OF_MOTION_TICKS_WITH_VIDEO_FRAMES",
+      "root_cause": "The canonical video duration is 8970.2 seconds, which at 60 FPS corresponds to exactly 538,209 video display frames. The reported 661,920 figure was computed as `11,032 signs * 60 frames/sign = 661,920 frames of avatar motion evaluation`. Describing this as video display frames was inaccurate because signs are scheduled at speech intervals along the 8,979s timeline.",
+      "correction_action": "Strictly separate Cumulative Sign Animation Ticks (11,032 * 60 = 661,920 motion evaluations) from Video Display Frames (538,209 frames at 60 FPS)."
+    }
+  ]
+}

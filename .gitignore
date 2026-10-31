@@ -28,3 +28,6 @@ tools/asr/benchmark_audio/*.wav
 
 # Local backup checkpoints
 backup/
+
+# Node dependencies
+node_modules/

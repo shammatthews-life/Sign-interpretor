@@ -1,0 +1,20 @@
+{
+  "phase": "H30",
+  "segments_evaluated": 500,
+  "legacy_granular": {
+    "messages_sent": 4964,
+    "elapsed_ms": 7.42,
+    "ms_per_message": 0.0015
+  },
+  "optimized_batched": {
+    "messages_sent": 500,
+    "signs_carried": 4964,
+    "elapsed_ms": 4.39,
+    "ms_per_payload": 0.0088,
+    "latency_p50_ms": 0.0059,
+    "latency_p90_ms": 0.0093,
+    "latency_p95_ms": 0.0107,
+    "latency_p99_ms": 0.0287
+  },
+  "speedup_multiplier": 1.7
+}

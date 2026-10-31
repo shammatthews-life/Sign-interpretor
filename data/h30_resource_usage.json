@@ -1,0 +1,23 @@
+{
+  "phase": "H30",
+  "gpu_device": "NVIDIA GeForce RTX 4050 Laptop GPU (6,141 MiB)",
+  "monitoring_duration_ms": 6314.04,
+  "total_poll_samples": 33,
+  "memory_profile_mb": {
+    "initial_used": 0.0,
+    "peak_used": 323.0,
+    "mean_used": 135.3,
+    "total_available": 6141.0,
+    "free_headroom": 5818.0
+  },
+  "utilization_profile": {
+    "peak_gpu_util_pct": 35.0,
+    "mean_gpu_util_pct": 8.5
+  },
+  "resource_policy": {
+    "max_concurrent_whisper_workers": 1,
+    "compute_type": "float16",
+    "vad_filter": true,
+    "vram_leak_detected": false
+  }
+}

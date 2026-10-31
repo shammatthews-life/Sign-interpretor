@@ -1,0 +1,44 @@
+{
+  "phase": "H30",
+  "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU (6141 MiB VRAM)",
+  "model": "base.en CUDA float16 (greedy beam_size=1)",
+  "lifecycle_ms": {
+    "cold_start": 4459.15,
+    "warm_start": 0.0004
+  },
+  "stage_metrics": {
+    "asr_5s_chunk_latency": {
+      "count": 12,
+      "mean": 587.6032,
+      "p50": 194.0803,
+      "p90": 641.9892,
+      "p95": 2369.5183,
+      "p99": 4021.3648,
+      "max": 4434.3264
+    },
+    "translation_latency": {
+      "count": 2366,
+      "mean": 0.0588,
+      "p50": 0.0427,
+      "p90": 0.0995,
+      "p95": 0.1471,
+      "p99": 0.336,
+      "max": 0.9901
+    },
+    "avatar_render_frame_time": {
+      "count": 1000,
+      "mean": 0.0013,
+      "p50": 0.0004,
+      "p90": 0.0006,
+      "p95": 0.0035,
+      "p99": 0.0089,
+      "max": 0.5052
+    }
+  },
+  "discrepancy_resolution": {
+    "asr_true_chunk_p50_ms": 194.0803,
+    "translation_true_max_ms": 0.9901,
+    "video_display_frames_at_60fps": 538740,
+    "cumulative_sign_motion_ticks": 661920
+  }
+}

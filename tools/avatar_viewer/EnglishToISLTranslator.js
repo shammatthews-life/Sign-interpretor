@@ -1,5 +1,16 @@
 import { TranslationBackend } from './TranslationBackend.js';
 
+const CONTRACTION_PATTERNS = [
+  [/\bi'm\b/g, 'i'], [/\byou're\b/g, 'you'], [/\bwe're\b/g, 'we'], [/\bthey're\b/g, 'they'],
+  [/\bhe's\b/g, 'he'], [/\bshe's\b/g, 'she'], [/\bthere's\b/g, 'there'], [/\bthat's\b/g, 'that'],
+  [/\bwhat's\b/g, 'what'], [/\bi've\b/g, 'i have'], [/\byou've\b/g, 'you have'], [/\bi'll\b/g, 'i will'],
+  [/\bdon't\b/g, 'not'], [/\bcan't\b/g, 'can not'], [/\bgonna\b/g, 'go'], [/\bwanna\b/g, 'want'],
+  [/\byou'll\b/g, 'you will'], [/\bthey'll\b/g, 'they will'], [/\bwe'll\b/g, 'we will'],
+  [/\bhaven't\b/g, 'have not'], [/\bwe've\b/g, 'we have'], [/\bisn't\b/g, 'not'], [/\bdidn't\b/g, 'not'],
+  [/\bdoesn't\b/g, 'not'], [/\bwasn't\b/g, 'not'], [/\bcouldn't\b/g, 'can not'],
+  [/\bshouldn't\b/g, 'should not'], [/\bwouldn't\b/g, 'not']
+];
+
 /**
  * Phase G2 / H13: English -> ISL-oriented representation layer.
  * Authoring Batch 2 added: YOUR, MY, HAVE, WANT, LOOK, SEE.
@@ -1556,43 +1567,27 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['immediately', 'FAST'], ['obviously', 'CLEAR'],
 
       // Contractions
-
       ["won't", 'NOT'], ["they've", 'HAVE'], ["i'd", 'I'], ["here's", 'POINT'], ["whenever", 'WHEN'],
     ]);
+
+    // Pre-compile and sort multiword phrases once to eliminate per-segment GC allocations
+    this._compiledPhrases = [...this.phrases.entries()]
+      .map(([phrase, gloss]) => ({
+        phrase,
+        words: phrase.split(' '),
+        gloss: Array.isArray(gloss) ? gloss : [gloss],
+        wordCount: phrase.split(' ').length,
+        charLength: phrase.length
+      }))
+      .sort((a, b) => (b.wordCount - a.wordCount) || (b.charLength - a.charLength));
   }
 
   normalize(text) {
     let s = String(text ?? '').normalize('NFKC').toLowerCase()
       .replace(/[^\p{L}\p{N}?' ]+/gu, ' ').replace(/\s+/g, ' ').trim();
-    // Expand frequent spoken contractions according to ISL grammar (copula omitted, modals unpacked)
-    s = s.replace(/\bi'm\b/g, 'i')
-         .replace(/\byou're\b/g, 'you')
-         .replace(/\bwe're\b/g, 'we')
-         .replace(/\bthey're\b/g, 'they')
-         .replace(/\bhe's\b/g, 'he')
-         .replace(/\bshe's\b/g, 'she')
-         .replace(/\bthere's\b/g, 'there')
-         .replace(/\bthat's\b/g, 'that')
-         .replace(/\bwhat's\b/g, 'what')
-         .replace(/\bi've\b/g, 'i have')
-         .replace(/\byou've\b/g, 'you have')
-         .replace(/\bi'll\b/g, 'i will')
-         .replace(/\bdon't\b/g, 'not')
-         .replace(/\bcan't\b/g, 'can not')
-         .replace(/\bgonna\b/g, 'go')
-         .replace(/\bwanna\b/g, 'want')
-         .replace(/\byou'll\b/g, 'you will')
-         .replace(/\bthey'll\b/g, 'they will')
-         .replace(/\bwe'll\b/g, 'we will')
-         .replace(/\bhaven't\b/g, 'have not')
-         .replace(/\bwe've\b/g, 'we have')
-         .replace(/\bisn't\b/g, 'not')
-         .replace(/\bdidn't\b/g, 'not')
-         .replace(/\bdoesn't\b/g, 'not')
-         .replace(/\bwasn't\b/g, 'not')
-         .replace(/\bcouldn't\b/g, 'can not')
-         .replace(/\bshouldn't\b/g, 'should not')
-         .replace(/\bwouldn't\b/g, 'not');
+    for (let i = 0; i < CONTRACTION_PATTERNS.length; i++) {
+      s = s.replace(CONTRACTION_PATTERNS[i][0], CONTRACTION_PATTERNS[i][1]);
+    }
     return s.replace(/\s+/g, ' ').trim();
   }
 
@@ -1622,19 +1617,9 @@ export class EnglishToISLTranslator extends TranslationBackend {
     const phraseMatches = [];
     const remainingTokens = [];
     for (let index = 0; index < tokens.length;) {
-      if (!this._sortedPhrases) {
-        this._sortedPhrases = [...this.phrases.entries()].sort((a, b) => {
-          const diff = b[0].split(' ').length - a[0].split(' ').length;
-          return diff !== 0 ? diff : b[0].length - a[0].length;
-        });
-      }
-      const match = this._sortedPhrases.find(([phrase]) => {
-        const words = phrase.split(' ');
-        return words.every((word, offset) => tokens[index + offset] === word);
-      });
+      const match = this._compiledPhrases.find(p => p.words.every((word, offset) => tokens[index + offset] === word));
       if (match) {
-        const [phrase, phraseGloss] = match;
-        gloss.push(...phraseGloss); phraseMatches.push(phrase); index += phrase.split(' ').length;
+        gloss.push(...match.gloss); phraseMatches.push(match.phrase); index += match.wordCount;
       } else { remainingTokens.push(tokens[index]); index += 1; }
     }
     if (phraseMatches.length) {
@@ -1676,8 +1661,8 @@ export class EnglishToISLTranslator extends TranslationBackend {
     if (phraseMatches.length) {
       const orderedGloss = [];
       for (let index = 0; index < tokens.length;) {
-        const match = [...this.phrases.entries()].find(([phrase]) => phrase.split(' ').every((word, offset) => tokens[index + offset] === word));
-        if (match) { orderedGloss.push(...match[1]); index += match[0].split(' ').length; }
+        const match = this._compiledPhrases.find(p => p.words.every((word, offset) => tokens[index + offset] === word));
+        if (match) { orderedGloss.push(...match.gloss); index += match.wordCount; }
         else {
           const token = tokens[index++];
           if (!auxiliaries.has(token) && this.lexicon.has(token)) orderedGloss.push(this.lexicon.get(token));

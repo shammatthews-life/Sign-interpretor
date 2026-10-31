@@ -1,0 +1,86 @@
+{
+  "phase": "H30",
+  "playback_rates_evaluated": [
+    {
+      "rate": 0.5,
+      "dispatched_events": 200,
+      "timing_errors_ms": {
+        "p50": 4.47,
+        "p90": 7.64,
+        "p95": 7.91,
+        "p99": 8.22,
+        "max": 8.26
+      }
+    },
+    {
+      "rate": 0.75,
+      "dispatched_events": 200,
+      "timing_errors_ms": {
+        "p50": 5.85,
+        "p90": 10.96,
+        "p95": 11.92,
+        "p99": 12.43,
+        "max": 12.45
+      }
+    },
+    {
+      "rate": 1,
+      "dispatched_events": 200,
+      "timing_errors_ms": {
+        "p50": 7.65,
+        "p90": 15.04,
+        "p95": 16,
+        "p99": 16.51,
+        "max": 16.51
+      }
+    },
+    {
+      "rate": 1.25,
+      "dispatched_events": 200,
+      "timing_errors_ms": {
+        "p50": 10.67,
+        "p90": 18.81,
+        "p95": 19.85,
+        "p99": 20.64,
+        "max": 20.76
+      }
+    },
+    {
+      "rate": 1.5,
+      "dispatched_events": 200,
+      "timing_errors_ms": {
+        "p50": 13.72,
+        "p90": 22.71,
+        "p95": 24.1,
+        "p99": 24.89,
+        "max": 24.93
+      }
+    },
+    {
+      "rate": 2,
+      "dispatched_events": 200,
+      "timing_errors_ms": {
+        "p50": 14.36,
+        "p90": 30.26,
+        "p95": 31.8,
+        "p99": 33.18,
+        "max": 33.18
+      }
+    }
+  ],
+  "seek_resilience": {
+    "rapid_seeks_tested": [
+      1800,
+      5400,
+      2000
+    ],
+    "total_stale_flushed": 1377,
+    "stale_dispatches_leak": 0,
+    "zero_drift_guarantee": true
+  },
+  "compliance_status": {
+    "p95_under_100ms": true,
+    "p99_under_250ms": true,
+    "zero_silent_loss": true
+  }
+}
