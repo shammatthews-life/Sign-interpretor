@@ -49,15 +49,15 @@ The H32 and H30 validators regenerate machine-measured timing artifacts. Those i
 
 ## Repository and publication-history audit
 
-The audit compared local `HEAD` (`cea02cdc`) with the fetched `origin/r1-articulation-coverage-and-report` base (`2608ba357c70e030d4ad9063d988fb09a22d150d`). The local history is 48 commits ahead; the current origin has no `audit/h33-gpu-enforcement` ref.
+The initial H33 source audit confirmed `cea02cdc` against the fetched `origin/r1-articulation-coverage-and-report` base (`2608ba357c70e030d4ad9063d988fb09a22d150d`). After committing H33.1 as `692da3f28984f23fb8f2faac8c965388578b6836`, the complete unpublished range is 49 commits ahead of that base; the current origin has no `audit/h33-gpu-enforcement` ref.
 
-- Scanned 1,915 unique Git objects, including 1,631 text blobs, across the unpublished commit range. No matches were found for private-key headers, common GitHub/AWS/Google/Slack token formats, or long secret/password assignments.
+- Rescanned all 49 unpublished commits: 1,930 unique Git objects and 1,640 text blobs. No matches were found for private-key headers, common GitHub/AWS/Google/Slack token formats, or long secret/password assignments.
 - No `.env`, private-key, model-weight, audio/video, FBX, GLB/GLTF, OBJ/MTL, or Blender assets were found in that range.
 - The tracked PNGs are 32×32 placeholders (104–105 bytes) plus small extension icons; they are not avatar models or textures.
 - The history includes short ASR/test phrase fields and lexical/context datasets. No full transcript or media file was found by this inventory; the scan does not establish licensing for every corpus entry.
 - The ten pre-existing H32 edits remain unstaged. H33.1 changes are confined to its ASR/runtime sources, focused validator, and this report/evidence.
 
-The secret scan is a bounded pattern-based review, not a guarantee against every possible secret format. Before publication, the H33.1 commit and its complete reachable history must be scanned once more; push only to the dedicated audit branch and never force-push.
+This report/evidence metadata update is separate from the scanned commit range and must be scanned as staged content before its commit. The secret scan is a bounded pattern-based review, not a guarantee against every possible secret format. Push only to the dedicated audit branch and never force-push.
 
 ## Release blockers and manual work
 

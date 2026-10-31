@@ -6,9 +6,10 @@
   "history_scan": {
     "comparison_base": "origin/r1-articulation-coverage-and-report",
     "comparison_base_commit": "2608ba357c70e030d4ad9063d988fb09a22d150d",
-    "unpublished_commit_count": 48,
-    "unique_git_objects": 1915,
-    "text_blobs_scanned": 1631,
+    "scanned_through_commit": "692da3f28984f23fb8f2faac8c965388578b6836",
+    "unpublished_commit_count": 49,
+    "unique_git_objects": 1930,
+    "text_blobs_scanned": 1640,
     "secret_pattern_matches": 0,
     "credential_patterns": [
       "private-key headers",
