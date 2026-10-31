@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import os
 import sys
-import ctypes
 import threading
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
@@ -19,38 +18,12 @@ from typing import Callable, Iterable, Optional
 
 import numpy as np
 
-from .gpu_execution import ExecutionMode, verify_nvidia_cuda
-
-
-def ensure_cuda_support() -> bool:
-    """Ensure CUDA 12 libraries are discoverable on Windows for CTranslate2."""
-    try:
-        import ctranslate2
-        if ctranslate2.get_cuda_device_count() == 0:
-            return False
-        candidates = [
-            os.path.dirname(ctranslate2.__file__),
-            r"C:\Program Files\Blackmagic Design\DaVinci Resolve",
-            os.path.join(os.environ.get("CUDA_PATH", ""), "bin"),
-        ]
-        for p in candidates:
-            if os.path.isdir(p):
-                try:
-                    os.add_dll_directory(p)
-                except Exception:
-                    pass
-                if p not in os.environ.get("PATH", ""):
-                    os.environ["PATH"] = p + ";" + os.environ.get("PATH", "")
-                for dll in ("cublasLt64_12.dll", "cublas64_12.dll"):
-                    dll_path = os.path.join(p, dll)
-                    if os.path.exists(dll_path):
-                        try:
-                            ctypes.CDLL(dll_path)
-                        except Exception:
-                            pass
-        return True
-    except Exception:
-        return False
+from .gpu_execution import (
+    ExecutionMode,
+    get_shared_whisper_model,
+    resolve_execution_configuration,
+    verify_nvidia_cuda,
+)
 
 
 @dataclass
@@ -194,6 +167,10 @@ class FasterWhisperBackend(StreamingASRBackend):
         self._flush_requested = threading.Event()
         self._flush_completed = threading.Event()
         self._worker_thread: Optional[threading.Thread] = None
+        self._lifecycle_lock = threading.RLock()
+        self._inference_lock = threading.Lock()
+        self._flush_in_progress = False
+        self.last_error: Optional[str] = None
 
     @property
     def worker_state(self) -> str:
@@ -217,43 +194,58 @@ class FasterWhisperBackend(StreamingASRBackend):
             return self._stale_windows_dropped
 
     def start(self) -> None:
-        if self.async_worker and self._worker_thread and self._worker_thread.is_alive():
-            raise RuntimeError("The previous ASR worker is still stopping; retry after it exits.")
+        with self._lifecycle_lock:
+            if self.async_worker and self._worker_thread and self._worker_thread.is_alive():
+                raise RuntimeError("The previous ASR worker is still stopping; retry after it exits.")
+            if self.state == "running":
+                return
+            if self.state == "paused":
+                raise RuntimeError("ASR is paused; call resume() instead of start().")
 
-        if self.execution_mode == "GPU_REQUIRED":
-            verify_nvidia_cuda(self.device_index, self.compute_type)
-        elif self.device == "cuda":
-            if not ensure_cuda_support():
-                raise RuntimeError(
-                    "CUDA was explicitly selected but CTranslate2 reports no usable "
-                    "CUDA device; no CPU fallback was performed."
+            if self.execution_mode is not None:
+                resolved = resolve_execution_configuration(
+                    self.execution_mode,
+                    device=self.device,
+                    device_index=self.device_index,
+                    compute_type=self.compute_type,
                 )
-            verify_nvidia_cuda(self.device_index, self.compute_type)
+                self.device = resolved["device"]
+                self.compute_type = resolved["compute_type"]
+                self.device_index = resolved["device_index"] or 0
+            elif self.device == "cuda":
+                verify_nvidia_cuda(self.device_index, self.compute_type)
 
-        if self.model is None:
-            model_options: dict[str, object] = {
-                "device": self.device,
-                "compute_type": self.compute_type,
-            }
-            if self.device == "cuda":
-                model_options["device_index"] = self.device_index
-            if self.model_factory:
-                self.model = self.model_factory(self.model_name, **model_options)
-            else:
-                from faster_whisper import WhisperModel
-                self.model = WhisperModel(self.model_name, **model_options)
+            if self.model is None:
+                model_options: dict[str, object] = {
+                    "device": self.device,
+                    "compute_type": self.compute_type,
+                }
+                if self.device == "cuda":
+                    model_options["device_index"] = self.device_index
+                if self.model_factory:
+                    self.model = self.model_factory(self.model_name, **model_options)
+                else:
+                    self.model, self._inference_lock = get_shared_whisper_model(
+                        self.model_name,
+                        device=self.device,
+                        compute_type=self.compute_type,
+                        device_index=self.device_index if self.device == "cuda" else None,
+                    )
 
-        self.state = "running"
-        self._worker_state = "IDLE"
+            self.state = "running"
+            self._worker_state = "IDLE"
+            self.last_error = None
 
-        if self.async_worker:
-            self._worker_thread = None
-            self._stop_event.clear()
-            self._worker_trigger.clear()
-            self._flush_requested.clear()
-            self._flush_completed.clear()
-            self._worker_thread = threading.Thread(target=self._worker_loop, daemon=True, name="ASRWorkerThread")
-            self._worker_thread.start()
+            if self.async_worker:
+                self._worker_thread = None
+                self._stop_event.clear()
+                self._worker_trigger.clear()
+                self._flush_requested.clear()
+                self._flush_completed.clear()
+                self._worker_thread = threading.Thread(
+                    target=self._worker_loop, daemon=True, name="ASRWorkerThread"
+                )
+                self._worker_thread.start()
 
     def pause(self) -> None:
         with self._lock:
@@ -266,28 +258,38 @@ class FasterWhisperBackend(StreamingASRBackend):
                 self.state = "running"
 
     def stop(self) -> None:
-        self.state = "stopped"
-        self._worker_state = "STOPPED"
-        if self.async_worker and self._worker_thread and self._worker_thread.is_alive():
-            self._stop_event.set()
-            self._worker_trigger.set()
-            self._worker_thread.join(timeout=5.0)
-            if self._worker_thread.is_alive():
-                raise TimeoutError("ASR worker did not stop within 5 seconds; session reset is incomplete.")
-            self._worker_thread = None
+        with self._lifecycle_lock:
+            with self._lock:
+                self.state = "stopped"
+                self._worker_state = "STOPPED"
+            if self.async_worker and self._worker_thread and self._worker_thread.is_alive():
+                self._stop_event.set()
+                self._worker_trigger.set()
+                self._worker_thread.join(timeout=5.0)
+                if self._worker_thread.is_alive():
+                    raise TimeoutError("ASR worker did not stop within 5 seconds; session reset is incomplete.")
+                self._worker_thread = None
+            with self._inference_lock:
+                with self._lock:
+                    self._reset_utterance_locked()
+                    self._completed_events.clear()
+                    self._flush_in_progress = False
+                    self._flush_requested.clear()
+                    self._flush_completed.clear()
 
     def reset(self) -> None:
-        self.stop()
-        with self._lock:
-            self.samples = np.empty(0, dtype=np.float32)
-            self.buffer_start_ms = self.buffer_end_ms = self.last_decode_end_ms = None
-            self.last_decode_ms = self.last_rtf = None
-            self.stabilizer.reset()
-            self.events = []
-            self._completed_events = []
-            self._pending_decode_count = 0
-            self._stale_windows_dropped = 0
-            self._worker_state = "IDLE"
+        with self._lifecycle_lock:
+            self.stop()
+            with self._lock:
+                self.samples = np.empty(0, dtype=np.float32)
+                self.buffer_start_ms = self.buffer_end_ms = self.last_decode_end_ms = None
+                self.last_decode_ms = self.last_rtf = None
+                self.events = []
+                self._completed_events.clear()
+                self._stale_windows_dropped = 0
+                self._worker_state = "IDLE"
+                self.last_error = None
+                self._reset_utterance_locked()
 
     def accept_audio_chunk(self, samples: np.ndarray, *, audio_start_ms: float, audio_end_ms: float) -> list[TranscriptEvent]:
         if self.state != "running":
@@ -295,8 +297,14 @@ class FasterWhisperBackend(StreamingASRBackend):
         data = np.asarray(samples, dtype=np.float32).reshape(-1)
         if not len(data):
             return []
+        if not np.isfinite(data).all():
+            raise ValueError("Audio samples must all be finite.")
+        if not np.isfinite(audio_start_ms) or not np.isfinite(audio_end_ms) or audio_start_ms < 0 or audio_end_ms <= audio_start_ms:
+            raise ValueError("Audio timestamps must be finite, non-negative, and increasing.")
 
         with self._lock:
+            if self._flush_in_progress:
+                raise RuntimeError("Cannot accept audio while a flush is in progress.")
             if self.buffer_start_ms is None:
                 self.buffer_start_ms = audio_start_ms
             self.buffer_end_ms = audio_end_ms
@@ -333,6 +341,9 @@ class FasterWhisperBackend(StreamingASRBackend):
             with self._lock:
                 if len(self.samples) == 0:
                     return []
+                if self._flush_in_progress:
+                    raise RuntimeError("An ASR flush is already in progress.")
+                self._flush_in_progress = True
                 self._flush_completed.clear()
                 self._flush_requested.set()
                 self._worker_trigger.set()
@@ -345,15 +356,21 @@ class FasterWhisperBackend(StreamingASRBackend):
                 returned = list(self._completed_events)
                 self._completed_events.clear()
                 self._reset_utterance_locked()
+                self._flush_in_progress = False
                 return returned
         else:
             with self._lock:
                 if not len(self.samples):
                     return []
-            events = self._decode(final=True)
-            with self._lock:
-                self._reset_utterance_locked()
-            return events
+                if self._flush_in_progress:
+                    raise RuntimeError("An ASR flush is already in progress.")
+                self._flush_in_progress = True
+            try:
+                return self._decode(final=True)
+            finally:
+                with self._lock:
+                    self._reset_utterance_locked()
+                    self._flush_in_progress = False
 
     def _reset_utterance_locked(self) -> None:
         """Keep the running model, but start fresh audio and transcript state."""
@@ -416,6 +433,7 @@ class FasterWhisperBackend(StreamingASRBackend):
                 backlog_dropped=dropped,
             )
 
+            callback = None
             with self._lock:
                 self._worker_state = "IDLE"
                 self.last_decode_end_ms = window_end_ms
@@ -424,8 +442,7 @@ class FasterWhisperBackend(StreamingASRBackend):
                     self.events.append(event)
                     self.last_decode_ms = event.compute_ms
                     self.last_rtf = event.rtf
-                    if self.on_event:
-                        self.on_event(event)
+                    callback = self.on_event
 
                 if is_flush:
                     self._flush_requested.clear()
@@ -437,6 +454,12 @@ class FasterWhisperBackend(StreamingASRBackend):
                     due = self.buffer_end_ms is not None and (self.buffer_end_ms - window_end_ms >= self.decode_hop_ms)
                     if duration_ms >= self.minimum_decode_ms and due:
                         self._worker_trigger.set()
+            if event and callback:
+                try:
+                    callback(event)
+                except Exception as exc:
+                    self.last_error = f"ASR event callback failed: {type(exc).__name__}: {exc}"
+                    print(f"[ASR Worker Error] {self.last_error}", file=sys.stderr)
 
     def _run_transcribe(
         self,
@@ -450,29 +473,31 @@ class FasterWhisperBackend(StreamingASRBackend):
         if not self.model or start_ms is None or end_ms is None or not len(samples):
             return None
 
-        started = perf_counter() * 1000
         try:
-            segments, _info = self.model.transcribe(
-                samples,
-                language="en",
-                beam_size=1,
-                condition_on_previous_text=False,
-                vad_filter=False,
-                without_timestamps=False,
-            )
-            segments = list(segments)
+            started = perf_counter() * 1000
+            with self._inference_lock:
+                segments, _info = self.model.transcribe(
+                    samples,
+                    language="en",
+                    beam_size=1,
+                    condition_on_previous_text=False,
+                    vad_filter=False,
+                    without_timestamps=False,
+                )
+                segments = list(segments)
+                text = " ".join(getattr(segment, "text", "") for segment in segments).strip()
+                confidence_values = [getattr(segment, "avg_logprob", None) for segment in segments]
+                confidence_values = [val for val in confidence_values if val is not None]
+                stable = self.stabilizer.final(text) if final else self.stabilizer.partial(text)
+            finished = perf_counter() * 1000
         except Exception as exc:
-            print(f"[ASR Worker Error] transcribe failed: {exc}", file=sys.stderr)
+            self.last_error = f"ASR transcription failed: {type(exc).__name__}: {exc}"
+            print(f"[ASR Worker Error] {self.last_error}", file=sys.stderr)
             return None
 
-        text = " ".join(getattr(segment, "text", "") for segment in segments).strip()
-        confidence_values = [getattr(segment, "avg_logprob", None) for segment in segments]
-        confidence_values = [val for val in confidence_values if val is not None]
-        finished = perf_counter() * 1000
-
-        stable = self.stabilizer.final(text) if final else self.stabilizer.partial(text)
         if stable is None:
             return None
+        self.last_error = None
 
         event = TranscriptEvent(
             kind="FINAL_TRANSCRIPT" if final else "PARTIAL_TRANSCRIPT",
@@ -504,5 +529,9 @@ class FasterWhisperBackend(StreamingASRBackend):
         self.last_rtf = event.rtf
         self.events.append(event)
         if self.on_event:
-            self.on_event(event)
+            try:
+                self.on_event(event)
+            except Exception as exc:
+                self.last_error = f"ASR event callback failed: {type(exc).__name__}: {exc}"
+                print(f"[ASR Worker Error] {self.last_error}", file=sys.stderr)
         return [event]

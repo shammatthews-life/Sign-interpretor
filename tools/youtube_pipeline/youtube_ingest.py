@@ -43,7 +43,11 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "tools"))
 
-from asr.gpu_execution import ExecutionMode, resolve_execution_configuration
+from asr.gpu_execution import (
+    ExecutionMode,
+    get_shared_whisper_model,
+    resolve_execution_configuration,
+)
 
 # Supported YouTube URL patterns
 YOUTUBE_URL_PATTERNS = [
@@ -327,19 +331,6 @@ def transcribe_audio_file(
     transcript_json = output_dir / "transcript.json"
     transcript_txt = output_dir / "transcript.txt"
 
-    if not force and transcript_json.exists() and transcript_txt.exists():
-        try:
-            with open(transcript_json, "r", encoding="utf-8") as f:
-                cached_data = json.load(f)
-            if on_progress:
-                on_progress("TRANSCRIBE_CACHE_HIT", 1.0)
-            return cached_data
-        except Exception:
-            pass
-
-    if on_progress:
-        on_progress("TRANSCRIBING", 0.8)
-
     resolved = resolve_execution_configuration(
         execution_mode,
         device=device,
@@ -348,34 +339,67 @@ def transcribe_audio_file(
     )
     device = resolved["device"]
     compute_type = resolved["compute_type"]
+    resolved_device_index = resolved["device_index"]
 
-    from faster_whisper import WhisperModel
+    if not force and transcript_json.exists() and transcript_txt.exists():
+        try:
+            with open(transcript_json, "r", encoding="utf-8") as f:
+                cached_data = json.load(f)
+        except (OSError, json.JSONDecodeError) as exc:
+            print(f"[YouTube ASR] Ignoring unreadable transcript cache {transcript_json}: {exc}", file=sys.stderr)
+        else:
+            expected_cache_metadata = {
+                "model": model_name,
+                "device": device,
+                "device_index": resolved_device_index,
+                "compute_type": compute_type,
+                "execution_mode": execution_mode,
+            }
+            cache_matches = (
+                isinstance(cached_data, dict)
+                and all(cached_data.get(key) == value for key, value in expected_cache_metadata.items())
+                and isinstance(cached_data.get("segments"), list)
+                and isinstance(cached_data.get("full_text"), str)
+            )
+            if cache_matches:
+                if on_progress:
+                    on_progress("TRANSCRIBE_CACHE_HIT", 1.0)
+                return cached_data
+            print(
+                f"[YouTube ASR] Ignoring transcript cache with mismatched execution provenance: {transcript_json}",
+                file=sys.stderr,
+            )
 
-    model_options: dict[str, Any] = {"device": device, "compute_type": compute_type}
-    if device == "cuda":
-        model_options["device_index"] = device_index
-    model = WhisperModel(model_name, **model_options)
+    if on_progress:
+        on_progress("TRANSCRIBING", 0.8)
 
-    t_start = time.perf_counter()
-    segments_generator, info = model.transcribe(
-        str(audio_path),
-        language="en",
-        beam_size=1,
-        condition_on_previous_text=False,
-        vad_filter=True,
+    model, inference_lock = get_shared_whisper_model(
+        model_name,
+        device=device,
+        compute_type=compute_type,
+        device_index=resolved_device_index,
     )
 
+    t_start = time.perf_counter()
     segments_list = []
     full_text_parts = []
-    for s in segments_generator:
-        text = s.text.strip()
-        if text:
-            segments_list.append({
-                "start": round(s.start, 2),
-                "end": round(s.end, 2),
-                "text": text,
-            })
-            full_text_parts.append(text)
+    with inference_lock:
+        segments_generator, info = model.transcribe(
+            str(audio_path),
+            language="en",
+            beam_size=1,
+            condition_on_previous_text=False,
+            vad_filter=True,
+        )
+        for s in segments_generator:
+            text = s.text.strip()
+            if text:
+                segments_list.append({
+                    "start": round(s.start, 2),
+                    "end": round(s.end, 2),
+                    "text": text,
+                })
+                full_text_parts.append(text)
 
     t_transcribe = time.perf_counter() - t_start
     audio_duration = getattr(info, "duration", 0.0)
@@ -384,7 +408,7 @@ def transcribe_audio_file(
     result_data = {
         "model": model_name,
         "device": device,
-        "device_index": device_index if device == "cuda" else None,
+        "device_index": resolved_device_index,
         "compute_type": compute_type,
         "execution_mode": execution_mode,
         "fallback_reason": resolved["fallback_reason"],
@@ -491,6 +515,10 @@ def process_youtube_video(
     if output_base_dir is None:
         output_base_dir = PROJECT_ROOT / "runtime" / "youtube"
 
+    resolved = resolve_execution_configuration(
+        execution_mode,
+        device_index=device_index,
+    )
     video_dir = output_base_dir / video_id
     video_dir.mkdir(parents=True, exist_ok=True)
 
@@ -499,11 +527,29 @@ def process_youtube_video(
         try:
             with open(pipeline_result_file, "r", encoding="utf-8") as f:
                 cached_res = json.load(f)
-            if on_progress:
-                on_progress("READY", 1.0)
-            return cached_res
-        except Exception:
-            pass
+        except (OSError, json.JSONDecodeError) as exc:
+            print(f"[YouTube Pipeline] Ignoring unreadable result cache {pipeline_result_file}: {exc}", file=sys.stderr)
+        else:
+            cached_transcript = cached_res.get("transcript") if isinstance(cached_res, dict) else None
+            expected_cache_metadata = {
+                "model": model_name,
+                "device": resolved["device"],
+                "device_index": resolved["device_index"],
+                "compute_type": resolved["compute_type"],
+                "execution_mode": execution_mode,
+            }
+            cache_matches = (
+                isinstance(cached_transcript, dict)
+                and all(cached_transcript.get(key) == value for key, value in expected_cache_metadata.items())
+            )
+            if cache_matches:
+                if on_progress:
+                    on_progress("READY", 1.0)
+                return cached_res
+            print(
+                f"[YouTube Pipeline] Ignoring result cache with mismatched execution provenance: {pipeline_result_file}",
+                file=sys.stderr,
+            )
 
     # 1. Download & Extract Audio
     audio_res = download_youtube_audio(canonical_url, video_dir, force=force, on_progress=on_progress)
@@ -564,14 +610,19 @@ class YouTubeJobManager:
         self.output_base_dir = output_base_dir or (PROJECT_ROOT / "runtime" / "youtube")
         self.jobs: Dict[str, Dict[str, Any]] = {}
         self._lock = threading.Lock()
+        self._active_video_jobs: Dict[str, str] = {}
 
     def submit_job(self, url: str, force: bool = False, model_name: str = "base.en") -> str:
         is_valid, video_id, canonical_url = validate_youtube_url(url)
         if not is_valid or not video_id:
             raise ValueError(f"Invalid YouTube URL: {url}")
 
-        job_id = f"yt_{video_id}_{uuid.uuid4().hex[:12]}"
         with self._lock:
+            active_job_id = self._active_video_jobs.get(video_id)
+            if active_job_id and self.jobs[active_job_id]["stage"] not in ("READY", "ERROR"):
+                return active_job_id
+
+            job_id = f"yt_{video_id}_{uuid.uuid4().hex[:12]}"
             self.jobs[job_id] = {
                 "job_id": job_id,
                 "video_id": video_id,
@@ -583,6 +634,7 @@ class YouTubeJobManager:
                 "error": None,
                 "result": None,
             }
+            self._active_video_jobs[video_id] = job_id
 
         worker = threading.Thread(
             target=self._run_job,
@@ -627,11 +679,13 @@ class YouTubeJobManager:
                 self.jobs[job_id]["progress"] = 1.0
                 self.jobs[job_id]["finished_at"] = time.time()
                 self.jobs[job_id]["result"] = result
+                self._active_video_jobs.pop(self.jobs[job_id]["video_id"], None)
         except Exception as exc:
             with self._lock:
                 self.jobs[job_id]["stage"] = "ERROR"
                 self.jobs[job_id]["finished_at"] = time.time()
                 self.jobs[job_id]["error"] = str(exc)
+                self._active_video_jobs.pop(self.jobs[job_id]["video_id"], None)
 
     def get_status(self, job_id: str) -> Optional[Dict[str, Any]]:
         with self._lock:

@@ -1,0 +1,128 @@
+{
+  "phase": "H33.1",
+  "overall_status": "PASS_WITH_RELEASE_BLOCKERS",
+  "source_commit_audited": "cea02cdc0e44afaa8e8518233f8e2342aed3599f",
+  "committed_file_count_verified": 38,
+  "history_scan": {
+    "comparison_base": "origin/r1-articulation-coverage-and-report",
+    "comparison_base_commit": "2608ba357c70e030d4ad9063d988fb09a22d150d",
+    "unpublished_commit_count": 48,
+    "unique_git_objects": 1915,
+    "text_blobs_scanned": 1631,
+    "secret_pattern_matches": 0,
+    "credential_patterns": [
+      "private-key headers",
+      "common GitHub token formats",
+      "AWS access-key format",
+      "Google API-key format",
+      "Slack token format",
+      "long API-key/secret/access-token/password assignments"
+    ],
+    "model_or_texture_formats_found": [],
+    "audio_or_video_files_found": [],
+    "new_png_objects": [
+      {
+        "size_bytes": 104,
+        "dimensions": "32x32",
+        "classification": "placeholder"
+      },
+      {
+        "size_bytes": 104,
+        "dimensions": "32x32",
+        "classification": "placeholder"
+      },
+      {
+        "size_bytes": 105,
+        "dimensions": "32x32",
+        "classification": "placeholder"
+      }
+    ],
+    "scan_limitations": [
+      "Pattern-based secret scan is not exhaustive.",
+      "Corpus entry licensing was not independently verified."
+    ]
+  },
+  "production_cuda_smoke": {
+    "status": "PASS",
+    "execution_mode": "GPU_REQUIRED",
+    "model": "base.en",
+    "device": "cuda",
+    "device_index": 0,
+    "compute_type": "float16",
+    "input_audio_seconds": 1,
+    "input_audio_type": "all-zero float32 smoke chunk",
+    "finalized_event_count": 1,
+    "last_error": null,
+    "shutdown_state": "stopped",
+    "ctranslate2_version": "4.8.2",
+    "faster_whisper_version": "1.1.1",
+    "python_version": "3.12.10"
+  },
+  "test_results": [
+    {
+      "name": "H33.1 focused failure-injection and lifecycle suite",
+      "status": "PASS",
+      "assertions": 16,
+      "command": "python tools\\validate_phase_f2_asr.py"
+    },
+    {
+      "name": "Changed Python module compilation",
+      "status": "PASS",
+      "files": 5
+    },
+    {
+      "name": "H32 project validator",
+      "status": "PASS",
+      "assertions": 51
+    },
+    {
+      "name": "H31 project validator",
+      "status": "PASS",
+      "assertions": 48
+    },
+    {
+      "name": "H30 project validator",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "name": "H33 evidence validator",
+      "status": "BLOCKED",
+      "passed": 43,
+      "failed": 0,
+      "blocked": 8,
+      "manual": 2
+    }
+  ],
+  "release_acceptance": [
+    {
+      "item": "Full 8979-second canonical video ASR",
+      "status": "BLOCKED",
+      "reason": "Not run; the H32 300-second slice and extrapolation are not full-run evidence."
+    },
+    {
+      "item": "Full-corpus WER/CER and product TTFS",
+      "status": "NOT RUN"
+    },
+    {
+      "item": "Occurrence-level transcript-to-sign reconciliation",
+      "status": "NOT RUN"
+    },
+    {
+      "item": "Long-session failure-injection and memory soak",
+      "status": "NOT RUN"
+    },
+    {
+      "item": "Installed Chrome/YouTube acceptance",
+      "status": "MANUAL"
+    },
+    {
+      "item": "Native ISL linguistic review",
+      "status": "NOT RUN"
+    }
+  ],
+  "worktree_preservation": {
+    "preexisting_h32_files_preserved_unstaged": 10,
+    "h32_h30_validator_artifact_changes_restored": true
+  }
+}

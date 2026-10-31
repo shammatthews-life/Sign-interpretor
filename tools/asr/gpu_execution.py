@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import shutil
 import subprocess
+import threading
 from typing import Literal
 
 ExecutionMode = Literal["GPU_REQUIRED", "GPU_PREFERRED", "CPU_TEST_ONLY"]
@@ -12,11 +13,42 @@ class CudaExecutionError(RuntimeError):
     """Raised when a required NVIDIA CUDA execution environment is unavailable."""
 
 
+_model_cache: dict[tuple[str, str, int | None, str], tuple[object, threading.Lock]] = {}
+_model_cache_lock = threading.Lock()
+
+
+def get_shared_whisper_model(
+    model_name: str,
+    *,
+    device: str,
+    compute_type: str,
+    device_index: int | None = None,
+) -> tuple[object, threading.Lock]:
+    """Return one process-wide model per execution configuration and its inference lock."""
+    key = (model_name, device, device_index, compute_type)
+    with _model_cache_lock:
+        cached = _model_cache.get(key)
+        if cached is None:
+            from faster_whisper import WhisperModel
+
+            model_options: dict[str, object] = {
+                "device": device,
+                "compute_type": compute_type,
+            }
+            if device == "cuda":
+                model_options["device_index"] = device_index or 0
+            cached = (WhisperModel(model_name, **model_options), threading.Lock())
+            _model_cache[key] = cached
+        return cached
+
+
 def verify_nvidia_cuda(
     device_index: int = 0,
     compute_type: str = "float16",
     expected_gpu_name: str = "NVIDIA GeForce RTX 4050 Laptop GPU",
 ) -> dict:
+    if not isinstance(device_index, int) or isinstance(device_index, bool) or device_index < 0:
+        raise CudaExecutionError("CUDA device index must be a non-negative integer.")
     nvidia_smi = shutil.which("nvidia-smi")
     if not nvidia_smi:
         raise CudaExecutionError(
@@ -108,6 +140,12 @@ def resolve_execution_configuration(
 ) -> dict:
     if execution_mode not in ("GPU_REQUIRED", "GPU_PREFERRED", "CPU_TEST_ONLY"):
         raise ValueError(f"Unknown ASR execution mode: {execution_mode!r}.")
+    if not isinstance(device_index, int) or isinstance(device_index, bool) or device_index < 0:
+        raise ValueError("ASR device_index must be a non-negative integer.")
+    if device is not None and device not in ("cpu", "cuda"):
+        raise ValueError("ASR device must be 'cpu', 'cuda', or None.")
+    if compute_type is not None and (not isinstance(compute_type, str) or not compute_type.strip()):
+        raise ValueError("ASR compute_type must be a non-empty string or None.")
 
     if execution_mode == "CPU_TEST_ONLY":
         if device not in (None, "cpu"):

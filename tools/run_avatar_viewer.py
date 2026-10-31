@@ -31,32 +31,56 @@ YOUTUBE_JOBS = YouTubeJobManager()
 
 
 class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
-    """HTTP request handler with customized logging and CORS headers."""
+    """HTTP handler for the loopback-only viewer and its local APIs."""
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(PROJECT_ROOT), **kwargs)
 
     def end_headers(self) -> None:
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
         self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
         super().end_headers()
 
-    def _read_json_body(self):
+    def _read_body(self, maximum_bytes: int):
         try:
             content_length = int(self.headers.get("Content-Length", "0"))
         except ValueError as exc:
             raise ValueError("Invalid Content-Length.") from exc
-        if content_length <= 0 or content_length > 16_384:
-            raise ValueError("Request body must be between 1 and 16384 bytes.")
+        if content_length <= 0 or content_length > maximum_bytes:
+            raise ValueError(f"Request body must be between 1 and {maximum_bytes} bytes.")
+        return self.rfile.read(content_length)
+
+    def _read_json_body(self, maximum_bytes: int = 16_384):
+        body = self._read_body(maximum_bytes)
         try:
-            body = json.loads(self.rfile.read(content_length))
+            body = json.loads(body)
         except (UnicodeDecodeError, json.JSONDecodeError) as exc:
             raise ValueError("Request body must contain valid JSON.") from exc
         if not isinstance(body, dict):
             raise ValueError("Request body must be a JSON object.")
         return body
+
+    def _origin_is_allowed(self) -> bool:
+        origin = self.headers.get("Origin")
+        if origin is None:
+            return True
+        if re.fullmatch(r"chrome-extension://[a-p]{32}", origin):
+            return True
+        try:
+            parsed = urllib.parse.urlsplit(origin)
+            expected_port = str(self.server.server_port)
+            return (
+                parsed.scheme == "http"
+                and parsed.hostname in ("localhost", "127.0.0.1")
+                and parsed.port is not None
+                and str(parsed.port) == expected_port
+                and parsed.path == ""
+                and not parsed.query
+                and not parsed.fragment
+                and parsed.username is None
+                and parsed.password is None
+            )
+        except ValueError:
+            return False
 
     def _send_json(self, payload, status=200):
         encoded = json.dumps(payload, ensure_ascii=False).encode("utf-8")
@@ -67,8 +91,7 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(encoded)
 
     def do_OPTIONS(self) -> None:
-        self.send_response(204)
-        self.end_headers()
+        self.send_error(403, "Cross-origin requests are not enabled.")
 
     def do_GET(self) -> None:
         parsed = urllib.parse.urlsplit(self.path)
@@ -97,6 +120,9 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self) -> None:
+        if not self._origin_is_allowed():
+            self.send_error(403, "Request origin is not allowed.")
+            return
         if self.path == "/youtube/process":
             try:
                 body = self._read_json_body()
@@ -131,21 +157,24 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_error(400, str(exc))
             return
         if self.path == "/report_diagnostics":
-            content_length = int(self.headers.get("Content-Length", 0))
-            post_data = self.rfile.read(content_length)
+            try:
+                post_data = self._read_body(1_048_576)
+            except ValueError as exc:
+                self.send_error(400, str(exc))
+                return
             report_path = PROJECT_ROOT / "tools" / "avatar_viewer" / "diagnostics_result.txt"
             with open(report_path, "wb") as f:
                 f.write(post_data)
-            print(f"[HTTP] Received diagnostics report ({content_length} bytes)")
+            print(f"[HTTP] Received diagnostics report ({len(post_data)} bytes)")
             self.send_response(200)
             self.send_header("Content-Type", "text/plain")
             self.end_headers()
             self.wfile.write(b"OK")
         elif self.path == "/save_sign":
             try:
-                payload = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
+                payload = self._read_json_body(1_048_576)
                 sign_id = payload.get("sign_id", "")
-                if not isinstance(sign_id, str) or not sign_id.replace("_", "").isalnum() or sign_id.lower() != sign_id:
+                if not isinstance(sign_id, str) or not re.fullmatch(r"[a-z0-9_]+", sign_id):
                     raise ValueError("Invalid sign_id; use lowercase letters, digits, and underscores.")
                 if payload.get("schema_version") != "2.0.0":
                     raise ValueError("Only schema 2.0.0 sign definitions may be saved.")
@@ -197,7 +226,7 @@ def run_viewer(port: int = 8000, open_browser: bool = True) -> None:
         webbrowser.open(url)
 
     handler = QuietSimpleHTTPRequestHandler
-    with socketserver.ThreadingTCPServer(("", selected_port), handler) as httpd:
+    with socketserver.ThreadingTCPServer(("127.0.0.1", selected_port), handler) as httpd:
         httpd.daemon_threads = True
         print(f"Serving HTTP on port {selected_port}... Press Ctrl+C to stop.")
         try:
