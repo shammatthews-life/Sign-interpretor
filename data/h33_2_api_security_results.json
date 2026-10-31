@@ -1,0 +1,11 @@
+{
+  "phase": "H33.2",
+  "status": "PASS",
+  "command": "D:\\sign interpretor\\.venv\\Scripts\\python.exe tools/validate_phase_f2_asr.py",
+  "exit_code": 0,
+  "exact_extension_origin_tested": true,
+  "loopback_host_required": true,
+  "existing_playable_sign_assets_validated": 566,
+  "nonplayable_sign_assets_excluded": 4,
+  "sign_schema_and_explicit_overwrite_tested": true
+}

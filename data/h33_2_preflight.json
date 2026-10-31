@@ -1,0 +1,36 @@
+{
+  "status": "BLOCKED",
+  "created_at_unix": 1793441139.707403,
+  "audio_seconds": 8979.0,
+  "output_dir": "D:\\sign interpretor\\runtime\\youtube",
+  "measurements": {
+    "available_system_memory_gib": 2.102,
+    "free_disk_gib": 70.569,
+    "required_free_disk_gib": 10.0,
+    "cuda": {
+      "available": true,
+      "devices": [
+        {
+          "free_mib": 5920,
+          "total_mib": 6141
+        }
+      ]
+    },
+    "selected_cuda_device": {
+      "free_mib": 5920,
+      "total_mib": 6141
+    }
+  },
+  "thresholds": {
+    "minimum_available_memory_gib": 6.0,
+    "minimum_free_disk_gib": 10.0,
+    "minimum_free_vram_gib": 2.0
+  },
+  "checks": {
+    "system_memory": false,
+    "free_disk": true,
+    "cuda_device": true,
+    "cuda_free_memory": true
+  },
+  "full_video_run_permitted": false
+}

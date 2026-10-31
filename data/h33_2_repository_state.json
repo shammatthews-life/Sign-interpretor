@@ -1,0 +1,95 @@
+{
+  "phase": "H33.2",
+  "branch": "audit/h33-2-runtime-reliability",
+  "base_commit": "55c0d1a064c0afbd11731299477fa3afa335af91",
+  "baseline_ancestor_verified": true,
+  "h32_worktree_edits_preserved": [
+    "data/h32_execution_checkpoint.json",
+    "data/h32_initial_baseline.json",
+    "data/h32_resource_usage.json",
+    "docs/h32_final_performance_report.md",
+    "docs/h32_resource_optimization_report.md",
+    "docs/report.md",
+    "tools/benchmark_h32_chunking.py",
+    "tools/benchmark_h32_hybrid_asr.py",
+    "tools/validate_h32_complete_project.mjs",
+    "tools/verify_h32_translation_and_resources.mjs"
+  ],
+  "h32_worktree_status": {
+    "data/h32_execution_checkpoint.json": {
+      "worktree_modified": true
+    },
+    "data/h32_initial_baseline.json": {
+      "worktree_modified": true
+    },
+    "data/h32_resource_usage.json": {
+      "worktree_modified": true
+    },
+    "docs/h32_final_performance_report.md": {
+      "worktree_modified": true
+    },
+    "docs/h32_resource_optimization_report.md": {
+      "worktree_modified": true
+    },
+    "docs/report.md": {
+      "worktree_modified": true
+    },
+    "tools/benchmark_h32_chunking.py": {
+      "worktree_modified": true
+    },
+    "tools/benchmark_h32_hybrid_asr.py": {
+      "worktree_modified": true
+    },
+    "tools/validate_h32_complete_project.mjs": {
+      "worktree_modified": true
+    },
+    "tools/verify_h32_translation_and_resources.mjs": {
+      "worktree_modified": true
+    }
+  },
+  "h32_staged_files": [],
+  "shared_report_h33_2_appendix_only_staged": true,
+  "staged_paths_at_validation": [
+    "README.md",
+    "data/h33_2_api_security_results.json",
+    "data/h33_2_asr_flush_tests.json",
+    "data/h33_2_asr_quality_results.json",
+    "data/h33_2_audio_integrity_tests.json",
+    "data/h33_2_backpressure_results.json",
+    "data/h33_2_cache_validation.json",
+    "data/h33_2_execution_checkpoint.json",
+    "data/h33_2_extension_permission_results.json",
+    "data/h33_2_full_video_results.json",
+    "data/h33_2_job_memory_results.json",
+    "data/h33_2_preflight.json",
+    "data/h33_2_repository_state.json",
+    "data/h33_2_source_inventory.json",
+    "data/h33_2_ttfs_results.json",
+    "data/h33_2_validator_integrity.json",
+    "docs/h33_2_asr_flush_reliability.md",
+    "docs/h33_2_audio_timeline_integrity.md",
+    "docs/h33_2_backpressure_and_loss_prevention.md",
+    "docs/h33_2_cache_provenance_report.md",
+    "docs/h33_2_extension_permission_review.md",
+    "docs/h33_2_final_engineering_audit.md",
+    "docs/h33_2_full_video_readiness.md",
+    "docs/h33_2_local_api_security_report.md",
+    "docs/h33_2_memory_management_report.md",
+    "docs/h33_2_runtime_correctness_report.md",
+    "docs/h33_2_validator_integrity_report.md",
+    "docs/report.md",
+    "extension/manifest.json",
+    "tools/asr/asr_service.py",
+    "tools/asr/streaming_asr.py",
+    "tools/avatar_viewer/LiveSpeechSession.mjs",
+    "tools/avatar_viewer/LiveSpeechSession.test.mjs",
+    "tools/avatar_viewer/index.html",
+    "tools/resource_preflight.py",
+    "tools/run_avatar_viewer.py",
+    "tools/validate_h33_2_complete_project.mjs",
+    "tools/validate_phase_f2_asr.py",
+    "tools/youtube_pipeline/youtube_ingest.py"
+  ],
+  "remote_ref": "origin/audit/h33-2-runtime-reliability",
+  "remote_verification_policy": "Compared against actual local HEAD at validator runtime; final verification is post-push."
+}

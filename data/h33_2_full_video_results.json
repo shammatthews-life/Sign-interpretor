@@ -1,0 +1,30 @@
+{
+  "phase": "H33.2",
+  "status": "BLOCKED",
+  "full_video_asr_performed": false,
+  "audio_seconds": 8979,
+  "preflight": {
+    "available_system_memory_gib": 2.102,
+    "free_disk_gib": 70.569,
+    "required_free_disk_gib": 10,
+    "cuda": {
+      "available": true,
+      "devices": [
+        {
+          "free_mib": 5920,
+          "total_mib": 6141
+        }
+      ]
+    },
+    "selected_cuda_device": {
+      "free_mib": 5920,
+      "total_mib": 6141
+    }
+  },
+  "checks": {
+    "system_memory": false,
+    "free_disk": true,
+    "cuda_device": true,
+    "cuda_free_memory": true
+  }
+}

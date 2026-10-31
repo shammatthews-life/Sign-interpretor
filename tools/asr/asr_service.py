@@ -31,6 +31,7 @@ class LocalASRService:
         self.execution_mode: ExecutionMode = "GPU_REQUIRED"
         self.device_index: int | None = 0
         self.fallback_reason: str | None = None
+        self._last_chunk_id: int | None = None
 
     def start(
         self,
@@ -145,6 +146,13 @@ class LocalASRService:
                 raise ValueError("Audio timestamps must be finite numeric values.") from exc
             if not math.isfinite(start) or not math.isfinite(end) or start < 0 or end <= start:
                 raise ValueError("Audio timestamps must be finite, non-negative, and increasing.")
+            chunk_id = payload.get("chunk_id")
+            if chunk_id is not None:
+                if not isinstance(chunk_id, int) or isinstance(chunk_id, bool) or chunk_id < 0:
+                    raise ValueError("chunk_id must be a non-negative integer.")
+                expected_chunk_id = 0 if self._last_chunk_id is None else self._last_chunk_id + 1
+                if chunk_id != expected_chunk_id:
+                    raise ValueError("Audio chunk_id is duplicated, missing, or out of order.")
 
             samples = np.frombuffer(raw, dtype="<f4")
             if not np.isfinite(samples).all():
@@ -155,6 +163,8 @@ class LocalASRService:
             if self.stream_started_at_ms is None:
                 self.stream_started_at_ms = perf_counter() * 1000
             events = self.backend.accept_audio_chunk(samples, audio_start_ms=start, audio_end_ms=end)
+            if chunk_id is not None:
+                self._last_chunk_id = chunk_id
             sample_rate = getattr(self.backend, "sample_rate", 16000)
             self.audio_duration_ms += len(samples) * 1000 / sample_rate
             self._record(events)
@@ -171,7 +181,15 @@ class LocalASRService:
             elif action == "flush":
                 events = self.backend.flush()
                 self._record(events)
-                return {"events": [event.report() for event in events], "status": self.status()}
+                result = {
+                    "events": [event.report() for event in events],
+                    "status": self.status(),
+                    "flush_status": getattr(events, "status", "COMPLETED"),
+                }
+                error = getattr(events, "error", None)
+                if error:
+                    result["flush_error"] = error
+                return result
             elif action == "stop":
                 self.backend.stop()
                 self._reset_stream_state()
@@ -190,6 +208,7 @@ class LocalASRService:
         self.stream_started_at_ms = None
         self.last_partial = ""
         self.last_final = ""
+        self._last_chunk_id = None
 
     def _record(self, events) -> None:
         for event in events:

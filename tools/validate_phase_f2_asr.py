@@ -6,6 +6,7 @@ from pathlib import Path
 import base64
 import concurrent.futures
 import json
+import os
 import numpy as np
 import threading
 import tempfile
@@ -117,6 +118,144 @@ events = short_backend.flush()
 assert [event.kind for event in events] == ["FINAL_TRANSCRIPT"] and events[0].text == "hello", "A fresh utterance must be allowed to repeat the same final transcript."
 short_backend.stop()
 
+class FailSecondWindowModel:
+    def __init__(self):
+        self.calls = 0
+    def transcribe(self, _audio, **_kwargs):
+        self.calls += 1
+        if self.calls == 2:
+            raise RuntimeError("injected finalization failure")
+        return [Segment(f" window {self.calls}")], object()
+
+retry_model = FailSecondWindowModel()
+retry_backend = FasterWhisperBackend(
+    model_name="flush-retry",
+    model_factory=lambda *_args, **_kwargs: retry_model,
+    minimum_decode_ms=20_000,
+    rolling_window_ms=4000,
+)
+retry_backend.start()
+retry_backend.accept_audio_chunk(
+    np.zeros(160_000, dtype=np.float32),
+    audio_start_ms=1000,
+    audio_end_ms=11_000,
+)
+failed_flush = retry_backend.flush()
+assert failed_flush.status == "FAILED_RETRYABLE" and len(failed_flush) == 1, "Flush failure did not report completed-window progress."
+assert retry_backend._flush_cursor_samples == 64_000 and retry_backend._stream_sample_count == 160_000, "Failed flush discarded unfinalized audio or replayed a completed window."
+retried_flush = retry_backend.flush()
+assert retried_flush.status == "COMPLETED" and [event.text for event in retried_flush] == ["window 3", "window 4"], "Retry did not resume at the failed window."
+all_final_windows = failed_flush + retried_flush
+assert [(event.audio_start_ms, event.audio_end_ms) for event in all_final_windows] == [
+    (1000, 5000), (5000, 9000), (9000, 11000)
+], "Long utterance finalization lost, overlapped, or duplicated an audio interval."
+assert len(retry_backend.samples) == 0 and retry_backend._stream_sample_count == 0, "Successful retry did not release spooled utterance audio."
+retry_backend.stop()
+
+async_retry_model = FailSecondWindowModel()
+async_retry_backend = FasterWhisperBackend(
+    model_name="async-flush-retry",
+    model_factory=lambda *_args, **_kwargs: async_retry_model,
+    minimum_decode_ms=20_000,
+    rolling_window_ms=4000,
+    async_worker=True,
+)
+async_retry_backend.start()
+async_retry_backend.accept_audio_chunk(
+    np.zeros(160_000, dtype=np.float32),
+    audio_start_ms=0,
+    audio_end_ms=10_000,
+)
+async_failed_flush = async_retry_backend.flush()
+assert async_failed_flush.status == "FAILED_RETRYABLE" and len(async_failed_flush) == 1
+async_success_flush = async_retry_backend.flush()
+assert async_success_flush.status == "COMPLETED" and len(async_success_flush) == 2
+assert len(async_retry_backend.events) == 3, "Async flush retry emitted a duplicate final event."
+async_retry_backend.stop()
+
+class SlowFirstDecodeModel:
+    def __init__(self):
+        self.calls = 0
+        self.decode_started = threading.Event()
+        self.release_decode = threading.Event()
+    def transcribe(self, _audio, **_kwargs):
+        self.calls += 1
+        if self.calls == 1:
+            self.decode_started.set()
+            if not self.release_decode.wait(timeout=4):
+                raise TimeoutError("test did not release its slow fake inference")
+        return [Segment(f" slow window {self.calls}")], object()
+
+slow_model = SlowFirstDecodeModel()
+slow_backend = FasterWhisperBackend(
+    model_name="slow-backpressure",
+    model_factory=lambda *_args, **_kwargs: slow_model,
+    minimum_decode_ms=1000,
+    rolling_window_ms=4000,
+    async_worker=True,
+)
+slow_backend.start()
+for index in range(10):
+    slow_backend.accept_audio_chunk(
+        np.zeros(16_000, dtype=np.float32),
+        audio_start_ms=index * 1000,
+        audio_end_ms=(index + 1) * 1000,
+    )
+    if index == 0:
+        assert slow_model.decode_started.wait(timeout=3), "Slow inference did not start."
+assert len(slow_backend.samples) <= 64_000, "Slow inference allowed the in-memory rolling window to grow without bound."
+assert slow_backend._stream_sample_count == 160_000, "Slow inference dropped accepted samples from the disk-backed stream."
+with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+    flush_future = executor.submit(slow_backend.flush)
+    deadline = time.monotonic() + 2
+    while not slow_backend._flush_in_progress and time.monotonic() < deadline:
+        time.sleep(0.005)
+    slow_model.release_decode.set()
+    slow_flush = flush_future.result(timeout=6)
+assert slow_flush.status == "COMPLETED"
+slow_final_intervals = [
+    (event.audio_start_ms, event.audio_end_ms)
+    for event in slow_flush
+    if event.kind == "FINAL_TRANSCRIPT"
+]
+assert slow_final_intervals == [
+    (0, 4000), (4000, 8000), (8000, 10_000)
+], f"Backpressure during slow inference lost or duplicated final audio intervals: {slow_final_intervals}"
+slow_backend.stop()
+
+timeline_backend = FasterWhisperBackend(
+    model_name="timeline-check",
+    model_factory=lambda *_args, **_kwargs: ShortUtteranceModel(),
+    minimum_decode_ms=1000,
+)
+timeline_backend.start()
+try:
+    timeline_backend.accept_audio_chunk(np.zeros(1600, dtype=np.float32), audio_start_ms=0, audio_end_ms=200)
+except ValueError:
+    pass
+else:
+    raise AssertionError("Mismatched audio duration/sample count was accepted.")
+timeline_backend.accept_audio_chunk(np.zeros(1600, dtype=np.float32), audio_start_ms=0, audio_end_ms=100)
+timeline_backend.accept_audio_chunk(np.zeros(1600, dtype=np.float32), audio_start_ms=300, audio_end_ms=400)
+assert timeline_backend._stream_sample_count == 6400, "A short silence gap was not represented in the audio timeline."
+timeline_backend._audio_spool.flush()
+timeline_backend._audio_spool.seek(1600 * 4)
+assert not np.frombuffer(timeline_backend._audio_spool.read(3200 * 4), dtype="<f4").any(), "Inserted silence was not zero-filled."
+try:
+    timeline_backend.accept_audio_chunk(np.zeros(1600, dtype=np.float32), audio_start_ms=350, audio_end_ms=450)
+except ValueError:
+    pass
+else:
+    raise AssertionError("Overlapping audio timestamps were accepted.")
+try:
+    timeline_backend.accept_audio_chunk(np.zeros(1600, dtype=np.float32), audio_start_ms=6400, audio_end_ms=6500)
+except ValueError:
+    pass
+else:
+    raise AssertionError("An excessive audio timeline gap was accepted.")
+assert timeline_backend._stream_sample_count == 6400, "Rejected audio changed the accepted stream."
+timeline_backend.stop()
+
 class StuckWorker:
     def is_alive(self): return True
     def join(self, timeout=None): self.join_timeout = timeout
@@ -145,6 +284,9 @@ class FlushTimeoutEvent:
 flush_backend = FasterWhisperBackend(model_name="fake", model_factory=model_factory, async_worker=True)
 flush_backend.state = "running"
 flush_backend.samples = np.ones(1, dtype=np.float32)
+flush_backend.stream_start_ms = 0
+flush_backend._stream_sample_count = 1
+flush_backend._audio_spool.write(np.ones(1, dtype="<f4").tobytes())
 flush_backend._flush_completed = FlushTimeoutEvent()
 try:
     flush_backend.flush()
@@ -178,6 +320,22 @@ assert service.start(model="fake", execution_mode="CPU_TEST_ONLY")["state"] == "
 raw = np.zeros(1600, dtype="<f4").tobytes()
 response = service.accept({"samples_base64": base64.b64encode(raw).decode(), "audio_start_ms": 0, "audio_end_ms": 100})
 assert response["status"]["audio_duration_ms"] == 100, "F1-to-ASR service bridge did not account for canonical chunk."
+chunk_payload = {
+    "samples_base64": base64.b64encode(raw).decode(),
+    "audio_start_ms": 100,
+    "audio_end_ms": 200,
+    "chunk_id": 0,
+}
+service.accept(chunk_payload)
+duration_before_chunk_error = service.audio_duration_ms
+try:
+    service.accept({**chunk_payload, "audio_start_ms": 200, "audio_end_ms": 300, "chunk_id": 2})
+except ValueError:
+    pass
+else:
+    raise AssertionError("Out-of-order chunk_id was accepted.")
+assert service.audio_duration_ms == duration_before_chunk_error, "Rejected chunk_id changed audio accounting."
+service.accept({**chunk_payload, "audio_start_ms": 200, "audio_end_ms": 300, "chunk_id": 1})
 
 def assert_rejected_audio(payload):
     duration_before = service.audio_duration_ms
@@ -327,7 +485,14 @@ cached_pipeline_result = {
 transcribe_calls = []
 def fake_download(_url, output_dir, **_kwargs):
     audio = Path(output_dir) / "fake.wav"
-    return {"metadata": {}, "audio_path": str(audio)}
+    audio.write_bytes(b"test-audio-content")
+    return {
+        "metadata": {
+            "video_id": "abcdefghijk",
+            "audio_sha256": youtube_ingest._sha256_file(audio),
+        },
+        "audio_path": str(audio),
+    }
 
 def fake_transcribe(_audio, _output, **kwargs):
     transcribe_calls.append(kwargs)
@@ -337,6 +502,8 @@ def fake_transcribe(_audio, _output, **kwargs):
         "device_index": 0,
         "compute_type": "float16",
         "execution_mode": "GPU_REQUIRED",
+        "segments": [],
+        "full_text": "fresh cuda result",
         "transcription_time_s": 0.1,
         "rtf": 0.1,
     }
@@ -346,6 +513,8 @@ with tempfile.TemporaryDirectory() as temp_dir:
     transcript_dir.mkdir()
     transcript_json = transcript_dir / "transcript.json"
     transcript_txt = transcript_dir / "transcript.txt"
+    audio_file = Path(temp_dir) / "unused.wav"
+    audio_file.write_bytes(b"stable audio bytes")
     transcript_json.write_text(json.dumps({
         "model": "base.en",
         "device": "cpu",
@@ -371,13 +540,13 @@ with tempfile.TemporaryDirectory() as temp_dir:
     with patch.object(youtube_ingest, "resolve_execution_configuration", return_value=cache_config), \
          patch.dict(sys.modules, {"faster_whisper": SimpleNamespace(WhisperModel=CachedTranscriptModel)}):
         transcribed = youtube_ingest.transcribe_audio_file(
-            Path(temp_dir) / "unused.wav",
+            audio_file,
             transcript_dir,
             execution_mode="GPU_REQUIRED",
         )
         cache_hit_stages = []
         cached_again = youtube_ingest.transcribe_audio_file(
-            Path(temp_dir) / "unused.wav",
+            audio_file,
             transcript_dir,
             execution_mode="GPU_REQUIRED",
             on_progress=lambda stage, _progress: cache_hit_stages.append(stage),
@@ -385,6 +554,37 @@ with tempfile.TemporaryDirectory() as temp_dir:
     assert transcribed["device"] == "cuda" and transcribed["full_text"] == "fresh cuda result"
     assert cached_again == transcribed and cache_hit_stages == ["TRANSCRIBE_CACHE_HIT"]
     assert len(cache_model_instances) == 1 and cache_model_instances[0].transcribe_calls == 1
+    audio_file.write_bytes(b"changed audio bytes")
+    changed_audio = youtube_ingest.transcribe_audio_file(
+        audio_file,
+        transcript_dir,
+        execution_mode="GPU_REQUIRED",
+    )
+    assert changed_audio["full_text"] == transcribed["full_text"] and changed_audio["audio_sha256"] != transcribed["audio_sha256"]
+    assert cache_model_instances[0].transcribe_calls == 2, "Changed audio incorrectly reused a stale transcript cache."
+
+translation_calls = []
+def fake_translation_bridge(*_args, **_kwargs):
+    translation_calls.append(True)
+    return SimpleNamespace(stdout="[]", stderr="")
+
+translation_input = {"segments": [{"start": 0.0, "end": 1.0, "text": "hello"}]}
+with tempfile.TemporaryDirectory() as temp_dir:
+    translation_dir = Path(temp_dir)
+    with patch.object(youtube_ingest, "_translation_implementation_hash", return_value="sign-catalog-v1"), \
+         patch.object(youtube_ingest.subprocess, "run", side_effect=fake_translation_bridge):
+        youtube_ingest.segment_and_translate(translation_input, translation_dir)
+        youtube_ingest.segment_and_translate(translation_input, translation_dir)
+    assert len(translation_calls) == 1, "Identical translation input did not hit its content-addressed cache."
+    with patch.object(youtube_ingest, "_translation_implementation_hash", return_value="sign-catalog-v2"), \
+         patch.object(youtube_ingest.subprocess, "run", side_effect=fake_translation_bridge):
+        youtube_ingest.segment_and_translate(translation_input, translation_dir)
+    assert len(translation_calls) == 2, "Changed sign catalog identity reused a stale translation cache."
+    changed_translation_input = {"segments": [{"start": 0.0, "end": 1.0, "text": "good morning"}]}
+    with patch.object(youtube_ingest, "_translation_implementation_hash", return_value="sign-catalog-v2"), \
+         patch.object(youtube_ingest.subprocess, "run", side_effect=fake_translation_bridge):
+        youtube_ingest.segment_and_translate(changed_translation_input, translation_dir)
+    assert len(translation_calls) == 3, "Changed transcript input reused a stale translation cache."
 
 with tempfile.TemporaryDirectory() as temp_dir:
     video_dir = Path(temp_dir) / "abcdefghijk"
@@ -414,20 +614,69 @@ with tempfile.TemporaryDirectory() as temp_dir:
     with patch.object(youtube_ingest.threading, "Thread", DeferredThread):
         first_job = manager.submit_job("https://www.youtube.com/watch?v=abcdefghijk")
         repeated_job = manager.submit_job("https://youtu.be/abcdefghijk", force=True)
+        second_job = manager.submit_job("https://www.youtube.com/watch?v=123456789ab")
     assert first_job == repeated_job, "Duplicate active YouTube requests created conflicting jobs."
-    assert DeferredThread.starts == 1, "Duplicate active YouTube requests created multiple workers."
+    assert DeferredThread.starts == 2, "Duplicate active YouTube requests created multiple workers."
+    try:
+        manager.submit_job("https://www.youtube.com/watch?v=ZYXWVUTSRQP")
+    except RuntimeError:
+        pass
+    else:
+        raise AssertionError("YouTube job manager exceeded its active-worker limit.")
+    manager.JOB_HISTORY_LIMIT = 2
+    with manager._lock:
+        manager.jobs["old-completed"] = {"stage": "READY", "finished_at": 1, "started_at": 0}
+        manager.jobs["newer-completed"] = {"stage": "ERROR", "finished_at": 2, "started_at": 1}
+        manager.jobs["newest-completed"] = {"stage": "READY", "finished_at": 3, "started_at": 2}
+        manager._prune_jobs_locked()
+    assert "old-completed" not in manager.jobs and "newest-completed" in manager.jobs
+    assert first_job in manager.jobs and second_job in manager.jobs, "Job pruning removed active job state."
 
-from run_avatar_viewer import QuietSimpleHTTPRequestHandler
+class ImmediateThread:
+    def __init__(self, *, target, args, **_kwargs):
+        self.target, self.args = target, args
+    def start(self):
+        self.target(*self.args)
+
+with tempfile.TemporaryDirectory() as temp_dir:
+    manager = youtube_ingest.YouTubeJobManager(output_base_dir=Path(temp_dir))
+    result_payload = {"status": "READY", "metadata": {"title": "durable job result"}}
+    with patch.object(youtube_ingest.threading, "Thread", ImmediateThread), \
+         patch.object(youtube_ingest, "process_youtube_video", return_value=result_payload):
+        job_id = manager.submit_job("https://www.youtube.com/watch?v=abcdefghijk")
+    assert manager.jobs[job_id]["result"] is None, "Completed job retained the full result in memory."
+    assert manager.get_status(job_id)["title"] == "durable job result"
+    assert manager.get_result(job_id) == result_payload, "Completed job result was not recoverable from disk."
+    manager.JOB_HISTORY_LIMIT = 0
+    with manager._lock:
+        manager._prune_jobs_locked()
+    assert manager.get_status(job_id) is None
+    assert manager.get_result(job_id) == result_payload, "Pruned job result was not retrievable from its durable artifact."
+
+from run_avatar_viewer import (
+    PROJECT_ROOT as VIEWER_PROJECT_ROOT,
+    QuietSimpleHTTPRequestHandler,
+    save_sign_definition,
+    validate_sign_definition,
+)
 class OriginProbe:
+    _request_host_is_local = QuietSimpleHTTPRequestHandler._request_host_is_local
+
     def __init__(self, origin):
         self.headers = {"Origin": origin} if origin is not None else {}
+        self.headers["Host"] = "localhost:8000"
         self.server = SimpleNamespace(server_port=8000)
 
 assert QuietSimpleHTTPRequestHandler._origin_is_allowed(OriginProbe("http://localhost:8000"))
-assert QuietSimpleHTTPRequestHandler._origin_is_allowed(OriginProbe("chrome-extension://" + "a" * 32))
+with patch.dict(os.environ, {"SIGN_ALLOWED_EXTENSION_ID": "a" * 32}):
+    assert QuietSimpleHTTPRequestHandler._origin_is_allowed(OriginProbe("chrome-extension://" + "a" * 32))
+    assert not QuietSimpleHTTPRequestHandler._origin_is_allowed(OriginProbe("chrome-extension://" + "b" * 32))
 assert not QuietSimpleHTTPRequestHandler._origin_is_allowed(OriginProbe("http://attacker.example"))
 assert not QuietSimpleHTTPRequestHandler._origin_is_allowed(OriginProbe("http://localhost:8001"))
 assert QuietSimpleHTTPRequestHandler._origin_is_allowed(OriginProbe(None))
+host_spoof = OriginProbe(None)
+host_spoof.headers["Host"] = "attacker.example:8000"
+assert not QuietSimpleHTTPRequestHandler._origin_is_allowed(host_spoof), "A hostile Host header bypassed loopback request validation."
 
 from io import BytesIO
 response_headers = object.__new__(QuietSimpleHTTPRequestHandler)
@@ -448,6 +697,42 @@ large_sign_body = json.dumps({"sign_id": "large_sign", "payload": "x" * 20_000})
 parsed_large_sign = QuietSimpleHTTPRequestHandler._read_json_body(BodyProbe(large_sign_body), 1_048_576)
 assert parsed_large_sign["sign_id"] == "large_sign", "The sign authoring API rejected valid large sign definitions."
 
+valid_sign = json.loads((VIEWER_PROJECT_ROOT / "signs" / "add.json").read_text(encoding="utf-8"))
+validate_sign_definition(valid_sign)
+playable_sign_count = 0
+for existing_sign_path in sorted((VIEWER_PROJECT_ROOT / "signs").glob("*.json")):
+    if existing_sign_path.name == "manifest.json":
+        continue
+    existing_definition = json.loads(existing_sign_path.read_text(encoding="utf-8"))
+    if existing_definition.get("motion", {}).get("status") != "playable":
+        continue
+    validate_sign_definition(existing_definition)
+    playable_sign_count += 1
+assert playable_sign_count > 0, "No existing playable sign definitions were validated."
+with tempfile.TemporaryDirectory() as temp_dir:
+    sign_definition = json.loads(json.dumps(valid_sign))
+    sign_definition["sign_id"] = "h33_test_sign"
+    saved_sign = save_sign_definition(Path(temp_dir), sign_definition)
+    original_saved_text = saved_sign.read_text(encoding="utf-8")
+    try:
+        save_sign_definition(Path(temp_dir), sign_definition)
+    except FileExistsError:
+        pass
+    else:
+        raise AssertionError("Saving an existing sign silently overwrote it.")
+    assert saved_sign.read_text(encoding="utf-8") == original_saved_text, "Rejected overwrite changed the existing sign."
+    sign_definition["metadata"]["display_name"] = "Updated test sign"
+    save_sign_definition(Path(temp_dir), sign_definition, allow_overwrite=True)
+    assert json.loads(saved_sign.read_text(encoding="utf-8"))["metadata"]["display_name"] == "Updated test sign"
+invalid_sign = json.loads(json.dumps(valid_sign))
+invalid_sign["motion"]["keyframes"][0]["rotations"]["Bip001_R_Hand"]["x"] = float("nan")
+try:
+    validate_sign_definition(invalid_sign)
+except ValueError:
+    pass
+else:
+    raise AssertionError("Sign schema accepted a non-finite pose value.")
+
 print("PASS: GPU_REQUIRED backend rejects direct CPU selection and invalid CUDA indexes.")
 print("PASS: concurrent service starts are idempotent and reject incompatible reconfiguration.")
 print("PASS: malformed, non-finite, oversized-amplitude, and invalid-timestamp audio is rejected without accounting changes.")
@@ -464,3 +749,17 @@ print("PASS: short buffered utterances finalize on flush and repeated finals are
 print("PASS: duplicate suppression and event timing/RTF reporting work")
 print("PASS: local F1-to-ASR service bridge accepts canonical float32 chunks and starts a fresh session after reset")
 print("PASS: ASR service flush returns finalized events exactly once with updated status")
+print("PASS: ASR finalization retries resume from the first failed chunk without losing or duplicating intervals")
+print("PASS: ASR timeline validation rejects sample-duration mismatches and discontinuous chunks")
+print("PASS: exact extension origin and local Host checks reject untrusted browser callers")
+print("PASS: sign authoring validates motion schema and saves atomically without implicit overwrite")
+import resource_preflight
+with patch.object(resource_preflight, "_available_memory_bytes", return_value=8 * 1024 ** 3), \
+     patch.object(resource_preflight, "_cuda_memory", return_value={"available": True, "devices": [{"free_mib": 4096, "total_mib": 6144}]}), \
+     patch.object(resource_preflight.shutil, "disk_usage", return_value=SimpleNamespace(free=20 * 1024 ** 3)):
+    assert resource_preflight.run_preflight(audio_seconds=3600, output_dir=Path("."))["status"] == "SAFE"
+with patch.object(resource_preflight, "_available_memory_bytes", return_value=1 * 1024 ** 3), \
+     patch.object(resource_preflight, "_cuda_memory", return_value={"available": True, "devices": [{"free_mib": 4096, "total_mib": 6144}]}), \
+     patch.object(resource_preflight.shutil, "disk_usage", return_value=SimpleNamespace(free=20 * 1024 ** 3)):
+    assert resource_preflight.run_preflight(audio_seconds=3600, output_dir=Path("."))["status"] == "BLOCKED"
+print("PASS: read-only resource preflight enforces memory, disk, and CUDA thresholds.")

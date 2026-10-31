@@ -1352,3 +1352,20 @@ Evaluated against independent human ground truth:
 - `node tools/validate_h32_complete_project.mjs`: **100% SUCCESS (51 PASSED, 0 FAILED)**
 - `node tools/validate_h31_complete_project.mjs`: **PASS (Full H31 Regression Green)**
 - All 10 documentation reports (`docs/h32_*.md`) and 13 machine-readable data evidence files (`data/h32_*.json`) verified and intact.
+
+---
+
+## AK. H33.2 Runtime Reliability and Data Integrity
+
+**Status:** Focused engineering checks pass; canonical full-video processing remains **BLOCKED** by the measured RAM preflight.
+
+- ASR finalization now retains full utterance audio in a disk-backed spool, retries only failed final windows, and reports `FAILED_RETRYABLE` instead of clearing audio after an inference failure.
+- Sample-count timing, sequential chunk identity, overlap/order validation, and short-gap silence insertion protect the audio timeline. Slow fake inference over a 10-second input verified bounded rolling RAM and complete, non-duplicated final intervals.
+- Audio, transcript, translation, and pipeline caches are content/provenance-addressed and atomically written. YouTube job memory is bounded while per-job results remain durable.
+- Local viewer Host/origin rules, sign schema validation/atomic overwrite, and the MV3 extension's YouTube/loopback permissions were narrowed and tested.
+- Resource preflight measured **2.102 GiB available system RAM**, below the **6 GiB** minimum; free disk and CUDA memory passed. No full-video inference was started. Full-corpus WER/CER, product TTFS, and interactive Chrome acceptance remain not run/manual.
+
+See [`docs/h33_2_final_engineering_audit.md`](h33_2_final_engineering_audit.md),
+[`docs/h33_2_full_video_readiness.md`](h33_2_full_video_readiness.md),
+and [`data/h33_2_execution_checkpoint.json`](../data/h33_2_execution_checkpoint.json)
+for the detailed scope and evidence.

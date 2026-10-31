@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import os
 import sys
+import tempfile
 import threading
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
@@ -54,6 +55,15 @@ class TranscriptEvent:
         data = asdict(self)
         data.update(audio_duration_ms=self.audio_duration_ms, compute_ms=self.compute_ms, rtf=self.rtf)
         return data
+
+
+class FlushResult(list[TranscriptEvent]):
+    """List-compatible flush result with an explicit completion outcome."""
+
+    def __init__(self, events=(), *, status: str = "COMPLETED", error: Optional[str] = None) -> None:
+        super().__init__(events)
+        self.status = status
+        self.error = error
 
 
 class StreamingASRBackend(ABC):
@@ -114,6 +124,8 @@ class FasterWhisperBackend(StreamingASRBackend):
     the worker decodes the newest rolling window when ready, collapsing any stale intermediate
     triggers into the current window to prevent backlog accumulation.
     """
+    MAX_STREAM_DURATION_MS = 15 * 60 * 1000
+    MAX_IMPLICIT_SILENCE_GAP_MS = 5000
 
     def __init__(
         self,
@@ -150,6 +162,10 @@ class FasterWhisperBackend(StreamingASRBackend):
         self.samples = np.empty(0, dtype=np.float32)
         self.buffer_start_ms: Optional[float] = None
         self.buffer_end_ms: Optional[float] = None
+        self.stream_start_ms: Optional[float] = None
+        self._stream_sample_count = 0
+        self._flush_cursor_samples = 0
+        self._audio_spool = tempfile.TemporaryFile(mode="w+b")
         self.last_decode_end_ms: Optional[float] = None
         self.last_decode_ms: Optional[float] = None
         self.last_rtf: Optional[float] = None
@@ -170,6 +186,9 @@ class FasterWhisperBackend(StreamingASRBackend):
         self._lifecycle_lock = threading.RLock()
         self._inference_lock = threading.Lock()
         self._flush_in_progress = False
+        self._flush_result_events: list[TranscriptEvent] = []
+        self._flush_error: Optional[str] = None
+        self._last_inference_succeeded = False
         self.last_error: Optional[str] = None
 
     @property
@@ -281,15 +300,14 @@ class FasterWhisperBackend(StreamingASRBackend):
         with self._lifecycle_lock:
             self.stop()
             with self._lock:
-                self.samples = np.empty(0, dtype=np.float32)
-                self.buffer_start_ms = self.buffer_end_ms = self.last_decode_end_ms = None
+                self._reset_utterance_locked()
+                self.last_decode_end_ms = None
                 self.last_decode_ms = self.last_rtf = None
                 self.events = []
                 self._completed_events.clear()
                 self._stale_windows_dropped = 0
                 self._worker_state = "IDLE"
                 self.last_error = None
-                self._reset_utterance_locked()
 
     def accept_audio_chunk(self, samples: np.ndarray, *, audio_start_ms: float, audio_end_ms: float) -> list[TranscriptEvent]:
         if self.state != "running":
@@ -301,12 +319,37 @@ class FasterWhisperBackend(StreamingASRBackend):
             raise ValueError("Audio samples must all be finite.")
         if not np.isfinite(audio_start_ms) or not np.isfinite(audio_end_ms) or audio_start_ms < 0 or audio_end_ms <= audio_start_ms:
             raise ValueError("Audio timestamps must be finite, non-negative, and increasing.")
+        expected_duration_ms = len(data) * 1000 / self.sample_rate
+        if abs((audio_end_ms - audio_start_ms) - expected_duration_ms) > max(2.0, 1000 / self.sample_rate):
+            raise ValueError("Audio timestamps do not match the sample count and configured sample rate.")
 
         with self._lock:
             if self._flush_in_progress:
                 raise RuntimeError("Cannot accept audio while a flush is in progress.")
+            if self.buffer_end_ms is not None:
+                gap_ms = audio_start_ms - self.buffer_end_ms
+                tolerance_ms = max(2.0, 1000 / self.sample_rate)
+                if gap_ms < -tolerance_ms:
+                    raise ValueError("Audio chunk overlaps previously accepted audio or is out of order.")
+                if gap_ms > tolerance_ms:
+                    if gap_ms > self.MAX_IMPLICIT_SILENCE_GAP_MS:
+                        raise ValueError("Audio timeline gap exceeds 5 seconds; flush the current utterance before resuming.")
+                    gap_samples = round(gap_ms * self.sample_rate / 1000)
+                    if (self._stream_sample_count + gap_samples + len(data)) * 1000 / self.sample_rate > self.MAX_STREAM_DURATION_MS:
+                        raise BufferError("ASR utterance reached its 15-minute limit; flush before sending more audio.")
+                    silence = np.zeros(gap_samples, dtype="<f4")
+                    self._audio_spool.seek(0, os.SEEK_END)
+                    self._audio_spool.write(silence.tobytes())
+                    self._stream_sample_count += gap_samples
+                    self.samples = np.concatenate((self.samples, silence))
+            if (self._stream_sample_count + len(data)) * 1000 / self.sample_rate > self.MAX_STREAM_DURATION_MS:
+                raise BufferError("ASR utterance reached its 15-minute limit; flush before sending more audio.")
             if self.buffer_start_ms is None:
                 self.buffer_start_ms = audio_start_ms
+                self.stream_start_ms = audio_start_ms
+            self._audio_spool.seek(0, os.SEEK_END)
+            self._audio_spool.write(np.asarray(data, dtype="<f4").tobytes())
+            self._stream_sample_count += len(data)
             self.buffer_end_ms = audio_end_ms
             self.samples = np.concatenate((self.samples, data))
             self._trim_window()
@@ -333,51 +376,110 @@ class FasterWhisperBackend(StreamingASRBackend):
                     return self._decode(final=False)
                 return []
 
-    def flush(self) -> list[TranscriptEvent]:
+    def flush(self) -> FlushResult:
         if self.state != "running":
-            return []
+            return FlushResult()
 
         if self.async_worker:
             with self._lock:
-                if len(self.samples) == 0:
-                    return []
+                if self._stream_sample_count == 0:
+                    return FlushResult()
                 if self._flush_in_progress:
-                    raise RuntimeError("An ASR flush is already in progress.")
-                self._flush_in_progress = True
-                self._flush_completed.clear()
-                self._flush_requested.set()
-                self._worker_trigger.set()
+                    if not self._flush_completed.is_set():
+                        raise RuntimeError("An ASR flush is already in progress.")
+                else:
+                    self._flush_in_progress = True
+                    self._flush_error = None
+                    self._flush_result_events.clear()
+                    self._flush_completed.clear()
+                    self._flush_requested.set()
+                    self._worker_trigger.set()
 
             # Wait for background worker to finalize the flush
             if not self._flush_completed.wait(timeout=5.0):
+                self.last_error = "ASR worker did not complete flush within 5 seconds."
                 raise TimeoutError("ASR worker did not complete flush within 5 seconds.")
 
             with self._lock:
-                returned = list(self._completed_events)
+                returned = list(self._completed_events) + list(self._flush_result_events)
                 self._completed_events.clear()
-                self._reset_utterance_locked()
+                status = "FAILED_RETRYABLE" if self._flush_error else "COMPLETED"
+                error = self._flush_error
+                self._flush_result_events.clear()
                 self._flush_in_progress = False
-                return returned
+                self._flush_completed.clear()
+                if status == "COMPLETED":
+                    self._reset_utterance_locked()
+                return FlushResult(returned, status=status, error=error)
         else:
             with self._lock:
-                if not len(self.samples):
-                    return []
+                if not self._stream_sample_count:
+                    return FlushResult()
                 if self._flush_in_progress:
                     raise RuntimeError("An ASR flush is already in progress.")
                 self._flush_in_progress = True
-            try:
-                return self._decode(final=True)
-            finally:
+                self._flush_cursor_samples = min(self._flush_cursor_samples, self._stream_sample_count)
+
+            events: list[TranscriptEvent] = []
+            error = None
+            while True:
+                try:
+                    with self._lock:
+                        window_samples, start_ms, end_ms = self._next_flush_window_locked()
+                except OSError as exc:
+                    error = str(exc)
+                    break
+                if window_samples is None:
+                    break
+                event = self._run_transcribe(window_samples, start_ms=start_ms, end_ms=end_ms, final=True)
+                if not self._last_inference_succeeded:
+                    error = self.last_error or "ASR final transcription failed."
+                    break
                 with self._lock:
+                    self._flush_cursor_samples += len(window_samples)
+                if event:
+                    events.append(event)
+                    self.events.append(event)
+                    self.last_decode_ms = event.compute_ms
+                    self.last_rtf = event.rtf
+                    if self.on_event:
+                        try:
+                            self.on_event(event)
+                        except Exception as exc:
+                            self.last_error = f"ASR event callback failed: {type(exc).__name__}: {exc}"
+                            print(f"[ASR Worker Error] {self.last_error}", file=sys.stderr)
+
+            with self._lock:
+                self._flush_in_progress = False
+                if error is None:
                     self._reset_utterance_locked()
-                    self._flush_in_progress = False
+                return FlushResult(events, status="FAILED_RETRYABLE" if error else "COMPLETED", error=error)
 
     def _reset_utterance_locked(self) -> None:
         """Keep the running model, but start fresh audio and transcript state."""
         self.samples = np.empty(0, dtype=np.float32)
         self.buffer_start_ms = self.buffer_end_ms = self.last_decode_end_ms = None
+        self.stream_start_ms = None
+        self._stream_sample_count = 0
+        self._flush_cursor_samples = 0
+        self._audio_spool.close()
+        self._audio_spool = tempfile.TemporaryFile(mode="w+b")
         self._pending_decode_count = 0
         self.stabilizer.reset()
+
+    def _next_flush_window_locked(self):
+        if self._flush_cursor_samples >= self._stream_sample_count or self.stream_start_ms is None:
+            return None, None, None
+        maximum_samples = max(1, round(self.sample_rate * self.rolling_window_ms / 1000))
+        count = min(maximum_samples, self._stream_sample_count - self._flush_cursor_samples)
+        self._audio_spool.flush()
+        self._audio_spool.seek(self._flush_cursor_samples * 4)
+        raw = self._audio_spool.read(count * 4)
+        if len(raw) != count * 4:
+            raise OSError("ASR audio spool is incomplete; finalization can be retried.")
+        start_ms = self.stream_start_ms + self._flush_cursor_samples * 1000 / self.sample_rate
+        end_ms = start_ms + count * 1000 / self.sample_rate
+        return np.frombuffer(raw, dtype="<f4").copy(), start_ms, end_ms
 
     def _trim_window(self) -> None:
         maximum_samples = round(self.sample_rate * self.rolling_window_ms / 1000)
@@ -403,23 +505,33 @@ class FasterWhisperBackend(StreamingASRBackend):
                     self._worker_trigger.clear()
                     continue
 
-                if len(self.samples) == 0:
-                    self._worker_trigger.clear()
-                    if is_flush:
+                if is_flush:
+                    try:
+                        window_samples, window_start_ms, window_end_ms = self._next_flush_window_locked()
+                    except OSError as exc:
+                        self._flush_error = str(exc)
                         self._flush_requested.clear()
                         self._flush_completed.set()
-                    continue
-
-                # STALE-WINDOW POLICY:
-                # Snapshot ONLY the single newest valid rolling window!
-                # If multiple hops were triggered while decoding, collapse them
-                # into this newest window, preventing stale queues.
-                window_samples = self.samples.copy()
-                window_start_ms = self.buffer_start_ms
-                window_end_ms = self.buffer_end_ms
-                dropped = self._pending_decode_count
-                self._stale_windows_dropped += dropped
-                self._pending_decode_count = 0
+                        self._worker_trigger.clear()
+                        continue
+                    if window_samples is None:
+                        self._flush_requested.clear()
+                        self._flush_completed.set()
+                        self._worker_trigger.clear()
+                        continue
+                    dropped = 0
+                else:
+                    if len(self.samples) == 0:
+                        self._worker_trigger.clear()
+                        continue
+                    # Partial decodes use the newest rolling window. Finalization
+                    # reads every sample from the disk-backed utterance spool.
+                    window_samples = self.samples.copy()
+                    window_start_ms = self.buffer_start_ms
+                    window_end_ms = self.buffer_end_ms
+                    dropped = self._pending_decode_count
+                    self._stale_windows_dropped += dropped
+                    self._pending_decode_count = 0
                 self._worker_trigger.clear()
                 self._worker_state = "DECODING"
                 is_final = is_flush
@@ -436,17 +548,30 @@ class FasterWhisperBackend(StreamingASRBackend):
             callback = None
             with self._lock:
                 self._worker_state = "IDLE"
-                self.last_decode_end_ms = window_end_ms
+                if self._last_inference_succeeded or not is_flush:
+                    self.last_decode_end_ms = window_end_ms
                 if event:
-                    self._completed_events.append(event)
+                    if is_flush:
+                        self._flush_result_events.append(event)
+                    else:
+                        self._completed_events.append(event)
                     self.events.append(event)
                     self.last_decode_ms = event.compute_ms
                     self.last_rtf = event.rtf
                     callback = self.on_event
 
                 if is_flush:
-                    self._flush_requested.clear()
-                    self._flush_completed.set()
+                    if not self._last_inference_succeeded:
+                        self._flush_error = self.last_error or "ASR final transcription failed."
+                        self._flush_requested.clear()
+                        self._flush_completed.set()
+                    else:
+                        self._flush_cursor_samples += len(window_samples)
+                        if self._flush_cursor_samples >= self._stream_sample_count:
+                            self._flush_requested.clear()
+                            self._flush_completed.set()
+                        else:
+                            self._worker_trigger.set()
                 else:
                     # If new audio accumulated during this decode crossing the hop threshold,
                     # trigger immediately on the next freshest window
@@ -471,8 +596,10 @@ class FasterWhisperBackend(StreamingASRBackend):
         backlog_dropped: int = 0,
     ) -> Optional[TranscriptEvent]:
         if not self.model or start_ms is None or end_ms is None or not len(samples):
+            self._last_inference_succeeded = False
             return None
 
+        self._last_inference_succeeded = False
         try:
             started = perf_counter() * 1000
             with self._inference_lock:
@@ -488,7 +615,9 @@ class FasterWhisperBackend(StreamingASRBackend):
                 text = " ".join(getattr(segment, "text", "") for segment in segments).strip()
                 confidence_values = [getattr(segment, "avg_logprob", None) for segment in segments]
                 confidence_values = [val for val in confidence_values if val is not None]
-                stable = self.stabilizer.final(text) if final else self.stabilizer.partial(text)
+                stable = self.stabilizer.normalize(text) if final else self.stabilizer.partial(text)
+            self._last_inference_succeeded = True
+            self.last_error = None
             finished = perf_counter() * 1000
         except Exception as exc:
             self.last_error = f"ASR transcription failed: {type(exc).__name__}: {exc}"
@@ -497,7 +626,6 @@ class FasterWhisperBackend(StreamingASRBackend):
 
         if stable is None:
             return None
-        self.last_error = None
 
         event = TranscriptEvent(
             kind="FINAL_TRANSCRIPT" if final else "PARTIAL_TRANSCRIPT",

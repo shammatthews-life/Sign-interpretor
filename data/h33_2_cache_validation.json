@@ -1,0 +1,13 @@
+{
+  "phase": "H33.2",
+  "status": "PASS",
+  "command": "D:\\sign interpretor\\.venv\\Scripts\\python.exe tools/validate_phase_f2_asr.py",
+  "exit_code": 0,
+  "verified_identities": [
+    "audio SHA-256",
+    "ASR configuration and package versions",
+    "transcript content",
+    "translator implementation and sign JSON corpus"
+  ],
+  "atomic_write_policy": "same-directory temporary file plus atomic replace"
+}

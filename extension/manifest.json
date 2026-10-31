@@ -27,15 +27,16 @@
   "host_permissions": [
     "http://localhost:*/*",
     "http://127.0.0.1:*/*",
-    "*://*.youtube.com/*"
+    "https://*.youtube.com/*",
+    "https://youtu.be/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "*://*.youtube.com/*",
+        "https://*.youtube.com/*",
+        "https://youtu.be/*",
         "http://localhost:*/*",
-        "http://127.0.0.1:*/*",
-        "<all_urls>"
+        "http://127.0.0.1:*/*"
       ],
       "js": [
         "shared/message-contract.js",
@@ -57,7 +58,10 @@
         "shared/*"
       ],
       "matches": [
-        "<all_urls>"
+        "https://*.youtube.com/*",
+        "https://youtu.be/*",
+        "http://localhost:*/*",
+        "http://127.0.0.1:*/*"
       ]
     }
   ]

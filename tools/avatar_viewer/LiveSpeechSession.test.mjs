@@ -216,6 +216,33 @@ test('VAD silence flushes short utterances and allows the same word in a new utt
   await harness.session.stop();
 });
 
+test('a failed final flush retains ASR state so a later stop can retry it', async () => {
+  let flushAttempts = 0;
+  const harness = createHarness({
+    requestOverrides: {
+      '/asr/flush': async () => {
+        flushAttempts += 1;
+        return flushAttempts === 1
+          ? { status: { state: 'running' }, flush_status: 'FAILED_RETRYABLE', flush_error: 'Injected finalization failure.' }
+          : { status: { state: 'running' }, flush_status: 'COMPLETED', events: [] };
+      }
+    }
+  });
+  await harness.session.start();
+
+  await assert.rejects(harness.session.stop(), /Live speech stopped with cleanup errors/);
+  assert.equal(harness.session.asrStarted, true);
+  assert.equal(harness.requests.some(item => item.path === '/asr/reset'), false);
+
+  await harness.session.stop();
+  assert.equal(harness.session.state, 'STOPPED');
+  assert.equal(harness.session.asrStarted, false);
+  assert.equal(flushAttempts, 2);
+  assert.deepEqual(harness.requests.slice(-3).map(item => item.path), [
+    '/asr/flush', '/asr/stop', '/asr/reset'
+  ]);
+});
+
 test('chunk failure reports ERROR, stops capture, and resets ASR', async () => {
   const harness = createHarness({
     requestOverrides: {

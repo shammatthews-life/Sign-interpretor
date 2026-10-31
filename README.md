@@ -58,12 +58,15 @@ Use Python 3.12 for the runtime. Start the local viewer and development API
 from the repository root:
 
 ```powershell
-.\.venv\Scripts\python.exe tools\run_avatar_viewer.py --port 8000
+.\.venv\Scripts\python.exe tools\run_avatar_viewer.py --port 8000 --extension-id YOUR_32_CHARACTER_EXTENSION_ID
 ```
 
 Load the unpacked extension by selecting the `extension/` directory in the
-browser's extension developer mode. The extension talks to the local viewer
-API; it is not a hosted service. See
+browser's extension developer mode, then copy its ID from the extension
+details page. The ID is required to authorize that exact extension origin;
+without `--extension-id`, local viewer pages work but extension API calls are
+denied. The extension talks to the loopback-only viewer API; it is not a hosted
+service. See
 [`docs/h8_youtube_extension_integration.md`](docs/h8_youtube_extension_integration.md)
 and the H7/H8 test reports for the API contract and tested limitations.
 

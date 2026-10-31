@@ -1,0 +1,13 @@
+{
+  "phase": "H33.2",
+  "status": "PASS",
+  "command": "D:\\sign interpretor\\.venv\\Scripts\\python.exe tools/validate_phase_f2_asr.py",
+  "exit_code": 0,
+  "synthetic_input_samples": 160000,
+  "rolling_window_sample_cap": 64000,
+  "final_interval_ms": [
+    0,
+    10000
+  ],
+  "inference_kind": "deterministic blocked fake model; not production throughput"
+}

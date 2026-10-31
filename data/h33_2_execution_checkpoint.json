@@ -1,0 +1,42 @@
+{
+  "phase": "H33.2",
+  "branch": "audit/h33-2-runtime-reliability",
+  "base_commit": "55c0d1a064c0afbd11731299477fa3afa335af91",
+  "engineering_status": "IMPLEMENTED",
+  "focused_asr_and_api_tests": "PASS",
+  "live_speech_tests": "PASS",
+  "orchestration_tests": "PASS",
+  "regression_validators": [
+    {
+      "name": "H33.1 engineering regression validator",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "H32 complete-project regression validator",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "H31 complete-project regression validator",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "H30 complete-project regression validator",
+      "exit_code": 0,
+      "status": "PASS"
+    }
+  ],
+  "full_video_preflight": "BLOCKED",
+  "full_canonical_video_asr": "BLOCKED",
+  "full_corpus_wer_cer": "NOT RUN",
+  "product_ttfs": "NOT RUN",
+  "interactive_chrome_acceptance": "MANUAL",
+  "overall_status": "PASS_WITH_BLOCKERS",
+  "failures": [],
+  "blockers": [
+    "full canonical video is blocked by resource preflight",
+    "interactive Chrome/YouTube acceptance remains manual"
+  ]
+}

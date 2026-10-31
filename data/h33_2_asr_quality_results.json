@@ -1,0 +1,8 @@
+{
+  "phase": "H33.2",
+  "status": "NOT RUN",
+  "full_corpus_wer_pct": null,
+  "full_corpus_cer_pct": null,
+  "independent_human_ground_truth_available": false,
+  "note": "Deterministic reliability fakes do not measure ASR quality."
+}

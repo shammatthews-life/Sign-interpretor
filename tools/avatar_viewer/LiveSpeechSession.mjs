@@ -33,6 +33,8 @@ export class LiveSpeechSession {
     this.silenceMs = 0;
     this.finalizingPromise = null;
     this.chunkSendChain = Promise.resolve();
+    this.nextChunkId = 0;
+    this.flushFailed = false;
   }
 
   #setState(state, error = null) {
@@ -43,6 +45,9 @@ export class LiveSpeechSession {
 
   start() {
     if (this.state === 'RUNNING') return Promise.resolve();
+    if (this.asrStarted && this.state === 'ERROR') {
+      return Promise.reject(this.error || new Error('ASR finalization is pending; stop again to retry the flush.'));
+    }
     if (this.state === 'STARTING') return this.startPromise;
     if (this.cleanupPromise) return this.cleanupPromise.then(() => this.start());
     if (this.state === 'STOPPING') {
@@ -76,6 +81,8 @@ export class LiveSpeechSession {
       this.speechActive = false;
       this.silenceMs = 0;
       this.chunkSendChain = Promise.resolve();
+      this.nextChunkId = 0;
+      this.flushFailed = false;
       this.onASRStatus(response);
       this.#setState('RUNNING');
       return response;
@@ -104,6 +111,13 @@ export class LiveSpeechSession {
             .catch(error => {
               this.acceptingChunks = false;
               this.#setState('ERROR', error);
+              if (this.flushFailed) {
+                return this.#releaseResources({ resetASR: false, preserveASR: true }).then(cleanupErrors => {
+                  if (cleanupErrors.length) {
+                    this.#setState('ERROR', new AggregateError([error, ...cleanupErrors], 'ASR flush failed and microphone cleanup reported errors.'));
+                  }
+                });
+              }
             })
             .finally(() => { this.finalizingPromise = null; });
         }
@@ -151,6 +165,11 @@ export class LiveSpeechSession {
     if (!this.asrStarted || sessionId !== this.sessionId) return;
     this.#trace('asr_flush');
     const response = await this.request('/asr/flush');
+    if (response.flush_status && response.flush_status !== 'COMPLETED') {
+      this.flushFailed = true;
+      throw new Error(response.flush_error || `ASR flush ended with status ${response.flush_status}.`);
+    }
+    this.flushFailed = false;
     this.onASRStatus(response.status);
     if (response.events?.length) {
       for (const event of response.events) {
@@ -171,7 +190,8 @@ export class LiveSpeechSession {
     const response = await this.request('/asr/chunk', {
       samples_base64: result.samplesBase64,
       audio_start_ms: result.chunk.capturedAt,
-      audio_end_ms: result.chunk.capturedAt + durationMs
+      audio_end_ms: result.chunk.capturedAt + durationMs,
+      chunk_id: this.nextChunkId++
     });
     this.onASRStatus(response.status);
     if (response.events?.length) {
@@ -221,6 +241,11 @@ export class LiveSpeechSession {
     if (flush) {
       try {
         const response = await this.request('/asr/flush');
+        if (response.flush_status && response.flush_status !== 'COMPLETED') {
+          this.flushFailed = true;
+          throw new Error(response.flush_error || `ASR flush ended with status ${response.flush_status}.`);
+        }
+        this.flushFailed = false;
         this.onASRStatus(response.status);
         if (response.events?.length) {
           for (const event of response.events) {
@@ -229,10 +254,14 @@ export class LiveSpeechSession {
           this.onTranscriptEvents(response.events);
         }
       } catch (error) {
+        this.flushFailed = true;
         errors.push(error);
       }
     }
-    errors.push(...await this.#releaseResources({ resetASR }));
+    errors.push(...await this.#releaseResources({
+      resetASR: resetASR && !this.flushFailed,
+      preserveASR: this.flushFailed
+    }));
     if (errors.length) {
       const error = new AggregateError(errors, 'Live speech stopped with cleanup errors.');
       this.#setState('ERROR', error);
@@ -241,12 +270,12 @@ export class LiveSpeechSession {
     this.#setState('STOPPED');
   }
 
-  async #releaseResources({ resetASR }) {
+  async #releaseResources({ resetASR, preserveASR = false }) {
     const errors = [];
     const pipeline = this.pipeline;
     this.pipeline = null;
     this.source = null;
-    this.asrStarted = false;
+    if (!preserveASR) this.asrStarted = false;
 
     if (pipeline) {
       try {

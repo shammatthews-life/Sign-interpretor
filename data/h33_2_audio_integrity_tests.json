@@ -1,0 +1,13 @@
+{
+  "phase": "H33.2",
+  "status": "PASS",
+  "command": "D:\\sign interpretor\\.venv\\Scripts\\python.exe tools/validate_phase_f2_asr.py",
+  "exit_code": 0,
+  "scenarios": [
+    "sample-duration agreement",
+    "overlap rejection",
+    "short-gap silence insertion",
+    "excessive-gap rejection",
+    "sequential chunk IDs"
+  ]
+}

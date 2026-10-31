@@ -1,0 +1,8 @@
+{
+  "phase": "H33.2",
+  "status": "STATIC_SCOPE_PASS_MANUAL_BROWSER_ACCEPTANCE_REQUIRED",
+  "manifest_has_all_urls": false,
+  "youtube_matches_present": true,
+  "loopback_matches_present": true,
+  "browser_acceptance": "MANUAL"
+}

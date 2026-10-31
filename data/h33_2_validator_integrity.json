@@ -1,0 +1,123 @@
+{
+  "phase": "H33.2",
+  "status": "PASS_WITH_BLOCKERS",
+  "checks": [
+    {
+      "name": "target branch checked out",
+      "passed": true,
+      "message": "audit/h33-2-runtime-reliability"
+    },
+    {
+      "name": "H33.1 baseline is an ancestor",
+      "passed": true,
+      "message": ""
+    },
+    {
+      "name": "source inventory inputs exist",
+      "passed": true,
+      "message": ""
+    },
+    {
+      "name": "all required H33.2 reports exist",
+      "passed": true,
+      "message": ""
+    },
+    {
+      "name": "pre-existing H32 edits remain in the worktree",
+      "passed": true,
+      "message": "{\"data/h32_execution_checkpoint.json\":{\"worktree_modified\":true},\"data/h32_initial_baseline.json\":{\"worktree_modified\":true},\"data/h32_resource_usage.json\":{\"worktree_modified\":true},\"docs/h32_final_performance_report.md\":{\"worktree_modified\":true},\"docs/h32_resource_optimization_report.md\":{\"worktree_modified\":true},\"docs/report.md\":{\"worktree_modified\":true},\"tools/benchmark_h32_chunking.py\":{\"worktree_modified\":true},\"tools/benchmark_h32_hybrid_asr.py\":{\"worktree_modified\":true},\"tools/validate_h32_complete_project.mjs\":{\"worktree_modified\":true},\"tools/verify_h32_translation_and_resources.mjs\":{\"worktree_modified\":true}}"
+    },
+    {
+      "name": "pre-existing H32 edits remain unstaged",
+      "passed": true,
+      "message": "{\"staged_h32_files\":[],\"shared_report_only_h33_appendix\":true}"
+    },
+    {
+      "name": "extension manifest excludes broad all-URL access",
+      "passed": true,
+      "message": ""
+    },
+    {
+      "name": "extension manifest preserves YouTube and loopback matches",
+      "passed": true,
+      "message": ""
+    },
+    {
+      "name": "existing playable sign assets are available for schema validation",
+      "passed": true,
+      "message": ""
+    },
+    {
+      "name": "full-video preflight blocks unsafe execution",
+      "passed": true,
+      "message": ""
+    },
+    {
+      "name": "generated H33.2 evidence is valid JSON",
+      "passed": true,
+      "message": ""
+    }
+  ],
+  "test_results": [
+    {
+      "name": "focused ASR, timeline, cache, job, API, and sign tests",
+      "command": "D:\\sign interpretor\\.venv\\Scripts\\python.exe tools/validate_phase_f2_asr.py",
+      "exit_code": 0,
+      "pass_count": 21,
+      "error": null
+    },
+    {
+      "name": "live speech lifecycle and flush retry tests",
+      "command": "node --test tools/avatar_viewer/LiveSpeechSession.test.mjs",
+      "exit_code": 0,
+      "pass_count": 0,
+      "error": null
+    },
+    {
+      "name": "speech-to-sign orchestration regression",
+      "command": "node --test tools/validate_speech_sign_orchestrator.mjs",
+      "exit_code": 0,
+      "pass_count": 6,
+      "error": null
+    },
+    {
+      "name": "H33.1 engineering regression validator",
+      "command": "D:\\sign interpretor\\.venv\\Scripts\\python.exe tools/validate_h33_1_engineering_audit.py",
+      "exit_code": 0,
+      "pass_count": 4,
+      "error": null
+    },
+    {
+      "name": "H32 complete-project regression validator",
+      "command": "node tools/validate_h32_complete_project.mjs",
+      "exit_code": 0,
+      "pass_count": 51,
+      "error": null
+    },
+    {
+      "name": "H31 complete-project regression validator",
+      "command": "node tools/validate_h31_complete_project.mjs",
+      "exit_code": 0,
+      "pass_count": 48,
+      "error": null
+    },
+    {
+      "name": "H30 complete-project regression validator",
+      "command": "node tools/validate_h30_complete_project.mjs",
+      "exit_code": 0,
+      "pass_count": null,
+      "error": null,
+      "previously_verified": true,
+      "rerun": false,
+      "note": "Previously completed successfully; not rerun because it rewrites legacy H30 evidence files."
+    }
+  ],
+  "blockers": [
+    "full canonical video is blocked by resource preflight",
+    "interactive Chrome/YouTube acceptance remains manual"
+  ],
+  "failures": [],
+  "full_video_inference_started": false,
+  "remote_sha_compared_with_actual_head": true,
+  "remote_verification_policy": "Actual remote SHA comparison is emitted by the validator at runtime."
+}

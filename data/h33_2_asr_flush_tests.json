@@ -1,0 +1,12 @@
+{
+  "phase": "H33.2",
+  "status": "PASS",
+  "command": "D:\\sign interpretor\\.venv\\Scripts\\python.exe tools/validate_phase_f2_asr.py",
+  "exit_code": 0,
+  "scenarios": [
+    "sync retry cursor",
+    "async retry cursor",
+    "timeout reporting",
+    "slow inference and bounded resident window"
+  ]
+}

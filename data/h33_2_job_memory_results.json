@@ -1,0 +1,10 @@
+{
+  "phase": "H33.2",
+  "status": "PASS",
+  "command": "D:\\sign interpretor\\.venv\\Scripts\\python.exe tools/validate_phase_f2_asr.py",
+  "exit_code": 0,
+  "max_active_workers": 2,
+  "terminal_metadata_limit": 100,
+  "results_in_memory_after_completion": false,
+  "durable_job_result_retrieval_tested": true
+}

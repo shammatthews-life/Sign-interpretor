@@ -728,6 +728,8 @@
     let audioPipeline = null;
     let audioSource = null;
     let asrEnabled = false;
+    let asrChunkId = 0;
+    let asrChunkSendChain = Promise.resolve();
     let liveSpeechSession = null;
     const sentenceProcessor = new SentenceProcessor(); // G1 fallback remains available.
     const islTranslator = new EnglishToISLTranslator();
@@ -813,11 +815,18 @@
       for (let index = 0; index < bytes.length; index += 0x8000) binary += String.fromCharCode(...bytes.subarray(index, index + 0x8000));
       return btoa(binary);
     }
-    async function sendASRChunk(result) {
-      if (!asrEnabled || !result.accepted) return;
-      try {
-        const durationMs = result.chunk.samples.length * 1000 / result.chunk.sampleRate;
-        const response = await asrRequest('/asr/chunk', { samples_base64: float32Base64(result.chunk.samples), audio_start_ms: result.chunk.capturedAt, audio_end_ms: result.chunk.capturedAt + durationMs });
+    function sendASRChunk(result) {
+      if (!asrEnabled) return asrChunkSendChain;
+      const durationMs = result.chunk.samples.length * 1000 / result.chunk.sampleRate;
+      const body = {
+        samples_base64: float32Base64(result.chunk.samples),
+        audio_start_ms: result.chunk.capturedAt,
+        audio_end_ms: result.chunk.capturedAt + durationMs,
+        chunk_id: asrChunkId++
+      };
+      asrChunkSendChain = asrChunkSendChain.then(async () => {
+        if (!asrEnabled) return;
+        const response = await asrRequest('/asr/chunk', body);
         renderASR(response.status);
 
         if (response.status) {
@@ -833,10 +842,11 @@
             speechOrchestrator.handleTranscriptEvent(ev);
           }
         }
-      } catch (error) {
+      }).catch(error => {
         asrEnabled = false;
         renderASRError(error);
-      }
+      });
+      return asrChunkSendChain;
     }
     async function createAudioPipeline() {
       if (audioPipeline) await audioPipeline.reset();
@@ -1160,7 +1170,7 @@
       document.getElementById('btn-author-play').onclick=()=>authoring.preview(); document.getElementById('btn-author-pause').onclick=()=>signPlayer.pause(); document.getElementById('btn-author-replay').onclick=()=>authoring.preview(); document.getElementById('btn-author-reset').onclick=()=>authoring.reset();
       document.querySelectorAll('[data-author-speed]').forEach(b=>b.onclick=()=>signPlayer.playbackSpeed=Number(b.dataset.authorSpeed));
       document.getElementById('btn-author-validate').onclick=()=>{const v=authoring.validate();authorStatus(v.errors.length?`Errors: ${v.errors.join(' ')}`:`Valid. ${v.warnings.length?'Warnings: '+v.warnings.join(' '):'No warnings.'}`,v.errors.length>0);};
-      document.getElementById('btn-author-export').onclick=async()=>{const v=authoring.validate();if(v.errors.length){authorStatus('Not saved: '+v.errors.join(' '),true);return;}const data=authoring.definition();try{const exists=await fetch(`/signs/${data.sign_id}.json`,{method:'HEAD'});if(exists.ok&&!confirm(`Overwrite existing ${data.sign_id}.json?`))return;const r=await fetch('/save_sign',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});if(!r.ok)throw new Error(await r.text());authorStatus(`Saved signs/${data.sign_id}.json. ${v.warnings.join(' ')}`);}catch(e){authorStatus('Save failed: '+e.message,true);}};
+      document.getElementById('btn-author-export').onclick=async()=>{const v=authoring.validate();if(v.errors.length){authorStatus('Not saved: '+v.errors.join(' '),true);return;}const data=authoring.definition();try{const exists=await fetch(`/signs/${data.sign_id}.json`,{method:'HEAD'});if(exists.ok&&!confirm(`Overwrite existing ${data.sign_id}.json?`))return;const r=await fetch('/save_sign',{method:'POST',headers:{'Content-Type':'application/json','X-Overwrite-Sign':exists.ok?'true':'false'},body:JSON.stringify(data)});if(!r.ok)throw new Error(await r.text());authorStatus(`Saved signs/${data.sign_id}.json. ${v.warnings.join(' ')}`);}catch(e){authorStatus('Save failed: '+e.message,true);}};
     }
 
     // 5. Scrubber & Transport Event Listeners
@@ -1229,6 +1239,7 @@
     document.getElementById('btn-audio-stop').addEventListener('click', async () => {
       try {
         await audioPipeline?.reset();
+        await asrChunkSendChain;
         audioPipeline = null;
         audioSource = null;
         document.getElementById('txt-audio-chunk').textContent = 'waiting';
@@ -1236,8 +1247,8 @@
         setAudioStatus('Audio pipeline reset.');
       } catch (error) { setAudioStatus(error.message, true); }
     });
-    document.getElementById('btn-asr-start').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/start')); asrEnabled = true; } catch (error) { renderASRError(error); } });
-    document.getElementById('btn-asr-flush').addEventListener('click', async () => { try { renderASR(await asrRequest('/asr/flush')); } catch (error) { renderASRError(error); } });
+    document.getElementById('btn-asr-start').addEventListener('click', async () => { try { asrChunkId = 0; asrChunkSendChain = Promise.resolve(); renderASR(await asrRequest('/asr/start')); asrEnabled = true; } catch (error) { renderASRError(error); } });
+    document.getElementById('btn-asr-flush').addEventListener('click', async () => { try { await asrChunkSendChain; const response = await asrRequest('/asr/flush'); if (response.flush_status && response.flush_status !== 'COMPLETED') throw new Error(response.flush_error || `ASR flush ended with status ${response.flush_status}.`); renderASR(response.status); if (speechOrchestrator && response.events) response.events.forEach(event => speechOrchestrator.handleTranscriptEvent(event)); } catch (error) { renderASRError(error); } });
 
     document.getElementById('btn-live-speech-start').addEventListener('click', async () => {
       try {

@@ -1,0 +1,124 @@
+{
+  "phase": "H33.2",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "c85239bb13ec0556fb3ee8e10cd2061fede2189e04d2a2215e5bfeba14d0adba",
+      "bytes": 11049
+    },
+    {
+      "path": "extension/manifest.json",
+      "sha256": "c28e46e6851714b7a09b7096ddbaeea4fddb62952bf8c400a867b7ef515a04f8",
+      "bytes": 1660
+    },
+    {
+      "path": "tools/asr/asr_service.py",
+      "sha256": "e60f02599f6557bb9649ac449e190bf01e62c01a7b2f00e17fa280912ce99a5d",
+      "bytes": 12142
+    },
+    {
+      "path": "tools/asr/streaming_asr.py",
+      "sha256": "3ab3cb5f87e69adbf35103c04aec2ea7d523884013ffa6f104515127535129eb",
+      "bytes": 29494
+    },
+    {
+      "path": "tools/avatar_viewer/LiveSpeechSession.mjs",
+      "sha256": "f0b2b6322e78089f5f24db2cd7d4eb98a3ffa3d9b71dc6dd2dfa2a210b6a920b",
+      "bytes": 10842
+    },
+    {
+      "path": "tools/avatar_viewer/LiveSpeechSession.test.mjs",
+      "sha256": "19833557b77aa8e830e5ec8763f916c07376b51ee8c02b7d00f3a3290a547a99",
+      "bytes": 13006
+    },
+    {
+      "path": "tools/avatar_viewer/index.html",
+      "sha256": "2ef26827b7fd3305e16872da9d7edc0ca83320de242b89821dacd57b3f200f5d",
+      "bytes": 90309
+    },
+    {
+      "path": "tools/resource_preflight.py",
+      "sha256": "506b16ad7a0fbbb95d86b2b3c705608cc8da3a7a3b83ecf0d2f7325f612d3fad",
+      "bytes": 6021
+    },
+    {
+      "path": "tools/run_avatar_viewer.py",
+      "sha256": "645d5d075e3463e4b2f6cbebac9f9909768776730d75fda9c866ca73e632077b",
+      "bytes": 18089
+    },
+    {
+      "path": "tools/validate_phase_f2_asr.py",
+      "sha256": "48e5435c6662641e494e92823bad26f70d8a0b868ad86167a527801ee449829a",
+      "bytes": 38589
+    },
+    {
+      "path": "tools/youtube_pipeline/youtube_ingest.py",
+      "sha256": "f9dd8a928b65a32d774b81970959f89c5bced9c14cd32537feb690d665ad7082",
+      "bytes": 37523
+    },
+    {
+      "path": "docs/h33_2_runtime_correctness_report.md",
+      "sha256": "0917b5f64237d6b6dd30961c92ac104c59fadf58375829586d8721893b7556ed",
+      "bytes": 2057
+    },
+    {
+      "path": "docs/h33_2_asr_flush_reliability.md",
+      "sha256": "d1aa0a77eb1e922074729209326315be35932a56e6b1a79b8b1ba87d5b219255",
+      "bytes": 1502
+    },
+    {
+      "path": "docs/h33_2_audio_timeline_integrity.md",
+      "sha256": "3a1ebffffc654ccc8a196d353d5beb45ef1bdd2fc6d13c49fa57e92baefeca45",
+      "bytes": 1129
+    },
+    {
+      "path": "docs/h33_2_backpressure_and_loss_prevention.md",
+      "sha256": "d3ab93828a8e264684aac46889f6005ab97bce4fc7e7eac79b02027806436658",
+      "bytes": 1249
+    },
+    {
+      "path": "docs/h33_2_cache_provenance_report.md",
+      "sha256": "a1cdaec866d1140ce9f99599f59a3e3b9f11d9fcce7583c1fcf97f00e2acc82c",
+      "bytes": 1171
+    },
+    {
+      "path": "docs/h33_2_memory_management_report.md",
+      "sha256": "406b7a030c4eaa079ce4d9944d8b18dbd814bd58737ea34c245067422747b553",
+      "bytes": 1142
+    },
+    {
+      "path": "docs/h33_2_local_api_security_report.md",
+      "sha256": "ce773dc9846355332fd5720bb8ab08c597aa2d71bde65dff7630356f3e4c3087",
+      "bytes": 1348
+    },
+    {
+      "path": "docs/h33_2_extension_permission_review.md",
+      "sha256": "d642e00d70dfb94d63451b6436eab5f7de382bb2d8bf2cfcc36718a6d35c781e",
+      "bytes": 910
+    },
+    {
+      "path": "docs/h33_2_validator_integrity_report.md",
+      "sha256": "d7fa28d0b3fa5264a77ce56113cc650fc67b882482e42de85fe2643da3c41bfc",
+      "bytes": 1093
+    },
+    {
+      "path": "docs/h33_2_full_video_readiness.md",
+      "sha256": "57aa553961a67840bdcb7fd0c109919c44acea61d7040b93db10a6dabb3b6b07",
+      "bytes": 841
+    },
+    {
+      "path": "docs/h33_2_final_engineering_audit.md",
+      "sha256": "ca30137e949d21891b42037c7c83cc16e03fef7174b56129f27929915c8a28a7",
+      "bytes": 1749
+    },
+    {
+      "path": "tools/validate_h33_2_complete_project.mjs",
+      "sha256": "60d033ae535264c9a235b2777469a459057add1bbc459bc3ca0387df14ed091f",
+      "bytes": 17844
+    }
+  ],
+  "excluded_shared_worktree_file": {
+    "path": "docs/report.md",
+    "reason": "Contains pre-existing unstaged H32 content; H33.2 appendix is staged selectively."
+  }
+}
