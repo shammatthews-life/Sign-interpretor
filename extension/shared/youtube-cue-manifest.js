@@ -29,6 +29,11 @@
     return typeof value === 'number' && Number.isFinite(value) && value >= 0;
   }
 
+  function explicitSegmentId(segment) {
+    const value = segment?.segment_id ?? segment?.id;
+    return typeof value === 'string' || typeof value === 'number' ? String(value).trim() : '';
+  }
+
   function normalizeUnavailable(items) {
     if (!Array.isArray(items)) return [];
     return items.map((item, index) => {
@@ -81,6 +86,8 @@
     const validationErrors = [];
     const unmatchedTranslations = [];
     const cues = [];
+    const segmentIds = new Set();
+    const translationIds = new Set();
     let previousStart = -Infinity;
     let previousEnd = -Infinity;
     let playableOccurrences = 0;
@@ -91,6 +98,12 @@
 
     for (let index = 0; index < transcriptSegments.length; index += 1) {
       const segment = transcriptSegments[index];
+      const sourceSegmentId = explicitSegmentId(segment);
+      if (sourceSegmentId && segmentIds.has(sourceSegmentId)) {
+        validationErrors.push({ segment_index: index, code: 'DUPLICATE_SEGMENT_IDENTITY', segment_id: sourceSegmentId });
+      }
+      if (sourceSegmentId) segmentIds.add(sourceSegmentId);
+      const segmentId = sourceSegmentId || `segment-${String(index + 1).padStart(6, '0')}`;
       const start = segment?.start;
       const end = segment?.end;
       const sourceText = String(segment?.text ?? '');
@@ -108,19 +121,37 @@
       }
 
       const translated = translatedSegments[index];
+      const translatedId = explicitSegmentId(translated);
+      if (translatedId && translationIds.has(translatedId)) {
+        validationErrors.push({ segment_index: index, code: 'DUPLICATE_TRANSLATION_IDENTITY', segment_id: translatedId });
+      }
+      if (translatedId) translationIds.add(translatedId);
+      const translationTimestampValid = !translated
+        || (finiteTime(translated.start) && finiteTime(translated.end) && translated.end > translated.start);
+      if (translated && !translationTimestampValid) {
+        validationErrors.push({
+          segment_index: index,
+          code: 'INVALID_TRANSLATION_TIMESTAMP',
+          start: translated.start,
+          end: translated.end
+        });
+      }
+      const identityMatches = !translatedId || !sourceSegmentId || translatedId === sourceSegmentId;
       const translationText = translated && typeof translated === 'object'
         ? String(translated.source_text ?? '')
         : '';
-      const textMatches = Boolean(translated)
+      const textMatches = Boolean(translated) && identityMatches
         && normalizeText(sourceText) === normalizeText(translationText);
-      const timesMatch = Boolean(translated)
-        && Number(translated.start) === start
-        && Number(translated.end) === end;
+      const timesMatch = Boolean(translated) && translationTimestampValid
+        && translated.start === start && translated.end === end;
       const aligned = textMatches && timesMatch;
       if (translated && !aligned) {
         unmatchedTranslations.push({
           segment_index: index,
-          reason: !timesMatch ? 'TIMESTAMP_MISMATCH' : 'SOURCE_TEXT_MISMATCH',
+          segment_id: segmentId,
+          reason: !translationTimestampValid ? 'INVALID_TRANSLATION_TIMESTAMP'
+            : !identityMatches ? 'SEGMENT_IDENTITY_MISMATCH'
+              : !timesMatch ? 'TIMESTAMP_MISMATCH' : 'SOURCE_TEXT_MISMATCH',
           transcript_text: sourceText,
           translation_text: translationText,
           transcript_start: start,
@@ -131,18 +162,34 @@
       }
 
       const glosses = aligned && Array.isArray(translated.gloss) ? translated.gloss : [];
-      const signIds = aligned && Array.isArray(translated.playable_signs)
-        ? translated.playable_signs.map(String).filter(Boolean)
-        : [];
+      const rawSignIds = aligned && Array.isArray(translated.playable_signs) ? translated.playable_signs : [];
+      const signIds = rawSignIds.filter(signId => typeof signId === 'string' && /^[a-z0-9_]+$/.test(signId));
+      rawSignIds.forEach((signId, occurrenceIndex) => {
+        if (!signIds.includes(signId)) {
+          validationErrors.push({
+            segment_index: index,
+            code: 'INVALID_PLAYABLE_SIGN_ID',
+            occurrence_index: occurrenceIndex,
+            sign_id: signId
+          });
+        }
+      });
       const unknownTerms = aligned ? normalizeUnknown(translated.unknown_terms) : [];
       const mismatchFallbackTerms = aligned ? [] : tokenizeSource(sourceText)
-        .map((word, order) => ({ order, word, reason: 'SOURCE_TRANSLATION_MISMATCH' }));
+        .map((word, order) => ({
+          order,
+          word,
+          reason: translated ? 'SOURCE_TRANSLATION_MISMATCH' : 'TRANSLATION_MISSING'
+        }));
       const unavailableConcepts = aligned
         ? normalizeUnavailable(translated.unavailable_concepts)
         : [];
       const cueFallbackOccurrences = [
         ...unknownTerms.map(item => ({ ...item, category: 'unknown_term' })),
-        ...mismatchFallbackTerms.map(item => ({ ...item, category: 'source_mismatch' })),
+        ...mismatchFallbackTerms.map(item => ({
+          ...item,
+          category: translated ? 'source_mismatch' : 'translation_missing'
+        })),
         ...unavailableConcepts.map(item => ({ ...item, category: 'unavailable_sign' }))
       ];
       const signOccurrences = signIds.map((signId, occurrenceIndex) => ({
@@ -157,12 +204,15 @@
       const fallbackWords = cueFallbackOccurrences.map(item => item.word);
       const translationStatus = aligned
         ? String(translated.translation_status || 'TRANSLATION_UNCERTAIN')
-        : 'UNAVAILABLE_SOURCE_TRANSLATION_MISMATCH';
+        : !translated ? 'UNAVAILABLE_TRANSLATION_MISSING'
+          : !identityMatches ? 'UNAVAILABLE_SEGMENT_IDENTITY_MISMATCH'
+            : !timesMatch ? 'UNAVAILABLE_TIMESTAMP_MISMATCH'
+              : 'UNAVAILABLE_SOURCE_TRANSLATION_MISMATCH';
 
       playableOccurrences += signOccurrences.length;
       fallbackOccurrenceCount += cueFallbackOccurrences.length;
       unknownTermOccurrences += unknownTerms.length;
-      sourceMismatchFallbackOccurrences += mismatchFallbackTerms.length;
+      if (translated) sourceMismatchFallbackOccurrences += mismatchFallbackTerms.length;
       unavailableConceptOccurrences += unavailableConcepts.length;
 
       cues.push({
@@ -171,6 +221,7 @@
         video_id: videoId,
         job_id: jobId,
         segment_index: index,
+        segment_id: segmentId,
         start,
         end,
         source_text: sourceText,
@@ -195,7 +246,24 @@
     }
 
     for (let index = transcriptSegments.length; index < translatedSegments.length; index += 1) {
-      unmatchedTranslations.push({ segment_index: index, reason: 'NO_TRANSCRIPT_SEGMENT' });
+      const translated = translatedSegments[index];
+      unmatchedTranslations.push({
+        segment_index: index,
+        segment_id: explicitSegmentId(translated) || null,
+        reason: 'NO_TRANSCRIPT_SEGMENT'
+      });
+    }
+
+    for (let index = translatedSegments.length; index < transcriptSegments.length; index += 1) {
+      const segment = transcriptSegments[index];
+      unmatchedTranslations.push({
+        segment_index: index,
+        segment_id: explicitSegmentId(segment) || `segment-${String(index + 1).padStart(6, '0')}`,
+        reason: 'TRANSLATION_MISSING',
+        transcript_text: String(segment?.text ?? ''),
+        transcript_start: segment?.start,
+        transcript_end: segment?.end
+      });
     }
 
     const manifest = {
@@ -217,6 +285,10 @@
         unavailable_concept_occurrences: unavailableConceptOccurrences,
         unknown_term_occurrences: unknownTermOccurrences,
         source_mismatch_fallback_occurrences: sourceMismatchFallbackOccurrences,
+        missing_translation_fallback_occurrences: cues.reduce(
+          (total, cue) => total + cue.fallback_occurrences.filter(item => item.category === 'translation_missing').length,
+          0
+        ),
         fallback_occurrences: fallbackOccurrenceCount
       }
     };

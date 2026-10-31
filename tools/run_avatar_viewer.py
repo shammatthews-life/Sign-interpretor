@@ -245,8 +245,22 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
                     return
             status = YOUTUBE_JOBS.get_status(job_id)
             if status is None:
-                self._send_json({"error": "YouTube job was not found.", "job_id": job_id}, status=404)
-                return
+                durable_result = YOUTUBE_JOBS.get_result(job_id)
+                if durable_result is None:
+                    self._send_json({"error": "YouTube job was not found.", "job_id": job_id}, status=404)
+                    return
+                metadata = durable_result.get("metadata") or {}
+                status = {
+                    "job_id": job_id,
+                    "video_id": metadata.get("video_id"),
+                    "url": durable_result.get("url"),
+                    "stage": "READY",
+                    "progress": 1.0,
+                    "started_at": None,
+                    "finished_at": None,
+                    "error": None,
+                    "title": metadata.get("title")
+                }
             if action == "status":
                 self._send_json(status)
                 return
@@ -375,6 +389,7 @@ def run_viewer(port: int = 8000, open_browser: bool = True) -> None:
     handler = QuietSimpleHTTPRequestHandler
     with socketserver.ThreadingTCPServer(("127.0.0.1", selected_port), handler) as httpd:
         httpd.daemon_threads = True
+        httpd.server_port = selected_port
         print(f"Serving HTTP on port {selected_port}... Press Ctrl+C to stop.")
         try:
             httpd.serve_forever()

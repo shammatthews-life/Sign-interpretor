@@ -55,7 +55,7 @@ test('activates only the current cue once and preserves repeated sign occurrence
   video.emit('timeupdate');
   const firstDelivery = events.filter(event => event[0] === 'sign');
   assert.deepEqual(firstDelivery.map(event => [event[1], event[2].command]), [
-    ['good', 'PLAY_SIGN'],
+    ['good', 'QUEUE_SIGN'],
     ['good', 'QUEUE_SIGN']
   ]);
   assert.ok(firstDelivery[0][2].eventId.endsWith('first:0'));
@@ -64,9 +64,13 @@ test('activates only the current cue once and preserves repeated sign occurrence
   video.emit('timeupdate');
   assert.ok(events.some(event => event[0] === 'fallback' && event[1].includes('not available')));
   assert.equal(events.filter(event => event[0] === 'sign').length, 2);
+  assert.ok(events.some(event => event[0] === 'command' && event[1] === 'CUE_TRANSITION'
+    && event[2].cueId === 'fallback'));
   video.currentTime = 4;
   video.emit('timeupdate');
   assert.equal(synchronizer.activeCueId, null);
+  assert.ok(events.some(event => event[0] === 'command' && event[1] === 'CUE_TRANSITION'
+    && event[2].cueId === null));
 });
 
 test('seeking back into a cue creates a fresh delivery identity for replay', () => {
@@ -85,6 +89,22 @@ test('seeking back into a cue creates a fresh delivery identity for replay', () 
   assert.notEqual(deliveries[0][2].eventId, deliveries[1][2].eventId);
   assert.ok(deliveries[1][2].eventId.includes('hello-occurrence'));
   assert.ok(firstEventId.includes('hello-occurrence'));
+});
+
+test('installing cues evaluates the current video time and queues signs without cancelling prior cues', () => {
+  const { video, synchronizer, events } = harness(new FakeVideo(1));
+  video.paused = false;
+  synchronizer.setSegments([
+    cue('first', 0, 2, { signIds: ['hello'] }),
+    cue('second', 2, 4, { signIds: ['good'] })
+  ], 'job-immediate');
+  assert.equal(events.filter(event => event[0] === 'sign').length, 1);
+  events.length = 0;
+  video.currentTime = 2.5;
+  video.emit('timeupdate');
+  assert.equal(events.filter(event => event[0] === 'sign').length, 1);
+  assert.equal(events.some(event => event[0] === 'command' && event[1] === 'RESET_AVATAR'), false);
+  assert.equal(events.find(event => event[0] === 'sign')[1], 'good');
 });
 
 test('rejects overlaps and invalid cue ordering instead of sorting timestamped cues', () => {
@@ -107,6 +127,7 @@ test('seek cancels stale playback and activates only the destination cue or fall
     cue('two', 2, 4, { signIds: ['good'] }),
     cue('unknown', 5, 7, { fallbackWords: ['UNKNOWN'], source_text: 'unknown word' })
   ], 'job-seek');
+  video.paused = false;
   video.emit('seeked');
   assert.equal(events.filter(event => event[0] === 'sign').length, 1);
   events.length = 0;
@@ -156,7 +177,7 @@ test('rebind removes old listeners and follows only the replacement video clock'
   events.length = 0;
   synchronizer.rebind(second);
   assert.equal(first.listenerCount(), 0);
-  assert.equal(second.listenerCount(), 6);
+  assert.equal(second.listenerCount(), 9);
   first.currentTime = 3;
   first.emit('timeupdate');
   assert.equal(events.filter(event => event[0] === 'sign').length, 1);

@@ -1,0 +1,88 @@
+{
+  "status": "PASS_EMBEDDED_VIEWER_BROWSER_SMOKE",
+  "test_surface": "Local Aether viewer embedded in a same-origin browser harness",
+  "server_url": "http://localhost:8000/tools/avatar_viewer/index.html?embed=1",
+  "server_launcher": "tools/run_avatar_viewer.py",
+  "cross_origin_checks": {
+    "parent_origin": "http://127.0.0.1:8000",
+    "viewer_origin": "http://localhost:8000",
+    "origins_are_distinct": true,
+    "cold_start_delivery": {
+      "event_id": "manual-cross-origin-cold",
+      "first_ack": {
+        "status": "RETRY",
+        "reason": "SIGN_LIBRARY_NOT_READY"
+      },
+      "final_ack": "ACCEPTED",
+      "playback_start_observed": true
+    },
+    "expired_queued_cue": {
+      "event_id": "cold-expired",
+      "ack": "ACCEPTED",
+      "lifecycle": [
+        "accepted",
+        "playback_cancelled"
+      ],
+      "playback_start_observed": false
+    },
+    "unavailable_sign": {
+      "event_id": "cold-rejected",
+      "ack": "REJECTED",
+      "reason": "NOT_PRELOADED"
+    },
+    "active_cue_following_transition": {
+      "event_id": "cold-active",
+      "ack": "ACCEPTED",
+      "playback_start_observed": false,
+      "result": "Not verified in this capture."
+    }
+  },
+  "avatar_asset": "signs/hello.json",
+  "webgl_canvas": {
+    "available": true,
+    "width": 1000,
+    "height": 750
+  },
+  "commands": [
+    {
+      "event_id": "spoof-origin",
+      "status": "IGNORED",
+      "reason": "Parent-origin mismatch received no acknowledgement."
+    },
+    {
+      "event_id": "h33.4-browser-rejected",
+      "sign_id": "not_preloaded",
+      "status": "REJECTED",
+      "reason": "NOT_PRELOADED"
+    },
+    {
+      "event_id": "h33.4-browser-queue-1",
+      "sign_id": "hello",
+      "status": "ACCEPTED",
+      "playback_start": true,
+      "playback_end": true
+    },
+    {
+      "event_id": "h33.4-browser-queue-2",
+      "sign_id": "hello",
+      "status": "ACCEPTED",
+      "playback_start": true,
+      "playback_end": true
+    }
+  ],
+  "avatar_movement_observation": {
+    "mid_playback_scrubber_ms": 700,
+    "post_playback_scrubber_ms": 0,
+    "observed_lifecycle_order": [
+      "accepted",
+      "playback_start",
+      "accepted",
+      "playback_end",
+      "playback_start",
+      "playback_end"
+    ]
+  },
+  "chrome_extension_loaded": false,
+  "full_chrome_extension_acceptance": "MANUAL ACCEPTANCE REQUIRED",
+  "linguistic_review": "NOT PERFORMED"
+}

@@ -258,10 +258,12 @@
       const fallbackConcepts = cueManifest.cues.flatMap(cue => cue.fallback_occurrences.map(item => ({
         word: item.word,
         reason: item.category === 'unknown_term'
-          ? 'Word not found in the translation catalog'
+          ? 'Word is not resolved by the local translation catalog'
           : item.category === 'unavailable_sign'
             ? 'Sign is not available in the project sign library'
-            : 'Source text could not be aligned with translation'
+            : item.category === 'translation_missing'
+              ? 'Translation is unavailable for this transcript segment'
+              : 'Source text could not be aligned with translation'
       })));
       const coverage = cueManifest.coverage;
       const latest = segments.length ? segments[segments.length - 1] : null;
@@ -286,8 +288,9 @@
           unavailableConceptOccurrences: coverage.unavailable_concept_occurrences,
           unknownTermOccurrences: coverage.unknown_term_occurrences,
           sourceMismatchFallbackOccurrences: coverage.source_mismatch_fallback_occurrences,
+          missingTranslationFallbackOccurrences: coverage.missing_translation_fallback_occurrences,
           fallbackOccurrences: coverage.fallback_occurrences,
-          sourceTextMismatches: coverage.mismatched_segments
+          unmatchedTranslationSegments: coverage.mismatched_segments
         },
         translationStatus: translated.length ? 'G2/G3 prototype gloss; not full ISL translation' : 'NO_TRANSLATION',
         translationStatusCounts,

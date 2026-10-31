@@ -31,6 +31,8 @@
       this.activeJobId = null;
       this.isSeeking = false;
       this.boundEvents = [];
+      this.frameCallbackId = null;
+      this.frameVideo = null;
       if (videoElement) this.attach(videoElement);
     }
 
@@ -89,12 +91,14 @@
           signOccurrences: segment.signOccurrences || []
         };
       });
+      this.cancelPlayback();
       this.clearActiveCue();
       this.segments = validated;
       this.activeJobId = jobId;
       this.manifestFingerprint = null;
       this.videoId = null;
       this.currentSegmentIndex = -1;
+      this.evaluateCurrentTime();
     }
 
     attach(videoElement) {
@@ -108,20 +112,30 @@
         pause: () => this.handlePause(),
         seeking: () => this.handleSeeking(),
         seeked: () => this.handleSeeked(),
-        ratechange: () => this.handleRateChange()
+        ratechange: () => this.handleRateChange(),
+        waiting: () => this.onDispatchCommand?.('PAUSE'),
+        playing: () => this.onDispatchCommand?.('RESUME'),
+        ended: () => {
+          this.cancelPlayback();
+          this.clearActiveCue();
+        }
       };
       for (const [event, handler] of Object.entries(handlers)) {
         this.video.addEventListener(event, handler);
         this.boundEvents.push([event, handler]);
       }
       this.handleRateChange();
+      this.evaluateCurrentTime();
+      this.startFrameObservation();
     }
 
     detach() {
+      this.stopFrameObservation();
       if (this.video) {
         for (const [event, handler] of this.boundEvents) this.video.removeEventListener(event, handler);
       }
       this.boundEvents = [];
+      this.cancelPlayback();
       this.clearActiveCue();
       this.video = null;
       this.currentSegmentIndex = -1;
@@ -131,7 +145,28 @@
     rebind(newVideoElement) {
       if (this.video === newVideoElement) return;
       this.attach(newVideoElement);
-      if (newVideoElement && !newVideoElement.paused) this.evaluateCurrentTime();
+    }
+
+    startFrameObservation() {
+      this.stopFrameObservation();
+      const video = this.video;
+      if (!video || typeof video.requestVideoFrameCallback !== 'function') return;
+      this.frameVideo = video;
+      const observe = () => {
+        if (this.frameVideo !== video || this.video !== video) return;
+        this.evaluateCurrentTime();
+        this.frameCallbackId = video.requestVideoFrameCallback(observe);
+      };
+      this.frameCallbackId = video.requestVideoFrameCallback(observe);
+    }
+
+    stopFrameObservation() {
+      if (this.frameVideo && this.frameCallbackId !== null
+        && typeof this.frameVideo.cancelVideoFrameCallback === 'function') {
+        this.frameVideo.cancelVideoFrameCallback(this.frameCallbackId);
+      }
+      this.frameVideo = null;
+      this.frameCallbackId = null;
     }
 
     findSegmentIndex(currentTime) {
@@ -149,9 +184,13 @@
       this.currentSegmentIndex = index;
       const segment = index < 0 ? null : this.segments[index];
       if (!segment) {
-        if (this.activeCueId !== null) this.clearActiveCue();
+        if (this.activeCueId !== null) {
+          this.onDispatchCommand?.('CUE_TRANSITION', { jobId: this.activeJobId, cueId: null });
+          this.clearActiveCue();
+        }
         return;
       }
+      if (this.video.paused && segment.signIds.length) return;
       const cueKey = `${this.activeJobId || ''}:${segment.id}`;
       if (cueKey === this.activeCueKey) return;
       this.activateSegment(segment, cueKey);
@@ -162,6 +201,10 @@
       const activationId = `${cueKey}:${++this.activationSequence}`;
       this.activeCueKey = cueKey;
       this.activeCueId = activationId;
+      this.onDispatchCommand?.('CUE_TRANSITION', {
+        jobId: this.activeJobId,
+        cueId: segment.id
+      });
       if (segment.signIds.length) {
         this.onClearFallback?.();
         segment.signIds.forEach((signId, occurrenceIndex) => {
@@ -171,11 +214,9 @@
             jobId: this.activeJobId,
             occurrenceIndex,
             eventId: `${activationId}:${occurrence?.occurrence_id || `sign:${occurrenceIndex}`}`,
-            command: occurrenceIndex === 0 ? 'PLAY_SIGN' : 'QUEUE_SIGN'
+            command: 'QUEUE_SIGN'
           });
         });
-      } else {
-        this.onDispatchCommand?.('RESET_AVATAR');
       }
       const fallbackMessage = segment.fallbackMessage
         || (segment.fallbackWords.length
@@ -186,7 +227,6 @@
     }
 
     clearActiveCue() {
-      if (this.activeCueId !== null) this.onDispatchCommand?.('RESET_AVATAR');
       this.activeCueId = null;
       this.activeCueKey = null;
       this.onClearFallback?.();
@@ -203,6 +243,7 @@
 
     handleSeeking() {
       this.isSeeking = true;
+      this.cancelPlayback();
       this.clearActiveCue();
       this.currentSegmentIndex = -1;
     }
@@ -210,6 +251,10 @@
     handleSeeked() {
       this.isSeeking = false;
       this.evaluateCurrentTime();
+    }
+
+    cancelPlayback() {
+      this.onDispatchCommand?.('RESET_AVATAR');
     }
 
     handleRateChange() {

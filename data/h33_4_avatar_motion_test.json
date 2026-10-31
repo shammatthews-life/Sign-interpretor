@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ENGINE_LEVEL_ASSET_PLAYBACK_NOT_BROWSER_RENDER",
+  "asset": "signs/hello.json",
+  "sign_id": "hello",
+  "duration_ms": 2000,
+  "involved_bones": 10,
+  "measured_maximum_bone_rotation_rad": 2.129301687433082,
+  "neutral_reset_maximum_error_rad": 0,
+  "lifecycle_events": [
+    {
+      "type": "accepted",
+      "sign_id": "hello",
+      "event_id": "h33.4-avatar-smoke"
+    },
+    {
+      "type": "playback_start",
+      "sign_id": "hello",
+      "event_id": "h33.4-avatar-smoke"
+    },
+    {
+      "type": "playback_end",
+      "sign_id": "hello",
+      "event_id": "h33.4-avatar-smoke"
+    }
+  ],
+  "browser_rendered": false,
+  "chrome_extension_acceptance": "NOT RUN"
+}

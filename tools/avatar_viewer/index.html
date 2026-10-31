@@ -722,6 +722,10 @@
     let signPlayer = null;
     let signLibrary = null;
     let signScheduler = null;
+    const processedAetherEvents = new Map();
+    const pendingAetherEvents = new Map();
+    let activeAetherCue = { jobId: null, cueId: null };
+    let trustedParentOrigin = null;
     let speechOrchestrator = null;
     let authoring = null;
     let articulationTest = null;
@@ -764,10 +768,12 @@
       document.getElementById('txt-queue-current').textContent = state.current ? state.current.toUpperCase() : 'None';
       document.getElementById('txt-queue-pending').textContent = state.queued.length ? state.queued.map(id => id.toUpperCase()).join(' → ') : 'empty';
       if (window.parent !== window && new URLSearchParams(window.location.search).has('embed')) {
-        window.parent.postMessage({
-          type: 'ISL_AETHER_STATE',
-          state: { current: state.current, queued: state.queued }
-        }, window.location.origin);
+        if (trustedParentOrigin) {
+          window.parent.postMessage({
+            type: 'ISL_AETHER_STATE',
+            state: { current: state.current, queued: state.queued }
+          }, trustedParentOrigin);
+        }
       }
     }
 
@@ -1057,7 +1063,15 @@
           signPlayer.loadSign(hello);
           document.getElementById('sign-scrubber').max = hello.duration_ms;
           document.getElementById('txt-total-duration').textContent = hello.duration_ms + ' ms';
-          signScheduler = new SignScheduler(signPlayer, signLibrary, bonesMap, renderQueueState, event => { playbackTimings.push(event); renderTiming(); });
+          signScheduler = new SignScheduler(signPlayer, signLibrary, bonesMap, renderQueueState, event => {
+            playbackTimings.push(event);
+            renderTiming();
+            if (trustedParentOrigin && window.parent !== window
+              && new URLSearchParams(window.location.search).has('embed')) {
+              window.parent.postMessage({ type: 'ISL_AETHER_LIFECYCLE', event }, trustedParentOrigin);
+            }
+          });
+          flushPendingAetherEvents();
           setSequenceStatus('Library preloaded: 332 ISL signs across 332 verified Schema 2.0.0 assets are playable.');
           console.log('[ISL Library] Preloaded:', preload.map(item => item.id).join(', '));
         } catch (err) {
@@ -1545,36 +1559,118 @@
       if (instructions) instructions.style.display = 'none';
     }
 
+    function isTrustedParentOrigin(origin) {
+      return /^https:\/\/(?:[a-z0-9-]+\.)*youtube\.com$/.test(origin)
+        || origin === 'https://youtu.be'
+        || /^http:\/\/(?:localhost|127\.0\.0\.1)(?::\d+)?$/.test(origin);
+    }
+
+    function sendAetherAck(event, eventId, status, reason = '') {
+      window.parent.postMessage({
+        type: 'ISL_AETHER_ACK',
+        eventId,
+        status,
+        reason
+      }, event.origin);
+    }
+
+    function rememberAetherEvent(eventId, result) {
+      processedAetherEvents.set(eventId, result);
+      if (processedAetherEvents.size > 5000) {
+        processedAetherEvents.delete(processedAetherEvents.keys().next().value);
+      }
+    }
+
+    function acceptAetherSign(data, event, sendAck = true) {
+      if (data.command === 'PLAY_SIGN') signScheduler.cancel();
+      const result = signScheduler.enqueue(
+        data.signId,
+        data.eventId,
+        data.cueId ?? null,
+        data.jobId ?? null
+      );
+      const response = result.accepted
+        ? { status: 'accepted', reason: '' }
+        : { status: 'rejected', reason: result.reason };
+      rememberAetherEvent(data.eventId, response);
+      if (sendAck) sendAetherAck(event, data.eventId, response.status, response.reason);
+    }
+
+    function flushPendingAetherEvents() {
+      if (!signScheduler) return;
+      for (const [eventId, pending] of pendingAetherEvents) {
+        const { data, event } = pending;
+        const isCurrentCue = data.jobId === null || data.jobId === undefined
+          || (data.jobId === activeAetherCue.jobId && data.cueId === activeAetherCue.cueId);
+        pendingAetherEvents.delete(eventId);
+        if (isCurrentCue) acceptAetherSign(data, event);
+        else sendAetherAck(event, eventId, 'rejected', 'CUE_EXPIRED_BEFORE_ACCEPTANCE');
+      }
+    }
+
     window.addEventListener('message', (event) => {
       const data = event.data;
       if (!data || data.type !== 'ISL_AETHER_COMMAND') return;
-      if (!signScheduler) return;
+      if (event.source !== window.parent || !isTrustedParentOrigin(event.origin)
+        || data.parentOrigin !== event.origin) return;
+      trustedParentOrigin = event.origin;
+      const eventId = typeof data.eventId === 'string' ? data.eventId : '';
+      if (eventId && processedAetherEvents.has(eventId)) {
+        const previous = processedAetherEvents.get(eventId);
+        sendAetherAck(event, eventId, previous.status, previous.reason);
+        return;
+      }
 
       switch (data.command) {
         case 'PLAY_SIGN':
-          if (data.signId) {
-            signScheduler.cancel();
-            signScheduler.enqueue(data.signId);
+        case 'QUEUE_SIGN': {
+          if (!/^[a-z0-9_]{1,80}$/.test(data.signId || '') || !eventId || eventId.length > 256) {
+            if (eventId) sendAetherAck(event, eventId, 'rejected', 'INVALID_SIGN_COMMAND');
+            return;
           }
+          if (!signScheduler) {
+            if (!pendingAetherEvents.has(eventId)) {
+              if (pendingAetherEvents.size >= 256) {
+                const rejected = { status: 'rejected', reason: 'VIEWER_STARTUP_QUEUE_FULL' };
+                rememberAetherEvent(eventId, rejected);
+                sendAetherAck(event, eventId, rejected.status, rejected.reason);
+                return;
+              }
+              pendingAetherEvents.set(eventId, { data, event });
+            }
+            sendAetherAck(event, eventId, 'retry', 'SIGN_LIBRARY_NOT_READY');
+            return;
+          }
+          acceptAetherSign(data, event);
           break;
-        case 'QUEUE_SIGN':
-          if (data.signId) {
-            signScheduler.enqueue(data.signId);
+        }
+        case 'CUE_TRANSITION':
+          if ((data.jobId === null || typeof data.jobId === 'string')
+            && (data.cueId === null || typeof data.cueId === 'string')) {
+            activeAetherCue = { jobId: data.jobId, cueId: data.cueId };
+            for (const [pendingEventId, pending] of pendingAetherEvents) {
+              const { jobId, cueId } = pending.data;
+              if (jobId !== null && jobId !== undefined
+                && (jobId !== activeAetherCue.jobId || cueId !== activeAetherCue.cueId)) {
+                pendingAetherEvents.delete(pendingEventId);
+              }
+            }
+            if (signScheduler) signScheduler.advanceCue(data.jobId, data.cueId);
           }
           break;
         case 'PAUSE':
-          signScheduler.pause();
+          if (signScheduler) signScheduler.pause();
           break;
         case 'RESUME':
-          signScheduler.resume();
+          if (signScheduler) signScheduler.resume();
           break;
         case 'SET_PLAYBACK_RATE':
-          if (Number.isFinite(data.rate) && data.rate > 0) {
+          if (signScheduler && Number.isFinite(data.rate) && data.rate > 0 && data.rate <= 16) {
             signScheduler.player.playbackSpeed = Math.max(0.0625, Math.min(16, data.rate));
           }
           break;
         case 'RESET_AVATAR':
-          signScheduler.cancel();
+          if (signScheduler) signScheduler.cancel();
           break;
       }
     });

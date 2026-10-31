@@ -43,6 +43,7 @@ const bridge = new (self.ISLRuntimeBridge.RuntimeBridge)({
 const STORAGE_KEY = 'islYoutubeJobsV1';
 const MAX_STORED_JOBS = 30;
 const MAX_CUE_READY_RETRIES = 3;
+let storedJobsMutationTail = Promise.resolve();
 
 function broadcastYouTubeEvent(type, payload) {
   const message = self.ISLMessageContract.createMessage(type, payload || {});
@@ -84,6 +85,23 @@ function setStoredJobs(jobs) {
   });
 }
 
+function updateStoredJobs(mutator) {
+  const operation = storedJobsMutationTail.then(async () => {
+    const jobs = await getStoredJobs();
+    const result = await mutator(jobs);
+    await setStoredJobs(jobs);
+    return result;
+  });
+  storedJobsMutationTail = operation.then(() => undefined, () => undefined);
+  return operation;
+}
+
+function getConsistentStoredJobs() {
+  const operation = storedJobsMutationTail.then(() => getStoredJobs());
+  storedJobsMutationTail = operation.then(() => undefined, () => undefined);
+  return operation;
+}
+
 function getTab(tabId) {
   return new Promise((resolve, reject) => {
     chrome.tabs.get(tabId, tab => {
@@ -121,22 +139,24 @@ function videoIdFromPageUrl(url) {
 }
 
 async function saveYouTubeJob(jobId, videoId, tabId) {
-  const jobs = await getStoredJobs();
-  jobs[jobId] = {
-    jobId,
-    videoId,
-    tabId: Number.isInteger(tabId) ? tabId : null,
-    createdAt: Date.now(),
-    acknowledgedAt: null
-  };
-  const sorted = Object.values(jobs).sort((left, right) => right.createdAt - left.createdAt);
-  const retained = Object.fromEntries(sorted.slice(0, MAX_STORED_JOBS).map(job => [job.jobId, job]));
-  await setStoredJobs(retained);
-  return retained[jobId];
+  return updateStoredJobs(jobs => {
+    jobs[jobId] = {
+      jobId,
+      videoId,
+      tabId: Number.isInteger(tabId) ? tabId : null,
+      createdAt: Date.now(),
+      acknowledgedAt: null
+    };
+    const sorted = Object.values(jobs).sort((left, right) => right.createdAt - left.createdAt);
+    const retained = Object.fromEntries(sorted.slice(0, MAX_STORED_JOBS).map(job => [job.jobId, job]));
+    for (const existingJobId of Object.keys(jobs)) delete jobs[existingJobId];
+    Object.assign(jobs, retained);
+    return retained[jobId];
+  });
 }
 
 async function latestJobForVideo(videoId) {
-  const jobs = Object.values(await getStoredJobs())
+  const jobs = Object.values(await getConsistentStoredJobs())
     .filter(job => job.videoId === videoId)
     .sort((left, right) => right.createdAt - left.createdAt);
   return jobs[0] || null;
@@ -145,7 +165,7 @@ async function latestJobForVideo(videoId) {
 async function announceCueManifestReady(youtube, attempt = 0) {
   const { jobId, videoId, cueCount, cueManifestFingerprint } = youtube || {};
   if (!jobId || !videoId || !cueManifestFingerprint) return;
-  const jobs = await getStoredJobs();
+  const jobs = await getConsistentStoredJobs();
   const target = jobs[jobId];
   if (!target || target.videoId !== videoId || !Number.isInteger(target.tabId)) return;
   let tab;
@@ -178,7 +198,7 @@ async function handleCueManifestRequest(message, sender) {
   if (!Number.isInteger(tabId) || !pageVideoId || requestedVideoId !== pageVideoId) {
     throw new Error('Cue requests must come from the matching YouTube video tab.');
   }
-  const jobs = await getStoredJobs();
+  const jobs = await getConsistentStoredJobs();
   const record = message.payload?.job_id
     ? jobs[message.payload.job_id]
     : await latestJobForVideo(pageVideoId);
@@ -193,7 +213,7 @@ async function handleCueManifestRequest(message, sender) {
   if (!latestAfterRetrieval || latestAfterRetrieval.jobId !== record.jobId) {
     throw new Error('A newer translation job superseded these cues.');
   }
-  const currentJobs = await getStoredJobs();
+  const currentJobs = await getConsistentStoredJobs();
   const currentRecord = currentJobs[record.jobId];
   const latestFromSnapshot = Object.values(currentJobs)
     .filter(job => job.videoId === pageVideoId)
@@ -318,7 +338,7 @@ if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onMessage)
           if (!Number.isInteger(sender?.tab?.id) || !videoId || videoId !== acknowledgedVideoId) {
             throw new Error('Cue acknowledgement must come from the matching YouTube tab.');
           }
-          const jobs = await getStoredJobs();
+          const jobs = await getConsistentStoredJobs();
           const record = jobs[jobId];
           const latestFromSnapshot = Object.values(jobs)
             .filter(job => job.videoId === videoId)
@@ -330,17 +350,17 @@ if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onMessage)
           if (manifest.fingerprint !== fingerprint) {
             throw new Error('Cue acknowledgement fingerprint does not match the stored manifest.');
           }
-          const currentJobs = await getStoredJobs();
-          const currentRecord = currentJobs[jobId];
-          const currentLatest = Object.values(currentJobs)
-            .filter(job => job.videoId === videoId)
-            .sort((left, right) => right.createdAt - left.createdAt)[0];
-          if (!currentRecord || currentRecord.videoId !== videoId || currentLatest?.jobId !== jobId) {
-            throw new Error('Cue acknowledgement was superseded by a newer video job.');
-          }
-          currentRecord.acknowledgedAt = Date.now();
-          currentRecord.tabId = sender.tab.id;
-          await setStoredJobs(currentJobs);
+          await updateStoredJobs(currentJobs => {
+            const currentRecord = currentJobs[jobId];
+            const currentLatest = Object.values(currentJobs)
+              .filter(job => job.videoId === videoId)
+              .sort((left, right) => right.createdAt - left.createdAt)[0];
+            if (!currentRecord || currentRecord.videoId !== videoId || currentLatest?.jobId !== jobId) {
+              throw new Error('Cue acknowledgement was superseded by a newer video job.');
+            }
+            currentRecord.acknowledgedAt = Date.now();
+            currentRecord.tabId = sender.tab.id;
+          });
           sendResponse({ success: true, acknowledged: true });
         })().catch(error => sendResponse({ success: false, error: error.message }));
         return true;
@@ -352,13 +372,14 @@ if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onMessage)
             sendResponse({ success: false, error: 'Page-ready message does not match the sending YouTube tab.' });
             return;
           }
-          const jobs = await getStoredJobs();
-          const record = Object.values(jobs)
-            .filter(job => job.videoId === videoId)
-            .sort((left, right) => right.createdAt - left.createdAt)[0] || null;
+          const record = await updateStoredJobs(jobs => {
+            const latest = Object.values(jobs)
+              .filter(job => job.videoId === videoId)
+              .sort((left, right) => right.createdAt - left.createdAt)[0] || null;
+            if (latest) jobs[latest.jobId].tabId = sender.tab.id;
+            return latest;
+          });
           if (record) {
-            jobs[record.jobId].tabId = sender.tab.id;
-            await setStoredJobs(jobs);
             const youtubeState = bridge.getState().youtube;
             if (youtubeState?.jobId === record.jobId
               && youtubeState.state === 'READY'
