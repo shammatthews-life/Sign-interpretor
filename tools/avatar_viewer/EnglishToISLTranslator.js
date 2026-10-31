@@ -567,6 +567,8 @@ export class EnglishToISLTranslator extends TranslationBackend {
       excuse: { playable: true },
       negative: { playable: true },
       // Phase H27 Playable Signs (reaching 566 total signs)
+      ok: { playable: true }, usually: { playable: true }, throw: { playable: true }, better: { playable: true },
+
       gossip: { playable: true },
       honesty: { playable: true },
       integrity: { playable: true },
@@ -1470,6 +1472,92 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['tomorrow', 'TOMORROW'],
       ['tone', 'TONE'], ['tones', 'TONE'],
       ['warmup', 'WARMUP'], ['warmups', 'WARMUP'], ['warm-up', 'WARMUP'], ['warming up', 'WARMUP'],
+
+      // Phase H29 High-Leverage Vocabulary & Inflections
+
+      ['ok', 'OK'], ['okay', 'OK'],
+
+      ['usually', 'USUALLY'], ['usual', 'USUALLY'],
+
+      ['throw', 'THROW'], ['throws', 'THROW'], ['threw', 'THROW'], ['throwing', 'THROW'], ['thrown', 'THROW'],
+
+      ['better', 'BETTER'],
+
+      // Digits to Cardinal Numbers
+
+      ['10', 'TEN'], ['2', 'TWO'], ['6', 'SIX'], ['7', 'SEVEN'], ['1', 'ONE'],
+
+      // Expanded Morphology & Contractions
+
+      ['happens', 'HAPPEN'], ['happening', 'HAPPEN'], ['happened', 'HAPPEN'],
+
+      ['movies', 'MOVIE'],
+
+      ['playing', 'PLAY'],
+
+      ['bigger', 'BIG'],
+
+      ['fixed', 'FIX'],
+
+      ['realized', 'REALIZE'], ['realizes', 'REALIZE'], ['realizing', 'REALIZE'],
+
+      ['spices', 'SPICE'], ['spiced', 'SPICE'],
+
+      ['grows', 'GROW'], ['growing', 'GROW'], ['grew', 'GROW'],
+
+      ['singing', 'SING'], ['sings', 'SING'], ['sang', 'SING'], ['sung', 'SING'],
+
+      ['limiting', 'LIMIT'], ['limits', 'LIMIT'], ['limited', 'LIMIT'],
+
+      ['clients', 'CLIENT'],
+
+      ['substances', 'SUBSTANCE'],
+
+      ['covered', 'COVER'], ['covers', 'COVER'], ['covering', 'COVER'],
+
+      ['launching', 'LAUNCH'], ['launched', 'LAUNCH'], ['launches', 'LAUNCH'],
+
+      ['sitting', 'SIT'], ['sits', 'SIT'],
+
+      ['speakers', 'SPEAKER'],
+
+      ['kidding', 'KID'], ['kidded', 'KID'],
+
+      ['mentioned', 'MENTION'], ['mentions', 'MENTION'], ['mentioning', 'MENTION'],
+
+      ['allowed', 'ALLOW'], ['allows', 'ALLOW'], ['allowing', 'ALLOW'],
+
+      ['removing', 'REMOVE'], ['removes', 'REMOVE'], ['removed', 'REMOVE'],
+
+      ['booked', 'BOOK'], ['booking', 'BOOK'], ['books', 'BOOK'],
+
+      ['differently', 'DIFFERENT'],
+
+      ['perceived', 'PERCEIVE'], ['perceives', 'PERCEIVE'], ['perceiving', 'PERCEIVE'],
+
+      ['yours', 'YOUR'],
+
+      ['easier', 'EASY'], ['easiest', 'EASY'],
+
+      ['spent', 'SPEND'], ['spending', 'SPEND'], ['spends', 'SPEND'],
+
+      ['misunderstood', 'MISUNDERSTAND'], ['misunderstanding', 'MISUNDERSTAND'],
+
+      ['tilted', 'TILT'], ['tilting', 'TILT'], ['tilts', 'TILT'],
+
+      ['others', 'OTHER'],
+
+      ['decisions', 'DECISION'],
+
+      ['behaviors', 'BEHAVIOR'],
+
+      ['dryer', 'DRY'],
+
+      ['immediately', 'FAST'], ['obviously', 'CLEAR'],
+
+      // Contractions
+
+      ["won't", 'NOT'], ["they've", 'HAVE'], ["i'd", 'I'], ["here's", 'POINT'], ["whenever", 'WHEN'],
     ]);
   }
 

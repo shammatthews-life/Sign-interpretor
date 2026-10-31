@@ -1,0 +1,1562 @@
+{
+  "phase": "H29",
+  "total_sentences": 60,
+  "passed_sentences": 60,
+  "pass_rate_pct": 100,
+  "results": [
+    {
+      "test_id": "BENCH_0001",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "I drink water",
+      "actual_glosses": [
+        "I",
+        "WATER",
+        "DRINK"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "water",
+        "drink"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 3.384,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0002",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "People want help",
+      "actual_glosses": [
+        "PEOPLE",
+        "WANT",
+        "HELP"
+      ],
+      "playable_sign_ids": [
+        "people",
+        "want",
+        "help"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.48,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0003",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "Good morning my friend",
+      "actual_glosses": [
+        "GOOD",
+        "MORNING",
+        "MY",
+        "FRIEND"
+      ],
+      "playable_sign_ids": [
+        "good",
+        "morning",
+        "my",
+        "friend"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 2.301,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0004",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "We see a new video",
+      "actual_glosses": [
+        "WE",
+        "SEE",
+        "NEW",
+        "VIDEO"
+      ],
+      "playable_sign_ids": [
+        "we",
+        "see",
+        "new",
+        "video"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.551,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0005",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "You have a question",
+      "actual_glosses": [
+        "YOU",
+        "HAVE",
+        "QUESTION"
+      ],
+      "playable_sign_ids": [
+        "you",
+        "have",
+        "question"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.197,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0006",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "What do you want?",
+      "actual_glosses": [
+        "YOU",
+        "WHAT",
+        "WANT"
+      ],
+      "playable_sign_ids": [
+        "you",
+        "what",
+        "want"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [
+        "WH_QUESTION"
+      ],
+      "elapsed_ms": 0.284,
+      "quality_score": 70,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0007",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "How do you know?",
+      "actual_glosses": [
+        "HOW",
+        "DO",
+        "YOU",
+        "KNOW"
+      ],
+      "playable_sign_ids": [
+        "how",
+        "do",
+        "you",
+        "know"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [
+        "WH_QUESTION"
+      ],
+      "elapsed_ms": 0.174,
+      "quality_score": 70,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0008",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "Do you need help?",
+      "actual_glosses": [
+        "YOU",
+        "NEED",
+        "HELP"
+      ],
+      "playable_sign_ids": [
+        "you",
+        "need",
+        "help"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "do",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [
+        "YES_NO_QUESTION"
+      ],
+      "elapsed_ms": 0.212,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0009",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "When will you come?",
+      "actual_glosses": [
+        "WHEN",
+        "YOU",
+        "COME"
+      ],
+      "playable_sign_ids": [
+        "when",
+        "you",
+        "come"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [
+        "WH_QUESTION"
+      ],
+      "elapsed_ms": 0.28,
+      "quality_score": 70,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0010",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "Who is the teacher?",
+      "actual_glosses": [
+        "TEACHER"
+      ],
+      "playable_sign_ids": [
+        "teacher"
+      ],
+      "fallback_terms": [
+        "WHO"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [
+        "YES_NO_QUESTION"
+      ],
+      "elapsed_ms": 0.226,
+      "quality_score": 70,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0011",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "I do not want water",
+      "actual_glosses": [
+        "I",
+        "NOT",
+        "WANT",
+        "WATER"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "not",
+        "want",
+        "water"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "do",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [
+        "NEGATION"
+      ],
+      "elapsed_ms": 0.217,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0012",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "We do not understand",
+      "actual_glosses": [
+        "WE",
+        "DO",
+        "NOT",
+        "UNDERSTAND"
+      ],
+      "playable_sign_ids": [
+        "we",
+        "do",
+        "not",
+        "understand"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [
+        "NEGATION"
+      ],
+      "elapsed_ms": 0.234,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0013",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "You cannot go",
+      "actual_glosses": [
+        "YOU",
+        "CANNOT",
+        "GO"
+      ],
+      "playable_sign_ids": [
+        "you",
+        "cannot",
+        "go"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.165,
+      "quality_score": 70,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0014",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "There is no problem",
+      "actual_glosses": [
+        "NO",
+        "PROBLEM"
+      ],
+      "playable_sign_ids": [
+        "no",
+        "problem"
+      ],
+      "fallback_terms": [
+        "THERE"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.225,
+      "quality_score": 70,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0015",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "He did not say anything",
+      "actual_glosses": [
+        "NOT",
+        "SAY",
+        "ANYTHING"
+      ],
+      "playable_sign_ids": [
+        "not",
+        "say",
+        "anything"
+      ],
+      "fallback_terms": [
+        "HE"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "did",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [
+        "NEGATION"
+      ],
+      "elapsed_ms": 0.241,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0016",
+      "category": "Multi-Clause Sentences",
+      "english_sentence": "If you want to learn you must listen",
+      "actual_glosses": [
+        "YOU",
+        "WANT",
+        "LEARN",
+        "YOU"
+      ],
+      "playable_sign_ids": [
+        "you",
+        "want",
+        "learn",
+        "you"
+      ],
+      "fallback_terms": [
+        "IF",
+        "MUST",
+        "LISTEN"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.833,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0017",
+      "category": "Multi-Clause Sentences",
+      "english_sentence": "When people talk others listen",
+      "actual_glosses": [
+        "WHEN",
+        "PEOPLE",
+        "SAY",
+        "OTHER"
+      ],
+      "playable_sign_ids": [
+        "when",
+        "people",
+        "say",
+        "other"
+      ],
+      "fallback_terms": [
+        "LISTEN"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [
+        "WH_QUESTION"
+      ],
+      "elapsed_ms": 0.437,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0018",
+      "category": "Multi-Clause Sentences",
+      "english_sentence": "I think that this idea is good",
+      "actual_glosses": [
+        "I",
+        "THINK",
+        "IDEA",
+        "GOOD"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "think",
+        "idea",
+        "good"
+      ],
+      "fallback_terms": [
+        "THAT",
+        "THIS"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.61,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0019",
+      "category": "Pronoun Variations & Spatial Agreement",
+      "english_sentence": "I give you my book",
+      "actual_glosses": [
+        "I",
+        "GIVE",
+        "YOU",
+        "MY",
+        "BOOK"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "give",
+        "you",
+        "my",
+        "book"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.409,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0020",
+      "category": "Pronoun Variations & Spatial Agreement",
+      "english_sentence": "They ask us for help",
+      "actual_glosses": [
+        "THEY",
+        "ASK",
+        "WE",
+        "HELP"
+      ],
+      "playable_sign_ids": [
+        "they",
+        "ask",
+        "we",
+        "help"
+      ],
+      "fallback_terms": [
+        "FOR"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.253,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0021",
+      "category": "Pronoun Variations & Spatial Agreement",
+      "english_sentence": "Your ideas inspire our team",
+      "actual_glosses": [
+        "YOUR",
+        "IDEA",
+        "WE",
+        "TEAM"
+      ],
+      "playable_sign_ids": [
+        "your",
+        "idea",
+        "we",
+        "team"
+      ],
+      "fallback_terms": [
+        "INSPIRE"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.184,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0022",
+      "category": "Possessives",
+      "english_sentence": "My name is Julian",
+      "actual_glosses": [
+        "MY",
+        "NAME"
+      ],
+      "playable_sign_ids": [
+        "my",
+        "name"
+      ],
+      "fallback_terms": [
+        "JULIAN"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.156,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0023",
+      "category": "Possessives",
+      "english_sentence": "Your presentation was great",
+      "actual_glosses": [
+        "YOUR",
+        "PRESENTATION",
+        "GREAT"
+      ],
+      "playable_sign_ids": [
+        "your",
+        "presentation",
+        "great"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "was",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.442,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0024",
+      "category": "Possessives",
+      "english_sentence": "Our school has good rules",
+      "actual_glosses": [
+        "WE",
+        "SCHOOL",
+        "HAVE",
+        "GOOD",
+        "RULE"
+      ],
+      "playable_sign_ids": [
+        "we",
+        "school",
+        "have",
+        "good",
+        "rule"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.151,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0025",
+      "category": "Future & Past References",
+      "english_sentence": "Tomorrow we will meet",
+      "actual_glosses": [
+        "TOMORROW",
+        "WE",
+        "MEET"
+      ],
+      "playable_sign_ids": [
+        "tomorrow",
+        "we",
+        "meet"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.147,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0026",
+      "category": "Future & Past References",
+      "english_sentence": "Yesterday I worked hard",
+      "actual_glosses": [
+        "TIME",
+        "I",
+        "WORK",
+        "HARD"
+      ],
+      "playable_sign_ids": [
+        "time",
+        "i",
+        "work",
+        "hard"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.123,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0027",
+      "category": "Future & Past References",
+      "english_sentence": "Later they will show the chart",
+      "actual_glosses": [
+        "LATER",
+        "THEY",
+        "SHOW",
+        "CHART"
+      ],
+      "playable_sign_ids": [
+        "later",
+        "they",
+        "show",
+        "chart"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.177,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0028",
+      "category": "Idioms & High-Frequency Collocations",
+      "english_sentence": "Over and over again we practice",
+      "actual_glosses": [
+        "MORE",
+        "WE",
+        "PRACTICE"
+      ],
+      "playable_sign_ids": [
+        "more",
+        "we",
+        "practice"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.231,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0029",
+      "category": "Idioms & High-Frequency Collocations",
+      "english_sentence": "I am going to give you advice",
+      "actual_glosses": [
+        "I",
+        "WILL",
+        "GIVE",
+        "YOU"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "will",
+        "give",
+        "you"
+      ],
+      "fallback_terms": [
+        "ADVICE"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "am",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.265,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0030",
+      "category": "Idioms & High-Frequency Collocations",
+      "english_sentence": "In order to win we work together",
+      "actual_glosses": [
+        "REASON",
+        "WIN",
+        "WE",
+        "WORK"
+      ],
+      "playable_sign_ids": [
+        "reason",
+        "win",
+        "we",
+        "work"
+      ],
+      "fallback_terms": [
+        "TOGETHER"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.51,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0031",
+      "category": "Idioms & High-Frequency Collocations",
+      "english_sentence": "Public speaking requires confidence",
+      "actual_glosses": [
+        "SAY",
+        "PEOPLE",
+        "CONFIDENT"
+      ],
+      "playable_sign_ids": [
+        "say",
+        "people",
+        "confident"
+      ],
+      "fallback_terms": [
+        "REQUIRES"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.289,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0032",
+      "category": "Technical Terms & Fingerspelling",
+      "english_sentence": "TED talks inspire the world",
+      "actual_glosses": [
+        "SAY",
+        "WORLD"
+      ],
+      "playable_sign_ids": [
+        "say",
+        "world"
+      ],
+      "fallback_terms": [
+        "TED",
+        "INSPIRE"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.19,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0033",
+      "category": "Technical Terms & Fingerspelling",
+      "english_sentence": "His name is Julian",
+      "actual_glosses": [
+        "NAME"
+      ],
+      "playable_sign_ids": [
+        "name"
+      ],
+      "fallback_terms": [
+        "HIS",
+        "JULIAN"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.192,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0034",
+      "category": "Technical Terms & Fingerspelling",
+      "english_sentence": "Download the video to your phone",
+      "actual_glosses": [
+        "VIDEO",
+        "YOUR",
+        "PHONE"
+      ],
+      "playable_sign_ids": [
+        "video",
+        "your",
+        "phone"
+      ],
+      "fallback_terms": [
+        "DOWNLOAD"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "to",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.456,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0035",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "Turn to your right side",
+      "actual_glosses": [
+        "TURN",
+        "YOUR",
+        "SIDE"
+      ],
+      "playable_sign_ids": [
+        "turn",
+        "your",
+        "side"
+      ],
+      "fallback_terms": [
+        "RIGHT"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "to",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.22,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0036",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "That answer is right and true",
+      "actual_glosses": [
+        "ANSWER",
+        "TRUE"
+      ],
+      "playable_sign_ids": [
+        "answer",
+        "true"
+      ],
+      "fallback_terms": [
+        "THAT",
+        "RIGHT",
+        "AND"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.274,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0037",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "I like this very much",
+      "actual_glosses": [
+        "I",
+        "LIKE"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "like"
+      ],
+      "fallback_terms": [
+        "THIS",
+        "VERY",
+        "MUCH"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.198,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0038",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "People are like trees",
+      "actual_glosses": [
+        "PEOPLE",
+        "LIKE",
+        "TREE"
+      ],
+      "playable_sign_ids": [
+        "people",
+        "like",
+        "tree"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "are",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.182,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0039",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "The room has bright light",
+      "actual_glosses": [
+        "ROOM",
+        "HAVE",
+        "LIGHT"
+      ],
+      "playable_sign_ids": [
+        "room",
+        "have",
+        "light"
+      ],
+      "fallback_terms": [
+        "BRIGHT"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.225,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0040",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "This bag is very light",
+      "actual_glosses": [
+        "LIGHT"
+      ],
+      "playable_sign_ids": [
+        "light"
+      ],
+      "fallback_terms": [
+        "THIS",
+        "BAG",
+        "VERY"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.204,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0041",
+      "category": "Unavailable Concepts & Honest Subtitle Fallbacks",
+      "english_sentence": "Neurobiology explains human dopamine",
+      "actual_glosses": [
+        "EXPLAIN",
+        "HUMAN"
+      ],
+      "playable_sign_ids": [
+        "explain",
+        "human"
+      ],
+      "fallback_terms": [
+        "NEUROBIOLOGY",
+        "DOPAMINE"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.213,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0042",
+      "category": "Unavailable Concepts & Honest Subtitle Fallbacks",
+      "english_sentence": "The hyperbole of the politician",
+      "actual_glosses": [],
+      "playable_sign_ids": [],
+      "fallback_terms": [
+        "HYPERBOLE",
+        "POLITICIAN"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.207,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0043",
+      "category": "Phase H29 New Lexical Assets",
+      "english_sentence": "Everything is ok now",
+      "actual_glosses": [
+        "EVERYTHING",
+        "OK",
+        "NOW"
+      ],
+      "playable_sign_ids": [
+        "everything",
+        "ok",
+        "now"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.181,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0044",
+      "category": "Phase H29 New Lexical Assets",
+      "english_sentence": "He usually comes here",
+      "actual_glosses": [
+        "USUALLY",
+        "COME"
+      ],
+      "playable_sign_ids": [
+        "usually",
+        "come"
+      ],
+      "fallback_terms": [
+        "HE",
+        "HERE"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.184,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0045",
+      "category": "Phase H29 New Lexical Assets",
+      "english_sentence": "Please throw the ball",
+      "actual_glosses": [
+        "THROW"
+      ],
+      "playable_sign_ids": [
+        "throw"
+      ],
+      "fallback_terms": [
+        "PLEASE",
+        "BALL"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.408,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0046",
+      "category": "Phase H29 New Lexical Assets",
+      "english_sentence": "This work is better",
+      "actual_glosses": [
+        "WORK",
+        "BETTER"
+      ],
+      "playable_sign_ids": [
+        "work",
+        "better"
+      ],
+      "fallback_terms": [
+        "THIS"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.188,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0047",
+      "category": "Phase H29 Contraction & Negation",
+      "english_sentence": "I won't accept this",
+      "actual_glosses": [
+        "I",
+        "NOT"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "not"
+      ],
+      "fallback_terms": [
+        "ACCEPT",
+        "THIS"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [
+        "NEGATION"
+      ],
+      "elapsed_ms": 0.137,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0048",
+      "category": "Phase H29 Contraction & Negation",
+      "english_sentence": "They've finished the game",
+      "actual_glosses": [
+        "HAVE",
+        "FINISH",
+        "GAME"
+      ],
+      "playable_sign_ids": [
+        "have",
+        "finish",
+        "game"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.121,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0049",
+      "category": "Phase H29 Contraction & Negation",
+      "english_sentence": "I'd like more water",
+      "actual_glosses": [
+        "I",
+        "LIKE",
+        "MORE",
+        "WATER"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "like",
+        "more",
+        "water"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.111,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0050",
+      "category": "Deictic & Spatial Demonstration",
+      "english_sentence": "Here's the result",
+      "actual_glosses": [
+        "POINT",
+        "RESULT"
+      ],
+      "playable_sign_ids": [
+        "point",
+        "result"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.09,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0051",
+      "category": "Temporal & Subordinate Adverbials",
+      "english_sentence": "Call me whenever you want",
+      "actual_glosses": [
+        "CALL",
+        "ME",
+        "WHEN",
+        "YOU",
+        "WANT"
+      ],
+      "playable_sign_ids": [
+        "call",
+        "me",
+        "when",
+        "you",
+        "want"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.136,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0052",
+      "category": "Number & Quantity Expressions",
+      "english_sentence": "We have 10 people here",
+      "actual_glosses": [
+        "WE",
+        "HAVE",
+        "TEN",
+        "PEOPLE"
+      ],
+      "playable_sign_ids": [
+        "we",
+        "have",
+        "ten",
+        "people"
+      ],
+      "fallback_terms": [
+        "HERE"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.135,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0053",
+      "category": "Number & Quantity Expressions",
+      "english_sentence": "Give me 2 books",
+      "actual_glosses": [
+        "GIVE",
+        "ME",
+        "TWO",
+        "BOOK"
+      ],
+      "playable_sign_ids": [
+        "give",
+        "me",
+        "two",
+        "book"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.107,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0054",
+      "category": "Colloquial YouTube Presentation",
+      "english_sentence": "I'm going to show you a new trick",
+      "actual_glosses": [
+        "I",
+        "WILL",
+        "SHOW",
+        "YOU",
+        "NEW"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "will",
+        "show",
+        "you",
+        "new"
+      ],
+      "fallback_terms": [
+        "TRICK"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.307,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0055",
+      "category": "Colloquial YouTube Presentation",
+      "english_sentence": "Look at that screen",
+      "actual_glosses": [
+        "LOOK",
+        "SCREEN"
+      ],
+      "playable_sign_ids": [
+        "look",
+        "screen"
+      ],
+      "fallback_terms": [
+        "THAT"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.167,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0056",
+      "category": "Complex Coordinated Structures",
+      "english_sentence": "He likes reading as well as writing",
+      "actual_glosses": [
+        "LIKE",
+        "READ",
+        "MORE",
+        "WRITE"
+      ],
+      "playable_sign_ids": [
+        "like",
+        "read",
+        "more",
+        "write"
+      ],
+      "fallback_terms": [
+        "HE"
+      ],
+      "grammar_omissions": [],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.479,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0057",
+      "category": "Regular Inflectional Normalization",
+      "english_sentence": "What happens next",
+      "actual_glosses": [
+        "WHAT",
+        "HAPPEN",
+        "NEXT"
+      ],
+      "playable_sign_ids": [
+        "what",
+        "happen",
+        "next"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [],
+      "non_manual_markers": [
+        "WH_QUESTION"
+      ],
+      "elapsed_ms": 0.181,
+      "quality_score": 70,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0058",
+      "category": "Regular Inflectional Normalization",
+      "english_sentence": "Children are playing with movies",
+      "actual_glosses": [
+        "PLAY",
+        "MOVIE"
+      ],
+      "playable_sign_ids": [
+        "play",
+        "movie"
+      ],
+      "fallback_terms": [
+        "CHILDREN",
+        "WITH"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "are",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.186,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0059",
+      "category": "Negative Interrogative Sentences",
+      "english_sentence": "Don't you understand the question",
+      "actual_glosses": [
+        "NOT",
+        "YOU",
+        "UNDERSTAND",
+        "QUESTION"
+      ],
+      "playable_sign_ids": [
+        "not",
+        "you",
+        "understand",
+        "question"
+      ],
+      "fallback_terms": [],
+      "grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [
+        "NEGATION"
+      ],
+      "elapsed_ms": 0.386,
+      "quality_score": 100,
+      "passed": true
+    },
+    {
+      "test_id": "BENCH_0060",
+      "category": "Multi-Modal Spatial Directionality",
+      "english_sentence": "I will teach you Indian Sign Language",
+      "actual_glosses": [
+        "I",
+        "TEACH",
+        "YOU",
+        "GESTURE"
+      ],
+      "playable_sign_ids": [
+        "i",
+        "teach",
+        "you",
+        "gesture"
+      ],
+      "fallback_terms": [
+        "INDIAN",
+        "SIGN"
+      ],
+      "grammar_omissions": [
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "non_manual_markers": [],
+      "elapsed_ms": 0.382,
+      "quality_score": 100,
+      "passed": true
+    }
+  ]
+}

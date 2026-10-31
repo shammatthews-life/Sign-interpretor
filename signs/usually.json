@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "usually",
+  "metadata": {
+    "display_name": "Usually",
+    "gloss": "USUALLY",
+    "language": "ISL",
+    "lexical_type": "Habitual aspect adverb",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "entry_id": "ISLRTC #U-012",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Handshape: Open flat 5-hand palm facing down making horizontal circular motion in front of chest."
+  },
+  "motion": {
+    "duration_ms": 1300,
+    "two_handed": false,
+    "dominant_hand": "right",
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral Rest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 585,
+        "label": "Peak Stroke",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.1,
+            "y": -0.2,
+            "z": -0.4
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.0,
+            "y": -0.4,
+            "z": -0.55
+          },
+          "Bip001_R_Hand": {
+            "x": -0.05,
+            "y": 0.25,
+            "z": -0.1
+          }
+        },
+        "finger_curls": {
+          "thumb": 10,
+          "index": 10,
+          "middle": 10,
+          "ring": 10,
+          "pinky": 10
+        }
+      },
+      {
+        "time_ms": 1300,
+        "label": "Return to Neutral Rest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

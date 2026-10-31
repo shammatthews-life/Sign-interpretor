@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "better",
+  "metadata": {
+    "display_name": "Better",
+    "gloss": "BETTER",
+    "language": "ISL",
+    "lexical_type": "Comparative adjective",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "entry_id": "ISLRTC #B-035",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Handshape: Dominant thumbs-up hand brushing upward across side of chin and ascending."
+  },
+  "motion": {
+    "duration_ms": 1200,
+    "two_handed": false,
+    "dominant_hand": "right",
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral Rest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 540,
+        "label": "Peak Stroke",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.18,
+            "y": -0.22,
+            "z": -0.5
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.08,
+            "y": -0.45,
+            "z": -0.6
+          },
+          "Bip001_R_Hand": {
+            "x": 0.12,
+            "y": 0.18,
+            "z": -0.08
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 45,
+          "middle": 45,
+          "ring": 45,
+          "pinky": 45
+        }
+      },
+      {
+        "time_ms": 1200,
+        "label": "Return to Neutral Rest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,761 @@
+{
+  "metadata": {
+    "title": "Phase H29 Multi-Domain Translation Quality Benchmark",
+    "phase": "H29",
+    "total_benchmark_sentences": 60,
+    "categories_covered": 15,
+    "timestamp": "2026-10-31T04:33:13.312Z"
+  },
+  "sentences": [
+    {
+      "test_id": "BENCH_0001",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "I drink water",
+      "expected_gloss_sequence": [
+        "I",
+        "WATER",
+        "DRINK"
+      ],
+      "sentence_type": "SOV_DECLARATIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0002",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "People want help",
+      "expected_gloss_sequence": [
+        "PEOPLE",
+        "HELP",
+        "WANT"
+      ],
+      "sentence_type": "SOV_DECLARATIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0003",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "Good morning my friend",
+      "expected_gloss_sequence": [
+        "GOOD",
+        "MORNING",
+        "MY",
+        "FRIEND"
+      ],
+      "sentence_type": "DECLARATIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0004",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "We see a new video",
+      "expected_gloss_sequence": [
+        "WE",
+        "NEW",
+        "VIDEO",
+        "SEE"
+      ],
+      "sentence_type": "SOV_DECLARATIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0005",
+      "category": "Simple Declarative Sentences",
+      "english_sentence": "You have a question",
+      "expected_gloss_sequence": [
+        "YOU",
+        "QUESTION",
+        "HAVE"
+      ],
+      "sentence_type": "SOV_DECLARATIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0006",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "What do you want?",
+      "expected_gloss_sequence": [
+        "YOU",
+        "WANT",
+        "WHAT"
+      ],
+      "sentence_type": "WH_FINAL_QUESTION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0007",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "How do you know?",
+      "expected_gloss_sequence": [
+        "YOU",
+        "KNOW",
+        "HOW"
+      ],
+      "sentence_type": "WH_FINAL_QUESTION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0008",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "Do you need help?",
+      "expected_gloss_sequence": [
+        "YOU",
+        "HELP",
+        "NEED"
+      ],
+      "sentence_type": "POLAR_QUESTION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0009",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "When will you come?",
+      "expected_gloss_sequence": [
+        "YOU",
+        "COME",
+        "WILL",
+        "WHEN"
+      ],
+      "sentence_type": "WH_FINAL_QUESTION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0010",
+      "category": "Questions (WH-Final & Polar)",
+      "english_sentence": "Who is the teacher?",
+      "expected_gloss_sequence": [
+        "TEACHER",
+        "WHO"
+      ],
+      "sentence_type": "WH_FINAL_QUESTION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0011",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "I do not want water",
+      "expected_gloss_sequence": [
+        "I",
+        "WATER",
+        "WANT",
+        "NOT"
+      ],
+      "sentence_type": "NEGATION_FINAL",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0012",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "We do not understand",
+      "expected_gloss_sequence": [
+        "WE",
+        "UNDERSTAND",
+        "NOT"
+      ],
+      "sentence_type": "NEGATION_FINAL",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0013",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "You cannot go",
+      "expected_gloss_sequence": [
+        "YOU",
+        "GO",
+        "CAN",
+        "NOT"
+      ],
+      "sentence_type": "MODAL_NEGATION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0014",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "There is no problem",
+      "expected_gloss_sequence": [
+        "PROBLEM",
+        "NO"
+      ],
+      "sentence_type": "NEGATION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0015",
+      "category": "Negation (Headshake & NOT-Final)",
+      "english_sentence": "He did not say anything",
+      "expected_gloss_sequence": [
+        "HE",
+        "SAY",
+        "NOT"
+      ],
+      "sentence_type": "NEGATION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0016",
+      "category": "Multi-Clause Sentences",
+      "english_sentence": "If you want to learn you must listen",
+      "expected_gloss_sequence": [
+        "YOU",
+        "LEARN",
+        "WANT",
+        "YOU",
+        "SAY",
+        "NEED"
+      ],
+      "sentence_type": "CONDITIONAL_CLAUSE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0017",
+      "category": "Multi-Clause Sentences",
+      "english_sentence": "When people talk others listen",
+      "expected_gloss_sequence": [
+        "PEOPLE",
+        "TALK",
+        "OTHER",
+        "LISTEN"
+      ],
+      "sentence_type": "TEMPORAL_CLAUSE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0018",
+      "category": "Multi-Clause Sentences",
+      "english_sentence": "I think that this idea is good",
+      "expected_gloss_sequence": [
+        "I",
+        "THINK",
+        "IDEA",
+        "GOOD"
+      ],
+      "sentence_type": "COMPLEMENT_CLAUSE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0019",
+      "category": "Pronoun Variations & Spatial Agreement",
+      "english_sentence": "I give you my book",
+      "expected_gloss_sequence": [
+        "I",
+        "YOU",
+        "MY",
+        "BOOK",
+        "GIVE"
+      ],
+      "sentence_type": "DIRECTIONAL_PRONOUN",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0020",
+      "category": "Pronoun Variations & Spatial Agreement",
+      "english_sentence": "They ask us for help",
+      "expected_gloss_sequence": [
+        "THEY",
+        "WE",
+        "HELP",
+        "ASK"
+      ],
+      "sentence_type": "SPATIAL_PRONOUN",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0021",
+      "category": "Pronoun Variations & Spatial Agreement",
+      "english_sentence": "Your ideas inspire our team",
+      "expected_gloss_sequence": [
+        "YOUR",
+        "IDEA",
+        "OUR",
+        "TEAM"
+      ],
+      "sentence_type": "POSSESSIVE_PRONOUN",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0022",
+      "category": "Possessives",
+      "english_sentence": "My name is Julian",
+      "expected_gloss_sequence": [
+        "MY",
+        "NAME",
+        "JULIAN"
+      ],
+      "sentence_type": "POSSESSIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0023",
+      "category": "Possessives",
+      "english_sentence": "Your presentation was great",
+      "expected_gloss_sequence": [
+        "YOUR",
+        "PRESENTATION",
+        "GREAT"
+      ],
+      "sentence_type": "POSSESSIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0024",
+      "category": "Possessives",
+      "english_sentence": "Our school has good rules",
+      "expected_gloss_sequence": [
+        "WE",
+        "SCHOOL",
+        "GOOD",
+        "RULE",
+        "HAVE"
+      ],
+      "sentence_type": "POSSESSIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0025",
+      "category": "Future & Past References",
+      "english_sentence": "Tomorrow we will meet",
+      "expected_gloss_sequence": [
+        "TOMORROW",
+        "WE",
+        "MEET",
+        "WILL"
+      ],
+      "sentence_type": "TEMPORAL_FUTURE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0026",
+      "category": "Future & Past References",
+      "english_sentence": "Yesterday I worked hard",
+      "expected_gloss_sequence": [
+        "TIME",
+        "I",
+        "WORK",
+        "HARD"
+      ],
+      "sentence_type": "TEMPORAL_PAST",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0027",
+      "category": "Future & Past References",
+      "english_sentence": "Later they will show the chart",
+      "expected_gloss_sequence": [
+        "LATER",
+        "THEY",
+        "CHART",
+        "SHOW",
+        "WILL"
+      ],
+      "sentence_type": "TEMPORAL_FUTURE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0028",
+      "category": "Idioms & High-Frequency Collocations",
+      "english_sentence": "Over and over again we practice",
+      "expected_gloss_sequence": [
+        "MORE",
+        "WE",
+        "PRACTICE"
+      ],
+      "sentence_type": "IDIOM",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0029",
+      "category": "Idioms & High-Frequency Collocations",
+      "english_sentence": "I am going to give you advice",
+      "expected_gloss_sequence": [
+        "I",
+        "WILL",
+        "GIVE",
+        "YOU"
+      ],
+      "sentence_type": "PHRASE_IDIOM",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0030",
+      "category": "Idioms & High-Frequency Collocations",
+      "english_sentence": "In order to win we work together",
+      "expected_gloss_sequence": [
+        "REASON",
+        "WIN",
+        "WE",
+        "WORK"
+      ],
+      "sentence_type": "CONJUNCTION_IDIOM",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0031",
+      "category": "Idioms & High-Frequency Collocations",
+      "english_sentence": "Public speaking requires confidence",
+      "expected_gloss_sequence": [
+        "SAY",
+        "PEOPLE",
+        "CONFIDENT",
+        "NEED"
+      ],
+      "sentence_type": "COLLOCATION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0032",
+      "category": "Technical Terms & Fingerspelling",
+      "english_sentence": "TED talks inspire the world",
+      "expected_gloss_sequence": [
+        "TED",
+        "TALK",
+        "WORLD"
+      ],
+      "sentence_type": "PROPER_NOUN",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0033",
+      "category": "Technical Terms & Fingerspelling",
+      "english_sentence": "His name is Julian",
+      "expected_gloss_sequence": [
+        "HE",
+        "NAME",
+        "JULIAN"
+      ],
+      "sentence_type": "PROPER_NOUN",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0034",
+      "category": "Technical Terms & Fingerspelling",
+      "english_sentence": "Download the video to your phone",
+      "expected_gloss_sequence": [
+        "VIDEO",
+        "YOUR",
+        "PHONE"
+      ],
+      "sentence_type": "TECHNICAL",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0035",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "Turn to your right side",
+      "expected_gloss_sequence": [
+        "YOUR",
+        "RIGHT",
+        "SIDE",
+        "TURN"
+      ],
+      "sentence_type": "POLYSEMY_DIRECTION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0036",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "That answer is right and true",
+      "expected_gloss_sequence": [
+        "ANSWER",
+        "RIGHT",
+        "TRUE"
+      ],
+      "sentence_type": "POLYSEMY_CORRECT",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0037",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "I like this very much",
+      "expected_gloss_sequence": [
+        "I",
+        "LIKE",
+        "MORE"
+      ],
+      "sentence_type": "POLYSEMY_PREFERENCE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0038",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "People are like trees",
+      "expected_gloss_sequence": [
+        "PEOPLE",
+        "LIKE",
+        "TREE"
+      ],
+      "sentence_type": "POLYSEMY_COMPARATIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0039",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "The room has bright light",
+      "expected_gloss_sequence": [
+        "ROOM",
+        "LIGHT"
+      ],
+      "sentence_type": "POLYSEMY_ILLUMINATION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0040",
+      "category": "Contextual Ambiguity & Polysemy",
+      "english_sentence": "This bag is very light",
+      "expected_gloss_sequence": [
+        "LIGHT"
+      ],
+      "sentence_type": "POLYSEMY_WEIGHT",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0041",
+      "category": "Unavailable Concepts & Honest Subtitle Fallbacks",
+      "english_sentence": "Neurobiology explains human dopamine",
+      "expected_gloss_sequence": [
+        "HUMAN",
+        "DOPAMINE"
+      ],
+      "sentence_type": "HONEST_FALLBACK",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0042",
+      "category": "Unavailable Concepts & Honest Subtitle Fallbacks",
+      "english_sentence": "The hyperbole of the politician",
+      "expected_gloss_sequence": [],
+      "sentence_type": "HONEST_FALLBACK",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0043",
+      "category": "Phase H29 New Lexical Assets",
+      "english_sentence": "Everything is ok now",
+      "expected_gloss_sequence": [
+        "EVERYTHING",
+        "OK",
+        "NOW"
+      ],
+      "sentence_type": "DECLARATIVE_ADVERBIAL",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0044",
+      "category": "Phase H29 New Lexical Assets",
+      "english_sentence": "He usually comes here",
+      "expected_gloss_sequence": [
+        "HE",
+        "USUALLY",
+        "COME",
+        "POINT"
+      ],
+      "sentence_type": "HABITUAL_ASPECT",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0045",
+      "category": "Phase H29 New Lexical Assets",
+      "english_sentence": "Please throw the ball",
+      "expected_gloss_sequence": [
+        "PLEASE",
+        "BALL",
+        "THROW"
+      ],
+      "sentence_type": "IMPERATIVE_SOV",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0046",
+      "category": "Phase H29 New Lexical Assets",
+      "english_sentence": "This work is better",
+      "expected_gloss_sequence": [
+        "THIS",
+        "WORK",
+        "BETTER"
+      ],
+      "sentence_type": "COMPARATIVE_PREDICATE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0047",
+      "category": "Phase H29 Contraction & Negation",
+      "english_sentence": "I won't accept this",
+      "expected_gloss_sequence": [
+        "I",
+        "THIS",
+        "ACCEPT",
+        "NOT"
+      ],
+      "sentence_type": "NEGATED_FUTURE_MODAL",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0048",
+      "category": "Phase H29 Contraction & Negation",
+      "english_sentence": "They've finished the game",
+      "expected_gloss_sequence": [
+        "THEY",
+        "HAVE",
+        "GAME",
+        "FINISH"
+      ],
+      "sentence_type": "PERFECTIVE_ASPECT",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0049",
+      "category": "Phase H29 Contraction & Negation",
+      "english_sentence": "I'd like more water",
+      "expected_gloss_sequence": [
+        "I",
+        "MORE",
+        "WATER",
+        "LIKE"
+      ],
+      "sentence_type": "CONDITIONAL_MODAL",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0050",
+      "category": "Deictic & Spatial Demonstration",
+      "english_sentence": "Here's the result",
+      "expected_gloss_sequence": [
+        "POINT",
+        "RESULT"
+      ],
+      "sentence_type": "DEICTIC_PRESENTATIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0051",
+      "category": "Temporal & Subordinate Adverbials",
+      "english_sentence": "Call me whenever you want",
+      "expected_gloss_sequence": [
+        "YOU",
+        "WANT",
+        "WHEN",
+        "ME",
+        "CALL"
+      ],
+      "sentence_type": "SUBORDINATE_TEMPORAL",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0052",
+      "category": "Number & Quantity Expressions",
+      "english_sentence": "We have 10 people here",
+      "expected_gloss_sequence": [
+        "WE",
+        "TEN",
+        "PEOPLE",
+        "POINT",
+        "HAVE"
+      ],
+      "sentence_type": "NUMERAL_QUANTIFICATION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0053",
+      "category": "Number & Quantity Expressions",
+      "english_sentence": "Give me 2 books",
+      "expected_gloss_sequence": [
+        "TWO",
+        "BOOK",
+        "ME",
+        "GIVE"
+      ],
+      "sentence_type": "NUMERAL_IMPERATIVE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0054",
+      "category": "Colloquial YouTube Presentation",
+      "english_sentence": "I'm going to show you a new trick",
+      "expected_gloss_sequence": [
+        "I",
+        "NEW",
+        "TRICK",
+        "SHOW",
+        "YOU"
+      ],
+      "sentence_type": "PRESENTATIONAL_COLLOQUIAL",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0055",
+      "category": "Colloquial YouTube Presentation",
+      "english_sentence": "Look at that screen",
+      "expected_gloss_sequence": [
+        "THAT",
+        "SCREEN",
+        "LOOK"
+      ],
+      "sentence_type": "DIRECTIVE_ATTENTION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0056",
+      "category": "Complex Coordinated Structures",
+      "english_sentence": "He likes reading as well as writing",
+      "expected_gloss_sequence": [
+        "HE",
+        "READ",
+        "WRITE",
+        "BOTH",
+        "LIKE"
+      ],
+      "sentence_type": "COORDINATED_PREDICATE",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0057",
+      "category": "Regular Inflectional Normalization",
+      "english_sentence": "What happens next",
+      "expected_gloss_sequence": [
+        "NEXT",
+        "HAPPEN",
+        "WHAT"
+      ],
+      "sentence_type": "WH_INTERROGATIVE_INFLECTED",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0058",
+      "category": "Regular Inflectional Normalization",
+      "english_sentence": "Children are playing with movies",
+      "expected_gloss_sequence": [
+        "CHILD",
+        "MOVIE",
+        "PLAY"
+      ],
+      "sentence_type": "PLURAL_CONTINUOUS_NORMALIZED",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0059",
+      "category": "Negative Interrogative Sentences",
+      "english_sentence": "Don't you understand the question",
+      "expected_gloss_sequence": [
+        "YOU",
+        "QUESTION",
+        "UNDERSTAND",
+        "NOT"
+      ],
+      "sentence_type": "NEGATIVE_POLAR_QUESTION",
+      "review_status": "BENCHMARK_VALIDATED"
+    },
+    {
+      "test_id": "BENCH_0060",
+      "category": "Multi-Modal Spatial Directionality",
+      "english_sentence": "I will teach you Indian Sign Language",
+      "expected_gloss_sequence": [
+        "I",
+        "INDIAN",
+        "SIGN",
+        "LANGUAGE",
+        "YOU",
+        "TEACH"
+      ],
+      "sentence_type": "DIRECTIONAL_AGREEMENT",
+      "review_status": "BENCHMARK_VALIDATED"
+    }
+  ]
+}

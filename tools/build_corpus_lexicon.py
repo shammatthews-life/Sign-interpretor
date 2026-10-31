@@ -208,7 +208,7 @@ PLAYABLE_SIGNS = {
     # Phase H26 New Signs
     "protect", "prepare", "control", "silence", "tomorrow", "yesterday", "pitch", "tone", "volume", "judge", "complain", "excuse", "negative",
     # Phase H27 New Signs (566 total signs)
-    "gossip", "honesty", "integrity", "warmup"
+    "gossip", "honesty", "integrity", "warmup", "ok", "usually", "throw", "better"
 }
 
 # Structural ISL Function Words (Grammar Omissions)

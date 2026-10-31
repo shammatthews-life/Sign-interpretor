@@ -975,47 +975,6 @@
     "fallback_required": false
   },
   {
-    "concept_id": "good",
-    "lemma": "good",
-    "surface_forms": [
-      "best",
-      "better",
-      "good",
-      "nice",
-      "right"
-    ],
-    "frequency": 136,
-    "example_sentences": [
-      "which we delivered live right here in our studio.",
-      "and I'm best known for my TEDx talks,",
-      "All right, beautiful to see you all."
-    ],
-    "timestamps": [
-      [
-        30.45,
-        34.25
-      ],
-      [
-        52.85,
-        54.73
-      ],
-      [
-        131.99,
-        134.71
-      ]
-    ],
-    "semantic_category": "Everyday",
-    "dictionary_match": true,
-    "dictionary_entry": "Good",
-    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
-    "sign_variants": [],
-    "translation_strategy": "PLAYABLE_SIGN",
-    "sign_id": "good",
-    "motion_status": "playable",
-    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
-    "fallback_required": false
-  },
-  {
     "concept_id": "can",
     "lemma": "can",
     "surface_forms": [
@@ -1086,6 +1045,46 @@
     "sign_variants": [],
     "translation_strategy": "PLAYABLE_SIGN",
     "sign_id": "when",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
+    "concept_id": "good",
+    "lemma": "good",
+    "surface_forms": [
+      "best",
+      "good",
+      "nice",
+      "right"
+    ],
+    "frequency": 127,
+    "example_sentences": [
+      "which we delivered live right here in our studio.",
+      "and I'm best known for my TEDx talks,",
+      "All right, beautiful to see you all."
+    ],
+    "timestamps": [
+      [
+        30.45,
+        34.25
+      ],
+      [
+        52.85,
+        54.73
+      ],
+      [
+        131.99,
+        134.71
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Good",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "good",
     "motion_status": "playable",
     "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
     "fallback_required": false
@@ -8543,6 +8542,43 @@
     "fallback_required": false
   },
   {
+    "concept_id": "better",
+    "lemma": "better",
+    "surface_forms": [
+      "better"
+    ],
+    "frequency": 9,
+    "example_sentences": [
+      "basketball and you start getting better and better, your confidence grows.",
+      "basketball and you start getting better and better, your confidence grows.",
+      "In order for you to remember this better,"
+    ],
+    "timestamps": [
+      [
+        429.28,
+        433.8
+      ],
+      [
+        429.28,
+        433.8
+      ],
+      [
+        571.4,
+        572.96
+      ]
+    ],
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Better",
+    "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+    "sign_variants": [],
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "better",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
+  },
+  {
     "concept_id": "really",
     "lemma": "really",
     "surface_forms": [
@@ -12957,16 +12993,16 @@
         3892.63
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Usually",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "usually",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "enjoy",
@@ -13031,16 +13067,16 @@
         1293.26
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Ok",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "ok",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "realized",
@@ -39914,16 +39950,16 @@
         604.6
       ]
     ],
-    "semantic_category": "Uncategorized Lexicon",
-    "dictionary_match": false,
-    "dictionary_entry": null,
+    "semantic_category": "Everyday",
+    "dictionary_match": true,
+    "dictionary_entry": "Throw",
     "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
     "sign_variants": [],
-    "translation_strategy": "SUBTITLE_FALLBACK",
-    "sign_id": null,
-    "motion_status": "NO_MOTION_ASSET",
-    "linguistic_review_status": "UNREVIEWED",
-    "fallback_required": true
+    "translation_strategy": "PLAYABLE_SIGN",
+    "sign_id": "throw",
+    "motion_status": "playable",
+    "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "fallback_required": false
   },
   {
     "concept_id": "chances",

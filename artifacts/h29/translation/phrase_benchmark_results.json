@@ -1,0 +1,1145 @@
+{
+  "phase": "H29",
+  "total_phrases": 75,
+  "matched_phrases": 74,
+  "match_rate_pct": 98.7,
+  "phrases": [
+    {
+      "phrase": "good morning",
+      "expected_glosses": [
+        "GOOD",
+        "MORNING"
+      ],
+      "actual_glosses": [
+        "GOOD",
+        "MORNING"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "good",
+        "morning"
+      ]
+    },
+    {
+      "phrase": "thank you",
+      "expected_glosses": [
+        "THANK_YOU"
+      ],
+      "actual_glosses": [
+        "THANK_YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "thank_you"
+      ]
+    },
+    {
+      "phrase": "hello",
+      "expected_glosses": [
+        "HELLO"
+      ],
+      "actual_glosses": [
+        "HELLO"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "hello"
+      ]
+    },
+    {
+      "phrase": "going to",
+      "expected_glosses": [
+        "WILL"
+      ],
+      "actual_glosses": [
+        "WILL"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "will"
+      ]
+    },
+    {
+      "phrase": "want to",
+      "expected_glosses": [
+        "WANT"
+      ],
+      "actual_glosses": [
+        "WANT"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "want"
+      ]
+    },
+    {
+      "phrase": "look at",
+      "expected_glosses": [
+        "LOOK"
+      ],
+      "actual_glosses": [
+        "LOOK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look"
+      ]
+    },
+    {
+      "phrase": "as well as",
+      "expected_glosses": [
+        "MORE"
+      ],
+      "actual_glosses": [
+        "MORE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "more"
+      ]
+    },
+    {
+      "phrase": "i'm going to show",
+      "expected_glosses": [
+        "I",
+        "WILL",
+        "SHOW"
+      ],
+      "actual_glosses": [
+        "I",
+        "WILL",
+        "SHOW"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "i",
+        "will",
+        "show"
+      ]
+    },
+    {
+      "phrase": "going to show you",
+      "expected_glosses": [
+        "WILL",
+        "SHOW",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "WILL",
+        "SHOW",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "will",
+        "show",
+        "you"
+      ]
+    },
+    {
+      "phrase": "i'm going to give",
+      "expected_glosses": [
+        "I",
+        "WILL",
+        "GIVE"
+      ],
+      "actual_glosses": [
+        "I",
+        "WILL",
+        "GIVE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "i",
+        "will",
+        "give"
+      ]
+    },
+    {
+      "phrase": "going to give you",
+      "expected_glosses": [
+        "WILL",
+        "GIVE",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "WILL",
+        "GIVE",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "will",
+        "give",
+        "you"
+      ]
+    },
+    {
+      "phrase": "want to show you",
+      "expected_glosses": [
+        "WANT",
+        "SHOW",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "WANT",
+        "SHOW",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "want",
+        "show",
+        "you"
+      ]
+    },
+    {
+      "phrase": "want to give you",
+      "expected_glosses": [
+        "WANT",
+        "GIVE",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "WANT",
+        "GIVE",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "want",
+        "give",
+        "you"
+      ]
+    },
+    {
+      "phrase": "as you can see",
+      "expected_glosses": [
+        "YOU",
+        "CAN",
+        "SEE"
+      ],
+      "actual_glosses": [
+        "YOU",
+        "CAN",
+        "SEE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "you",
+        "can",
+        "see"
+      ]
+    },
+    {
+      "phrase": "the reason why",
+      "expected_glosses": [
+        "REASON"
+      ],
+      "actual_glosses": [
+        "REASON"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "reason"
+      ]
+    },
+    {
+      "phrase": "give you an example",
+      "expected_glosses": [
+        "GIVE",
+        "YOU",
+        "EXAMPLE"
+      ],
+      "actual_glosses": [
+        "GIVE",
+        "YOU",
+        "EXAMPLE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "give",
+        "you",
+        "example"
+      ]
+    },
+    {
+      "phrase": "take a look",
+      "expected_glosses": [
+        "LOOK"
+      ],
+      "actual_glosses": [
+        "LOOK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look"
+      ]
+    },
+    {
+      "phrase": "take a look at",
+      "expected_glosses": [
+        "LOOK"
+      ],
+      "actual_glosses": [
+        "LOOK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look"
+      ]
+    },
+    {
+      "phrase": "pay attention to",
+      "expected_glosses": [
+        "ATTENTION"
+      ],
+      "actual_glosses": [
+        "ATTENTION"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "attention"
+      ]
+    },
+    {
+      "phrase": "step by step",
+      "expected_glosses": [
+        "STEP",
+        "STEP"
+      ],
+      "actual_glosses": [
+        "STEP",
+        "STEP"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "step",
+        "step"
+      ]
+    },
+    {
+      "phrase": "first of all",
+      "expected_glosses": [
+        "FIRST"
+      ],
+      "actual_glosses": [
+        "FIRST"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "first"
+      ]
+    },
+    {
+      "phrase": "let me know",
+      "expected_glosses": [
+        "TELL",
+        "ME"
+      ],
+      "actual_glosses": [
+        "TELL",
+        "ME"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "tell",
+        "me"
+      ]
+    },
+    {
+      "phrase": "make sure that",
+      "expected_glosses": [
+        "TRUE"
+      ],
+      "actual_glosses": [
+        "TRUE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "true"
+      ]
+    },
+    {
+      "phrase": "listen to this",
+      "expected_glosses": [
+        "HEAR"
+      ],
+      "actual_glosses": [
+        "HEAR"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "hear"
+      ]
+    },
+    {
+      "phrase": "in other words",
+      "expected_glosses": [
+        "MEAN"
+      ],
+      "actual_glosses": [
+        "MEAN"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "mean"
+      ]
+    },
+    {
+      "phrase": "on the stage",
+      "expected_glosses": [
+        "STAGE"
+      ],
+      "actual_glosses": [
+        "STAGE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "stage"
+      ]
+    },
+    {
+      "phrase": "in the classroom",
+      "expected_glosses": [
+        "CLASS"
+      ],
+      "actual_glosses": [
+        "CLASS"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "class"
+      ]
+    },
+    {
+      "phrase": "public speaking challenge",
+      "expected_glosses": [
+        "SAY",
+        "PEOPLE",
+        "CHALLENGE"
+      ],
+      "actual_glosses": [
+        "SAY",
+        "PEOPLE",
+        "CHALLENGE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "say",
+        "people",
+        "challenge"
+      ]
+    },
+    {
+      "phrase": "great job",
+      "expected_glosses": [
+        "GREAT",
+        "WORK"
+      ],
+      "actual_glosses": [
+        "GREAT",
+        "WORK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "great",
+        "work"
+      ]
+    },
+    {
+      "phrase": "talk to you",
+      "expected_glosses": [
+        "SAY",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "SAY",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "say",
+        "you"
+      ]
+    },
+    {
+      "phrase": "look like",
+      "expected_glosses": [
+        "SAME"
+      ],
+      "actual_glosses": [
+        "SAME"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "same"
+      ]
+    },
+    {
+      "phrase": "in order to",
+      "expected_glosses": [
+        "REASON"
+      ],
+      "actual_glosses": [
+        "REASON"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "reason"
+      ]
+    },
+    {
+      "phrase": "what do you",
+      "expected_glosses": [
+        "YOU",
+        "WHAT"
+      ],
+      "actual_glosses": [
+        "YOU",
+        "WHAT"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "you",
+        "what"
+      ]
+    },
+    {
+      "phrase": "how to",
+      "expected_glosses": [
+        "HOW"
+      ],
+      "actual_glosses": [
+        "HOW"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "how"
+      ]
+    },
+    {
+      "phrase": "have to",
+      "expected_glosses": [
+        "NEED"
+      ],
+      "actual_glosses": [
+        "NEED"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "need"
+      ]
+    },
+    {
+      "phrase": "public speaking",
+      "expected_glosses": [
+        "SAY",
+        "PEOPLE"
+      ],
+      "actual_glosses": [
+        "SAY",
+        "PEOPLE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "say",
+        "people"
+      ]
+    },
+    {
+      "phrase": "i'm going to",
+      "expected_glosses": [
+        "I",
+        "WILL"
+      ],
+      "actual_glosses": [
+        "I",
+        "WILL"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "i",
+        "will"
+      ]
+    },
+    {
+      "phrase": "have a look",
+      "expected_glosses": [
+        "LOOK"
+      ],
+      "actual_glosses": [
+        "LOOK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look"
+      ]
+    },
+    {
+      "phrase": "a look at",
+      "expected_glosses": [
+        "LOOK"
+      ],
+      "actual_glosses": [
+        "LOOK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look"
+      ]
+    },
+    {
+      "phrase": "have a look at",
+      "expected_glosses": [
+        "LOOK"
+      ],
+      "actual_glosses": [
+        "LOOK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look"
+      ]
+    },
+    {
+      "phrase": "listen to",
+      "expected_glosses": [
+        "HEAR"
+      ],
+      "actual_glosses": [
+        "HEAR"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "hear"
+      ]
+    },
+    {
+      "phrase": "you want to",
+      "expected_glosses": [
+        "YOU",
+        "WANT"
+      ],
+      "actual_glosses": [
+        "YOU",
+        "WANT"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "you",
+        "want"
+      ]
+    },
+    {
+      "phrase": "i want you",
+      "expected_glosses": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "i",
+        "want",
+        "you"
+      ]
+    },
+    {
+      "phrase": "i want you to",
+      "expected_glosses": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "I",
+        "WANT",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "i",
+        "want",
+        "you"
+      ]
+    },
+    {
+      "phrase": "to give you",
+      "expected_glosses": [
+        "GIVE",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "GIVE",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "give",
+        "you"
+      ]
+    },
+    {
+      "phrase": "look at this",
+      "expected_glosses": [
+        "LOOK"
+      ],
+      "actual_glosses": [
+        "LOOK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look"
+      ]
+    },
+    {
+      "phrase": "to show you",
+      "expected_glosses": [
+        "SHOW",
+        "YOU"
+      ],
+      "actual_glosses": [
+        "SHOW",
+        "YOU"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "show",
+        "you"
+      ]
+    },
+    {
+      "phrase": "every single",
+      "expected_glosses": [
+        "ONE"
+      ],
+      "actual_glosses": [
+        "ONE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "one"
+      ]
+    },
+    {
+      "phrase": "going to show",
+      "expected_glosses": [
+        "WILL",
+        "SHOW"
+      ],
+      "actual_glosses": [
+        "WILL",
+        "SHOW"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "will",
+        "show"
+      ]
+    },
+    {
+      "phrase": "look at your",
+      "expected_glosses": [
+        "LOOK",
+        "YOUR"
+      ],
+      "actual_glosses": [
+        "LOOK",
+        "YOUR"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look",
+        "your"
+      ]
+    },
+    {
+      "phrase": "we're going to",
+      "expected_glosses": [
+        "WE",
+        "WILL"
+      ],
+      "actual_glosses": [
+        "WE",
+        "WILL"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "we",
+        "will"
+      ]
+    },
+    {
+      "phrase": "going to give",
+      "expected_glosses": [
+        "WILL",
+        "GIVE"
+      ],
+      "actual_glosses": [
+        "WILL",
+        "GIVE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "will",
+        "give"
+      ]
+    },
+    {
+      "phrase": "a lot of",
+      "expected_glosses": [
+        "MORE"
+      ],
+      "actual_glosses": [
+        "MORE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "more"
+      ]
+    },
+    {
+      "phrase": "here we go",
+      "expected_glosses": [
+        "WE",
+        "GO"
+      ],
+      "actual_glosses": [
+        "WE",
+        "GO"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "we",
+        "go"
+      ]
+    },
+    {
+      "phrase": "over and over",
+      "expected_glosses": [
+        "MORE"
+      ],
+      "actual_glosses": [
+        "MORE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "more"
+      ]
+    },
+    {
+      "phrase": "i don't know",
+      "expected_glosses": [
+        "I",
+        "NOT",
+        "KNOW"
+      ],
+      "actual_glosses": [
+        "I",
+        "NOT",
+        "KNOW"
+      ],
+      "detected_as_phrase": false,
+      "playable_dispatches": [
+        "i",
+        "not",
+        "know"
+      ]
+    },
+    {
+      "phrase": "let's have a look",
+      "expected_glosses": [
+        "LOOK"
+      ],
+      "actual_glosses": [
+        "LOOK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "look"
+      ]
+    },
+    {
+      "phrase": "give me more",
+      "expected_glosses": [
+        "GIVE",
+        "ME",
+        "MORE"
+      ],
+      "actual_glosses": [
+        "GIVE",
+        "ME",
+        "MORE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "give",
+        "me",
+        "more"
+      ]
+    },
+    {
+      "phrase": "become more confident",
+      "expected_glosses": [
+        "MORE",
+        "CONFIDENT"
+      ],
+      "actual_glosses": [
+        "MORE",
+        "CONFIDENT"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "more",
+        "confident"
+      ]
+    },
+    {
+      "phrase": "the most beautiful",
+      "expected_glosses": [
+        "MORE",
+        "BEAUTIFUL"
+      ],
+      "actual_glosses": [
+        "MORE",
+        "BEAUTIFUL"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "more",
+        "beautiful"
+      ]
+    },
+    {
+      "phrase": "body language",
+      "expected_glosses": [
+        "BODY",
+        "GESTURE"
+      ],
+      "actual_glosses": [
+        "BODY",
+        "GESTURE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "body",
+        "gesture"
+      ]
+    },
+    {
+      "phrase": "facial expressions",
+      "expected_glosses": [
+        "HEAD",
+        "GESTURE"
+      ],
+      "actual_glosses": [
+        "HEAD",
+        "GESTURE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "head",
+        "gesture"
+      ]
+    },
+    {
+      "phrase": "over and over again",
+      "expected_glosses": [
+        "MORE"
+      ],
+      "actual_glosses": [
+        "MORE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "more"
+      ]
+    },
+    {
+      "phrase": "next time",
+      "expected_glosses": [
+        "TIME",
+        "MORE"
+      ],
+      "actual_glosses": [
+        "TIME",
+        "MORE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "time",
+        "more"
+      ]
+    },
+    {
+      "phrase": "sit down",
+      "expected_glosses": [
+        "STAND"
+      ],
+      "actual_glosses": [
+        "STAND"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "stand"
+      ]
+    },
+    {
+      "phrase": "each other",
+      "expected_glosses": [
+        "SAME",
+        "MEET"
+      ],
+      "actual_glosses": [
+        "SAME",
+        "MEET"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "same",
+        "meet"
+      ]
+    },
+    {
+      "phrase": "stand up",
+      "expected_glosses": [
+        "STAND"
+      ],
+      "actual_glosses": [
+        "STAND"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "stand"
+      ]
+    },
+    {
+      "phrase": "talk about",
+      "expected_glosses": [
+        "SAY"
+      ],
+      "actual_glosses": [
+        "SAY"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "say"
+      ]
+    },
+    {
+      "phrase": "feel like",
+      "expected_glosses": [
+        "FEEL",
+        "LIKE"
+      ],
+      "actual_glosses": [
+        "FEEL",
+        "LIKE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "feel",
+        "like"
+      ]
+    },
+    {
+      "phrase": "first time",
+      "expected_glosses": [
+        "FIRST",
+        "TIME"
+      ],
+      "actual_glosses": [
+        "FIRST",
+        "TIME"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "first",
+        "time"
+      ]
+    },
+    {
+      "phrase": "facial expression",
+      "expected_glosses": [
+        "HEAD",
+        "GESTURE"
+      ],
+      "actual_glosses": [
+        "HEAD",
+        "GESTURE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "head",
+        "gesture"
+      ]
+    },
+    {
+      "phrase": "voice modulation",
+      "expected_glosses": [
+        "VOICE",
+        "CHANGE"
+      ],
+      "actual_glosses": [
+        "VOICE",
+        "CHANGE"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "voice",
+        "change"
+      ]
+    },
+    {
+      "phrase": "think about",
+      "expected_glosses": [
+        "THINK"
+      ],
+      "actual_glosses": [
+        "THINK"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "think"
+      ]
+    },
+    {
+      "phrase": "high level",
+      "expected_glosses": [
+        "HIGH",
+        "LEVEL"
+      ],
+      "actual_glosses": [
+        "HIGH",
+        "LEVEL"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "high",
+        "level"
+      ]
+    },
+    {
+      "phrase": "second time",
+      "expected_glosses": [
+        "SECOND",
+        "TIME"
+      ],
+      "actual_glosses": [
+        "SECOND",
+        "TIME"
+      ],
+      "detected_as_phrase": true,
+      "playable_dispatches": [
+        "second",
+        "time"
+      ]
+    }
+  ]
+}

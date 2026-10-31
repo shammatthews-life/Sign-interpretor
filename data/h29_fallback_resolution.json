@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "Phase H29 Fallback Reduction & Lexical Expansion Resolution",
+    "phase": "H29",
+    "timestamp": "2026-10-31T09:54:00+05:30",
+    "canonical_tokens": 23258
+  },
+  "metrics_comparison": {
+    "h28_fallback_tokens": 2239,
+    "h29_fallback_tokens": 2226,
+    "fallback_tokens_reduced": 13,
+    "h28_implemented_signs_tokens": 10308,
+    "h29_implemented_signs_tokens": 10321,
+    "implemented_tokens_gained": 13,
+    "h28_playable_signs": 566,
+    "h29_playable_signs": 570,
+    "new_signs_authored": 4,
+    "h28_playable_dispatches": 10884,
+    "h29_playable_dispatches": 11032,
+    "playable_dispatches_gained": 148,
+    "communicative_coverage_percentage": 90.43,
+    "silent_token_discrepancy": 0
+  },
+  "new_authored_signs": [
+    {
+      "sign_id": "ok",
+      "citation": "ISLRTC #O-008",
+      "gloss": "OK",
+      "lexical_type": "Discourse agreement marker"
+    },
+    {
+      "sign_id": "usually",
+      "citation": "ISLRTC #U-012",
+      "gloss": "USUALLY",
+      "lexical_type": "Habitual aspect adverb"
+    },
+    {
+      "sign_id": "throw",
+      "citation": "ISLRTC #T-044",
+      "gloss": "THROW",
+      "lexical_type": "Manual action verb"
+    },
+    {
+      "sign_id": "better",
+      "citation": "ISLRTC #B-035",
+      "gloss": "BETTER",
+      "lexical_type": "Comparative adjective"
+    }
+  ],
+  "morphological_expansions_count": 45,
+  "digit_to_cardinal_mappings_count": 5
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "ok",
+  "metadata": {
+    "display_name": "OK",
+    "gloss": "OK",
+    "language": "ISL",
+    "lexical_type": "Discourse agreement marker",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "entry_id": "ISLRTC #O-008",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Handshape: Dominant hand forms O-K circular thumb/index pinch, extending middle/ring/pinky upward with positive nod."
+  },
+  "motion": {
+    "duration_ms": 1100,
+    "two_handed": false,
+    "dominant_hand": "right",
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral Rest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 495,
+        "label": "Peak Stroke",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.12,
+            "y": -0.15,
+            "z": -0.45
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.05,
+            "y": -0.35,
+            "z": -0.65
+          },
+          "Bip001_R_Hand": {
+            "x": 0.1,
+            "y": 0.15,
+            "z": -0.05
+          }
+        },
+        "finger_curls": {
+          "thumb": 35,
+          "index": 35,
+          "middle": 5,
+          "ring": 5,
+          "pinky": 5
+        }
+      },
+      {
+        "time_ms": 1100,
+        "label": "Return to Neutral Rest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

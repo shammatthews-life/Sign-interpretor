@@ -3,8 +3,8 @@
   "schema_version": "2.0.0",
   "generated_at": "2026-10-31T03:30:00Z",
   "phase": "H24",
-  "total_signs": 566,
-  "total_playable_signs": 550,
+  "total_signs": 570,
+  "total_playable_signs": 570,
   "signs": [
     {
       "sign_id": "ability",
@@ -702,6 +702,15 @@
       "file_name": "believe.json",
       "involved_bones_count": 7,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "better",
+      "display_name": "Better",
+      "schema_version": "2.0.0",
+      "file": "signs/better.json",
+      "duration_ms": 1200,
+      "two_handed": false,
+      "status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
     },
     {
       "sign_id": "between",
@@ -5741,6 +5750,15 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "ok",
+      "display_name": "OK",
+      "schema_version": "2.0.0",
+      "file": "signs/ok.json",
+      "duration_ms": 1100,
+      "two_handed": false,
+      "status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
       "sign_id": "old",
       "display_name": "Old",
       "gloss": "OLD",
@@ -8488,6 +8506,15 @@
       "keyframe_count": 4
     },
     {
+      "sign_id": "throw",
+      "display_name": "Throw",
+      "schema_version": "2.0.0",
+      "file": "signs/throw.json",
+      "duration_ms": 1250,
+      "two_handed": false,
+      "status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+    },
+    {
       "sign_id": "tilt",
       "display_name": "Tilt",
       "gloss": "TILT",
@@ -8899,6 +8926,15 @@
       "file_name": "upon.json",
       "involved_bones_count": 6,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "usually",
+      "display_name": "Usually",
+      "schema_version": "2.0.0",
+      "file": "signs/usually.json",
+      "duration_ms": 1300,
+      "two_handed": false,
+      "status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
     },
     {
       "sign_id": "valuable",

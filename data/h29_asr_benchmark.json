@@ -1,0 +1,410 @@
+{
+  "phase": "H29",
+  "audio_source": "runtime/youtube/EvbhKINYrPg/audio_16k.wav",
+  "test_slice_duration_sec": 60.0,
+  "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU (6141 MiB)",
+  "ctranslate2_version": "4.8.2",
+  "faster_whisper_version": "1.1.1",
+  "benchmarks": [
+    {
+      "model": "tiny.en",
+      "device": "cuda",
+      "compute_type": "float16",
+      "vad_filter": true,
+      "load_time_ms": 2842.57,
+      "transcription_ms": 2390.75,
+      "audio_duration_s": 60.0,
+      "real_time_factor": 0.0398,
+      "speedup_multiplier": 25.1,
+      "total_segments": 21,
+      "total_words": 66,
+      "latency_percentiles_ms": {
+        "p50": 0.02,
+        "p90": 0.03,
+        "p95": 366.0,
+        "p99": 1692.65
+      },
+      "gpu_memory": {
+        "used_mb_before": 0.0,
+        "used_mb_after": 195.0,
+        "delta_mb": 195.0
+      },
+      "sample_segments": [
+        {
+          "start": 0.59,
+          "end": 8.27,
+          "text": "Greetings and farewells.",
+          "words": 3
+        },
+        {
+          "start": 8.27,
+          "end": 10.82,
+          "text": "Listen to the dialogue.",
+          "words": 4
+        },
+        {
+          "start": 10.82,
+          "end": 13.39,
+          "text": "Good morning, Mr. Wilson.",
+          "words": 4
+        },
+        {
+          "start": 13.39,
+          "end": 15.46,
+          "text": "Good morning, Tom.",
+          "words": 3
+        }
+      ]
+    },
+    {
+      "model": "tiny.en",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "vad_filter": true,
+      "load_time_ms": 743.09,
+      "transcription_ms": 2067.16,
+      "audio_duration_s": 60.0,
+      "real_time_factor": 0.0345,
+      "speedup_multiplier": 29.03,
+      "total_segments": 20,
+      "total_words": 65,
+      "latency_percentiles_ms": {
+        "p50": 0.02,
+        "p90": 38.31,
+        "p95": 447.41,
+        "p99": 1436.95
+      },
+      "gpu_memory": {
+        "used_mb_before": 99.0,
+        "used_mb_after": 203.0,
+        "delta_mb": 104.0
+      },
+      "sample_segments": [
+        {
+          "start": 0.59,
+          "end": 9.62,
+          "text": "Greetings and farewells.",
+          "words": 3
+        },
+        {
+          "start": 9.62,
+          "end": 12.23,
+          "text": "Listen to the dialogue.",
+          "words": 4
+        },
+        {
+          "start": 12.23,
+          "end": 14.62,
+          "text": "Good morning, Mr. Wilson.",
+          "words": 4
+        },
+        {
+          "start": 14.62,
+          "end": 16.3,
+          "text": "Good morning, Tom.",
+          "words": 3
+        }
+      ]
+    },
+    {
+      "model": "tiny.en",
+      "device": "cuda",
+      "compute_type": "float16",
+      "vad_filter": false,
+      "load_time_ms": 561.56,
+      "transcription_ms": 793.67,
+      "audio_duration_s": 60.0,
+      "real_time_factor": 0.0132,
+      "speedup_multiplier": 75.6,
+      "total_segments": 6,
+      "total_words": 48,
+      "latency_percentiles_ms": {
+        "p50": 40.11,
+        "p90": 356.63,
+        "p95": 430.92,
+        "p99": 490.36
+      },
+      "gpu_memory": {
+        "used_mb_before": 107.0,
+        "used_mb_after": 211.0,
+        "delta_mb": 104.0
+      },
+      "sample_segments": [
+        {
+          "start": 0.0,
+          "end": 12.32,
+          "text": "Greetings and farewells Listen to the dialogue",
+          "words": 7
+        },
+        {
+          "start": 12.32,
+          "end": 19.92,
+          "text": "Good morning, Mr. Wilson. Good morning, Tom. How are you today? Fine, and you?",
+          "words": 14
+        },
+        {
+          "start": 19.92,
+          "end": 26.72,
+          "text": "Not bad. See you later, Tom. Okay, Mr. Wilson. See you later.",
+          "words": 12
+        },
+        {
+          "start": 27.72,
+          "end": 34.72,
+          "text": "Okay, Mr. Wilson. See you later.",
+          "words": 6
+        }
+      ]
+    },
+    {
+      "model": "base.en",
+      "device": "cuda",
+      "compute_type": "float16",
+      "vad_filter": true,
+      "load_time_ms": 823.22,
+      "transcription_ms": 1697.46,
+      "audio_duration_s": 60.0,
+      "real_time_factor": 0.0283,
+      "speedup_multiplier": 35.35,
+      "total_segments": 13,
+      "total_words": 65,
+      "latency_percentiles_ms": {
+        "p50": 0.02,
+        "p90": 314.68,
+        "p95": 757.34,
+        "p99": 1194.14
+      },
+      "gpu_memory": {
+        "used_mb_before": 115.0,
+        "used_mb_after": 283.0,
+        "delta_mb": 168.0
+      },
+      "sample_segments": [
+        {
+          "start": 0.59,
+          "end": 10.82,
+          "text": "Greetings and farewells. Listen to the dialogue.",
+          "words": 7
+        },
+        {
+          "start": 10.82,
+          "end": 13.39,
+          "text": "Good morning, Mr. Wilson.",
+          "words": 4
+        },
+        {
+          "start": 13.39,
+          "end": 17.46,
+          "text": "Good morning, Tom. How are you today?",
+          "words": 7
+        },
+        {
+          "start": 17.46,
+          "end": 19.58,
+          "text": "Fine, and you?",
+          "words": 3
+        }
+      ]
+    },
+    {
+      "model": "base.en",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "vad_filter": true,
+      "load_time_ms": 1295.36,
+      "transcription_ms": 2085.3,
+      "audio_duration_s": 60.0,
+      "real_time_factor": 0.0348,
+      "speedup_multiplier": 28.77,
+      "total_segments": 14,
+      "total_words": 65,
+      "latency_percentiles_ms": {
+        "p50": 0.02,
+        "p90": 363.62,
+        "p95": 885.45,
+        "p99": 1429.23
+      },
+      "gpu_memory": {
+        "used_mb_before": 123.0,
+        "used_mb_after": 259.0,
+        "delta_mb": 136.0
+      },
+      "sample_segments": [
+        {
+          "start": 0.59,
+          "end": 11.95,
+          "text": "Greetings and farewells. Listen to the dialogue.",
+          "words": 7
+        },
+        {
+          "start": 11.95,
+          "end": 14.3,
+          "text": "Good morning, Mr. Wilson.",
+          "words": 4
+        },
+        {
+          "start": 14.3,
+          "end": 17.5,
+          "text": "Good morning, Tom. How are you today?",
+          "words": 7
+        },
+        {
+          "start": 17.5,
+          "end": 19.58,
+          "text": "Fine, and you?",
+          "words": 3
+        }
+      ]
+    },
+    {
+      "model": "base.en",
+      "device": "cuda",
+      "compute_type": "float32",
+      "vad_filter": true,
+      "load_time_ms": 1189.97,
+      "transcription_ms": 2181.91,
+      "audio_duration_s": 60.0,
+      "real_time_factor": 0.0364,
+      "speedup_multiplier": 27.5,
+      "total_segments": 13,
+      "total_words": 65,
+      "latency_percentiles_ms": {
+        "p50": 0.02,
+        "p90": 305.14,
+        "p95": 948.58,
+        "p99": 1629.19
+      },
+      "gpu_memory": {
+        "used_mb_before": 131.0,
+        "used_mb_after": 491.0,
+        "delta_mb": 360.0
+      },
+      "sample_segments": [
+        {
+          "start": 0.59,
+          "end": 10.82,
+          "text": "Greetings and farewells. Listen to the dialogue.",
+          "words": 7
+        },
+        {
+          "start": 10.82,
+          "end": 13.39,
+          "text": "Good morning, Mr. Wilson.",
+          "words": 4
+        },
+        {
+          "start": 13.39,
+          "end": 17.46,
+          "text": "Good morning, Tom. How are you today?",
+          "words": 7
+        },
+        {
+          "start": 17.46,
+          "end": 19.58,
+          "text": "Fine, and you?",
+          "words": 3
+        }
+      ]
+    },
+    {
+      "model": "base.en",
+      "device": "cuda",
+      "compute_type": "float16",
+      "vad_filter": false,
+      "load_time_ms": 694.36,
+      "transcription_ms": 1253.84,
+      "audio_duration_s": 60.0,
+      "real_time_factor": 0.0209,
+      "speedup_multiplier": 47.85,
+      "total_segments": 8,
+      "total_words": 67,
+      "latency_percentiles_ms": {
+        "p50": 0.04,
+        "p90": 531.95,
+        "p95": 563.0,
+        "p99": 587.84
+      },
+      "gpu_memory": {
+        "used_mb_before": 139.0,
+        "used_mb_after": 307.0,
+        "delta_mb": 168.0
+      },
+      "sample_segments": [
+        {
+          "start": 0.0,
+          "end": 12.2,
+          "text": "Greetings and farewells. Listen to the dialogue.",
+          "words": 7
+        },
+        {
+          "start": 12.2,
+          "end": 17.88,
+          "text": "Good morning Mr. Wilson. Good morning, Tom. How are you today?",
+          "words": 11
+        },
+        {
+          "start": 17.88,
+          "end": 26.6,
+          "text": "Fine, and you? Not bad. See you later, Tom. Okay, Mr. Wilson. See you later.",
+          "words": 15
+        },
+        {
+          "start": 26.6,
+          "end": 32.6,
+          "text": "Listen to the dialogue. See you later, Tom.",
+          "words": 8
+        }
+      ]
+    },
+    {
+      "model": "base.en",
+      "device": "cpu",
+      "compute_type": "int8",
+      "vad_filter": true,
+      "load_time_ms": 1003.98,
+      "transcription_ms": 10627.72,
+      "audio_duration_s": 60.0,
+      "real_time_factor": 0.1771,
+      "speedup_multiplier": 5.65,
+      "total_segments": 14,
+      "total_words": 69,
+      "latency_percentiles_ms": {
+        "p50": 0.02,
+        "p90": 2316.0,
+        "p95": 4009.12,
+        "p99": 5985.19
+      },
+      "gpu_memory": {
+        "used_mb_before": 147.0,
+        "used_mb_after": 0.0,
+        "delta_mb": -147.0
+      },
+      "sample_segments": [
+        {
+          "start": 0.59,
+          "end": 11.95,
+          "text": "Greetings and farewells. Listen to the dialogue.",
+          "words": 7
+        },
+        {
+          "start": 11.95,
+          "end": 14.3,
+          "text": "Good morning, Mr. Wilson.",
+          "words": 4
+        },
+        {
+          "start": 14.3,
+          "end": 17.5,
+          "text": "Good morning, Tom. How are you today?",
+          "words": 7
+        },
+        {
+          "start": 17.5,
+          "end": 19.58,
+          "text": "Fine, and you?",
+          "words": 3
+        }
+      ]
+    }
+  ]
+}

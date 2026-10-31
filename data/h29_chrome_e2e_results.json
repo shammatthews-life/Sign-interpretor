@@ -1,0 +1,28 @@
+{
+  "phase": "H29",
+  "chrome_manifest_version": 3,
+  "canonical_video": "MXKkXXYUxBc",
+  "extension_ui_layout": {
+    "type": "Right Sidebar Dock + Bottom-Right Aether Canvas",
+    "theme": "Obsidian Dark Glassmorphism",
+    "canvas_dimensions": "320x320 px (Retina 640x640 buffer)",
+    "fps_target": 60,
+    "subtitle_pill_placement": "Directly below Aether viewport"
+  },
+  "e2e_results": {
+    "total_segments": 2366,
+    "total_dispatched_signs": 11032,
+    "total_fallback_subtitles": 8341,
+    "simulated_frames": 661920,
+    "elapsed_ms": 870.7,
+    "seek_resets_tested": 2
+  },
+  "compliance_checklist": {
+    "manifest_v3_valid": true,
+    "service_worker_registered": true,
+    "isolated_content_scripts": true,
+    "zero_xss_inner_html": true,
+    "rapid_seek_stale_flush": true,
+    "playback_rate_scaling": true
+  }
+}

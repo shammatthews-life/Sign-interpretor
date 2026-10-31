@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "title": "Phase H29 Initial Verified Baseline",
+    "phase": "H29",
+    "timestamp": "2026-10-31T09:49:00+05:30",
+    "git_branch": "r1-articulation-coverage-and-report",
+    "base_commit": "ff6c2a9",
+    "working_tree_clean": true
+  },
+  "verified_metrics": {
+    "canonical_transcript_segments": 2366,
+    "canonical_token_occurrences": 23258,
+    "unique_surface_words": 2286,
+    "normalized_lemmas": 1915,
+    "contextual_concepts": 1916,
+    "playable_sign_assets": 566,
+    "phrase_expressions": 200,
+    "dispositions": {
+      "implemented_pending_review_tokens": 10308,
+      "grammar_omission_tokens": 9064,
+      "phrase_translated_tokens": 1444,
+      "fingerspelled_tokens": 203,
+      "subtitle_fallback_tokens": 2239,
+      "dictionary_pending_tokens": 0
+    },
+    "communicative_coverage_tokens": 21019,
+    "communicative_coverage_percentage": 90.37,
+    "discrepancy": 0,
+    "generated_glosses": 10884,
+    "playable_dispatches": 10884
+  }
+}

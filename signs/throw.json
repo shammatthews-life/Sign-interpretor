@@ -1,0 +1,112 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "throw",
+  "metadata": {
+    "display_name": "Throw",
+    "gloss": "THROW",
+    "language": "ISL",
+    "lexical_type": "Manual action verb",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "entry_id": "ISLRTC #T-044",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Handshape: Loose fist pulled back by shoulder, then extending rapidly forward opening fingers in toss trajectory."
+  },
+  "motion": {
+    "duration_ms": 1250,
+    "two_handed": false,
+    "dominant_hand": "right",
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral Rest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 562,
+        "label": "Peak Stroke",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0.25,
+            "y": -0.1,
+            "z": -0.55
+          },
+          "Bip001_R_Forearm": {
+            "x": 0.1,
+            "y": -0.25,
+            "z": -0.45
+          },
+          "Bip001_R_Hand": {
+            "x": 0.15,
+            "y": 0.1,
+            "z": 0.0
+          }
+        },
+        "finger_curls": {
+          "thumb": 5,
+          "index": 5,
+          "middle": 5,
+          "ring": 5,
+          "pinky": 5
+        }
+      },
+      {
+        "time_ms": 1250,
+        "label": "Return to Neutral Rest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

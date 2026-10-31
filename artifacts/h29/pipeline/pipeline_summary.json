@@ -1,0 +1,40 @@
+{
+  "phase": "H29",
+  "canonical_video": "MXKkXXYUxBc",
+  "total_segments": 2366,
+  "total_token_occurrences": 23258,
+  "active_playable_signs": 570,
+  "total_glosses_generated": 11032,
+  "total_playable_signs_dispatched": 11032,
+  "total_fallback_subtitles": 8341,
+  "wall_clock_processing_ms": 865.74,
+  "throughput_segments_per_second": 2732.9,
+  "latency_percentiles_ms": {
+    "mean": 0.3648,
+    "p50": 0.2879,
+    "p90": 0.7256,
+    "p95": 0.8904,
+    "p99": 1.3878,
+    "max": 5.5271
+  },
+  "asr_coupling": {
+    "engine": "faster-whisper (CTranslate2 v4.8.2 + CUDA Float16)",
+    "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU (6GB VRAM)",
+    "real_time_factor": 0.0283,
+    "speedup": "35.35x real time",
+    "chunk_inference_ms_per_3s": 84.9
+  },
+  "playback_rates_verified": [
+    0.5,
+    0.75,
+    1,
+    1.25,
+    1.5,
+    2
+  ],
+  "rapid_seeks_verified": [
+    1800,
+    5400,
+    8000
+  ]
+}

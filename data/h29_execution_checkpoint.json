@@ -1,0 +1,55 @@
+{
+  "phase": "H29",
+  "title": "High-Speed ISL Vocabulary Expansion, Fallback Reduction, ASR Acceleration & Live Production Optimization",
+  "status": "COMPLETED",
+  "timestamp": "2026-10-31T04:40:00Z",
+  "baseline_commit": "ff6c2a9",
+  "canonical_corpus": {
+    "video_id": "MXKkXXYUxBc",
+    "video_url": "https://www.youtube.com/watch?v=MXKkXXYUxBc",
+    "segments": 2366,
+    "total_tokens": 23258,
+    "unique_surface_words": 2286
+  },
+  "vocabulary_and_signs": {
+    "baseline_playable_signs": 566,
+    "new_signs_authored": 4,
+    "new_sign_ids": ["ok", "usually", "throw", "better"],
+    "total_playable_signs": 570,
+    "all_schema_version": "2.0.0",
+    "zero_invention_policy": "STRICT_ENFORCED",
+    "citation_source": "Indian Sign Language Research and Training Centre (ISLRTC)"
+  },
+  "fallback_reduction": {
+    "baseline_fallbacks": 2239,
+    "current_fallbacks": 2226,
+    "net_reduction": 13,
+    "communicative_coverage_tokens": 21032,
+    "communicative_coverage_pct": 90.43,
+    "silent_loss_discrepancy": 0
+  },
+  "translation_and_runtime": {
+    "glosses_generated": 11032,
+    "playable_signs_dispatched": 11032,
+    "gloss_to_dispatch_loss": 0,
+    "total_phrases_evaluated": 75,
+    "translation_benchmark_sentences": 60,
+    "translation_benchmark_pass_rate": 100.0
+  },
+  "asr_and_hardware_acceleration": {
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU (6141 MiB)",
+    "engine": "faster-whisper v1.1.1 (CTranslate2 v4.8.2)",
+    "precision": "CUDA float16",
+    "real_time_factor": 0.0283,
+    "speedup": "35.35x real time",
+    "chunk_latency_ms": 84.9,
+    "silero_vad": "ENABLED"
+  },
+  "chrome_extension_ui": {
+    "manifest_version": 3,
+    "layout": "Right Sidebar Dock (360px) + Bottom-Right Aether Viewport (320x320px)",
+    "subtitle_fallback": "Obsidian High-Contrast Subtitle Pill",
+    "fps_target": 60,
+    "rapid_seek_stale_flush": "VERIFIED"
+  }
+}
