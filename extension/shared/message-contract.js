@@ -90,6 +90,11 @@
     YOUTUBE_STATUS: 'YOUTUBE_STATUS',
     YOUTUBE_RESULT: 'YOUTUBE_RESULT',
     YOUTUBE_ERROR: 'YOUTUBE_ERROR',
+    YOUTUBE_CUES_READY: 'YOUTUBE_CUES_READY',
+    GET_YOUTUBE_CUES: 'GET_YOUTUBE_CUES',
+    YOUTUBE_CUES_ACK: 'YOUTUBE_CUES_ACK',
+    YOUTUBE_CUES_ERROR: 'YOUTUBE_CUES_ERROR',
+    YOUTUBE_PAGE_READY: 'YOUTUBE_PAGE_READY',
     AETHER_PLAYBACK_STATE: 'AETHER_PLAYBACK_STATE',
 
     // Aether Viewer Command Interface (Task H6-E)
@@ -112,7 +117,8 @@
     QUEUE_SIGN: 'QUEUE_SIGN',
     RESET_AVATAR: 'RESET_AVATAR',
     PAUSE: 'PAUSE',
-    RESUME: 'RESUME'
+    RESUME: 'RESUME',
+    SET_PLAYBACK_RATE: 'SET_PLAYBACK_RATE'
   });
 
   /**
@@ -162,6 +168,7 @@
 
       youtube: {
         jobId: null,
+        videoId: null,
         state: 'IDLE',
         progress: 0,
         title: '',
@@ -173,6 +180,9 @@
         translationStatus: 'IDLE',
         translationStatusCounts: {},
         resultReady: false,
+        cueManifestFingerprint: null,
+        cueCount: 0,
+        wordCoverage: null,
         glosses: [],
         playableSigns: [],
         currentSign: null,

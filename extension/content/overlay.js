@@ -606,6 +606,15 @@
       el.youtubeUnavailableConcepts.textContent = youtube.unavailableConcepts?.length
         ? [...new Set(youtube.unavailableConcepts.map(item => `${String(item.word).toUpperCase()} — ${item.reason || 'motion unavailable'}`))].join('; ')
         : 'None';
+      if (youtube.wordCoverage) {
+        const coverage = youtube.wordCoverage;
+        const summary = `Cue coverage (occurrences): ${coverage.playableSignOccurrences || 0} playable signs; `
+          + `${coverage.unavailableConceptOccurrences || 0} unavailable signs; `
+          + `${coverage.unknownTermOccurrences || 0} words not in catalog; `
+          + `${coverage.sourceTextMismatches || 0} source mismatches `
+          + `(${coverage.sourceMismatchFallbackOccurrences || 0} transcript words withheld). `;
+        el.youtubeUnavailableConcepts.textContent = `${summary}${el.youtubeUnavailableConcepts.textContent}`;
+      }
       const progress = Number(youtube.progress);
       el.youtubeJobProgress.textContent = youtube.state === 'READY'
         ? `Complete${youtube.duration ? ` · video ${Number(youtube.duration).toFixed(0)} s` : ''}${youtube.audioDuration ? ` · audio ${Number(youtube.audioDuration).toFixed(1)} s` : ''}`
@@ -676,7 +685,7 @@
       const fallbackWord = queue.unavailableFallback || state.youtube?.unavailableFallback;
       if (fallbackWord) {
         this.setUnavailableFallback(fallbackWord);
-      } else if (activeSignName) {
+      } else if (activeSignName && this.fallbackTimer) {
         this.setUnavailableFallback(null);
       }
 

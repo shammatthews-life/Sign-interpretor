@@ -243,6 +243,49 @@ test('a failed final flush retains ASR state so a later stop can retry it', asyn
   ]);
 });
 
+test('transcript events from a partially failed VAD flush are delivered before retry', async () => {
+  const finalized = { kind: 'FINAL_TRANSCRIPT', text: 'completed window' };
+  let flushAttempts = 0;
+  const harness = createHarness({
+    silenceDurationMs: 100,
+    requestOverrides: {
+      '/asr/flush': async () => {
+        flushAttempts += 1;
+        return flushAttempts === 1
+          ? {
+            status: { state: 'running' },
+            flush_status: 'FAILED_RETRYABLE',
+            flush_error: 'Later window failed.',
+            events: [finalized]
+          }
+          : { status: { state: 'running' }, flush_status: 'COMPLETED', events: [] };
+      }
+    }
+  });
+  const accepted = {
+    accepted: true,
+    samplesBase64: 'short-window',
+    chunk: { samples: new Float32Array(1600), sampleRate: 16000, capturedAt: 0 }
+  };
+  const silence = {
+    accepted: false,
+    diagnostics: { rms: 0 },
+    chunk: { samples: new Float32Array(1600), sampleRate: 16000, capturedAt: 100 }
+  };
+
+  await harness.session.start();
+  harness.pipelines[0].emit(accepted);
+  await Promise.all([...harness.session.pendingChunks]);
+  harness.pipelines[0].emit(silence);
+  await harness.session.finalizingPromise;
+  assert.deepEqual(harness.transcripts, [finalized]);
+  assert.equal(harness.session.asrStarted, true);
+
+  await harness.session.stop();
+  assert.deepEqual(harness.transcripts, [finalized]);
+  assert.equal(flushAttempts, 2);
+});
+
 test('chunk failure reports ERROR, stops capture, and resets ASR', async () => {
   const harness = createHarness({
     requestOverrides: {

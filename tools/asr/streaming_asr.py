@@ -324,6 +324,8 @@ class FasterWhisperBackend(StreamingASRBackend):
             raise ValueError("Audio timestamps do not match the sample count and configured sample rate.")
 
         with self._lock:
+            if self.state != "running":
+                return []
             if self._flush_in_progress:
                 raise RuntimeError("Cannot accept audio while a flush is in progress.")
             if self.buffer_end_ms is not None:

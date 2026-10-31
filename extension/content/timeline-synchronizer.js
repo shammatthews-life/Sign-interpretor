@@ -1,17 +1,6 @@
 /**
- * extension/content/timeline-synchronizer.js
- *
- * Phase H21: Hardened YouTube Video Playback Timeline Synchronizer.
- * Coordinates HTML5 <video> playback events with the ISL Avatar Viewer:
- * - video.currentTime synchronization with timestamped transcript segments
- * - Play / Pause event dispatch to Aether
- * - Seek detection: queue cancellation, avatar reset, and transcript repositioning
- * - Playback rate scaling (SET_PLAYBACK_RATE command relay)
- * - Honest subtitle fallback display synchronized to segment boundaries
- * - Bounded queue capacity (max 100 entries) preventing memory accumulation
- * - SPA resilient rebind to handle YouTube dynamic video element replacement
+ * Synchronizes timestamped sign cues to the active YouTube video clock.
  */
-
 (function (root, factory) {
   if (typeof exports === 'object' && typeof module !== 'undefined') {
     module.exports = factory();
@@ -27,176 +16,207 @@
       onDispatchSign = null,
       onDispatchCommand = null,
       onFallback = null,
-      onClearFallback = null,
-      maxQueueCapacity = 100
+      onClearFallback = null
     } = {}) {
-      this.video = videoElement;
+      this.video = null;
       this.onDispatchSign = onDispatchSign;
       this.onDispatchCommand = onDispatchCommand;
       this.onFallback = onFallback;
       this.onClearFallback = onClearFallback;
-      this.maxQueueCapacity = maxQueueCapacity;
-
-      this.segments = []; // [{ id, start, end, text, signIds, fallbackWords }]
+      this.segments = [];
       this.currentSegmentIndex = -1;
-      this.lastDispatchedSegmentId = null;
+      this.activeCueId = null;
+      this.activeCueKey = null;
+      this.activationSequence = 0;
+      this.activeJobId = null;
       this.isSeeking = false;
-      this.dispatchedQueue = [];
       this.boundEvents = [];
-
-      if (this.video) {
-        this.attach(this.video);
-      }
+      if (videoElement) this.attach(videoElement);
     }
 
-    setSegments(segments = []) {
-      // Sort segments ascending by start timestamp
-      this.segments = [...segments].sort((a, b) => (a.start ?? 0) - (b.start ?? 0));
+    setCueManifest(manifest, expectedVideoId = null) {
+      if (!manifest || manifest.schema_version !== '1.0.0' || !Array.isArray(manifest.cues)) {
+        throw new TypeError('Invalid YouTube cue manifest.');
+      }
+      if (!manifest.playback_ready) throw new TypeError('YouTube cue manifest failed timestamp validation.');
+      if (expectedVideoId && manifest.video_id !== expectedVideoId) {
+        throw new TypeError('Cue manifest video ID does not match the active YouTube video.');
+      }
+      if (!manifest.job_id || !manifest.fingerprint) {
+        throw new TypeError('Cue manifest is missing its job identity or fingerprint.');
+      }
+      this.setSegments(manifest.cues.map(cue => ({
+        ...cue,
+        id: cue.cue_id,
+        signIds: Array.isArray(cue.sign_ids) ? cue.sign_ids : [],
+        signOccurrences: Array.isArray(cue.sign_occurrences) ? cue.sign_occurrences : [],
+        fallbackWords: Array.isArray(cue.fallback_words) ? cue.fallback_words : [],
+        fallbackMessage: cue.fallback_message || ''
+      })), manifest.job_id);
+      this.manifestFingerprint = manifest.fingerprint;
+      this.videoId = manifest.video_id;
+    }
+
+    setSegments(segments = [], jobId = null) {
+      if (!Array.isArray(segments)) throw new TypeError('YouTube cues must be an array.');
+      let previousStart = -Infinity;
+      let previousEnd = -Infinity;
+      const validated = segments.map((segment, index) => {
+        const id = segment?.id || segment?.cue_id;
+        const start = segment?.start;
+        const end = segment?.end;
+        if (typeof id !== 'string' || !id || !Number.isFinite(start) || !Number.isFinite(end) || start < 0 || end <= start) {
+          throw new TypeError(`Invalid timestamped cue at index ${index}.`);
+        }
+        if (start < previousStart || start < previousEnd) {
+          throw new TypeError(`Cue order or overlap is invalid at index ${index}.`);
+        }
+        if (segment.signIds !== undefined && (!Array.isArray(segment.signIds)
+          || segment.signIds.some(signId => typeof signId !== 'string' || !signId))) {
+          throw new TypeError(`Invalid playable sign occurrences in cue ${id}.`);
+        }
+        if (segment.fallbackWords !== undefined && (!Array.isArray(segment.fallbackWords)
+          || segment.fallbackWords.some(word => typeof word !== 'string'))) {
+          throw new TypeError(`Invalid fallback words in cue ${id}.`);
+        }
+        previousStart = start;
+        previousEnd = end;
+        return {
+          ...segment,
+          id,
+          signIds: segment.signIds || [],
+          fallbackWords: segment.fallbackWords || [],
+          signOccurrences: segment.signOccurrences || []
+        };
+      });
+      this.clearActiveCue();
+      this.segments = validated;
+      this.activeJobId = jobId;
+      this.manifestFingerprint = null;
+      this.videoId = null;
       this.currentSegmentIndex = -1;
-      this.lastDispatchedSegmentId = null;
-      this.dispatchedQueue = [];
     }
 
     attach(videoElement) {
+      if (this.video === videoElement) return;
       this.detach();
       this.video = videoElement;
       if (!this.video) return;
-
-      const onTimeUpdate = () => this.handleTimeUpdate();
-      const onPlay = () => this.handlePlay();
-      const onPause = () => this.handlePause();
-      const onSeeking = () => this.handleSeeking();
-      const onSeeked = () => this.handleSeeked();
-      const onRateChange = () => this.handleRateChange();
-
-      this.video.addEventListener('timeupdate', onTimeUpdate);
-      this.video.addEventListener('play', onPlay);
-      this.video.addEventListener('pause', onPause);
-      this.video.addEventListener('seeking', onSeeking);
-      this.video.addEventListener('seeked', onSeeked);
-      this.video.addEventListener('ratechange', onRateChange);
-
-      this.boundEvents = [
-        ['timeupdate', onTimeUpdate],
-        ['play', onPlay],
-        ['pause', onPause],
-        ['seeking', onSeeking],
-        ['seeked', onSeeked],
-        ['ratechange', onRateChange]
-      ];
+      const handlers = {
+        timeupdate: () => this.handleTimeUpdate(),
+        play: () => this.handlePlay(),
+        pause: () => this.handlePause(),
+        seeking: () => this.handleSeeking(),
+        seeked: () => this.handleSeeked(),
+        ratechange: () => this.handleRateChange()
+      };
+      for (const [event, handler] of Object.entries(handlers)) {
+        this.video.addEventListener(event, handler);
+        this.boundEvents.push([event, handler]);
+      }
+      this.handleRateChange();
     }
 
     detach() {
-      if (this.video && this.boundEvents.length) {
-        for (const [event, handler] of this.boundEvents) {
-          this.video.removeEventListener(event, handler);
-        }
+      if (this.video) {
+        for (const [event, handler] of this.boundEvents) this.video.removeEventListener(event, handler);
       }
       this.boundEvents = [];
+      this.clearActiveCue();
       this.video = null;
       this.currentSegmentIndex = -1;
-      this.lastDispatchedSegmentId = null;
-      this.dispatchedQueue = [];
+      this.isSeeking = false;
     }
 
     rebind(newVideoElement) {
       if (this.video === newVideoElement) return;
-      this.detach();
-      if (newVideoElement) {
-        this.attach(newVideoElement);
-      }
+      this.attach(newVideoElement);
+      if (newVideoElement && !newVideoElement.paused) this.evaluateCurrentTime();
+    }
+
+    findSegmentIndex(currentTime) {
+      return this.segments.findIndex(segment => currentTime >= segment.start && currentTime < segment.end);
     }
 
     handleTimeUpdate() {
-      if (!this.video || this.isSeeking || !this.segments.length) return;
-      const currentTime = this.video.currentTime;
-
-      // Find the segment matching current time
-      const index = this.segments.findIndex(seg => currentTime >= seg.start && currentTime <= seg.end);
-      if (index === -1) {
-        return;
-      }
-
-      const activeSegment = this.segments[index];
-      if (activeSegment.id !== this.lastDispatchedSegmentId) {
-        this.currentSegmentIndex = index;
-        this.lastDispatchedSegmentId = activeSegment.id;
-        this.dispatchSegment(activeSegment);
-      }
+      if (!this.video || this.video.paused || this.isSeeking) return;
+      this.evaluateCurrentTime();
     }
 
-    dispatchSegment(segment) {
-      if (!segment) return;
-
-      // Track queue length
-      if (this.dispatchedQueue.length >= this.maxQueueCapacity) {
-        this.dispatchedQueue.shift(); // Drop oldest event if capacity reached
+    evaluateCurrentTime() {
+      if (!this.video || this.isSeeking || !Number.isFinite(this.video.currentTime)) return;
+      const index = this.findSegmentIndex(this.video.currentTime);
+      this.currentSegmentIndex = index;
+      const segment = index < 0 ? null : this.segments[index];
+      if (!segment) {
+        if (this.activeCueId !== null) this.clearActiveCue();
+        return;
       }
-      this.dispatchedQueue.push(segment.id);
+      const cueKey = `${this.activeJobId || ''}:${segment.id}`;
+      if (cueKey === this.activeCueKey) return;
+      this.activateSegment(segment, cueKey);
+    }
 
-      // If segment has playable signs, dispatch them to Aether
-      if (Array.isArray(segment.signIds) && segment.signIds.length > 0) {
-        if (this.onClearFallback) this.onClearFallback();
-        for (const signId of segment.signIds) {
-          if (this.onDispatchSign) this.onDispatchSign(signId);
-        }
-      } else if (Array.isArray(segment.fallbackWords) && segment.fallbackWords.length > 0) {
-        // Fallback required: reset avatar to neutral, show honest subtitle
-        if (this.onDispatchCommand) this.onDispatchCommand('RESET_AVATAR');
-        const fallbackText = segment.fallbackWords.join(', ');
-        if (this.onFallback) this.onFallback(fallbackText);
-      } else if (segment.text) {
-        // Fallback for full text
-        if (this.onDispatchCommand) this.onDispatchCommand('RESET_AVATAR');
-        if (this.onFallback) this.onFallback(segment.text);
+    activateSegment(segment, cueKey) {
+      this.clearActiveCue();
+      const activationId = `${cueKey}:${++this.activationSequence}`;
+      this.activeCueKey = cueKey;
+      this.activeCueId = activationId;
+      if (segment.signIds.length) {
+        this.onClearFallback?.();
+        segment.signIds.forEach((signId, occurrenceIndex) => {
+          const occurrence = segment.signOccurrences[occurrenceIndex];
+          this.onDispatchSign?.(signId, {
+            cueId: segment.id,
+            jobId: this.activeJobId,
+            occurrenceIndex,
+            eventId: `${activationId}:${occurrence?.occurrence_id || `sign:${occurrenceIndex}`}`,
+            command: occurrenceIndex === 0 ? 'PLAY_SIGN' : 'QUEUE_SIGN'
+          });
+        });
+      } else {
+        this.onDispatchCommand?.('RESET_AVATAR');
       }
+      const fallbackMessage = segment.fallbackMessage
+        || (segment.fallbackWords.length
+          ? `Sign not available for: ${segment.fallbackWords.join(', ')}. Original text: ${segment.source_text || segment.text || ''}`
+          : '');
+      if (fallbackMessage) this.onFallback?.(fallbackMessage);
+      else this.onClearFallback?.();
+    }
+
+    clearActiveCue() {
+      if (this.activeCueId !== null) this.onDispatchCommand?.('RESET_AVATAR');
+      this.activeCueId = null;
+      this.activeCueKey = null;
+      this.onClearFallback?.();
     }
 
     handlePlay() {
-      if (this.onDispatchCommand) {
-        this.onDispatchCommand('RESUME');
-      }
+      this.onDispatchCommand?.('RESUME');
+      this.evaluateCurrentTime();
     }
 
     handlePause() {
-      if (this.onDispatchCommand) {
-        this.onDispatchCommand('PAUSE');
-      }
+      this.onDispatchCommand?.('PAUSE');
     }
 
     handleSeeking() {
       this.isSeeking = true;
-      // Seek initiated: cancel stale queue immediately and reset avatar to neutral
-      if (this.onDispatchCommand) {
-        this.onDispatchCommand('RESET_AVATAR');
-      }
-      if (this.onClearFallback) {
-        this.onClearFallback();
-      }
-      this.lastDispatchedSegmentId = null;
-      this.dispatchedQueue = [];
+      this.clearActiveCue();
+      this.currentSegmentIndex = -1;
     }
 
     handleSeeked() {
       this.isSeeking = false;
-      if (!this.video) return;
-      const currentTime = this.video.currentTime;
-
-      // Reposition segment index
-      const newIndex = this.segments.findIndex(seg => currentTime >= seg.start && currentTime <= seg.end);
-      this.currentSegmentIndex = newIndex;
-      if (newIndex !== -1) {
-        const seg = this.segments[newIndex];
-        this.lastDispatchedSegmentId = seg.id;
-        this.dispatchSegment(seg);
-      }
+      this.evaluateCurrentTime();
     }
 
     handleRateChange() {
       if (!this.video) return;
-      const rate = this.video.playbackRate || 1.0;
-      if (this.onDispatchCommand) {
-        this.onDispatchCommand('SET_PLAYBACK_RATE', { rate });
+      const rate = Number(this.video.playbackRate);
+      if (Number.isFinite(rate) && rate > 0) {
+        this.onDispatchCommand?.('SET_PLAYBACK_RATE', { rate });
       }
     }
   }

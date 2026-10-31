@@ -1568,6 +1568,11 @@
         case 'RESUME':
           signScheduler.resume();
           break;
+        case 'SET_PLAYBACK_RATE':
+          if (Number.isFinite(data.rate) && data.rate > 0) {
+            signScheduler.player.playbackSpeed = Math.max(0.0625, Math.min(16, data.rate));
+          }
+          break;
         case 'RESET_AVATAR':
           signScheduler.cancel();
           break;

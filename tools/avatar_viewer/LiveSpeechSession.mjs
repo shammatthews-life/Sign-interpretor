@@ -165,11 +165,10 @@ export class LiveSpeechSession {
     if (!this.asrStarted || sessionId !== this.sessionId) return;
     this.#trace('asr_flush');
     const response = await this.request('/asr/flush');
-    if (response.flush_status && response.flush_status !== 'COMPLETED') {
-      this.flushFailed = true;
-      throw new Error(response.flush_error || `ASR flush ended with status ${response.flush_status}.`);
-    }
-    this.flushFailed = false;
+    this.#consumeFlushResponse(response);
+  }
+
+  #consumeFlushResponse(response) {
     this.onASRStatus(response.status);
     if (response.events?.length) {
       for (const event of response.events) {
@@ -177,6 +176,11 @@ export class LiveSpeechSession {
       }
       this.onTranscriptEvents(response.events);
     }
+    if (response.flush_status && response.flush_status !== 'COMPLETED') {
+      this.flushFailed = true;
+      throw new Error(response.flush_error || `ASR flush ended with status ${response.flush_status}.`);
+    }
+    this.flushFailed = false;
   }
 
   #trace(event, details = {}) {
@@ -241,18 +245,7 @@ export class LiveSpeechSession {
     if (flush) {
       try {
         const response = await this.request('/asr/flush');
-        if (response.flush_status && response.flush_status !== 'COMPLETED') {
-          this.flushFailed = true;
-          throw new Error(response.flush_error || `ASR flush ended with status ${response.flush_status}.`);
-        }
-        this.flushFailed = false;
-        this.onASRStatus(response.status);
-        if (response.events?.length) {
-          for (const event of response.events) {
-            this.#trace('asr_transcript', { kind: event.kind, characterCount: event.text?.length || 0 });
-          }
-          this.onTranscriptEvents(response.events);
-        }
+        this.#consumeFlushResponse(response);
       } catch (error) {
         this.flushFailed = true;
         errors.push(error);

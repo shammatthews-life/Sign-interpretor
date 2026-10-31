@@ -24,6 +24,10 @@
     ? ISLDemoData
     : (typeof require !== 'undefined' ? require('../shared/demo-data.js') : null);
 
+  const cueManifestBuilder = typeof ISLYouTubeCueManifest !== 'undefined'
+    ? ISLYouTubeCueManifest
+    : (typeof require !== 'undefined' ? require('../shared/youtube-cue-manifest.js') : null);
+
   class RuntimeBridge {
     constructor({ defaultEndpoint = 'http://localhost:8000', onStateUpdate = null } = {}) {
       this.state = contract ? contract.createInitialState() : {};
@@ -32,6 +36,7 @@
       this.pingInterval = null;
       this.demoTimer = null;
       this.youtubePollingJobs = new Set();
+      this.youtubeCueManifests = new Map();
     }
 
     getState() {
@@ -112,7 +117,7 @@
       }
     }
 
-    async submitYouTube(url) {
+    async submitYouTube(url, { deferPolling = false } = {}) {
       const validation = contract.validateYouTubeUrl(url);
       if (!validation.valid) throw new Error(validation.error);
       if (this.state.youtube.jobId && !['READY', 'ERROR'].includes(this.state.youtube.state)) {
@@ -129,6 +134,7 @@
       this.state.youtube = {
         ...contract.createInitialState().youtube,
         jobId: payload.job_id,
+        videoId: validation.videoId,
         state: payload.state,
         progress: 0,
         error: null
@@ -137,13 +143,39 @@
       this.state.connection = contract.STATES.CONNECTION.CONNECTED;
       this.state.runtimeError = null;
       this.emitUpdate();
-      if (!this.youtubePollingJobs.has(payload.job_id)) {
-        this.youtubePollingJobs.add(payload.job_id);
-        this.pollYouTubeJob(payload.job_id)
-          .catch(error => console.warn('[ISL Runtime Bridge] YouTube job failed:', error.message))
-          .finally(() => this.youtubePollingJobs.delete(payload.job_id));
-      }
+      if (!deferPolling) this.trackYouTubeJob(payload.job_id);
       return { job_id: payload.job_id, state: payload.state };
+    }
+
+    trackYouTubeJob(jobId) {
+      if (this.youtubePollingJobs.has(jobId)) return;
+      this.youtubePollingJobs.add(jobId);
+      this.pollYouTubeJob(jobId)
+        .catch(error => console.warn('[ISL Runtime Bridge] YouTube job failed:', error.message))
+        .finally(() => this.youtubePollingJobs.delete(jobId));
+    }
+
+    async getYouTubeCueManifest(jobId, expectedVideoId) {
+      if (typeof jobId !== 'string' || !jobId) throw new TypeError('A YouTube job ID is required.');
+      if (typeof expectedVideoId !== 'string' || !/^[A-Za-z0-9_-]{11}$/.test(expectedVideoId)) {
+        throw new TypeError('An exact YouTube video ID is required.');
+      }
+      const cached = this.youtubeCueManifests.get(jobId);
+      if (cached) {
+        if (cached.video_id !== expectedVideoId) throw new Error('Stored cue manifest belongs to a different video.');
+        return cached;
+      }
+      const envelope = await this.requestJson(
+        `${this.state.runtimeEndpoint}/youtube/result/${encodeURIComponent(jobId)}`,
+        {},
+        30000
+      );
+      if (envelope.job_id !== jobId || envelope.state !== 'READY' || !envelope.result
+        || envelope.result.video_id !== expectedVideoId) {
+        throw new Error('Durable YouTube result does not match the requested job and video.');
+      }
+      await this.applyYouTubeResult(jobId, envelope.result);
+      return this.youtubeCueManifests.get(jobId);
     }
 
     setYouTubeError(error) {
@@ -190,7 +222,7 @@
               || !Array.isArray(translation?.translated_segments)) {
               throw new Error('Local runtime returned an incomplete YouTube result.');
             }
-            this.applyYouTubeResult(jobId, envelope.result);
+            await this.applyYouTubeResult(jobId, envelope.result);
             return envelope.result;
           }
           await new Promise(resolve => setTimeout(resolve, 1200));
@@ -203,11 +235,18 @@
       }
     }
 
-    applyYouTubeResult(jobId, result) {
+    async applyYouTubeResult(jobId, result) {
       const metadata = result.metadata || {};
       const transcript = result.transcript || {};
       const segments = Array.isArray(transcript.segments) ? transcript.segments : [];
-      const translated = result.translation?.translated_segments || [];
+      const translated = Array.isArray(result.translation?.translated_segments)
+        ? result.translation.translated_segments
+        : [];
+      if (!cueManifestBuilder?.buildYoutubeCueManifest) {
+        throw new Error('Timestamped YouTube cue manifest support is unavailable.');
+      }
+      const cueManifest = await cueManifestBuilder.buildYoutubeCueManifest(jobId, result);
+      this.youtubeCueManifests.set(jobId, cueManifest);
       const glosses = [...new Set(translated.flatMap(segment => segment.gloss || []))];
       const translationStatusCounts = translated.reduce((counts, segment) => {
         const status = String(segment.translation_status || 'UNKNOWN').replace(/^TRANSLATION_/, '');
@@ -216,9 +255,19 @@
       }, {});
       const playable = translated.flatMap(segment => segment.playable_signs || []);
       const unavailable = translated.flatMap(segment => segment.unavailable_concepts || []);
+      const fallbackConcepts = cueManifest.cues.flatMap(cue => cue.fallback_occurrences.map(item => ({
+        word: item.word,
+        reason: item.category === 'unknown_term'
+          ? 'Word not found in the translation catalog'
+          : item.category === 'unavailable_sign'
+            ? 'Sign is not available in the project sign library'
+            : 'Source text could not be aligned with translation'
+      })));
+      const coverage = cueManifest.coverage;
       const latest = segments.length ? segments[segments.length - 1] : null;
       this.state.youtube = {
         jobId,
+        videoId: cueManifest.video_id,
         state: 'READY',
         progress: 1,
         title: String(metadata.title || ''),
@@ -228,16 +277,25 @@
         latestSegment: latest ? String(latest.text || '') : '',
         transcriptSummary: String(transcript.full_text || '').slice(0, 1800),
         resultReady: true,
+        cueManifestFingerprint: cueManifest.fingerprint,
+        cueCount: cueManifest.cue_count,
+        cueManifestPlaybackReady: cueManifest.playback_ready,
+        cueManifestErrors: cueManifest.validation_errors,
+        wordCoverage: {
+          playableSignOccurrences: coverage.playable_sign_occurrences,
+          unavailableConceptOccurrences: coverage.unavailable_concept_occurrences,
+          unknownTermOccurrences: coverage.unknown_term_occurrences,
+          sourceMismatchFallbackOccurrences: coverage.source_mismatch_fallback_occurrences,
+          fallbackOccurrences: coverage.fallback_occurrences,
+          sourceTextMismatches: coverage.mismatched_segments
+        },
         translationStatus: translated.length ? 'G2/G3 prototype gloss; not full ISL translation' : 'NO_TRANSLATION',
         translationStatusCounts,
         glosses,
         playableSigns: playable,
         currentSign: null,
         queuedSigns: [...new Set(playable)],
-        unavailableConcepts: unavailable.map(item => ({
-          word: String(item.sign_id || 'unknown'),
-          reason: String(item.reason || 'Motion unavailable')
-        })),
+        unavailableConcepts: fallbackConcepts,
         error: null
       };
       this.state.transcript.final = String(transcript.full_text || '');

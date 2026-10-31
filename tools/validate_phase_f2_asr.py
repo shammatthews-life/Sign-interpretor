@@ -98,6 +98,31 @@ backend.start()
 events = backend.accept_audio_chunk(np.zeros(16000, dtype=np.float32), audio_start_ms=0, audio_end_ms=1000)
 assert backend.state == "running" and [event.kind for event in events] == ["PARTIAL_TRANSCRIPT"], "Backend did not restart with a fresh transcript session."
 
+for lifecycle_state in ("paused", "stopped"):
+    race_backend = FasterWhisperBackend(
+        model_name=f"accept-{lifecycle_state}-race",
+        model_factory=model_factory,
+        minimum_decode_ms=1000,
+    )
+    race_backend.start()
+    original_asarray = np.asarray
+
+    def transition_before_append(samples, *args, **kwargs):
+        with race_backend._lock:
+            race_backend.state = lifecycle_state
+        return original_asarray(samples, *args, **kwargs)
+
+    with patch("asr.streaming_asr.np.asarray", side_effect=transition_before_append):
+        raced_events = race_backend.accept_audio_chunk(
+            np.zeros(16000, dtype=np.float32),
+            audio_start_ms=0,
+            audio_end_ms=1000,
+        )
+    assert raced_events == [] and race_backend._stream_sample_count == 0, (
+        f"Audio was accepted after the backend transitioned to {lifecycle_state}."
+    )
+    race_backend.stop()
+
 class ShortUtteranceModel:
     def transcribe(self, _audio, **_kwargs):
         return [Segment(" hello")], object()
