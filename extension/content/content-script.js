@@ -168,13 +168,24 @@
     };
   }
 
-  function handleUserAction(actionType, payload) {
+  function handleUserAction(actionType, payload = {}) {
     if (typeof chrome === 'undefined' || !chrome.runtime?.sendMessage) return;
 
-    const msg = contract.createMessage(actionType, payload);
+    const actionPayload = actionType === contract.MESSAGE_TYPES.AETHER_COMMAND
+      ? contract.ensureAetherEventId(payload)
+      : payload;
+    const msg = contract.createMessage(actionType, actionPayload);
     chrome.runtime.sendMessage(msg, (response) => {
       if (chrome.runtime.lastError) {
         console.warn('[ISL Content Script] Error sending action:', chrome.runtime.lastError.message);
+        return;
+      }
+      if (!response?.success) {
+        const reason = response?.error || 'The service worker rejected the action.';
+        console.warn(`[ISL Content Script] ${actionType} was rejected:`, reason);
+        if (actionType === contract.MESSAGE_TYPES.AETHER_COMMAND && actionPayload.signId) {
+          showAetherDeliveryFailure(actionPayload, reason);
+        }
         return;
       }
       if (response?.payload) {
@@ -366,6 +377,7 @@
         eventId,
         rate: payload.rate,
         targetEventId: payload.targetEventId,
+        viewMode: payload.viewMode,
         cueStartSeconds: payload.cueStartSeconds,
         cueEndSeconds: payload.cueEndSeconds
       }, origin);
@@ -533,6 +545,10 @@
         for (const [eventId, entry] of inFlightAetherCommands) {
           postAetherCommand(entry.payload, iframe, origin, entry.attempts + 1);
         }
+        postAetherCommand({
+          command: contract.AETHER_COMMANDS.SET_AVATAR_VIEW,
+          viewMode: ui?.avatarViewMode || 'half'
+        }, iframe, origin);
         flushAetherCommands();
       });
     }
@@ -737,8 +753,25 @@
     notifyPageReady();
   }
 
+  function handleVisibilityChange() {
+    if (document.visibilityState === 'visible') {
+      const currentVideo = getVideoElement();
+      if (synchronizer && currentVideo) {
+        synchronizer.rebind(currentVideo);
+      }
+      if (typeof chrome !== 'undefined' && chrome.runtime?.sendMessage) {
+        chrome.runtime.sendMessage(contract.createMessage(contract.MESSAGE_TYPES.GET_STATE), response => {
+          if (response?.success && response.payload && ui) {
+            ui.update(stateForCurrentTab(response.payload));
+          }
+        });
+      }
+    }
+  }
+
   window.addEventListener('yt-navigate-finish', handleNavigation);
   window.addEventListener('popstate', handleNavigation);
+  document.addEventListener('visibilitychange', handleVisibilityChange);
 
   // Initialize once DOM is ready
   if (document.readyState === 'loading') {
@@ -756,6 +789,7 @@
     }
     window.removeEventListener('yt-navigate-finish', handleNavigation);
     window.removeEventListener('popstate', handleNavigation);
+    document.removeEventListener('visibilitychange', handleVisibilityChange);
     videoElementObserver?.disconnect();
     videoElementObserver = null;
     if (synchronizer) {

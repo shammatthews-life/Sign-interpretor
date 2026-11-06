@@ -41,6 +41,22 @@ const bridge = new (self.ISLRuntimeBridge.RuntimeBridge)({
   }
 });
 
+const RUNTIME_PROBE_COOLDOWN_MS = 5000;
+let runtimeProbeAt = 0;
+let runtimeProbePromise = null;
+function getRuntimeState() {
+  const state = bridge.getState();
+  if (state.runtimeAvailable || state.runtimeActive) return Promise.resolve(state);
+  if (runtimeProbePromise) return runtimeProbePromise;
+  if (Date.now() - runtimeProbeAt < RUNTIME_PROBE_COOLDOWN_MS) return Promise.resolve(state);
+
+  runtimeProbeAt = Date.now();
+  runtimeProbePromise = bridge.pingRuntime().finally(() => {
+    runtimeProbePromise = null;
+  });
+  return runtimeProbePromise;
+}
+
 const STORAGE_KEY = 'islYoutubeJobsV1';
 const MAX_STORED_JOBS = 30;
 const MAX_CUE_READY_RETRIES = 3;
@@ -288,6 +304,10 @@ async function dispatchAetherCommand(message, sender) {
     && (!Number.isFinite(payload.rate) || payload.rate <= 0 || payload.rate > 16)) {
     throw new Error('Playback rate must be finite and between 0 and 16.');
   }
+  if (payload.command === commands.SET_AVATAR_VIEW
+    && !['half', 'full'].includes(payload.viewMode)) {
+    throw new Error('Avatar view must be either half-body or full-body.');
+  }
   const result = await sendTabMessage(
     targetTabId,
     self.ISLMessageContract.createMessage(self.ISLMessageContract.MESSAGE_TYPES.AETHER_COMMAND, payload)
@@ -509,8 +529,9 @@ function broadcastStateUpdate(state) {
 if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onInstalled) {
   chrome.runtime.onInstalled.addListener(() => {
     console.log('[ISL Service Worker] Extension installed/updated.');
-    // Attempt initial passive health probe to localhost
-    bridge.pingRuntime();
+    getRuntimeState().catch(error => {
+      console.warn('[ISL Service Worker] Initial runtime probe failed:', error.message);
+    });
   });
 }
 
@@ -532,8 +553,12 @@ if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onMessage)
 
     switch (message.type) {
       case MESSAGE_TYPES.GET_STATE:
-        sendResponse({ success: true, payload: bridge.getState() });
-        break;
+        getRuntimeState().then(state => {
+          sendResponse({ success: true, payload: state });
+        }).catch(error => {
+          sendResponse({ success: false, error: error.message || 'Runtime health check failed.' });
+        });
+        return true;
 
       case MESSAGE_TYPES.CONNECT_RUNTIME:
         bridge.pingRuntime(message.payload?.endpoint).then((state) => {

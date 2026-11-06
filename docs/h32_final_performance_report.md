@@ -91,3 +91,4 @@ Phase H32 addressed the central performance bottleneck identified in Phase H31: 
 - Direct sign resolution rate: **93.90%** (10,359 signs direct / 673 subtitle fallbacks).
 - Cache lookup latency: 0.0002 ms per sign. Zero disk stalls during playback.
 - Epistemic classification: All 570 signs remain strictly `IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW`.
+

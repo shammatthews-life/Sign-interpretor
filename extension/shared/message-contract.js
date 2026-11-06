@@ -119,6 +119,7 @@
     CANCEL_JOB: 'CANCEL_JOB',
     CANCEL_EVENT: 'CANCEL_EVENT',
     RESET_AVATAR: 'RESET_AVATAR',
+    SET_AVATAR_VIEW: 'SET_AVATAR_VIEW',
     PAUSE: 'PAUSE',
     RESUME: 'RESUME',
     SET_PLAYBACK_RATE: 'SET_PLAYBACK_RATE'
@@ -221,6 +222,22 @@
     };
   }
 
+  function createEventId() {
+    if (typeof globalThis.crypto?.randomUUID !== 'function') {
+      throw new Error('[ISLMessageContract] Secure event ID generation is unavailable.');
+    }
+    return `isl-${globalThis.crypto.randomUUID()}`;
+  }
+
+  function ensureAetherEventId(payload) {
+    if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+      throw new TypeError('[ISLMessageContract] Aether command payload must be an object.');
+    }
+    const signCommands = [AETHER_COMMANDS.PLAY_SIGN, AETHER_COMMANDS.QUEUE_SIGN];
+    if (!signCommands.includes(payload.command) || payload.eventId !== undefined) return payload;
+    return { ...payload, eventId: createEventId() };
+  }
+
   /**
    * Validates a message structure.
    */
@@ -268,6 +285,8 @@
     AETHER_COMMANDS,
     createInitialState,
     createMessage,
+    createEventId,
+    ensureAetherEventId,
     validateMessage,
     validateYouTubeUrl
   };

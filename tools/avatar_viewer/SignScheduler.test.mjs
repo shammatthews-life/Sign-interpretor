@@ -163,3 +163,13 @@ test('an unavailable sign is rejected without blocking a later playable occurren
     && event.eventId === 'missing-word' && event.reason === 'SIGN_NOT_PLAYABLE'));
   assert.ok(lifecycle.some(event => event.type === 'playback_start' && event.eventId === 'next-playable'));
 });
+test('scheduler dynamically accelerates tempo when cue window is shorter than natural sign duration', () => {
+  const { scheduler, player } = harness();
+  player.playbackSpeed = 1.0;
+  // Enqueue 2 signs into a 2.0 second cue window (natural duration = 2 * 1700 = 3400 ms)
+  scheduler.enqueue('hello', 'event-p1', 'cue-speed', 'job-speed', { cueStartSeconds: 0, cueEndSeconds: 2.0 });
+  scheduler.enqueue('good', 'event-p2', 'cue-speed', 'job-speed', { cueStartSeconds: 0, cueEndSeconds: 2.0 });
+
+  assert.ok(player.playbackSpeed > 1.2, 'Expected accelerated tempo, got ' + player.playbackSpeed);
+  assert.ok(player.playbackSpeed <= 2.2, 'Tempo should not exceed maximum cap, got ' + player.playbackSpeed);
+});

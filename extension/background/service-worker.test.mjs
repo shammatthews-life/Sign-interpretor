@@ -19,7 +19,7 @@ const manifest = {
   cues: []
 };
 
-function createHarness() {
+function createHarness({ runtimeAvailableAfterProbe = true } = {}) {
   const stored = {};
   const storedSession = {};
   const tabMessages = [];
@@ -33,6 +33,8 @@ function createHarness() {
       onStateUpdate = options.onStateUpdate;
       this.trackedJobs = [];
       this.jobCount = 0;
+      this.runtimeProbeCount = 0;
+      this.runtimeAvailableAfterProbe = runtimeAvailableAfterProbe;
     }
     getState() { return JSON.parse(JSON.stringify(this.state)); }
     async submitYouTube(url) {
@@ -58,7 +60,13 @@ function createHarness() {
       return manifest;
     }
     setYouTubeError() {}
-    pingRuntime() {}
+    async pingRuntime() {
+      this.runtimeProbeCount += 1;
+      await new Promise(resolve => setTimeout(resolve, 2));
+      this.state.runtimeAvailable = this.runtimeAvailableAfterProbe;
+      this.state.runtimeError = this.runtimeAvailableAfterProbe ? null : 'Localhost runtime offline (unreachable)';
+      return this.getState();
+    }
     disconnectRuntime() {}
     updateAetherPlayback() {}
     startDemo() {}
@@ -147,6 +155,9 @@ function createHarness() {
     get trackedJobs() {
       return bridgeInstance.trackedJobs;
     },
+    get runtimeProbeCount() {
+      return bridgeInstance.runtimeProbeCount;
+    },
     setReadyState() {
       bridgeInstance.state.youtube.state = 'READY';
       bridgeInstance.state.youtube.cueManifestFingerprint = manifest.fingerprint;
@@ -154,6 +165,35 @@ function createHarness() {
     }
   };
 }
+
+test('GET_STATE coalesces concurrent runtime probes', async () => {
+  const harness = createHarness();
+
+  const [first, second] = await Promise.all([
+    harness.dispatch(contract.MESSAGE_TYPES.GET_STATE),
+    harness.dispatch(contract.MESSAGE_TYPES.GET_STATE)
+  ]);
+
+  assert.equal(harness.runtimeProbeCount, 1);
+  assert.equal(first.success, true);
+  assert.equal(second.success, true);
+  assert.equal(first.payload.runtimeAvailable, true);
+  assert.equal(second.payload.runtimeAvailable, true);
+});
+
+test('GET_STATE rate-limits repeated probes while the runtime remains unavailable', async () => {
+  const harness = createHarness({ runtimeAvailableAfterProbe: false });
+
+  const first = await harness.dispatch(contract.MESSAGE_TYPES.GET_STATE);
+  const second = await harness.dispatch(contract.MESSAGE_TYPES.GET_STATE);
+
+  assert.equal(harness.runtimeProbeCount, 1);
+  assert.equal(first.success, true);
+  assert.equal(second.success, true);
+  assert.equal(first.payload.runtimeAvailable, false);
+  assert.equal(second.payload.runtimeAvailable, false);
+  assert.equal(second.payload.runtimeError, 'Localhost runtime offline (unreachable)');
+});
 
 test('service worker delivers fingerprinted cues only to the matching video job and tab', async () => {
   const harness = createHarness();
@@ -259,6 +299,18 @@ test('service worker delivers fingerprinted cues only to the matching video job 
       assert.equal(delivered.tabId, tab.id);
       assert.equal(delivered.message.type, contract.MESSAGE_TYPES.AETHER_COMMAND);
       assert.equal(delivered.message.payload.eventId, 'manual-hello');
+
+      const avatarView = await harness.dispatch(contract.MESSAGE_TYPES.AETHER_COMMAND, {
+        command: contract.AETHER_COMMANDS.SET_AVATAR_VIEW,
+        viewMode: 'full'
+      });
+      assert.equal(avatarView.success, true);
+      assert.equal(harness.tabMessages.at(-1).message.payload.viewMode, 'full');
+      const invalidAvatarView = await harness.dispatch(contract.MESSAGE_TYPES.AETHER_COMMAND, {
+        command: contract.AETHER_COMMANDS.SET_AVATAR_VIEW,
+        viewMode: 'zoomed'
+      });
+      assert.equal(invalidAvatarView.success, false);
 
       const missingEvent = await harness.dispatch(contract.MESSAGE_TYPES.AETHER_COMMAND, {
         command: contract.AETHER_COMMANDS.QUEUE_SIGN,

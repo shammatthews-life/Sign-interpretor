@@ -87,7 +87,20 @@ export class SignScheduler {
         duplicateSuppressed: false
       });
     }
-    if (!this.currentId && !this.isPaused) this.startNext();
+    if (!this.currentId && !this.isPaused) {
+      this.startNext();
+    } else if (this.currentEntry && this.currentEntry.cueId === cueId && this.currentEntry.jobId === jobId) {
+      if (Number.isFinite(metadata.cueStartSeconds) && Number.isFinite(metadata.cueEndSeconds)) {
+        const cueWindowMs = (metadata.cueEndSeconds - metadata.cueStartSeconds) * 1000;
+        if (cueWindowMs > 400) {
+          const allCueSigns = [this.currentEntry, ...this.queue.filter(q => q.cueId === cueId && q.jobId === jobId)];
+          const totalSignDurationMs = allCueSigns.reduce((acc, q) => acc + (q.playable?.duration_ms || 1700), 0);
+          if (totalSignDurationMs > cueWindowMs) {
+            this.player.playbackSpeed = Math.min(2.2, Math.max(1.0, totalSignDurationMs / cueWindowMs));
+          }
+        }
+      }
+    }
     this.emit();
     return result;
   }
@@ -122,6 +135,25 @@ export class SignScheduler {
       this.currentId = next.id;
       this.currentEntry = next;
       try {
+        // Dynamic Pacing Engine: Adapt playback tempo to match speech segment window
+        if (Number.isFinite(next.cueStartSeconds) && Number.isFinite(next.cueEndSeconds)) {
+          const cueWindowMs = (next.cueEndSeconds - next.cueStartSeconds) * 1000;
+          if (cueWindowMs > 400) {
+            const sameCueRemaining = [next, ...this.queue.filter(q => q.cueId === next.cueId && q.jobId === next.jobId)];
+            const totalSignDurationMs = sameCueRemaining.reduce((acc, q) => acc + (q.playable?.duration_ms || 1700), 0);
+            if (totalSignDurationMs > cueWindowMs) {
+              const tempo = Math.min(2.2, Math.max(1.0, totalSignDurationMs / cueWindowMs));
+              this.player.playbackSpeed = tempo;
+            } else {
+              this.player.playbackSpeed = 1.0;
+            }
+          } else {
+            this.player.playbackSpeed = 1.0;
+          }
+        } else {
+          this.player.playbackSpeed = 1.0;
+        }
+
         this.player.loadSign(next.playable);
         this.player.play();
         this.emitLifecycle('playback_start', next, { durationMs: next.playable.duration_ms });

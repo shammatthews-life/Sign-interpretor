@@ -8,6 +8,8 @@ export class SignLibraryError extends Error {
 }
 
 export class SignLibrary {
+  static MAX_PRELOAD_CONCURRENCY = 8;
+
   constructor({ basePath = '/signs', fetchImpl = null } = {}) {
     this.basePath = basePath.replace(/\/$/, '');
     // Do not detach Window.fetch: Chromium validates its Window receiver.
@@ -39,7 +41,11 @@ export class SignLibrary {
   }
 
   async preload(ids) {
-    const results = await Promise.allSettled(ids.map(id => this.loadSign(id)));
+    const results = [];
+    for (let offset = 0; offset < ids.length; offset += SignLibrary.MAX_PRELOAD_CONCURRENCY) {
+      const batch = ids.slice(offset, offset + SignLibrary.MAX_PRELOAD_CONCURRENCY);
+      results.push(...await Promise.allSettled(batch.map(id => this.loadSign(id))));
+    }
     return results.map((result, index) => ({ id: ids[index], ...result }));
   }
 

@@ -105,3 +105,4 @@ const integrityData = {
 const jsonOutPath = path.resolve('data', 'h32_translation_integrity.json');
 fs.writeFileSync(jsonOutPath, JSON.stringify(integrityData, null, 2), 'utf8');
 console.log(`Wrote ${jsonOutPath} successfully.`);
+

@@ -35,3 +35,4 @@ Phase H32 verified that extreme throughput acceleration from 4.5× to 64.5× rea
 ## 3. Concurrency & Daemon Architecture
 
 The architecture maintains a single persistent Python worker process that retains the compiled CUDA model in memory, eliminating redundant cold-start allocations while ensuring non-blocking audio ingestion and immediate sign translation.
+
