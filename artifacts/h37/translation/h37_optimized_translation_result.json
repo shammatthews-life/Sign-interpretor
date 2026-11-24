@@ -1,0 +1,1606 @@
+{
+  "milestone": "H37",
+  "timestamp": "2026-11-24T16:07:27.324Z",
+  "video_id": "MXKkXXYUxBc",
+  "segment_range": "0:00 - 2:00",
+  "summary": {
+    "total_spoken_words": 272,
+    "total_playable_signs": 171,
+    "direct_token_coverage_pct": "62.9",
+    "meaningful_concept_coverage_pct": "100.0",
+    "total_unknown_terms": 0,
+    "total_fingerspelled_names": 7,
+    "total_grammar_omissions": 94,
+    "translation_time_ms": 10.06
+  },
+  "segments": [
+    {
+      "segmentIndex": 0,
+      "sourceText": "This is public speaking for beginners, and the goal of this video is simple.",
+      "start": 2.45,
+      "end": 8.45,
+      "wordCount": 14,
+      "glossSequence": [
+        "SAY",
+        "PEOPLE",
+        "LEARN",
+        "GOAL",
+        "VIDEO",
+        "SIMPLY"
+      ],
+      "signIds": [
+        "say",
+        "people",
+        "learn",
+        "goal",
+        "video",
+        "simply"
+      ],
+      "playableCount": 6,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 8,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "this is public speaking for beginners and the goal of this video is simple"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): public speaking"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: this, is, for, and, the, of, this, is",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "SAY PEOPLE LEARN GOAL VIDEO SIMPLY"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: say, people, learn, goal, video, simply; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 1,
+      "sourceText": "It's to help you overcome being uncertain, anxious, afraid,",
+      "start": 8.45,
+      "end": 14.45,
+      "wordCount": 9,
+      "glossSequence": [
+        "YOU",
+        "WIN",
+        "FEAR",
+        "FEAR",
+        "HELP",
+        "NOT"
+      ],
+      "signIds": [
+        "you",
+        "win",
+        "fear",
+        "fear",
+        "help",
+        "not"
+      ],
+      "playableCount": 6,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "it's to help you overcome being uncertain anxious afraid"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): it's to help"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: being",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Transformed SVO to ISL SOV: YOU WIN NOT FEAR FEAR HELP",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-SOV-01"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Moved negation particle to clause-final position: NOT",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-NEG-FINAL-01"
+        },
+        {
+          "stage": "negation",
+          "detail": "Negation concept retained; exact ISL construction remains unmodeled.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-NEGATION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU WIN FEAR FEAR HELP NOT"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: you, win, fear, fear, help, not; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 2,
+      "sourceText": "and bring you a few steps closer to being more confident, more clear,",
+      "start": 14.45,
+      "end": 21.45,
+      "wordCount": 13,
+      "glossSequence": [
+        "BRING",
+        "YOU",
+        "FEW",
+        "STEP",
+        "CLOSE",
+        "MORE",
+        "CONFIDENT",
+        "MORE",
+        "CLEAR"
+      ],
+      "signIds": [
+        "bring",
+        "you",
+        "few",
+        "step",
+        "close",
+        "more",
+        "confident",
+        "more",
+        "clear"
+      ],
+      "playableCount": 9,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 4,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "and bring you a few steps closer to being more confident more clear"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and, a, to, being",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "BRING YOU FEW STEP CLOSE MORE CONFIDENT MORE CLEAR"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: bring, you, few, step, close, more, confident, more, clear; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 3,
+      "sourceText": "and a much more captivating speaker.",
+      "start": 21.45,
+      "end": 24.45,
+      "wordCount": 6,
+      "glossSequence": [
+        "MORE",
+        "MORE",
+        "BEAUTIFUL",
+        "SPEAKER"
+      ],
+      "signIds": [
+        "more",
+        "more",
+        "beautiful",
+        "speaker"
+      ],
+      "playableCount": 4,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "and a much more captivating speaker"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and, a",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "MORE MORE BEAUTIFUL SPEAKER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: more, more, beautiful, speaker; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 4,
+      "sourceText": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+      "start": 24.45,
+      "end": 30.45,
+      "wordCount": 15,
+      "glossSequence": [
+        "YOU",
+        "SPECIAL",
+        "COMBINATION",
+        "THREE",
+        "DAY",
+        "SAY",
+        "PEOPLE",
+        "CHALLENGE",
+        "WATCH",
+        "WHAT"
+      ],
+      "signIds": [
+        "you",
+        "special",
+        "combination",
+        "three",
+        "day",
+        "say",
+        "people",
+        "challenge",
+        "watch",
+        "what"
+      ],
+      "playableCount": 10,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 6,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "what you about to watch is a special compilation of a three day public speaking challenge"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): three day, public speaking challenge"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: about, to, is, a, of, a",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Transformed SVO to ISL SOV: WHAT YOU SPECIAL COMBINATION THREE DAY SAY PEOPLE CHALLENGE WATCH",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-SOV-01"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Moved WH-interrogative to clause-final position: WHAT",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-WH-FINAL-01"
+        },
+        {
+          "stage": "question",
+          "detail": "WH question retained as a non-manual requirement; no invented manual question sign.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-QUESTION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU SPECIAL COMBINATION THREE DAY SAY PEOPLE CHALLENGE WATCH WHAT"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: you, special, combination, three, day, say, people, challenge, watch, what; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 5,
+      "sourceText": "which we delivered live right here in our studio.",
+      "start": 30.45,
+      "end": 34.25,
+      "wordCount": 9,
+      "glossSequence": [
+        "WE",
+        "LIVE",
+        "PLACE",
+        "WE",
+        "ROOM",
+        "GIVE"
+      ],
+      "signIds": [
+        "we",
+        "live",
+        "place",
+        "we",
+        "room",
+        "give"
+      ],
+      "playableCount": 6,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "which we delivered live right here in our studio"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): right here"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: which, in",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Transformed SVO to ISL SOV: WE LIVE PLACE WE ROOM GIVE",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-SOV-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "WE LIVE PLACE WE ROOM GIVE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: we, live, place, we, room, give; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 6,
+      "sourceText": "We'll begin with mindset and confidence.",
+      "start": 34.25,
+      "end": 37.33,
+      "wordCount": 6,
+      "glossSequence": [
+        "WE",
+        "MINDSET",
+        "CONFIDENT",
+        "GO"
+      ],
+      "signIds": [
+        "we",
+        "mindset",
+        "confident",
+        "go"
+      ],
+      "playableCount": 4,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "we will begin with mindset and confidence"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: will, with, and",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Transformed SVO to ISL SOV: WE MINDSET CONFIDENT GO",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-SOV-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "WE MINDSET CONFIDENT GO"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: we, mindset, confident, go; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 7,
+      "sourceText": "We'll move into the science of capturing attention,",
+      "start": 37.33,
+      "end": 40.21,
+      "wordCount": 8,
+      "glossSequence": [
+        "WE",
+        "MOVE",
+        "SCIENCE",
+        "HOLD",
+        "ATTENTION"
+      ],
+      "signIds": [
+        "we",
+        "move",
+        "science",
+        "hold",
+        "attention"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 4,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "we will move into the science of capturing attention"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: will, into, the, of",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "WE MOVE SCIENCE HOLD ATTENTION"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: we, move, science, hold, attention; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 8,
+      "sourceText": "and we'll finish off with the most impactful delivery skills",
+      "start": 40.21,
+      "end": 43.77,
+      "wordCount": 10,
+      "glossSequence": [
+        "WE",
+        "FINISH",
+        "MORE",
+        "POWER",
+        "PRESENTATION",
+        "SKILL"
+      ],
+      "signIds": [
+        "we",
+        "finish",
+        "more",
+        "power",
+        "presentation",
+        "skill"
+      ],
+      "playableCount": 6,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 4,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "and we will finish off with the most impactful delivery skills"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): finish off"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and, will, with, the",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "WE FINISH MORE POWER PRESENTATION SKILL"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: we, finish, more, power, presentation, skill; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 9,
+      "sourceText": "from the 110-step chart of excellence communication.",
+      "start": 43.77,
+      "end": 47.81,
+      "wordCount": 7,
+      "glossSequence": [
+        "ONE",
+        "STEP",
+        "CHART",
+        "GREAT",
+        "COMMUNICATION"
+      ],
+      "signIds": [
+        "one",
+        "step",
+        "chart",
+        "great",
+        "communication"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "from the 110 step chart of excellence communication"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: from, the, of",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "ONE STEP CHART GREAT COMMUNICATION"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: one, step, chart, great, communication; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 10,
+      "sourceText": "Hey, if we haven't met before, my name is David JP Phillips,",
+      "start": 49.37,
+      "end": 52.85,
+      "wordCount": 12,
+      "glossSequence": [
+        "BEFORE",
+        "HEY",
+        "WE",
+        "HAVE",
+        "MEET",
+        "MY",
+        "NAME",
+        "NOT"
+      ],
+      "signIds": [
+        "before",
+        "hey",
+        "we",
+        "have",
+        "meet",
+        "my",
+        "name",
+        "not"
+      ],
+      "playableCount": 8,
+      "fingerspelledTerms": [
+        "DAVID",
+        "JP",
+        "PHILLIPS"
+      ],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "hey if we have not met before my name is david jp phillips"
+        },
+        {
+          "stage": "proper_noun_fingerspelling",
+          "detail": "Proper noun mapped to ISL fingerspelling: DAVID",
+          "status": "FINGERSPELLED"
+        },
+        {
+          "stage": "proper_noun_fingerspelling",
+          "detail": "Proper noun mapped to ISL fingerspelling: JP",
+          "status": "FINGERSPELLED"
+        },
+        {
+          "stage": "proper_noun_fingerspelling",
+          "detail": "Proper noun mapped to ISL fingerspelling: PHILLIPS",
+          "status": "FINGERSPELLED"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: if, is",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Fronted temporal marker to clause-initial position: BEFORE",
+          "basis": "ISL_CONSTITUENT_RULE",
+          "rule_id": "ISL-TIME-FRONT-01"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Moved negation particle to clause-final position: NOT",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-NEG-FINAL-01"
+        },
+        {
+          "stage": "negation",
+          "detail": "Negation concept retained; exact ISL construction remains unmodeled.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-NEGATION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "BEFORE HEY WE HAVE MEET MY NAME NOT"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: before, hey, we, have, meet, my, name, not; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 11,
+      "sourceText": "and I'm best known for my TEDx talks,",
+      "start": 52.85,
+      "end": 54.73,
+      "wordCount": 8,
+      "glossSequence": [
+        "I",
+        "GOOD",
+        "KNOW",
+        "MY",
+        "SAY"
+      ],
+      "signIds": [
+        "i",
+        "good",
+        "know",
+        "my",
+        "say"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [
+        "TEDX"
+      ],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "and i best known for my tedx talks"
+        },
+        {
+          "stage": "proper_noun_fingerspelling",
+          "detail": "Proper noun mapped to ISL fingerspelling: TEDX",
+          "status": "FINGERSPELLED"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and, for",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I GOOD KNOW MY SAY"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: i, good, know, my, say; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 12,
+      "sourceText": "which are among the most viewed in the world",
+      "start": 54.73,
+      "end": 57.01,
+      "wordCount": 9,
+      "glossSequence": [
+        "MORE",
+        "SEE",
+        "WORLD"
+      ],
+      "signIds": [
+        "more",
+        "see",
+        "world"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 6,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "which are among the most viewed in the world"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: which, are, among, the, in, the",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "MORE SEE WORLD"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: more, see, world; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 13,
+      "sourceText": "on this particular subject.",
+      "start": 57.01,
+      "end": 58.53,
+      "wordCount": 4,
+      "glossSequence": [
+        "POINT",
+        "SUBJECT"
+      ],
+      "signIds": [
+        "point",
+        "subject"
+      ],
+      "playableCount": 2,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "on this particular subject"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: on, this",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "POINT SUBJECT"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: point, subject; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 14,
+      "sourceText": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+      "start": 58.53,
+      "end": 65.01,
+      "wordCount": 16,
+      "glossSequence": [
+        "YOU",
+        "I",
+        "HAVE",
+        "STUDY",
+        "FIVE",
+        "THOUSAND",
+        "SPEAKER",
+        "FIND",
+        "TRUE",
+        "WHAT",
+        "MAKE",
+        "SOMEBODY",
+        "GREAT",
+        "SPEAKER",
+        "SEE"
+      ],
+      "signIds": [
+        "you",
+        "i",
+        "have",
+        "study",
+        "five",
+        "thousand",
+        "speaker",
+        "find",
+        "true",
+        "what",
+        "make",
+        "somebody",
+        "great",
+        "speaker",
+        "see"
+      ],
+      "playableCount": 15,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "you see i have studied over 5 000 speakers to pinpoint exactly what makes someone a great speaker"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): you see"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: over, to, a",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Transformed SVO to ISL SOV: YOU I HAVE STUDY FIVE THOUSAND SPEAKER FIND TRUE WHAT MAKE SOMEBODY GREAT SPEAKER SEE",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-SOV-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU I HAVE STUDY FIVE THOUSAND SPEAKER FIND TRUE WHAT MAKE SOMEBODY GREAT SPEAKER SEE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: you, i, have, study, five, thousand, speaker, find, true, what, make, somebody, great, speaker, see; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 15,
+      "sourceText": "And this chart is one of the results of that particular endeavour.",
+      "start": 65.01,
+      "end": 69.49,
+      "wordCount": 12,
+      "glossSequence": [
+        "CHART",
+        "ONE",
+        "RESULT",
+        "POINT",
+        "WORK"
+      ],
+      "signIds": [
+        "chart",
+        "one",
+        "result",
+        "point",
+        "work"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 7,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "and this chart is one of the results of that particular endeavour"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and, this, is, of, the, of, that",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "CHART ONE RESULT POINT WORK"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: chart, one, result, point, work; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 16,
+      "sourceText": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+      "start": 69.49,
+      "end": 74.29,
+      "wordCount": 15,
+      "glossSequence": [
+        "THEY",
+        "PRACTICE",
+        "I",
+        "HAVE",
+        "COACHING",
+        "WORLD",
+        "BIG",
+        "LIKE",
+        "HAVE"
+      ],
+      "signIds": [
+        "they",
+        "practice",
+        "i",
+        "have",
+        "coaching",
+        "world",
+        "big",
+        "like",
+        "have"
+      ],
+      "playableCount": 9,
+      "fingerspelledTerms": [
+        "ORACLE",
+        "GOOGLE"
+      ],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "oh and they have been put to practice i have coached global giants like oracle google"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): put to practice"
+        },
+        {
+          "stage": "proper_noun_fingerspelling",
+          "detail": "Proper noun mapped to ISL fingerspelling: ORACLE",
+          "status": "FINGERSPELLED"
+        },
+        {
+          "stage": "proper_noun_fingerspelling",
+          "detail": "Proper noun mapped to ISL fingerspelling: GOOGLE",
+          "status": "FINGERSPELLED"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: oh, and, been",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Transformed SVO to ISL SOV: THEY PRACTICE I HAVE COACHING WORLD BIG LIKE HAVE",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-SOV-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "THEY PRACTICE I HAVE COACHING WORLD BIG LIKE HAVE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: they, practice, i, have, coaching, world, big, like, have; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 17,
+      "sourceText": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
+      "start": 74.29,
+      "end": 80.45,
+      "wordCount": 15,
+      "glossSequence": [
+        "STORY",
+        "PRESENTATION",
+        "SKILL",
+        "BEAUTIFUL",
+        "SCIENCE",
+        "HOLD",
+        "AUDIENCE"
+      ],
+      "signIds": [
+        "story",
+        "presentation",
+        "skill",
+        "beautiful",
+        "science",
+        "hold",
+        "audience"
+      ],
+      "playableCount": 7,
+      "fingerspelledTerms": [
+        "DISNEY"
+      ],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 7,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "and disney and storytelling and presentation skills and the beautiful science of holding an audience"
+        },
+        {
+          "stage": "proper_noun_fingerspelling",
+          "detail": "Proper noun mapped to ISL fingerspelling: DISNEY",
+          "status": "FINGERSPELLED"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and, and, and, and, the, of, an",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "STORY PRESENTATION SKILL BEAUTIFUL SCIENCE HOLD AUDIENCE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: story, presentation, skill, beautiful, science, hold, audience; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 18,
+      "sourceText": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
+      "start": 80.45,
+      "end": 86.61,
+      "wordCount": 16,
+      "glossSequence": [
+        "NOW",
+        "ATTENTION",
+        "NEXT",
+        "TWO",
+        "HOUR",
+        "THREE",
+        "MINUTE",
+        "YOU",
+        "FIND",
+        "IMPORTANT",
+        "TOOLS",
+        "I",
+        "HAVE"
+      ],
+      "signIds": [
+        "now",
+        "attention",
+        "next",
+        "two",
+        "hour",
+        "three",
+        "minute",
+        "you",
+        "find",
+        "important",
+        "tools",
+        "i",
+        "have"
+      ],
+      "playableCount": 13,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "attention now over the next two hours and 30 minutes you will discover the essential tools i have"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): over the next, 30"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and, will, the",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Fronted temporal marker to clause-initial position: NOW",
+          "basis": "ISL_CONSTITUENT_RULE",
+          "rule_id": "ISL-TIME-FRONT-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "NOW ATTENTION NEXT TWO HOUR THREE MINUTE YOU FIND IMPORTANT TOOLS I HAVE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: now, attention, next, two, hour, three, minute, you, find, important, tools, i, have; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 19,
+      "sourceText": "I've gathered during my 25 year career as a public speaker",
+      "start": 86.61,
+      "end": 89.53,
+      "wordCount": 11,
+      "glossSequence": [
+        "I",
+        "HAVE",
+        "DURING",
+        "MY",
+        "TWO",
+        "YEAR",
+        "CAREER",
+        "PUBLIC",
+        "SPEAKER",
+        "HAVE"
+      ],
+      "signIds": [
+        "i",
+        "have",
+        "during",
+        "my",
+        "two",
+        "year",
+        "career",
+        "public",
+        "speaker",
+        "have"
+      ],
+      "playableCount": 10,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "i have gathered during my 25 year career as a public speaker"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): 25"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: as, a",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Transformed SVO to ISL SOV: I HAVE DURING MY TWO YEAR CAREER PUBLIC SPEAKER HAVE",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-SOV-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I HAVE DURING MY TWO YEAR CAREER PUBLIC SPEAKER HAVE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: i, have, during, my, two, year, career, public, speaker, have; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 20,
+      "sourceText": "and public speaking coach.",
+      "start": 89.53,
+      "end": 91.69,
+      "wordCount": 4,
+      "glossSequence": [
+        "SAY",
+        "PEOPLE",
+        "COACHING"
+      ],
+      "signIds": [
+        "say",
+        "people",
+        "coaching"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "and public speaking coach"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): public speaking"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "SAY PEOPLE COACHING"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: say, people, coaching; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 21,
+      "sourceText": "So make sure you have a pen and a paper,",
+      "start": 91.69,
+      "end": 95.33,
+      "wordCount": 10,
+      "glossSequence": [
+        "SURE",
+        "YOU",
+        "HAVE",
+        "PEN",
+        "PAPER"
+      ],
+      "signIds": [
+        "sure",
+        "you",
+        "have",
+        "pen",
+        "paper"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 4,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "so make sure you have a pen and a paper"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): make sure"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: so, a, and, a",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "SURE YOU HAVE PEN PAPER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: sure, you, have, pen, paper; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 22,
+      "sourceText": "lean in and you'll walk away with practical tools",
+      "start": 95.33,
+      "end": 98.93,
+      "wordCount": 9,
+      "glossSequence": [
+        "ATTENTION",
+        "YOU",
+        "HAVE",
+        "PRACTICAL",
+        "TOOLS"
+      ],
+      "signIds": [
+        "attention",
+        "you",
+        "have",
+        "practical",
+        "tools"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "lean in and you will walk away with practical tools"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): lean in, walk away with"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: and, will",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "ATTENTION YOU HAVE PRACTICAL TOOLS"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: attention, you, have, practical, tools; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 23,
+      "sourceText": "you can apply tomorrow.",
+      "start": 98.93,
+      "end": 101.81,
+      "wordCount": 4,
+      "glossSequence": [
+        "TOMORROW",
+        "YOU",
+        "PRACTICE"
+      ],
+      "signIds": [
+        "tomorrow",
+        "you",
+        "practice"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "you can apply tomorrow"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: can",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Fronted temporal marker to clause-initial position: TOMORROW",
+          "basis": "ISL_CONSTITUENT_RULE",
+          "rule_id": "ISL-TIME-FRONT-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "TOMORROW YOU PRACTICE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: tomorrow, you, practice; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 24,
+      "sourceText": "Have fun.",
+      "start": 101.81,
+      "end": 107.03,
+      "wordCount": 2,
+      "glossSequence": [
+        "HAVE",
+        "FUN"
+      ],
+      "signIds": [
+        "have",
+        "fun"
+      ],
+      "playableCount": 2,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 0,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "have fun"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): have fun"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "HAVE FUN"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: have, fun; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 25,
+      "sourceText": "Welcome beautiful people all around the world",
+      "start": 107.03,
+      "end": 110.79,
+      "wordCount": 7,
+      "glossSequence": [
+        "WELCOME",
+        "BEAUTIFUL",
+        "PEOPLE",
+        "ALL",
+        "WORLD"
+      ],
+      "signIds": [
+        "welcome",
+        "beautiful",
+        "people",
+        "all",
+        "world"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "welcome beautiful people all around the world"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): all around"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: the",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "WELCOME BEAUTIFUL PEOPLE ALL WORLD"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: welcome, beautiful, people, all, world; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 26,
+      "sourceText": "to the lovely country of Sweden.",
+      "start": 110.79,
+      "end": 114.03,
+      "wordCount": 6,
+      "glossSequence": [
+        "LOVELY",
+        "PLACE",
+        "SWEDEN"
+      ],
+      "signIds": [
+        "lovely",
+        "place",
+        "sweden"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "to the lovely country of sweden"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: to, the, of",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "LOVELY PLACE SWEDEN"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: lovely, place, sweden; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 27,
+      "sourceText": "This is, well, this is my view of you.",
+      "start": 114.03,
+      "end": 116.63,
+      "wordCount": 9,
+      "glossSequence": [
+        "MY",
+        "YOU",
+        "SEE"
+      ],
+      "signIds": [
+        "my",
+        "you",
+        "see"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 6,
+      "status": "TRANSLATION_UNCERTAIN",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "this is well this is my view of you"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: this, is, well, this, is, of",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Transformed SVO to ISL SOV: MY YOU SEE",
+          "basis": "ISL_SYNTACTIC_RULE",
+          "rule_id": "ISL-SOV-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "MY YOU SEE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: my, you, see; unavailable: none"
+        }
+      ]
+    },
+    {
+      "segmentIndex": 28,
+      "sourceText": "There's pictures all over the place.",
+      "start": 116.63,
+      "end": 118.95,
+      "wordCount": 6,
+      "glossSequence": [
+        "PICTURE",
+        "ALL",
+        "PLACE",
+        "PLACE"
+      ],
+      "signIds": [
+        "picture",
+        "all",
+        "place",
+        "place"
+      ],
+      "playableCount": 4,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "status": "TRANSLATION_SUPPORTED",
+      "trace": [
+        {
+          "stage": "normalize",
+          "detail": "there pictures all over the place"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): all over"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: there, the",
+          "basis": "NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "PICTURE ALL PLACE PLACE"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: picture, all, place, place; unavailable: none"
+        }
+      ]
+    }
+  ]
+}

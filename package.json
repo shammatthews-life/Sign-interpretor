@@ -1,0 +1,27 @@
+{
+  "name": "isl-accessibility-translator",
+  "version": "2.5.0",
+  "description": "Real-Time Indian Sign Language (ISL) 3D Avatar Translator with YouTube integration, Faster-Whisper ASR, and Three.js Aether rig articulation.",
+  "scripts": {
+    "test": "node --test tools/avatar_viewer/*.test.mjs extension/**/*.test.mjs",
+    "test:benchmark": "node tools/test_h38_benchmark_evaluation.mjs",
+    "validate:signs": "node tools/sync_and_validate_signs_manifest.mjs",
+    "audit:inventory": "node tools/audit_local_to_github_inventory.mjs",
+    "serve": "python tools/run_avatar_viewer.py --port 8000"
+  },
+  "keywords": [
+    "sign-language",
+    "indian-sign-language",
+    "isl",
+    "accessibility",
+    "threejs",
+    "whisper",
+    "chrome-extension",
+    "aether"
+  ],
+  "author": "ISL Accessibility Translator Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "phase": "H33",
-  "created_at_utc": "2026-10-31T08:41:02.225380+00:00",
+  "created_at_utc": "2026-11-24T10:27:41.576035+00:00",
   "status": "PASS",
   "gpu_environment": {
     "status": "PASS",
     "device_index": 0,
     "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
-    "driver_version": "592.82",
+    "driver_version": "610.91",
     "cuda_device_count": 1,
     "supported_compute_types": [
       "bfloat16",
@@ -24,7 +24,7 @@
       "utilization_gpu_pct": 0.0,
       "memory_used_mb": 0.0,
       "memory_total_mb": 6141.0,
-      "temperature_c": 47.0
+      "temperature_c": 49.0
     }
   },
   "model": {
@@ -34,81 +34,81 @@
     "device": "cuda",
     "device_index": 0,
     "compute_type": "float16",
-    "load_duration_ms": 1255.7
+    "load_duration_ms": 864.06
   },
   "inference": {
     "status": "PASS",
     "audio_duration_s": 5.0,
     "sample_rate_hz": 16000,
-    "warmup_duration_ms": 356.25,
+    "warmup_duration_ms": 570.97,
     "repetitions": 10,
     "observations": [
       {
         "iteration": 1,
-        "duration_ms": 77.43,
+        "duration_ms": 89.55,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 2,
-        "duration_ms": 77.59,
+        "duration_ms": 68.97,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 3,
-        "duration_ms": 70.16,
+        "duration_ms": 65.96,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 4,
-        "duration_ms": 72.8,
+        "duration_ms": 72.28,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 5,
-        "duration_ms": 82.34,
+        "duration_ms": 79.78,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 6,
-        "duration_ms": 84.73,
+        "duration_ms": 82.06,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 7,
-        "duration_ms": 73.27,
+        "duration_ms": 78.56,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 8,
-        "duration_ms": 69.89,
+        "duration_ms": 69.43,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 9,
-        "duration_ms": 71.99,
+        "duration_ms": 63.62,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
       },
       {
         "iteration": 10,
-        "duration_ms": 78.68,
+        "duration_ms": 58.17,
         "segment_count": 1,
         "text": "This is public speaking",
         "detected_language": "en"
@@ -117,7 +117,7 @@
     "actual_cuda_inference_succeeded": true
   },
   "errors": [],
-  "host_pid": 21644,
+  "host_pid": 2844,
   "package_versions": {
     "ctranslate2": "4.8.2",
     "faster_whisper": "1.1.1"

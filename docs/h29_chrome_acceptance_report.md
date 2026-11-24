@@ -40,7 +40,7 @@ The ISL Accessibility Extension operates via Chrome Manifest V3 with an elegant 
 | **Playable Signs Dispatched** | ≥ 10,884 signs | **11,032 signs** | **PASS (+148)** |
 | **Fallback Subtitles Routed** | ≤ 2,239 tokens | **2,226 tokens** | **PASS (-13)** |
 | **Simulated 60 FPS Frames** | > 600,000 frames | **661,920 frames** | **PASS** |
-| **Simulation Runtime** | < 2,000 ms | **870.70 ms** | **PASS** |
+| **Simulation Runtime** | < 2,000 ms | **161.28 ms** | **PASS** |
 | **Rapid Seek Flush** | Zero stale signs | 100% instant queue purge | **PASS** |
 
 ---

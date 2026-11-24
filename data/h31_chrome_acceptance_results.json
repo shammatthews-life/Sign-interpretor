@@ -12,9 +12,10 @@
         "activeTab"
       ],
       "host_permissions": [
-        "http://localhost:*/*",
-        "http://127.0.0.1:*/*",
-        "*://*.youtube.com/*"
+        "http://localhost/*",
+        "http://127.0.0.1/*",
+        "https://*.youtube.com/*",
+        "https://youtu.be/*"
       ]
     },
     "component_file_integrity": {

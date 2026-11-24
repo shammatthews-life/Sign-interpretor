@@ -63,6 +63,7 @@ export function processSegments(segments, translator = null) {
       playable_signs: rep.sign_ids || [],
       unavailable_concepts: rep.unavailable_signs || [],
       unknown_terms: rep.unknown_terms || [],
+      fingerspelled_terms: rep.fingerspelled_terms || [],
       grammar_omissions: rep.grammar_omissions || []
     };
   });

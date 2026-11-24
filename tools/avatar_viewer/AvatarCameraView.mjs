@@ -20,11 +20,16 @@ export function setAvatarCameraView(camera, controls, mode) {
   let posY = view.position[1];
   let posZ = view.position[2];
 
-  // Top 0.001% Accessible Framing: In portrait/narrow viewports (e.g. aspect < 0.85),
+  // Top 0.001% Accessible Framing: In portrait/narrow viewports (e.g. aspect < 0.85 for half, < 0.75 for full),
   // dynamically scale camera distance so two-handed signs and wide gestures
   // are never clipped at the viewport edges.
   if (mode === 'half' && typeof camera.aspect === 'number' && camera.aspect < 0.85 && camera.aspect > 0) {
     const scale = Math.min(1.4, 0.85 / camera.aspect);
+    posX = Number((view.target[0] + (view.position[0] - view.target[0]) * scale).toFixed(4));
+    posY = Number((view.target[1] + (view.position[1] - view.target[1]) * scale).toFixed(4));
+    posZ = Number((view.target[2] + (view.position[2] - view.target[2]) * scale).toFixed(4));
+  } else if (mode === 'full' && typeof camera.aspect === 'number' && camera.aspect < 0.75 && camera.aspect > 0) {
+    const scale = Math.min(1.3, 0.75 / camera.aspect);
     posX = Number((view.target[0] + (view.position[0] - view.target[0]) * scale).toFixed(4));
     posY = Number((view.target[1] + (view.position[1] - view.target[1]) * scale).toFixed(4));
     posZ = Number((view.target[2] + (view.position[2] - view.target[2]) * scale).toFixed(4));

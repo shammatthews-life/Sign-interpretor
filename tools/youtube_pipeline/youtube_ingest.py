@@ -582,10 +582,11 @@ def segment_and_translate(
     node_bin = shutil.which("node") or "node"
     proc = subprocess.run(
         [node_bin, str(bridge_script)],
-        input=json.dumps(segments),
+        input=json.dumps(segments, ensure_ascii=False),
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
+        encoding="utf-8",
         check=True,
     )
     t_translate = time.perf_counter() - t_start

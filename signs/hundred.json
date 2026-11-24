@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "hundred",
+  "metadata": {
+    "display_name": "Hundred",
+    "gloss": "HUNDRED",
+    "language": "ISL",
+    "lexical_type": "Numeral multiplier; dominant index finger extends upright (1) and retracts backward into bent hook (C/hundred) in neutral signing space",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant right hand begins with upright index finger numeral 1 in front of chest, then pulls slightly backward while bending index finger into a hook/C handshape indicating century multiplier 100."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1150,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      },
+      {
+        "time_ms": 350,
+        "label": "Numeral One Upright",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": -5, "y": -5, "z": -35 },
+          "Bip001_R_Forearm": { "x": 0, "y": -15, "z": -60 },
+          "Bip001_R_Hand": { "x": -5, "y": 10, "z": -5 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0.8, "index": 0.0, "middle": 0.9, "ring": 0.9, "pinky": 0.9
+        }
+      },
+      {
+        "time_ms": 750,
+        "label": "Hook Retraction (Hundred Multiplier)",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 2, "z": -1 },
+          "Bip001_R_UpperArm": { "x": -8, "y": -2, "z": -30 },
+          "Bip001_R_Forearm": { "x": 0, "y": -10, "z": -70 },
+          "Bip001_R_Hand": { "x": -10, "y": 15, "z": -10 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0.6, "index": 0.5, "middle": 0.9, "ring": 0.9, "pinky": 0.9
+        }
+      },
+      {
+        "time_ms": 1150,
+        "label": "Return to Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      }
+    ]
+  }
+}

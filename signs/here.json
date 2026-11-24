@@ -1,0 +1,116 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "here",
+  "metadata": {
+    "display_name": "Here",
+    "gloss": "HERE",
+    "language": "ISL",
+    "lexical_type": "Proximal locative adverb; bimanual flat open palms drop gently in neutral space indicating immediate location",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC Locative Marker. Both hands held at waist level with open flat palms facing upward, making a gentle downward drop motion to denote 'here / this place'."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1100,
+    "dominant_hand": "both",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_L_Clavicle",
+      "Bip001_L_UpperArm",
+      "Bip001_L_Forearm",
+      "Bip001_L_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      },
+      {
+        "time_ms": 400,
+        "label": "Palms Open Facing Upward in Front of Torso",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 3, "z": -2 },
+          "Bip001_R_UpperArm": { "x": 5, "y": -5, "z": -25 },
+          "Bip001_R_Forearm": { "x": 0, "y": -25, "z": -60 },
+          "Bip001_R_Hand": { "x": -10, "y": 15, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": -3, "z": 2 },
+          "Bip001_L_UpperArm": { "x": 5, "y": 5, "z": 25 },
+          "Bip001_L_Forearm": { "x": 0, "y": 25, "z": 60 },
+          "Bip001_L_Hand": { "x": -10, "y": -15, "z": 0 },
+          "Bip001_Head": { "x": 4, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0.1, "index": 0.05, "middle": 0.05, "ring": 0.05, "pinky": 0.05
+        }
+      },
+      {
+        "time_ms": 750,
+        "label": "Downward Locative Pulse",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 3, "z": -2 },
+          "Bip001_R_UpperArm": { "x": 10, "y": -5, "z": -25 },
+          "Bip001_R_Forearm": { "x": 0, "y": -20, "z": -50 },
+          "Bip001_R_Hand": { "x": 5, "y": 15, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": -3, "z": 2 },
+          "Bip001_L_UpperArm": { "x": 10, "y": 5, "z": 25 },
+          "Bip001_L_Forearm": { "x": 0, "y": 20, "z": 50 },
+          "Bip001_L_Hand": { "x": 5, "y": -15, "z": 0 },
+          "Bip001_Head": { "x": 6, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0.1, "index": 0.05, "middle": 0.05, "ring": 0.05, "pinky": 0.05
+        }
+      },
+      {
+        "time_ms": 1100,
+        "label": "Return to Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      }
+    ]
+  }
+}

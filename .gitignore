@@ -3,27 +3,30 @@ __pycache__/
 *.py[cod]
 *.pyc
 *$py.class
+.pytest_cache/
 
-# Environments
+# Virtual Environments
 .venv/
 venv/
 ENV/
 
-# Editor settings (preserve project-level interpreter path, ignore personal states)
+# Editor and IDE configurations
 .vscode/*
 !.vscode/settings.json
+.idea/
 
-# OS artifacts
+# OS metadata
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# 3D Avatar assets (large binary / unverified public distribution)
+# 3D Avatar assets (HoYoverse proprietary binary - see docs/H39_ASSET_AND_LICENCE_REGISTER.md)
 Avatar_Boy_Gun_AetherShadow/
 
-# Local pipeline runtime cache (YouTube downloads, WAVs, transcripts)
+# Local pipeline runtime cache (YouTube downloads, WAVs, temporary files)
 runtime/
 
-# ASR benchmark fixtures derived from externally sourced recordings
+# ASR benchmark audio fixtures
 tools/asr/benchmark_audio/*.wav
 
 # Local backup checkpoints
@@ -31,3 +34,18 @@ backup/
 
 # Node dependencies
 node_modules/
+
+# Local environment variables
+.env
+.env.local
+
+# Video & Raw Frame Screencast Dumps (Large binaries - keep reports and contact sheets)
+*.mp4
+*.webm
+*.avi
+*.mkv
+artifacts/**/frames/
+artifacts/**/recording/
+artifacts/**/recordings/
+artifacts/**/raw_frames/
+artifacts/**/raw_screencast/

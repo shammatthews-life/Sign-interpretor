@@ -35,7 +35,7 @@ Therefore, under the project's strict Epistemic Honesty Policy:
 | Direct Sign Cache Matches | **10,359** | 93.90% Dispatch Direct Match |
 | Subtitle Fallback Occurrences | **673** | 6.10% Graceful Fallback |
 | Communicative Handling Tokens | **22,585** | **97.11%** Effective Accessibility |
-| Translation Wall Time (All 2,366 segs) | **175.71 ms** | **0.0743 ms/seg** |
+| Translation Wall Time (All 2,366 segs) | **185.06 ms** | **0.0782 ms/seg** |
 
 ---
 
@@ -53,16 +53,16 @@ To facilitate formal evaluation by qualified Deaf linguists and native ISL educa
 
 | Seg | Video Time | Source English | Translated Glosses | Playable Dispatches | Review Status |
 |:---:|:---:|---|---|---|:---:|
-| 1 | 2.5s - 8.4s | "This is public speaking for beginners, and the goal of this video is simple." | `SAY PEOPLE GOAL VIDEO SIMPLY` | `say people goal video simply` | `PENDING` |
-| 2 | 8.4s - 14.4s | "It's to help you overcome being uncertain, anxious, afraid," | `HELP YOU AFRAID` | `help you afraid` | `PENDING` |
+| 1 | 2.5s - 8.4s | "This is public speaking for beginners, and the goal of this video is simple." | `THIS SPEECH LEARN GOAL THIS VIDEO SIMPLY` | `this speech learn goal this video simply` | `PENDING` |
+| 2 | 8.4s - 14.4s | "It's to help you overcome being uncertain, anxious, afraid," | `YOU OVERCOME HELP NERVOUS NERVOUS FEAR` | `you overcome help nervous nervous fear` | `PENDING` |
 | 3 | 14.4s - 21.4s | "and bring you a few steps closer to being more confident, more clear," | `BRING YOU FEW STEP CLOSE MORE CONFIDENT MORE CLEAR` | `bring you few step close more confident more clear` | `PENDING` |
-| 4 | 21.4s - 24.4s | "and a much more captivating speaker." | `MORE SPEAKER` | `more speaker` | `PENDING` |
-| 5 | 24.4s - 30.4s | "What you're about to watch is a special compilation of a three-day public speaking challenge" | `WHAT YOU WATCH SPECIAL SAY PEOPLE CHALLENGE` | `what you watch special say people challenge` | `PENDING` |
-| 6 | 30.4s - 34.3s | "which we delivered live right here in our studio." | `WE GIVE LIVE WE` | `we give live we` | `PENDING` |
-| 7 | 34.3s - 37.3s | "We'll begin with mindset and confidence." | `WE GO MINDSET CONFIDENT` | `we go mindset confident` | `PENDING` |
-| 8 | 37.3s - 40.2s | "We'll move into the science of capturing attention," | `WE MOVE SCIENCE ATTENTION` | `we move science attention` | `PENDING` |
-| 9 | 40.2s - 43.8s | "and we'll finish off with the most impactful delivery skills" | `WE FINISH OFF SKILL` | `we finish off skill` | `PENDING` |
-| 10 | 43.8s - 47.8s | "from the 110-step chart of excellence communication." | `STEP CHART COMMUNICATION` | `step chart communication` | `PENDING` |
+| 4 | 21.4s - 24.4s | "and a much more captivating speaker." | `MORE MORE BEAUTIFUL SPEAKER` | `more more beautiful speaker` | `PENDING` |
+| 5 | 24.4s - 30.4s | "What you're about to watch is a special compilation of a three-day public speaking challenge" | `WHAT YOU SPECIAL WATCH COMBINATION THREE DAY SPEECH CHALLENGE` | `what you special watch combination three day speech challenge` | `PENDING` |
+| 6 | 30.4s - 34.3s | "which we delivered live right here in our studio." | `WE LIVE GIVE PLACE WE ROOM` | `we live give place we room` | `PENDING` |
+| 7 | 34.3s - 37.3s | "We'll begin with mindset and confidence." | `WE MINDSET GO CONFIDENT` | `we mindset go confident` | `PENDING` |
+| 8 | 37.3s - 40.2s | "We'll move into the science of capturing attention," | `WE MOVE SCIENCE HOLD ATTENTION` | `we move science hold attention` | `PENDING` |
+| 9 | 40.2s - 43.8s | "and we'll finish off with the most impactful delivery skills" | `WE FINISH MORE POWER PRESENTATION SKILL` | `we finish more power presentation skill` | `PENDING` |
+| 10 | 43.8s - 47.8s | "from the 110-step chart of excellence communication." | `HUNDRED TEN STEP CHART GREAT COMMUNICATION` | `hundred ten step chart great communication` | `PENDING` |
 
 ---
 

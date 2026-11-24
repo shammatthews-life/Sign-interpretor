@@ -179,7 +179,7 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         origin = self.headers.get("Origin")
         if not self._request_host_is_local():
             return False
-        allowed_extension_id = os.environ.get("SIGN_ALLOWED_EXTENSION_ID", "")
+        allowed_extension_id = os.environ.get("SIGN_ALLOWED_EXTENSION_ID", "pdabldggmjpcildkjlpcfmgdemecpaha")
         if allowed_extension_id and not re.fullmatch(r"[a-p]{32}", allowed_extension_id):
             return False
         if origin is None:
@@ -224,10 +224,23 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(encoded)))
+        origin = self.headers.get("Origin")
+        if origin and self._origin_is_allowed():
+            self.send_header("Access-Control-Allow-Origin", origin)
+            self.send_header("Vary", "Origin")
         self.end_headers()
         self.wfile.write(encoded)
 
     def do_OPTIONS(self) -> None:
+        origin = self.headers.get("Origin")
+        if origin and self._origin_is_allowed():
+            self.send_response(204)
+            self.send_header("Access-Control-Allow-Origin", origin)
+            self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+            self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Overwrite-Sign")
+            self.send_header("Access-Control-Max-Age", "86400")
+            self.end_headers()
+            return
         self.send_error(403, "Cross-origin requests are not enabled.")
 
     def do_GET(self) -> None:
@@ -235,6 +248,9 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.send_error(403, "Request host is not allowed.")
             return
         parsed = urllib.parse.urlsplit(self.path)
+        if parsed.path == "/asr/status":
+            self._send_json(ASR_SERVICE.status())
+            return
         match = re.fullmatch(r"/youtube/(status|result)/([A-Za-z0-9_-]{1,96})", parsed.path)
         if match:
             action, job_id = match.groups()

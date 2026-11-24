@@ -16,9 +16,15 @@
     "notes": "Handshape: Dominant hand forms O-K circular thumb/index pinch, extending middle/ring/pinky upward with positive nod."
   },
   "motion": {
+    "status": "playable",
     "duration_ms": 1100,
     "two_handed": false,
     "dominant_hand": "right",
+    "involved_bones": [
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand"
+    ],
     "keyframes": [
       {
         "time_ms": 0,

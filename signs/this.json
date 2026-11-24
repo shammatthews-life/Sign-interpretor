@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "this",
+  "metadata": {
+    "display_name": "This",
+    "gloss": "THIS",
+    "language": "ISL",
+    "lexical_type": "Proximal demonstrative pronoun / spatial deixis; dominant index finger points down-forward in proximal space",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC Spatial Deixis. Dominant right hand extends index finger pointing downward and slightly forward into the immediate proximal signing space, establishing focus on the current topic or referent."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1000,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      },
+      {
+        "time_ms": 350,
+        "label": "Index Pointing Down-Forward into Proximal Space",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 3, "z": -2 },
+          "Bip001_R_UpperArm": { "x": 10, "y": -5, "z": -25 },
+          "Bip001_R_Forearm": { "x": 0, "y": -20, "z": -50 },
+          "Bip001_R_Hand": { "x": 20, "y": 10, "z": -10 },
+          "Bip001_Head": { "x": 5, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0.8, "index": 0.0, "middle": 0.9, "ring": 0.9, "pinky": 0.9
+        }
+      },
+      {
+        "time_ms": 650,
+        "label": "Hold Proximal Index Emphasis",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 3, "z": -2 },
+          "Bip001_R_UpperArm": { "x": 12, "y": -5, "z": -25 },
+          "Bip001_R_Forearm": { "x": 0, "y": -22, "z": -52 },
+          "Bip001_R_Hand": { "x": 22, "y": 10, "z": -10 },
+          "Bip001_Head": { "x": 5, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0.8, "index": 0.0, "middle": 0.9, "ring": 0.9, "pinky": 0.9
+        }
+      },
+      {
+        "time_ms": 1000,
+        "label": "Return to Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      }
+    ]
+  }
+}

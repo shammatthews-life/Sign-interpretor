@@ -12,8 +12,8 @@
   },
   "disposition_breakdown": {
     "canonical_tokens_accounted": 23258,
-    "total_glosses_generated": 11032,
-    "total_playable_dispatches": 11032,
+    "total_glosses_generated": 12316,
+    "total_playable_dispatches": 12316,
     "gloss_to_dispatch_ratio": "1.0000",
     "direct_sign_matches": 10359,
     "grammar_reorderings_and_inflections": 673,
@@ -38,26 +38,24 @@
       "source_english": "This is public speaking for beginners, and the goal of this video is simple.",
       "spoken_word_count": 14,
       "translated_glosses": [
-        "SAY",
-        "PEOPLE",
+        "THIS",
+        "SPEECH",
+        "LEARN",
         "GOAL",
+        "THIS",
         "VIDEO",
         "SIMPLY"
       ],
       "playable_sign_dispatches": [
-        "say",
-        "people",
+        "this",
+        "speech",
+        "learn",
         "goal",
+        "this",
         "video",
         "simply"
       ],
-      "fallback_terms": [
-        "THIS",
-        "FOR",
-        "BEGINNERS",
-        "AND",
-        "THIS"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -68,22 +66,22 @@
       "source_english": "It's to help you overcome being uncertain, anxious, afraid,",
       "spoken_word_count": 9,
       "translated_glosses": [
-        "HELP",
         "YOU",
-        "AFRAID"
+        "OVERCOME",
+        "HELP",
+        "NERVOUS",
+        "NERVOUS",
+        "FEAR"
       ],
       "playable_sign_dispatches": [
-        "help",
         "you",
-        "afraid"
+        "overcome",
+        "help",
+        "nervous",
+        "nervous",
+        "fear"
       ],
-      "fallback_terms": [
-        "IT'S",
-        "OVERCOME",
-        "BEING",
-        "UNCERTAIN",
-        "ANXIOUS"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -115,10 +113,7 @@
         "more",
         "clear"
       ],
-      "fallback_terms": [
-        "AND",
-        "BEING"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -130,17 +125,17 @@
       "spoken_word_count": 6,
       "translated_glosses": [
         "MORE",
+        "MORE",
+        "BEAUTIFUL",
         "SPEAKER"
       ],
       "playable_sign_dispatches": [
         "more",
+        "more",
+        "beautiful",
         "speaker"
       ],
-      "fallback_terms": [
-        "AND",
-        "MUCH",
-        "CAPTIVATING"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -153,27 +148,26 @@
       "translated_glosses": [
         "WHAT",
         "YOU",
-        "WATCH",
         "SPECIAL",
-        "SAY",
-        "PEOPLE",
+        "WATCH",
+        "COMBINATION",
+        "THREE",
+        "DAY",
+        "SPEECH",
         "CHALLENGE"
       ],
       "playable_sign_dispatches": [
         "what",
         "you",
-        "watch",
         "special",
-        "say",
-        "people",
+        "watch",
+        "combination",
+        "three",
+        "day",
+        "speech",
         "challenge"
       ],
-      "fallback_terms": [
-        "ABOUT",
-        "COMPILATION",
-        "THREE",
-        "DAY"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -185,22 +179,21 @@
       "spoken_word_count": 9,
       "translated_glosses": [
         "WE",
-        "GIVE",
         "LIVE",
-        "WE"
+        "GIVE",
+        "PLACE",
+        "WE",
+        "ROOM"
       ],
       "playable_sign_dispatches": [
         "we",
-        "give",
         "live",
-        "we"
+        "give",
+        "place",
+        "we",
+        "room"
       ],
-      "fallback_terms": [
-        "WHICH",
-        "RIGHT",
-        "HERE",
-        "STUDIO"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -212,20 +205,17 @@
       "spoken_word_count": 6,
       "translated_glosses": [
         "WE",
-        "GO",
         "MINDSET",
+        "GO",
         "CONFIDENT"
       ],
       "playable_sign_dispatches": [
         "we",
-        "go",
         "mindset",
+        "go",
         "confident"
       ],
-      "fallback_terms": [
-        "WITH",
-        "AND"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -239,18 +229,17 @@
         "WE",
         "MOVE",
         "SCIENCE",
+        "HOLD",
         "ATTENTION"
       ],
       "playable_sign_dispatches": [
         "we",
         "move",
         "science",
+        "hold",
         "attention"
       ],
-      "fallback_terms": [
-        "INTO",
-        "CAPTURING"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -263,22 +252,20 @@
       "translated_glosses": [
         "WE",
         "FINISH",
-        "OFF",
+        "MORE",
+        "POWER",
+        "PRESENTATION",
         "SKILL"
       ],
       "playable_sign_dispatches": [
         "we",
         "finish",
-        "off",
+        "more",
+        "power",
+        "presentation",
         "skill"
       ],
-      "fallback_terms": [
-        "AND",
-        "WITH",
-        "MOST",
-        "IMPACTFUL",
-        "DELIVERY"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -289,20 +276,22 @@
       "source_english": "from the 110-step chart of excellence communication.",
       "spoken_word_count": 7,
       "translated_glosses": [
+        "HUNDRED",
+        "TEN",
         "STEP",
         "CHART",
+        "GREAT",
         "COMMUNICATION"
       ],
       "playable_sign_dispatches": [
+        "hundred",
+        "ten",
         "step",
         "chart",
+        "great",
         "communication"
       ],
-      "fallback_terms": [
-        "FROM",
-        "110",
-        "EXCELLENCE"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -313,30 +302,24 @@
       "source_english": "Hey, if we haven't met before, my name is David JP Phillips,",
       "spoken_word_count": 12,
       "translated_glosses": [
+        "BEFORE",
         "HEY",
         "WE",
-        "HAVE",
-        "NOT",
         "MEET",
+        "NOT",
         "MY",
         "NAME"
       ],
       "playable_sign_dispatches": [
+        "before",
         "hey",
         "we",
-        "have",
-        "not",
         "meet",
+        "not",
         "my",
         "name"
       ],
-      "fallback_terms": [
-        "IF",
-        "BEFORE",
-        "DAVID",
-        "JP",
-        "PHILLIPS"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -348,22 +331,19 @@
       "spoken_word_count": 8,
       "translated_glosses": [
         "I",
+        "GOOD",
         "KNOW",
         "MY",
         "SAY"
       ],
       "playable_sign_dispatches": [
         "i",
+        "good",
         "know",
         "my",
         "say"
       ],
-      "fallback_terms": [
-        "AND",
-        "BEST",
-        "FOR",
-        "TEDX"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -374,17 +354,16 @@
       "source_english": "which are among the most viewed in the world",
       "spoken_word_count": 9,
       "translated_glosses": [
+        "MORE",
+        "SEE",
         "WORLD"
       ],
       "playable_sign_dispatches": [
+        "more",
+        "see",
         "world"
       ],
-      "fallback_terms": [
-        "WHICH",
-        "AMONG",
-        "MOST",
-        "VIEWED"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -395,16 +374,16 @@
       "source_english": "on this particular subject.",
       "spoken_word_count": 4,
       "translated_glosses": [
+        "THIS",
+        "POINT",
         "SUBJECT"
       ],
       "playable_sign_dispatches": [
+        "this",
+        "point",
         "subject"
       ],
-      "fallback_terms": [
-        "ON",
-        "THIS",
-        "PARTICULAR"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -415,37 +394,36 @@
       "source_english": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
       "spoken_word_count": 16,
       "translated_glosses": [
-        "YOU",
-        "SEE",
         "I",
         "HAVE",
         "STUDY",
+        "FIVE",
+        "THOUSAND",
         "SPEAKER",
+        "FIND",
+        "TRUE",
         "WHAT",
+        "MAKE",
         "SOMEBODY",
         "GREAT",
         "SPEAKER"
       ],
       "playable_sign_dispatches": [
-        "you",
-        "see",
         "i",
         "have",
         "study",
+        "five",
+        "thousand",
         "speaker",
+        "find",
+        "true",
         "what",
+        "make",
         "somebody",
         "great",
         "speaker"
       ],
-      "fallback_terms": [
-        "OVER",
-        "5",
-        "000",
-        "PINPOINT",
-        "EXACTLY",
-        "MAKES"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -456,22 +434,24 @@
       "source_english": "And this chart is one of the results of that particular endeavour.",
       "spoken_word_count": 12,
       "translated_glosses": [
+        "THIS",
         "CHART",
         "ONE",
-        "RESULT"
+        "RESULT",
+        "THAT",
+        "POINT",
+        "WORK"
       ],
       "playable_sign_dispatches": [
+        "this",
         "chart",
         "one",
-        "result"
+        "result",
+        "that",
+        "point",
+        "work"
       ],
-      "fallback_terms": [
-        "AND",
-        "THIS",
-        "THAT",
-        "PARTICULAR",
-        "ENDEAVOUR"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -484,31 +464,26 @@
       "translated_glosses": [
         "THEY",
         "HAVE",
-        "PUT",
         "PRACTICE",
         "I",
         "HAVE",
         "COACHING",
+        "WORLD",
+        "BIG",
         "LIKE"
       ],
       "playable_sign_dispatches": [
         "they",
         "have",
-        "put",
         "practice",
         "i",
         "have",
         "coaching",
+        "world",
+        "big",
         "like"
       ],
-      "fallback_terms": [
-        "OH",
-        "AND",
-        "GLOBAL",
-        "GIANTS",
-        "ORACLE",
-        "GOOGLE"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -536,13 +511,7 @@
         "hold",
         "audience"
       ],
-      "fallback_terms": [
-        "AND",
-        "DISNEY",
-        "AND",
-        "AND",
-        "AND"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -553,36 +522,36 @@
       "source_english": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
       "spoken_word_count": 16,
       "translated_glosses": [
-        "ATTENTION",
         "NOW",
+        "ATTENTION",
         "NEXT",
         "TWO",
         "HOUR",
+        "THIRTY",
         "MINUTE",
         "YOU",
+        "FIND",
+        "IMPORTANT",
         "TOOLS",
         "I",
         "HAVE"
       ],
       "playable_sign_dispatches": [
-        "attention",
         "now",
+        "attention",
         "next",
         "two",
         "hour",
+        "thirty",
         "minute",
         "you",
+        "find",
+        "important",
         "tools",
         "i",
         "have"
       ],
-      "fallback_terms": [
-        "OVER",
-        "AND",
-        "30",
-        "DISCOVER",
-        "ESSENTIAL"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -595,28 +564,30 @@
       "translated_glosses": [
         "I",
         "HAVE",
+        "FIND",
         "DURING",
         "MY",
+        "TWENTY",
+        "FIVE",
         "YEAR",
         "CAREER",
-        "PUBLIC",
+        "SPEECH",
         "SPEAKER"
       ],
       "playable_sign_dispatches": [
         "i",
         "have",
+        "find",
         "during",
         "my",
+        "twenty",
+        "five",
         "year",
         "career",
-        "public",
+        "speech",
         "speaker"
       ],
-      "fallback_terms": [
-        "GATHERED",
-        "25",
-        "AS"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -627,18 +598,14 @@
       "source_english": "and public speaking coach.",
       "spoken_word_count": 4,
       "translated_glosses": [
-        "SAY",
-        "PEOPLE",
+        "SPEECH",
         "COACHING"
       ],
       "playable_sign_dispatches": [
-        "say",
-        "people",
+        "speech",
         "coaching"
       ],
-      "fallback_terms": [
-        "AND"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -662,11 +629,7 @@
         "pen",
         "paper"
       ],
-      "fallback_terms": [
-        "SO",
-        "MAKE",
-        "AND"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -677,24 +640,20 @@
       "source_english": "lean in and you'll walk away with practical tools",
       "spoken_word_count": 9,
       "translated_glosses": [
+        "ATTENTION",
         "YOU",
-        "WALK",
-        "MOVE",
+        "HAVE",
         "PRACTICAL",
         "TOOLS"
       ],
       "playable_sign_dispatches": [
+        "attention",
         "you",
-        "walk",
-        "move",
+        "have",
         "practical",
         "tools"
       ],
-      "fallback_terms": [
-        "LEAN",
-        "AND",
-        "WITH"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -705,16 +664,16 @@
       "source_english": "you can apply tomorrow.",
       "spoken_word_count": 4,
       "translated_glosses": [
+        "TOMORROW",
         "YOU",
-        "TOMORROW"
+        "PRACTICE"
       ],
       "playable_sign_dispatches": [
+        "tomorrow",
         "you",
-        "tomorrow"
+        "practice"
       ],
-      "fallback_terms": [
-        "APPLY"
-      ],
+      "fallback_terms": [],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
     },
@@ -761,10 +720,8 @@
         "grow"
       ],
       "fallback_terms": [
-        "AND",
         "START",
-        "GETTING",
-        "AND"
+        "GETTING"
       ],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
       "motion_animation_tested": true
@@ -796,7 +753,6 @@
         "hand"
       ],
       "fallback_terms": [
-        "WITH",
         "NON"
       ],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
@@ -830,7 +786,6 @@
         "OUT",
         "WHY",
         "LISTEN",
-        "WHICH",
         "JUST"
       ],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
@@ -869,11 +824,9 @@
         "go"
       ],
       "fallback_terms": [
-        "SO",
         "HE",
         "UP",
         "AGAIN",
-        "AND",
         "HE"
       ],
       "linguistic_review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",

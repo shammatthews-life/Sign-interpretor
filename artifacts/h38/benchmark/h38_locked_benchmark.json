@@ -1,0 +1,960 @@
+{
+  "milestone": "H37",
+  "video_id": "MXKkXXYUxBc",
+  "video_url": "https://www.youtube.com/watch?v=MXKkXXYUxBc",
+  "video_title": "Public Speaking for Beginners – Free Full Course | Speak with Confidence",
+  "benchmark_range": {
+    "start_seconds": 0,
+    "end_seconds": 120,
+    "duration_seconds": 120
+  },
+  "selection_rationale": "Continuously spoken 120-second opening section exhibiting high linguistic complexity: statements, WH-clauses, imperatives, negation (haven't), proper nouns (David JP Phillips, TEDx, Oracle, Google, Disney, Sweden), numbers (three-day, 110-step, 5000, 25, 30), and time expressions (before, now, tomorrow, next).",
+  "metrics_baseline": {
+    "total_segments": 29,
+    "total_words": 272,
+    "initial_playable_signs": 131,
+    "initial_direct_token_coverage_pct": 48.2,
+    "initial_unknown_terms_count": 99,
+    "initial_grammar_omissions_count": 55
+  },
+  "segments": [
+    {
+      "benchmark_segment_id": 0,
+      "video_id": "MXKkXXYUxBc",
+      "start": 2.45,
+      "end": 8.45,
+      "duration": 6,
+      "source_text": "This is public speaking for beginners, and the goal of this video is simple.",
+      "word_count": 14,
+      "initial_playable_signs": [
+        "say",
+        "people",
+        "goal",
+        "video",
+        "simply"
+      ],
+      "initial_playable_count": 5,
+      "initial_unknown_terms": [
+        "THIS",
+        "FOR",
+        "BEGINNERS",
+        "AND",
+        "THIS"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 1,
+      "video_id": "MXKkXXYUxBc",
+      "start": 8.45,
+      "end": 14.45,
+      "duration": 6,
+      "source_text": "It's to help you overcome being uncertain, anxious, afraid,",
+      "word_count": 9,
+      "initial_playable_signs": [
+        "help",
+        "you",
+        "afraid"
+      ],
+      "initial_playable_count": 3,
+      "initial_unknown_terms": [
+        "IT'S",
+        "OVERCOME",
+        "BEING",
+        "UNCERTAIN",
+        "ANXIOUS"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "to",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 2,
+      "video_id": "MXKkXXYUxBc",
+      "start": 14.45,
+      "end": 21.45,
+      "duration": 7,
+      "source_text": "and bring you a few steps closer to being more confident, more clear,",
+      "word_count": 13,
+      "initial_playable_signs": [
+        "bring",
+        "you",
+        "few",
+        "step",
+        "close",
+        "more",
+        "confident",
+        "more",
+        "clear"
+      ],
+      "initial_playable_count": 9,
+      "initial_unknown_terms": [
+        "AND",
+        "BEING"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "to",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 3,
+      "video_id": "MXKkXXYUxBc",
+      "start": 21.45,
+      "end": 24.45,
+      "duration": 3,
+      "source_text": "and a much more captivating speaker.",
+      "word_count": 6,
+      "initial_playable_signs": [
+        "more",
+        "speaker"
+      ],
+      "initial_playable_count": 2,
+      "initial_unknown_terms": [
+        "AND",
+        "MUCH",
+        "CAPTIVATING"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 4,
+      "video_id": "MXKkXXYUxBc",
+      "start": 24.45,
+      "end": 30.45,
+      "duration": 6,
+      "source_text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+      "word_count": 15,
+      "initial_playable_signs": [
+        "what",
+        "you",
+        "watch",
+        "special",
+        "say",
+        "people",
+        "challenge"
+      ],
+      "initial_playable_count": 7,
+      "initial_unknown_terms": [
+        "ABOUT",
+        "COMPILATION",
+        "THREE",
+        "DAY"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "to",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 5,
+      "video_id": "MXKkXXYUxBc",
+      "start": 30.45,
+      "end": 34.25,
+      "duration": 3.8,
+      "source_text": "which we delivered live right here in our studio.",
+      "word_count": 9,
+      "initial_playable_signs": [
+        "we",
+        "give",
+        "live",
+        "we"
+      ],
+      "initial_playable_count": 4,
+      "initial_unknown_terms": [
+        "WHICH",
+        "RIGHT",
+        "HERE",
+        "STUDIO"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "in",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 6,
+      "video_id": "MXKkXXYUxBc",
+      "start": 34.25,
+      "end": 37.33,
+      "duration": 3.08,
+      "source_text": "We'll begin with mindset and confidence.",
+      "word_count": 6,
+      "initial_playable_signs": [
+        "we",
+        "go",
+        "mindset",
+        "confident"
+      ],
+      "initial_playable_count": 4,
+      "initial_unknown_terms": [
+        "WITH",
+        "AND"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 7,
+      "video_id": "MXKkXXYUxBc",
+      "start": 37.33,
+      "end": 40.21,
+      "duration": 2.88,
+      "source_text": "We'll move into the science of capturing attention,",
+      "word_count": 8,
+      "initial_playable_signs": [
+        "we",
+        "move",
+        "science",
+        "attention"
+      ],
+      "initial_playable_count": 4,
+      "initial_unknown_terms": [
+        "INTO",
+        "CAPTURING"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 8,
+      "video_id": "MXKkXXYUxBc",
+      "start": 40.21,
+      "end": 43.77,
+      "duration": 3.56,
+      "source_text": "and we'll finish off with the most impactful delivery skills",
+      "word_count": 10,
+      "initial_playable_signs": [
+        "we",
+        "finish",
+        "off",
+        "skill"
+      ],
+      "initial_playable_count": 4,
+      "initial_unknown_terms": [
+        "AND",
+        "WITH",
+        "MOST",
+        "IMPACTFUL",
+        "DELIVERY"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 9,
+      "video_id": "MXKkXXYUxBc",
+      "start": 43.77,
+      "end": 47.81,
+      "duration": 4.04,
+      "source_text": "from the 110-step chart of excellence communication.",
+      "word_count": 7,
+      "initial_playable_signs": [
+        "step",
+        "chart",
+        "communication"
+      ],
+      "initial_playable_count": 3,
+      "initial_unknown_terms": [
+        "FROM",
+        "110",
+        "EXCELLENCE"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 10,
+      "video_id": "MXKkXXYUxBc",
+      "start": 49.37,
+      "end": 52.85,
+      "duration": 3.48,
+      "source_text": "Hey, if we haven't met before, my name is David JP Phillips,",
+      "word_count": 12,
+      "initial_playable_signs": [
+        "hey",
+        "we",
+        "have",
+        "not",
+        "meet",
+        "my",
+        "name"
+      ],
+      "initial_playable_count": 7,
+      "initial_unknown_terms": [
+        "IF",
+        "BEFORE",
+        "DAVID",
+        "JP",
+        "PHILLIPS"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 11,
+      "video_id": "MXKkXXYUxBc",
+      "start": 52.85,
+      "end": 54.73,
+      "duration": 1.88,
+      "source_text": "and I'm best known for my TEDx talks,",
+      "word_count": 8,
+      "initial_playable_signs": [
+        "i",
+        "know",
+        "my",
+        "say"
+      ],
+      "initial_playable_count": 4,
+      "initial_unknown_terms": [
+        "AND",
+        "BEST",
+        "FOR",
+        "TEDX"
+      ],
+      "initial_grammar_omissions": [],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 12,
+      "video_id": "MXKkXXYUxBc",
+      "start": 54.73,
+      "end": 57.01,
+      "duration": 2.28,
+      "source_text": "which are among the most viewed in the world",
+      "word_count": 9,
+      "initial_playable_signs": [
+        "world"
+      ],
+      "initial_playable_count": 1,
+      "initial_unknown_terms": [
+        "WHICH",
+        "AMONG",
+        "MOST",
+        "VIEWED"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "are",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "in",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 13,
+      "video_id": "MXKkXXYUxBc",
+      "start": 57.01,
+      "end": 58.53,
+      "duration": 1.52,
+      "source_text": "on this particular subject.",
+      "word_count": 4,
+      "initial_playable_signs": [
+        "subject"
+      ],
+      "initial_playable_count": 1,
+      "initial_unknown_terms": [
+        "ON",
+        "THIS",
+        "PARTICULAR"
+      ],
+      "initial_grammar_omissions": [],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 14,
+      "video_id": "MXKkXXYUxBc",
+      "start": 58.53,
+      "end": 65.01,
+      "duration": 6.48,
+      "source_text": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+      "word_count": 16,
+      "initial_playable_signs": [
+        "you",
+        "see",
+        "i",
+        "have",
+        "study",
+        "speaker",
+        "what",
+        "somebody",
+        "great",
+        "speaker"
+      ],
+      "initial_playable_count": 10,
+      "initial_unknown_terms": [
+        "OVER",
+        "5",
+        "000",
+        "PINPOINT",
+        "EXACTLY",
+        "MAKES"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "to",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 15,
+      "video_id": "MXKkXXYUxBc",
+      "start": 65.01,
+      "end": 69.49,
+      "duration": 4.48,
+      "source_text": "And this chart is one of the results of that particular endeavour.",
+      "word_count": 12,
+      "initial_playable_signs": [
+        "chart",
+        "one",
+        "result"
+      ],
+      "initial_playable_count": 3,
+      "initial_unknown_terms": [
+        "AND",
+        "THIS",
+        "THAT",
+        "PARTICULAR",
+        "ENDEAVOUR"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 16,
+      "video_id": "MXKkXXYUxBc",
+      "start": 69.49,
+      "end": 74.29,
+      "duration": 4.8,
+      "source_text": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+      "word_count": 15,
+      "initial_playable_signs": [
+        "they",
+        "have",
+        "put",
+        "practice",
+        "i",
+        "have",
+        "coaching",
+        "like"
+      ],
+      "initial_playable_count": 8,
+      "initial_unknown_terms": [
+        "OH",
+        "AND",
+        "GLOBAL",
+        "GIANTS",
+        "ORACLE",
+        "GOOGLE"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "been",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "to",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 17,
+      "video_id": "MXKkXXYUxBc",
+      "start": 74.29,
+      "end": 80.45,
+      "duration": 6.16,
+      "source_text": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
+      "word_count": 15,
+      "initial_playable_signs": [
+        "story",
+        "presentation",
+        "skill",
+        "beautiful",
+        "science",
+        "hold",
+        "audience"
+      ],
+      "initial_playable_count": 7,
+      "initial_unknown_terms": [
+        "AND",
+        "DISNEY",
+        "AND",
+        "AND",
+        "AND"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "an",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 18,
+      "video_id": "MXKkXXYUxBc",
+      "start": 80.45,
+      "end": 86.61,
+      "duration": 6.16,
+      "source_text": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
+      "word_count": 16,
+      "initial_playable_signs": [
+        "attention",
+        "now",
+        "next",
+        "two",
+        "hour",
+        "minute",
+        "you",
+        "tools",
+        "i",
+        "have"
+      ],
+      "initial_playable_count": 10,
+      "initial_unknown_terms": [
+        "OVER",
+        "AND",
+        "30",
+        "DISCOVER",
+        "ESSENTIAL"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 19,
+      "video_id": "MXKkXXYUxBc",
+      "start": 86.61,
+      "end": 89.53,
+      "duration": 2.92,
+      "source_text": "I've gathered during my 25 year career as a public speaker",
+      "word_count": 11,
+      "initial_playable_signs": [
+        "i",
+        "have",
+        "during",
+        "my",
+        "year",
+        "career",
+        "public",
+        "speaker"
+      ],
+      "initial_playable_count": 8,
+      "initial_unknown_terms": [
+        "GATHERED",
+        "25",
+        "AS"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 20,
+      "video_id": "MXKkXXYUxBc",
+      "start": 89.53,
+      "end": 91.69,
+      "duration": 2.16,
+      "source_text": "and public speaking coach.",
+      "word_count": 4,
+      "initial_playable_signs": [
+        "say",
+        "people",
+        "coaching"
+      ],
+      "initial_playable_count": 3,
+      "initial_unknown_terms": [
+        "AND"
+      ],
+      "initial_grammar_omissions": [],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 21,
+      "video_id": "MXKkXXYUxBc",
+      "start": 91.69,
+      "end": 95.33,
+      "duration": 3.64,
+      "source_text": "So make sure you have a pen and a paper,",
+      "word_count": 10,
+      "initial_playable_signs": [
+        "sure",
+        "you",
+        "have",
+        "pen",
+        "paper"
+      ],
+      "initial_playable_count": 5,
+      "initial_unknown_terms": [
+        "SO",
+        "MAKE",
+        "AND"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "a",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 22,
+      "video_id": "MXKkXXYUxBc",
+      "start": 95.33,
+      "end": 98.93,
+      "duration": 3.6,
+      "source_text": "lean in and you'll walk away with practical tools",
+      "word_count": 9,
+      "initial_playable_signs": [
+        "you",
+        "walk",
+        "move",
+        "practical",
+        "tools"
+      ],
+      "initial_playable_count": 5,
+      "initial_unknown_terms": [
+        "LEAN",
+        "AND",
+        "WITH"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "in",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "will",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 23,
+      "video_id": "MXKkXXYUxBc",
+      "start": 98.93,
+      "end": 101.81,
+      "duration": 2.88,
+      "source_text": "you can apply tomorrow.",
+      "word_count": 4,
+      "initial_playable_signs": [
+        "you",
+        "tomorrow"
+      ],
+      "initial_playable_count": 2,
+      "initial_unknown_terms": [
+        "APPLY"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "can",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 24,
+      "video_id": "MXKkXXYUxBc",
+      "start": 101.81,
+      "end": 107.03,
+      "duration": 5.22,
+      "source_text": "Have fun.",
+      "word_count": 2,
+      "initial_playable_signs": [
+        "have",
+        "fun"
+      ],
+      "initial_playable_count": 2,
+      "initial_unknown_terms": [],
+      "initial_grammar_omissions": [],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 25,
+      "video_id": "MXKkXXYUxBc",
+      "start": 107.03,
+      "end": 110.79,
+      "duration": 3.76,
+      "source_text": "Welcome beautiful people all around the world",
+      "word_count": 7,
+      "initial_playable_signs": [
+        "welcome",
+        "beautiful",
+        "people",
+        "world"
+      ],
+      "initial_playable_count": 4,
+      "initial_unknown_terms": [
+        "ALL",
+        "AROUND"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 26,
+      "video_id": "MXKkXXYUxBc",
+      "start": 110.79,
+      "end": 114.03,
+      "duration": 3.24,
+      "source_text": "to the lovely country of Sweden.",
+      "word_count": 6,
+      "initial_playable_signs": [
+        "lovely",
+        "sweden"
+      ],
+      "initial_playable_count": 2,
+      "initial_unknown_terms": [
+        "COUNTRY"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "to",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 27,
+      "video_id": "MXKkXXYUxBc",
+      "start": 114.03,
+      "end": 116.63,
+      "duration": 2.6,
+      "source_text": "This is, well, this is my view of you.",
+      "word_count": 9,
+      "initial_playable_signs": [
+        "my",
+        "you"
+      ],
+      "initial_playable_count": 2,
+      "initial_unknown_terms": [
+        "THIS",
+        "WELL",
+        "THIS",
+        "VIEW"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "is",
+          "status": "GRAMMAR_OMISSION"
+        },
+        {
+          "token": "of",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "benchmark_segment_id": 28,
+      "video_id": "MXKkXXYUxBc",
+      "start": 116.63,
+      "end": 118.95,
+      "duration": 2.32,
+      "source_text": "There's pictures all over the place.",
+      "word_count": 6,
+      "initial_playable_signs": [
+        "picture",
+        "place"
+      ],
+      "initial_playable_count": 2,
+      "initial_unknown_terms": [
+        "THERE",
+        "ALL",
+        "OVER"
+      ],
+      "initial_grammar_omissions": [
+        {
+          "token": "the",
+          "status": "GRAMMAR_OMISSION"
+        }
+      ],
+      "initial_status": "TRANSLATION_UNCERTAIN"
+    }
+  ]
+}

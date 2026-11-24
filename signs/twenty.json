@@ -1,0 +1,96 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "twenty",
+  "metadata": {
+    "display_name": "Twenty",
+    "gloss": "TWENTY",
+    "language": "ISL",
+    "lexical_type": "Cardinal numeral (decade 20); dominant hand forms 2-shape and taps/snaps twice",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant right hand forms an upright 2-handshape (index and middle fingers extended apart) and flexes forward slightly twice indicating numeral 20."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1100,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      },
+      {
+        "time_ms": 350,
+        "label": "Numeral Two Formed",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": -5, "y": -5, "z": -35 },
+          "Bip001_R_Forearm": { "x": 0, "y": -15, "z": -60 },
+          "Bip001_R_Hand": { "x": -5, "y": 10, "z": -5 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0.8, "index": 0.0, "middle": 0.0, "ring": 0.9, "pinky": 0.9
+        }
+      },
+      {
+        "time_ms": 700,
+        "label": "Forward Flex Tap (Decade Accent)",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": -8, "y": -5, "z": -35 },
+          "Bip001_R_Forearm": { "x": 0, "y": -12, "z": -65 },
+          "Bip001_R_Hand": { "x": 15, "y": 10, "z": -5 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0.8, "index": 0.2, "middle": 0.2, "ring": 0.9, "pinky": 0.9
+        }
+      },
+      {
+        "time_ms": 1100,
+        "label": "Return to Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      }
+    ]
+  }
+}

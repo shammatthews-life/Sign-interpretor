@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "video_id": "MXKkXXYUxBc",
+  "acceptance_segment": "0:00 - 3:00 (180.0s)",
+  "manifest_fingerprint": "sha256:e6bddb5e9fa969170a6e79c4cc0d77aaf039b41441e3583192c56268cb40f699",
+  "total_cues_evaluated": 44,
+  "signs_preloaded_from_disk": 104,
+  "signs_dispatched_during_playback": 221,
+  "unique_signs_animated": 104,
+  "maximum_angular_bone_rotation_observed_rad": 2.418956911695451,
+  "neutral_reset_maximum_error_rad": 0,
+  "interactive_controls_verified": {
+    "pause_resume": "PASS",
+    "seek_forward": "PASS",
+    "seek_backward": "PASS",
+    "playback_rate_1_5x": "PASS",
+    "unavailable_sign_fallback": "PASS"
+  },
+  "lifecycle_summary": {
+    "accepted_count": 221,
+    "start_count": 153,
+    "end_count": 152
+  }
+}

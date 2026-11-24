@@ -39,3 +39,11 @@ test('half-body view dynamically adapts distance in portrait viewports to preven
   assert.ok(camera.position.value[2] > 0.92); // Camera pulls back to preserve handspan
   assert.equal(controls.updates, 1);
 });
+
+test('full-body view dynamically adapts distance in portrait viewports to prevent wide-sign clipping', () => {
+  const { camera, controls } = createCamera();
+  camera.aspect = 0.60; // Narrow portrait aspect ratio (240px x 400px)
+  assert.equal(setAvatarCameraView(camera, controls, 'full'), 'full');
+  assert.ok(camera.position.value[2] > 2.5); // Camera pulls back from 2.5m to keep wide arm span in frustum
+  assert.equal(controls.updates, 1);
+});

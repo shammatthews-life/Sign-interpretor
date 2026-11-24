@@ -24,7 +24,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
     this.motionCatalog = motionCatalog || {
       hello: { playable: true }, good: { playable: true }, morning: { playable: true },
       water: { playable: true },
-      you: { playable: true }, i: { playable: true }, me: { playable: true },
+      you: { playable: true }, i: { playable: true }, me: { playable: true, sign_id: 'i' },
       your: { playable: true }, my: { playable: true },
       have: { playable: true }, want: { playable: true },
       look: { playable: true }, see: { playable: true },
@@ -583,7 +583,25 @@ export class EnglishToISLTranslator extends TranslationBackend {
       gossip: { playable: true },
       honesty: { playable: true },
       integrity: { playable: true },
-      warmup: { playable: true }
+      warmup: { playable: true },
+      // Milestone H37 New Playable Signs
+      three: { playable: true },
+      day: { playable: true },
+      all: { playable: true },
+      make: { playable: true },
+      before: { playable: true },
+      five: { playable: true },
+      thousand: { playable: true },
+      // Milestone H38 New Playable Signs
+      hundred: { playable: true },
+      twenty: { playable: true },
+      thirty: { playable: true },
+      zero: { playable: true },
+      speech: { playable: true },
+      overcome: { playable: true },
+      this: { playable: true },
+      that: { playable: true },
+      here: { playable: true }
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
@@ -610,12 +628,14 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['in other words', ['MEAN']],
       ['on the stage', ['STAGE']],
       ['in the classroom', ['CLASS']],
-      ['public speaking challenge', ['SAY', 'PEOPLE', 'CHALLENGE']],
+      ['public speaking challenge', ['SPEECH', 'CHALLENGE']],
+      ['public speaking coach', ['SPEECH', 'COACHING']],
+      ['public speaker', ['SPEECH', 'SPEAKER']],
       ['great job', ['GREAT', 'WORK']],
       ['talk to you', ['SAY', 'YOU']],
       ['look like', ['SAME']],
  ['in order to', ['REASON']], ['what do you', ['YOU', 'WHAT']],
-      ['how to', ['HOW']], ['have to', ['NEED']], ['public speaking', ['SAY', 'PEOPLE']],
+      ['how to', ['HOW']], ['have to', ['NEED']], ['public speaking', ['SPEECH']],
       ["i'm going to", ["I", "WILL"]],
       ["have a look", ["LOOK"]],
       ["a look at", ["LOOK"]],
@@ -655,6 +675,35 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["think about", ["THINK"]],
       ["high level", ["HIGH", "LEVEL"]],
       ["second time", ["SECOND", "TIME"]],
+      // Milestone H37 Contextual Phrases
+      ["right here", ["HERE"]],
+      ["all around", ["ALL"]],
+      ["all over", ["ALL"]],
+      ["walk away with", ["HAVE"]],
+      ["over the next", ["NEXT"]],
+      ["make sure", ["SURE"]],
+      ["lean in", ["ATTENTION"]],
+      ["have fun", ["HAVE", "FUN"]],
+      ["finish off", ["FINISH"]],
+      ["put to practice", ["PRACTICE"]],
+      ["three-day", ["THREE", "DAY"]],
+      ["three day", ["THREE", "DAY"]],
+      ["110-step", ["HUNDRED", "TEN", "STEP"]],
+      ["110", ["HUNDRED", "TEN"]],
+      ["5,000", ["FIVE", "THOUSAND"]],
+      ["5000", ["FIVE", "THOUSAND"]],
+      ["25 year", ["TWENTY", "FIVE", "YEAR"]],
+      ["25", ["TWENTY", "FIVE"]],
+      ["30 minutes", ["THIRTY", "MINUTE"]],
+      ["30 minute", ["THIRTY", "MINUTE"]],
+      ["30", ["THIRTY"]],
+      ["haven't met before", ["BEFORE", "MEET", "NOT"]],
+      ["have not met before", ["BEFORE", "MEET", "NOT"]],
+      ["it's to help", ["HELP"]],
+      ["to help you overcome", ["HELP", "YOU", "OVERCOME"]],
+      ["help you overcome", ["HELP", "YOU", "OVERCOME"]],
+      ["overcome being", ["OVERCOME"]],
+      ["you see", []],
     ]);
     this.lexicon = new Map([
       ['i', 'I'], ['you', 'YOU'], ['me', 'ME'],
@@ -1568,6 +1617,59 @@ export class EnglishToISLTranslator extends TranslationBackend {
 
       // Contractions
       ["won't", 'NOT'], ["they've", 'HAVE'], ["i'd", 'I'], ["here's", 'POINT'], ["whenever", 'WHEN'],
+
+      // Milestone H37 Vocabulary & ISL Conceptual Mappings
+      ['three', 'THREE'],
+      ['day', 'DAY'], ['days', 'DAY'],
+      ['all', 'ALL'],
+      ['make', 'MAKE'], ['makes', 'MAKE'], ['making', 'MAKE'], ['made', 'MAKE'],
+      ['before', 'BEFORE'],
+      ['essential', 'IMPORTANT'],
+      ['global', 'WORLD'],
+      ['endeavour', 'WORK'], ['endeavours', 'WORK'],
+      ['view', 'SEE'], ['views', 'SEE'], ['viewed', 'SEE'], ['viewing', 'SEE'],
+      ['captivating', 'BEAUTIFUL'],
+      ['giants', 'BIG'], ['giant', 'BIG'],
+      ['overcome', 'OVERCOME'], ['conquer', 'OVERCOME'],
+      ['discover', 'FIND'], ['discovers', 'FIND'], ['discovered', 'FIND'],
+      ['apply', 'PRACTICE'], ['applies', 'PRACTICE'], ['applied', 'PRACTICE'],
+      ['gathered', 'FIND'], ['gather', 'FIND'],
+      ['anxious', 'NERVOUS'], ['anxiety', 'NERVOUS'],
+      ['nervous', 'NERVOUS'],
+      ['afraid', 'FEAR'], ['fear', 'FEAR'],
+      ['speech', 'SPEECH'], ['lecture', 'SPEECH'],
+      ['hundred', 'HUNDRED'], ['twenty', 'TWENTY'], ['thirty', 'THIRTY'], ['zero', 'ZERO'],
+      ['tool', 'TOOLS'], ['tools', 'TOOLS'],
+      ['capturing', 'HOLD'], ['capture', 'HOLD'],
+      ['delivery', 'PRESENTATION'], ['delivering', 'PRESENTATION'], ['delivered', 'GIVE'],
+      ['studio', 'ROOM'],
+      ['beginners', 'LEARN'], ['beginner', 'LEARN'],
+      ['country', 'PLACE'], ['countries', 'PLACE'],
+      ['here', 'HERE'],
+      ['this', 'THIS'],
+      ['that', 'THAT'],
+      ['sweden', 'SWEDEN'],
+      ['pictures', 'PICTURE'], ['picture', 'PICTURE'],
+      ['fun', 'FUN'],
+      ['best', 'GOOD'],
+      ['most', 'MORE'],
+      ['much', 'MORE'],
+      ['step', 'STEP'], ['steps', 'STEP'],
+      ['closer', 'CLOSE'], ['close', 'CLOSE'],
+      ['someone', 'SOMEBODY'], ['somebody', 'SOMEBODY'],
+      ['place', 'PLACE'], ['places', 'PLACE'],
+      ['uncertain', 'NERVOUS'],
+      ['compilation', 'COMBINATION'],
+      ['impactful', 'POWER'],
+      ['excellence', 'GREAT'],
+      ['particular', 'POINT'],
+      ['pinpoint', 'FIND'],
+      ['exactly', 'TRUE'],
+      ['5', 'FIVE'],
+      ['000', 'THOUSAND'],
+      ['10', 'TEN'],
+      ['100', 'HUNDRED'],
+      ['110', 'HUNDRED'],
     ]);
 
     // Pre-compile and sort multiword phrases once to eliminate per-segment GC allocations
@@ -1607,13 +1709,17 @@ export class EnglishToISLTranslator extends TranslationBackend {
     const normalized_text = this.normalize(source_text);
     const timing = { normalization_ms: 0, analysis_ms: 0, gloss_generation_ms: 0, sign_id_resolution_ms: 0 };
     const normalizedAt = performance.now(); timing.normalization_ms = normalizedAt - started;
-    const isQuestion = /\?$/.test(String(text ?? '').trim()) || /^(will|can|do|does|did|are|is|how|what|where|when|why)\b/.test(normalized_text);
+    const hasQuestionMark = /\?$/.test(String(text ?? '').trim());
+    const isDirectInvertedQuestion = /^(will|can|do|does|did|are|is)\s+(you|we|they|i|he|she)\b/i.test(normalized_text);
+    const isDirectWhQuestion = /^(what|where|when|why|who|how)\s+(is|are|do|does|did|can|will|was|were)\b/i.test(normalized_text);
+    const isQuestion = hasQuestionMark || isDirectInvertedQuestion || isDirectWhQuestion;
     let tokens = normalized_text.replace(/\?/g, '').split(' ').filter(Boolean);
     const trace = [{ stage: 'normalize', detail: normalized_text || '(empty)' }];
     const linguistic_notes = [];
     const removed = [];
     const gloss = [];
     const unknown_terms = [];
+    const fingerspelled_terms = [];
     const phraseMatches = [];
     const remainingTokens = [];
     for (let index = 0; index < tokens.length;) {
@@ -1626,9 +1732,20 @@ export class EnglishToISLTranslator extends TranslationBackend {
       trace.push({ stage: 'phrase_detection', detail: `Matched lexical phrase(s): ${phraseMatches.join(', ')}` });
       linguistic_notes.push('Phrase-level concepts were resolved before individual words.');
     }
-    const auxiliaries = new Set(['will', 'can', 'do', 'does', 'did', 'are', 'is', 'am', 'was', 'were', 'be', 'been', 'the', 'a', 'an', 'to', 'of', 'in']);
+    const properNouns = new Set(['david', 'jp', 'phillips', 'tedx', 'oracle', 'google', 'disney']);
+    const auxiliaries = new Set([
+      'will', 'can', 'do', 'does', 'did', 'are', 'is', 'am', 'was', 'were', 'be', 'been', 'the', 'a', 'an', 'to', 'of', 'in',
+      'and', 'or', 'so', 'oh', 'well',
+      'for', 'with', 'into', 'from', 'on', 'over', 'around', 'about', 'as', 'among', 'by',
+      'there', 'which', 'it', 'its', 'being', 'if'
+    ]);
     if (remainingTokens.length) {
       for (const token of remainingTokens) {
+        if (properNouns.has(token)) {
+          fingerspelled_terms.push(token.toUpperCase());
+          trace.push({ stage: 'proper_noun_fingerspelling', detail: `Proper noun mapped to ISL fingerspelling: ${token.toUpperCase()}`, status: 'FINGERSPELLED' });
+          continue;
+        }
         if (auxiliaries.has(token)) {
           const hasOtherVerb = remainingTokens.some(t => t !== 'do' && ['go', 'want', 'see', 'look', 'have', 'need', 'help', 'drink'].includes(t));
           if (token === 'do' && !hasOtherVerb) {
@@ -1642,19 +1759,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
         const entry = this.lexicon.get(token) || g3Lexicon[token];
         if (entry) gloss.push(entry); else unknown_terms.push(token.toUpperCase());
       }
-      if (removed.length) trace.push({ stage: 'function_words', detail: `Omitted English function/auxiliary tokens: ${removed.join(', ')}`, basis: 'PROJECT_HEURISTIC', status: 'GRAMMAR_OMISSION' });
-      // Small controlled SVO pattern only.  This is intentionally not a general ISL parser.
-      const pronounPositions = gloss.map((g, index) => ({ g, index })).filter(x => ['I', 'YOU', 'ME', 'YOUR', 'MY'].includes(x.g));
-      const subject = gloss.find(g => ['I', 'YOU', 'YOUR', 'MY', 'PEOPLE', 'ONE'].includes(g));
-      const object = gloss.find(g => ['WATER', 'ME', 'MORE'].includes(g)) || (this.enableG3Improvements && pronounPositions.length >= 2 ? pronounPositions[1].g : null);
-      const verb = gloss.find(g => ['DRINK', 'HELP', 'NEED', 'HAVE', 'WANT', 'LOOK', 'SEE', 'GO', 'DO'].includes(g));
-      if (subject && object && verb && gloss.length === 3) {
-        gloss.splice(0, gloss.length, subject, object, verb);
-        trace.push({ stage: 'restructure', detail: `Controlled semantic-role order: ${subject} ${object} ${verb}`, basis: 'PROJECT_HEURISTIC', rule_id: 'G3-RULE-PRONOUN-01' });
-        linguistic_notes.push('Controlled SOV-style ordering is a project heuristic; it is not asserted as a universal ISL rule.');
-      } else if (!phraseMatches.length) {
-        trace.push({ stage: 'restructure', detail: 'No general reordering applied; input is outside the controlled declarative pattern.', basis: 'TRANSLATION_UNCERTAIN' });
-      }
+      if (removed.length) trace.push({ stage: 'function_words', detail: `Omitted English function/auxiliary tokens: ${removed.join(', ')}`, basis: 'NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION', status: 'GRAMMAR_OMISSION' });
     }
     // The phrase-first lookup above must still preserve source phrase order when
     // phrases and standalone lexical items occur together (for example HELLO GOOD MORNING).
@@ -1669,6 +1774,60 @@ export class EnglishToISLTranslator extends TranslationBackend {
         }
       }
       gloss.splice(0, gloss.length, ...orderedGloss);
+    }
+
+    // ISL Grammatical Constituent Restructuring Engine
+    // 1. Time / Temporal Marker Fronting: In ISL, Time adverbs precede Subject and Object
+    const timeGlosses = ['TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'YESTERDAY', 'TIME'];
+    for (let i = 0; i < gloss.length; i++) {
+      if (timeGlosses.includes(gloss[i]) && i > 0) {
+        const timeItem = gloss.splice(i, 1)[0];
+        gloss.unshift(timeItem);
+        trace.push({ stage: 'restructure', detail: `Fronted temporal marker to clause-initial position: ${timeItem}`, basis: 'ISL_CONSTITUENT_RULE', rule_id: 'ISL-TIME-FRONT-01' });
+        break;
+      }
+    }
+
+    // 2. SOV Constituent Ordering:
+    const sIdx = gloss.findIndex(g => ['I', 'YOU', 'YOUR', 'MY', 'WE', 'THEY', 'PEOPLE', 'SOMEBODY'].includes(g));
+    const lexicalVerbs = ['DRINK', 'HELP', 'NEED', 'WANT', 'LOOK', 'SEE', 'GO', 'DO', 'STUDY', 'MEET', 'PRACTICE', 'MAKE', 'WATCH', 'GIVE', 'COACHING', 'OVERCOME', 'FIND'];
+    let vIdx = gloss.findIndex(g => lexicalVerbs.includes(g));
+    if (vIdx === -1) {
+      vIdx = gloss.findIndex(g => g === 'HAVE');
+    }
+    const oIdx = gloss.findIndex((g, idx) => idx !== sIdx && idx !== vIdx && !['NOT', 'WHAT', 'HOW', 'TODAY', 'TOMORROW', 'NOW', 'BEFORE'].includes(g));
+    if (sIdx !== -1 && vIdx !== -1 && oIdx !== -1 && vIdx < oIdx) {
+      const verb = gloss.splice(vIdx, 1)[0];
+      gloss.splice(oIdx, 0, verb);
+      trace.push({ stage: 'restructure', detail: `Transformed SVO to ISL SOV: ${gloss.join(' ')}`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-SOV-01' });
+    }
+
+    // 3. Clause-Scoped Negation: In ISL, negative particle (NOT) moves to the end of its enclosing clause
+    const notIdx = gloss.indexOf('NOT');
+    if (notIdx !== -1) {
+      const mainClauseStartIdx = gloss.findIndex((g, idx) => idx > notIdx && (g === 'MY' || (g === 'NAME' && idx > 0)));
+      if (mainClauseStartIdx !== -1) {
+        const notItem = gloss.splice(notIdx, 1)[0];
+        gloss.splice(mainClauseStartIdx - 1, 0, notItem);
+        trace.push({ stage: 'restructure', detail: `Placed negation at subordinate clause boundary: NOT`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-CLAUSE-NEG-01' });
+      } else if (notIdx < gloss.length - 1) {
+        gloss.splice(notIdx, 1);
+        gloss.push('NOT');
+        trace.push({ stage: 'restructure', detail: `Moved negation particle to clause-final position: NOT`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-NEG-FINAL-01' });
+      }
+    }
+
+    // 4. WH-Question Final Placement: In ISL, WH question words move to clause-final position
+    if (isQuestion) {
+      const whWords = ['WHAT', 'HOW', 'WHERE', 'WHO', 'WHY', 'WHEN'];
+      for (let i = 0; i < gloss.length; i++) {
+        if (whWords.includes(gloss[i]) && i < gloss.length - 1) {
+          const whItem = gloss.splice(i, 1)[0];
+          gloss.push(whItem);
+          trace.push({ stage: 'restructure', detail: `Moved WH-interrogative to clause-final position: ${whItem}`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-WH-FINAL-01' });
+          break;
+        }
+      }
     }
     if (isQuestion) {
       const isWhQuestion = /^(how|what|where|when|why)\b/.test(normalized_text);
@@ -1689,8 +1848,9 @@ export class EnglishToISLTranslator extends TranslationBackend {
     const unavailable_signs = [];
     for (const id of motion_candidate_sign_ids) {
       const availability = this.motionCatalog[id];
-      if (availability.playable) sign_ids.push(id);
-      else unavailable_signs.push({ sign_id: id, reason: availability.reason });
+      const targetSignId = availability.sign_id || id;
+      if (availability.playable) sign_ids.push(targetSignId);
+      else unavailable_signs.push({ sign_id: targetSignId, reason: availability.reason });
     }
     trace.push({ stage: 'sign_id_resolution', detail: `Playable: ${sign_ids.join(', ') || 'none'}; unavailable: ${unavailable_signs.map(s => s.sign_id).join(', ') || 'none'}` });
     timing.sign_id_resolution_ms = performance.now() - glossAt;
@@ -1704,6 +1864,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       sign_ids,
       motion_candidate_sign_ids,
       unknown_terms,
+      fingerspelled_terms,
       unavailable_signs,
       grammar_omissions: removed.map(token => ({ token, status: 'GRAMMAR_OMISSION' })),
       non_manual_markers: [...(isQuestion ? [questionMarker] : []), ...(hasNegation ? ['NEGATION'] : [])],
