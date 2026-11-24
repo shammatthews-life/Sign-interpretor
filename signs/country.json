@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "country",
+  "metadata": {
+    "display_name": "Country",
+    "gloss": "COUNTRY",
+    "language": "ISL",
+    "lexical_type": "Geopolitical noun (nation / homeland / state)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC 10,000 Dictionary. Non-dominant forearm held horizontal at chest height; dominant open hand executes a circular boundary stroke above the forearm before making contact with the wrist/forearm, denoting bounded national territory."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1300,
+    "dominant_hand": "both",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_L_Clavicle",
+      "Bip001_L_UpperArm",
+      "Bip001_L_Forearm",
+      "Bip001_L_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      },
+      {
+        "time_ms": 380,
+        "label": "Non-dominant Base Positioned, Dominant Circular Ascent",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_L_Clavicle": { "x": 0.04, "y": -0.06, "z": 0.04 },
+          "Bip001_L_UpperArm": { "x": 0.32, "y": 0.16, "z": -0.26 },
+          "Bip001_L_Forearm": { "x": 0.62, "y": -0.12, "z": 0.20 },
+          "Bip001_L_Hand": { "x": 0.10, "y": -0.18, "z": -0.08 },
+          "Bip001_R_Clavicle": { "x": 0.06, "y": 0.08, "z": -0.06 },
+          "Bip001_R_UpperArm": { "x": 0.40, "y": -0.20, "z": 0.32 },
+          "Bip001_R_Forearm": { "x": 0.70, "y": 0.18, "z": -0.24 },
+          "Bip001_R_Hand": { "x": 0.22, "y": 0.25, "z": 0.12 },
+          "Bip001_Head": { "x": -0.04, "y": 0.0, "z": 0.0 }
+        },
+        "finger_curls": {
+          "thumb": 0.1, "index": 0.0, "middle": 0.0, "ring": 0.0, "pinky": 0.0
+        }
+      },
+      {
+        "time_ms": 780,
+        "label": "Dominant Hand Circular Arc Above Base",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_L_Clavicle": { "x": 0.05, "y": -0.07, "z": 0.05 },
+          "Bip001_L_UpperArm": { "x": 0.35, "y": 0.18, "z": -0.28 },
+          "Bip001_L_Forearm": { "x": 0.65, "y": -0.14, "z": 0.22 },
+          "Bip001_L_Hand": { "x": 0.12, "y": -0.20, "z": -0.10 },
+          "Bip001_R_Clavicle": { "x": 0.08, "y": 0.10, "z": -0.08 },
+          "Bip001_R_UpperArm": { "x": 0.48, "y": -0.24, "z": 0.38 },
+          "Bip001_R_Forearm": { "x": 0.82, "y": 0.24, "z": -0.28 },
+          "Bip001_R_Hand": { "x": 0.30, "y": 0.32, "z": 0.16 },
+          "Bip001_Head": { "x": 0.04, "y": 0.0, "z": 0.0 }
+        },
+        "finger_curls": {
+          "thumb": 0.1, "index": 0.0, "middle": 0.0, "ring": 0.0, "pinky": 0.0
+        }
+      },
+      {
+        "time_ms": 1020,
+        "label": "Contact Settle on Forearm Boundary",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_L_Clavicle": { "x": 0.04, "y": -0.06, "z": 0.04 },
+          "Bip001_L_UpperArm": { "x": 0.32, "y": 0.16, "z": -0.26 },
+          "Bip001_L_Forearm": { "x": 0.62, "y": -0.12, "z": 0.20 },
+          "Bip001_L_Hand": { "x": 0.10, "y": -0.18, "z": -0.08 },
+          "Bip001_R_Clavicle": { "x": 0.05, "y": 0.06, "z": -0.05 },
+          "Bip001_R_UpperArm": { "x": 0.38, "y": -0.18, "z": 0.30 },
+          "Bip001_R_Forearm": { "x": 0.68, "y": 0.16, "z": -0.22 },
+          "Bip001_R_Hand": { "x": 0.18, "y": 0.20, "z": 0.10 },
+          "Bip001_Head": { "x": 0.08, "y": 0.0, "z": 0.0 }
+        },
+        "finger_curls": {
+          "thumb": 0.0, "index": 0.0, "middle": 0.0, "ring": 0.0, "pinky": 0.0
+        }
+      },
+      {
+        "time_ms": 1300,
+        "label": "Return to Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_L_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": {
+          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+        }
+      }
+    ]
+  }
+}

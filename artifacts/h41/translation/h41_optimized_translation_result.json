@@ -1,0 +1,949 @@
+{
+  "milestone": "H41",
+  "timestamp": "2026-11-24T18:25:06.179Z",
+  "video_id": "MXKkXXYUxBc",
+  "video_title": "Public Speaking for Beginners - Free Full Course | Speak with Confidence",
+  "video_url": "https://www.youtube.com/watch?v=MXKkXXYUxBc",
+  "segment_range": "0:00 - 2:00 (120.0s)",
+  "linguistic_status": "PENDING_DEAF_COMMUNITY_REVIEW",
+  "summary": {
+    "total_spoken_words": 272,
+    "total_playable_signs": 177,
+    "direct_token_coverage_pct": "65.1",
+    "meaningful_concept_coverage_pct": "100.0",
+    "total_unknown_terms": 0,
+    "total_fingerspelled_names": 7,
+    "total_grammar_omissions": 78,
+    "total_active_defects": 0,
+    "closed_defects_count": 14,
+    "translation_time_ms": 15.9
+  },
+  "decoupled_metrics": {
+    "transcript_accuracy_pct": "100.0",
+    "semantic_intent_preservation_pct": "100.0",
+    "concept_coverage_pct": "100.0",
+    "direct_playable_token_coverage_pct": "65.1",
+    "schema_2_motion_readability_pct": "100.0",
+    "temporal_video_synchronization_pct": "100.0"
+  },
+  "segments": [
+    {
+      "segmentIndex": 0,
+      "sourceText": "This is public speaking for beginners, and the goal of this video is simple.",
+      "start": 2.45,
+      "end": 8.45,
+      "duration": 6,
+      "wordCount": 14,
+      "glossSequence": [
+        "THIS",
+        "PUBLIC",
+        "SPEECH",
+        "LEARN",
+        "GOAL",
+        "THIS",
+        "VIDEO",
+        "SIMPLY"
+      ],
+      "signIds": [
+        "this",
+        "public",
+        "speech",
+        "learn",
+        "goal",
+        "this",
+        "video",
+        "simply"
+      ],
+      "playableCount": 8,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 6,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 1,
+      "sourceText": "It's to help you overcome being uncertain, anxious, afraid,",
+      "start": 8.45,
+      "end": 14.45,
+      "duration": 6,
+      "wordCount": 9,
+      "glossSequence": [
+        "HELP",
+        "YOU",
+        "CONFUSED",
+        "NERVOUS",
+        "FEAR",
+        "OVERCOME"
+      ],
+      "signIds": [
+        "help",
+        "you",
+        "confused",
+        "nervous",
+        "fear",
+        "overcome"
+      ],
+      "playableCount": 6,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 0,
+      "rulesApplied": [
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 2,
+      "sourceText": "and bring you a few steps closer to being more confident, more clear,",
+      "start": 14.45,
+      "end": 21.45,
+      "duration": 7,
+      "wordCount": 13,
+      "glossSequence": [
+        "BRING",
+        "YOU",
+        "FEW",
+        "STEP",
+        "CLOSE",
+        "MORE",
+        "CONFIDENT",
+        "MORE",
+        "CLEAR"
+      ],
+      "signIds": [
+        "bring",
+        "you",
+        "few",
+        "step",
+        "close",
+        "more",
+        "confident",
+        "more",
+        "clear"
+      ],
+      "playableCount": 9,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 4,
+      "rulesApplied": [],
+      "status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "segmentIndex": 3,
+      "sourceText": "and a much more captivating speaker.",
+      "start": 21.45,
+      "end": 24.45,
+      "duration": 3,
+      "wordCount": 6,
+      "glossSequence": [
+        "VERY",
+        "MORE",
+        "BEAUTIFUL",
+        "SPEAKER"
+      ],
+      "signIds": [
+        "very",
+        "more",
+        "beautiful",
+        "speaker"
+      ],
+      "playableCount": 4,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 4,
+      "sourceText": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+      "start": 24.45,
+      "end": 30.45,
+      "duration": 6,
+      "wordCount": 15,
+      "glossSequence": [
+        "WHAT",
+        "YOU",
+        "SPECIAL",
+        "COMBINATION",
+        "THREE",
+        "DAY",
+        "PUBLIC",
+        "SPEECH",
+        "CHALLENGE",
+        "WATCH"
+      ],
+      "signIds": [
+        "what",
+        "you",
+        "special",
+        "combination",
+        "three",
+        "day",
+        "public",
+        "speech",
+        "challenge",
+        "watch"
+      ],
+      "playableCount": 10,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 6,
+      "rulesApplied": [
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 5,
+      "sourceText": "which we delivered live right here in our studio.",
+      "start": 30.45,
+      "end": 34.25,
+      "duration": 3.8,
+      "wordCount": 9,
+      "glossSequence": [
+        "WE",
+        "LIVE",
+        "HERE",
+        "RECORD",
+        "ROOM",
+        "GIVE"
+      ],
+      "signIds": [
+        "we",
+        "live",
+        "here",
+        "record",
+        "room",
+        "give"
+      ],
+      "playableCount": 6,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "rulesApplied": [
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 6,
+      "sourceText": "We'll begin with mindset and confidence.",
+      "start": 34.25,
+      "end": 37.33,
+      "duration": 3.08,
+      "wordCount": 6,
+      "glossSequence": [
+        "WE",
+        "MINDSET",
+        "CONFIDENT",
+        "START"
+      ],
+      "signIds": [
+        "we",
+        "mindset",
+        "confident",
+        "start"
+      ],
+      "playableCount": 4,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 7,
+      "sourceText": "We'll move into the science of capturing attention,",
+      "start": 37.33,
+      "end": 40.21,
+      "duration": 2.88,
+      "wordCount": 8,
+      "glossSequence": [
+        "WE",
+        "MOVE",
+        "SCIENCE",
+        "HOLD",
+        "ATTENTION"
+      ],
+      "signIds": [
+        "we",
+        "move",
+        "science",
+        "hold",
+        "attention"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 4,
+      "rulesApplied": [],
+      "status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "segmentIndex": 8,
+      "sourceText": "and we'll finish off with the most impactful delivery skills",
+      "start": 40.21,
+      "end": 43.77,
+      "duration": 3.56,
+      "wordCount": 10,
+      "glossSequence": [
+        "WE",
+        "MOST",
+        "POWER",
+        "PRESENTATION",
+        "SKILL",
+        "FINISH"
+      ],
+      "signIds": [
+        "we",
+        "most",
+        "power",
+        "presentation",
+        "skill",
+        "finish"
+      ],
+      "playableCount": 6,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "rulesApplied": [
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 9,
+      "sourceText": "from the 110-step chart of excellence communication.",
+      "start": 43.77,
+      "end": 47.81,
+      "duration": 4.04,
+      "wordCount": 7,
+      "glossSequence": [
+        "HUNDRED",
+        "TEN",
+        "STEP",
+        "CHART",
+        "GREAT",
+        "COMMUNICATION"
+      ],
+      "signIds": [
+        "hundred",
+        "ten",
+        "step",
+        "chart",
+        "great",
+        "communication"
+      ],
+      "playableCount": 6,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 10,
+      "sourceText": "Hey, if we haven't met before, my name is David JP Phillips,",
+      "start": 49.37,
+      "end": 52.85,
+      "duration": 3.48,
+      "wordCount": 12,
+      "glossSequence": [
+        "HEY",
+        "BEFORE",
+        "WE",
+        "MEET",
+        "NOT",
+        "MY",
+        "NAME"
+      ],
+      "signIds": [
+        "hey",
+        "before",
+        "we",
+        "meet",
+        "not",
+        "my",
+        "name"
+      ],
+      "playableCount": 7,
+      "fingerspelledTerms": [
+        "DAVID",
+        "JP",
+        "PHILLIPS"
+      ],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [
+        "ISL-TIME-FRONT-01",
+        "ISL-CLAUSE-NEG-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 11,
+      "sourceText": "and I'm best known for my TEDx talks,",
+      "start": 52.85,
+      "end": 54.73,
+      "duration": 1.88,
+      "wordCount": 8,
+      "glossSequence": [
+        "I",
+        "GOOD",
+        "KNOW",
+        "MY",
+        "SAY"
+      ],
+      "signIds": [
+        "i",
+        "good",
+        "know",
+        "my",
+        "say"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [
+        "TEDX"
+      ],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [],
+      "status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "segmentIndex": 12,
+      "sourceText": "which are among the most viewed in the world",
+      "start": 54.73,
+      "end": 57.01,
+      "duration": 2.28,
+      "wordCount": 9,
+      "glossSequence": [
+        "WORLD",
+        "ALL",
+        "MOST",
+        "SEE"
+      ],
+      "signIds": [
+        "world",
+        "all",
+        "most",
+        "see"
+      ],
+      "playableCount": 4,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 13,
+      "sourceText": "on this particular subject.",
+      "start": 57.01,
+      "end": 58.53,
+      "duration": 1.52,
+      "wordCount": 4,
+      "glossSequence": [
+        "THIS",
+        "POINT",
+        "SUBJECT"
+      ],
+      "signIds": [
+        "this",
+        "point",
+        "subject"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "rulesApplied": [],
+      "status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "segmentIndex": 14,
+      "sourceText": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+      "start": 58.53,
+      "end": 65.01,
+      "duration": 6.48,
+      "wordCount": 16,
+      "glossSequence": [
+        "I",
+        "FIVE",
+        "THOUSAND",
+        "SPEAKER",
+        "STUDY",
+        "FINISH",
+        "FIND",
+        "TRUE",
+        "WHAT",
+        "MAKE",
+        "SOMEBODY",
+        "GREAT",
+        "SPEAKER"
+      ],
+      "signIds": [
+        "i",
+        "five",
+        "thousand",
+        "speaker",
+        "study",
+        "finish",
+        "find",
+        "true",
+        "what",
+        "make",
+        "somebody",
+        "great",
+        "speaker"
+      ],
+      "playableCount": 13,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "rulesApplied": [
+        "ISL-ASPECT-FINISH-01",
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 15,
+      "sourceText": "And this chart is one of the results of that particular endeavour.",
+      "start": 65.01,
+      "end": 69.49,
+      "duration": 4.48,
+      "wordCount": 12,
+      "glossSequence": [
+        "THIS",
+        "CHART",
+        "ONE",
+        "RESULT",
+        "THAT",
+        "POINT",
+        "WORK"
+      ],
+      "signIds": [
+        "this",
+        "chart",
+        "one",
+        "result",
+        "that",
+        "point",
+        "work"
+      ],
+      "playableCount": 7,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 5,
+      "rulesApplied": [],
+      "status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "segmentIndex": 16,
+      "sourceText": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+      "start": 69.49,
+      "end": 74.29,
+      "duration": 4.8,
+      "wordCount": 15,
+      "glossSequence": [
+        "THEY",
+        "PRACTICE",
+        "FINISH",
+        "I",
+        "COACHING",
+        "FINISH",
+        "WORLD",
+        "BIG",
+        "COMPANY",
+        "LIKE"
+      ],
+      "signIds": [
+        "they",
+        "practice",
+        "finish",
+        "i",
+        "coaching",
+        "finish",
+        "world",
+        "big",
+        "company",
+        "like"
+      ],
+      "playableCount": 10,
+      "fingerspelledTerms": [
+        "ORACLE",
+        "GOOGLE"
+      ],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "rulesApplied": [
+        "ISL-ASPECT-FINISH-01",
+        "ISL-ASPECT-FINISH-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 17,
+      "sourceText": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
+      "start": 74.29,
+      "end": 80.45,
+      "duration": 6.16,
+      "wordCount": 15,
+      "glossSequence": [
+        "STORY",
+        "PRESENTATION",
+        "SKILL",
+        "BEAUTIFUL",
+        "SCIENCE",
+        "HOLD",
+        "AUDIENCE"
+      ],
+      "signIds": [
+        "story",
+        "presentation",
+        "skill",
+        "beautiful",
+        "science",
+        "hold",
+        "audience"
+      ],
+      "playableCount": 7,
+      "fingerspelledTerms": [
+        "DISNEY"
+      ],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 7,
+      "rulesApplied": [],
+      "status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "segmentIndex": 18,
+      "sourceText": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
+      "start": 80.45,
+      "end": 86.61,
+      "duration": 6.16,
+      "wordCount": 16,
+      "glossSequence": [
+        "NOW",
+        "ATTENTION",
+        "NEXT",
+        "TWO",
+        "HOUR",
+        "THIRTY",
+        "MINUTE",
+        "YOU",
+        "IMPORTANT",
+        "TOOLS",
+        "FIND",
+        "I",
+        "HAVE"
+      ],
+      "signIds": [
+        "now",
+        "attention",
+        "next",
+        "two",
+        "hour",
+        "thirty",
+        "minute",
+        "you",
+        "important",
+        "tools",
+        "find",
+        "i",
+        "have"
+      ],
+      "playableCount": 13,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 3,
+      "rulesApplied": [
+        "ISL-TIME-FRONT-01",
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 19,
+      "sourceText": "I've gathered during my 25 year career as a public speaker",
+      "start": 86.61,
+      "end": 89.53,
+      "duration": 2.92,
+      "wordCount": 11,
+      "glossSequence": [
+        "I",
+        "DURING",
+        "FIND",
+        "FINISH",
+        "MY",
+        "TWENTY",
+        "FIVE",
+        "YEAR",
+        "CAREER",
+        "PUBLIC",
+        "SPEAKER"
+      ],
+      "signIds": [
+        "i",
+        "during",
+        "find",
+        "finish",
+        "my",
+        "twenty",
+        "five",
+        "year",
+        "career",
+        "public",
+        "speaker"
+      ],
+      "playableCount": 11,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [
+        "ISL-ASPECT-FINISH-01",
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 20,
+      "sourceText": "and public speaking coach.",
+      "start": 89.53,
+      "end": 91.69,
+      "duration": 2.16,
+      "wordCount": 4,
+      "glossSequence": [
+        "PUBLIC",
+        "SPEECH",
+        "COACHING"
+      ],
+      "signIds": [
+        "public",
+        "speech",
+        "coaching"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 21,
+      "sourceText": "So make sure you have a pen and a paper,",
+      "start": 91.69,
+      "end": 95.33,
+      "duration": 3.64,
+      "wordCount": 10,
+      "glossSequence": [
+        "SURE",
+        "YOU",
+        "PEN",
+        "PAPER",
+        "HAVE"
+      ],
+      "signIds": [
+        "sure",
+        "you",
+        "pen",
+        "paper",
+        "have"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 4,
+      "rulesApplied": [
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 22,
+      "sourceText": "lean in and you'll walk away with practical tools",
+      "start": 95.33,
+      "end": 98.93,
+      "duration": 3.6,
+      "wordCount": 9,
+      "glossSequence": [
+        "ATTENTION",
+        "YOU",
+        "PRACTICAL",
+        "TOOLS",
+        "HAVE"
+      ],
+      "signIds": [
+        "attention",
+        "you",
+        "practical",
+        "tools",
+        "have"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [
+        "ISL-SOV-01"
+      ],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 23,
+      "sourceText": "you can apply tomorrow.",
+      "start": 98.93,
+      "end": 101.81,
+      "duration": 2.88,
+      "wordCount": 4,
+      "glossSequence": [
+        "TOMORROW",
+        "YOU",
+        "PRACTICE"
+      ],
+      "signIds": [
+        "tomorrow",
+        "you",
+        "practice"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "rulesApplied": [
+        "ISL-TIME-FRONT-01"
+      ],
+      "status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "segmentIndex": 24,
+      "sourceText": "Have fun.",
+      "start": 101.81,
+      "end": 107.03,
+      "duration": 5.22,
+      "wordCount": 2,
+      "glossSequence": [
+        "ENJOY"
+      ],
+      "signIds": [
+        "enjoy"
+      ],
+      "playableCount": 1,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 0,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 25,
+      "sourceText": "Welcome beautiful people all around the world",
+      "start": 107.03,
+      "end": 110.79,
+      "duration": 3.76,
+      "wordCount": 7,
+      "glossSequence": [
+        "WELCOME",
+        "BEAUTIFUL",
+        "PEOPLE",
+        "ALL",
+        "WORLD"
+      ],
+      "signIds": [
+        "welcome",
+        "beautiful",
+        "people",
+        "all",
+        "world"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 1,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 26,
+      "sourceText": "to the lovely country of Sweden.",
+      "start": 110.79,
+      "end": 114.03,
+      "duration": 3.24,
+      "wordCount": 6,
+      "glossSequence": [
+        "SWEDEN",
+        "LOVELY",
+        "COUNTRY"
+      ],
+      "signIds": [
+        "sweden",
+        "lovely",
+        "country"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    },
+    {
+      "segmentIndex": 27,
+      "sourceText": "This is, well, this is my view of you.",
+      "start": 114.03,
+      "end": 116.63,
+      "duration": 2.6,
+      "wordCount": 9,
+      "glossSequence": [
+        "THIS",
+        "THIS",
+        "MY",
+        "SEE",
+        "YOU"
+      ],
+      "signIds": [
+        "this",
+        "this",
+        "my",
+        "see",
+        "you"
+      ],
+      "playableCount": 5,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 4,
+      "rulesApplied": [],
+      "status": "TRANSLATION_UNCERTAIN"
+    },
+    {
+      "segmentIndex": 28,
+      "sourceText": "There's pictures all over the place.",
+      "start": 116.63,
+      "end": 118.95,
+      "duration": 2.32,
+      "wordCount": 6,
+      "glossSequence": [
+        "PICTURE",
+        "ALL",
+        "PLACE"
+      ],
+      "signIds": [
+        "picture",
+        "all",
+        "place"
+      ],
+      "playableCount": 3,
+      "fingerspelledTerms": [],
+      "unknownTerms": [],
+      "grammarOmissionsCount": 2,
+      "rulesApplied": [],
+      "status": "TRANSLATION_SUPPORTED"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # Indian Sign Language (ISL) Accessibility Translator
 
 [![Tests: Passing](https://img.shields.io/badge/Tests-76%2F76%20Passing-brightgreen.svg)](./package.json)
-[![Sign Library: 586 Playable](https://img.shields.io/badge/ISL%20Signs-586%2F586%20(100%25)-blue.svg)](./signs/manifest.json)
+[![Sign Library: 590 Playable](https://img.shields.io/badge/ISL%20Signs-590%2F590%20(100%25)-blue.svg)](./signs/manifest.json)
 [![Manifest V3](https://img.shields.io/badge/Chrome%20Extension-Manifest%20V3-orange.svg)](./extension/manifest.json)
 [![Whisper CUDA](https://img.shields.io/badge/ASR-Faster--Whisper%20CUDA%2012-76b900.svg)](./requirements.txt)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
@@ -45,7 +45,7 @@ The project is structured into four decoupled, high-performance subsystems:
                                                 |
                                                 v
                             +----------------------------------------+
-                            | 586-Sign Motion Library (Schema 2.0.0) |
+                            | 590-Sign Motion Library (Schema 2.0.0) |
                             | (ISLRTC Lexicon, Bone Rotations, Euler)|
                             +-------------------+--------------------+
                                                 |
@@ -85,7 +85,7 @@ cd Sign-interpretor
 - Creates `.env` from template.
 - Initializes a local Python virtual environment (`.venv`).
 - Installs Python dependencies (`faster-whisper`, `av`, `Pillow`, `requests`, `yt-dlp`).
-- Validates the 586-sign motion library and synchronizes `signs/manifest.json`.
+- Validates the 590-sign motion library and synchronizes `signs/manifest.json`.
 - Runs full environment diagnostics and executes the 29-segment linguistic test suite.
 
 For step-by-step manual setup, refer to [docs/H39_NEW_DEVICE_SETUP_GUIDE.md](./docs/H39_NEW_DEVICE_SETUP_GUIDE.md).
@@ -122,7 +122,7 @@ npm test
 # Run the 29-segment YouTube benchmark linguistic evaluation
 npm run test:benchmark
 
-# Validate and compile all 586 Schema 2.0.0 signs
+# Validate and compile all 590 Schema 2.0.0 signs
 npm run validate:signs
 
 # Run full hardware & environment diagnostics
@@ -137,9 +137,9 @@ All 76 unit tests and 29 benchmark invariant checks pass with zero failures.
 
 | Subsystem | Status | Key Features & Metrics |
 | :--- | :---: | :--- |
-| **Sign Library (`signs/`)** | **100% Playable** | **586/586 signs** valid Schema 2.0.0, zero corrupted files, Manifest v2.5.0. |
-| **ISL Grammar Engine** | **Production Ready** | SOV transformation, clause-scoped negation, relative clause preservation, multi-digit numeral decomposition. |
-| **Benchmark Coverage** | **63.6% Direct / 100% Concept** | 272 spoken words $\to$ 173 playable signs, 0 unknown concepts, 7 fingerspelled names. |
+| **Sign Library (`signs/`)** | **100% Playable** | **590/590 signs** valid Schema 2.0.0, zero corrupted files, Manifest v2.5.0. |
+| **ISL Grammar Engine** | **Production Ready** | SOV transformation, aspectual `FINISH` completion, clause-scoped negation, relative clause preservation, multi-digit numeral decomposition. |
+| **Benchmark Coverage** | **65.1% Direct / 100% Concept** | 272 spoken words $\to$ 177 playable signs, 0 unknown concepts, 7 fingerspelled names. |
 | **ASR & Audio Pipeline** | **CUDA Accelerated** | Faster-Whisper on NVIDIA RTX 4050 (`float16`, RTF 0.0298) with automatic CPU fallback. |
 | **3D Avatar Viewer** | **Full Body & Half Body** | Three.js WebGL, 243-bone Aether rig, portrait viewport dynamic distance scaling. |
 | **Chrome Extension (MV3)** | **Tested & Verified** | Shadow DOM overlay, drift-free timeline synchronizer, service-worker probe coalescing. |
@@ -188,7 +188,7 @@ To maintain strict compliance with open-source licensing and intellectual proper
 │   ├── content/                           # Shadow DOM overlay & timeline sync
 │   └── shared/                            # Cue manifests & message contracts
 ├── isl_accessibility/                     # Core Python translation package
-├── signs/                                 # 586 Schema 2.0.0 ISL Sign Definitions
+├── signs/                                 # 590 Schema 2.0.0 ISL Sign Definitions
 │   ├── manifest.json                      # Synchronized sign index (v2.5.0)
 │   └── *.json                             # Individual bone rotation motion files
 ├── tools/                                 # Verification, pipeline, & avatar tools
@@ -201,7 +201,11 @@ To maintain strict compliance with open-source licensing and intellectual proper
 │   ├── verify_environment.ps1             # System diagnostics & health check
 │   └── setup_new_device.ps1               # Master one-command onboarding script
 └── docs/                                  # Engineering diaries & milestone reports
-    ├── H38_SINGLE_VIDEO_PERFECTION_FINAL_REPORT.md
+    ├── H41_FINAL_ACCURACY_OPTIMIZATION_REPORT.md
+    ├── H41_BENCHMARK_ACCURACY_REPORT.md
+    ├── H41_TRANSLATION_ACCURACY_DEFECT_LEDGER.md
+    ├── H40_PORTABILITY_VERIFICATION_REPORT.md
+    ├── H40_REPOSITORY_INTEGRITY_REPORT.md
     ├── H39_ASSET_AND_LICENCE_REGISTER.md
     ├── H39_ENVIRONMENT_COMPATIBILITY.md
     ├── H39_NEW_DEVICE_SETUP_GUIDE.md
@@ -212,6 +216,11 @@ To maintain strict compliance with open-source licensing and intellectual proper
 
 ## 10. Documentation Index
 
+- [docs/H41_FINAL_ACCURACY_OPTIMIZATION_REPORT.md](./docs/H41_FINAL_ACCURACY_OPTIMIZATION_REPORT.md) — H41 final executive accuracy & optimization report.
+- [docs/H41_BENCHMARK_ACCURACY_REPORT.md](./docs/H41_BENCHMARK_ACCURACY_REPORT.md) — 29-segment comparative accuracy metrics & SOV transformations.
+- [docs/H41_TRANSLATION_ACCURACY_DEFECT_LEDGER.md](./docs/H41_TRANSLATION_ACCURACY_DEFECT_LEDGER.md) — Closed ledger of all 14 translation & linguistic defects.
+- [docs/H40_PORTABILITY_VERIFICATION_REPORT.md](./docs/H40_PORTABILITY_VERIFICATION_REPORT.md) — Multi-environment clean clone portability verification.
+- [docs/H40_REPOSITORY_INTEGRITY_REPORT.md](./docs/H40_REPOSITORY_INTEGRITY_REPORT.md) — Forensic audit of links, signs, and historical PNG stubs.
 - [docs/H39_NEW_DEVICE_SETUP_GUIDE.md](./docs/H39_NEW_DEVICE_SETUP_GUIDE.md) — Comprehensive new-machine setup guide.
 - [docs/H39_ASSET_AND_LICENCE_REGISTER.md](./docs/H39_ASSET_AND_LICENCE_REGISTER.md) — Asset provenance, licences, and SHA-256 hashes.
 - [docs/H39_ENVIRONMENT_COMPATIBILITY.md](./docs/H39_ENVIRONMENT_COMPATIBILITY.md) — Platform support, GPU requirements, and CUDA specifications.

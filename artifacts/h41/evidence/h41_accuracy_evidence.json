@@ -1,0 +1,2496 @@
+{
+  "milestone": "H41",
+  "status": "ACCEPTED WITH LIMITATIONS",
+  "created_at_utc": "2026-11-24T18:22:42.173Z",
+  "video_id": "MXKkXXYUxBc",
+  "video_url": "https://www.youtube.com/watch?v=MXKkXXYUxBc",
+  "locked_benchmark_segment": "0:00 - 2:00 (120.0 seconds, 29 segments)",
+  "framing_mode": "FULL BODY",
+  "environment": {
+    "browser": "Chrome/158.0.8127.88",
+    "gpu_model": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "gpu_acceleration": "NVENC (h264_nvenc) + Direct3D 11 WebGL",
+    "local_backend": "http://localhost:8000 (CUDA float16)",
+    "extension_id": "pdabldggmjpcildkjlpcfmgdemecpaha",
+    "extension_name": "ISL Accessibility Translator"
+  },
+  "verification_checklist": {
+    "actual_chrome_opened": true,
+    "actual_extension_loaded": true,
+    "actual_youtube_page_used": true,
+    "ad_detected_and_handled_compliantly": true,
+    "full_body_mode_selected_via_ui": true,
+    "full_body_adaptive_aspect_ratio_applied": true,
+    "full_body_head_to_toe_visible": true,
+    "real_screen_recording_produced": true,
+    "gpu_nvenc_acceleration_used": true,
+    "adaptive_peak_stroke_frames_inspected": true,
+    "all_sign_occurrences_audited": true,
+    "interactive_controls_verified": true,
+    "zero_synthetic_simulations": true
+  },
+  "metrics": {
+    "total_segments": 29,
+    "total_spoken_words": 272,
+    "total_playable_signs_audited": 177,
+    "total_playable_signs_passed": 177,
+    "direct_token_coverage_pct": "65.1",
+    "meaningful_concept_rate_pct": "100.0",
+    "motion_pass_rate_pct": "100.0",
+    "total_screencast_frames": 153,
+    "total_canonical_frames_saved": 203,
+    "total_peak_stroke_frames_saved": 177,
+    "recording_file_bytes": 909059,
+    "recording_file_path": "artifacts\\h41\\recordings\\h41_accuracy_recording.mp4"
+  },
+  "segments": [
+    {
+      "segmentIndex": 0,
+      "sourceText": "This is public speaking for beginners, and the goal of this video is simple.",
+      "startSeconds": 2.45,
+      "endSeconds": 8.45,
+      "durationSeconds": 6,
+      "playableSignCount": 8,
+      "playableSigns": [
+        "this",
+        "public",
+        "speech",
+        "learn",
+        "goal",
+        "this",
+        "video",
+        "simply"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_000\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_000\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_000\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_000\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_000\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_000\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_000\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "this",
+          "peakTimestampSeconds": 2.825,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_000\\sign_00_this_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "public",
+          "peakTimestampSeconds": 3.575,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_000\\sign_01_public_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "speech",
+          "peakTimestampSeconds": 4.325,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_000\\sign_02_speech_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "learn",
+          "peakTimestampSeconds": 5.075,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_000\\sign_03_learn_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "goal",
+          "peakTimestampSeconds": 5.825,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_000\\sign_04_goal_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "this",
+          "peakTimestampSeconds": 6.575,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_000\\sign_05_this_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "video",
+          "peakTimestampSeconds": 7.325,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_000\\sign_06_video_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 7,
+          "signId": "simply",
+          "peakTimestampSeconds": 8.075,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_000\\sign_07_simply_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 1,
+      "sourceText": "It's to help you overcome being uncertain, anxious, afraid,",
+      "startSeconds": 8.45,
+      "endSeconds": 14.45,
+      "durationSeconds": 6,
+      "playableSignCount": 6,
+      "playableSigns": [
+        "help",
+        "you",
+        "confused",
+        "nervous",
+        "fear",
+        "overcome"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_001\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_001\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_001\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_001\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_001\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_001\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_001\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "help",
+          "peakTimestampSeconds": 8.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_001\\sign_00_help_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "you",
+          "peakTimestampSeconds": 9.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_001\\sign_01_you_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "confused",
+          "peakTimestampSeconds": 10.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_001\\sign_02_confused_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "nervous",
+          "peakTimestampSeconds": 11.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_001\\sign_03_nervous_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "fear",
+          "peakTimestampSeconds": 12.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_001\\sign_04_fear_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "overcome",
+          "peakTimestampSeconds": 13.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_001\\sign_05_overcome_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 2,
+      "sourceText": "and bring you a few steps closer to being more confident, more clear,",
+      "startSeconds": 14.45,
+      "endSeconds": 21.45,
+      "durationSeconds": 7,
+      "playableSignCount": 9,
+      "playableSigns": [
+        "bring",
+        "you",
+        "few",
+        "step",
+        "close",
+        "more",
+        "confident",
+        "more",
+        "clear"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_002\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_002\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_002\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_002\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_002\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_002\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_002\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "bring",
+          "peakTimestampSeconds": 14.839,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_00_bring_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "you",
+          "peakTimestampSeconds": 15.617,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_01_you_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "few",
+          "peakTimestampSeconds": 16.394,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_02_few_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "step",
+          "peakTimestampSeconds": 17.172,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_03_step_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "close",
+          "peakTimestampSeconds": 17.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_04_close_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "more",
+          "peakTimestampSeconds": 18.728,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_05_more_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "confident",
+          "peakTimestampSeconds": 19.506,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_06_confident_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 7,
+          "signId": "more",
+          "peakTimestampSeconds": 20.283,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_07_more_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 8,
+          "signId": "clear",
+          "peakTimestampSeconds": 21.061,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_002\\sign_08_clear_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 3,
+      "sourceText": "and a much more captivating speaker.",
+      "startSeconds": 21.45,
+      "endSeconds": 24.45,
+      "durationSeconds": 3,
+      "playableSignCount": 4,
+      "playableSigns": [
+        "very",
+        "more",
+        "beautiful",
+        "speaker"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_003\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_003\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_003\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_003\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_003\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_003\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_003\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "very",
+          "peakTimestampSeconds": 21.825,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_003\\sign_00_very_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "more",
+          "peakTimestampSeconds": 22.575,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_003\\sign_01_more_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "beautiful",
+          "peakTimestampSeconds": 23.325,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_003\\sign_02_beautiful_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "speaker",
+          "peakTimestampSeconds": 24.075,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_003\\sign_03_speaker_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 4,
+      "sourceText": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+      "startSeconds": 24.45,
+      "endSeconds": 30.45,
+      "durationSeconds": 6,
+      "playableSignCount": 10,
+      "playableSigns": [
+        "what",
+        "you",
+        "special",
+        "combination",
+        "three",
+        "day",
+        "public",
+        "speech",
+        "challenge",
+        "watch"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_004\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_004\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_004\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_004\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_004\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_004\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_004\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "what",
+          "peakTimestampSeconds": 24.75,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_00_what_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "you",
+          "peakTimestampSeconds": 25.35,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_01_you_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "special",
+          "peakTimestampSeconds": 25.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_02_special_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "combination",
+          "peakTimestampSeconds": 26.55,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_03_combination_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "three",
+          "peakTimestampSeconds": 27.15,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_04_three_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "day",
+          "peakTimestampSeconds": 27.75,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_05_day_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "public",
+          "peakTimestampSeconds": 28.35,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_06_public_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 7,
+          "signId": "speech",
+          "peakTimestampSeconds": 28.95,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_07_speech_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 8,
+          "signId": "challenge",
+          "peakTimestampSeconds": 29.55,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_08_challenge_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 9,
+          "signId": "watch",
+          "peakTimestampSeconds": 30.15,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_004\\sign_09_watch_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 5,
+      "sourceText": "which we delivered live right here in our studio.",
+      "startSeconds": 30.45,
+      "endSeconds": 34.25,
+      "durationSeconds": 3.8,
+      "playableSignCount": 6,
+      "playableSigns": [
+        "we",
+        "live",
+        "here",
+        "record",
+        "room",
+        "give"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_005\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_005\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_005\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_005\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_005\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_005\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_005\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "we",
+          "peakTimestampSeconds": 30.767,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_005\\sign_00_we_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "live",
+          "peakTimestampSeconds": 31.4,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_005\\sign_01_live_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "here",
+          "peakTimestampSeconds": 32.033,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_005\\sign_02_here_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "record",
+          "peakTimestampSeconds": 32.667,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_005\\sign_03_record_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "room",
+          "peakTimestampSeconds": 33.3,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_005\\sign_04_room_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "give",
+          "peakTimestampSeconds": 33.933,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_005\\sign_05_give_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 6,
+      "sourceText": "We'll begin with mindset and confidence.",
+      "startSeconds": 34.25,
+      "endSeconds": 37.33,
+      "durationSeconds": 3.08,
+      "playableSignCount": 4,
+      "playableSigns": [
+        "we",
+        "mindset",
+        "confident",
+        "start"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_006\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_006\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_006\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_006\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_006\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_006\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_006\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "we",
+          "peakTimestampSeconds": 34.635,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_006\\sign_00_we_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "mindset",
+          "peakTimestampSeconds": 35.405,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_006\\sign_01_mindset_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "confident",
+          "peakTimestampSeconds": 36.175,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_006\\sign_02_confident_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "start",
+          "peakTimestampSeconds": 36.945,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_006\\sign_03_start_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 7,
+      "sourceText": "We'll move into the science of capturing attention,",
+      "startSeconds": 37.33,
+      "endSeconds": 40.21,
+      "durationSeconds": 2.88,
+      "playableSignCount": 5,
+      "playableSigns": [
+        "we",
+        "move",
+        "science",
+        "hold",
+        "attention"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_007\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_007\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_007\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_007\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_007\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_007\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_007\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "we",
+          "peakTimestampSeconds": 37.618,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_007\\sign_00_we_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "move",
+          "peakTimestampSeconds": 38.194,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_007\\sign_01_move_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "science",
+          "peakTimestampSeconds": 38.77,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_007\\sign_02_science_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "hold",
+          "peakTimestampSeconds": 39.346,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_007\\sign_03_hold_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "attention",
+          "peakTimestampSeconds": 39.922,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_007\\sign_04_attention_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 8,
+      "sourceText": "and we'll finish off with the most impactful delivery skills",
+      "startSeconds": 40.21,
+      "endSeconds": 43.77,
+      "durationSeconds": 3.56,
+      "playableSignCount": 6,
+      "playableSigns": [
+        "we",
+        "most",
+        "power",
+        "presentation",
+        "skill",
+        "finish"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_008\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_008\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_008\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_008\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_008\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_008\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_008\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "we",
+          "peakTimestampSeconds": 40.507,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_008\\sign_00_we_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "most",
+          "peakTimestampSeconds": 41.1,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_008\\sign_01_most_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "power",
+          "peakTimestampSeconds": 41.693,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_008\\sign_02_power_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "presentation",
+          "peakTimestampSeconds": 42.287,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_008\\sign_03_presentation_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "skill",
+          "peakTimestampSeconds": 42.88,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_008\\sign_04_skill_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "finish",
+          "peakTimestampSeconds": 43.473,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_008\\sign_05_finish_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 9,
+      "sourceText": "from the 110-step chart of excellence communication.",
+      "startSeconds": 43.77,
+      "endSeconds": 47.81,
+      "durationSeconds": 4.04,
+      "playableSignCount": 6,
+      "playableSigns": [
+        "hundred",
+        "ten",
+        "step",
+        "chart",
+        "great",
+        "communication"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_009\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_009\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_009\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_009\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_009\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_009\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_009\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "hundred",
+          "peakTimestampSeconds": 44.107,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_009\\sign_00_hundred_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "ten",
+          "peakTimestampSeconds": 44.78,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_009\\sign_01_ten_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "step",
+          "peakTimestampSeconds": 45.453,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_009\\sign_02_step_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "chart",
+          "peakTimestampSeconds": 46.127,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_009\\sign_03_chart_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "great",
+          "peakTimestampSeconds": 46.8,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_009\\sign_04_great_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "communication",
+          "peakTimestampSeconds": 47.473,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_009\\sign_05_communication_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 10,
+      "sourceText": "Hey, if we haven't met before, my name is David JP Phillips,",
+      "startSeconds": 49.37,
+      "endSeconds": 52.85,
+      "durationSeconds": 3.48,
+      "playableSignCount": 7,
+      "playableSigns": [
+        "hey",
+        "before",
+        "we",
+        "meet",
+        "not",
+        "my",
+        "name"
+      ],
+      "fingerspelledTerms": [
+        "DAVID",
+        "JP",
+        "PHILLIPS"
+      ],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_010\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_010\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_010\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_010\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_010\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_010\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_010\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "hey",
+          "peakTimestampSeconds": 49.619,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_010\\sign_00_hey_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "before",
+          "peakTimestampSeconds": 50.116,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_010\\sign_01_before_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "we",
+          "peakTimestampSeconds": 50.613,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_010\\sign_02_we_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "meet",
+          "peakTimestampSeconds": 51.11,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_010\\sign_03_meet_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "not",
+          "peakTimestampSeconds": 51.607,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_010\\sign_04_not_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "my",
+          "peakTimestampSeconds": 52.104,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_010\\sign_05_my_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "name",
+          "peakTimestampSeconds": 52.601,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_010\\sign_06_name_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 11,
+      "sourceText": "and I'm best known for my TEDx talks,",
+      "startSeconds": 52.85,
+      "endSeconds": 54.73,
+      "durationSeconds": 1.88,
+      "playableSignCount": 5,
+      "playableSigns": [
+        "i",
+        "good",
+        "know",
+        "my",
+        "say"
+      ],
+      "fingerspelledTerms": [
+        "TEDX"
+      ],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_011\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_011\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_011\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_011\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_011\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_011\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_011\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "i",
+          "peakTimestampSeconds": 53.038,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_011\\sign_00_i_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "good",
+          "peakTimestampSeconds": 53.414,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_011\\sign_01_good_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "know",
+          "peakTimestampSeconds": 53.79,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_011\\sign_02_know_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "my",
+          "peakTimestampSeconds": 54.166,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_011\\sign_03_my_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "say",
+          "peakTimestampSeconds": 54.542,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_011\\sign_04_say_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 12,
+      "sourceText": "which are among the most viewed in the world",
+      "startSeconds": 54.73,
+      "endSeconds": 57.01,
+      "durationSeconds": 2.28,
+      "playableSignCount": 4,
+      "playableSigns": [
+        "world",
+        "all",
+        "most",
+        "see"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_012\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_012\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_012\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_012\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_012\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_012\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_012\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "world",
+          "peakTimestampSeconds": 55.015,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_012\\sign_00_world_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "all",
+          "peakTimestampSeconds": 55.585,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_012\\sign_01_all_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "most",
+          "peakTimestampSeconds": 56.155,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_012\\sign_02_most_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "see",
+          "peakTimestampSeconds": 56.725,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_012\\sign_03_see_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 13,
+      "sourceText": "on this particular subject.",
+      "startSeconds": 57.01,
+      "endSeconds": 58.53,
+      "durationSeconds": 1.52,
+      "playableSignCount": 3,
+      "playableSigns": [
+        "this",
+        "point",
+        "subject"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_013\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_013\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_013\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_013\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_013\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_013\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_013\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "this",
+          "peakTimestampSeconds": 57.263,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_013\\sign_00_this_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "point",
+          "peakTimestampSeconds": 57.77,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_013\\sign_01_point_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "subject",
+          "peakTimestampSeconds": 58.277,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_013\\sign_02_subject_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 14,
+      "sourceText": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+      "startSeconds": 58.53,
+      "endSeconds": 65.01,
+      "durationSeconds": 6.48,
+      "playableSignCount": 13,
+      "playableSigns": [
+        "i",
+        "five",
+        "thousand",
+        "speaker",
+        "study",
+        "finish",
+        "find",
+        "true",
+        "what",
+        "make",
+        "somebody",
+        "great",
+        "speaker"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_014\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_014\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_014\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_014\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_014\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_014\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_014\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "i",
+          "peakTimestampSeconds": 58.779,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_00_i_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "five",
+          "peakTimestampSeconds": 59.278,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_01_five_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "thousand",
+          "peakTimestampSeconds": 59.776,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_02_thousand_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "speaker",
+          "peakTimestampSeconds": 60.275,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_03_speaker_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "study",
+          "peakTimestampSeconds": 60.773,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_04_study_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "finish",
+          "peakTimestampSeconds": 61.272,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_05_finish_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "find",
+          "peakTimestampSeconds": 61.77,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_06_find_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 7,
+          "signId": "true",
+          "peakTimestampSeconds": 62.268,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_07_true_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 8,
+          "signId": "what",
+          "peakTimestampSeconds": 62.767,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_08_what_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 9,
+          "signId": "make",
+          "peakTimestampSeconds": 63.265,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_09_make_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 10,
+          "signId": "somebody",
+          "peakTimestampSeconds": 63.764,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_10_somebody_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 11,
+          "signId": "great",
+          "peakTimestampSeconds": 64.262,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_11_great_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 12,
+          "signId": "speaker",
+          "peakTimestampSeconds": 64.761,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_014\\sign_12_speaker_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 15,
+      "sourceText": "And this chart is one of the results of that particular endeavour.",
+      "startSeconds": 65.01,
+      "endSeconds": 69.49,
+      "durationSeconds": 4.48,
+      "playableSignCount": 7,
+      "playableSigns": [
+        "this",
+        "chart",
+        "one",
+        "result",
+        "that",
+        "point",
+        "work"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_015\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_015\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_015\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_015\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_015\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_015\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_015\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "this",
+          "peakTimestampSeconds": 65.33,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_015\\sign_00_this_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "chart",
+          "peakTimestampSeconds": 65.97,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_015\\sign_01_chart_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "one",
+          "peakTimestampSeconds": 66.61,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_015\\sign_02_one_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "result",
+          "peakTimestampSeconds": 67.25,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_015\\sign_03_result_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "that",
+          "peakTimestampSeconds": 67.89,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_015\\sign_04_that_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "point",
+          "peakTimestampSeconds": 68.53,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_015\\sign_05_point_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "work",
+          "peakTimestampSeconds": 69.17,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_015\\sign_06_work_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 16,
+      "sourceText": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+      "startSeconds": 69.49,
+      "endSeconds": 74.29,
+      "durationSeconds": 4.8,
+      "playableSignCount": 10,
+      "playableSigns": [
+        "they",
+        "practice",
+        "finish",
+        "i",
+        "coaching",
+        "finish",
+        "world",
+        "big",
+        "company",
+        "like"
+      ],
+      "fingerspelledTerms": [
+        "ORACLE",
+        "GOOGLE"
+      ],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_016\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_016\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_016\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_016\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_016\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_016\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_016\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "they",
+          "peakTimestampSeconds": 69.73,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_00_they_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "practice",
+          "peakTimestampSeconds": 70.21,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_01_practice_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "finish",
+          "peakTimestampSeconds": 70.69,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_02_finish_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "i",
+          "peakTimestampSeconds": 71.17,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_03_i_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "coaching",
+          "peakTimestampSeconds": 71.65,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_04_coaching_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "finish",
+          "peakTimestampSeconds": 72.13,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_05_finish_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "world",
+          "peakTimestampSeconds": 72.61,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_06_world_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 7,
+          "signId": "big",
+          "peakTimestampSeconds": 73.09,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_07_big_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 8,
+          "signId": "company",
+          "peakTimestampSeconds": 73.57,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_08_company_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 9,
+          "signId": "like",
+          "peakTimestampSeconds": 74.05,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_016\\sign_09_like_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 17,
+      "sourceText": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
+      "startSeconds": 74.29,
+      "endSeconds": 80.45,
+      "durationSeconds": 6.16,
+      "playableSignCount": 7,
+      "playableSigns": [
+        "story",
+        "presentation",
+        "skill",
+        "beautiful",
+        "science",
+        "hold",
+        "audience"
+      ],
+      "fingerspelledTerms": [
+        "DISNEY"
+      ],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_017\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_017\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_017\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_017\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_017\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_017\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_017\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "story",
+          "peakTimestampSeconds": 74.73,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_017\\sign_00_story_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "presentation",
+          "peakTimestampSeconds": 75.61,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_017\\sign_01_presentation_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "skill",
+          "peakTimestampSeconds": 76.49,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_017\\sign_02_skill_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "beautiful",
+          "peakTimestampSeconds": 77.37,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_017\\sign_03_beautiful_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "science",
+          "peakTimestampSeconds": 78.25,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_017\\sign_04_science_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "hold",
+          "peakTimestampSeconds": 79.13,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_017\\sign_05_hold_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "audience",
+          "peakTimestampSeconds": 80.01,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_017\\sign_06_audience_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 18,
+      "sourceText": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
+      "startSeconds": 80.45,
+      "endSeconds": 86.61,
+      "durationSeconds": 6.16,
+      "playableSignCount": 13,
+      "playableSigns": [
+        "now",
+        "attention",
+        "next",
+        "two",
+        "hour",
+        "thirty",
+        "minute",
+        "you",
+        "important",
+        "tools",
+        "find",
+        "i",
+        "have"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_018\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_018\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_018\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_018\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_018\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_018\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_018\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "now",
+          "peakTimestampSeconds": 80.687,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_00_now_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "attention",
+          "peakTimestampSeconds": 81.161,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_01_attention_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "next",
+          "peakTimestampSeconds": 81.635,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_02_next_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "two",
+          "peakTimestampSeconds": 82.108,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_03_two_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "hour",
+          "peakTimestampSeconds": 82.582,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_04_hour_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "thirty",
+          "peakTimestampSeconds": 83.056,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_05_thirty_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "minute",
+          "peakTimestampSeconds": 83.53,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_06_minute_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 7,
+          "signId": "you",
+          "peakTimestampSeconds": 84.004,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_07_you_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 8,
+          "signId": "important",
+          "peakTimestampSeconds": 84.478,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_08_important_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 9,
+          "signId": "tools",
+          "peakTimestampSeconds": 84.952,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_09_tools_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 10,
+          "signId": "find",
+          "peakTimestampSeconds": 85.425,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_10_find_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 11,
+          "signId": "i",
+          "peakTimestampSeconds": 85.899,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_11_i_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 12,
+          "signId": "have",
+          "peakTimestampSeconds": 86.373,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_018\\sign_12_have_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 19,
+      "sourceText": "I've gathered during my 25 year career as a public speaker",
+      "startSeconds": 86.61,
+      "endSeconds": 89.53,
+      "durationSeconds": 2.92,
+      "playableSignCount": 11,
+      "playableSigns": [
+        "i",
+        "during",
+        "find",
+        "finish",
+        "my",
+        "twenty",
+        "five",
+        "year",
+        "career",
+        "public",
+        "speaker"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_019\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_019\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_019\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_019\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_019\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_019\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_019\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "i",
+          "peakTimestampSeconds": 86.743,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_00_i_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "during",
+          "peakTimestampSeconds": 87.008,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_01_during_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "find",
+          "peakTimestampSeconds": 87.274,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_02_find_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "finish",
+          "peakTimestampSeconds": 87.539,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_03_finish_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "my",
+          "peakTimestampSeconds": 87.805,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_04_my_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 5,
+          "signId": "twenty",
+          "peakTimestampSeconds": 88.07,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_05_twenty_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 6,
+          "signId": "five",
+          "peakTimestampSeconds": 88.335,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_06_five_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 7,
+          "signId": "year",
+          "peakTimestampSeconds": 88.601,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_07_year_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 8,
+          "signId": "career",
+          "peakTimestampSeconds": 88.866,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_08_career_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 9,
+          "signId": "public",
+          "peakTimestampSeconds": 89.132,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_09_public_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 10,
+          "signId": "speaker",
+          "peakTimestampSeconds": 89.397,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_019\\sign_10_speaker_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 20,
+      "sourceText": "and public speaking coach.",
+      "startSeconds": 89.53,
+      "endSeconds": 91.69,
+      "durationSeconds": 2.16,
+      "playableSignCount": 3,
+      "playableSigns": [
+        "public",
+        "speech",
+        "coaching"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_020\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_020\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_020\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_020\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_020\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_020\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_020\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "public",
+          "peakTimestampSeconds": 89.89,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_020\\sign_00_public_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "speech",
+          "peakTimestampSeconds": 90.61,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_020\\sign_01_speech_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "coaching",
+          "peakTimestampSeconds": 91.33,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_020\\sign_02_coaching_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 21,
+      "sourceText": "So make sure you have a pen and a paper,",
+      "startSeconds": 91.69,
+      "endSeconds": 95.33,
+      "durationSeconds": 3.64,
+      "playableSignCount": 5,
+      "playableSigns": [
+        "sure",
+        "you",
+        "pen",
+        "paper",
+        "have"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_021\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_021\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_021\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_021\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_021\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_021\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_021\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "sure",
+          "peakTimestampSeconds": 92.054,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_021\\sign_00_sure_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "you",
+          "peakTimestampSeconds": 92.782,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_021\\sign_01_you_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "pen",
+          "peakTimestampSeconds": 93.51,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_021\\sign_02_pen_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "paper",
+          "peakTimestampSeconds": 94.238,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_021\\sign_03_paper_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "have",
+          "peakTimestampSeconds": 94.966,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_021\\sign_04_have_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 22,
+      "sourceText": "lean in and you'll walk away with practical tools",
+      "startSeconds": 95.33,
+      "endSeconds": 98.93,
+      "durationSeconds": 3.6,
+      "playableSignCount": 5,
+      "playableSigns": [
+        "attention",
+        "you",
+        "practical",
+        "tools",
+        "have"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_022\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_022\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_022\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_022\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_022\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_022\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_022\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "attention",
+          "peakTimestampSeconds": 95.69,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_022\\sign_00_attention_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "you",
+          "peakTimestampSeconds": 96.41,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_022\\sign_01_you_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "practical",
+          "peakTimestampSeconds": 97.13,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_022\\sign_02_practical_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "tools",
+          "peakTimestampSeconds": 97.85,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_022\\sign_03_tools_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "have",
+          "peakTimestampSeconds": 98.57,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_022\\sign_04_have_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 23,
+      "sourceText": "you can apply tomorrow.",
+      "startSeconds": 98.93,
+      "endSeconds": 101.81,
+      "durationSeconds": 2.88,
+      "playableSignCount": 3,
+      "playableSigns": [
+        "tomorrow",
+        "you",
+        "practice"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_023\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_023\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_023\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_023\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_023\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_023\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_023\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "tomorrow",
+          "peakTimestampSeconds": 99.41,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_023\\sign_00_tomorrow_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "you",
+          "peakTimestampSeconds": 100.37,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_023\\sign_01_you_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "practice",
+          "peakTimestampSeconds": 101.33,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_023\\sign_02_practice_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 24,
+      "sourceText": "Have fun.",
+      "startSeconds": 101.81,
+      "endSeconds": 107.03,
+      "durationSeconds": 5.22,
+      "playableSignCount": 1,
+      "playableSigns": [
+        "enjoy"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_024\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_024\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_024\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_024\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_024\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_024\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_024\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "enjoy",
+          "peakTimestampSeconds": 104.42,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_024\\sign_00_enjoy_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 25,
+      "sourceText": "Welcome beautiful people all around the world",
+      "startSeconds": 107.03,
+      "endSeconds": 110.79,
+      "durationSeconds": 3.76,
+      "playableSignCount": 5,
+      "playableSigns": [
+        "welcome",
+        "beautiful",
+        "people",
+        "all",
+        "world"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_025\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_025\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_025\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_025\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_025\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_025\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_025\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "welcome",
+          "peakTimestampSeconds": 107.406,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_025\\sign_00_welcome_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "beautiful",
+          "peakTimestampSeconds": 108.158,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_025\\sign_01_beautiful_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "people",
+          "peakTimestampSeconds": 108.91,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_025\\sign_02_people_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "all",
+          "peakTimestampSeconds": 109.662,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_025\\sign_03_all_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "world",
+          "peakTimestampSeconds": 110.414,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_025\\sign_04_world_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 26,
+      "sourceText": "to the lovely country of Sweden.",
+      "startSeconds": 110.79,
+      "endSeconds": 114.03,
+      "durationSeconds": 3.24,
+      "playableSignCount": 3,
+      "playableSigns": [
+        "sweden",
+        "lovely",
+        "country"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_026\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_026\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_026\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_026\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_026\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_026\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_026\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "sweden",
+          "peakTimestampSeconds": 111.33,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_026\\sign_00_sweden_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "lovely",
+          "peakTimestampSeconds": 112.41,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_026\\sign_01_lovely_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "country",
+          "peakTimestampSeconds": 113.49,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_026\\sign_02_country_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 27,
+      "sourceText": "This is, well, this is my view of you.",
+      "startSeconds": 114.03,
+      "endSeconds": 116.63,
+      "durationSeconds": 2.6,
+      "playableSignCount": 5,
+      "playableSigns": [
+        "this",
+        "this",
+        "my",
+        "see",
+        "you"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_027\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_027\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_027\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_027\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_027\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_027\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_027\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "this",
+          "peakTimestampSeconds": 114.29,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_027\\sign_00_this_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "this",
+          "peakTimestampSeconds": 114.81,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_027\\sign_01_this_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "my",
+          "peakTimestampSeconds": 115.33,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_027\\sign_02_my_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 3,
+          "signId": "see",
+          "peakTimestampSeconds": 115.85,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_027\\sign_03_see_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 4,
+          "signId": "you",
+          "peakTimestampSeconds": 116.37,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_027\\sign_04_you_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    },
+    {
+      "segmentIndex": 28,
+      "sourceText": "There's pictures all over the place.",
+      "startSeconds": 116.63,
+      "endSeconds": 118.95,
+      "durationSeconds": 2.32,
+      "playableSignCount": 3,
+      "playableSigns": [
+        "picture",
+        "all",
+        "place"
+      ],
+      "fingerspelledTerms": [],
+      "frames": {
+        "frame_before": "artifacts\\h41\\frames\\segment_028\\frame_before.png",
+        "frame_start": "artifacts\\h41\\frames\\segment_028\\frame_start.png",
+        "frame_early": "artifacts\\h41\\frames\\segment_028\\frame_early.png",
+        "frame_mid": "artifacts\\h41\\frames\\segment_028\\frame_mid.png",
+        "frame_late": "artifacts\\h41\\frames\\segment_028\\frame_late.png",
+        "frame_end": "artifacts\\h41\\frames\\segment_028\\frame_end.png",
+        "frame_transition": "artifacts\\h41\\frames\\segment_028\\frame_transition.png"
+      },
+      "occurrences": [
+        {
+          "occurrenceIndex": 0,
+          "signId": "picture",
+          "peakTimestampSeconds": 117.017,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_028\\sign_00_picture_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 1,
+          "signId": "all",
+          "peakTimestampSeconds": 117.79,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_028\\sign_01_all_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        },
+        {
+          "occurrenceIndex": 2,
+          "signId": "place",
+          "peakTimestampSeconds": 118.563,
+          "peakFramePath": "artifacts\\h41\\frames\\segment_028\\sign_02_place_peak.png",
+          "motionExecution": "PASS — Smooth continuous trajectory reaching peak inflection without jerking",
+          "fullBodyVisibility": "PASS — Entire avatar visible head-to-toe with zero lateral clipping",
+          "visualReadabilityStatus": "PASS"
+        }
+      ],
+      "segmentVisualStatus": "PASS"
+    }
+  ]
+}

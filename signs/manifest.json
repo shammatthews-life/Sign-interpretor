@@ -1,10 +1,10 @@
 {
   "manifest_version": "2.5.0",
   "schema_version": "2.0.0",
-  "generated_at": "2026-11-24T17:28:56.328Z",
+  "generated_at": "2026-11-24T18:24:57.972Z",
   "phase": "H38",
-  "total_signs": 586,
-  "total_playable_signs": 586,
+  "total_signs": 590,
+  "total_playable_signs": 590,
   "signs": [
     {
       "sign_id": "ability",
@@ -1909,6 +1909,23 @@
       },
       "file_name": "cost.json",
       "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "country",
+      "display_name": "Country",
+      "gloss": "COUNTRY",
+      "lexical_type": "Geopolitical noun (nation / homeland / state)",
+      "duration_ms": 1300,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "country.json",
+      "involved_bones_count": 9,
       "keyframe_count": 5
     },
     {
@@ -5467,6 +5484,23 @@
       "keyframe_count": 6
     },
     {
+      "sign_id": "most",
+      "display_name": "Most",
+      "gloss": "MOST",
+      "lexical_type": "Superlative degree marker / quantifier (highest / greatest)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "most.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "motivated",
       "display_name": "Motivated",
       "gloss": "MOTIVATED",
@@ -8307,6 +8341,23 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "start",
+      "display_name": "Start",
+      "gloss": "START",
+      "lexical_type": "Action verb (commence / begin / initiate)",
+      "duration_ms": 1250,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "start.json",
+      "involved_bones_count": 9,
+      "keyframe_count": 5
+    },
+    {
       "sign_id": "statistics",
       "display_name": "Statistics",
       "gloss": "STATISTICS",
@@ -9326,6 +9377,23 @@
       },
       "file_name": "valuable.json",
       "involved_bones_count": 6,
+      "keyframe_count": 5
+    },
+    {
+      "sign_id": "very",
+      "display_name": "Very",
+      "gloss": "VERY",
+      "lexical_type": "Degree adverb / intensifier (extremely / highly)",
+      "duration_ms": 1150,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "very.json",
+      "involved_bones_count": 5,
       "keyframe_count": 5
     },
     {

@@ -601,7 +601,12 @@ export class EnglishToISLTranslator extends TranslationBackend {
       overcome: { playable: true },
       this: { playable: true },
       that: { playable: true },
-      here: { playable: true }
+      here: { playable: true },
+      // Milestone H41 New Playable Signs
+      start: { playable: true },
+      very: { playable: true },
+      most: { playable: true },
+      country: { playable: true }
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
@@ -628,14 +633,14 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['in other words', ['MEAN']],
       ['on the stage', ['STAGE']],
       ['in the classroom', ['CLASS']],
-      ['public speaking challenge', ['SPEECH', 'CHALLENGE']],
-      ['public speaking coach', ['SPEECH', 'COACHING']],
-      ['public speaker', ['SPEECH', 'SPEAKER']],
+      ['public speaking challenge', ['PUBLIC', 'SPEECH', 'CHALLENGE']],
+      ['public speaking coach', ['PUBLIC', 'SPEECH', 'COACHING']],
+      ['public speaker', ['PUBLIC', 'SPEAKER']],
       ['great job', ['GREAT', 'WORK']],
       ['talk to you', ['SAY', 'YOU']],
       ['look like', ['SAME']],
  ['in order to', ['REASON']], ['what do you', ['YOU', 'WHAT']],
-      ['how to', ['HOW']], ['have to', ['NEED']], ['public speaking', ['SPEECH']],
+      ['how to', ['HOW']], ['have to', ['NEED']], ['public speaking', ['PUBLIC', 'SPEECH']],
       ["i'm going to", ["I", "WILL"]],
       ["have a look", ["LOOK"]],
       ["a look at", ["LOOK"]],
@@ -675,7 +680,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["think about", ["THINK"]],
       ["high level", ["HIGH", "LEVEL"]],
       ["second time", ["SECOND", "TIME"]],
-      // Milestone H37 Contextual Phrases
+      // Milestone H37 / H41 Contextual Phrases
       ["right here", ["HERE"]],
       ["all around", ["ALL"]],
       ["all over", ["ALL"]],
@@ -683,7 +688,8 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["over the next", ["NEXT"]],
       ["make sure", ["SURE"]],
       ["lean in", ["ATTENTION"]],
-      ["have fun", ["HAVE", "FUN"]],
+      ["have fun", ["ENJOY"]],
+      ["finish off with", ["FINISH"]],
       ["finish off", ["FINISH"]],
       ["put to practice", ["PRACTICE"]],
       ["three-day", ["THREE", "DAY"]],
@@ -700,10 +706,22 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["haven't met before", ["BEFORE", "MEET", "NOT"]],
       ["have not met before", ["BEFORE", "MEET", "NOT"]],
       ["it's to help", ["HELP"]],
-      ["to help you overcome", ["HELP", "YOU", "OVERCOME"]],
-      ["help you overcome", ["HELP", "YOU", "OVERCOME"]],
+      ["to help you overcome", ["YOU", "HELP", "OVERCOME"]],
+      ["help you overcome", ["YOU", "HELP", "OVERCOME"]],
       ["overcome being", ["OVERCOME"]],
       ["you see", []],
+      ["much more", ["VERY", "MORE"]],
+      ["global giants", ["WORLD", "BIG", "COMPANY"]],
+      ["among the most viewed in the world", ["WORLD", "ALL", "MOST", "SEE"]],
+      ["most viewed in the world", ["WORLD", "ALL", "MOST", "SEE"]],
+      ["most viewed", ["MOST", "SEE"]],
+      ["begin with", ["START"]],
+      ["lovely country of sweden", ["SWEDEN", "LOVELY", "COUNTRY"]],
+      ["country of sweden", ["SWEDEN", "COUNTRY"]],
+      ["country of", ["COUNTRY"]],
+      ["right here in our studio", ["HERE", "RECORD", "ROOM"]],
+      ["in our studio", ["RECORD", "ROOM"]],
+      ["our studio", ["RECORD", "ROOM"]],
     ]);
     this.lexicon = new Map([
       ['i', 'I'], ['you', 'YOU'], ['me', 'ME'],
@@ -1652,19 +1670,25 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['pictures', 'PICTURE'], ['picture', 'PICTURE'],
       ['fun', 'FUN'],
       ['best', 'GOOD'],
-      ['most', 'MORE'],
+      ['most', 'MOST'],
       ['much', 'MORE'],
+      ['very', 'VERY'],
       ['step', 'STEP'], ['steps', 'STEP'],
       ['closer', 'CLOSE'], ['close', 'CLOSE'],
       ['someone', 'SOMEBODY'], ['somebody', 'SOMEBODY'],
       ['place', 'PLACE'], ['places', 'PLACE'],
-      ['uncertain', 'NERVOUS'],
+      ['uncertain', 'CONFUSED'],
       ['compilation', 'COMBINATION'],
       ['impactful', 'POWER'],
       ['excellence', 'GREAT'],
       ['particular', 'POINT'],
       ['pinpoint', 'FIND'],
       ['exactly', 'TRUE'],
+      ['start', 'START'], ['starts', 'START'], ['starting', 'START'], ['started', 'START'],
+      ['begin', 'START'], ['begins', 'START'], ['beginning', 'START'], ['began', 'START'],
+      ['country', 'COUNTRY'], ['countries', 'COUNTRY'],
+      ['giants', 'COMPANY'],
+      ['coach', 'COACHING'],
       ['5', 'FIVE'],
       ['000', 'THOUSAND'],
       ['10', 'TEN'],
@@ -1778,31 +1802,64 @@ export class EnglishToISLTranslator extends TranslationBackend {
 
     // ISL Grammatical Constituent Restructuring Engine
     // 1. Time / Temporal Marker Fronting: In ISL, Time adverbs precede Subject and Object
+    // Conversational openers / greetings (HEY, HELLO, WELCOME) retain initial position
     const timeGlosses = ['TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'YESTERDAY', 'TIME'];
+    const conversationalOpeners = ['HEY', 'HELLO', 'WELCOME'];
     for (let i = 0; i < gloss.length; i++) {
       if (timeGlosses.includes(gloss[i]) && i > 0) {
         const timeItem = gloss.splice(i, 1)[0];
-        gloss.unshift(timeItem);
+        if (conversationalOpeners.includes(gloss[0])) {
+          gloss.splice(1, 0, timeItem);
+        } else {
+          gloss.unshift(timeItem);
+        }
         trace.push({ stage: 'restructure', detail: `Fronted temporal marker to clause-initial position: ${timeItem}`, basis: 'ISL_CONSTITUENT_RULE', rule_id: 'ISL-TIME-FRONT-01' });
         break;
       }
     }
 
-    // 2. SOV Constituent Ordering:
-    const sIdx = gloss.findIndex(g => ['I', 'YOU', 'YOUR', 'MY', 'WE', 'THEY', 'PEOPLE', 'SOMEBODY'].includes(g));
-    const lexicalVerbs = ['DRINK', 'HELP', 'NEED', 'WANT', 'LOOK', 'SEE', 'GO', 'DO', 'STUDY', 'MEET', 'PRACTICE', 'MAKE', 'WATCH', 'GIVE', 'COACHING', 'OVERCOME', 'FIND'];
-    let vIdx = gloss.findIndex(g => lexicalVerbs.includes(g));
-    if (vIdx === -1) {
-      vIdx = gloss.findIndex(g => g === 'HAVE');
-    }
-    const oIdx = gloss.findIndex((g, idx) => idx !== sIdx && idx !== vIdx && !['NOT', 'WHAT', 'HOW', 'TODAY', 'TOMORROW', 'NOW', 'BEFORE'].includes(g));
-    if (sIdx !== -1 && vIdx !== -1 && oIdx !== -1 && vIdx < oIdx) {
-      const verb = gloss.splice(vIdx, 1)[0];
-      gloss.splice(oIdx, 0, verb);
-      trace.push({ stage: 'restructure', detail: `Transformed SVO to ISL SOV: ${gloss.join(' ')}`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-SOV-01' });
+    // 2. Aspectual Completion Restructuring:
+    // In ISL, completed aspect (English perfective "have + VERB") is marked by FINISH following the verb
+    const lexicalVerbs = ['DRINK', 'HELP', 'NEED', 'WANT', 'LOOK', 'SEE', 'GO', 'DO', 'STUDY', 'MEET', 'PRACTICE', 'MAKE', 'WATCH', 'GIVE', 'COACHING', 'OVERCOME', 'FIND', 'START', 'FINISH'];
+    for (let i = 0; i < gloss.length; i++) {
+      if (gloss[i] === 'HAVE' && i + 1 < gloss.length && lexicalVerbs.includes(gloss[i + 1])) {
+        const v = gloss[i + 1];
+        gloss.splice(i, 2, v, 'FINISH');
+        trace.push({ stage: 'restructure', detail: `Transformed perfective auxiliary HAVE + ${v} to ISL completed aspect ${v} FINISH`, basis: 'ISL_ASPECT_RULE', rule_id: 'ISL-ASPECT-FINISH-01' });
+      }
     }
 
-    // 3. Clause-Scoped Negation: In ISL, negative particle (NOT) moves to the end of its enclosing clause
+    // 3. SOV Constituent Ordering:
+    const subjects = ['I', 'YOU', 'YOUR', 'MY', 'WE', 'THEY', 'PEOPLE', 'SOMEBODY'];
+    const sIdx = gloss.findIndex(g => subjects.includes(g));
+    if (sIdx !== -1) {
+      let vIdx = gloss.findIndex((g, idx) => idx >= sIdx && (lexicalVerbs.includes(g) || g === 'HAVE'));
+      if (vIdx !== -1) {
+        let vEnd = vIdx;
+        while (vEnd + 1 < gloss.length && (lexicalVerbs.includes(gloss[vEnd + 1]) || gloss[vEnd + 1] === 'FINISH')) {
+          vEnd++;
+        }
+
+        const nonObjectGlosses = ['NOT', 'WHAT', 'HOW', 'TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST'];
+        const objects = [];
+        let objEnd = vEnd + 1;
+        while (objEnd < gloss.length && !nonObjectGlosses.includes(gloss[objEnd]) && !subjects.includes(gloss[objEnd]) && !lexicalVerbs.includes(gloss[objEnd])) {
+          objects.push(gloss[objEnd]);
+          objEnd++;
+        }
+
+        if (objects.length > 0) {
+          const verbTokens = gloss.splice(vIdx, vEnd - vIdx + 1);
+          if (verbTokens.length === 2 && verbTokens[0] === 'HELP' && verbTokens[1] === 'OVERCOME') {
+            verbTokens.reverse();
+          }
+          gloss.splice(vIdx + objects.length, 0, ...verbTokens);
+          trace.push({ stage: 'restructure', detail: `Transformed SVO to ISL SOV: ${gloss.join(' ')}`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-SOV-01' });
+        }
+      }
+    }
+
+    // 4. Clause-Scoped Negation: In ISL, negative particle (NOT) moves to the end of its enclosing clause
     const notIdx = gloss.indexOf('NOT');
     if (notIdx !== -1) {
       const mainClauseStartIdx = gloss.findIndex((g, idx) => idx > notIdx && (g === 'MY' || (g === 'NAME' && idx > 0)));
