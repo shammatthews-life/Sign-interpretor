@@ -182,13 +182,13 @@ To support the benchmark segment with authentic ISL signs, 7 new Schema 2.0.0 si
 ## 9. Visual Evidence Catalog
 
 All artifacts are persisted under `artifacts/h37/`:
-- **Native Chrome Recording MP4:** [h37_locked_benchmark_recording.mp4](file:///d:/sign%20interpretor/artifacts/h37/recording/h37_locked_benchmark_recording.mp4)
-- **Extracted Frames (374 PNGs):** [artifacts/h37/frames/](file:///d:/sign%20interpretor/artifacts/h37/frames/)
-- **Contact Sheets (7 Representative Segments):** [artifacts/h37/contact_sheets/](file:///d:/sign%20interpretor/artifacts/h37/contact_sheets/)
-- **Full Body Visual Crop:** [h37_avatar_full_body.png](file:///d:/sign%20interpretor/artifacts/h37/crops/full_body/h37_avatar_full_body.png)
-- **Hand Articulation Crop:** [h37_avatar_hands.png](file:///d:/sign%20interpretor/artifacts/h37/crops/hands/h37_avatar_hands.png)
-- **Foot Anchor Crop:** [h37_avatar_feet.png](file:///d:/sign%20interpretor/artifacts/h37/crops/feet/h37_avatar_feet.png)
-- **Machine-Readable Evidence Ledger:** [h37_locked_benchmark_evidence.json](file:///d:/sign%20interpretor/artifacts/h37/evidence/h37_locked_benchmark_evidence.json)
+- **Native Chrome Recording MP4:** [h37_locked_benchmark_recording.mp4](../artifacts/h37/recording/h37_locked_benchmark_recording.mp4)
+- **Extracted Frames (374 PNGs):** [artifacts/h37/frames/](../artifacts/h37/frames)
+- **Contact Sheets (7 Representative Segments):** [artifacts/h37/contact_sheets/](../artifacts/h37/contact_sheets)
+- **Full Body Visual Crop:** [h37_avatar_full_body.png](../artifacts/h37/crops/full_body/h37_avatar_full_body.png)
+- **Hand Articulation Crop:** [h37_avatar_hands.png](../artifacts/h37/crops/hands/h37_avatar_hands.png)
+- **Foot Anchor Crop:** [h37_avatar_feet.png](../artifacts/h37/crops/feet/h37_avatar_feet.png)
+- **Machine-Readable Evidence Ledger:** [h37_locked_benchmark_evidence.json](../artifacts/h37/evidence/h37_locked_benchmark_evidence.json)
 
 ---
 

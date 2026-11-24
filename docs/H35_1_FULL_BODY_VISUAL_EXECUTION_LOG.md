@@ -57,11 +57,11 @@
      - Clicked `#isl-sidebar-toggle-handle` -> Panel reopened (`containerVisible: true`).
      - Verified `#btn-avatar-full` remained `active` with `aria-pressed="true"`.
   8. Extracted screenshot and high-resolution crops:
-     - [`full_body_initial.png`](file:///d:/sign%20interpretor/artifacts/h35_1/screenshots/full_body_initial.png)
-     - [`full_body_after_reopen.png`](file:///d:/sign%20interpretor/artifacts/h35_1/screenshots/full_body_after_reopen.png)
-     - [`full_body_avatar.png`](file:///d:/sign%20interpretor/artifacts/h35_1/crops/full_body/full_body_avatar.png)
-     - [`full_body_feet.png`](file:///d:/sign%20interpretor/artifacts/h35_1/crops/feet/full_body_feet.png)
-     - [`full_body_hands.png`](file:///d:/sign%20interpretor/artifacts/h35_1/crops/hands/full_body_hands.png)
+     - [`full_body_initial.png`](../artifacts/h35_1/screenshots/full_body_initial.png)
+     - [`full_body_after_reopen.png`](../artifacts/h35_1/screenshots/full_body_after_reopen.png)
+     - [`full_body_avatar.png`](../artifacts/h35_1/crops/full_body/full_body_avatar.png)
+     - [`full_body_feet.png`](../artifacts/h35_1/crops/feet/full_body_feet.png)
+     - [`full_body_hands.png`](../artifacts/h35_1/crops/hands/full_body_hands.png)
 - **Results:** Full Body mode activates seamlessly via the UI, frames the entire avatar from head to feet without clipping, preserves hands/fingers visibility, and persists across panel close/reopen cycles.
 
 ---
@@ -110,7 +110,7 @@
   3. Preserved user workspace privacy 100%: no desktop background or background applications were captured.
   4. Assembled video recording using bundled FFmpeg 7.1 with NVIDIA RTX 4050 GPU hardware acceleration:
      `-c:v h264_nvenc -preset p4 -b:v 3000k -pix_fmt yuv420p -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2"`
-  5. Verified resulting MP4: [`h35_1_native_chrome_full_body.mp4`](file:///d:/sign%20interpretor/artifacts/h35_1/recording/h35_1_native_chrome_full_body.mp4) (32.97 MB, 34,572,002 bytes).
+  5. Verified resulting MP4: [`h35_1_native_chrome_full_body.mp4`](../artifacts/h35_1/recording/h35_1_native_chrome_full_body.mp4) (32.97 MB, 34,572,002 bytes).
 - **Results:** High-fidelity 25 fps H.264 video recording produced with NVENC acceleration on NVIDIA RTX 4050 GPU.
 
 ---
@@ -131,17 +131,17 @@
      - `frame_transition.png` ($+0.2\text{s}$ interpolated return to neutral rest pose)
   2. Stored frames in `artifacts/h35_1/frames/segment_000/` through `segment_043/`.
   3. Generated 11 multi-input horizontal contact sheets using FFmpeg `hstack` filter in `artifacts/h35_1/contact_sheets/`:
-     - [contact_sheet_segment_000.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_000.png)
-     - [contact_sheet_segment_001.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_001.png)
-     - [contact_sheet_segment_004.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_004.png)
-     - [contact_sheet_segment_011.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_011.png)
-     - [contact_sheet_segment_015.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_015.png)
-     - [contact_sheet_segment_020.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_020.png)
-     - [contact_sheet_segment_025.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_025.png)
-     - [contact_sheet_segment_030.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_030.png)
-     - [contact_sheet_segment_035.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_035.png)
-     - [contact_sheet_segment_040.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_040.png)
-     - [contact_sheet_segment_043.png](file:///d:/sign%20interpretor/artifacts/h35_1/contact_sheets/contact_sheet_segment_043.png)
+     - [contact_sheet_segment_000.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_000.png)
+     - [contact_sheet_segment_001.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_001.png)
+     - [contact_sheet_segment_004.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_004.png)
+     - [contact_sheet_segment_011.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_011.png)
+     - [contact_sheet_segment_015.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_015.png)
+     - [contact_sheet_segment_020.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_020.png)
+     - [contact_sheet_segment_025.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_025.png)
+     - [contact_sheet_segment_030.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_030.png)
+     - [contact_sheet_segment_035.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_035.png)
+     - [contact_sheet_segment_040.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_040.png)
+     - [contact_sheet_segment_043.png](../artifacts/h35_1/contact_sheets/contact_sheet_segment_043.png)
 - **Results:** 308 keyframe PNGs and 11 multi-stage contact sheets extracted and verified.
 
 ---

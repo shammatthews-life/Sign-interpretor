@@ -31,13 +31,13 @@ This prototype performs **Speech → Controlled English Sign Mapping → Aether*
 
 ## 2. Core Architecture: `SpeechSignOrchestrator`
 
-The orchestrator ([`tools/avatar_viewer/SpeechSignOrchestrator.js`](file:///d:/sign%20interpretor/tools/avatar_viewer/SpeechSignOrchestrator.js)) acts as the decoupled bridge between ASR events, sentence processing, and the sign motion queue.
+The orchestrator ([`tools/avatar_viewer/SpeechSignOrchestrator.js`](../tools/avatar_viewer/SpeechSignOrchestrator.js)) acts as the decoupled bridge between ASR events, sentence processing, and the sign motion queue.
 
 ### Responsibilities:
 1. Ingests streaming `PARTIAL_TRANSCRIPT` and `FINAL_TRANSCRIPT` events without coupling Whisper to the avatar or renderer.
 2. Manages incremental prefix commitments so that already-enqueued signs are never duplicated.
-3. Queries [`SignLibrary`](file:///d:/sign%20interpretor/tools/avatar_viewer/SignLibrary.js) for playability: filters unknown words and blocks `MOTION_INCOMPLETE` signs (e.g., `WATER`).
-4. Enqueues verified signs into [`SignScheduler`](file:///d:/sign%20interpretor/tools/avatar_viewer/SignScheduler.js).
+3. Queries [`SignLibrary`](../tools/avatar_viewer/SignLibrary.js) for playability: filters unknown words and blocks `MOTION_INCOMPLETE` signs (e.g., `WATER`).
+4. Enqueues verified signs into [`SignScheduler`](../tools/avatar_viewer/SignScheduler.js).
 5. Measures end-to-end timing ($T_0 \to T_1 \to T_2 \to T_3 \to T_4$) and backpressure.
 
 ---

@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # ISL Accessibility Translator — Master New Device Setup Script
 # Platform: Windows 10/11 (PowerShell)
 # Usage: .\setup\setup_new_device.ps1

@@ -30,7 +30,7 @@ Unlike previous simulation-only or headless verification passes, this audit:
 
 | Metric | Value |
 | :--- | :--- |
-| **Screen Recording File** | [`h35_native_chrome_recording.mp4`](file:///D:/sign interpretor/artifacts/h35/recording/h35_native_chrome_recording.mp4) |
+| **Screen Recording File** | [`h35_native_chrome_recording.mp4`](../artifacts/h35/recording/h35_native_chrome_recording.mp4) |
 | **File Size** | 4.71 MB (49,35,621 bytes) |
 | **Video Format** | H.264 (AVC) / MP4, YUV420p |
 | **Capture Resolution** | 1280 × 578 (Compositor Screencast, padded to even dimensions) |
@@ -58,17 +58,17 @@ For each of the 44 spoken segments in the `0:00 – 3:00` window, 7 canonical st
 
 | Segment | Time Window | Representative Spoken Transcript | Signs Captured | Visual Contact Sheet |
 | :---: | :---: | :--- | :--- | :---: |
-| **Seg 00** | `2.45s – 8.45s` | "This is public speaking for beginners, and the ..." | `say, people, goal, video, simply` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_000.png) |
-| **Seg 01** | `8.45s – 14.45s` | "It's to help you overcome being uncertain, anxi..." | `help, you, afraid` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_001.png) |
-| **Seg 04** | `24.45s – 30.45s` | "What you're about to watch is a special compila..." | `what, you, watch, special, say, people, challenge` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_004.png) |
-| **Seg 11** | `52.85s – 54.73s` | "and I'm best known for my TEDx talks," | `i, know, my, say` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_011.png) |
-| **Seg 15** | `65.01s – 69.49s` | "And this chart is one of the results of that pa..." | `chart, one, result` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_015.png) |
-| **Seg 20** | `89.53s – 91.69s` | "and public speaking coach." | `say, people, coaching` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_020.png) |
-| **Seg 25** | `107.03s – 110.79s` | "Welcome beautiful people all around the world" | `welcome, beautiful, people, world` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_025.png) |
-| **Seg 30** | `122.23s – 124.91s` | "Mayorka, I'm going to Mayorka in just a couple ..." | `i, will, couple, week` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_030.png) |
-| **Seg 35** | `138.15s – 139.55s` | "This is my passion." | `my, passion` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_035.png) |
-| **Seg 40** | `154.59s – 162.83s` | "During these three days, I am not kidding aroun..." | `during, i, not, kid, your, time, valuable, my, time, valuable, i, want` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_040.png) |
-| **Seg 43** | `175.87s – 179.95s` | "challenge, yes? All right, that's amazing. I lo..." | `challenge, yes, great, i, love, love` | [View Contact Sheet](file:///D:/sign interpretor/artifacts/h35/contact_sheets/contact_sheet_segment_043.png) |
+| **Seg 00** | `2.45s – 8.45s` | "This is public speaking for beginners, and the ..." | `say, people, goal, video, simply` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_000.png) |
+| **Seg 01** | `8.45s – 14.45s` | "It's to help you overcome being uncertain, anxi..." | `help, you, afraid` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_001.png) |
+| **Seg 04** | `24.45s – 30.45s` | "What you're about to watch is a special compila..." | `what, you, watch, special, say, people, challenge` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_004.png) |
+| **Seg 11** | `52.85s – 54.73s` | "and I'm best known for my TEDx talks," | `i, know, my, say` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_011.png) |
+| **Seg 15** | `65.01s – 69.49s` | "And this chart is one of the results of that pa..." | `chart, one, result` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_015.png) |
+| **Seg 20** | `89.53s – 91.69s` | "and public speaking coach." | `say, people, coaching` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_020.png) |
+| **Seg 25** | `107.03s – 110.79s` | "Welcome beautiful people all around the world" | `welcome, beautiful, people, world` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_025.png) |
+| **Seg 30** | `122.23s – 124.91s` | "Mayorka, I'm going to Mayorka in just a couple ..." | `i, will, couple, week` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_030.png) |
+| **Seg 35** | `138.15s – 139.55s` | "This is my passion." | `my, passion` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_035.png) |
+| **Seg 40** | `154.59s – 162.83s` | "During these three days, I am not kidding aroun..." | `during, i, not, kid, your, time, valuable, my, time, valuable, i, want` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_040.png) |
+| **Seg 43** | `175.87s – 179.95s` | "challenge, yes? All right, that's amazing. I lo..." | `challenge, yes, great, i, love, love` | [View Contact Sheet](../artifacts/h35/contact_sheets/contact_sheet_segment_043.png) |
 
 ---
 

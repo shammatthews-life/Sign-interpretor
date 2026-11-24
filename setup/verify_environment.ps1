@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # ISL Accessibility Translator — Environment Verification Script
 # Platform: Windows 10/11 (PowerShell)
 # Usage: .\setup\verify_environment.ps1

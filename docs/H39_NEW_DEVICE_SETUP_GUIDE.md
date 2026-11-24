@@ -150,7 +150,7 @@ This starts an HTTP server on `http://127.0.0.1:8000`, serving the 3D WebGL view
 
 ## 6. Avatar 3D Model (`Avatar_Boy_Gun_AetherShadow`) Setup
 
-Due to proprietary game asset licensing (HoYoverse), the raw 243-bone FBX model and textures are excluded from the public Git repository via `.gitignore` (see [docs/H39_ASSET_AND_LICENCE_REGISTER.md](file:///d:/sign%20interpretor/docs/H39_ASSET_AND_LICENCE_REGISTER.md)).
+Due to proprietary game asset licensing (HoYoverse), the raw 243-bone FBX model and textures are excluded from the public Git repository via `.gitignore` (see [docs/H39_ASSET_AND_LICENCE_REGISTER.md](./H39_ASSET_AND_LICENCE_REGISTER.md)).
 
 - **For Headless & Test Runs:** The entire translation pipeline, sign compiler, and test suites operate without requiring the FBX model.
 - **For Visual Avatar Articulation:** Place `Avatar_Boy_Gun_AetherShadow.fbx` and its diffuse PNG textures into the root folder:

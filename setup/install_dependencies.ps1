@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # ISL Accessibility Translator — Dependency Installation Script
 # Platform: Windows 10/11 (PowerShell)
 # Usage: .\setup\install_dependencies.ps1

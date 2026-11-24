@@ -1,10 +1,10 @@
 # Indian Sign Language (ISL) Accessibility Translator
 
-[![Tests: Passing](https://img.shields.io/badge/Tests-76%2F76%20Passing-brightgreen.svg)](file:///d:/sign%20interpretor/package.json)
-[![Sign Library: 586 Playable](https://img.shields.io/badge/ISL%20Signs-586%2F586%20(100%25)-blue.svg)](file:///d:/sign%20interpretor/signs/manifest.json)
-[![Manifest V3](https://img.shields.io/badge/Chrome%20Extension-Manifest%20V3-orange.svg)](file:///d:/sign%20interpretor/extension/manifest.json)
-[![Whisper CUDA](https://img.shields.io/badge/ASR-Faster--Whisper%20CUDA%2012-76b900.svg)](file:///d:/sign%20interpretor/requirements.txt)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](file:///d:/sign%20interpretor/LICENSE)
+[![Tests: Passing](https://img.shields.io/badge/Tests-76%2F76%20Passing-brightgreen.svg)](./package.json)
+[![Sign Library: 586 Playable](https://img.shields.io/badge/ISL%20Signs-586%2F586%20(100%25)-blue.svg)](./signs/manifest.json)
+[![Manifest V3](https://img.shields.io/badge/Chrome%20Extension-Manifest%20V3-orange.svg)](./extension/manifest.json)
+[![Whisper CUDA](https://img.shields.io/badge/ASR-Faster--Whisper%20CUDA%2012-76b900.svg)](./requirements.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
 > **Real-Time 3D Avatar Assistive Technology for Web & YouTube Video**  
 > Translates spoken English dialogue into grammatically structured Indian Sign Language (ISL) and articulates signs in real time via an interactive, WebGL 3D avatar (**Aether**).
@@ -88,7 +88,7 @@ cd Sign-interpretor
 - Validates the 586-sign motion library and synchronizes `signs/manifest.json`.
 - Runs full environment diagnostics and executes the 29-segment linguistic test suite.
 
-For step-by-step manual setup, refer to [docs/H39_NEW_DEVICE_SETUP_GUIDE.md](file:///d:/sign%20interpretor/docs/H39_NEW_DEVICE_SETUP_GUIDE.md).
+For step-by-step manual setup, refer to [docs/H39_NEW_DEVICE_SETUP_GUIDE.md](./docs/H39_NEW_DEVICE_SETUP_GUIDE.md).
 
 ---
 
@@ -167,7 +167,7 @@ The translator implements core Indian Sign Language grammatical rules:
 
 To maintain strict compliance with open-source licensing and intellectual property laws:
 - **Project Code & Sign Library:** Released under open-source terms.
-- **Avatar 3D Model (`Avatar_Boy_Gun_AetherShadow`):** Proprietary game character rig (HoYoverse). Excluded from Git via `.gitignore` to prevent copyright takedowns. Complete local acquisition and integrity instructions are documented in [docs/H39_ASSET_AND_LICENCE_REGISTER.md](file:///d:/sign%20interpretor/docs/H39_ASSET_AND_LICENCE_REGISTER.md).
+- **Avatar 3D Model (`Avatar_Boy_Gun_AetherShadow`):** Proprietary game character rig (HoYoverse). Excluded from Git via `.gitignore` to prevent copyright takedowns. Complete local acquisition and integrity instructions are documented in [docs/H39_ASSET_AND_LICENCE_REGISTER.md](./docs/H39_ASSET_AND_LICENCE_REGISTER.md).
 - **Headless Portability:** The compiler, translation engine, and test suites operate with 100% functionality even in headless mode without the proprietary FBX mesh.
 
 ---
@@ -212,8 +212,8 @@ To maintain strict compliance with open-source licensing and intellectual proper
 
 ## 10. Documentation Index
 
-- [docs/H39_NEW_DEVICE_SETUP_GUIDE.md](file:///d:/sign%20interpretor/docs/H39_NEW_DEVICE_SETUP_GUIDE.md) — Comprehensive new-machine setup guide.
-- [docs/H39_ASSET_AND_LICENCE_REGISTER.md](file:///d:/sign%20interpretor/docs/H39_ASSET_AND_LICENCE_REGISTER.md) — Asset provenance, licences, and SHA-256 hashes.
-- [docs/H39_ENVIRONMENT_COMPATIBILITY.md](file:///d:/sign%20interpretor/docs/H39_ENVIRONMENT_COMPATIBILITY.md) — Platform support, GPU requirements, and CUDA specifications.
-- [docs/H39_REPOSITORY_COMPLETENESS_AUDIT.md](file:///d:/sign%20interpretor/docs/H39_REPOSITORY_COMPLETENESS_AUDIT.md) — Forensic repository inventory and delta analysis.
-- [docs/H38_SINGLE_VIDEO_PERFECTION_FINAL_REPORT.md](file:///d:/sign%20interpretor/docs/H38_SINGLE_VIDEO_PERFECTION_FINAL_REPORT.md) — H38 milestone results and benchmark verification.
+- [docs/H39_NEW_DEVICE_SETUP_GUIDE.md](./docs/H39_NEW_DEVICE_SETUP_GUIDE.md) — Comprehensive new-machine setup guide.
+- [docs/H39_ASSET_AND_LICENCE_REGISTER.md](./docs/H39_ASSET_AND_LICENCE_REGISTER.md) — Asset provenance, licences, and SHA-256 hashes.
+- [docs/H39_ENVIRONMENT_COMPATIBILITY.md](./docs/H39_ENVIRONMENT_COMPATIBILITY.md) — Platform support, GPU requirements, and CUDA specifications.
+- [docs/H39_REPOSITORY_COMPLETENESS_AUDIT.md](./docs/H39_REPOSITORY_COMPLETENESS_AUDIT.md) — Forensic repository inventory and delta analysis.
+- [docs/H38_SINGLE_VIDEO_PERFECTION_FINAL_REPORT.md](./docs/H38_SINGLE_VIDEO_PERFECTION_FINAL_REPORT.md) — H38 milestone results and benchmark verification.

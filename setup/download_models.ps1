@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # ISL Accessibility Translator — Model & Asset Acquisition Script
 # Platform: Windows 10/11 (PowerShell)
 # Usage: .\setup\download_models.ps1
