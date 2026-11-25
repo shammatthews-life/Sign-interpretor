@@ -1,0 +1,1749 @@
+{
+  "milestone": "H46",
+  "generated_at": "2026-11-25T13:55:33.770Z",
+  "total_segments": 60,
+  "nmm_segments": 11,
+  "spatial_plan_segments": 12,
+  "videos": {
+    "MXKkXXYUxBc": {
+      "title": "Public Speaking for Beginners - Free Full Course | Speak with Confidence",
+      "segment_count": 29,
+      "segments": [
+        {
+          "id": "A01",
+          "start": 2.45,
+          "end": 8.45,
+          "english": "This is public speaking for beginners, and the goal of this video is simple.",
+          "isl_gloss": "THIS PUBLIC SPEECH NEW PEOPLE LEARN GOAL THIS VIDEO SIMPLE",
+          "playable_signs": [
+            "this",
+            "public",
+            "speech",
+            "new",
+            "people",
+            "learn",
+            "goal",
+            "this",
+            "video",
+            "simple"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [
+              {
+                "referent": "people",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              }
+            ],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A02",
+          "start": 8.45,
+          "end": 14.45,
+          "english": "It's to help you overcome being uncertain, nervous, anxious, afraid,",
+          "isl_gloss": "YOU CONFUSED NERVOUS AFRAID OVERCOME HELP",
+          "playable_signs": [
+            "you",
+            "confused",
+            "nervous",
+            "afraid",
+            "overcome",
+            "help"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [
+              {
+                "occurrence_index": 5,
+                "verb": "help",
+                "target_locus": "LOCUS_RIGHT",
+                "yaw_deg": 10
+              }
+            ],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A03",
+          "start": 14.45,
+          "end": 21.45,
+          "english": "and bring you a few steps closer to being more confident, more clear,",
+          "isl_gloss": "BRING YOU FEW STEP CLOSE MORE CONFIDENT MORE CLEAR",
+          "playable_signs": [
+            "bring",
+            "you",
+            "few",
+            "step",
+            "close",
+            "more",
+            "confident",
+            "more",
+            "clear"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [
+              {
+                "occurrence_index": 0,
+                "verb": "bring",
+                "target_locus": "LOCUS_RIGHT",
+                "yaw_deg": 10
+              }
+            ],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A04",
+          "start": 21.45,
+          "end": 24.45,
+          "english": "and a much more captivating speaker.",
+          "isl_gloss": "VERY MORE INTERESTING SPEAKER",
+          "playable_signs": [
+            "very",
+            "more",
+            "interesting",
+            "speaker"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A05",
+          "start": 24.45,
+          "end": 30.45,
+          "english": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+          "isl_gloss": "WHAT YOU SPECIAL COMBINATION THREE DAY PUBLIC SPEECH CHALLENGE WATCH",
+          "playable_signs": [
+            "what",
+            "you",
+            "special",
+            "combination",
+            "three",
+            "day",
+            "public",
+            "speech",
+            "challenge",
+            "watch"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A06",
+          "start": 30.45,
+          "end": 34.25,
+          "english": "which we delivered live right here in our studio.",
+          "isl_gloss": "WE PRESENTATION HERE OUR LIVE RECORD ROOM",
+          "playable_signs": [
+            "we",
+            "presentation",
+            "here",
+            "our",
+            "live",
+            "record",
+            "room"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A07",
+          "start": 34.25,
+          "end": 37.33,
+          "english": "We'll begin with mindset and confidence.",
+          "isl_gloss": "WE MINDSET CONFIDENT START",
+          "playable_signs": [
+            "we",
+            "mindset",
+            "confident",
+            "start"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A08",
+          "start": 37.33,
+          "end": 40.21,
+          "english": "We'll move into the science of capturing attention,",
+          "isl_gloss": "WE SCIENCE ATTENTION MOVE HOLD",
+          "playable_signs": [
+            "we",
+            "science",
+            "attention",
+            "move",
+            "hold"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A09",
+          "start": 40.21,
+          "end": 43.77,
+          "english": "and we'll finish off with the most impactful delivery skills",
+          "isl_gloss": "WE MOST POWER PRESENTATION SKILL FINISH",
+          "playable_signs": [
+            "we",
+            "most",
+            "power",
+            "presentation",
+            "skill",
+            "finish"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A10",
+          "start": 43.77,
+          "end": 47.81,
+          "english": "from the 110-step chart of excellent communication.",
+          "isl_gloss": "HUNDRED TEN STEP CHART GREAT COMMUNICATION",
+          "playable_signs": [
+            "hundred",
+            "ten",
+            "step",
+            "chart",
+            "great",
+            "communication"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A11",
+          "start": 49.37,
+          "end": 52.85,
+          "english": "Hey, if we haven't met before, my name is David JP Phillips,",
+          "isl_gloss": "HEY IF BEFORE WE MEET FINISH NOT MY NAME FS_DAVID FS_JP FS_PHILLIPS",
+          "playable_signs": [
+            "hey",
+            "if",
+            "before",
+            "we",
+            "meet",
+            "finish",
+            "not",
+            "my",
+            "name",
+            "fs_david",
+            "fs_jp",
+            "fs_phillips"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NEGATION",
+            "NMM-NEG-HEADSHAKE"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A12",
+          "start": 52.85,
+          "end": 54.73,
+          "english": "and I'm best known for my TEDx talks,",
+          "isl_gloss": "I FAMOUS BECAUSE MY FS_TEDX SPEECH",
+          "playable_signs": [
+            "i",
+            "famous",
+            "because",
+            "my",
+            "fs_tedx",
+            "speech"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A13",
+          "start": 54.73,
+          "end": 57.01,
+          "english": "which are among the most viewed in the world",
+          "isl_gloss": "WORLD MANY SEE",
+          "playable_signs": [
+            "world",
+            "many",
+            "see"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A14",
+          "start": 57.01,
+          "end": 58.53,
+          "english": "on this particular subject.",
+          "isl_gloss": "THIS SPECIAL SUBJECT",
+          "playable_signs": [
+            "this",
+            "special",
+            "subject"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A15",
+          "start": 58.53,
+          "end": 65.01,
+          "english": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+          "isl_gloss": "I FIVE THOUSAND SPEAKER STUDY FINISH FIND TRUE WHAT MAKE SOMEBODY GREAT SPEAKER",
+          "playable_signs": [
+            "i",
+            "five",
+            "thousand",
+            "speaker",
+            "study",
+            "finish",
+            "find",
+            "true",
+            "what",
+            "make",
+            "somebody",
+            "great",
+            "speaker"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A16",
+          "start": 65.01,
+          "end": 69.49,
+          "english": "And this chart is one of the results of that particular endeavour.",
+          "isl_gloss": "THIS CHART ONE RESULT THAT SPECIAL WORK",
+          "playable_signs": [
+            "this",
+            "chart",
+            "one",
+            "result",
+            "that",
+            "special",
+            "work"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A17",
+          "start": 69.49,
+          "end": 74.29,
+          "english": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+          "isl_gloss": "THEY PRACTICE FINISH I COACHING WORLD BIG COMPANY LIKE FS_ORACLE FS_GOOGLE HAVE",
+          "playable_signs": [
+            "they",
+            "practice",
+            "finish",
+            "i",
+            "coaching",
+            "world",
+            "big",
+            "company",
+            "like",
+            "fs_oracle",
+            "fs_google",
+            "have"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [
+              {
+                "referent": "they",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              }
+            ],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A18",
+          "start": 74.29,
+          "end": 80.45,
+          "english": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience's",
+          "isl_gloss": "FS_DISNEY STORY PRESENTATION SKILL BEAUTIFUL SCIENCE AUDIENCE HOLD",
+          "playable_signs": [
+            "fs_disney",
+            "story",
+            "presentation",
+            "skill",
+            "beautiful",
+            "science",
+            "audience",
+            "hold"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A19",
+          "start": 80.45,
+          "end": 86.61,
+          "english": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools",
+          "isl_gloss": "ATTENTION NEXT NOW TWO HOUR THIRTY MINUTE YOU IMPORTANT TOOLS FIND",
+          "playable_signs": [
+            "attention",
+            "next",
+            "now",
+            "two",
+            "hour",
+            "thirty",
+            "minute",
+            "you",
+            "important",
+            "tools",
+            "find"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A20",
+          "start": 86.61,
+          "end": 89.53,
+          "english": "I've gathered during my 25 year career as a public speaker",
+          "isl_gloss": "I DURING MY TWENTY FIVE YEAR CAREER PUBLIC SPEAKER FIND FINISH",
+          "playable_signs": [
+            "i",
+            "during",
+            "my",
+            "twenty",
+            "five",
+            "year",
+            "career",
+            "public",
+            "speaker",
+            "find",
+            "finish"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A21",
+          "start": 89.53,
+          "end": 91.69,
+          "english": "and public speaking coach.",
+          "isl_gloss": "PUBLIC SPEECH COACHING",
+          "playable_signs": [
+            "public",
+            "speech",
+            "coaching"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A22",
+          "start": 91.69,
+          "end": 95.33,
+          "english": "So make sure you have a pen and a paper,",
+          "isl_gloss": "REMEMBER IMPORTANT YOU PEN PAPER HAVE",
+          "playable_signs": [
+            "remember",
+            "important",
+            "you",
+            "pen",
+            "paper",
+            "have"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A23",
+          "start": 95.33,
+          "end": 98.93,
+          "english": "lean in and you'll walk away with practical tools",
+          "isl_gloss": "FOCUS YOU PRACTICAL TOOLS GET",
+          "playable_signs": [
+            "focus",
+            "you",
+            "practical",
+            "tools",
+            "get"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A24",
+          "start": 98.93,
+          "end": 101.81,
+          "english": "you can apply tomorrow.",
+          "isl_gloss": "TOMORROW YOU PRACTICE",
+          "playable_signs": [
+            "tomorrow",
+            "you",
+            "practice"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A25",
+          "start": 101.81,
+          "end": 107.03,
+          "english": "Have fun.",
+          "isl_gloss": "ENJOY",
+          "playable_signs": [
+            "enjoy"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A26",
+          "start": 107.03,
+          "end": 110.79,
+          "english": "Welcome beautiful people all around the world",
+          "isl_gloss": "WELCOME BEAUTIFUL PEOPLE ALL WORLD",
+          "playable_signs": [
+            "welcome",
+            "beautiful",
+            "people",
+            "all",
+            "world"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [
+              {
+                "referent": "people",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              }
+            ],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A27",
+          "start": 110.79,
+          "end": 114.03,
+          "english": "to the lovely country of Sweden.",
+          "isl_gloss": "SWEDEN LOVELY COUNTRY",
+          "playable_signs": [
+            "sweden",
+            "lovely",
+            "country"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A28",
+          "start": 114.03,
+          "end": 116.63,
+          "english": "This is, well, this is my view of you.",
+          "isl_gloss": "THIS MY PERSPECTIVE YOU",
+          "playable_signs": [
+            "this",
+            "my",
+            "perspective",
+            "you"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "A29",
+          "start": 116.63,
+          "end": 118.95,
+          "english": "There's pictures all over the place.",
+          "isl_gloss": "PICTURE MANY PLACE",
+          "playable_signs": [
+            "picture",
+            "many",
+            "place"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        }
+      ]
+    },
+    "y8tFSuOMAqQ": {
+      "title": "How to Vlog as a Beginner (without overthinking it)",
+      "segment_count": 31,
+      "segments": [
+        {
+          "id": "B01",
+          "start": 0,
+          "end": 3.84,
+          "english": "Alright, so summer is here and in my opinion that's really the best time to go out, start filming,",
+          "isl_gloss": "SUMMER HERE I THINK THAT REAL GOOD TIME GO START RECORD",
+          "playable_signs": [
+            "summer",
+            "here",
+            "i",
+            "think",
+            "that",
+            "real",
+            "good",
+            "time",
+            "go",
+            "start",
+            "record"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B02",
+          "start": 3.84,
+          "end": 7.68,
+          "english": "start vlogging and documenting your life. Maybe you've just sat down and scripted out your first",
+          "isl_gloss": "VIDEO START RECORD YOUR LIFE MAYBE YOU SIT FINISH PLAN YOUR FIRST WRITE",
+          "playable_signs": [
+            "video",
+            "start",
+            "record",
+            "your",
+            "life",
+            "maybe",
+            "you",
+            "sit",
+            "finish",
+            "plan",
+            "your",
+            "first",
+            "write"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [
+              {
+                "referent": "first",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              }
+            ],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B03",
+          "start": 7.68,
+          "end": 12.24,
+          "english": "video or maybe you've even gone out and filmed it but I bet in the back of your mind something still",
+          "isl_gloss": "VIDEO OR MAYBE YOU GO FINISH FILM BUT I YOUR MIND DEEP SOMETHING STILL THINK",
+          "playable_signs": [
+            "video",
+            "or",
+            "maybe",
+            "you",
+            "go",
+            "finish",
+            "film",
+            "but",
+            "i",
+            "your",
+            "mind",
+            "deep",
+            "something",
+            "still",
+            "think"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B04",
+          "start": 12.24,
+          "end": 15.68,
+          "english": "just doesn't feel right about your vlog and I'm gonna say it right now you're probably just",
+          "isl_gloss": "YOUR VIDEO FEEL GOOD NOT NOW I SAY YOU MAYBE",
+          "playable_signs": [
+            "your",
+            "video",
+            "feel",
+            "good",
+            "not",
+            "now",
+            "i",
+            "say",
+            "you",
+            "maybe"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NEGATION",
+            "NMM-NEG-HEADSHAKE"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B05",
+          "start": 15.68,
+          "end": 20.32,
+          "english": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
+          "isl_gloss": "MORE THINK I ALSO VERY START HONESTY I STILL THIS DAY DO BUT",
+          "playable_signs": [
+            "more",
+            "think",
+            "i",
+            "also",
+            "very",
+            "start",
+            "honesty",
+            "i",
+            "still",
+            "this",
+            "day",
+            "do",
+            "but"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B06",
+          "start": 20.32,
+          "end": 24.48,
+          "english": "entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+          "isl_gloss": "ALL ART STEP VIDEO VERY MORE EASY MANY YEAR BECOME FINISH TODAY I",
+          "playable_signs": [
+            "all",
+            "art",
+            "step",
+            "video",
+            "very",
+            "more",
+            "easy",
+            "many",
+            "year",
+            "become",
+            "finish",
+            "today",
+            "i"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B07",
+          "start": 24.48,
+          "end": 28.64,
+          "english": "wanted to share some advice about that. Things I've learned through years of trial and error on how",
+          "isl_gloss": "SOME ADVICE WANT SHARE THAT THING I YEAR LEARN FINISH PRACTICE FAIL LEARN HOW",
+          "playable_signs": [
+            "some",
+            "advice",
+            "want",
+            "share",
+            "that",
+            "thing",
+            "i",
+            "year",
+            "learn",
+            "finish",
+            "practice",
+            "fail",
+            "learn",
+            "how"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B08",
+          "start": 28.64,
+          "end": 32.56,
+          "english": "you can go about your day and start vlogging your life without completely overcomplicating",
+          "isl_gloss": "YOU YOUR DAY LIVE VIDEO YOUR LIFE START WITHOUT ALL CONFUSED",
+          "playable_signs": [
+            "you",
+            "your",
+            "day",
+            "live",
+            "video",
+            "your",
+            "life",
+            "start",
+            "without",
+            "all",
+            "confused"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B09",
+          "start": 32.56,
+          "end": 37.32,
+          "english": "the process as a beginner.",
+          "isl_gloss": "STEP NEW LEARN",
+          "playable_signs": [
+            "step",
+            "new",
+            "learn"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B10",
+          "start": 37.32,
+          "end": 41.56,
+          "english": "So essentially a vlog is just a very loosely defined short film.",
+          "isl_gloss": "VIDEO ONLY VERY SIMPLE SMALL FILM",
+          "playable_signs": [
+            "video",
+            "only",
+            "very",
+            "simple",
+            "small",
+            "film"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B11",
+          "start": 41.56,
+          "end": 45.2,
+          "english": "And what that means is at the core of it all you still need a good story.",
+          "isl_gloss": "WHAT THAT MEAN CORE ALL YOU STILL GOOD STORY NEED",
+          "playable_signs": [
+            "what",
+            "that",
+            "mean",
+            "core",
+            "all",
+            "you",
+            "still",
+            "good",
+            "story",
+            "need"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B12",
+          "start": 45.2,
+          "end": 48.48,
+          "english": "I know you are definitely tired of hearing that from everybody that story is king.",
+          "isl_gloss": "I KNOW YOU VERY TIRED HEAR THAT EVERYONE THAT STORY MOST IMPORTANT",
+          "playable_signs": [
+            "i",
+            "know",
+            "you",
+            "very",
+            "tired",
+            "hear",
+            "that",
+            "everyone",
+            "that",
+            "story",
+            "most",
+            "important"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B13",
+          "start": 48.48,
+          "end": 51.56,
+          "english": "You have to have a story because everybody knows that and I know you do too.",
+          "isl_gloss": "YOU STORY HAVE NEED BECAUSE EVERYONE KNOW THAT I KNOW YOU ALSO KNOW",
+          "playable_signs": [
+            "you",
+            "story",
+            "have",
+            "need",
+            "because",
+            "everyone",
+            "know",
+            "that",
+            "i",
+            "know",
+            "you",
+            "also",
+            "know"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B14",
+          "start": 51.56,
+          "end": 53.24,
+          "english": "See the problem isn't that you don't know that.",
+          "isl_gloss": "PROBLEM SEE NOT YOU KNOW THAT NOT",
+          "playable_signs": [
+            "problem",
+            "see",
+            "not",
+            "you",
+            "know",
+            "that",
+            "not"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NEGATION",
+            "NMM-NEG-HEADSHAKE"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B15",
+          "start": 53.24,
+          "end": 57.08,
+          "english": "It's that you don't know how to actually find a story in your day to tell.",
+          "isl_gloss": "THAT YOU KNOW NOT HOW STORY YOUR DAY FIND TELL",
+          "playable_signs": [
+            "that",
+            "you",
+            "know",
+            "not",
+            "how",
+            "story",
+            "your",
+            "day",
+            "find",
+            "tell"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NEGATION",
+            "NMM-NEG-HEADSHAKE"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [
+              {
+                "occurrence_index": 9,
+                "verb": "tell",
+                "target_locus": "LOCUS_RIGHT",
+                "yaw_deg": 10
+              }
+            ],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B16",
+          "start": 57.08,
+          "end": 62.68,
+          "english": "So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie.",
+          "isl_gloss": "BREAK HOW I STORY MY DAY FIND MAKE VIDEO I LIKE BASE PART MOVIE THINK",
+          "playable_signs": [
+            "break",
+            "how",
+            "i",
+            "story",
+            "my",
+            "day",
+            "find",
+            "make",
+            "video",
+            "i",
+            "like",
+            "base",
+            "part",
+            "movie",
+            "think"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B17",
+          "start": 62.68,
+          "end": 67.58,
+          "english": "And just like short films, feature films, documentaries, what you really need to think about are scenes.",
+          "isl_gloss": "LIKE SMALL FILM FEATURE FILM MOVIE WHAT YOU REAL SCENE NEED THINK",
+          "playable_signs": [
+            "like",
+            "small",
+            "film",
+            "feature",
+            "film",
+            "movie",
+            "what",
+            "you",
+            "real",
+            "scene",
+            "need",
+            "think"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B18",
+          "start": 67.58,
+          "end": 73.58,
+          "english": "Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story.",
+          "isl_gloss": "LIKE SCENE YOUR FAVORITE MOVIE YOU COMBINATION SCENE NEED THAT WHEN COMBINATION JOIN MORE BIG STORY TELL",
+          "playable_signs": [
+            "like",
+            "scene",
+            "your",
+            "favorite",
+            "movie",
+            "you",
+            "combination",
+            "scene",
+            "need",
+            "that",
+            "when",
+            "combination",
+            "join",
+            "more",
+            "big",
+            "story",
+            "tell"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [
+              {
+                "occurrence_index": 16,
+                "verb": "tell",
+                "target_locus": "LOCUS_RIGHT",
+                "yaw_deg": 10
+              }
+            ],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B19",
+          "start": 73.58,
+          "end": 78.38,
+          "english": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,",
+          "isl_gloss": "WHEN COME VIDEO BECAUSE YOU DAY CONTINUE RECORD YOU SOMETIMES KNOW THAT ALL STORY NOT",
+          "playable_signs": [
+            "when",
+            "come",
+            "video",
+            "because",
+            "you",
+            "day",
+            "continue",
+            "record",
+            "you",
+            "sometimes",
+            "know",
+            "that",
+            "all",
+            "story",
+            "not"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NEGATION",
+            "NMM-NEG-HEADSHAKE"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B20",
+          "start": 78.38,
+          "end": 81.48,
+          "english": "but I bet you do know at least a scene or two ahead.",
+          "isl_gloss": "BUT I THINK FUTURE YOU LITTLE SCENE KNOW OR TWO",
+          "playable_signs": [
+            "but",
+            "i",
+            "think",
+            "future",
+            "you",
+            "little",
+            "scene",
+            "know",
+            "or",
+            "two"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NMM-EMPHATIC-NOD"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B21",
+          "start": 81.48,
+          "end": 85.88,
+          "english": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,",
+          "isl_gloss": "TODAY WHAT THAT MEAN MAYBE I CLEAR KNOW WHAT I DO NOT BUT I KNOW THAT HOUR AROUND",
+          "playable_signs": [
+            "today",
+            "what",
+            "that",
+            "mean",
+            "maybe",
+            "i",
+            "clear",
+            "know",
+            "what",
+            "i",
+            "do",
+            "not",
+            "but",
+            "i",
+            "know",
+            "that",
+            "hour",
+            "around"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NEGATION",
+            "NMM-NEG-HEADSHAKE",
+            "NMM-EMPHATIC-NOD"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B22",
+          "start": 85.88,
+          "end": 89.8,
+          "english": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again",
+          "isl_gloss": "I FRIEND GO MEET I SCENE BUILD THAT NEXT AFTER THAT AGAIN",
+          "playable_signs": [
+            "i",
+            "friend",
+            "go",
+            "meet",
+            "i",
+            "scene",
+            "build",
+            "that",
+            "next",
+            "after",
+            "that",
+            "again"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [
+              {
+                "referent": "friend",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              }
+            ],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B23",
+          "start": 89.8,
+          "end": 91.68,
+          "english": "I might not know what I'm gonna do for the rest of the evening",
+          "isl_gloss": "I MAY KNOW NOT WHAT I REMAINING EVENING DO",
+          "playable_signs": [
+            "i",
+            "may",
+            "know",
+            "not",
+            "what",
+            "i",
+            "remaining",
+            "evening",
+            "do"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NEGATION",
+            "NMM-NEG-HEADSHAKE"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B24",
+          "start": 91.68,
+          "end": 95.24,
+          "english": "But I do know that I'm hungry so I'm gonna go get some food. That's another scene",
+          "isl_gloss": "BUT I KNOW THAT I HUNGRY I SOME FOOD GO GET THAT OTHER SCENE",
+          "playable_signs": [
+            "but",
+            "i",
+            "know",
+            "that",
+            "i",
+            "hungry",
+            "i",
+            "some",
+            "food",
+            "go",
+            "get",
+            "that",
+            "other",
+            "scene"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NMM-EMPHATIC-NOD"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [
+              {
+                "referent": "other",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              },
+              {
+                "referent": "contrast_topic",
+                "locus": "LOCUS_RIGHT",
+                "yaw_deg": 10
+              }
+            ],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B25",
+          "start": 95.24,
+          "end": 98.52,
+          "english": "So instead of stressing yourself before you start shooting of what is my story",
+          "isl_gloss": "YOU NERVOUS NOT BEFORE YOU START RECORD MY STORY WHAT",
+          "playable_signs": [
+            "you",
+            "nervous",
+            "not",
+            "before",
+            "you",
+            "start",
+            "record",
+            "my",
+            "story",
+            "what"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "WH_QUESTION",
+            "NEGATION",
+            "NMM-NEG-HEADSHAKE",
+            "NMM-WH-BROW-FURROW"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B26",
+          "start": 98.56,
+          "end": 105.04,
+          "english": "Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall",
+          "isl_gloss": "ALLOW YOU LIFE LIVE THING SCENE STEP THINK ALSO THINK HOW SCENE JOIN ALL",
+          "playable_signs": [
+            "allow",
+            "you",
+            "life",
+            "live",
+            "thing",
+            "scene",
+            "step",
+            "think",
+            "also",
+            "think",
+            "how",
+            "scene",
+            "join",
+            "all"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B27",
+          "start": 105.04,
+          "end": 107.92,
+          "english": "feeling that you're trying to deliver so when I'm out shooting and filming things",
+          "isl_gloss": "FEEL THAT YOU TRY SHOW WHEN I THING RECORD",
+          "playable_signs": [
+            "feel",
+            "that",
+            "you",
+            "try",
+            "show",
+            "when",
+            "i",
+            "thing",
+            "record"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [
+              {
+                "occurrence_index": 4,
+                "verb": "show",
+                "target_locus": "LOCUS_RIGHT",
+                "yaw_deg": 10
+              }
+            ],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B28",
+          "start": 107.92,
+          "end": 111.12,
+          "english": "I always try and think is this just a shot that I'm getting because it looks cool",
+          "isl_gloss": "I ALWAYS TRY THINK THIS ONLY PICTURE THAT I GET BECAUSE COOL LOOK",
+          "playable_signs": [
+            "i",
+            "always",
+            "try",
+            "think",
+            "this",
+            "only",
+            "picture",
+            "that",
+            "i",
+            "get",
+            "because",
+            "cool",
+            "look"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B29",
+          "start": 111.12,
+          "end": 113.4,
+          "english": "or is this an actual scene if it's a scene",
+          "isl_gloss": "OR THIS REAL SCENE IF SCENE",
+          "playable_signs": [
+            "or",
+            "this",
+            "real",
+            "scene",
+            "if",
+            "scene"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [
+            "NMM-COND-BROW-RAISE"
+          ],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B30",
+          "start": 113.4,
+          "end": 117.48,
+          "english": "I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,",
+          "isl_gloss": "I LITTLE BIT MORE NEED BUILD MOST USUALLY I ALSO SOME COMMUNICATION SOME RECORD SAY",
+          "playable_signs": [
+            "i",
+            "little",
+            "bit",
+            "more",
+            "need",
+            "build",
+            "most",
+            "usually",
+            "i",
+            "also",
+            "some",
+            "communication",
+            "some",
+            "record",
+            "say"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [],
+            "directional_inflections": [],
+            "role_shifts": []
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        },
+        {
+          "id": "B31",
+          "start": 117.48,
+          "end": 120,
+          "english": "I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell.",
+          "isl_gloss": "I DIRECT CAMERA SAY EXPLAIN WHAT HAPPEN MANY PEOPLE TELL YOU THAT FILM YOU WANT SHOW MORE SAY LESS",
+          "playable_signs": [
+            "i",
+            "direct",
+            "camera",
+            "say",
+            "explain",
+            "what",
+            "happen",
+            "many",
+            "people",
+            "tell",
+            "you",
+            "that",
+            "film",
+            "you",
+            "want",
+            "show",
+            "more",
+            "say",
+            "less"
+          ],
+          "unknown_terms": [],
+          "non_manual_markers": [],
+          "spatial_plan": {
+            "locus_assignments": [
+              {
+                "referent": "people",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              }
+            ],
+            "directional_inflections": [
+              {
+                "occurrence_index": 4,
+                "verb": "explain",
+                "target_locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              },
+              {
+                "occurrence_index": 9,
+                "verb": "tell",
+                "target_locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              },
+              {
+                "occurrence_index": 15,
+                "verb": "show",
+                "target_locus": "LOCUS_LEFT",
+                "yaw_deg": -10
+              }
+            ],
+            "role_shifts": [
+              {
+                "occurrence_index": 3,
+                "trigger_sign": "say",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -12
+              },
+              {
+                "occurrence_index": 9,
+                "trigger_sign": "tell",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -12
+              },
+              {
+                "occurrence_index": 17,
+                "trigger_sign": "say",
+                "locus": "LOCUS_LEFT",
+                "yaw_deg": -12
+              }
+            ]
+          },
+          "status": "TRANSLATION_SUPPORTED"
+        }
+      ]
+    }
+  }
+}

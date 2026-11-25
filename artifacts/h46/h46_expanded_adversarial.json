@@ -1,0 +1,12 @@
+{
+  "milestone": "H46",
+  "description": "Expanded adversarial comprehension, spatial grammar, NMM, and sign-uniqueness cases",
+  "cases": [
+    { "id": "ADV-01", "text": "Why did he not tell the teacher?", "expect_nmm": ["NMM-WH-BROW-FURROW", "NMM-NEG-HEADSHAKE"], "expect_verb": "tell" },
+    { "id": "ADV-02", "text": "If you practice every day, will you win?", "expect_nmm": ["NMM-COND-BROW-RAISE"], "expect_sign": "win" },
+    { "id": "ADV-03", "text": "She showed her friend the new video and they helped him.", "expect_min_loci": 2, "expect_verb": "show" },
+    { "id": "ADV-04", "text": "Two or three people waited twenty or thirty minutes.", "expect_signs": ["two", "three", "twenty", "thirty", "minute"] },
+    { "id": "ADV-05", "text": "Open the next room and tell the team.", "expect_signs": ["open", "next", "room", "tell", "team"] },
+    { "id": "ADV-06", "text": "Do you understand why the first scene was not clear?", "expect_nmm": ["NMM-YESNO-BROW-RAISE", "NMM-NEG-HEADSHAKE"], "expect_signs": ["first", "scene"] }
+  ]
+}
