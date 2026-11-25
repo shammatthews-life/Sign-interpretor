@@ -737,6 +737,10 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["second time", ["SECOND", "TIME"]],
       // Milestone H37 / H41 Contextual Phrases
       ["right here", ["HERE"]],
+  ["right hand", ["SIDE", "HAND"]],
+  ["right side", ["SIDE"]],
+  ["turn right", ["TURN", "SIDE"]],
+  ["sign up", ["JOIN"]],
       ["all around", ["ALL"]],
       ["all over", ["ALL"]],
       ["walk away with", ["GET"]],
@@ -1752,7 +1756,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
 
       ['dryer', 'DRY'],
 
-      ['immediately', 'FAST'], ['obviously', 'CLEAR'],
+      ['immediately', 'FAST'], ['obviously', 'CLEAR'], ['clearly', 'CLEAR'],
 
       // Contractions
       ["won't", 'NOT'], ["they've", 'HAVE'], ["i'd", 'I'], ["here's", 'POINT'], ["whenever", 'WHEN'],
@@ -2386,7 +2390,8 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ...clauseNmmMapped
     ])];
 
-    const spatial_plan = this._buildSpatialPlan(isr, gloss_sequence, sign_ids, normalized_text);
+    const spatial_plan = this._buildSpatialPlan(isr, gloss_sequence, sign_ids, normalized_text, options?.discourseContext || null);
+    const nmm_scopes = this._buildNmmScopes(sign_ids, mergedNonManuals, isr);
 
     return {
       source_text,
@@ -2400,6 +2405,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       grammar_omissions: removed.map(token => ({ token, status: 'GRAMMAR_OMISSION' })),
       intermediate_semantic_representation: isr,
       non_manual_markers: mergedNonManuals,
+      nmm_scopes,
       spatial_plan,
       linguistic_notes,
       transformation_trace: trace,
@@ -2409,7 +2415,59 @@ export class EnglishToISLTranslator extends TranslationBackend {
     };
   }
 
-  _buildSpatialPlan(isr, glossSequence = [], signIds = [], normalizedText = '') {
+  createDiscourseContext() {
+    return {
+      locusByReferent: new Map(),
+      nextIsLeft: true,
+      turnCount: 0
+    };
+  }
+
+  _buildNmmScopes(signIds = [], mergedNonManuals = [], isr = null) {
+    const negWords = new Set(['not', 'no', 'never', 'nothing', 'cannot', 'nowhere', 'none']);
+    const whWords = new Set(['who', 'what', 'where', 'when', 'why', 'how', 'which']);
+    const hasNeg = mergedNonManuals.includes('NMM-NEG-HEADSHAKE') || mergedNonManuals.includes('NEGATION');
+    const hasWh = mergedNonManuals.includes('NMM-WH-BROW-FURROW') || mergedNonManuals.includes('WH_QUESTION');
+    const hasYn = mergedNonManuals.includes('NMM-YESNO-BROW-RAISE') || mergedNonManuals.includes('YES_NO_QUESTION');
+    const hasCond = mergedNonManuals.includes('NMM-COND-BROW-RAISE');
+    const hasEmph = mergedNonManuals.includes('NMM-EMPHATIC-NOD');
+
+    const negIdx = signIds.findIndex(s => negWords.has(s));
+    const whIdx = signIds.findIndex(s => whWords.has(s));
+    const condEnd = hasCond ? Math.max(0, Math.floor(signIds.length * 0.5) - 1) : -1;
+
+    return signIds.map((signId, idx) => {
+      const scoped = [];
+      if (hasNeg) {
+        if (negIdx >= 0) {
+          if (idx >= Math.max(0, negIdx - 1) && idx <= Math.min(signIds.length - 1, negIdx + 1)) {
+            scoped.push('NMM-NEG-HEADSHAKE');
+          }
+        } else if (idx >= Math.floor(signIds.length * 0.5)) {
+          scoped.push('NMM-NEG-HEADSHAKE');
+        }
+      }
+      if (hasWh) {
+        if (whIdx >= 0) {
+          if (idx >= Math.max(0, whIdx - 1)) scoped.push('NMM-WH-BROW-FURROW');
+        } else if (idx >= Math.floor(signIds.length * 0.5)) {
+          scoped.push('NMM-WH-BROW-FURROW');
+        }
+      }
+      if (hasCond && idx <= condEnd) {
+        scoped.push('NMM-COND-BROW-RAISE');
+      }
+      if (hasYn && idx >= Math.max(0, signIds.length - 2)) {
+        scoped.push('NMM-YESNO-BROW-RAISE');
+      }
+      if (hasEmph && idx === signIds.length - 1) {
+        scoped.push('NMM-EMPHATIC-NOD');
+      }
+      return scoped;
+    });
+  }
+
+  _buildSpatialPlan(isr, glossSequence = [], signIds = [], normalizedText = '', discourseContext = null) {
     const locusAssignments = [];
     const directionalInflections = [];
     const roleShifts = [];
@@ -2422,12 +2480,22 @@ export class EnglishToISLTranslator extends TranslationBackend {
 
     const assignLocus = (ref) => {
       if (assigned.has(ref)) return assigned.get(ref);
-      const isLeft = assigned.size % 2 === 0;
-      const entry = {
-        referent: ref,
-        locus: isLeft ? 'LOCUS_LEFT' : 'LOCUS_RIGHT',
-        yaw_deg: isLeft ? -10 : 10
-      };
+      let entry = discourseContext?.locusByReferent?.get(ref) || null;
+      if (!entry) {
+        const isLeft = discourseContext ? discourseContext.nextIsLeft : (assigned.size % 2 === 0);
+        if (discourseContext) discourseContext.nextIsLeft = !discourseContext.nextIsLeft;
+        entry = {
+          referent: ref,
+          locus: isLeft ? 'LOCUS_LEFT' : 'LOCUS_RIGHT',
+          yaw_deg: isLeft ? -10 : 10,
+          persisted_from_discourse: false
+        };
+        if (discourseContext?.locusByReferent) {
+          discourseContext.locusByReferent.set(ref, { ...entry, persisted_from_discourse: true });
+        }
+      } else {
+        entry = { ...entry, persisted_from_discourse: true };
+      }
       assigned.set(ref, entry);
       locusAssignments.push(entry);
       return entry;

@@ -207,6 +207,7 @@
       this.activeCueKey = cueKey;
       this.activeCueId = activationId;
       const cueNmm = Array.isArray(segment.non_manual_markers) ? segment.non_manual_markers : [];
+      const nmmScopes = Array.isArray(segment.nmm_scopes) ? segment.nmm_scopes : [];
       const spatialPlan = segment.spatial_plan && typeof segment.spatial_plan === 'object' ? segment.spatial_plan : null;
       this.onDispatchCommand?.('CUE_TRANSITION', {
         jobId: this.activeJobId,
@@ -228,6 +229,7 @@
             else if (rs && Number.isFinite(rs.yaw_deg)) spatialYawDeg = rs.yaw_deg;
             else if (loc && Number.isFinite(loc.yaw_deg)) spatialYawDeg = loc.yaw_deg;
           }
+          const signNmm = Array.isArray(nmmScopes[occurrenceIndex]) ? nmmScopes[occurrenceIndex] : cueNmm;
           this.onDispatchSign?.(signId, {
             cueId: segment.id,
             jobId: this.activeJobId,
@@ -236,7 +238,7 @@
             command: 'QUEUE_SIGN',
             cueStartSeconds: segment.start,
             cueEndSeconds: segment.end,
-            nonManualMarkers: cueNmm,
+            nonManualMarkers: signNmm,
             spatialYawDeg
           });
         });

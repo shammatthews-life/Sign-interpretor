@@ -1,0 +1,15 @@
+{
+  "milestone": "H47",
+  "total_signs_audited": 647,
+  "duration_ms_range": [
+    850,
+    2000
+  ],
+  "extreme_joint_warnings_count": 0,
+  "extreme_joint_warnings": [],
+  "feature_clusters": {
+    "bimanual": 405,
+    "unimanual_high_curl": 210,
+    "unimanual_open_or_pointing": 32
+  }
+}

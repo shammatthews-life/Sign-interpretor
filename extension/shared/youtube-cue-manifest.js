@@ -218,6 +218,9 @@
       const nonManualMarkers = aligned && Array.isArray(translated.non_manual_markers)
         ? translated.non_manual_markers.filter(item => typeof item === 'string' && item.trim())
         : [];
+      const nmmScopes = aligned && Array.isArray(translated.nmm_scopes)
+        ? translated.nmm_scopes.map(arr => Array.isArray(arr) ? arr.filter(x => typeof x === 'string') : [])
+        : [];
       const spatialPlan = aligned && translated.spatial_plan && typeof translated.spatial_plan === 'object'
         ? {
             locus_assignments: Array.isArray(translated.spatial_plan.locus_assignments) ? translated.spatial_plan.locus_assignments : [],
@@ -245,6 +248,7 @@
         sign_occurrences: signOccurrences,
         sign_ids: signOccurrences.map(item => item.sign_id),
         non_manual_markers: nonManualMarkers,
+        nmm_scopes: nmmScopes,
         spatial_plan: spatialPlan,
         unavailable_concepts: unavailableConcepts,
         unknown_terms: unknownTerms,

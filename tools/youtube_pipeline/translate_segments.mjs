@@ -34,6 +34,7 @@ const __dirname = path.dirname(__filename);
 
 export function processSegments(segments, translator = null) {
   const trans = translator || new EnglishToISLTranslator();
+  const discourseContext = typeof trans.createDiscourseContext === 'function' ? trans.createDiscourseContext() : null;
   return segments.map((seg) => {
     const rawText = String(seg.text || '').trim();
     if (!rawText) {
@@ -59,7 +60,7 @@ export function processSegments(segments, translator = null) {
         }
       : null;
 
-    const rep = trans.translate(rawText, { asrContext });
+    const rep = trans.translate(rawText, { asrContext, discourseContext });
     return {
       start: Number(seg.start || 0),
       end: Number(seg.end || 0),
@@ -75,6 +76,7 @@ export function processSegments(segments, translator = null) {
       fingerspelled_terms: rep.fingerspelled_terms || [],
       grammar_omissions: rep.grammar_omissions || [],
       non_manual_markers: rep.non_manual_markers || [],
+      nmm_scopes: rep.nmm_scopes || [],
       spatial_plan: rep.spatial_plan || { locus_assignments: [], directional_inflections: [], role_shifts: [] }
     };
   });

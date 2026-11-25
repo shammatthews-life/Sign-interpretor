@@ -1,0 +1,15 @@
+{
+  "milestone": "H47",
+  "split": "held_out_generalization_benchmark",
+  "note": "Strictly separated from locked Videos A (MXKkXXYUxBc) and B (y8tFSuOMAqQ)",
+  "cases": [
+    { "id": "GEN-01", "domain": "polysemy_direction", "text": "Look at your right hand", "expect_signs_include": ["side", "hand", "look"], "forbid_signs": ["true"] },
+    { "id": "GEN-02", "domain": "phrasal_verb", "text": "Sign up for the class", "expect_signs_include": ["join", "class"] },
+    { "id": "GEN-03", "domain": "polysemy_verb_vs_dir", "text": "He left the room yesterday", "expect_signs_include": ["yesterday", "he", "leave", "room"] },
+    { "id": "GEN-04", "domain": "conditional", "text": "If you practice every day, will you win?", "expect_nmm": ["NMM-COND-BROW-RAISE"] },
+    { "id": "GEN-05", "domain": "wh_negation", "text": "Why did he not tell the teacher?", "expect_nmm": ["NMM-WH-BROW-FURROW", "NMM-NEG-HEADSHAKE"] },
+    { "id": "GEN-06", "domain": "cause_effect", "text": "Because the teacher explained clearly, everyone understood.", "expect_signs_include": ["because", "teacher", "explain", "clear", "everyone", "understand"] },
+    { "id": "GEN-07", "domain": "educational_stem", "text": "First, build a simple model and test the data.", "expect_signs_include": ["first", "build", "simple", "test", "data"] },
+    { "id": "GEN-08", "domain": "self_correction_disfluency", "text": "We need to finish today, I mean tomorrow.", "expect_signs_include": ["finish", "today", "tomorrow"] }
+  ]
+}
