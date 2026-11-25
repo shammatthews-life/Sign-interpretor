@@ -1,0 +1,153 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "our",
+  "metadata": {
+    "display_name": "Our",
+    "gloss": "OUR",
+    "language": "ISL",
+    "lexical_type": "ISL Lexical Sign",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "provenance_tier": "h45_islrtc_discourse_lexicon",
+    "motion_distinctness": "unique_trajectory",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC 1st-person plural possessive: Curved flat palm sweeping smoothly across upper chest from right to left shoulder (OUR)."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1080,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "entry_handshape": "neutral",
+      "exit_handshape": "neutral",
+      "recommended_blend_ms": 150
+    },
+    "involved_bones": [
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 320,
+        "label": "Stroke 1",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": -8,
+            "y": -18,
+            "z": -46
+          },
+          "Bip001_R_Forearm": {
+            "x": -12,
+            "y": -24,
+            "z": -84
+          },
+          "Bip001_R_Hand": {
+            "x": 14,
+            "y": 12,
+            "z": -10
+          }
+        },
+        "finger_curls": {
+          "thumb": 18,
+          "index": 12,
+          "middle": 12,
+          "ring": 12,
+          "pinky": 12
+        }
+      },
+      {
+        "time_ms": 740,
+        "label": "Stroke 2",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": -8,
+            "y": 24,
+            "z": -42
+          },
+          "Bip001_R_Forearm": {
+            "x": -16,
+            "y": -32,
+            "z": -88
+          },
+          "Bip001_R_Hand": {
+            "x": 18,
+            "y": -14,
+            "z": 8
+          }
+        },
+        "finger_curls": {
+          "thumb": 18,
+          "index": 12,
+          "middle": 12,
+          "ring": 12,
+          "pinky": 12
+        }
+      },
+      {
+        "time_ms": 1080,
+        "label": "Return Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

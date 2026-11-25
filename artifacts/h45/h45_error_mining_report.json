@@ -1,9 +1,9 @@
 {
   "milestone": "H45",
-  "generated_at": "2026-11-25T11:12:07.833Z",
+  "generated_at": "2026-11-25T12:37:50.164Z",
   "unique_normalized_tokens_ab": 325,
-  "non_exact_lexicon_mappings_count": 133,
-  "flagged_segments_count": 24,
+  "non_exact_lexicon_mappings_count": 127,
+  "flagged_segments_count": 17,
   "flagged_segments": [
     {
       "segment_id": "A06",
@@ -11,7 +11,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "which we delivered live right here in our studio.",
-      "current_gloss": "WE HERE GIVE LIVE RECORD ROOM"
+      "current_gloss": "WE PRESENTATION HERE OUR LIVE RECORD ROOM"
     },
     {
       "segment_id": "A12",
@@ -19,7 +19,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "and I'm best known for my TEDx talks,",
-      "current_gloss": "I FAMOUS BECAUSE MY FS_TEDX SAY"
+      "current_gloss": "I FAMOUS BECAUSE MY FS_TEDX SPEECH"
     },
     {
       "segment_id": "A28",
@@ -27,7 +27,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "This is, well, this is my view of you.",
-      "current_gloss": "THIS MY SEE YOU"
+      "current_gloss": "THIS MY PERSPECTIVE YOU"
     },
     {
       "segment_id": "B03",
@@ -35,7 +35,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "video or maybe you've even gone out and filmed it but I bet in the back of your mind something still",
-      "current_gloss": "VIDEO OR MAYBE YOU GO FINISH FILM BUT I YOUR MIND DEEP ONE CONTINUOUS THINK"
+      "current_gloss": "VIDEO OR MAYBE YOU GO FINISH FILM BUT I YOUR MIND DEEP SOMETHING STILL THINK"
     },
     {
       "segment_id": "B04",
@@ -43,7 +43,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "just doesn't feel right about your vlog and I'm gonna say it right now you're probably just",
-      "current_gloss": "GOOD YOUR VIDEO FEEL NOT NOW I SAY YOU THINK"
+      "current_gloss": "YOUR VIDEO FEEL GOOD NOT NOW I SAY YOU MAYBE"
     },
     {
       "segment_id": "B05",
@@ -51,15 +51,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
-      "current_gloss": "MORE THINK I ALSO VERY START HONESTY I CONTINUOUS THIS DAY DO BUT"
-    },
-    {
-      "segment_id": "B06",
-      "flags": [
-        "INCHOATIVE_COMPARATIVE_MISSED"
-      ],
-      "english": "entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
-      "current_gloss": "ALL ART STEP VIDEO VERY EASY MANY YEAR GET FINISH TODAY I"
+      "current_gloss": "MORE THINK I ALSO VERY START HONESTY I STILL THIS DAY DO BUT"
     },
     {
       "segment_id": "B07",
@@ -67,7 +59,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "wanted to share some advice about that. Things I've learned through years of trial and error on how",
-      "current_gloss": "FEW ADVICE WANT SHARE THAT MATTER I YEAR LEARN FINISH PRACTICE FAIL LEARN HOW"
+      "current_gloss": "SOME ADVICE WANT SHARE THAT THING I YEAR LEARN FINISH PRACTICE FAIL LEARN HOW"
     },
     {
       "segment_id": "B11",
@@ -75,7 +67,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "And what that means is at the core of it all you still need a good story.",
-      "current_gloss": "WHAT THAT MEAN CORE ALL YOU CONTINUOUS GOOD STORY NEED"
+      "current_gloss": "WHAT THAT MEAN CORE ALL YOU STILL GOOD STORY NEED"
     },
     {
       "segment_id": "B12",
@@ -83,48 +75,15 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "I know you are definitely tired of hearing that from everybody that story is king.",
-      "current_gloss": "I KNOW YOU VERY TIRED HEAR THAT PEOPLE THAT STORY MOST IMPORTANT"
+      "current_gloss": "I KNOW YOU VERY TIRED HEAR THAT EVERYONE THAT STORY MOST IMPORTANT"
     },
     {
       "segment_id": "B13",
       "flags": [
-        "ELLIPTICAL_PRO_VERB_DO_UNRESOLVED",
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "You have to have a story because everybody knows that and I know you do too.",
-      "current_gloss": "YOU STORY HAVE NEED BECAUSE PEOPLE KNOW THAT I KNOW YOU DO ALSO"
-    },
-    {
-      "segment_id": "B14",
-      "flags": [
-        "MULTI_CLAUSE_NEGATION_COLLAPSED"
-      ],
-      "english": "See the problem isn't that you don't know that.",
-      "current_gloss": "SEE PROBLEM THAT YOU KNOW THAT NOT"
-    },
-    {
-      "segment_id": "B15",
-      "flags": [
-        "MATRIX_NEGATION_BLEED_PAST_EMBEDDED_CLAUSE"
-      ],
-      "english": "It's that you don't know how to actually find a story in your day to tell.",
-      "current_gloss": "THAT YOU KNOW HOW FIND STORY YOUR DAY TELL NOT"
-    },
-    {
-      "segment_id": "B19",
-      "flags": [
-        "IDIOM_GOING_ON_LITERAL_GO"
-      ],
-      "english": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,",
-      "current_gloss": "WHEN COME VIDEO BECAUSE YOU DAY RECORD GO YOU SOMETIMES KNOW THAT ALL STORY NOT"
-    },
-    {
-      "segment_id": "B20",
-      "flags": [
-        "SPURIOUS_EMPHATIC_DO_VERB"
-      ],
-      "english": "but I bet you do know at least a scene or two ahead.",
-      "current_gloss": "BUT FUTURE I THINK YOU DO KNOW LITTLE SCENE OR TWO"
+      "current_gloss": "YOU STORY HAVE NEED BECAUSE EVERYONE KNOW THAT I KNOW YOU ALSO KNOW"
     },
     {
       "segment_id": "B21",
@@ -132,7 +91,7 @@
         "SPURIOUS_EMPHATIC_DO_VERB"
       ],
       "english": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,",
-      "current_gloss": "TODAY WHAT THAT MEAN MAYBE I CLEAR KNOW WHAT I DO NOT BUT I DO KNOW THAT HOUR AROUND"
+      "current_gloss": "TODAY WHAT THAT MEAN MAYBE I CLEAR KNOW WHAT I DO NOT BUT I KNOW THAT HOUR AROUND"
     },
     {
       "segment_id": "B22",
@@ -140,24 +99,15 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again",
-      "current_gloss": "I FRIEND GO MEET I SCENE BUILD THAT NEXT AFTER THAT MORE"
+      "current_gloss": "I FRIEND GO MEET I SCENE BUILD THAT NEXT AFTER THAT AGAIN"
     },
     {
       "segment_id": "B24",
       "flags": [
-        "SPURIOUS_EMPHATIC_DO_VERB",
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "But I do know that I'm hungry so I'm gonna go get some food. That's another scene",
-      "current_gloss": "BUT I DO KNOW THAT I HUNGRY I FEW FOOD GO GET THAT OTHER SCENE"
-    },
-    {
-      "segment_id": "B25",
-      "flags": [
-        "CONTRASTIVE_INSTEAD_OF_MISSING_NEGATION"
-      ],
-      "english": "So instead of stressing yourself before you start shooting of what is my story",
-      "current_gloss": "INSTEAD NERVOUS YOU BEFORE YOU START RECORD MY STORY WHAT"
+      "current_gloss": "BUT I KNOW THAT I HUNGRY I SOME FOOD GO GET THAT OTHER SCENE"
     },
     {
       "segment_id": "B26",
@@ -165,7 +115,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall",
-      "current_gloss": "ALLOW YOU LIFE LIVE MATTER SCENE STEP THINK ALSO THINK HOW SCENE JOIN ALL"
+      "current_gloss": "ALLOW YOU LIFE LIVE THING SCENE STEP THINK ALSO THINK HOW SCENE JOIN ALL"
     },
     {
       "segment_id": "B27",
@@ -173,7 +123,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "feeling that you're trying to deliver so when I'm out shooting and filming things",
-      "current_gloss": "FEEL THAT YOU TRY GIVE WHEN I MATTER RECORD"
+      "current_gloss": "FEEL THAT YOU TRY SHOW WHEN I THING RECORD"
     },
     {
       "segment_id": "B28",
@@ -181,7 +131,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "I always try and think is this just a shot that I'm getting because it looks cool",
-      "current_gloss": "I CONTINUOUS TRY THINK THIS ONLY PICTURE THAT I GET BECAUSE COOL LOOK"
+      "current_gloss": "I ALWAYS TRY THINK THIS ONLY PICTURE THAT I GET BECAUSE COOL LOOK"
     },
     {
       "segment_id": "B30",
@@ -189,15 +139,7 @@
         "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
       ],
       "english": "I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,",
-      "current_gloss": "I LITTLE BIT MORE NEED BUILD MOST USUALLY I ALSO COMMUNICATION FEW RECORD SAY"
-    },
-    {
-      "segment_id": "B31",
-      "flags": [
-        "IDIOM_GOING_ON_LITERAL_GO"
-      ],
-      "english": "I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell.",
-      "current_gloss": "I CLEAR CAMERA SAY EXPLAIN WHAT GO MANY PEOPLE TELL YOU THAT FILM YOU WANT SHOW MORE SAY LESS"
+      "current_gloss": "I LITTLE BIT MORE NEED BUILD MOST USUALLY I ALSO SOME COMMUNICATION SOME RECORD SAY"
     }
   ],
   "non_exact_mappings": {
@@ -229,25 +171,11 @@
         "B29: or is this an actual scene if it's a scene"
       ]
     },
-    "again": {
-      "mapped_gloss": "MORE",
-      "disk_sign_exists_for_source": false,
-      "contexts": [
-        "B22: I'm gonna go meet up with a friend so I can build a scene around that and then after that again"
-      ]
-    },
     "ahead": {
       "mapped_gloss": "FUTURE",
       "disk_sign_exists_for_source": false,
       "contexts": [
         "B20: but I bet you do know at least a scene or two ahead."
-      ]
-    },
-    "always": {
-      "mapped_gloss": "CONTINUOUS",
-      "disk_sign_exists_for_source": false,
-      "contexts": [
-        "B28: I always try and think is this just a shot that I'm getting because it looks cool"
       ]
     },
     "another": {
@@ -465,7 +393,7 @@
       ]
     },
     "documenting": {
-      "mapped_gloss": "MOVIE",
+      "mapped_gloss": "RECORD",
       "disk_sign_exists_for_source": false,
       "contexts": [
         "B02: start vlogging and documenting your life. Maybe you've just sat down and scripted out your first"
@@ -507,7 +435,7 @@
       ]
     },
     "everybody": {
-      "mapped_gloss": "PEOPLE",
+      "mapped_gloss": "EVERYONE",
       "disk_sign_exists_for_source": false,
       "contexts": [
         "B12: I know you are definitely tired of hearing that from everybody that story is king.",
@@ -794,13 +722,6 @@
         "B01: Alright, so summer is here and in my opinion that's really the best time to go out, start filming,"
       ]
     },
-    "our": {
-      "mapped_gloss": "WE",
-      "disk_sign_exists_for_source": false,
-      "contexts": [
-        "A06: which we delivered live right here in our studio."
-      ]
-    },
     "overall": {
       "mapped_gloss": "ALL",
       "disk_sign_exists_for_source": false,
@@ -859,7 +780,7 @@
       ]
     },
     "probably": {
-      "mapped_gloss": "THINK",
+      "mapped_gloss": "MAYBE",
       "disk_sign_exists_for_source": false,
       "contexts": [
         "B04: just doesn't feel right about your vlog and I'm gonna say it right now you're probably just"
@@ -943,28 +864,11 @@
         "A18: and Disney and storytelling and presentation skills, and the beautiful science of holding an audience's"
       ]
     },
-    "some": {
-      "mapped_gloss": "FEW",
-      "disk_sign_exists_for_source": false,
-      "contexts": [
-        "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how",
-        "B24: But I do know that I'm hungry so I'm gonna go get some food. That's another scene",
-        "B30: I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,",
-        "B30: I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,"
-      ]
-    },
     "someone": {
       "mapped_gloss": "SOMEBODY",
       "disk_sign_exists_for_source": false,
       "contexts": [
         "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
-      ]
-    },
-    "something": {
-      "mapped_gloss": "ONE",
-      "disk_sign_exists_for_source": false,
-      "contexts": [
-        "B03: video or maybe you've even gone out and filmed it but I bet in the back of your mind something still"
       ]
     },
     "speakers": {
@@ -988,15 +892,6 @@
       "disk_sign_exists_for_source": false,
       "contexts": [
         "A03: and bring you a few steps closer to being more confident, more clear,"
-      ]
-    },
-    "still": {
-      "mapped_gloss": "CONTINUOUS",
-      "disk_sign_exists_for_source": false,
-      "contexts": [
-        "B03: video or maybe you've even gone out and filmed it but I bet in the back of your mind something still",
-        "B05: overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
-        "B11: And what that means is at the core of it all you still need a good story."
       ]
     },
     "stitched": {
@@ -1070,7 +965,7 @@
       ]
     },
     "things": {
-      "mapped_gloss": "MATTER",
+      "mapped_gloss": "THING",
       "disk_sign_exists_for_source": false,
       "contexts": [
         "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how",
@@ -1115,7 +1010,7 @@
       ]
     },
     "view": {
-      "mapped_gloss": "SEE",
+      "mapped_gloss": "PERSPECTIVE",
       "disk_sign_exists_for_source": false,
       "contexts": [
         "A28: This is, well, this is my view of you."

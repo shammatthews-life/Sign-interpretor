@@ -1,11 +1,11 @@
 {
   "milestone": "H44",
-  "evaluated_at": "2026-11-25T10:47:08.969Z",
+  "evaluated_at": "2026-11-25T12:37:49.736Z",
   "independent_proposition_evaluation_ab": {
     "total_segments": 60,
     "proposition_slot_recall_pct": 100,
-    "matched_slots": 459,
-    "total_slots": 459,
+    "matched_slots": 461,
+    "total_slots": 461,
     "polarity_preservation_pct": 100,
     "syntactic_order_accuracy_pct": 100,
     "relation_aspect_preservation_pct": 100,

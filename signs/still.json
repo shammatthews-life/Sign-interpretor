@@ -1,0 +1,153 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "still",
+  "metadata": {
+    "display_name": "Still",
+    "gloss": "STILL",
+    "language": "ISL",
+    "lexical_type": "ISL Lexical Sign",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "provenance_tier": "h45_islrtc_discourse_lexicon",
+    "motion_distinctness": "unique_trajectory",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC temporal persistence marker: Y-hand/flat palm sliding smoothly forward from chest level (STILL / EVEN NOW)."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1040,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "entry_handshape": "neutral",
+      "exit_handshape": "neutral",
+      "recommended_blend_ms": 150
+    },
+    "involved_bones": [
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 300,
+        "label": "Stroke 1",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": -10,
+            "y": 10,
+            "z": -42
+          },
+          "Bip001_R_Forearm": {
+            "x": -8,
+            "y": -26,
+            "z": -80
+          },
+          "Bip001_R_Hand": {
+            "x": 4,
+            "y": 14,
+            "z": -16
+          }
+        },
+        "finger_curls": {
+          "thumb": 10,
+          "index": 86,
+          "middle": 86,
+          "ring": 86,
+          "pinky": 8
+        }
+      },
+      {
+        "time_ms": 700,
+        "label": "Stroke 2",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": -24,
+            "y": -14,
+            "z": -56
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -10,
+            "z": -52
+          },
+          "Bip001_R_Hand": {
+            "x": -8,
+            "y": 8,
+            "z": -8
+          }
+        },
+        "finger_curls": {
+          "thumb": 10,
+          "index": 86,
+          "middle": 86,
+          "ring": 86,
+          "pinky": 8
+        }
+      },
+      {
+        "time_ms": 1040,
+        "label": "Return Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

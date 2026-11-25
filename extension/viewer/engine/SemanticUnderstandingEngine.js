@@ -1,13 +1,15 @@
 /**
  * tools/avatar_viewer/SemanticUnderstandingEngine.js
  *
- * H44 Workstream 5: Intermediate Semantic Representation (ISR 3.0) Engine
+ * H45 Workstream 5: Intermediate Semantic Representation (ISR 4.0) Engine
  *
  * Segments utterances while preserving coordinated noun objects ("a pen and a paper"),
+ * isolates multi-clause negation & complement boundaries ("The problem isn't | that you don't know",
+ * "I didn't say | you failed"), anchors matrix negation over embedded infinitives,
  * distinguishes matrix WH-questions from free-relative/pseudo-cleft clauses (Aboh, Pfau & Zeshan 2005),
- * separates idiomatic contrast ("show not tell") from negative polarity, resolves polysemous
- * context senses ("rest of" -> REMAINING, "just a" -> ONLY, "feel right" -> GOOD),
- * and emits clause-level proposition & non-manual marker frames.
+ * separates idiomatic contrast ("show not tell") from negative polarity while negating
+ * contrastive replacement ("instead of X" -> X NOT), models emphatic DO via HEAD_NOD_EMPHATIC,
+ * resolves contextual word senses & inchoative comparatives, and emits proposition & NMM frames.
  */
 
 const PAST_PARTICIPLES = new Set([
@@ -38,7 +40,9 @@ const FINITE_VERB_HINTS = new Set([
   'go', 'goes', 'went', 'know', 'knows', 'think', 'say', 'tell', 'explain',
   'filmed', 'scripted', 'started', 'start', 'begin', 'finish', 'bring', 'meet',
   'make', 'build', 'find', 'show', 'see', 'look', 'feel', 'need', 'want', 'live',
-  'walk', 'lean', 'allow', 'overcome', 'delivered', 'coached', 'gathered'
+  'walk', 'lean', 'allow', 'overcome', 'delivered', 'coached', 'gathered',
+  'fail', 'failed', 'finish', 'finished', 'rain', 'rained', 'help', 'helped',
+  'learn', 'learned', 'write', 'wrote', 'study', 'studied', 'love', 'loves'
 ]);
 
 const CLAUSE_CONJUNCTIONS = new Set([
@@ -158,6 +162,40 @@ export class SemanticUnderstandingEngine {
         }
       }
 
+      // Split complement 'that'-clauses when matrix clause carries negation or reporting predicate ("isn't that you don't know")
+      if (lower === 'that' && currentClauseTokens.length >= 2) {
+        const leftText = currentClauseTokens.join(' ').toLowerCase();
+        const hasMatrixGate = /\b(isn't|aren't|wasn't|weren't|not|say|said|know|think|mean|means|bet)\b/.test(leftText);
+        if (hasMatrixGate && this._rightSideHasClausePredicate(rawTokens, i + 1)) {
+          clauses.push({ conjunction: currentConjunction, tokens: [...currentClauseTokens], punctuation: null });
+          currentClauseTokens = [];
+          currentConjunction = null;
+          continue;
+        }
+      }
+
+      // Split zero-that finite complements after reporting verbs ("I didn't say | you failed", "I think | you didn't")
+      if (['i', 'you', 'we', 'they', 'he', 'she'].includes(lower) && currentClauseTokens.length >= 2) {
+        const prevLower = (currentClauseTokens[currentClauseTokens.length - 1] || '').toLowerCase().replace(/[^a-z']/g, '');
+        if (['say', 'said', 'think', 'thought', 'know', 'knew', 'bet'].includes(prevLower)
+          && this._rightSideHasClausePredicate(rawTokens, i)) {
+          clauses.push({ conjunction: currentConjunction, tokens: [...currentClauseTokens], punctuation: null });
+          currentClauseTokens = [];
+          currentConjunction = null;
+        }
+      }
+
+      // Split negated cognitive verb before WH-complement clause ("I don't know exactly | what I'm up to")
+      if (['what', 'where', 'how'].includes(lower) && currentClauseTokens.length >= 3) {
+        const leftText = currentClauseTokens.join(' ').toLowerCase();
+        if (/\b(don't|doesn't|didn't|not)\s+(know|remember|understand)\b/.test(leftText)
+          && this._rightSideHasClausePredicate(rawTokens, i + 1)) {
+          clauses.push({ conjunction: currentConjunction, tokens: [...currentClauseTokens], punctuation: null });
+          currentClauseTokens = [];
+          currentConjunction = null;
+        }
+      }
+
       // Split embedded quoted direct WH-questions after "of" (e.g., "shooting of what is my story")
       if (lower === 'of' && currentClauseTokens.length >= 2) {
         const nextLower = (rawTokens[i + 1] || '').toLowerCase();
@@ -248,14 +286,20 @@ export class SemanticUnderstandingEngine {
       modal = 'FUTURE_INTENT';
     }
 
-    // 5. Clause-Scoped Polarity: exclude contrastive idioms like "show not tell" and "not only"
+    // 5. Clause-Scoped Polarity: exclude contrastive idioms like "show not tell" and "not only",
+    //    while recognizing "unless" and contrastive replacement "instead of X" as negative scope.
     const cleanForNeg = rawText.replace(/\bshow\s*,?\s*not\s+tell\b/gi, '').replace(/\bnot\s+only\b/gi, '');
     const idiomaticNegConsumed = /\bshow\s*,?\s*not\s+tell\b/i.test(rawText);
     const negRe = /\b(not|never|no|cannot|don't|doesn't|didn't|isn't|aren't|wasn't|weren't|haven't|hasn't|hadn't|won't|wouldn't|can't|couldn't|shouldn't)\b/i;
     const privativeRe = /\bwithout\b/i;
-    const hasNegation = negRe.test(cleanForNeg) || /\bunless\b/i.test(rawText);
+    const isContrastiveInsteadOf = /\binstead\s+of\b/i.test(rawText);
+    const hasNegation = negRe.test(cleanForNeg) || /\bunless\b/i.test(rawText) || isContrastiveInsteadOf;
     const hasPrivative = privativeRe.test(rawText);
     const polarity = hasNegation ? 'NEGATIVE' : (hasPrivative ? 'PRIVATIVE' : 'AFFIRMATIVE');
+    const negationAnchor = (hasNegation && /\b(don't|doesn't|didn't)\s+know\s+(how|what|where|why)\s+to\b/i.test(rawText))
+      ? 'MATRIX_VERB'
+      : 'CLAUSE_FINAL';
+    const isEmphaticDo = /\b(do|does)\s+(know|need|want|think|believe|feel|understand|like|love)\b/i.test(rawText);
 
     // 6. Strict Aspect Analysis: PERFECTIVE_COMPLETED on have/has/had/'ve + Past Participle
     let aspect = 'NEUTRAL';
@@ -313,6 +357,30 @@ export class SemanticUnderstandingEngine {
         contextualOverrides.left = remainingCue ? 'REMAINING' : (spatialCue ? 'LEFT' : 'LEAVE');
       } else if (tok === 'too') {
         contextualOverrides.too = 'ALSO';
+      } else if (tok === 'still') {
+        contextualOverrides.still = 'STILL';
+      } else if (tok === 'always') {
+        contextualOverrides.always = 'ALWAYS';
+      } else if (tok === 'straight' && next === 'to') {
+        contextualOverrides.straight = 'DIRECT';
+      } else if (tok === 'view') {
+        const nomCue = ['my', 'your', 'our', 'his', 'her', 'a', 'the', 'this', 'point', 'of'].includes(prev);
+        contextualOverrides.view = nomCue ? 'PERSPECTIVE' : 'SEE';
+      } else if (tok === 'talks') {
+        const nomCue = ['my', 'your', 'our', 'tedx', 'the', 'his', 'her', 'many', 'great', 'these', 'those'].includes(prev);
+        contextualOverrides.talks = nomCue ? 'SPEECH' : 'SAY';
+      } else if (tok === 'deliver' || tok === 'delivered') {
+        const speechCue = /\b(live|studio|speech|talk|presentation)\b/i.test(fullUtteranceLower || rawText);
+        const feelCue = /\b(feeling|emotion|message|idea)\b/i.test(fullUtteranceLower || rawText);
+        contextualOverrides[tok] = speechCue ? 'PRESENTATION' : (feelCue ? 'SHOW' : 'GIVE');
+      } else if (['get', 'gets', 'getting', 'gotten'].includes(tok)) {
+        const lookAhead = lowerTokens.slice(i + 1, i + 4).map(t => t.replace(/[^a-z]/g, ''));
+        const adjComparatives = new Set(['easier', 'better', 'harder', 'worse', 'bigger', 'warmer', 'colder', 'closer', 'clearer', 'stronger']);
+        if (lookAhead.some(w => adjComparatives.has(w))) {
+          contextualOverrides[tok] = 'BECOME';
+        }
+      } else if (tok === 'do' && ['i', 'you', 'we', 'they'].includes(prev) && (next === 'too' || !next)) {
+        contextualOverrides.do = /\bknow\b/i.test(fullUtteranceLower || '') ? 'KNOW' : '__OMIT__';
       }
     }
 
@@ -322,6 +390,7 @@ export class SemanticUnderstandingEngine {
     else if (isYesNoQuestion) clauseNMMs.push('BROW_RAISE_YN');
     if (clauseType === 'CONDITIONAL_PROTASIS') clauseNMMs.push('BROW_RAISE_CONDITIONAL_TOPIC');
     if (hasNegation) clauseNMMs.push('HEADSHAKE_NEGATION');
+    if (isEmphaticDo) clauseNMMs.push('HEAD_NOD_EMPHATIC');
 
     return {
       clause_index: clauseIndex,
@@ -331,6 +400,9 @@ export class SemanticUnderstandingEngine {
       discourse_act: discourseAct,
       is_matrix_wh_question: isMatrixWhQuestion,
       idiomatic_negation_consumed: idiomaticNegConsumed,
+      is_contrastive_instead_of: isContrastiveInsteadOf,
+      is_emphatic_do: isEmphaticDo,
+      negation_anchor: negationAnchor,
       clause_type: clauseType,
       subject,
       subject_index: sIdx,
@@ -374,7 +446,7 @@ export class SemanticUnderstandingEngine {
     }));
 
     return {
-      schema: 'ISL_ISR_3.0',
+      schema: 'ISL_ISR_4.0',
       source_text: text,
       clause_count: parsedClauses.length,
       overall_discourse_act: overallAct,

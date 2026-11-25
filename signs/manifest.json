@@ -1,10 +1,10 @@
 {
   "manifest_version": "2.5.0",
   "schema_version": "2.0.0",
-  "generated_at": "2026-11-25T10:47:07.440Z",
+  "generated_at": "2026-11-25T12:34:29.445Z",
   "phase": "H38",
-  "total_signs": 635,
-  "total_playable_signs": 635,
+  "total_signs": 647,
+  "total_playable_signs": 647,
   "signs": [
     {
       "sign_id": "ability",
@@ -216,6 +216,25 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "again",
+      "display_name": "Again / Repeat",
+      "gloss": "AGAIN",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1060,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "again.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
+    },
+    {
       "sign_id": "ago",
       "display_name": "Ago",
       "gloss": "AGO",
@@ -347,6 +366,25 @@
       "file_name": "also.json",
       "involved_bones_count": 9,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "always",
+      "display_name": "Always",
+      "gloss": "ALWAYS",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1120,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "always.json",
+      "involved_bones_count": 3,
+      "keyframe_count": 4
     },
     {
       "sign_id": "amount",
@@ -898,6 +936,25 @@
       "file_name": "because.json",
       "involved_bones_count": 5,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "become",
+      "display_name": "Become",
+      "gloss": "BECOME",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1100,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "become.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
     },
     {
       "sign_id": "before",
@@ -2193,6 +2250,25 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "continue",
+      "display_name": "Continue / Ongoing",
+      "gloss": "CONTINUE",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1120,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "continue.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
+    },
+    {
       "sign_id": "continuous",
       "display_name": "Continuous",
       "gloss": "CONTINUOUS",
@@ -2687,6 +2763,25 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "direct",
+      "display_name": "Direct / Straight To",
+      "gloss": "DIRECT",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 980,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "direct.json",
+      "involved_bones_count": 3,
+      "keyframe_count": 4
+    },
+    {
       "sign_id": "direction",
       "display_name": "Direction",
       "gloss": "DIRECTION",
@@ -3160,6 +3255,25 @@
       "file_name": "everyday.json",
       "involved_bones_count": 4,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "everyone",
+      "display_name": "Everyone / Everybody",
+      "gloss": "EVERYONE",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1180,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "everyone.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
     },
     {
       "sign_id": "everything",
@@ -7326,6 +7440,25 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "our",
+      "display_name": "Our",
+      "gloss": "OUR",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1080,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "our.json",
+      "involved_bones_count": 3,
+      "keyframe_count": 4
+    },
+    {
       "sign_id": "outside",
       "display_name": "Outside",
       "gloss": "OUTSIDE",
@@ -8331,6 +8464,25 @@
       "file_name": "quite.json",
       "involved_bones_count": 6,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "rain",
+      "display_name": "Rain",
+      "gloss": "RAIN",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1100,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "rain.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
     },
     {
       "sign_id": "range",
@@ -9682,6 +9834,25 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "some",
+      "display_name": "Some",
+      "gloss": "SOME",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1020,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "some.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
+    },
+    {
       "sign_id": "somebody",
       "display_name": "Somebody",
       "gloss": "SOMEBODY",
@@ -9699,6 +9870,25 @@
       "file_name": "somebody.json",
       "involved_bones_count": 4,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "something",
+      "display_name": "Something",
+      "gloss": "SOMETHING",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 980,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "something.json",
+      "involved_bones_count": 3,
+      "keyframe_count": 4
     },
     {
       "sign_id": "sometimes",
@@ -10041,6 +10231,25 @@
       "file_name": "step.json",
       "involved_bones_count": 4,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "still",
+      "display_name": "Still",
+      "gloss": "STILL",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1040,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "still.json",
+      "involved_bones_count": 3,
+      "keyframe_count": 4
     },
     {
       "sign_id": "stop",
@@ -10516,6 +10725,25 @@
       "file_name": "they.json",
       "involved_bones_count": 5,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "thing",
+      "display_name": "Thing",
+      "gloss": "THING",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 960,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h45_islrtc_discourse_lexicon",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "thing.json",
+      "involved_bones_count": 3,
+      "keyframe_count": 4
     },
     {
       "sign_id": "think",

@@ -77,7 +77,7 @@
     { "id": "C73", "category": "domain_b_regression", "input": "Tell a greater and broader story.", "must_include": ["MORE", "BIG", "STORY", "TELL"], "order": [["STORY", "TELL"]], "must_exclude": [], "nmm": null },
     { "id": "C74", "category": "domain_b_regression", "input": "I'll also capture some dialogue, some talking.", "must_include": ["I", "ALSO", "COMMUNICATION", "RECORD"], "order": [], "must_exclude": ["HOLD"], "nmm": null },
     { "id": "C75", "category": "general_isl_greeting", "input": "Hello friend, how are you?", "must_include": ["HELLO", "FRIEND", "YOU", "HOW"], "order": [["YOU", "HOW"]], "must_exclude": [], "nmm": "NMM-WH-BROW-FURROW" },
-    { "id": "C76", "category": "general_isl_locative", "input": "We delivered live right here in our studio.", "must_include": ["WE", "HERE", "GIVE", "LIVE", "RECORD", "ROOM"], "order": [], "must_exclude": [], "nmm": null },
+    { "id": "C76", "category": "general_isl_locative", "input": "We delivered live right here in our studio.", "must_include": ["WE", "HERE", "PRESENTATION", "LIVE", "OUR", "RECORD", "ROOM"], "order": [], "must_exclude": ["GIVE"], "nmm": null },
     { "id": "C77", "category": "general_isl_privative", "input": "Learn public speaking without fear.", "must_include": ["LEARN", "PUBLIC", "WITHOUT", "FEAR"], "order": [], "must_exclude": ["NOT"], "nmm": null },
     { "id": "C78", "category": "general_isl_aspect_neg", "input": "I have not finished my video yet.", "must_include": ["I", "MY", "VIDEO", "NOT"], "order": [["VIDEO", "NOT"]], "must_exclude": [], "nmm": "NMM-NEG-HEADSHAKE" }
   ]
