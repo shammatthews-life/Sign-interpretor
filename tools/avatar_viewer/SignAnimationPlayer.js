@@ -39,6 +39,8 @@ export class SignAnimationPlayer {
     // Cache initial bind pose rotations and positions for safe restoration
     this.restRotations = new Map();
     this.restPositions = new Map();
+    this._entryPoseSnapshot = null;
+    this._entryBlendMs = 0;
 
     if (this.avatarModel) {
       this.avatarModel.traverse(c => {
@@ -50,13 +52,39 @@ export class SignAnimationPlayer {
     }
   }
 
-  loadSign(signData) {
+  _capturePoseSnapshot() {
+    const snap = new Map();
+    if (!this.bonesMap) return snap;
+    this.bonesMap.forEach((bone, name) => {
+      const rest = this.restRotations.get(name);
+      if (!rest || !bone?.rotation) return;
+      const dx = bone.rotation.x - rest.x;
+      const dy = bone.rotation.y - rest.y;
+      const dz = bone.rotation.z - rest.z;
+      if (Math.abs(dx) > 1e-4 || Math.abs(dy) > 1e-4 || Math.abs(dz) > 1e-4) {
+        snap.set(name, { dx, dy, dz });
+      }
+    });
+    return snap;
+  }
+
+  loadSign(signData, options = {}) {
+    const blend = Boolean(options && options.blendFromCurrentPose);
+    this._entryPoseSnapshot = blend ? this._capturePoseSnapshot() : null;
+    const hintMs = Number(options?.blendMs ?? signData?.transition_hints?.recommended_blend_ms ?? 160);
+    const durMs = Number(signData?.duration_ms ?? 1000);
+    this._entryBlendMs = (blend && this._entryPoseSnapshot.size > 0 && Number.isFinite(hintMs) && hintMs > 0)
+      ? Math.min(hintMs, durMs * 0.3)
+      : 0;
+
     this.currentSign = signData;
     this.currentTimeMs = 0;
     this.isPlaying = false;
     this.isPaused = false;
     this._precomputeSign(signData);
-    this.resetNeutral();
+    if (!blend) {
+      this.resetNeutral();
+    }
     if (this.onFrameCallback) this.onFrameCallback(this.getState());
   }
 
@@ -236,17 +264,29 @@ export class SignAnimationPlayer {
 
     // Interpolate rotational deltas for all involved skeleton bones (H30 Zero-Allocation Fast Path)
     const boneDeltas = k0._optimizedBones;
+    const entryBlendActive = Boolean(this._entryPoseSnapshot && this._entryBlendMs > 0 && timeMs < this._entryBlendMs);
+    const entryWeight = entryBlendActive
+      ? (1.0 - Easing.easeInOutQuad(Math.max(0, Math.min(1.0, timeMs / this._entryBlendMs))))
+      : 0.0;
+    const appliedBones = entryBlendActive ? new Set() : null;
+
     if (boneDeltas) {
       for (let j = 0; j < boneDeltas.length; j++) {
         const bd = boneDeltas[j];
         const bone = this.bonesMap.get(bd.name);
         const rest = this.restRotations.get(bd.name);
         if (bone && rest) {
-          bone.rotation.set(
-            rest.x + bd.r0x + bd.dx * alpha,
-            rest.y + bd.r0y + bd.dy * alpha,
-            rest.z + bd.r0z + bd.dz * alpha
-          );
+          let tx = bd.r0x + bd.dx * alpha;
+          let ty = bd.r0y + bd.dy * alpha;
+          let tz = bd.r0z + bd.dz * alpha;
+          if (entryBlendActive) {
+            appliedBones.add(bd.name);
+            const prev = this._entryPoseSnapshot.get(bd.name) || { dx: 0, dy: 0, dz: 0 };
+            tx = prev.dx * entryWeight + tx * (1 - entryWeight);
+            ty = prev.dy * entryWeight + ty * (1 - entryWeight);
+            tz = prev.dz * entryWeight + tz * (1 - entryWeight);
+          }
+          bone.rotation.set(rest.x + tx, rest.y + ty, rest.z + tz);
         }
       }
     } else {
@@ -260,10 +300,32 @@ export class SignAnimationPlayer {
         if (!bone || !rest) return;
         const r0 = (k0.rotations && k0.rotations[bName]) || { x: 0, y: 0, z: 0 };
         const r1 = (k1.rotations && k1.rotations[bName]) || { x: 0, y: 0, z: 0 };
-        const dx = THREE.MathUtils.degToRad(r0.x + (r1.x - r0.x) * alpha);
-        const dy = THREE.MathUtils.degToRad(r0.y + (r1.y - r0.y) * alpha);
-        const dz = THREE.MathUtils.degToRad(r0.z + (r1.z - r0.z) * alpha);
+        let dx = THREE.MathUtils.degToRad(r0.x + (r1.x - r0.x) * alpha);
+        let dy = THREE.MathUtils.degToRad(r0.y + (r1.y - r0.y) * alpha);
+        let dz = THREE.MathUtils.degToRad(r0.z + (r1.z - r0.z) * alpha);
+        if (entryBlendActive) {
+          appliedBones.add(bName);
+          const prev = this._entryPoseSnapshot.get(bName) || { dx: 0, dy: 0, dz: 0 };
+          dx = prev.dx * entryWeight + dx * (1 - entryWeight);
+          dy = prev.dy * entryWeight + dy * (1 - entryWeight);
+          dz = prev.dz * entryWeight + dz * (1 - entryWeight);
+        }
         bone.rotation.set(rest.x + dx, rest.y + dy, rest.z + dz);
+      });
+    }
+
+    if (entryBlendActive) {
+      this._entryPoseSnapshot.forEach((prev, bName) => {
+        if (appliedBones.has(bName)) return;
+        const bone = this.bonesMap.get(bName);
+        const rest = this.restRotations.get(bName);
+        if (bone && rest) {
+          bone.rotation.set(
+            rest.x + prev.dx * entryWeight,
+            rest.y + prev.dy * entryWeight,
+            rest.z + prev.dz * entryWeight
+          );
+        }
       });
     }
 

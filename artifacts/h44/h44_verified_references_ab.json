@@ -1,0 +1,93 @@
+{
+  "milestone": "H44",
+  "window_seconds": 120.0,
+  "verification_method": "cross_checked_en_orig_vtt_and_multi_model_whisper_audit",
+  "videos": {
+    "MXKkXXYUxBc": {
+      "video_id": "MXKkXXYUxBc",
+      "title": "Public Speaking for Beginners - Free Full Course | Speak with Confidence",
+      "corrections_from_h42": [
+        "seg02: restored missing spoken word 'nervous' ('uncertain, nervous, anxious, afraid')",
+        "seg10: corrected 'excellence communication' -> 'excellent communication'",
+        "seg19: corrected 'audience attention' -> \"audience's attention\"",
+        "seg20: removed ASR boundary stutter 'I've I've' -> \"I've\""
+      ],
+      "segments": [
+        { "id": "A01", "start": 2.45, "end": 8.45, "text": "This is public speaking for beginners, and the goal of this video is simple." },
+        { "id": "A02", "start": 8.45, "end": 14.45, "text": "It's to help you overcome being uncertain, nervous, anxious, afraid," },
+        { "id": "A03", "start": 14.45, "end": 21.45, "text": "and bring you a few steps closer to being more confident, more clear," },
+        { "id": "A04", "start": 21.45, "end": 24.45, "text": "and a much more captivating speaker." },
+        { "id": "A05", "start": 24.45, "end": 30.45, "text": "What you're about to watch is a special compilation of a three-day public speaking challenge" },
+        { "id": "A06", "start": 30.45, "end": 34.25, "text": "which we delivered live right here in our studio." },
+        { "id": "A07", "start": 34.25, "end": 37.33, "text": "We'll begin with mindset and confidence." },
+        { "id": "A08", "start": 37.33, "end": 40.21, "text": "We'll move into the science of capturing attention," },
+        { "id": "A09", "start": 40.21, "end": 43.77, "text": "and we'll finish off with the most impactful delivery skills" },
+        { "id": "A10", "start": 43.77, "end": 47.81, "text": "from the 110-step chart of excellent communication." },
+        { "id": "A11", "start": 49.37, "end": 52.85, "text": "Hey, if we haven't met before, my name is David JP Phillips," },
+        { "id": "A12", "start": 52.85, "end": 54.73, "text": "and I'm best known for my TEDx talks," },
+        { "id": "A13", "start": 54.73, "end": 57.01, "text": "which are among the most viewed in the world" },
+        { "id": "A14", "start": 57.01, "end": 58.53, "text": "on this particular subject." },
+        { "id": "A15", "start": 58.53, "end": 65.01, "text": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker." },
+        { "id": "A16", "start": 65.01, "end": 69.49, "text": "And this chart is one of the results of that particular endeavour." },
+        { "id": "A17", "start": 69.49, "end": 74.29, "text": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google," },
+        { "id": "A18", "start": 74.29, "end": 80.45, "text": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience's" },
+        { "id": "A19", "start": 80.45, "end": 86.61, "text": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools" },
+        { "id": "A20", "start": 86.61, "end": 89.53, "text": "I've gathered during my 25 year career as a public speaker" },
+        { "id": "A21", "start": 89.53, "end": 91.69, "text": "and public speaking coach." },
+        { "id": "A22", "start": 91.69, "end": 95.33, "text": "So make sure you have a pen and a paper," },
+        { "id": "A23", "start": 95.33, "end": 98.93, "text": "lean in and you'll walk away with practical tools" },
+        { "id": "A24", "start": 98.93, "end": 101.81, "text": "you can apply tomorrow." },
+        { "id": "A25", "start": 101.81, "end": 107.03, "text": "Have fun." },
+        { "id": "A26", "start": 107.03, "end": 110.79, "text": "Welcome beautiful people all around the world" },
+        { "id": "A27", "start": 110.79, "end": 114.03, "text": "to the lovely country of Sweden." },
+        { "id": "A28", "start": 114.03, "end": 116.63, "text": "This is, well, this is my view of you." },
+        { "id": "A29", "start": 116.63, "end": 118.95, "text": "There's pictures all over the place." }
+      ]
+    },
+    "y8tFSuOMAqQ": {
+      "video_id": "y8tFSuOMAqQ",
+      "title": "How to Vlog as a Beginner (without overthinking it)",
+      "corrections_from_h42": [
+        "seg03: restored \"you've\" ('maybe you've even gone out')",
+        "seg11: corrected 'that the core' -> 'at the core'",
+        "seg17: corrected 'future films' -> 'feature films'",
+        "seg19: corrected 'over-arching' -> 'overarching'",
+        "seg26: corrected 'seen by scene' -> 'scene by scene'",
+        "seg30: corrected \"it'll also capture some dialogues. I'm talking\" -> \"I'll also capture some dialogue, some talking,\""
+      ],
+      "segments": [
+        { "id": "B01", "start": 0.0, "end": 3.84, "text": "Alright, so summer is here and in my opinion that's really the best time to go out, start filming," },
+        { "id": "B02", "start": 3.84, "end": 7.68, "text": "start vlogging and documenting your life. Maybe you've just sat down and scripted out your first" },
+        { "id": "B03", "start": 7.68, "end": 12.24, "text": "video or maybe you've even gone out and filmed it but I bet in the back of your mind something still" },
+        { "id": "B04", "start": 12.24, "end": 15.68, "text": "just doesn't feel right about your vlog and I'm gonna say it right now you're probably just" },
+        { "id": "B05", "start": 15.68, "end": 20.32, "text": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the" },
+        { "id": "B06", "start": 20.32, "end": 24.48, "text": "entire creative process for vlogging has definitely gotten a lot easier over the years so today I" },
+        { "id": "B07", "start": 24.48, "end": 28.64, "text": "wanted to share some advice about that. Things I've learned through years of trial and error on how" },
+        { "id": "B08", "start": 28.64, "end": 32.56, "text": "you can go about your day and start vlogging your life without completely overcomplicating" },
+        { "id": "B09", "start": 32.56, "end": 37.32, "text": "the process as a beginner." },
+        { "id": "B10", "start": 37.32, "end": 41.56, "text": "So essentially a vlog is just a very loosely defined short film." },
+        { "id": "B11", "start": 41.56, "end": 45.20, "text": "And what that means is at the core of it all you still need a good story." },
+        { "id": "B12", "start": 45.20, "end": 48.48, "text": "I know you are definitely tired of hearing that from everybody that story is king." },
+        { "id": "B13", "start": 48.48, "end": 51.56, "text": "You have to have a story because everybody knows that and I know you do too." },
+        { "id": "B14", "start": 51.56, "end": 53.24, "text": "See the problem isn't that you don't know that." },
+        { "id": "B15", "start": 53.24, "end": 57.08, "text": "It's that you don't know how to actually find a story in your day to tell." },
+        { "id": "B16", "start": 57.08, "end": 62.68, "text": "So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie." },
+        { "id": "B17", "start": 62.68, "end": 67.58, "text": "And just like short films, feature films, documentaries, what you really need to think about are scenes." },
+        { "id": "B18", "start": 67.58, "end": 73.58, "text": "Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story." },
+        { "id": "B19", "start": 73.58, "end": 78.38, "text": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story," },
+        { "id": "B20", "start": 78.38, "end": 81.48, "text": "but I bet you do know at least a scene or two ahead." },
+        { "id": "B21", "start": 81.48, "end": 85.88, "text": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so," },
+        { "id": "B22", "start": 85.88, "end": 89.80, "text": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again" },
+        { "id": "B23", "start": 89.80, "end": 91.68, "text": "I might not know what I'm gonna do for the rest of the evening" },
+        { "id": "B24", "start": 91.68, "end": 95.24, "text": "But I do know that I'm hungry so I'm gonna go get some food. That's another scene" },
+        { "id": "B25", "start": 95.24, "end": 98.52, "text": "So instead of stressing yourself before you start shooting of what is my story" },
+        { "id": "B26", "start": 98.56, "end": 105.04, "text": "Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall" },
+        { "id": "B27", "start": 105.04, "end": 107.92, "text": "feeling that you're trying to deliver so when I'm out shooting and filming things" },
+        { "id": "B28", "start": 107.92, "end": 111.12, "text": "I always try and think is this just a shot that I'm getting because it looks cool" },
+        { "id": "B29", "start": 111.12, "end": 113.40, "text": "or is this an actual scene if it's a scene" },
+        { "id": "B30", "start": 113.40, "end": 117.48, "text": "I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking," },
+        { "id": "B31", "start": 117.48, "end": 120.00, "text": "I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell." }
+      ]
+    }
+  }
+}

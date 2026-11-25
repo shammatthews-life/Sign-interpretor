@@ -154,7 +154,8 @@ export class SignScheduler {
           this.player.playbackSpeed = 1.0;
         }
 
-        this.player.loadSign(next.playable);
+        this.player.loadSign(next.playable, { blendFromCurrentPose: Boolean(this._blendNextTransition) });
+        this._blendNextTransition = false;
         this.player.play();
         this.emitLifecycle('playback_start', next, { durationMs: next.playable.duration_ms });
         if (globalThis.__SPEECH_DIAGNOSTICS__ === true) console.debug('[SignScheduler] playback_start');
@@ -185,6 +186,7 @@ export class SignScheduler {
     if (globalThis.__SPEECH_DIAGNOSTICS__ === true) console.debug('[SignScheduler] playback_end');
     this.currentId = null;
     this.currentEntry = null;
+    this._blendNextTransition = !this.isPaused && this.queue.length > 0;
     if (!this.isPaused) this.startNext();
     else this.emit();
   }

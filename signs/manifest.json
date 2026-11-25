@@ -1,10 +1,10 @@
 {
   "manifest_version": "2.5.0",
   "schema_version": "2.0.0",
-  "generated_at": "2026-11-25T08:59:01.542Z",
+  "generated_at": "2026-11-25T10:00:08.154Z",
   "phase": "H38",
-  "total_signs": 627,
-  "total_playable_signs": 627,
+  "total_signs": 632,
+  "total_playable_signs": 632,
   "signs": [
     {
       "sign_id": "ability",
@@ -556,6 +556,25 @@
       "file_name": "arena.json",
       "involved_bones_count": 6,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "around",
+      "display_name": "Around / Approximately",
+      "gloss": "AROUND",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1120,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h44_semantic_repair_parametric",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "around.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
     },
     {
       "sign_id": "art",
@@ -3447,6 +3466,25 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "famous",
+      "display_name": "Famous",
+      "gloss": "FAMOUS",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1200,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h44_semantic_repair_parametric",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "famous.json",
+      "involved_bones_count": 7,
+      "keyframe_count": 4
+    },
+    {
       "sign_id": "fan",
       "display_name": "Fan",
       "gloss": "FAN",
@@ -5956,6 +5994,25 @@
       "keyframe_count": 4
     },
     {
+      "sign_id": "many",
+      "display_name": "Many",
+      "gloss": "MANY",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1080,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h44_semantic_repair_parametric",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "many.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
+    },
+    {
       "sign_id": "mark",
       "display_name": "Mark",
       "gloss": "MARK",
@@ -7174,6 +7231,25 @@
       "keyframe_count": 5
     },
     {
+      "sign_id": "only",
+      "display_name": "Only",
+      "gloss": "ONLY",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 980,
+      "dominant_hand": "right",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h44_semantic_repair_parametric",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "only.json",
+      "involved_bones_count": 4,
+      "keyframe_count": 4
+    },
+    {
       "sign_id": "open",
       "display_name": "Open",
       "gloss": "OPEN",
@@ -8388,6 +8464,25 @@
       "file_name": "relate.json",
       "involved_bones_count": 6,
       "keyframe_count": 5
+    },
+    {
+      "sign_id": "remaining",
+      "display_name": "Remaining",
+      "gloss": "REMAINING",
+      "lexical_type": "ISL Lexical Sign",
+      "duration_ms": 1100,
+      "dominant_hand": "both",
+      "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+      "provenance_tier": "h44_semantic_repair_parametric",
+      "motion_distinctness": "unique_trajectory",
+      "source": {
+        "organization": "ISLRTC",
+        "portal": "Indian Sign Language Research and Training Centre",
+        "url": "https://divyangjan.depwd.gov.in/islrtc/"
+      },
+      "file_name": "remaining.json",
+      "involved_bones_count": 6,
+      "keyframe_count": 4
     },
     {
       "sign_id": "remember",

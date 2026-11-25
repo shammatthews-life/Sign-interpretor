@@ -1,7 +1,7 @@
 {
   "milestone": "H43",
   "linguistic_validation_status": "PENDING_DEAF_COMMUNITY_REVIEW",
-  "library_disk_sign_count": 627,
+  "library_disk_sign_count": 632,
   "challenge_suite": {
     "total": 44,
     "passed": 44,
@@ -18,8 +18,8 @@
           "PROBLEM",
           "THAT",
           "YOU",
-          "THAT",
           "KNOW",
+          "THAT",
           "NOT",
           "THAT",
           "YOU",
@@ -31,8 +31,8 @@
           "problem",
           "that",
           "you",
-          "that",
           "know",
+          "that",
           "not",
           "that",
           "you",
@@ -54,6 +54,7 @@
           "KNOW",
           "WHAT",
           "I",
+          "DO",
           "NOT",
           "BUT",
           "I",
@@ -70,6 +71,7 @@
           "know",
           "what",
           "i",
+          "do",
           "not",
           "but",
           "i",
@@ -328,18 +330,18 @@
         "gloss_sequence": [
           "BECAUSE",
           "PEOPLE",
+          "KNOW",
           "THAT",
           "STORY",
-          "IMPORTANT",
-          "KNOW"
+          "IMPORTANT"
         ],
         "sign_ids": [
           "because",
           "people",
+          "know",
           "that",
           "story",
-          "important",
-          "know"
+          "important"
         ],
         "unknown_terms": [],
         "status": "TRANSLATION_SUPPORTED",
@@ -496,6 +498,7 @@
         "passed": true,
         "gloss_sequence": [
           "THIS",
+          "ONLY",
           "PICTURE",
           "THAT",
           "I",
@@ -506,6 +509,7 @@
         ],
         "sign_ids": [
           "this",
+          "only",
           "picture",
           "that",
           "i",
@@ -590,17 +594,19 @@
         "passed": true,
         "gloss_sequence": [
           "WE",
+          "FAIL",
           "LEARN",
           "FINISH",
           "PRACTICE",
-          "FAIL"
+          "LEARN"
         ],
         "sign_ids": [
           "we",
+          "fail",
           "learn",
           "finish",
           "practice",
-          "fail"
+          "learn"
         ],
         "unknown_terms": [],
         "status": "TRANSLATION_SUPPORTED",
@@ -1043,9 +1049,9 @@
       "reference_translation": {
         "segment_count": 29,
         "source_word_count": 272,
-        "gloss_occurrence_count": 185,
-        "playable_sign_count": 185,
-        "lexical_playable_count": 178,
+        "gloss_occurrence_count": 187,
+        "playable_sign_count": 187,
+        "lexical_playable_count": 180,
         "fingerspelled_playable_count": 7,
         "technical_disk_playability_pct": 100,
         "unverified_sign_ids": [],
@@ -1061,21 +1067,25 @@
               "THIS",
               "PUBLIC",
               "SPEECH",
+              "NEW",
+              "PEOPLE",
               "LEARN",
               "GOAL",
               "THIS",
               "VIDEO",
-              "SIMPLY"
+              "SIMPLE"
             ],
             "sign_ids": [
               "this",
               "public",
               "speech",
+              "new",
+              "people",
               "learn",
               "goal",
               "this",
               "video",
-              "simply"
+              "simple"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -1091,7 +1101,7 @@
               "YOU",
               "CONFUSED",
               "NERVOUS",
-              "FEAR",
+              "AFRAID",
               "OVERCOME",
               "HELP"
             ],
@@ -1099,7 +1109,7 @@
               "you",
               "confused",
               "nervous",
-              "fear",
+              "afraid",
               "overcome",
               "help"
             ],
@@ -1148,13 +1158,13 @@
             "gloss_sequence": [
               "VERY",
               "MORE",
-              "BEAUTIFUL",
+              "INTERESTING",
               "SPEAKER"
             ],
             "sign_ids": [
               "very",
               "more",
-              "beautiful",
+              "interesting",
               "speaker"
             ],
             "unknown_terms": [],
@@ -1168,6 +1178,7 @@
             "end": 30.45,
             "source_text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
             "gloss_sequence": [
+              "WHAT",
               "YOU",
               "SPECIAL",
               "COMBINATION",
@@ -1176,10 +1187,10 @@
               "PUBLIC",
               "SPEECH",
               "CHALLENGE",
-              "WATCH",
-              "WHAT"
+              "WATCH"
             ],
             "sign_ids": [
+              "what",
               "you",
               "special",
               "combination",
@@ -1188,8 +1199,7 @@
               "public",
               "speech",
               "challenge",
-              "watch",
-              "what"
+              "watch"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -1230,20 +1240,20 @@
             "gloss_sequence": [
               "WE",
               "MINDSET",
-              "START",
-              "CONFIDENT"
+              "CONFIDENT",
+              "START"
             ],
             "sign_ids": [
               "we",
               "mindset",
-              "start",
-              "confident"
+              "confident",
+              "start"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 37.33,
@@ -1252,16 +1262,16 @@
             "gloss_sequence": [
               "WE",
               "SCIENCE",
+              "ATTENTION",
               "MOVE",
-              "HOLD",
-              "ATTENTION"
+              "HOLD"
             ],
             "sign_ids": [
               "we",
               "science",
+              "attention",
               "move",
-              "hold",
-              "attention"
+              "hold"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -1369,16 +1379,16 @@
             "source_text": "and I'm best known for my TEDx talks,",
             "gloss_sequence": [
               "I",
-              "GOOD",
-              "KNOW",
+              "FAMOUS",
+              "BECAUSE",
               "MY",
               "FS_TEDX",
               "SAY"
             ],
             "sign_ids": [
               "i",
-              "good",
-              "know",
+              "famous",
+              "because",
               "my",
               "fs_tedx",
               "say"
@@ -1397,14 +1407,12 @@
             "source_text": "which are among the most viewed in the world",
             "gloss_sequence": [
               "WORLD",
-              "ALL",
-              "MOST",
+              "MANY",
               "SEE"
             ],
             "sign_ids": [
               "world",
-              "all",
-              "most",
+              "many",
               "see"
             ],
             "unknown_terms": [],
@@ -1419,12 +1427,12 @@
             "source_text": "on this particular subject.",
             "gloss_sequence": [
               "THIS",
-              "POINT",
+              "SPECIAL",
               "SUBJECT"
             ],
             "sign_ids": [
               "this",
-              "point",
+              "special",
               "subject"
             ],
             "unknown_terms": [],
@@ -1483,7 +1491,7 @@
               "ONE",
               "RESULT",
               "THAT",
-              "POINT",
+              "SPECIAL",
               "WORK"
             ],
             "sign_ids": [
@@ -1492,7 +1500,7 @@
               "one",
               "result",
               "that",
-              "point",
+              "special",
               "work"
             ],
             "unknown_terms": [],
@@ -1572,7 +1580,7 @@
             ],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 3
+            "clauses": 2
           },
           {
             "start": 80.45,
@@ -1612,7 +1620,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 4
+            "clauses": 3
           },
           {
             "start": 86.61,
@@ -1675,42 +1683,44 @@
             "end": 95.33,
             "source_text": "So make sure you have a pen and a paper,",
             "gloss_sequence": [
-              "SURE",
+              "REMEMBER",
+              "IMPORTANT",
               "YOU",
               "PEN",
-              "HAVE",
-              "PAPER"
+              "PAPER",
+              "HAVE"
             ],
             "sign_ids": [
-              "sure",
+              "remember",
+              "important",
               "you",
               "pen",
-              "have",
-              "paper"
+              "paper",
+              "have"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 95.33,
             "end": 98.93,
             "source_text": "lean in and you'll walk away with practical tools",
             "gloss_sequence": [
-              "ATTENTION",
+              "FOCUS",
               "YOU",
               "PRACTICAL",
               "TOOLS",
-              "HAVE"
+              "GET"
             ],
             "sign_ids": [
-              "attention",
+              "focus",
               "you",
               "practical",
               "tools",
-              "have"
+              "get"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -1826,12 +1836,12 @@
             "source_text": "There's pictures all over the place.",
             "gloss_sequence": [
               "PICTURE",
-              "ALL",
+              "MANY",
               "PLACE"
             ],
             "sign_ids": [
               "picture",
-              "all",
+              "many",
               "place"
             ],
             "unknown_terms": [],
@@ -1848,15 +1858,15 @@
         "asr_rtf": 0.0808,
         "segment_count": 26,
         "source_word_count": 277,
-        "gloss_occurrence_count": 184,
-        "playable_sign_count": 184,
-        "lexical_playable_count": 177,
+        "gloss_occurrence_count": 186,
+        "playable_sign_count": 186,
+        "lexical_playable_count": 179,
         "fingerspelled_playable_count": 7,
         "technical_disk_playability_pct": 100,
         "unverified_sign_ids": [],
         "unavailable_sign_count": 0,
         "unknown_term_count": 5,
-        "concept_resolution_rate_pct": 97.35,
+        "concept_resolution_rate_pct": 97.38,
         "translated_segments": [
           {
             "start": 0,
@@ -1866,21 +1876,25 @@
               "THIS",
               "PUBLIC",
               "SPEECH",
+              "NEW",
+              "PEOPLE",
               "LEARN",
               "GOAL",
               "THIS",
               "VIDEO",
-              "SIMPLY"
+              "SIMPLE"
             ],
             "sign_ids": [
               "this",
               "public",
               "speech",
+              "new",
+              "people",
               "learn",
               "goal",
               "this",
               "video",
-              "simply"
+              "simple"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -1896,7 +1910,7 @@
               "YOU",
               "CONFUSED",
               "NERVOUS",
-              "FEAR",
+              "AFRAID",
               "OVERCOME",
               "HELP",
               "BRING",
@@ -1908,7 +1922,7 @@
               "you",
               "confused",
               "nervous",
-              "fear",
+              "afraid",
               "overcome",
               "help",
               "bring",
@@ -1934,7 +1948,7 @@
               "CLEAR",
               "VERY",
               "MORE",
-              "BEAUTIFUL",
+              "INTERESTING",
               "SPEAKER"
             ],
             "sign_ids": [
@@ -1945,20 +1959,21 @@
               "clear",
               "very",
               "more",
-              "beautiful",
+              "interesting",
               "speaker"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.8095,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 25.38,
             "end": 30.62,
             "source_text": "What you're about to watch is a special compilation of a three-day public speaking challenge,",
             "gloss_sequence": [
+              "WHAT",
               "YOU",
               "SPECIAL",
               "COMBINATION",
@@ -1967,10 +1982,10 @@
               "PUBLIC",
               "SPEECH",
               "CHALLENGE",
-              "WATCH",
-              "WHAT"
+              "WATCH"
             ],
             "sign_ids": [
+              "what",
               "you",
               "special",
               "combination",
@@ -1979,8 +1994,7 @@
               "public",
               "speech",
               "challenge",
-              "watch",
-              "what"
+              "watch"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -2021,28 +2035,28 @@
             "gloss_sequence": [
               "WE",
               "MINDSET",
-              "START",
               "CONFIDENT",
-              "SCIENCE",
+              "START",
               "MOVE",
-              "HOLD",
-              "ATTENTION"
+              "SCIENCE",
+              "ATTENTION",
+              "HOLD"
             ],
             "sign_ids": [
               "we",
               "mindset",
-              "start",
               "confident",
-              "science",
+              "start",
               "move",
-              "hold",
-              "attention"
+              "science",
+              "attention",
+              "hold"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.8017,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 39.9,
@@ -2083,11 +2097,11 @@
             "end": 48.06,
             "source_text": "excellent communication.",
             "gloss_sequence": [
-              "EXCELLENT",
+              "GREAT",
               "COMMUNICATION"
             ],
             "sign_ids": [
-              "excellent",
+              "great",
               "communication"
             ],
             "unknown_terms": [],
@@ -2114,8 +2128,8 @@
               "FS_JP",
               "FS_PHILLIPS",
               "I",
-              "GOOD",
-              "KNOW"
+              "FAMOUS",
+              "BECAUSE"
             ],
             "sign_ids": [
               "hey",
@@ -2131,8 +2145,8 @@
               "fs_jp",
               "fs_phillips",
               "i",
-              "good",
-              "know"
+              "famous",
+              "because"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [
@@ -2152,24 +2166,22 @@
               "MY",
               "FS_TEDX",
               "WORLD",
-              "ALL",
-              "MOST",
+              "MANY",
               "SAY",
               "SEE",
               "THIS",
-              "POINT",
+              "SPECIAL",
               "SUBJECT"
             ],
             "sign_ids": [
               "my",
               "fs_tedx",
               "world",
-              "all",
-              "most",
+              "many",
               "say",
               "see",
               "this",
-              "point",
+              "special",
               "subject"
             ],
             "unknown_terms": [],
@@ -2230,7 +2242,7 @@
               "ONE",
               "RESULT",
               "THAT",
-              "POINT"
+              "SPECIAL"
             ],
             "sign_ids": [
               "this",
@@ -2238,7 +2250,7 @@
               "one",
               "result",
               "that",
-              "point"
+              "special"
             ],
             "unknown_terms": [
               "ENDEAVOR"
@@ -2280,12 +2292,12 @@
               "LIKE",
               "FS_ORACLE",
               "FS_GOOGLE",
-              "COACHING",
-              "FINISH",
               "FS_DISNEY",
               "STORY",
               "PRESENTATION",
-              "SKILL"
+              "SKILL",
+              "COACHING",
+              "FINISH"
             ],
             "sign_ids": [
               "i",
@@ -2295,12 +2307,12 @@
               "like",
               "fs_oracle",
               "fs_google",
-              "coaching",
-              "finish",
               "fs_disney",
               "story",
               "presentation",
-              "skill"
+              "skill",
+              "coaching",
+              "finish"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [
@@ -2310,7 +2322,7 @@
             ],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.84,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 77.5,
@@ -2360,7 +2372,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.8277,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 84.22,
@@ -2445,42 +2457,44 @@
             "end": 95.26,
             "source_text": "So make sure you have a pen and a paper.",
             "gloss_sequence": [
-              "SURE",
+              "REMEMBER",
+              "IMPORTANT",
               "YOU",
               "PEN",
-              "HAVE",
-              "PAPER"
+              "PAPER",
+              "HAVE"
             ],
             "sign_ids": [
-              "sure",
+              "remember",
+              "important",
               "you",
               "pen",
-              "have",
-              "paper"
+              "paper",
+              "have"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.8277,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 95.26,
             "end": 98.86,
             "source_text": "Lean in, and you'll walk away with practical tools",
             "gloss_sequence": [
-              "ATTENTION",
+              "FOCUS",
               "YOU",
               "PRACTICAL",
               "TOOLS",
-              "HAVE"
+              "GET"
             ],
             "sign_ids": [
-              "attention",
+              "focus",
               "you",
               "practical",
               "tools",
-              "have"
+              "get"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -2564,7 +2578,7 @@
               "SEE",
               "YOU",
               "PICTURE",
-              "ALL",
+              "MANY",
               "PLACE"
             ],
             "sign_ids": [
@@ -2573,7 +2587,7 @@
               "see",
               "you",
               "picture",
-              "all",
+              "many",
               "place"
             ],
             "unknown_terms": [],
@@ -2619,9 +2633,9 @@
       "reference_translation": {
         "segment_count": 31,
         "source_word_count": 539,
-        "gloss_occurrence_count": 371,
-        "playable_sign_count": 371,
-        "lexical_playable_count": 371,
+        "gloss_occurrence_count": 370,
+        "playable_sign_count": 370,
+        "lexical_playable_count": 370,
         "fingerspelled_playable_count": 0,
         "technical_disk_playability_pct": 100,
         "unverified_sign_ids": [],
@@ -2636,12 +2650,12 @@
             "gloss_sequence": [
               "SUMMER",
               "HERE",
-              "TIME",
-              "MY",
+              "I",
+              "THINK",
               "THAT",
               "REAL",
               "GOOD",
-              "THINK",
+              "TIME",
               "GO",
               "START",
               "RECORD"
@@ -2649,12 +2663,12 @@
             "sign_ids": [
               "summer",
               "here",
-              "time",
-              "my",
+              "i",
+              "think",
               "that",
               "real",
               "good",
-              "think",
+              "time",
               "go",
               "start",
               "record"
@@ -2663,7 +2677,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 3.84,
@@ -2677,8 +2691,9 @@
               "LIFE",
               "MAYBE",
               "YOU",
-              "SAT",
-              "HAVE",
+              "SIT",
+              "FINISH",
+              "PLAN",
               "WRITE",
               "YOUR",
               "FIRST"
@@ -2691,8 +2706,9 @@
               "life",
               "maybe",
               "you",
-              "sat",
-              "have",
+              "sit",
+              "finish",
+              "plan",
               "write",
               "your",
               "first"
@@ -2716,10 +2732,10 @@
               "FILM",
               "BUT",
               "I",
-              "BACK",
               "THINK",
               "YOUR",
               "MIND",
+              "DEEP",
               "ONE",
               "CONTINUOUS"
             ],
@@ -2732,10 +2748,10 @@
               "film",
               "but",
               "i",
-              "back",
               "think",
               "your",
               "mind",
+              "deep",
               "one",
               "continuous"
             ],
@@ -2757,7 +2773,6 @@
               "NOT",
               "NOW",
               "I",
-              "GO",
               "SAY",
               "YOU",
               "THINK"
@@ -2770,7 +2785,6 @@
               "not",
               "now",
               "i",
-              "go",
               "say",
               "you",
               "think"
@@ -2786,9 +2800,10 @@
             "end": 20.32,
             "source_text": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
             "gloss_sequence": [
+              "MORE",
               "THINK",
               "I",
-              "MORE",
+              "ALSO",
               "VERY",
               "START",
               "HONESTY",
@@ -2800,9 +2815,10 @@
               "BUT"
             ],
             "sign_ids": [
+              "more",
               "think",
               "i",
-              "more",
+              "also",
               "very",
               "start",
               "honesty",
@@ -2828,13 +2844,12 @@
               "ART",
               "STEP",
               "VIDEO",
-              "TRUE",
-              "HAVE",
+              "VERY",
+              "EASY",
+              "MANY",
+              "YEAR",
               "GET",
               "FINISH",
-              "MORE",
-              "EASY",
-              "YEAR",
               "TODAY",
               "I"
             ],
@@ -2843,13 +2858,12 @@
               "art",
               "step",
               "video",
-              "true",
-              "have",
+              "very",
+              "easy",
+              "many",
+              "year",
               "get",
               "finish",
-              "more",
-              "easy",
-              "year",
               "today",
               "i"
             ],
@@ -2866,38 +2880,40 @@
             "gloss_sequence": [
               "FEW",
               "ADVICE",
-              "THAT",
               "WANT",
               "SHARE",
-              "ALL",
+              "THAT",
+              "MATTER",
               "I",
               "YEAR",
               "LEARN",
               "FINISH",
               "PRACTICE",
               "FAIL",
+              "LEARN",
               "HOW"
             ],
             "sign_ids": [
               "few",
               "advice",
-              "that",
               "want",
               "share",
-              "all",
+              "that",
+              "matter",
               "i",
               "year",
               "learn",
               "finish",
               "practice",
               "fail",
+              "learn",
               "how"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 3
+            "clauses": 2
           },
           {
             "start": 28.64,
@@ -2905,7 +2921,7 @@
             "source_text": "you can go about your day and start vlogging your life without completely overcomplicating",
             "gloss_sequence": [
               "YOU",
-              "GO",
+              "LIVE",
               "YOUR",
               "DAY",
               "START",
@@ -2918,7 +2934,7 @@
             ],
             "sign_ids": [
               "you",
-              "go",
+              "live",
               "your",
               "day",
               "start",
@@ -2941,10 +2957,12 @@
             "source_text": "the process as a beginner.",
             "gloss_sequence": [
               "STEP",
+              "NEW",
               "LEARN"
             ],
             "sign_ids": [
               "step",
+              "new",
               "learn"
             ],
             "unknown_terms": [],
@@ -2959,17 +2977,19 @@
             "source_text": "So essentially a vlog is just a very loosely defined short film.",
             "gloss_sequence": [
               "VIDEO",
+              "ONLY",
               "VERY",
               "SIMPLE",
               "SMALL",
-              "MOVIE"
+              "FILM"
             ],
             "sign_ids": [
               "video",
+              "only",
               "very",
               "simple",
               "small",
-              "movie"
+              "film"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -3021,7 +3041,7 @@
               "I",
               "KNOW",
               "YOU",
-              "TRUE",
+              "VERY",
               "TIRED",
               "HEAR",
               "THAT",
@@ -3035,7 +3055,7 @@
               "i",
               "know",
               "you",
-              "true",
+              "very",
               "tired",
               "hear",
               "that",
@@ -3058,34 +3078,32 @@
             "gloss_sequence": [
               "YOU",
               "STORY",
-              "YOU",
               "HAVE",
               "NEED",
               "BECAUSE",
               "PEOPLE",
-              "THAT",
               "KNOW",
+              "THAT",
               "I",
               "KNOW",
               "YOU",
               "DO",
-              "MORE"
+              "ALSO"
             ],
             "sign_ids": [
               "you",
               "story",
-              "you",
               "have",
               "need",
               "because",
               "people",
-              "that",
               "know",
+              "that",
               "i",
               "know",
               "you",
               "do",
-              "more"
+              "also"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -3102,8 +3120,8 @@
               "PROBLEM",
               "THAT",
               "YOU",
-              "THAT",
               "KNOW",
+              "THAT",
               "NOT"
             ],
             "sign_ids": [
@@ -3111,8 +3129,8 @@
               "problem",
               "that",
               "you",
-              "that",
               "know",
+              "that",
               "not"
             ],
             "unknown_terms": [],
@@ -3204,10 +3222,9 @@
             "end": 67.58,
             "source_text": "And just like short films, feature films, documentaries, what you really need to think about are scenes.",
             "gloss_sequence": [
-              "SAME",
               "LIKE",
               "SMALL",
-              "MOVIE",
+              "FILM",
               "FEATURE",
               "FILM",
               "MOVIE",
@@ -3219,10 +3236,9 @@
               "THINK"
             ],
             "sign_ids": [
-              "same",
               "like",
               "small",
-              "movie",
+              "film",
               "feature",
               "film",
               "movie",
@@ -3244,61 +3260,57 @@
             "end": 73.58,
             "source_text": "Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story.",
             "gloss_sequence": [
-              "SAME",
               "LIKE",
               "SCENE",
               "YOUR",
               "FAVORITE",
               "MOVIE",
               "YOU",
-              "HAVE",
               "COMBINATION",
               "SCENE",
-              "THAT",
               "NEED",
+              "THAT",
               "WHEN",
               "COMBINATION",
               "JOIN",
+              "MORE",
               "BIG",
-              "TELL",
-              "BIG",
-              "STORY"
+              "STORY",
+              "TELL"
             ],
             "sign_ids": [
-              "same",
               "like",
               "scene",
               "your",
               "favorite",
               "movie",
               "you",
-              "have",
               "combination",
               "scene",
-              "that",
               "need",
+              "that",
               "when",
               "combination",
               "join",
+              "more",
               "big",
-              "tell",
-              "big",
-              "story"
+              "story",
+              "tell"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 4
+            "clauses": 3
           },
           {
             "start": 73.58,
             "end": 78.38,
             "source_text": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,",
             "gloss_sequence": [
+              "WHEN",
               "COME",
               "VIDEO",
-              "WHEN",
               "BECAUSE",
               "YOU",
               "DAY",
@@ -3306,16 +3318,16 @@
               "GO",
               "YOU",
               "SOMETIMES",
+              "KNOW",
               "THAT",
               "ALL",
               "STORY",
-              "KNOW",
               "NOT"
             ],
             "sign_ids": [
+              "when",
               "come",
               "video",
-              "when",
               "because",
               "you",
               "day",
@@ -3323,10 +3335,10 @@
               "go",
               "you",
               "sometimes",
+              "know",
               "that",
               "all",
               "story",
-              "know",
               "not"
             ],
             "unknown_terms": [],
@@ -3341,6 +3353,7 @@
             "source_text": "but I bet you do know at least a scene or two ahead.",
             "gloss_sequence": [
               "BUT",
+              "FUTURE",
               "I",
               "THINK",
               "YOU",
@@ -3349,11 +3362,11 @@
               "LITTLE",
               "SCENE",
               "OR",
-              "FUTURE",
               "TWO"
             ],
             "sign_ids": [
               "but",
+              "future",
               "i",
               "think",
               "you",
@@ -3362,14 +3375,13 @@
               "little",
               "scene",
               "or",
-              "future",
               "two"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 81.48,
@@ -3377,49 +3389,51 @@
             "source_text": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,",
             "gloss_sequence": [
               "TODAY",
+              "WHAT",
               "THAT",
               "MEAN",
               "MAYBE",
               "I",
-              "TRUE",
+              "CLEAR",
               "KNOW",
               "WHAT",
               "I",
-              "WHAT",
+              "DO",
               "NOT",
               "BUT",
               "I",
-              "THAT",
-              "HOUR",
               "DO",
               "KNOW",
-              "OR"
+              "THAT",
+              "HOUR",
+              "AROUND"
             ],
             "sign_ids": [
               "today",
+              "what",
               "that",
               "mean",
               "maybe",
               "i",
-              "true",
+              "clear",
               "know",
               "what",
               "i",
-              "what",
+              "do",
               "not",
               "but",
               "i",
-              "that",
-              "hour",
               "do",
               "know",
-              "or"
+              "that",
+              "hour",
+              "around"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 3
+            "clauses": 2
           },
           {
             "start": 85.88,
@@ -3432,8 +3446,8 @@
               "MEET",
               "I",
               "SCENE",
-              "THAT",
               "BUILD",
+              "THAT",
               "NEXT",
               "AFTER",
               "THAT",
@@ -3446,8 +3460,8 @@
               "meet",
               "i",
               "scene",
-              "that",
               "build",
+              "that",
               "next",
               "after",
               "that",
@@ -3469,8 +3483,8 @@
               "KNOW",
               "WHAT",
               "I",
-              "GO",
-              "REST",
+              "DO",
+              "REMAINING",
               "EVENING",
               "NOT"
             ],
@@ -3480,8 +3494,8 @@
               "know",
               "what",
               "i",
-              "go",
-              "rest",
+              "do",
+              "remaining",
               "evening",
               "not"
             ],
@@ -3498,9 +3512,9 @@
             "gloss_sequence": [
               "BUT",
               "I",
-              "THAT",
               "DO",
               "KNOW",
+              "THAT",
               "I",
               "HUNGRY",
               "I",
@@ -3515,9 +3529,9 @@
             "sign_ids": [
               "but",
               "i",
-              "that",
               "do",
               "know",
+              "that",
               "i",
               "hungry",
               "i",
@@ -3547,9 +3561,9 @@
               "YOU",
               "START",
               "RECORD",
-              "WHAT",
               "MY",
-              "STORY"
+              "STORY",
+              "WHAT"
             ],
             "sign_ids": [
               "instead",
@@ -3559,15 +3573,15 @@
               "you",
               "start",
               "record",
-              "what",
               "my",
-              "story"
+              "story",
+              "what"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 3
           },
           {
             "start": 98.56,
@@ -3578,14 +3592,14 @@
               "YOU",
               "LIFE",
               "LIVE",
-              "ALL",
+              "MATTER",
               "SCENE",
+              "STEP",
               "THINK",
               "ALSO",
               "THINK",
               "HOW",
               "SCENE",
-              "GOOD",
               "JOIN",
               "ALL"
             ],
@@ -3594,14 +3608,14 @@
               "you",
               "life",
               "live",
-              "all",
+              "matter",
               "scene",
+              "step",
               "think",
               "also",
               "think",
               "how",
               "scene",
-              "good",
               "join",
               "all"
             ],
@@ -3621,10 +3635,9 @@
               "YOU",
               "TRY",
               "GIVE",
-              "I",
-              "RECORD",
               "WHEN",
-              "ALL",
+              "I",
+              "MATTER",
               "RECORD"
             ],
             "sign_ids": [
@@ -3633,17 +3646,16 @@
               "you",
               "try",
               "give",
-              "i",
-              "record",
               "when",
-              "all",
+              "i",
+              "matter",
               "record"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 3
+            "clauses": 2
           },
           {
             "start": 107.92,
@@ -3652,11 +3664,12 @@
             "gloss_sequence": [
               "I",
               "CONTINUOUS",
-              "THIS",
-              "PICTURE",
-              "THAT",
               "TRY",
               "THINK",
+              "THIS",
+              "ONLY",
+              "PICTURE",
+              "THAT",
               "I",
               "GET",
               "BECAUSE",
@@ -3666,11 +3679,12 @@
             "sign_ids": [
               "i",
               "continuous",
-              "this",
-              "picture",
-              "that",
               "try",
               "think",
+              "this",
+              "only",
+              "picture",
+              "that",
               "i",
               "get",
               "because",
@@ -3681,7 +3695,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 3
           },
           {
             "start": 111.12,
@@ -3763,7 +3777,7 @@
               "EXPLAIN",
               "WHAT",
               "GO",
-              "MORE",
+              "MANY",
               "PEOPLE",
               "TELL",
               "YOU",
@@ -3774,8 +3788,7 @@
               "SHOW",
               "MORE",
               "SAY",
-              "LESS",
-              "NOT"
+              "LESS"
             ],
             "sign_ids": [
               "i",
@@ -3785,7 +3798,7 @@
               "explain",
               "what",
               "go",
-              "more",
+              "many",
               "people",
               "tell",
               "you",
@@ -3796,8 +3809,7 @@
               "show",
               "more",
               "say",
-              "less",
-              "not"
+              "less"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -3830,12 +3842,12 @@
             "gloss_sequence": [
               "SUMMER",
               "HERE",
-              "MY",
+              "I",
               "THINK",
-              "TIME",
               "THAT",
               "REAL",
               "GOOD",
+              "TIME",
               "VIDEO",
               "GO",
               "START",
@@ -3848,12 +3860,12 @@
             "sign_ids": [
               "summer",
               "here",
-              "my",
+              "i",
               "think",
-              "time",
               "that",
               "real",
               "good",
+              "time",
               "video",
               "go",
               "start",
@@ -3876,7 +3888,8 @@
             "gloss_sequence": [
               "MAYBE",
               "YOU",
-              "SAT",
+              "SIT",
+              "PLAN",
               "WRITE",
               "YOUR",
               "FIRST",
@@ -3890,7 +3903,8 @@
             "sign_ids": [
               "maybe",
               "you",
-              "sat",
+              "sit",
+              "plan",
               "write",
               "your",
               "first",
@@ -3914,10 +3928,10 @@
             "gloss_sequence": [
               "BUT",
               "I",
-              "BACK",
               "THINK",
               "YOUR",
               "MIND",
+              "DEEP",
               "ONE",
               "CONTINUOUS",
               "FEEL",
@@ -3929,10 +3943,10 @@
             "sign_ids": [
               "but",
               "i",
-              "back",
               "think",
               "your",
               "mind",
+              "deep",
               "one",
               "continuous",
               "feel",
@@ -3954,17 +3968,17 @@
             "gloss_sequence": [
               "NOW",
               "I",
-              "GO",
               "SAY",
               "YOU",
+              "MORE",
               "THINK"
             ],
             "sign_ids": [
               "now",
               "i",
-              "go",
               "say",
               "you",
+              "more",
               "think"
             ],
             "unknown_terms": [],
@@ -3979,7 +3993,7 @@
             "source_text": "I was too in the very beginning, and honestly, I still do, even to this day.",
             "gloss_sequence": [
               "I",
-              "MORE",
+              "ALSO",
               "VERY",
               "START",
               "HONESTY",
@@ -3991,7 +4005,7 @@
             ],
             "sign_ids": [
               "i",
-              "more",
+              "also",
               "very",
               "start",
               "honesty",
@@ -4017,13 +4031,12 @@
               "ART",
               "STEP",
               "VIDEO",
-              "TRUE",
-              "HAVE",
-              "GET",
-              "FINISH",
-              "MORE",
+              "VERY",
               "EASY",
-              "YEAR"
+              "MANY",
+              "YEAR",
+              "GET",
+              "FINISH"
             ],
             "sign_ids": [
               "but",
@@ -4031,13 +4044,12 @@
               "art",
               "step",
               "video",
-              "true",
-              "have",
-              "get",
-              "finish",
-              "more",
+              "very",
               "easy",
-              "year"
+              "many",
+              "year",
+              "get",
+              "finish"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -4054,18 +4066,18 @@
               "I",
               "FEW",
               "ADVICE",
-              "THAT",
               "WANT",
-              "SHARE"
+              "SHARE",
+              "THAT"
             ],
             "sign_ids": [
               "today",
               "i",
               "few",
               "advice",
-              "that",
               "want",
-              "share"
+              "share",
+              "that"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -4078,7 +4090,7 @@
             "end": 31,
             "source_text": "Things I've learned through years of trial and error on how you can go about your day and start vlogging your life",
             "gloss_sequence": [
-              "ALL",
+              "MATTER",
               "I",
               "YEAR",
               "LEARN",
@@ -4087,7 +4099,7 @@
               "FAIL",
               "HOW",
               "YOU",
-              "GO",
+              "LIVE",
               "YOUR",
               "DAY",
               "START",
@@ -4096,7 +4108,7 @@
               "LIFE"
             ],
             "sign_ids": [
-              "all",
+              "matter",
               "i",
               "year",
               "learn",
@@ -4105,7 +4117,7 @@
               "fail",
               "how",
               "you",
-              "go",
+              "live",
               "your",
               "day",
               "start",
@@ -4127,12 +4139,14 @@
               "WITHOUT",
               "ALL",
               "STEP",
+              "NEW",
               "LEARN"
             ],
             "sign_ids": [
               "without",
               "all",
               "step",
+              "new",
               "learn"
             ],
             "unknown_terms": [
@@ -4149,17 +4163,19 @@
             "source_text": "So essentially, a vlog is just a very loosely defined short film.",
             "gloss_sequence": [
               "VIDEO",
+              "ONLY",
               "VERY",
               "SIMPLE",
               "SMALL",
-              "MOVIE"
+              "FILM"
             ],
             "sign_ids": [
               "video",
+              "only",
               "very",
               "simple",
               "small",
-              "movie"
+              "film"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -4209,7 +4225,7 @@
               "I",
               "KNOW",
               "YOU",
-              "TRUE",
+              "VERY",
               "TIRED",
               "HEAR",
               "THAT",
@@ -4220,7 +4236,6 @@
               "IMPORTANT",
               "YOU",
               "STORY",
-              "YOU",
               "HAVE",
               "NEED"
             ],
@@ -4228,7 +4243,7 @@
               "i",
               "know",
               "you",
-              "true",
+              "very",
               "tired",
               "hear",
               "that",
@@ -4239,7 +4254,6 @@
               "important",
               "you",
               "story",
-              "you",
               "have",
               "need"
             ],
@@ -4256,24 +4270,24 @@
             "gloss_sequence": [
               "BECAUSE",
               "PEOPLE",
-              "THAT",
               "KNOW",
+              "THAT",
               "I",
               "KNOW",
               "YOU",
               "DO",
-              "MORE"
+              "ALSO"
             ],
             "sign_ids": [
               "because",
               "people",
-              "that",
               "know",
+              "that",
               "i",
               "know",
               "you",
               "do",
-              "more"
+              "also"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -4290,8 +4304,8 @@
               "PROBLEM",
               "THAT",
               "YOU",
-              "THAT",
               "KNOW",
+              "THAT",
               "NOT",
               "THAT",
               "YOU",
@@ -4309,8 +4323,8 @@
               "problem",
               "that",
               "you",
-              "that",
               "know",
+              "that",
               "not",
               "that",
               "you",
@@ -4378,10 +4392,9 @@
             "end": 67.7,
             "source_text": "And just like short films, feature films, documentaries, what you really need to think about are scenes.",
             "gloss_sequence": [
-              "SAME",
               "LIKE",
               "SMALL",
-              "MOVIE",
+              "FILM",
               "FEATURE",
               "FILM",
               "MOVIE",
@@ -4393,10 +4406,9 @@
               "THINK"
             ],
             "sign_ids": [
-              "same",
               "like",
               "small",
-              "movie",
+              "film",
               "feature",
               "film",
               "movie",
@@ -4418,61 +4430,57 @@
             "end": 73.6,
             "source_text": "Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story.",
             "gloss_sequence": [
-              "SAME",
               "LIKE",
               "SCENE",
               "YOUR",
               "FAVORITE",
               "MOVIE",
               "YOU",
-              "HAVE",
               "COMBINATION",
               "SCENE",
-              "THAT",
               "NEED",
+              "THAT",
               "WHEN",
               "COMBINATION",
               "JOIN",
+              "MORE",
               "BIG",
-              "TELL",
-              "BIG",
-              "STORY"
+              "STORY",
+              "TELL"
             ],
             "sign_ids": [
-              "same",
               "like",
               "scene",
               "your",
               "favorite",
               "movie",
               "you",
-              "have",
               "combination",
               "scene",
-              "that",
               "need",
+              "that",
               "when",
               "combination",
               "join",
+              "more",
               "big",
-              "tell",
-              "big",
-              "story"
+              "story",
+              "tell"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.8923,
-            "clauses": 4
+            "clauses": 3
           },
           {
             "start": 73.6,
             "end": 78.5,
             "source_text": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,",
             "gloss_sequence": [
+              "WHEN",
               "COME",
               "VIDEO",
-              "WHEN",
               "BECAUSE",
               "YOU",
               "DAY",
@@ -4480,16 +4488,16 @@
               "GO",
               "YOU",
               "SOMETIMES",
+              "KNOW",
               "THAT",
               "ALL",
               "STORY",
-              "KNOW",
               "NOT"
             ],
             "sign_ids": [
+              "when",
               "come",
               "video",
-              "when",
               "because",
               "you",
               "day",
@@ -4497,10 +4505,10 @@
               "go",
               "you",
               "sometimes",
+              "know",
               "that",
               "all",
               "story",
-              "know",
               "not"
             ],
             "unknown_terms": [],
@@ -4530,10 +4538,11 @@
               "MEAN",
               "MAYBE",
               "I",
-              "TRUE",
+              "CLEAR",
               "KNOW",
               "WHAT",
               "I",
+              "DO",
               "TODAY",
               "NOT"
             ],
@@ -4554,10 +4563,11 @@
               "mean",
               "maybe",
               "i",
-              "true",
+              "clear",
               "know",
               "what",
               "i",
+              "do",
               "today",
               "not"
             ],
@@ -4574,26 +4584,26 @@
             "gloss_sequence": [
               "BUT",
               "I",
-              "THAT",
-              "HOUR",
               "DO",
               "KNOW",
-              "OR"
+              "THAT",
+              "HOUR",
+              "AROUND"
             ],
             "sign_ids": [
               "but",
               "i",
-              "that",
-              "hour",
               "do",
               "know",
-              "or"
+              "that",
+              "hour",
+              "around"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.8635,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 85.78,
@@ -4606,8 +4616,8 @@
               "MEET",
               "I",
               "SCENE",
-              "THAT",
               "BUILD",
+              "THAT",
               "NEXT",
               "AFTER",
               "THAT",
@@ -4620,8 +4630,8 @@
               "meet",
               "i",
               "scene",
-              "that",
               "build",
+              "that",
               "next",
               "after",
               "that",
@@ -4643,15 +4653,15 @@
               "KNOW",
               "WHAT",
               "I",
-              "GO",
-              "REST",
+              "DO",
+              "REMAINING",
               "EVENING",
               "NOT",
               "BUT",
               "I",
-              "THAT",
               "DO",
               "KNOW",
+              "THAT",
               "I",
               "HUNGRY"
             ],
@@ -4661,15 +4671,15 @@
               "know",
               "what",
               "i",
-              "go",
-              "rest",
+              "do",
+              "remaining",
               "evening",
               "not",
               "but",
               "i",
-              "that",
               "do",
               "know",
+              "that",
               "i",
               "hungry"
             ],
@@ -4721,14 +4731,14 @@
               "YOU",
               "START",
               "RECORD",
-              "WHAT",
               "MY",
               "STORY",
               "ALLOW",
               "YOU",
-              "LIVE",
               "LIFE",
-              "ALL",
+              "LIVE",
+              "WHAT",
+              "MATTER",
               "THINK"
             ],
             "sign_ids": [
@@ -4739,21 +4749,21 @@
               "you",
               "start",
               "record",
-              "what",
               "my",
               "story",
               "allow",
               "you",
-              "live",
               "life",
-              "all",
+              "live",
+              "what",
+              "matter",
               "think"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.8635,
-            "clauses": 3
+            "clauses": 4
           },
           {
             "start": 101.46,
@@ -4761,11 +4771,11 @@
             "source_text": "Scene by scene and also think about how the scenes kind of tie into the overall feeling that you're trying to deliver",
             "gloss_sequence": [
               "SCENE",
+              "STEP",
               "ALSO",
               "THINK",
               "HOW",
               "SCENE",
-              "GOOD",
               "JOIN",
               "ALL",
               "FEEL",
@@ -4776,11 +4786,11 @@
             ],
             "sign_ids": [
               "scene",
+              "step",
               "also",
               "think",
               "how",
               "scene",
-              "good",
               "join",
               "all",
               "feel",
@@ -4793,7 +4803,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.8635,
-            "clauses": 1
+            "clauses": 2
           },
           {
             "start": 106.28,
@@ -4802,13 +4812,14 @@
             "gloss_sequence": [
               "WHEN",
               "I",
+              "MATTER",
               "RECORD",
-              "ALL",
               "I",
               "CONTINUOUS",
               "TRY",
               "THINK",
               "THIS",
+              "ONLY",
               "PICTURE",
               "THAT",
               "I",
@@ -4820,13 +4831,14 @@
             "sign_ids": [
               "when",
               "i",
+              "matter",
               "record",
-              "all",
               "i",
               "continuous",
               "try",
               "think",
               "this",
+              "only",
               "picture",
               "that",
               "i",
@@ -4839,7 +4851,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.7971,
-            "clauses": 4
+            "clauses": 3
           },
           {
             "start": 111.12,
@@ -4909,13 +4921,13 @@
               "HOLD",
               "SAY",
               "I",
+              "SAY",
               "CLEAR",
               "CAMERA",
-              "SAY",
               "EXPLAIN",
               "WHAT",
               "GO",
-              "MORE",
+              "MANY",
               "PEOPLE",
               "TELL"
             ],
@@ -4927,13 +4939,13 @@
               "hold",
               "say",
               "i",
+              "say",
               "clear",
               "camera",
-              "say",
               "explain",
               "what",
               "go",
-              "more",
+              "many",
               "people",
               "tell"
             ],
@@ -4941,7 +4953,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_SUPPORTED",
             "asr_confidence": 0.7971,
-            "clauses": 3
+            "clauses": 2
           }
         ]
       }
@@ -4955,15 +4967,15 @@
       "reference_translation": {
         "segment_count": 21,
         "source_word_count": 213,
-        "gloss_occurrence_count": 113,
-        "playable_sign_count": 113,
-        "lexical_playable_count": 113,
+        "gloss_occurrence_count": 112,
+        "playable_sign_count": 112,
+        "lexical_playable_count": 112,
         "fingerspelled_playable_count": 0,
         "technical_disk_playability_pct": 100,
         "unverified_sign_ids": [],
         "unavailable_sign_count": 0,
         "unknown_term_count": 17,
-        "concept_resolution_rate_pct": 86.92,
+        "concept_resolution_rate_pct": 86.82,
         "translated_segments": [
           {
             "start": 14.15,
@@ -5009,7 +5021,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 24.25,
@@ -5142,24 +5154,24 @@
             "gloss_sequence": [
               "WE",
               "ROBOT",
-              "THAT",
               "GIVE",
+              "THAT",
               "YOU",
               "DO",
               "THIS",
-              "POINT",
+              "SPECIAL",
               "WORK",
               "HOW"
             ],
             "sign_ids": [
               "we",
               "robot",
-              "that",
               "give",
+              "that",
               "you",
               "do",
               "this",
-              "point",
+              "special",
               "work",
               "how"
             ],
@@ -5176,16 +5188,16 @@
             "end": 58.5,
             "source_text": "What are the different types of robots, we generally use?",
             "gloss_sequence": [
+              "WHAT",
               "DIFFERENT",
               "ROBOT",
-              "WHAT",
               "WE",
               "GENERAL"
             ],
             "sign_ids": [
+              "what",
               "different",
               "robot",
-              "what",
               "we",
               "general"
             ],
@@ -5246,13 +5258,13 @@
             "source_text": "Similarly, there are many other questions.",
             "gloss_sequence": [
               "SIMILAR",
-              "MORE",
+              "MANY",
               "OTHER",
               "QUESTION"
             ],
             "sign_ids": [
               "similar",
-              "more",
+              "many",
               "other",
               "question"
             ],
@@ -5357,14 +5369,14 @@
             "gloss_sequence": [
               "ANSWER",
               "THIS",
-              "POINT",
+              "SPECIAL",
               "COURSE",
               "FINISH"
             ],
             "sign_ids": [
               "answer",
               "this",
-              "point",
+              "special",
               "course",
               "finish"
             ],
@@ -5388,8 +5400,8 @@
               "ONE",
               "START",
               "THAT",
-              "WHAT",
-              "ROBOT"
+              "ROBOT",
+              "WHAT"
             ],
             "sign_ids": [
               "now",
@@ -5399,8 +5411,8 @@
               "one",
               "start",
               "that",
-              "what",
-              "robot"
+              "robot",
+              "what"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -5461,7 +5473,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": null,
-            "clauses": 4
+            "clauses": 3
           },
           {
             "start": 111.73,
@@ -5483,7 +5495,6 @@
             "source_text": "This is just like a servant, and we are going to give some tasks to the robot, and it is",
             "gloss_sequence": [
               "THIS",
-              "SAME",
               "LIKE",
               "WE",
               "WILL",
@@ -5494,7 +5505,6 @@
             ],
             "sign_ids": [
               "this",
-              "same",
               "like",
               "we",
               "will",
@@ -5519,15 +5529,15 @@
         "asr_rtf": 0.0547,
         "segment_count": 21,
         "source_word_count": 216,
-        "gloss_occurrence_count": 115,
-        "playable_sign_count": 115,
-        "lexical_playable_count": 115,
+        "gloss_occurrence_count": 114,
+        "playable_sign_count": 114,
+        "lexical_playable_count": 114,
         "fingerspelled_playable_count": 0,
         "technical_disk_playability_pct": 100,
         "unverified_sign_ids": [],
         "unavailable_sign_count": 0,
         "unknown_term_count": 16,
-        "concept_resolution_rate_pct": 87.79,
+        "concept_resolution_rate_pct": 87.69,
         "translated_segments": [
           {
             "start": 0,
@@ -5573,7 +5583,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.7579,
-            "clauses": 3
+            "clauses": 2
           },
           {
             "start": 25.44,
@@ -5720,24 +5730,24 @@
             "gloss_sequence": [
               "YOU",
               "ROBOT",
-              "THAT",
               "GIVE",
+              "THAT",
               "YOU",
               "DO",
               "THIS",
-              "POINT",
+              "SPECIAL",
               "WORK",
               "HOW"
             ],
             "sign_ids": [
               "you",
               "robot",
-              "that",
               "give",
+              "that",
               "you",
               "do",
               "this",
-              "point",
+              "special",
               "work",
               "how"
             ],
@@ -5824,13 +5834,13 @@
             "source_text": "So, similarly, there are many other questions.",
             "gloss_sequence": [
               "SIMILAR",
-              "MORE",
+              "MANY",
               "OTHER",
               "QUESTION"
             ],
             "sign_ids": [
               "similar",
-              "more",
+              "many",
               "other",
               "question"
             ],
@@ -5847,18 +5857,18 @@
             "gloss_sequence": [
               "NOW",
               "HERE",
-              "WHAT",
               "I",
               "WILL",
-              "DO"
+              "DO",
+              "WHAT"
             ],
             "sign_ids": [
               "now",
               "here",
-              "what",
               "i",
               "will",
-              "do"
+              "do",
+              "what"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -5941,11 +5951,11 @@
             "end": 91.66,
             "source_text": "particular course.",
             "gloss_sequence": [
-              "POINT",
+              "SPECIAL",
               "COURSE"
             ],
             "sign_ids": [
-              "point",
+              "special",
               "course"
             ],
             "unknown_terms": [],
@@ -5966,8 +5976,8 @@
               "ONE",
               "START",
               "THAT",
-              "WHAT",
-              "ROBOT"
+              "ROBOT",
+              "WHAT"
             ],
             "sign_ids": [
               "now",
@@ -5977,8 +5987,8 @@
               "one",
               "start",
               "that",
-              "what",
-              "robot"
+              "robot",
+              "what"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -5995,7 +6005,7 @@
               "WILL",
               "DEFINITION",
               "THAT",
-              "POINT",
+              "SPECIAL",
               "ROBOT"
             ],
             "sign_ids": [
@@ -6003,7 +6013,7 @@
               "will",
               "definition",
               "that",
-              "point",
+              "special",
               "robot"
             ],
             "unknown_terms": [
@@ -6043,7 +6053,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.7578,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 111.58,
@@ -6051,7 +6061,6 @@
             "source_text": "This is just like a servant and we are going to give some task to the robot and it is",
             "gloss_sequence": [
               "THIS",
-              "SAME",
               "LIKE",
               "WE",
               "WILL",
@@ -6062,7 +6071,6 @@
             ],
             "sign_ids": [
               "this",
-              "same",
               "like",
               "we",
               "will",
@@ -6181,17 +6189,17 @@
             "end": 16.56,
             "source_text": "And I want you to take a moment to appreciate how",
             "gloss_sequence": [
-              "TIME",
               "I",
               "WANT",
               "YOU",
+              "TIME",
               "HOW"
             ],
             "sign_ids": [
-              "time",
               "i",
               "want",
               "you",
+              "time",
               "how"
             ],
             "unknown_terms": [
@@ -6307,7 +6315,7 @@
             "end": 32.95,
             "source_text": "The particular light-sensitive cells in your eye that are firing when you",
             "gloss_sequence": [
-              "POINT",
+              "SPECIAL",
               "LIGHT",
               "YOUR",
               "EYE",
@@ -6316,7 +6324,7 @@
               "YOU"
             ],
             "sign_ids": [
-              "point",
+              "special",
               "light",
               "your",
               "eye",
@@ -6407,18 +6415,18 @@
             "gloss_sequence": [
               "SAME",
               "IDEA",
-              "TIME",
               "WHILE",
               "SAME",
+              "TIME",
               "OTHER",
               "THEY"
             ],
             "sign_ids": [
               "same",
               "idea",
-              "time",
               "while",
               "same",
+              "time",
               "other",
               "they"
             ],
@@ -6460,10 +6468,10 @@
               "TELL",
               "YOU",
               "HEY",
-              "STAND",
+              "SIT",
+              "WRITE",
               "ME",
-              "THAT",
-              "WRITE"
+              "THAT"
             ],
             "sign_ids": [
               "but",
@@ -6472,10 +6480,10 @@
               "tell",
               "you",
               "hey",
-              "stand",
+              "sit",
+              "write",
               "i",
-              "that",
-              "write"
+              "that"
             ],
             "unknown_terms": [
               "PROGRAM",
@@ -6485,7 +6493,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 54.63,
@@ -6517,7 +6525,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": null,
-            "clauses": 3
+            "clauses": 1
           },
           {
             "start": 59.13,
@@ -6607,18 +6615,18 @@
             "end": 74.64,
             "source_text": "and importance of machine learning and neural networks to the present and to the future.",
             "gloss_sequence": [
-              "LEARN",
+              "FUTURE",
               "NEURON",
               "NETWORK",
               "PRESENT",
-              "FUTURE"
+              "LEARN"
             ],
             "sign_ids": [
-              "learn",
+              "future",
               "neuron",
               "network",
               "present",
-              "future"
+              "learn"
             ],
             "unknown_terms": [
               "IMPORTANCE",
@@ -6627,7 +6635,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": null,
-            "clauses": 3
+            "clauses": 1
           },
           {
             "start": 75.12,
@@ -6868,22 +6876,22 @@
             "end": 103.28,
             "source_text": "What we're going to do is put together a neural",
             "gloss_sequence": [
+              "WHAT",
               "WE",
               "WILL",
               "PUT",
               "TOGETHER",
               "NEURON",
-              "DO",
-              "WHAT"
+              "DO"
             ],
             "sign_ids": [
+              "what",
               "we",
               "will",
               "put",
               "together",
               "neuron",
-              "do",
-              "what"
+              "do"
             ],
             "unknown_terms": [],
             "fingerspelled_terms": [],
@@ -7037,15 +7045,15 @@
         "asr_rtf": 0.0612,
         "segment_count": 25,
         "source_word_count": 387,
-        "gloss_occurrence_count": 189,
-        "playable_sign_count": 189,
-        "lexical_playable_count": 189,
+        "gloss_occurrence_count": 190,
+        "playable_sign_count": 190,
+        "lexical_playable_count": 190,
         "fingerspelled_playable_count": 0,
         "technical_disk_playability_pct": 100,
         "unverified_sign_ids": [],
         "unavailable_sign_count": 0,
         "unknown_term_count": 65,
-        "concept_resolution_rate_pct": 74.41,
+        "concept_resolution_rate_pct": 74.51,
         "translated_segments": [
           {
             "start": 0,
@@ -7089,10 +7097,10 @@
               "THREE",
               "HAVE",
               "NOT",
-              "TIME",
               "I",
               "WANT",
-              "YOU"
+              "YOU",
+              "TIME"
             ],
             "sign_ids": [
               "but",
@@ -7102,10 +7110,10 @@
               "three",
               "have",
               "not",
-              "time",
               "i",
               "want",
-              "you"
+              "you",
+              "time"
             ],
             "unknown_terms": [
               "TROUBLE",
@@ -7123,23 +7131,23 @@
             "end": 21.2,
             "source_text": "how crazy it is that brains can do this so effortlessly. I mean, this, this, and this",
             "gloss_sequence": [
+              "HOW",
               "CRAZY",
               "THAT",
               "BRAIN",
               "THIS",
               "DO",
-              "HOW",
               "I",
               "MEAN",
               "THIS"
             ],
             "sign_ids": [
+              "how",
               "crazy",
               "that",
               "brain",
               "this",
               "do",
-              "how",
               "i",
               "mean",
               "this"
@@ -7209,7 +7217,7 @@
             "end": 32.96,
             "source_text": "The particular light-sensitive cells in your eye that are firing when you see",
             "gloss_sequence": [
-              "POINT",
+              "SPECIAL",
               "LIGHT",
               "YOUR",
               "EYE",
@@ -7217,7 +7225,7 @@
               "WHEN"
             ],
             "sign_ids": [
-              "point",
+              "special",
               "light",
               "your",
               "eye",
@@ -7322,17 +7330,17 @@
             "end": 48.96,
             "source_text": "while at the same time recognizing other images as their own distinct ideas.",
             "gloss_sequence": [
-              "TIME",
               "WHILE",
               "SAME",
+              "TIME",
               "OTHER",
               "THEY",
               "IDEA"
             ],
             "sign_ids": [
-              "time",
               "while",
               "same",
+              "time",
               "other",
               "they",
               "idea"
@@ -7359,9 +7367,9 @@
               "TELL",
               "YOU",
               "HEY",
-              "STAND",
-              "ME",
-              "WRITE"
+              "SIT",
+              "WRITE",
+              "ME"
             ],
             "sign_ids": [
               "but",
@@ -7370,9 +7378,9 @@
               "tell",
               "you",
               "hey",
-              "stand",
-              "i",
-              "write"
+              "sit",
+              "write",
+              "i"
             ],
             "unknown_terms": [
               "PROGRAM"
@@ -7380,7 +7388,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.8992,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 52.8,
@@ -7417,7 +7425,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.9067,
-            "clauses": 3
+            "clauses": 1
           },
           {
             "start": 59.92,
@@ -7493,16 +7501,16 @@
             "end": 74.16,
             "source_text": "the relevance and importance of machine learning and neural networks to the present and to the",
             "gloss_sequence": [
-              "LEARN",
               "NEURON",
               "NETWORK",
-              "PRESENT"
+              "PRESENT",
+              "LEARN"
             ],
             "sign_ids": [
-              "learn",
               "neuron",
               "network",
-              "present"
+              "present",
+              "learn"
             ],
             "unknown_terms": [
               "RELEVANCE",
@@ -7512,7 +7520,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.9067,
-            "clauses": 3
+            "clauses": 1
           },
           {
             "start": 74.16,
@@ -7597,6 +7605,7 @@
             "end": 89.6,
             "source_text": "is just that you come away feeling like the structure itself is motivated and to feel like",
             "gloss_sequence": [
+              "ONLY",
               "THAT",
               "YOU",
               "COME",
@@ -7609,6 +7618,7 @@
               "FEEL"
             ],
             "sign_ids": [
+              "only",
               "that",
               "you",
               "come",
@@ -7698,7 +7708,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.9237,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 98.96,
@@ -7708,27 +7718,27 @@
               "ONE",
               "WILL",
               "LEARN",
+              "WHAT",
               "WE",
               "WILL",
               "PUT",
               "TOGETHER",
               "NEURON",
               "NETWORK",
-              "DO",
-              "WHAT"
+              "DO"
             ],
             "sign_ids": [
               "one",
               "will",
               "learn",
+              "what",
               "we",
               "will",
               "put",
               "together",
               "neuron",
               "network",
-              "do",
-              "what"
+              "do"
             ],
             "unknown_terms": [
               "TACKLE"
@@ -7862,7 +7872,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.8748,
-            "clauses": 3
+            "clauses": 2
           }
         ]
       }
@@ -7995,8 +8005,8 @@
             "source_text": "My mother says that I started reading at the age of two,",
             "gloss_sequence": [
               "MY",
-              "THAT",
               "SAY",
+              "THAT",
               "I",
               "START",
               "READ",
@@ -8004,8 +8014,8 @@
             ],
             "sign_ids": [
               "my",
-              "that",
               "say",
+              "that",
               "i",
               "start",
               "read",
@@ -8073,14 +8083,14 @@
             "gloss_sequence": [
               "WHAT",
               "I",
-              "READ",
-              "BOOK"
+              "BOOK",
+              "READ"
             ],
             "sign_ids": [
               "what",
               "i",
-              "read",
-              "book"
+              "book",
+              "read"
             ],
             "unknown_terms": [
               "BRITISH",
@@ -8090,7 +8100,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 39.87,
@@ -8234,7 +8244,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": null,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 60.16,
@@ -8298,13 +8308,13 @@
             "source_text": "and they talked a lot about the weather,",
             "gloss_sequence": [
               "THEY",
-              "MORE",
+              "VERY",
               "WEATHER",
               "SAY"
             ],
             "sign_ids": [
               "they",
-              "more",
+              "very",
               "weather",
               "say"
             ],
@@ -8319,18 +8329,18 @@
             "end": 70.34,
             "source_text": "how lovely it was that the sun had come out.",
             "gloss_sequence": [
+              "HOW",
               "LOVELY",
               "THAT",
               "COME",
-              "HAVE",
-              "HOW"
+              "HAVE"
             ],
             "sign_ids": [
+              "how",
               "lovely",
               "that",
               "come",
-              "have",
-              "how"
+              "have"
             ],
             "unknown_terms": [
               "SUN"
@@ -8492,14 +8502,14 @@
               "MY",
               "PEOPLE",
               "ALSO",
-              "MORE",
+              "MANY",
               "DRINK"
             ],
             "sign_ids": [
               "my",
               "people",
               "also",
-              "more",
+              "many",
               "drink"
             ],
             "unknown_terms": [
@@ -8610,11 +8620,11 @@
             "end": 99.16,
             "source_text": "And for many years afterwards,",
             "gloss_sequence": [
-              "MORE",
+              "MANY",
               "YEAR"
             ],
             "sign_ids": [
-              "more",
+              "many",
               "year"
             ],
             "unknown_terms": [
@@ -8677,14 +8687,14 @@
             "end": 106.64,
             "source_text": "What this demonstrates, I think,",
             "gloss_sequence": [
-              "THIS",
               "WHAT",
+              "THIS",
               "I",
               "THINK"
             ],
             "sign_ids": [
-              "this",
               "what",
+              "this",
               "i",
               "think"
             ],
@@ -8715,7 +8725,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": null,
-            "clauses": 1
+            "clauses": 2
           },
           {
             "start": 109.55,
@@ -8786,15 +8796,15 @@
             "source_text": "I had become convinced that books",
             "gloss_sequence": [
               "I",
+              "HAVE",
               "THAT",
-              "BOOK",
-              "HAVE"
+              "BOOK"
             ],
             "sign_ids": [
               "i",
+              "have",
               "that",
-              "book",
-              "have"
+              "book"
             ],
             "unknown_terms": [
               "BECOME",
@@ -8944,8 +8954,8 @@
             "source_text": "My mother says that I started reading at the age of 2, although I think 4 is probably close",
             "gloss_sequence": [
               "MY",
-              "THAT",
               "SAY",
+              "THAT",
               "I",
               "START",
               "READ",
@@ -8957,8 +8967,8 @@
             ],
             "sign_ids": [
               "my",
-              "that",
               "say",
+              "that",
               "i",
               "start",
               "read",
@@ -9003,16 +9013,16 @@
               "READ",
               "WHAT",
               "I",
-              "READ",
-              "BOOK"
+              "BOOK",
+              "READ"
             ],
             "sign_ids": [
               "i",
               "read",
               "what",
               "i",
-              "read",
-              "book"
+              "book",
+              "read"
             ],
             "unknown_terms": [
               "EARLY",
@@ -9023,7 +9033,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.8998,
-            "clauses": 3
+            "clauses": 2
           },
           {
             "start": 40,
@@ -9137,7 +9147,7 @@
             "fingerspelled_terms": [],
             "status": "TRANSLATION_UNCERTAIN",
             "asr_confidence": 0.8502,
-            "clauses": 2
+            "clauses": 1
           },
           {
             "start": 60.16,
@@ -9150,7 +9160,7 @@
               "APPLE",
               "EAT",
               "THEY",
-              "MORE",
+              "VERY",
               "WEATHER",
               "SAY",
               "HOW"
@@ -9162,7 +9172,7 @@
               "apple",
               "eat",
               "they",
-              "more",
+              "very",
               "weather",
               "say",
               "how"
@@ -9289,7 +9299,7 @@
               "MY",
               "PEOPLE",
               "ALSO",
-              "MORE",
+              "MANY",
               "DRINK",
               "BECAUSE",
               "PEOPLE"
@@ -9301,7 +9311,7 @@
               "my",
               "people",
               "also",
-              "more",
+              "many",
               "drink",
               "because",
               "people"
@@ -9363,13 +9373,13 @@
             "end": 101.8,
             "source_text": "beer was. And for many years afterwards, I would have a desperate desire to taste ginger",
             "gloss_sequence": [
-              "MORE",
+              "MANY",
               "YEAR",
               "I",
               "HAVE"
             ],
             "sign_ids": [
-              "more",
+              "many",
               "year",
               "i",
               "have"
@@ -9397,8 +9407,8 @@
               "THAT",
               "OTHER",
               "STORY",
-              "THIS",
               "WHAT",
+              "THIS",
               "I",
               "THINK",
               "HOW"
@@ -9408,8 +9418,8 @@
               "that",
               "other",
               "story",
-              "this",
               "what",
+              "this",
               "i",
               "think",
               "how"
@@ -9464,9 +9474,9 @@
               "BOOK",
               "PEOPLE",
               "I",
+              "HAVE",
               "THAT",
-              "BOOK",
-              "HAVE"
+              "BOOK"
             ],
             "sign_ids": [
               "read",
@@ -9474,9 +9484,9 @@
               "book",
               "people",
               "i",
+              "have",
               "that",
-              "book",
-              "have"
+              "book"
             ],
             "unknown_terms": [
               "FOREIGN",

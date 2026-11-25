@@ -122,3 +122,30 @@ test('SignAnimationPlayer supports per-hand finger_curls dictionaries', () => {
   assert.ok(Math.abs(handRig.left.index[0].rotation.z - (0.2 + THREE.MathUtils.degToRad(60) * 0.75)) < 1e-5);
   assert.ok(Math.abs(handRig.right.thumb[0].rotation.z - (0.1 + THREE.MathUtils.degToRad(40) * 0.75)) < 1e-5);
 });
+
+
+test('SignAnimationPlayer supports co-articulated pose blending across consecutive signs without snapping to zero', () => {
+  const { avatarModel, bonesMap, handRig, rightArm } = makeRig();
+  const player = new SignAnimationPlayer(avatarModel, bonesMap, handRig);
+  rightArm.rotation.z = THREE.MathUtils.degToRad(-60);
+
+  const nextSign = {
+    signId: 'test_next',
+    duration_ms: 1000,
+    dominant_hand: 'right',
+    return_to_neutral: true,
+    involved_bones: ['mixamorigRightArm'],
+    keyframes: [
+      { time_ms: 0, rotations: { mixamorigRightArm: { x: 0, y: 0, z: 0 } } },
+      { time_ms: 500, rotations: { mixamorigRightArm: { x: 0, y: 0, z: -80 } } },
+      { time_ms: 1000, rotations: { mixamorigRightArm: { x: 0, y: 0, z: 0 } } }
+    ]
+  };
+
+  player.loadSign(nextSign, { blendFromCurrentPose: true, blendMs: 200 });
+  // Must NOT immediately reset rightArm to 0 at t=0
+  assert.ok(Math.abs(rightArm.rotation.z - THREE.MathUtils.degToRad(-60)) < 1e-5);
+  player.play();
+  player.update(50);
+  assert.ok(rightArm.rotation.z < THREE.MathUtils.degToRad(-30), 'Mid-blend holds smooth non-zero pose');
+});

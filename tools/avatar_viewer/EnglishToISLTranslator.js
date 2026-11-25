@@ -5,7 +5,7 @@ const CONTRACTION_PATTERNS = [
   [/\bi'm\b/g, 'i'], [/\byou're\b/g, 'you'], [/\bwe're\b/g, 'we'], [/\bthey're\b/g, 'they'],
   [/\bhe's\b/g, 'he'], [/\bshe's\b/g, 'she'], [/\bthere's\b/g, 'there'], [/\bthat's\b/g, 'that'],
   [/\bwhat's\b/g, 'what'], [/\bi've\b/g, 'i have'], [/\byou've\b/g, 'you have'], [/\bi'll\b/g, 'i will'],
-  [/\bdon't\b/g, 'not'], [/\bcan't\b/g, 'can not'], [/\bgonna\b/g, 'go'], [/\bwanna\b/g, 'want'],
+  [/\bdon't\b/g, 'not'], [/\bcan't\b/g, 'can not'], [/\bgonna\b/g, 'will'], [/\bwanna\b/g, 'want'],
   [/\byou'll\b/g, 'you will'], [/\bthey'll\b/g, 'they will'], [/\bwe'll\b/g, 'we will'],
   [/\bhaven't\b/g, 'have not'], [/\bwe've\b/g, 'we have'], [/\bisn't\b/g, 'not'], [/\bdidn't\b/g, 'not'],
   [/\bdoesn't\b/g, 'not'], [/\bwasn't\b/g, 'not'], [/\bcouldn't\b/g, 'can not'],
@@ -648,7 +648,13 @@ export class EnglishToISLTranslator extends TranslationBackend {
       he: { playable: true },
       she: { playable: true },
       get: { playable: true },
-      wind: { playable: true }
+      wind: { playable: true },
+      // Milestone H44 Semantic Repair Signs
+      famous: { playable: true },
+      only: { playable: true },
+      around: { playable: true },
+      remaining: { playable: true },
+      many: { playable: true }
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
@@ -699,7 +705,9 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["look at your", ["LOOK", "YOUR"]],
       ["we're going to", ["WE", "WILL"]],
       ["going to give", ["WILL", "GIVE"]],
-      ["a lot of", ["MORE"]],
+      ["a lot of", ["MANY"]],
+      ["a lot easier", ["VERY", "EASY"]],
+      ["a lot", ["VERY"]],
       ["here we go", ["WE", "GO"]],
       ["over and over", ["MORE"]],
       ["i don't know", ["I", "NOT", "KNOW"]],
@@ -711,7 +719,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["facial expressions", ["HEAD", "GESTURE"]],
       ["over and over again", ["MORE"]],
       ["next time", ["TIME", "MORE"]],
-      ["sit down", ["STAND"]],
+      ["sit down", ["SIT"]],
       ["each other", ["SAME", "MEET"]],
       ["stand up", ["STAND"]],
       ["talk about", ["SAY"]],
@@ -726,10 +734,10 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["right here", ["HERE"]],
       ["all around", ["ALL"]],
       ["all over", ["ALL"]],
-      ["walk away with", ["HAVE"]],
+      ["walk away with", ["GET"]],
       ["over the next", ["NEXT"]],
-      ["make sure", ["SURE"]],
-      ["lean in", ["ATTENTION"]],
+      ["make sure", ["REMEMBER", "IMPORTANT"]],
+      ["lean in", ["FOCUS"]],
       ["have fun", ["ENJOY"]],
       ["finish off with", ["FINISH"]],
       ["finish off", ["FINISH"]],
@@ -754,9 +762,11 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["you see", []],
       ["much more", ["VERY", "MORE"]],
       ["global giants", ["WORLD", "BIG", "COMPANY"]],
-      ["among the most viewed in the world", ["WORLD", "ALL", "MOST", "SEE"]],
-      ["most viewed in the world", ["WORLD", "ALL", "MOST", "SEE"]],
+      ["among the most viewed in the world", ["WORLD", "MANY", "SEE"]],
+      ["most viewed in the world", ["WORLD", "MANY", "SEE"]],
       ["most viewed", ["MOST", "SEE"]],
+      ["best known for", ["FAMOUS", "BECAUSE"]],
+      ["best known", ["FAMOUS"]],
       ["begin with", ["START"]],
       ["lovely country of sweden", ["SWEDEN", "LOVELY", "COUNTRY"]],
       ["country of sweden", ["SWEDEN", "COUNTRY"]],
@@ -764,24 +774,44 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["right here in our studio", ["HERE", "RECORD", "ROOM"]],
       ["in our studio", ["RECORD", "ROOM"]],
       ["our studio", ["RECORD", "ROOM"]],
-      // Milestone H42 Contextual Phrases (Video B & General Conversational Discourse)
-      ["short film", ["SMALL", "MOVIE"]],
-      ["short films", ["SMALL", "MOVIE"]],
+      ["for beginners", ["NEW", "PEOPLE", "LEARN"]],
+      ["as a beginner", ["NEW", "LEARN"]],
+      ["capturing attention", ["ATTENTION", "HOLD"]],
+      ["pinpoint", ["FIND"]],
+      ["all over the place", ["MANY", "PLACE"]],
+      // Milestone H42 / H44 Contextual Phrases (Video B & General Conversational Discourse)
+      ["in my opinion", ["I", "THINK"]],
+      ["in the back of your mind", ["YOUR", "MIND", "DEEP"]],
+      ["over the years", ["MANY", "YEAR"]],
+      ["go about", ["LIVE"]],
+      ["scripted out", ["PLAN", "WRITE"]],
+      ["overthinking it", ["THINK", "MORE"]],
+      ["overthinking", ["THINK", "MORE"]],
+      ["short film", ["SMALL", "FILM"]],
+      ["short films", ["SMALL", "FILM"]],
       ["start filming", ["START", "RECORD"]],
       ["started filming", ["START", "RECORD"]],
       ["dollar store", ["MONEY", "MARKET"]],
       ["cleaning supplies", ["CLEAN", "TOOLS"]],
       ["coffee shop", ["DRINK", "ROOM"]],
       ["coffee shops", ["DRINK", "ROOM"]],
-      ["have to have a story", ["STORY", "YOU", "NEED", "HAVE"]],
+      ["have to have a story", ["STORY", "HAVE", "NEED"]],
       ["have to have", ["NEED", "HAVE"]],
       ["has to have", ["NEED", "HAVE"]],
+      ["need to have", ["NEED"]],
       ["story is king", ["STORY", "MOST", "IMPORTANT"]],
       ["stitched together", ["COMBINATION", "JOIN"]],
       ["stitch together", ["COMBINATION", "JOIN"]],
+      ["greater and broader", ["MORE", "BIG"]],
+      ["just like", ["LIKE"]],
+      ["kind of", []],
+      ["up to", ["DO"]],
+      ["or so", ["AROUND"]],
+      ["scene by scene", ["SCENE", "STEP"]],
       ["loosely defined", ["SIMPLE"]],
       ["trial and error", ["PRACTICE", "FAIL", "LEARN"]],
       ["show not tell", ["SHOW", "MORE", "SAY", "LESS"]],
+      ["capture some dialogue", ["COMMUNICATION", "RECORD"]],
       ["cold start", ["START", "HARD"]],
       ["creative process", ["ART", "STEP"]],
       ["at the end of the day", ["FINAL"]],
@@ -1440,7 +1470,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['setting', 'SETTING'], ['settings', 'SETTING'], ['setup', 'SETTING'],
       ['expectation', 'EXPECTATION'], ['expectations', 'EXPECTATION'], ['expect', 'EXPECTATION'], ['expects', 'EXPECTATION'], ['expected', 'EXPECTATION'], ['expecting', 'EXPECTATION'],
       ['server', 'SERVER'], ['servers', 'SERVER'], ['serve', 'SERVER'], ['serves', 'SERVER'], ['serving', 'SERVER'], ['served', 'SERVER'],
-      ['simply', 'SIMPLY'], ['simple', 'SIMPLY'], ['simpler', 'SIMPLY'], ['simplest', 'SIMPLY'], ['simplicity', 'SIMPLY'],
+      ['simply', 'SIMPLY'], ['simple', 'SIMPLE'], ['simpler', 'SIMPLE'], ['simplest', 'SIMPLE'], ['simplicity', 'SIMPLE'],
       ['cannot', 'CANNOT'], ["can't", 'CANNOT'], ["cant", 'CANNOT'],
       ['dollar', 'DOLLAR'], ['dollars', 'DOLLAR'], ['buck', 'DOLLAR'], ['bucks', 'DOLLAR'],
       ['deep', 'DEEP'], ['deeper', 'DEEP'], ['deepest', 'DEEP'], ['deeply', 'DEEP'], ['depth', 'DEEP'],
@@ -1718,15 +1748,15 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['global', 'WORLD'],
       ['endeavour', 'WORK'], ['endeavours', 'WORK'],
       ['view', 'SEE'], ['views', 'SEE'], ['viewed', 'SEE'], ['viewing', 'SEE'],
-      ['captivating', 'BEAUTIFUL'],
-      ['giants', 'BIG'], ['giant', 'BIG'],
+      ['captivating', 'INTERESTING'],
+      ['giants', 'COMPANY'], ['giant', 'BIG'],
       ['overcome', 'OVERCOME'], ['conquer', 'OVERCOME'],
       ['discover', 'FIND'], ['discovers', 'FIND'], ['discovered', 'FIND'],
       ['apply', 'PRACTICE'], ['applies', 'PRACTICE'], ['applied', 'PRACTICE'],
       ['gathered', 'FIND'], ['gather', 'FIND'],
       ['anxious', 'NERVOUS'], ['anxiety', 'NERVOUS'],
       ['nervous', 'NERVOUS'],
-      ['afraid', 'FEAR'], ['fear', 'FEAR'],
+      ['afraid', 'AFRAID'], ['fear', 'FEAR'],
       ['speech', 'SPEECH'], ['lecture', 'SPEECH'],
       ['hundred', 'HUNDRED'], ['twenty', 'TWENTY'], ['thirty', 'THIRTY'], ['zero', 'ZERO'],
       ['tool', 'TOOLS'], ['tools', 'TOOLS'],
@@ -1734,7 +1764,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['delivery', 'PRESENTATION'], ['delivering', 'PRESENTATION'], ['delivered', 'GIVE'],
       ['studio', 'ROOM'],
       ['beginners', 'LEARN'], ['beginner', 'LEARN'],
-      ['country', 'PLACE'], ['countries', 'PLACE'],
+      ['country', 'COUNTRY'], ['countries', 'COUNTRY'],
       ['here', 'HERE'],
       ['this', 'THIS'],
       ['that', 'THAT'],
@@ -1750,16 +1780,15 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['someone', 'SOMEBODY'], ['somebody', 'SOMEBODY'],
       ['place', 'PLACE'], ['places', 'PLACE'],
       ['uncertain', 'CONFUSED'],
+      ['barrier', 'WALL'], ['barriers', 'WALL'],
       ['compilation', 'COMBINATION'],
       ['impactful', 'POWER'],
-      ['excellence', 'GREAT'],
-      ['particular', 'POINT'],
+      ['excellence', 'GREAT'], ['excellent', 'GREAT'],
+      ['particular', 'SPECIAL'],
       ['pinpoint', 'FIND'],
-      ['exactly', 'TRUE'],
+      ['exactly', 'CLEAR'],
       ['start', 'START'], ['starts', 'START'], ['starting', 'START'], ['started', 'START'],
       ['begin', 'START'], ['begins', 'START'], ['beginning', 'START'], ['began', 'START'],
-      ['country', 'COUNTRY'], ['countries', 'COUNTRY'],
-      ['giants', 'COMPANY'],
       ['coach', 'COACHING'],
       ['5', 'FIVE'],
       ['000', 'THOUSAND'],
@@ -1782,7 +1811,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['stitched', 'COMBINATION'], ['stitch', 'COMBINATION'],
       ['king', 'IMPORTANT'],
       ['pieces', 'PART'], ['piece', 'PART'],
-      ['things', 'ALL'], ['thing', 'ALL'],
+      ['things', 'MATTER'], ['thing', 'MATTER'],
       ['something', 'ONE'],
       ['some', 'FEW'],
       ['everybody', 'PEOPLE'], ['everyone', 'PEOPLE'],
@@ -1815,22 +1844,28 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['eat', 'EAT'], ['eating', 'EAT'],
       ['still', 'CONTINUOUS'],
       ['maybe', 'MAYBE'],
-      ['too', 'MORE'],
+      ['too', 'ALSO'],
       ['also', 'ALSO'],
       ['again', 'MORE'],
       ['always', 'CONTINUOUS'],
       ['often', 'USUALLY'],
       ['completely', 'ALL'],
-      ['definitely', 'TRUE'],
+      ['definitely', 'VERY'],
       ['probably', 'THINK'],
       ['entire', 'ALL'],
       ['then', 'NEXT'],
       ['yourself', 'YOU'], ['myself', 'I'], ['himself', 'HE'], ['herself', 'SHE'], ['themselves', 'THEY'],
       ['he', 'HE'], ['she', 'SHE'], ['him', 'HE'], ['her', 'SHE'],
-      // Milestone H43 Grammatical, Discourse & Multi-Domain Lexicon
+      // Milestone H43 / H44 Grammatical, Semantic & Multi-Domain Canonical Lexicon
       ['without', 'WITHOUT'], ['because', 'BECAUSE'], ['since', 'BECAUSE'],
       ['but', 'BUT'], ['however', 'BUT'], ['although', 'BUT'], ['though', 'BUT'],
       ['or', 'OR'], ['why', 'WHY'], ['if', 'IF'], ['already', 'ALREADY'],
+      ['famous', 'FAMOUS'], ['only', 'ONLY'], ['around', 'AROUND'], ['remaining', 'REMAINING'], ['many', 'MANY'],
+      ['speaker', 'SPEAKER'], ['speakers', 'SPEAKER'], ['speech', 'SPEECH'], ['speeches', 'SPEECH'],
+      ['focus', 'FOCUS'], ['meeting', 'MEETING'], ['street', 'STREET'],
+      ['second', 'SECOND'], ['seconds', 'SECOND'], ['minute', 'MINUTE'], ['minutes', 'MINUTE'],
+      ['sit', 'SIT'], ['sits', 'SIT'], ['sitting', 'SIT'], ['sat', 'SIT'],
+      ['notes', 'NOTE'], ['left', 'LEFT'],
       ['feature', 'FEATURE'], ['features', 'FEATURE'],
       ['robot', 'ROBOT'], ['robots', 'ROBOT'], ['robotics', 'ROBOT'],
       ['network', 'NETWORK'], ['networks', 'NETWORK'],
@@ -1845,7 +1880,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['character', 'PERSON'], ['characters', 'PEOPLE'], ['danger', 'DANGER'],
       ['student', 'PEOPLE'], ['students', 'PEOPLE'],
       ['never', 'NOT'], ['drank', 'DRINK'], ['brains', 'BRAIN'], ['image', 'PICTURE'],
-      ['3', 'THREE'], ['these', 'THIS'], ['many', 'MORE'], ['task', 'WORK'],
+      ['3', 'THREE'], ['these', 'THIS'], ['task', 'WORK'],
       ['tasks', 'WORK'], ['perform', 'DO'], ['personal', 'SELF'], ['university', 'SCHOOL'],
       ['reader', 'READ'], ['readers', 'READ']
     ]);
@@ -1908,7 +1943,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
     if (!clauseGloss.length) return [];
     let gloss = this._dedupeAdjacent(clauseGloss);
 
-    const timeGlosses = new Set(['TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'SUMMER', 'FUTURE', 'YESTERDAY', 'TIME']);
+    const timeGlosses = new Set(['TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'SUMMER', 'FUTURE', 'YESTERDAY']);
     const conversationalOpeners = new Set(['HEY', 'HELLO', 'WELCOME']);
     const discourseOpeners = new Set(['BUT', 'OR', 'IF', 'BECAUSE']);
     const lexicalVerbs = new Set([
@@ -1916,13 +1951,13 @@ export class EnglishToISLTranslator extends TranslationBackend {
       'PRACTICE', 'MAKE', 'WATCH', 'GIVE', 'COACHING', 'OVERCOME', 'FIND', 'START',
       'FINISH', 'RECORD', 'WRITE', 'READ', 'KNOW', 'THINK', 'SAY', 'TELL', 'LEARN',
       'UNDERSTAND', 'BUILD', 'SHARE', 'MOVE', 'SHOW', 'FEEL', 'EAT', 'GET', 'PICK',
-      'TRY', 'LIVE', 'HOLD', 'EXPLAIN', 'ANALYZE', 'CREATE', 'LOVE'
+      'TRY', 'LIVE', 'HOLD', 'EXPLAIN', 'ANALYZE', 'CREATE', 'LOVE', 'SIT'
     ]);
     const subjects = new Set(['I', 'YOU', 'YOUR', 'MY', 'WE', 'THEY', 'HE', 'SHE', 'PEOPLE', 'SOMEBODY']);
     const nonObjectGlosses = new Set([
       'NOT', 'WHAT', 'HOW', 'WHERE', 'WHO', 'WHY', 'WHEN',
-      'TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'SUMMER', 'FUTURE', 'YESTERDAY', 'TIME',
-      'BUT', 'OR', 'BECAUSE', 'IF', 'WITHOUT'
+      'TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'SUMMER', 'FUTURE', 'YESTERDAY',
+      'BUT', 'OR', 'BECAUSE', 'IF', 'WITHOUT', 'THAT'
     ]);
 
     // Preserve explicit greeting phrase "GOOD MORNING" without splitting MORNING away
@@ -1983,6 +2018,9 @@ export class EnglishToISLTranslator extends TranslationBackend {
         const lastVerbIdx = gloss.findLastIndex(g => lexicalVerbs.has(g));
         if (lastVerbIdx !== -1 && !gloss.includes('FINISH')) {
           gloss.splice(lastVerbIdx + 1, 0, 'FINISH');
+          // Drop redundant auxiliary HAVE once perfective FINISH marks completion
+          const auxHaveIdx = gloss.findIndex((g, idx) => g === 'HAVE' && idx < lastVerbIdx);
+          if (auxHaveIdx !== -1) gloss.splice(auxHaveIdx, 1);
           trace.push({
             stage: 'restructure',
             clause_index: clause.clause_index,
@@ -2036,8 +2074,9 @@ export class EnglishToISLTranslator extends TranslationBackend {
       }
     }
 
-    // 4. Strictly Clause-Local WH-Question Final Placement
-    if (clause.discourse_act === 'WH_QUESTION') {
+    // 4. Strictly Clause-Local Matrix WH-Question Final Placement (Aboh, Pfau & Zeshan 2005)
+    // Leaves free-relative/pseudo-cleft nominal clauses ("What you're about to watch is...") unmoved.
+    if (clause.is_matrix_wh_question) {
       const whWords = new Set(['WHAT', 'HOW', 'WHERE', 'WHO', 'WHY', 'WHEN']);
       for (let i = 0; i < gloss.length; i++) {
         if (whWords.has(gloss[i]) && i < gloss.length - 1) {
@@ -2046,7 +2085,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
           trace.push({
             stage: 'restructure',
             clause_index: clause.clause_index,
-            detail: `Clause ${clause.clause_index + 1} WH-final placement: ${whItem}`,
+            detail: `Clause ${clause.clause_index + 1} matrix WH-final placement: ${whItem}`,
             basis: 'ISL_SYNTACTIC_RULE',
             rule_id: 'ISL-WH-FINAL-02'
           });
@@ -2055,8 +2094,8 @@ export class EnglishToISLTranslator extends TranslationBackend {
       }
     }
 
-    // 5. Strictly Clause-Local Single Negation at Clause End (no cross-clause bleed, no double NOT)
-    const hasNeg = clause.polarity === 'NEGATIVE' || gloss.includes('NOT');
+    // 5. Strictly Clause-Local Single Negation at Clause End (no cross-clause bleed, no double NOT, no idiom inversion)
+    const hasNeg = !clause.idiomatic_negation_consumed && (clause.polarity === 'NEGATIVE' || gloss.includes('NOT'));
     if (hasNeg) {
       const withoutNots = gloss.filter(g => g !== 'NOT');
       if (withoutNots.length < gloss.length || clause.polarity === 'NEGATIVE') {
@@ -2141,8 +2180,16 @@ export class EnglishToISLTranslator extends TranslationBackend {
       const clauseGloss = [];
       let index = 0;
       while (index < tokens.length) {
-        // Respect clause-specific contextual sense before broad multiword/single lookup
         const tok = tokens[index];
+        // Check multiword phrases first so contextual single-word overrides don't break idioms ("just like", "right here")
+        const multiMatch = this._compiledPhrases.find(p => p.wordCount >= 2 && p.words.every((word, offset) => tokens[index + offset] === word));
+        if (multiMatch) {
+          clauseGloss.push(...multiMatch.gloss);
+          phraseMatches.push(multiMatch.phrase);
+          index += multiMatch.wordCount;
+          continue;
+        }
+
         const ctxOverride = clause.contextual_overrides?.[tok];
         if (ctxOverride === '__OMIT__') {
           removed.push(tok);
@@ -2155,11 +2202,11 @@ export class EnglishToISLTranslator extends TranslationBackend {
           continue;
         }
 
-        const match = this._compiledPhrases.find(p => p.words.every((word, offset) => tokens[index + offset] === word));
-        if (match) {
-          clauseGloss.push(...match.gloss);
-          phraseMatches.push(match.phrase);
-          index += match.wordCount;
+        const singleMatch = this._compiledPhrases.find(p => p.wordCount === 1 && p.words[0] === tok);
+        if (singleMatch) {
+          clauseGloss.push(...singleMatch.gloss);
+          phraseMatches.push(singleMatch.phrase);
+          index += 1;
           continue;
         }
 
@@ -2191,7 +2238,8 @@ export class EnglishToISLTranslator extends TranslationBackend {
         }
 
         const g3Lexicon = this.enableG3Improvements ? { not: 'NOT', how: 'HOW', tomorrow: 'TOMORROW' } : {};
-        const entry = this.lexicon.get(tok) || g3Lexicon[tok];
+        const lookupTok = tok.endsWith("'s") && tok.length > 2 ? tok.slice(0, -2) : tok;
+        const entry = this.lexicon.get(tok) || this.lexicon.get(lookupTok) || g3Lexicon[tok] || g3Lexicon[lookupTok];
         if (entry) {
           clauseGloss.push(entry);
         } else {
