@@ -191,12 +191,14 @@ function handleCommandMessage(data) {
   if (data.command === 'PAUSE') {
     signScheduler.pause();
     publishSchedulerState();
+    if (eventId) postToParent({ type: 'ISL_AETHER_ACK', eventId, status: 'accepted' });
     return;
   }
 
   if (data.command === 'RESUME') {
     signScheduler.resume();
     publishSchedulerState();
+    if (eventId) postToParent({ type: 'ISL_AETHER_ACK', eventId, status: 'accepted' });
     return;
   }
 
@@ -205,6 +207,9 @@ function handleCommandMessage(data) {
     if (Number.isFinite(rate) && rate > 0) {
       signPlayer.playbackSpeed = Math.max(0.5, Math.min(2.5, rate));
       publishSchedulerState();
+      if (eventId) postToParent({ type: 'ISL_AETHER_ACK', eventId, status: 'accepted' });
+    } else if (eventId) {
+      postToParent({ type: 'ISL_AETHER_ACK', eventId, status: 'rejected', reason: 'Invalid playback rate' });
     }
     return;
   }
@@ -214,12 +219,14 @@ function handleCommandMessage(data) {
     signPlayer.resetNeutral();
     pendingStartEvents.clear();
     publishSchedulerState();
+    if (eventId) postToParent({ type: 'ISL_AETHER_ACK', eventId, status: 'accepted' });
     return;
   }
 
   if (data.command === 'CANCEL_JOB') {
     signScheduler.cancelJob(data.jobId);
     publishSchedulerState();
+    if (eventId) postToParent({ type: 'ISL_AETHER_ACK', eventId, status: 'accepted' });
     return;
   }
 
@@ -228,6 +235,7 @@ function handleCommandMessage(data) {
       signScheduler.cancelEvent(data.targetEventId);
     }
     publishSchedulerState();
+    if (eventId) postToParent({ type: 'ISL_AETHER_ACK', eventId, status: 'accepted' });
     return;
   }
 
@@ -236,6 +244,7 @@ function handleCommandMessage(data) {
       signScheduler.advanceCue(data.jobId, data.cueId);
     }
     publishSchedulerState();
+    if (eventId) postToParent({ type: 'ISL_AETHER_ACK', eventId, status: 'accepted' });
     return;
   }
 

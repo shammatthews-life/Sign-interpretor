@@ -1,0 +1,971 @@
+{
+  "milestone": "H44",
+  "audited_at": "2026-11-25T10:44:15.961Z",
+  "chrome_version": "158.0.8127.88",
+  "pipeline_mode": "REAL_EXTENSION_POPUP_TO_TIMELINE_SYNCHRONIZER",
+  "videos_audited": [
+    {
+      "key": "video_a",
+      "video_id": "MXKkXXYUxBc",
+      "ad_clear": {
+        "cleared": true,
+        "attempts": 7
+      },
+      "real_pipeline_ready": {
+        "jobState": "READY",
+        "segCount": 2090,
+        "jobId": "Job yt_MXKkXXYUxBc_7ec68bb3c759",
+        "latestSeg": "click on the link below, get signed up and I'll see you on day one. Cheers!",
+        "glosses": "THIS PUBLIC SPEECH NEW PEOPLE LEARN GOAL VIDEO SIMPLE YOU CONFUSED NERVOUS AFRAID OVERCOME HELP BRING FEW STEP CLOSE MORE CONFIDENT CLEAR VERY INTERESTING SPEAKER WHAT SPECIAL COMBINATION THREE DAY WATCH CHALLENGE WE HERE GIVE LIVE RECORD ROOM MINDSET START SCIENCE ATTENTION MOVE HOLD MOST FINISH POWER PRESENTATION SKILL HUNDRED TEN CHART GREAT COMMUNICATION HEY IF BEFORE MEET NOT MY NAME FS_DAVID FS_JP FS_PHILLIPS I FAMOUS BECAUSE FS_TEDX SAY WORLD MANY SUBJECT SEE STUDY FIVE THOUSAND FIND TRUE MAKE SOMEBODY ONE RESULT THAT THEY PRACTICE BIG COMPANY LIKE FS_ORACLE FS_GOOGLE FS_DISNEY COACHING STORY BEAUTIFUL AUDIENCE NOW NEXT TWO HOUR THIRTY MINUTE IMPORTANT TOOLS DURING TWENTY YEAR CAREER REMEMBER PEN HAVE PAPER FOCUS WALK TOMORROW PRACTICAL ENJOY WELCOME ALL SWEDEN LOVELY COUNTRY PICTURE PLACE WILL ONLY COUPLE WEEK HOUSE THANK_YOU EVENING PASSION ME LIFE DO CALL YES THINK MEAN KID YOUR TIME VALUABLE WANT GROW CAN READY OR NO HAND AIR LOVE TECHNIQUE TRANSFORM BAD SESSION BUT COME WORK PUT ALSO PLEASE NEED WRITE AWESOME TIP CONTINUOUS WHEN EVERYDAY MEETING TEACHER MATTER TODAY FIRST CONCEPT HOW FAR FEAR STAGE PRESENT WHO HARNESS CONTENT AVOID FINE BOOK HIGH DIFFERENT PICK GESTURE LOOK LET HAPPEN LOSE NORMAL EXPERIENCE TRY OFF SORRY TELL EMOTIONAL CHANGE MOVIE EXCUSE SIMILAR MAY PREPARED FEEL KNOW GOOD EXTENT GO FAIL PERSPECTIVE GENERAL SCIENTIFIC BASIS CASE USUALLY INSTANCE BASKETBALL PLAY BETTER GET MATCH WIN REAL GOLF NATURE QUESTION ASK STAND QUICK CHAT SOCIAL SLIDE PITCH IDEA UNDERSTAND SKILLED MASSIVE SUPER HEAD LEVEL METAPHOR FIRE WIND IMAGINE THROW STRONG RISK INCREASE BASED EARTH NOTICE LESS LONGER BUILD HEAR ANSWER FIX DANCING BORN SING ABILITY SHOW WHERE DEFINITION MATH AFTER BELIEVE MATHS SECOND CRITICAL FEEDBACK SHOULD LIE WORSE INSTEAD UNTIL BRAIN OTHER LIMIT BELIEF WORTH RULE MENTION ABLE CLIENT POINT SMALL AGO GUESS QUITE HE ABSOLUTE PROBLEM REASON GROUP SIT ALLOW BACK REMOVE SOMETIMES ANGEL PART MAYBE DRINK TRAIN DECISION EFFECT MOTIVATED DIRECTION MOMENTUM MORNING LIST SMILE FACE SENSATION EAT ICE CREAM EXAMPLE EACH SUBSTANCE FRIEND LAUGH CONNECT SAME SHE GOOSEBUMPS BODY BRILLIANT ANYTHING OK VILLAGE OLD SIDE DREAM WHY HOPE SONG STOP INTENTION REST ALREADY MUSIC SIX HUNGRY PRIOR REALIZE THIRD FIFTH NOTHING REPLACE ACCOMPLISH TURN CORE COVER GYM ONCE LITTLE EXERCISE FUN MIRROR SICK INSANE ACTION UPON HARD LONG WHILE PHONE MIND SIMPLY DECIDE LAUNCH SYSTEM FUTURE REMIND VISION BOARD MONEY BUY EASY PAID LEAVE PROVEN EMPOWERING OPEN DOOR DRAW FLOWER DOMINANT WOW BIT TREE COOL ANALYZE KEEP OPPOSITE BETWEEN WRONG FOURTH ADD HUMAN FAILURE UNCOMFORTABLE COMFORTABLE UNITED RELATE TEAM FAN FOOTBALL OUTSIDE SILENT PERSON BOND SHARE PACE VOLUME FUNCTIONAL SOMATIC LOOP PERFECT EYE GUY COURSE CORNER CHEST ANGLE CENTER SLOWLY EXTENSION ARENA SOUND CONTROL FAST WAIT ANIMAL ALONG CAR FINAL WEIRD POSTURE BREATHE PATTERN SCREAM VOICE REMAINING SPACE TOGETHER PERCEIVE EMOTION ANYONE GRAB JOB FRONT FALL MOBILE BUSINESS PHENOMENAL AMOUNT NOTE IGNORE MINE NUMBER EIGHT SEVEN RANGE YESTERDAY SCHOOL PAST LESSON FLOW DATA CERTAIN RESPECT UNDER LATER CANNOT SEND SUBTLE CRAZY BASE PROMISE PACKAGE DOLLAR DOCTOR MOUNTAIN BILLION CONFERENCE SOMEWHERE DEEP NEURON CLASS READ WISE DEAD TEACH EVERYTHING FILL SINGLE MARKET BOOM RESOURCE PACK FOLLOW ANTICIPATION EXPECTATION PARENT BREAK FRIDAY SELL FAIR POINTLESS HONESTY SELF FAVORITE SPEND COMPLEX FEATURE TURBO ZERO ROAD SET NOWHERE STATISTICS SOUL SPICE MEAL MEMORY POST FULL SCREEN CATCH INHALE NOSE PAUSE CARE COMPUTER APPLE MIDDLE COLOR SETTING GRAY GAME TEST STORE SISTER STREET CLOAK ATTRACT CAMERA CLARITY MESSAGE SURE BURDEN MISUNDERSTAND EXPLAIN OBSERVANT TILT LEFT MARK AVERAGE SLOW NINE ENERGY HAPPY STRUCTURE CONDUCTOR LINE DYNAMIC LOW HELLO QUARTER BEHAVIOR PRODUCT CULTURE JUDGE AUDIO NEGATIVE POSITIVE TUMBLE DRY ULTIMATE SERVER SPEED SYNCHRONICITY TRUST LAYER COST · SUPPORTED 733, UNCERTAIN 1357",
+        "transStatus": "G2/G3 prototype gloss; not full ISL translation",
+        "conn": "CONNECTED"
+      },
+      "dom_info": {
+        "hasHost": true,
+        "hasShadowRoot": true,
+        "fallbackHidden": true,
+        "dpr": 1.25,
+        "surfaceRect": {
+          "x": 878,
+          "y": 202,
+          "w": 400,
+          "h": 478
+        }
+      },
+      "signs_loaded_in_chrome": 635,
+      "final_view_mode": "full",
+      "screencast_frames_captured": 793,
+      "nvenc_recording_mp4": "artifacts/h44/recordings/h44_video_a_recording.mp4",
+      "contact_sheet_png": "artifacts/h44/contact_sheets/video_a/h44_video_a_contact_sheet.png",
+      "avatar_crops_sheet_png": "artifacts/h44/contact_sheets/video_a/h44_video_a_avatar_crops_sheet.png",
+      "non_neutral_phase_count": 12,
+      "observed_active_signs": [
+        "public",
+        "new",
+        "people",
+        "goal",
+        "many",
+        "speaker",
+        "find",
+        "true",
+        "what",
+        "confused",
+        "nervous"
+      ],
+      "observed_hud_glosses": [],
+      "transport_checks": {
+        "paused_verified": true,
+        "resumed_verified": true,
+        "speed_1_5x_verified": true,
+        "speed_0_5x_verified": true,
+        "forward_seek_verified": true,
+        "backward_seek_verified": true,
+        "half_body_toggle_verified": true
+      },
+      "phases": [
+        {
+          "label": "play_start",
+          "yt": {
+            "videoTime": 3.7,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "public",
+            "queuedCount": 8,
+            "viewMode": "full",
+            "rArm": {
+              "x": -44.1,
+              "y": -53,
+              "z": -81.2
+            },
+            "lArm": {
+              "x": 15.1,
+              "y": 55.2,
+              "z": 50.9
+            },
+            "rFore": {
+              "x": 0,
+              "y": -11.8,
+              "z": -52.8
+            },
+            "rHand": {
+              "x": 55.9,
+              "y": 25.1,
+              "z": -9.8
+            }
+          }
+        },
+        {
+          "label": "play_mid1",
+          "yt": {
+            "videoTime": 5.51,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "new",
+            "queuedCount": 6,
+            "viewMode": "full",
+            "rArm": {
+              "x": -21.8,
+              "y": -39.8,
+              "z": -50.2
+            },
+            "lArm": {
+              "x": 30,
+              "y": 44,
+              "z": 29.2
+            },
+            "rFore": {
+              "x": 0,
+              "y": -20.8,
+              "z": -70
+            },
+            "rHand": {
+              "x": 68.3,
+              "y": 12.5,
+              "z": -2.7
+            }
+          }
+        },
+        {
+          "label": "play_mid2",
+          "yt": {
+            "videoTime": 7.23,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "people",
+            "queuedCount": 5,
+            "viewMode": "full",
+            "rArm": {
+              "x": -19.3,
+              "y": -37.4,
+              "z": -22.1
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 41.5,
+              "z": 1.1
+            },
+            "rFore": {
+              "x": 0,
+              "y": -4.1,
+              "z": -31.2
+            },
+            "rHand": {
+              "x": 77.5,
+              "y": 1.6,
+              "z": 5.9
+            }
+          }
+        },
+        {
+          "label": "play_end1",
+          "yt": {
+            "videoTime": 8.97,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "goal",
+            "queuedCount": 3,
+            "viewMode": "full",
+            "rArm": {
+              "x": -42.2,
+              "y": -25.1,
+              "z": 9.4
+            },
+            "lArm": {
+              "x": 9.5,
+              "y": 28,
+              "z": -26
+            },
+            "rFore": {
+              "x": 37,
+              "y": 11.5,
+              "z": -4.6
+            },
+            "rHand": {
+              "x": 91.6,
+              "y": 4,
+              "z": -1.1
+            }
+          }
+        },
+        {
+          "label": "seek_forward",
+          "yt": {
+            "videoTime": 59.54,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "many",
+            "queuedCount": 7,
+            "viewMode": "full",
+            "rArm": {
+              "x": -32.1,
+              "y": -30.5,
+              "z": -52.8
+            },
+            "lArm": {
+              "x": 19.7,
+              "y": 34.7,
+              "z": 31.8
+            },
+            "rFore": {
+              "x": 0,
+              "y": 3.2,
+              "z": -51.5
+            },
+            "rHand": {
+              "x": 64.7,
+              "y": 15.5,
+              "z": -3.6
+            }
+          }
+        },
+        {
+          "label": "seek_forward_mid",
+          "yt": {
+            "videoTime": 61.19,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "speaker",
+            "queuedCount": 5,
+            "viewMode": "full",
+            "rArm": {
+              "x": -38.2,
+              "y": -23.8,
+              "z": 4.9
+            },
+            "lArm": {
+              "x": 16.1,
+              "y": 28.9,
+              "z": -25.1
+            },
+            "rFore": {
+              "x": 41.8,
+              "y": 11.5,
+              "z": -5.9
+            },
+            "rHand": {
+              "x": 94.7,
+              "y": 1.3,
+              "z": 0.2
+            }
+          }
+        },
+        {
+          "label": "paused",
+          "yt": {
+            "videoTime": 61.75,
+            "paused": true,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "find",
+            "queuedCount": 4,
+            "viewMode": "full",
+            "rArm": {
+              "x": -29.2,
+              "y": -46.8,
+              "z": -42.4
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": -12.8,
+              "z": -45.7
+            },
+            "rHand": {
+              "x": 58.7,
+              "y": 26,
+              "z": -7.7
+            }
+          }
+        },
+        {
+          "label": "resumed",
+          "yt": {
+            "videoTime": 62.58,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "true",
+            "queuedCount": 3,
+            "viewMode": "full",
+            "rArm": {
+              "x": -38.8,
+              "y": -55.6,
+              "z": -84.3
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": -28.1,
+              "z": -70.5
+            },
+            "rHand": {
+              "x": 57.8,
+              "y": 25,
+              "z": -8.3
+            }
+          }
+        },
+        {
+          "label": "speed_1_5x",
+          "yt": {
+            "videoTime": 64.49,
+            "paused": false,
+            "playbackRate": 1.5,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "what",
+            "queuedCount": 7,
+            "viewMode": "full",
+            "rArm": {
+              "x": -19.8,
+              "y": -18.1,
+              "z": -60.6
+            },
+            "lArm": {
+              "x": 32,
+              "y": 22.3,
+              "z": 39.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": 28.9,
+              "z": -71.8
+            },
+            "rHand": {
+              "x": 58.6,
+              "y": 13.6,
+              "z": 10.3
+            }
+          }
+        },
+        {
+          "label": "speed_0_5x",
+          "yt": {
+            "videoTime": 65.93,
+            "paused": false,
+            "playbackRate": 0.5,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "speaker",
+            "queuedCount": 5,
+            "viewMode": "full",
+            "rArm": {
+              "x": -46.1,
+              "y": -24.6,
+              "z": 4.2
+            },
+            "lArm": {
+              "x": 21.7,
+              "y": 34.2,
+              "z": -19.8
+            },
+            "rFore": {
+              "x": 48.2,
+              "y": 10.7,
+              "z": -6.2
+            },
+            "rHand": {
+              "x": 93.6,
+              "y": 10.3,
+              "z": 0.6
+            }
+          }
+        },
+        {
+          "label": "seek_back",
+          "yt": {
+            "videoTime": 15.52,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "confused",
+            "queuedCount": 8,
+            "viewMode": "full",
+            "rArm": {
+              "x": -47.2,
+              "y": -23.8,
+              "z": 10
+            },
+            "lArm": {
+              "x": 8.8,
+              "y": 28,
+              "z": -26.7
+            },
+            "rFore": {
+              "x": 50.2,
+              "y": 16.5,
+              "z": -0.8
+            },
+            "rHand": {
+              "x": 93.3,
+              "y": 11,
+              "z": -4.8
+            }
+          }
+        },
+        {
+          "label": "half_body_toggle",
+          "yt": {
+            "videoTime": 16.69,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "nervous",
+            "queuedCount": 7,
+            "viewMode": "half",
+            "rArm": {
+              "x": -39.4,
+              "y": -28.4,
+              "z": 11.7
+            },
+            "lArm": {
+              "x": 12.3,
+              "y": 32.6,
+              "z": -32.8
+            },
+            "rFore": {
+              "x": 37.2,
+              "y": 6.9,
+              "z": -3
+            },
+            "rHand": {
+              "x": 91.8,
+              "y": 6.4,
+              "z": -2.7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "video_b",
+      "video_id": "y8tFSuOMAqQ",
+      "ad_clear": {
+        "cleared": true,
+        "attempts": 1
+      },
+      "real_pipeline_ready": {
+        "jobState": "READY",
+        "segCount": 278,
+        "jobId": "Job yt_y8tFSuOMAqQ_8ca7130449ea",
+        "latestSeg": "out the next set of creators in the same way that some of the creators before me did for me.",
+        "glosses": "SUMMER HERE I THINK THAT REAL GOOD TIME VIDEO GO START RECORD MOVIE YOUR LIFE MAYBE YOU SIT PLAN FIRST WRITE OR FILM BUT MIND DEEP ONE CONTINUOUS FEEL NOT NOW SAY MORE ALSO VERY HONESTY THIS DAY DO ALL ART STEP EASY MANY YEAR GET FINISH TODAY FEW ADVICE WANT SHARE MATTER LEARN PRACTICE FAIL HOW LIVE WITHOUT CONFUSED NEW ONLY SIMPLE SMALL WHAT MEAN CORE STORY NEED KNOW TIRED HEAR PEOPLE MOST IMPORTANT HAVE BECAUSE SEE PROBLEM FIND TELL BREAK MY MAKE LIKE BASE PART FEATURE SCENE FAVORITE COMBINATION WHEN JOIN BIG COME SOMETIMES FUTURE LITTLE TWO CLEAR HOUR AROUND FRIEND MEET BUILD NEXT AFTER MAY REMAINING EVENING HUNGRY FOOD OTHER INSTEAD NERVOUS BEFORE ALLOW TRY GIVE PICTURE COOL LOOK IF BIT USUALLY COMMUNICATION CAMERA EXPLAIN SHOW LESS TRUE GUY OK HEY ROOM DRINK STRONG MEETING WORK WHERE HE PAST ALREADY POST THOUSAND OFF WHILE ME AGO SIMILAR YES BEAUTIFUL INTERESTING STOP THANK_YOU EXPERIENCE CARE HOPE PERFECT WALK STREET COURSE DRAW ATTENTION FAST SHOULD PHONE GREAT SECOND CLOSE CRAZY THEY QUICK COLOR EVERYTHING SPEND LAUNCH BACK MOVE MINE TEN HAPPEN FULL COMPANY SPACE HARD REMEMBER THREE THIRD PERSPECTIVE WORTH SELF SURE ONCE IDEA GENERAL WATCH FLOW TOGETHER LEAVE WEIRD AUDIENCE HELP PRODUCT MUSIC POINT BETWEEN SAME KEEP BREATHE NATURE REASON EXPECTATION HOLD HAND BRING ALONG SIMPLY LET ASK QUESTION NUMBER CLASS COUPLE WHY HUNDRED MINUTE LONG NORMAL PAUSE SET MOTIVATED UNDERSTAND EXAMPLE WE STORE BUY CLEAN TOOLS HUMAN SIDE REMIND DOLLAR MONEY MARKET DIFFERENT WILL PLACE COMFORTABLE PICK WEEK ANYONE LIGHT · SUPPORTED 131, UNCERTAIN 147",
+        "transStatus": "G2/G3 prototype gloss; not full ISL translation",
+        "conn": "CONNECTED"
+      },
+      "dom_info": {
+        "hasHost": true,
+        "hasShadowRoot": true,
+        "fallbackHidden": true,
+        "dpr": 1.25,
+        "surfaceRect": {
+          "x": 878,
+          "y": 202,
+          "w": 400,
+          "h": 478
+        }
+      },
+      "signs_loaded_in_chrome": 635,
+      "final_view_mode": "full",
+      "screencast_frames_captured": 788,
+      "nvenc_recording_mp4": "artifacts/h44/recordings/h44_video_b_recording.mp4",
+      "contact_sheet_png": "artifacts/h44/contact_sheets/video_b/h44_video_b_contact_sheet.png",
+      "avatar_crops_sheet_png": "artifacts/h44/contact_sheets/video_b/h44_video_b_avatar_crops_sheet.png",
+      "non_neutral_phase_count": 12,
+      "observed_active_signs": [
+        "summer",
+        "that",
+        "you",
+        "first",
+        "know",
+        "tired",
+        "story",
+        "most",
+        "people",
+        "problem",
+        "i",
+        "advice"
+      ],
+      "observed_hud_glosses": [],
+      "transport_checks": {
+        "paused_verified": true,
+        "resumed_verified": true,
+        "speed_1_5x_verified": true,
+        "speed_0_5x_verified": true,
+        "forward_seek_verified": true,
+        "backward_seek_verified": true,
+        "half_body_toggle_verified": true
+      },
+      "phases": [
+        {
+          "label": "play_start",
+          "yt": {
+            "videoTime": 3.66,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "summer",
+            "queuedCount": 15,
+            "viewMode": "full",
+            "rArm": {
+              "x": -19.4,
+              "y": -35.3,
+              "z": -6.5
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": -0.1,
+              "y": 0,
+              "z": -11.6
+            },
+            "rHand": {
+              "x": 77.5,
+              "y": -0.5,
+              "z": 6
+            }
+          }
+        },
+        {
+          "label": "play_mid1",
+          "yt": {
+            "videoTime": 5.42,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "that",
+            "queuedCount": 11,
+            "viewMode": "full",
+            "rArm": {
+              "x": -35.9,
+              "y": -45.3,
+              "z": -41.6
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": -15,
+              "z": -63.1
+            },
+            "rHand": {
+              "x": 89,
+              "y": 9.5,
+              "z": 0.9
+            }
+          }
+        },
+        {
+          "label": "play_mid2",
+          "yt": {
+            "videoTime": 7.26,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "you",
+            "queuedCount": 11,
+            "viewMode": "full",
+            "rArm": {
+              "x": -19.3,
+              "y": -35.2,
+              "z": -7.1
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": -0.1,
+              "z": -12
+            },
+            "rHand": {
+              "x": 77.4,
+              "y": -0.3,
+              "z": 5.9
+            }
+          }
+        },
+        {
+          "label": "play_end1",
+          "yt": {
+            "videoTime": 9.08,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "first",
+            "queuedCount": 7,
+            "viewMode": "full",
+            "rArm": {
+              "x": -23.4,
+              "y": -39.3,
+              "z": -26.7
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": -11.1,
+              "z": -41.8
+            },
+            "rHand": {
+              "x": 73.5,
+              "y": 5.6,
+              "z": 1.9
+            }
+          }
+        },
+        {
+          "label": "seek_forward",
+          "yt": {
+            "videoTime": 46.16,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "know",
+            "queuedCount": 6,
+            "viewMode": "full",
+            "rArm": {
+              "x": -15.2,
+              "y": -24.9,
+              "z": -52.3
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": -15.6,
+              "z": -62.8
+            },
+            "rHand": {
+              "x": 82.8,
+              "y": -5.7,
+              "z": 6.2
+            }
+          }
+        },
+        {
+          "label": "seek_forward_mid",
+          "yt": {
+            "videoTime": 47.83,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "tired",
+            "queuedCount": 8,
+            "viewMode": "full",
+            "rArm": {
+              "x": -29.8,
+              "y": -31.2,
+              "z": -0.3
+            },
+            "lArm": {
+              "x": 22,
+              "y": 35.3,
+              "z": -20.8
+            },
+            "rFore": {
+              "x": 45.9,
+              "y": -4.2,
+              "z": -1.1
+            },
+            "rHand": {
+              "x": 98.3,
+              "y": -6.7,
+              "z": 8.1
+            }
+          }
+        },
+        {
+          "label": "paused",
+          "yt": {
+            "videoTime": 48.4,
+            "paused": true,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "story",
+            "queuedCount": 6,
+            "viewMode": "full",
+            "rArm": {
+              "x": -19.3,
+              "y": -35.3,
+              "z": -6.6
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": 0,
+              "z": -11.6
+            },
+            "rHand": {
+              "x": 77.5,
+              "y": -0.5,
+              "z": 5.9
+            }
+          }
+        },
+        {
+          "label": "resumed",
+          "yt": {
+            "videoTime": 49.24,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "most",
+            "queuedCount": 5,
+            "viewMode": "full",
+            "rArm": {
+              "x": 13.2,
+              "y": -50.6,
+              "z": 18
+            },
+            "lArm": {
+              "x": 52.5,
+              "y": 49.8,
+              "z": -30.5
+            },
+            "rFore": {
+              "x": 48.4,
+              "y": 15.1,
+              "z": -29.1
+            },
+            "rHand": {
+              "x": 96.3,
+              "y": 16.1,
+              "z": 16.8
+            }
+          }
+        },
+        {
+          "label": "speed_1_5x",
+          "yt": {
+            "videoTime": 51.19,
+            "paused": false,
+            "playbackRate": 1.5,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "people",
+            "queuedCount": 7,
+            "viewMode": "full",
+            "rArm": {
+              "x": -16.4,
+              "y": -38.3,
+              "z": -20.8
+            },
+            "lArm": {
+              "x": 30,
+              "y": 42.5,
+              "z": -2.6
+            },
+            "rFore": {
+              "x": 0,
+              "y": -4.5,
+              "z": -29.4
+            },
+            "rHand": {
+              "x": 74.5,
+              "y": 2.5,
+              "z": 4.5
+            }
+          }
+        },
+        {
+          "label": "speed_0_5x",
+          "yt": {
+            "videoTime": 52.53,
+            "paused": false,
+            "playbackRate": 0.5,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "problem",
+            "queuedCount": 5,
+            "viewMode": "full",
+            "rArm": {
+              "x": -42.5,
+              "y": -27.3,
+              "z": -100.4
+            },
+            "lArm": {
+              "x": 16.5,
+              "y": 65.5,
+              "z": 66.8
+            },
+            "rFore": {
+              "x": 0,
+              "y": -12.3,
+              "z": -74.3
+            },
+            "rHand": {
+              "x": 53.7,
+              "y": -6.2,
+              "z": 5.2
+            }
+          }
+        },
+        {
+          "label": "seek_back",
+          "yt": {
+            "videoTime": 25.42,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "i",
+            "queuedCount": 5,
+            "viewMode": "full",
+            "rArm": {
+              "x": -24.5,
+              "y": -47,
+              "z": -26.1
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 0,
+              "y": -29.3,
+              "z": -44.1
+            },
+            "rHand": {
+              "x": 72.3,
+              "y": 11.2,
+              "z": -3.8
+            }
+          }
+        },
+        {
+          "label": "half_body_toggle",
+          "yt": {
+            "videoTime": 26.61,
+            "paused": false,
+            "playbackRate": 1,
+            "boxGloss": "",
+            "stSign": "QUEUED"
+          },
+          "pose": {
+            "currentSign": "advice",
+            "queuedCount": 16,
+            "viewMode": "half",
+            "rArm": {
+              "x": -29.6,
+              "y": -36.5,
+              "z": -4.1
+            },
+            "lArm": {
+              "x": 32.4,
+              "y": 39.5,
+              "z": -14.5
+            },
+            "rFore": {
+              "x": 11.2,
+              "y": 3.6,
+              "z": -13.4
+            },
+            "rHand": {
+              "x": 81.1,
+              "y": 2,
+              "z": 4.7
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

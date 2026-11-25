@@ -193,13 +193,26 @@
         'QUEUED', 'DOWNLOADING', 'EXTRACTING_AUDIO', 'TRANSCRIBING',
         'TRANSLATING', 'READY', 'ERROR'
       ]);
+      let consecutiveErrors = 0;
       try {
         while (Date.now() - startedAt < 30 * 60 * 1000) {
-          const status = await this.requestJson(
-            `${this.state.runtimeEndpoint}/youtube/status/${encodeURIComponent(jobId)}`,
-            {},
-            10000
-          );
+          if (typeof chrome !== 'undefined' && chrome.runtime?.getPlatformInfo) {
+            try { chrome.runtime.getPlatformInfo(() => {}); } catch {}
+          }
+          let status;
+          try {
+            status = await this.requestJson(
+              `${this.state.runtimeEndpoint}/youtube/status/${encodeURIComponent(jobId)}`,
+              {},
+              15000
+            );
+            consecutiveErrors = 0;
+          } catch (pollErr) {
+            consecutiveErrors += 1;
+            if (consecutiveErrors >= 5) throw pollErr;
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            continue;
+          }
           if (status.job_id !== jobId || !allowedStates.has(status.stage)) {
             throw new Error('Local runtime returned malformed YouTube job status.');
           }

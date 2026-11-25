@@ -32,6 +32,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       have: { playable: true }, want: { playable: true },
       look: { playable: true }, see: { playable: true },
       what: { playable: true }, not: { playable: true },
+      where: { playable: true }, who: { playable: true }, please: { playable: true },
       thank_you: { playable: false, reason: 'MOTION_NOT_AUTHORED' },
       drink: { playable: true },
       help: { playable: true }, need: { playable: true },
@@ -1780,6 +1781,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['someone', 'SOMEBODY'], ['somebody', 'SOMEBODY'],
       ['place', 'PLACE'], ['places', 'PLACE'],
       ['uncertain', 'CONFUSED'],
+      ['where', 'WHERE'], ['who', 'WHO'], ['please', 'PLEASE'], ['helped', 'HELP'], ['unless', 'IF'],
       ['barrier', 'WALL'], ['barriers', 'WALL'],
       ['compilation', 'COMBINATION'],
       ['impactful', 'POWER'],
@@ -1953,7 +1955,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       'UNDERSTAND', 'BUILD', 'SHARE', 'MOVE', 'SHOW', 'FEEL', 'EAT', 'GET', 'PICK',
       'TRY', 'LIVE', 'HOLD', 'EXPLAIN', 'ANALYZE', 'CREATE', 'LOVE', 'SIT'
     ]);
-    const subjects = new Set(['I', 'YOU', 'YOUR', 'MY', 'WE', 'THEY', 'HE', 'SHE', 'PEOPLE', 'SOMEBODY']);
+    const subjects = new Set(['I', 'YOU', 'WE', 'THEY', 'HE', 'SHE', 'PEOPLE', 'SOMEBODY']);
     const nonObjectGlosses = new Set([
       'NOT', 'WHAT', 'HOW', 'WHERE', 'WHO', 'WHY', 'WHEN',
       'TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'SUMMER', 'FUTURE', 'YESTERDAY',
@@ -2314,6 +2316,24 @@ export class EnglishToISLTranslator extends TranslationBackend {
       : (hasHeuristic ? 'TRANSLATION_HEURISTIC' : (unknown_terms.length === 0 ? 'TRANSLATION_SUPPORTED' : 'TRANSLATION_UNCERTAIN'));
     const questionMarker = isr.overall_discourse_act === 'WH_QUESTION' ? 'WH_QUESTION' : 'YES_NO_QUESTION';
 
+    const nmmAlias = {
+      BROW_FURROW_WH: 'NMM-WH-BROW-FURROW',
+      BROW_RAISE_YN: 'NMM-YESNO-BROW-RAISE',
+      BROW_RAISE_CONDITIONAL_TOPIC: 'NMM-COND-BROW-RAISE',
+      HEADSHAKE_NEGATION: 'NMM-NEG-HEADSHAKE'
+    };
+    const clauseNmmMapped = [];
+    for (const c of isr.clauses) {
+      for (const nm of c.non_manual_markers || []) {
+        clauseNmmMapped.push(nmmAlias[nm] || nm);
+      }
+    }
+    const mergedNonManuals = [...new Set([
+      ...(isQuestion ? [questionMarker] : []),
+      ...(hasNegation ? ['NEGATION'] : []),
+      ...clauseNmmMapped
+    ])];
+
     return {
       source_text,
       normalized_text,
@@ -2325,7 +2345,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       unavailable_signs,
       grammar_omissions: removed.map(token => ({ token, status: 'GRAMMAR_OMISSION' })),
       intermediate_semantic_representation: isr,
-      non_manual_markers: [...(isQuestion ? [questionMarker] : []), ...(hasNegation ? ['NEGATION'] : [])],
+      non_manual_markers: mergedNonManuals,
       linguistic_notes,
       transformation_trace: trace,
       asr_confidence: Number.isFinite(asrConf) ? asrConf : null,

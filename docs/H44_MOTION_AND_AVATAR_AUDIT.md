@@ -1,0 +1,10 @@
+# H44 Avatar Motion, Co-Articulation & Rendering Audit
+
+## 1. Co-Articulated Pose Blending (`SignAnimationPlayer.js` + `SignScheduler.js`)
+Previously, queued sign sequences reset to neutral between every consecutive sign, creating robotic snap-backs during multi-word ISL utterances. H44 implements true smooth co-articulation:
+- [SignAnimationPlayer.js](file:///d:/sign%20interpretor/tools/avatar_viewer/SignAnimationPlayer.js) adds `_capturePoseSnapshot()` and `loadSign(signData, { blendFromCurrentPose, blendMs })`. When chaining signs inside a cue, frame evaluation smoothly blends quadratically (`easeOutQuad`) from the preceding sign's exact bone quaternions/Euler pose and `left`/`right` hand finger curls over `Math.min(160, 0.3 * duration_ms)` ms.
+- [SignScheduler.js](file:///d:/sign%20interpretor/tools/avatar_viewer/SignScheduler.js) (`completeCurrent()`) sets `this._blendNextTransition = !this.isPaused && this.queue.length > 0`, ensuring inter-sign co-articulation while respecting clean neutral rests at cue completion or cancellation. Synced to [extension/viewer/engine/](file:///d:/sign%20interpretor/extension/viewer/engine/SignAnimationPlayer.js) and unit-verified in [SignAnimationPlayer.test.mjs](file:///d:/sign%20interpretor/tools/avatar_viewer/SignAnimationPlayer.test.mjs).
+
+## 2. Visual Verification of Real-Browser Playback
+- DPI-calibrated bounding crops (`x=878, y=202, w=400, h=478` at `dpr=1.25`) confirm Full Body Aether rendering without viewport/limb clipping across active signs including newly curated `MANY` (`Signing: MANY (full)`), `CONFUSED`, `PUBLIC`, `NEW`, `THAT`, `KNOW`, and `I`, as well as portrait Half Body zoom (`Signing: MATTER (half)`).
+- Real-time acknowledgment fix in [embed.js](file:///d:/sign%20interpretor/extension/viewer/embed.js) eliminated the `1000ms` post-seek `CANCEL_JOB` retry storm, raising continuous active-sign occupancy in real Chrome from sporadic (`3/12` on A, `0/12` on B) to **`12 / 12` active signing phases across both Video A and Video B**.

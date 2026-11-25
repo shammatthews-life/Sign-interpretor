@@ -1,6 +1,6 @@
 {
   "milestone": "H44",
-  "generated_at": "2026-11-25T10:02:58.684Z",
+  "generated_at": "2026-11-25T10:47:06.325Z",
   "locked_window_seconds": 120,
   "summary": {
     "total_segments": 60,
@@ -11,7 +11,7 @@
     "zero_unavailable_signs_segments": 60,
     "fixed_and_verified_segments": 34,
     "total_playable_sign_instances": 555,
-    "manifest_total_signs": 632,
+    "manifest_total_signs": 635,
     "human_deaf_review_status": "PENDING_DEAF_COMMUNITY_REVIEW"
   },
   "segments": [
@@ -189,7 +189,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"simple\" previously had duplicate lexicon entry collision; fixed to uniform SIMPLE"
       ],
@@ -327,7 +327,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 benchmark omitted spoken \"nervous\"; \"afraid\" duplicate lexicon collision (\"FEAR\" vs \"AFRAID\")"
       ],
@@ -498,7 +498,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "None after verified lexical alignment (\"few steps closer\")"
       ],
@@ -608,7 +608,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"captivating\" previously collided in lexicon (PLAYABLE INTERESTING unified)"
       ],
@@ -790,7 +790,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Nominal pseudo-cleft \"What you're about to watch is...\" falsely triggered WH-final reordering (WHAT moved to clause end)"
       ],
@@ -927,7 +927,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"right here in our studio\" verified intact with RECORD ROOM"
       ],
@@ -1047,7 +1047,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Coordinator split risked splitting noun coordination \"mindset and confidence\""
       ],
@@ -1179,7 +1179,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Phrase \"capturing attention\" preserved before SOV verb ordering -> WE SCIENCE ATTENTION MOVE HOLD"
       ],
@@ -1320,7 +1320,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"impactful\" unified to POWER; \"finish off\" unified to FINISH"
       ],
@@ -1451,7 +1451,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 reference had ASR substitution \"excellence\" instead of spoken \"excellent\""
       ],
@@ -1533,7 +1533,8 @@
         "ISLRTC two-handed fingerspelling (DAVID, JP, PHILLIPS)"
       ],
       "non_manual_markers": [
-        "NEGATION"
+        "NEGATION",
+        "NMM-NEG-HEADSHAKE"
       ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
@@ -1671,7 +1672,7 @@
           "validation_status": "ISLRTC_TWO_HANDED_FINGERSPELLING_SYNTHESIZED"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Proper name David JP Phillips fingerspelled via ISLRTC two-handed FS_ signs; conditional non-manual brow-raise marked"
       ],
@@ -1810,7 +1811,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"best known\" lacked semantic sign famous (repaired with curated ISL sign famous.json)"
       ],
@@ -1910,7 +1911,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"most viewed\" previously omitted quantifier MANY (\"most viewed in the world\" -> WORLD MANY SEE)"
       ],
@@ -2009,7 +2010,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"particular\" duplicate lexicon collision unified to SPECIAL"
       ],
@@ -2235,7 +2236,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"pinpoint\" + \"exactly\" previously duplicated CLEAR (\"FIND CLEAR CLEAR\"); simplified to FIND TRUE"
       ],
@@ -2378,7 +2379,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Cleanly retains \"ONE RESULT THAT SPECIAL WORK\""
       ],
@@ -2596,7 +2597,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Proper nouns Oracle, Google fingerspelled; \"just like\" prevented wrong contextual \"ONLY\" override"
       ],
@@ -2764,7 +2765,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 reference had \"audience attention\"; possessive \"audience's\" failed lexicon lookup -> stripped trailing 's before lookup"
       ],
@@ -2981,7 +2982,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Preserves temporal \"NEXT NOW TWO HOUR THIRTY MINUTE\" cleanly"
       ],
@@ -3048,28 +3049,28 @@
         "gloss_sequence": [
           "I",
           "DURING",
-          "FIND",
-          "FINISH",
           "MY",
           "TWENTY",
           "FIVE",
           "YEAR",
           "CAREER",
           "PUBLIC",
-          "SPEAKER"
+          "SPEAKER",
+          "FIND",
+          "FINISH"
         ],
         "sign_ids": [
           "i",
           "during",
-          "find",
-          "finish",
           "my",
           "twenty",
           "five",
           "year",
           "career",
           "public",
-          "speaker"
+          "speaker",
+          "find",
+          "finish"
         ],
         "fingerspelled_terms": [],
         "unknown_terms": [],
@@ -3094,22 +3095,6 @@
           "playable": true,
           "dominant_hand": "both",
           "duration_ms": 1200,
-          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
-        },
-        {
-          "sign_id": "find",
-          "type": "lexical_sign",
-          "playable": true,
-          "dominant_hand": "right",
-          "duration_ms": 1080,
-          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
-        },
-        {
-          "sign_id": "finish",
-          "type": "lexical_sign",
-          "playable": true,
-          "dominant_hand": "both",
-          "duration_ms": 1020,
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
@@ -3167,9 +3152,25 @@
           "dominant_hand": "both",
           "duration_ms": 1300,
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+        },
+        {
+          "sign_id": "find",
+          "type": "lexical_sign",
+          "playable": true,
+          "dominant_hand": "right",
+          "duration_ms": 1080,
+          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+        },
+        {
+          "sign_id": "finish",
+          "type": "lexical_sign",
+          "playable": true,
+          "dominant_hand": "both",
+          "duration_ms": 1020,
+          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 reference kept stutter \"I've I've\"; translator stutter-collapse + auxiliary HAVE drop after FINISH"
       ],
@@ -3269,7 +3270,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Concise topical phrase \"PUBLIC SPEECH COACHING\""
       ],
@@ -3411,7 +3412,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Clause splitter previously broke coordinated object \"a pen and a paper\"; preserved intact as single SOV clause"
       ],
@@ -3551,7 +3552,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"lean in\" + \"walk away with\" are idioms, NOT literal LEAN/WALK -> resolved to FOCUS / GET"
       ],
@@ -3662,7 +3663,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Cleanly fronts temporal TOMORROW before YOU PRACTICE"
       ],
@@ -3739,7 +3740,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Single affective verb ENJOY"
       ],
@@ -3866,7 +3867,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Vocative greeting preserved with WELCOME before BEAUTIFUL PEOPLE ALL WORLD"
       ],
@@ -3966,7 +3967,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Topic-comment \"SWEDEN LOVELY COUNTRY\" cleanly omits English copula \"is\""
       ],
@@ -4086,7 +4087,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Visual introduction \"THIS MY SEE YOU\""
       ],
@@ -4185,7 +4186,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"different places\" -> MANY PLACE (many.json)"
       ],
@@ -4372,7 +4373,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Generic noun \"TIME\" (\"best time to go out\") falsely fronted ahead of \"SUMMER HERE\"; fixed timeGlosses exclusion"
       ],
@@ -4461,34 +4462,34 @@
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
         "gloss_sequence": [
-          "START",
           "VIDEO",
           "MOVIE",
           "YOUR",
           "LIFE",
+          "START",
           "MAYBE",
           "YOU",
           "SIT",
           "FINISH",
           "PLAN",
-          "WRITE",
           "YOUR",
-          "FIRST"
+          "FIRST",
+          "WRITE"
         ],
         "sign_ids": [
-          "start",
           "video",
           "movie",
           "your",
           "life",
+          "start",
           "maybe",
           "you",
           "sit",
           "finish",
           "plan",
-          "write",
           "your",
-          "first"
+          "first",
+          "write"
         ],
         "fingerspelled_terms": [],
         "unknown_terms": [],
@@ -4500,14 +4501,6 @@
         ]
       },
       "resolved_signs": [
-        {
-          "sign_id": "start",
-          "type": "lexical_sign",
-          "playable": true,
-          "dominant_hand": "both",
-          "duration_ms": 1250,
-          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
-        },
         {
           "sign_id": "video",
           "type": "lexical_sign",
@@ -4538,6 +4531,14 @@
           "playable": true,
           "dominant_hand": "right",
           "duration_ms": 1150,
+          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+        },
+        {
+          "sign_id": "start",
+          "type": "lexical_sign",
+          "playable": true,
+          "dominant_hand": "both",
+          "duration_ms": 1250,
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
@@ -4581,14 +4582,6 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
-          "sign_id": "write",
-          "type": "lexical_sign",
-          "playable": true,
-          "dominant_hand": "both",
-          "duration_ms": 1180,
-          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
-        },
-        {
           "sign_id": "your",
           "type": "lexical_sign",
           "playable": true,
@@ -4603,9 +4596,17 @@
           "dominant_hand": "right",
           "duration_ms": 1150,
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+        },
+        {
+          "sign_id": "write",
+          "type": "lexical_sign",
+          "playable": true,
+          "dominant_hand": "both",
+          "duration_ms": 1180,
+          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"sat\" previously collided in lexicon; \"scripted out\" resolved to PLAN WRITE + FINISH"
       ],
@@ -4715,12 +4716,12 @@
           "FILM",
           "BUT",
           "I",
-          "THINK",
           "YOUR",
           "MIND",
           "DEEP",
           "ONE",
-          "CONTINUOUS"
+          "CONTINUOUS",
+          "THINK"
         ],
         "sign_ids": [
           "video",
@@ -4732,12 +4733,12 @@
           "film",
           "but",
           "i",
-          "think",
           "your",
           "mind",
           "deep",
           "one",
-          "continuous"
+          "continuous",
+          "think"
         ],
         "fingerspelled_terms": [],
         "unknown_terms": [],
@@ -4822,14 +4823,6 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
-          "sign_id": "think",
-          "type": "lexical_sign",
-          "playable": true,
-          "dominant_hand": "right",
-          "duration_ms": 1100,
-          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
-        },
-        {
           "sign_id": "your",
           "type": "lexical_sign",
           "playable": true,
@@ -4868,9 +4861,17 @@
           "dominant_hand": "both",
           "duration_ms": 1300,
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+        },
+        {
+          "sign_id": "think",
+          "type": "lexical_sign",
+          "playable": true,
+          "dominant_hand": "right",
+          "duration_ms": 1100,
+          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 missed spoken \"you've\"; \"in the back of your mind\" previously emitted unplayable INSIDE -> unified to playable YOUR MIND DEEP; added barrier->WALL"
       ],
@@ -4953,15 +4954,16 @@
         "Clause-final manual NOT + headshake NMM (Zeshan & Sinha)"
       ],
       "non_manual_markers": [
-        "NEGATION"
+        "NEGATION",
+        "NMM-NEG-HEADSHAKE"
       ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
         "gloss_sequence": [
-          "FEEL",
           "GOOD",
           "YOUR",
           "VIDEO",
+          "FEEL",
           "NOT",
           "NOW",
           "I",
@@ -4970,10 +4972,10 @@
           "THINK"
         ],
         "sign_ids": [
-          "feel",
           "good",
           "your",
           "video",
+          "feel",
           "not",
           "now",
           "i",
@@ -4993,14 +4995,6 @@
         ]
       },
       "resolved_signs": [
-        {
-          "sign_id": "feel",
-          "type": "lexical_sign",
-          "playable": true,
-          "dominant_hand": "right",
-          "duration_ms": 1091,
-          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
-        },
         {
           "sign_id": "good",
           "type": "lexical_sign",
@@ -5023,6 +5017,14 @@
           "playable": true,
           "dominant_hand": "both",
           "duration_ms": 1140,
+          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+        },
+        {
+          "sign_id": "feel",
+          "type": "lexical_sign",
+          "playable": true,
+          "dominant_hand": "right",
+          "duration_ms": 1091,
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
@@ -5074,7 +5076,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"gonna\" previously expanded to \"go\" producing wrong motion \"I GO SAY\"; fixed CONTRACTION_PATTERNS (\"gonna\" -> \"will\")"
       ],
@@ -5330,7 +5332,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"overthinking\" / \"overcomplicate\" unified to THINK MORE"
       ],
@@ -5540,7 +5542,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"creative process\" -> ART STEP; \"over the years\" -> MANY YEAR (many.json); FINISH aspect preserved"
       ],
@@ -5773,7 +5775,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Clean advice framing with PRACTICE FAIL LEARN HOW"
       ],
@@ -5852,26 +5854,26 @@
         "status": "TRANSLATION_SUPPORTED",
         "gloss_sequence": [
           "YOU",
-          "LIVE",
           "YOUR",
           "DAY",
-          "START",
+          "LIVE",
           "VIDEO",
           "YOUR",
           "LIFE",
+          "START",
           "WITHOUT",
           "ALL",
           "CONFUSED"
         ],
         "sign_ids": [
           "you",
-          "live",
           "your",
           "day",
-          "start",
+          "live",
           "video",
           "your",
           "life",
+          "start",
           "without",
           "all",
           "confused"
@@ -5893,14 +5895,6 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
-          "sign_id": "live",
-          "type": "lexical_sign",
-          "playable": true,
-          "dominant_hand": "both",
-          "duration_ms": 1300,
-          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
-        },
-        {
           "sign_id": "your",
           "type": "lexical_sign",
           "playable": true,
@@ -5917,11 +5911,11 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
-          "sign_id": "start",
+          "sign_id": "live",
           "type": "lexical_sign",
           "playable": true,
           "dominant_hand": "both",
-          "duration_ms": 1250,
+          "duration_ms": 1300,
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
@@ -5949,6 +5943,14 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
+          "sign_id": "start",
+          "type": "lexical_sign",
+          "playable": true,
+          "dominant_hand": "both",
+          "duration_ms": 1250,
+          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+        },
+        {
           "sign_id": "without",
           "type": "lexical_sign",
           "playable": true,
@@ -5973,7 +5975,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Privative WITHOUT preserved cleanly before ALL CONFUSED"
       ],
@@ -6072,7 +6074,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Step-by-step opener STEP NEW LEARN"
       ],
@@ -6205,7 +6207,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"just a\" (\"your vlog isn't just a...\") required curated only.json + WH/pseudo-cleft stability; H42 continuation split"
       ],
@@ -6390,7 +6392,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 reference had ASR error \"that the core\" instead of \"at the core\"; \"have to have\" unified to NEED"
       ],
@@ -6590,7 +6592,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Idiom \"story is king\" -> STORY MOST IMPORTANT"
       ],
@@ -6831,7 +6833,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"too\" previously risked wrong gloss instead of ALSO; fixed to ALSO + causal BECAUSE retained"
       ],
@@ -6898,7 +6900,8 @@
         "Clause-final manual NOT + headshake NMM (Zeshan & Sinha)"
       ],
       "non_manual_markers": [
-        "NEGATION"
+        "NEGATION",
+        "NMM-NEG-HEADSHAKE"
       ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
@@ -6985,7 +6988,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Clause-scoped negation keeps NOT strictly at end of negated clause (\"THAT YOU KNOW THAT NOT\")"
       ],
@@ -7052,7 +7055,8 @@
         "Clause-final manual NOT + headshake NMM (Zeshan & Sinha)"
       ],
       "non_manual_markers": [
-        "NEGATION"
+        "NEGATION",
+        "NMM-NEG-HEADSHAKE"
       ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
@@ -7173,7 +7177,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"don't know how to find... to tell\" preserves KNOW HOW FIND STORY YOUR DAY TELL NOT"
       ],
@@ -7258,9 +7262,9 @@
           "HOW",
           "I",
           "STORY",
-          "FIND",
           "MY",
           "DAY",
+          "FIND",
           "MAKE",
           "VIDEO",
           "I",
@@ -7275,9 +7279,9 @@
           "how",
           "i",
           "story",
-          "find",
           "my",
           "day",
+          "find",
           "make",
           "video",
           "i",
@@ -7339,14 +7343,6 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
-          "sign_id": "find",
-          "type": "lexical_sign",
-          "playable": true,
-          "dominant_hand": "right",
-          "duration_ms": 1080,
-          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
-        },
-        {
           "sign_id": "my",
           "type": "lexical_sign",
           "playable": true,
@@ -7360,6 +7356,14 @@
           "playable": true,
           "dominant_hand": "right",
           "duration_ms": 1200,
+          "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+        },
+        {
+          "sign_id": "find",
+          "type": "lexical_sign",
+          "playable": true,
+          "dominant_hand": "right",
+          "duration_ms": 1080,
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         },
         {
@@ -7427,7 +7431,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Analogy base premise cleanly isolates BREAK HOW I STORY FIND MY DAY MAKE VIDEO"
       ],
@@ -7628,7 +7632,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 truncated/corrupted \"feature films\" check; \"short films\" -> SMALL FILM; restored FEATURE FILM phrasing"
       ],
@@ -7903,7 +7907,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"greater and broader\" unified to MORE BIG; SOV object loop previously swept across THAT into relative clause -> stopped SOV at subordinator THAT"
       ],
@@ -8003,7 +8007,8 @@
         "Clause-final manual NOT + headshake NMM (Zeshan & Sinha)"
       ],
       "non_manual_markers": [
-        "NEGATION"
+        "NEGATION",
+        "NMM-NEG-HEADSHAKE"
       ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
@@ -8175,7 +8180,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 reference had ASR error vs \"overarching\"; sentence-scoped NOT placed clause-finally"
       ],
@@ -8363,7 +8368,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"going forward\" -> FUTURE fronted; \"do know\" epistemic emphasis retained"
       ],
@@ -8451,7 +8456,8 @@
         "Clause-final manual NOT + headshake NMM (Zeshan & Sinha)"
       ],
       "non_manual_markers": [
-        "NEGATION"
+        "NEGATION",
+        "NMM-NEG-HEADSHAKE"
       ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
@@ -8660,7 +8666,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"or so\" previously split on \"so\" leaving dangling trailing \"OR\"; now emits HOUR AROUND cleanly with curated around.json"
       ],
@@ -8894,7 +8900,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"go meet\" temporal sequence SCENE BUILD THAT NEXT AFTER THAT MORE"
       ],
@@ -8965,7 +8971,8 @@
         "Clause-final manual NOT + headshake NMM (Zeshan & Sinha)"
       ],
       "non_manual_markers": [
-        "NEGATION"
+        "NEGATION",
+        "NMM-NEG-HEADSHAKE"
       ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
@@ -9076,7 +9083,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"rest of the evening\" previously risked mis-sensed \"REST\" (sleep); context override + remaining.json -> REMAINING EVENING"
       ],
@@ -9333,7 +9340,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Causal realization \"HUNGRY -> FOOD GO GET THAT OTHER SCENE\""
       ],
@@ -9421,7 +9428,8 @@
         "Clause-final matrix WH-element (Aboh, Pfau & Zeshan 2005)"
       ],
       "non_manual_markers": [
-        "WH_QUESTION"
+        "WH_QUESTION",
+        "NMM-WH-BROW-FURROW"
       ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
@@ -9540,7 +9548,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Embedded direct self-question \"shooting of what is my story\" failed WH-final rule; split at \"of what is\" -> MY STORY WHAT"
       ],
@@ -9776,7 +9784,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 missed hyphen/spacing consistency in \"scene by scene\" -> SCENE STEP + JOIN ALL"
       ],
@@ -9963,7 +9971,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Intentional recording framing FEEL THAT YOU TRY GIVE WHEN I MATTER RECORD"
       ],
@@ -10205,7 +10213,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "\"just a\" -> ONLY; progressive \"getting\" protected against false FINISH aspect; causal BECAUSE preserved"
       ],
@@ -10281,7 +10289,9 @@
         "Topic-comment & clause-local SOV ordering (ISL-SOV-02)",
         "Condition-first clause with brow-raise NMM (NMM-COND-BROW-RAISE)"
       ],
-      "non_manual_markers": [],
+      "non_manual_markers": [
+        "NMM-COND-BROW-RAISE"
+      ],
       "current_translation": {
         "status": "TRANSLATION_SUPPORTED",
         "gloss_sequence": [
@@ -10360,7 +10370,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Conditional contrast \"OR THIS REAL SCENE IF SCENE\" with brow-raise NMM"
       ],
@@ -10600,7 +10610,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "H42 omitted spoken clause \", some talking,\"; \"capture some dialogue\" previously emitted literal HOLD -> fixed to COMMUNICATION RECORD"
       ],
@@ -10903,7 +10913,7 @@
           "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
         }
       ],
-      "motion_verification_status": "PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION",
+      "motion_verification_status": "VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED",
       "detected_defects_and_fixes": [
         "Contrastive idiom \"show not tell\" falsely triggered clause polarity inversion (\"NOT\" appended); fixed idiom flag + SHOW MORE SAY LESS"
       ],

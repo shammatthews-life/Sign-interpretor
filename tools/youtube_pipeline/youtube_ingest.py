@@ -373,13 +373,14 @@ def download_youtube_audio(
     if on_progress:
         on_progress("EXTRACTING_AUDIO", 0.6)
 
-    # Convert to mono 16000 Hz PCM WAV using FFmpeg
+    # Convert to mono 16000 Hz PCM WAV using FFmpeg with H44 highpass + loudnorm speech conditioning
     converted_wav = output_dir / f".audio_16k.{uuid.uuid4().hex}.tmp.wav"
     conv_cmd = [
         ffmpeg_bin,
         "-y",
         "-i", str(source_file),
         "-vn",
+        "-af", "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=11",
         "-ac", "1",
         "-ar", "16000",
         "-c:a", "pcm_s16le",
@@ -431,7 +432,7 @@ def download_youtube_audio(
 def transcribe_audio_file(
     audio_path: Path,
     output_dir: Path,
-    model_name: str = "base.en",
+    model_name: str = "small.en",
     device: Optional[str] = None,
     compute_type: Optional[str] = None,
     execution_mode: ExecutionMode = "GPU_REQUIRED",
@@ -636,7 +637,7 @@ def process_youtube_video(
     url: str,
     output_base_dir: Optional[Path] = None,
     force: bool = False,
-    model_name: str = "base.en",
+    model_name: str = "small.en",
     execution_mode: ExecutionMode = "GPU_REQUIRED",
     device_index: int = 0,
     on_progress: Optional[Callable[[str, float], None]] = None,
@@ -834,7 +835,7 @@ class YouTubeJobManager:
             _finished_at, job_id = completed.pop(0)
             self.jobs.pop(job_id, None)
 
-    def submit_job(self, url: str, force: bool = False, model_name: str = "base.en") -> str:
+    def submit_job(self, url: str, force: bool = False, model_name: str = "small.en") -> str:
         is_valid, video_id, canonical_url = validate_youtube_url(url)
         if not is_valid or not video_id:
             raise ValueError(f"Invalid YouTube URL: {url}")

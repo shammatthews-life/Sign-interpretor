@@ -46,6 +46,7 @@ node_modules/
 *.mkv
 *.wav
 artifacts/**/frames/
+artifacts/**/crops/
 artifacts/**/recording/
 artifacts/**/recordings/
 artifacts/**/raw_frames/

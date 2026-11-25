@@ -253,7 +253,7 @@ export class SemanticUnderstandingEngine {
     const idiomaticNegConsumed = /\bshow\s*,?\s*not\s+tell\b/i.test(rawText);
     const negRe = /\b(not|never|no|cannot|don't|doesn't|didn't|isn't|aren't|wasn't|weren't|haven't|hasn't|hadn't|won't|wouldn't|can't|couldn't|shouldn't)\b/i;
     const privativeRe = /\bwithout\b/i;
-    const hasNegation = negRe.test(cleanForNeg);
+    const hasNegation = negRe.test(cleanForNeg) || /\bunless\b/i.test(rawText);
     const hasPrivative = privativeRe.test(rawText);
     const polarity = hasNegation ? 'NEGATIVE' : (hasPrivative ? 'PRIVATIVE' : 'AFFIRMATIVE');
 
@@ -308,8 +308,9 @@ export class SemanticUnderstandingEngine {
       } else if (tok === 'exactly') {
         contextualOverrides.exactly = (hasNegation || /\bknow\b/i.test(rawText)) ? 'CLEAR' : 'TRUE';
       } else if (tok === 'left') {
+        const remainingCue = ['hour', 'hours', 'minute', 'minutes', 'second', 'seconds', 'day', 'days', 'week', 'weeks', 'time', 'scene', 'scenes', 'none', 'nothing', 'anything', 'something'].includes(prev);
         const spatialCue = ['the', 'to', 'on', 'my', 'your', 'turn'].includes(prev);
-        contextualOverrides.left = spatialCue ? 'LEFT' : 'LEAVE';
+        contextualOverrides.left = remainingCue ? 'REMAINING' : (spatialCue ? 'LEFT' : 'LEAVE');
       } else if (tok === 'too') {
         contextualOverrides.too = 'ALSO';
       }

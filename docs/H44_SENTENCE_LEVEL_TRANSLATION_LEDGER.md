@@ -1,6 +1,6 @@
 # H44 Sentence-Level Translation Ledger (All 60 Benchmark Segments)
 
-Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120.0s (Locked)` | Human Deaf Validation: `PENDING_DEAF_COMMUNITY_REVIEW`
+Generated: `2026-11-25T10:47:06.325Z` | Milestone: `H44` | Window: `0.0s – 120.0s (Locked)` | Human Deaf Validation: `PENDING_DEAF_COMMUNITY_REVIEW`
 
 > [!IMPORTANT]
 > 100% playable sign resolution across all 60 segments (`555` playable sign instances across `632` validated ISLRTC-referenced sign animations + composite fingerspelling) demonstrates complete engineering lexical coverage, **not** 100% human Deaf-community acceptance, which explicitly remains `PENDING_DEAF_COMMUNITY_REVIEW`.
@@ -15,7 +15,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 | Segments with Zero Unavailable Signs | 60 / 60 |
 | Segments with Pre-H44 Defects Repaired & Verified | 34 |
 | Total Playable Sign Instances | 555 |
-| Sign Library Manifest Size | 632 |
+| Sign Library Manifest Size | 635 |
 
 ## Video A (`MXKkXXYUxBc` — Public Speaking for Beginners)
 
@@ -136,7 +136,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_MXKkXXYUxBc_16k_norm.wav#t=49.37,52.85` (conf=`0.6721`, avg_logprob=`-0.1737`)
 - **ISR 3.0 Semantics:** clauses=`2`, acts=`[GREETING_VOCATIVE, STATEMENT]`, temporal=`[]`, neg_clauses=`[0]`, modality=`[]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Clause-final manual NOT + headshake NMM (Zeshan & Sinha); ISLRTC two-handed fingerspelling (DAVID, JP, PHILLIPS)
-- **Non-Manual Markers:** undefined@clauseundefined
+- **Non-Manual Markers:** NEGATION, NMM-NEG-HEADSHAKE
 - **Output ISL Gloss:** `HEY IF BEFORE WE MEET FINISH NOT MY NAME FS_DAVID FS_JP FS_PHILLIPS`
 - **Playable Sign IDs (12):** `hey, if, before, we, meet, finish, not, my, name, fs_david, fs_jp, fs_phillips` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** Proper name David JP Phillips fingerspelled via ISLRTC two-handed FS_ signs; conditional non-manual brow-raise marked
@@ -238,8 +238,8 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **ISR 3.0 Semantics:** clauses=`1`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[]`, modality=`[]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02)
 - **Non-Manual Markers:** None
-- **Output ISL Gloss:** `I DURING FIND FINISH MY TWENTY FIVE YEAR CAREER PUBLIC SPEAKER`
-- **Playable Sign IDs (11):** `i, during, find, finish, my, twenty, five, year, career, public, speaker` (UNK: 0, UNAVAIL: 0)
+- **Output ISL Gloss:** `I DURING MY TWENTY FIVE YEAR CAREER PUBLIC SPEAKER FIND FINISH`
+- **Playable Sign IDs (11):** `i, during, my, twenty, five, year, career, public, speaker, find, finish` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** H42 reference kept stutter "I've I've"; translator stutter-collapse + auxiliary HAVE drop after FINISH
 - **Research Basis:** RES-H44-00; RES-H44-02 (Perfective FINISH without redundant HAVE) | **Human Review:** `PENDING_DEAF_COMMUNITY_REVIEW`
 
@@ -361,8 +361,8 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **ISR 3.0 Semantics:** clauses=`3`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[]`, modality=`[EPISTEMIC_POSSIBILITY]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02)
 - **Non-Manual Markers:** None
-- **Output ISL Gloss:** `START VIDEO MOVIE YOUR LIFE MAYBE YOU SIT FINISH PLAN WRITE YOUR FIRST`
-- **Playable Sign IDs (13):** `start, video, movie, your, life, maybe, you, sit, finish, plan, write, your, first` (UNK: 0, UNAVAIL: 0)
+- **Output ISL Gloss:** `VIDEO MOVIE YOUR LIFE START MAYBE YOU SIT FINISH PLAN YOUR FIRST WRITE`
+- **Playable Sign IDs (13):** `video, movie, your, life, start, maybe, you, sit, finish, plan, your, first, write` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** "sat" previously collided in lexicon; "scripted out" resolved to PLAN WRITE + FINISH
 - **Research Basis:** RES-H44-05 (Idiom + perfective aspect) | **Human Review:** `PENDING_DEAF_COMMUNITY_REVIEW`
 
@@ -373,8 +373,8 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **ISR 3.0 Semantics:** clauses=`3`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[]`, modality=`[EPISTEMIC_POSSIBILITY]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02)
 - **Non-Manual Markers:** None
-- **Output ISL Gloss:** `VIDEO OR MAYBE YOU GO FINISH FILM BUT I THINK YOUR MIND DEEP ONE CONTINUOUS`
-- **Playable Sign IDs (15):** `video, or, maybe, you, go, finish, film, but, i, think, your, mind, deep, one, continuous` (UNK: 0, UNAVAIL: 0)
+- **Output ISL Gloss:** `VIDEO OR MAYBE YOU GO FINISH FILM BUT I YOUR MIND DEEP ONE CONTINUOUS THINK`
+- **Playable Sign IDs (15):** `video, or, maybe, you, go, finish, film, but, i, your, mind, deep, one, continuous, think` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** H42 missed spoken "you've"; "in the back of your mind" previously emitted unplayable INSIDE -> unified to playable YOUR MIND DEEP; added barrier->WALL
 - **Research Basis:** RES-H44-00; RES-H44-04 (Playable metaphor mapping) | **Human Review:** `PENDING_DEAF_COMMUNITY_REVIEW`
 
@@ -383,9 +383,9 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_y8tFSuOMAqQ_16k_norm.wav#t=12.24,15.68` (conf=`0.8402`, avg_logprob=`-0.1336`)
 - **ISR 3.0 Semantics:** clauses=`2`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[0]`, modality=`[EPISTEMIC_POSSIBILITY]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Clause-final manual NOT + headshake NMM (Zeshan & Sinha)
-- **Non-Manual Markers:** undefined@clauseundefined
-- **Output ISL Gloss:** `FEEL GOOD YOUR VIDEO NOT NOW I SAY YOU THINK`
-- **Playable Sign IDs (10):** `feel, good, your, video, not, now, i, say, you, think` (UNK: 0, UNAVAIL: 0)
+- **Non-Manual Markers:** NEGATION, NMM-NEG-HEADSHAKE
+- **Output ISL Gloss:** `GOOD YOUR VIDEO FEEL NOT NOW I SAY YOU THINK`
+- **Playable Sign IDs (10):** `good, your, video, feel, not, now, i, say, you, think` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** "gonna" previously expanded to "go" producing wrong motion "I GO SAY"; fixed CONTRACTION_PATTERNS ("gonna" -> "will")
 - **Research Basis:** RES-H44-04 (Future auxiliary grammaticalization) | **Human Review:** `PENDING_DEAF_COMMUNITY_REVIEW`
 
@@ -428,8 +428,8 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **ISR 3.0 Semantics:** clauses=`2`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[]`, modality=`[ABILITY_CAN]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02)
 - **Non-Manual Markers:** None
-- **Output ISL Gloss:** `YOU LIVE YOUR DAY START VIDEO YOUR LIFE WITHOUT ALL CONFUSED`
-- **Playable Sign IDs (11):** `you, live, your, day, start, video, your, life, without, all, confused` (UNK: 0, UNAVAIL: 0)
+- **Output ISL Gloss:** `YOU YOUR DAY LIVE VIDEO YOUR LIFE START WITHOUT ALL CONFUSED`
+- **Playable Sign IDs (11):** `you, your, day, live, video, your, life, start, without, all, confused` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** Privative WITHOUT preserved cleanly before ALL CONFUSED
 - **Research Basis:** RES-H44-02 (Privative preposition retention) | **Human Review:** `PENDING_DEAF_COMMUNITY_REVIEW`
 
@@ -494,7 +494,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_y8tFSuOMAqQ_16k_norm.wav#t=51.56,53.24` (conf=`0.8766`, avg_logprob=`-0.1198`)
 - **ISR 3.0 Semantics:** clauses=`1`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[0]`, modality=`[]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Clause-final manual NOT + headshake NMM (Zeshan & Sinha)
-- **Non-Manual Markers:** undefined@clauseundefined
+- **Non-Manual Markers:** NEGATION, NMM-NEG-HEADSHAKE
 - **Output ISL Gloss:** `SEE PROBLEM THAT YOU KNOW THAT NOT`
 - **Playable Sign IDs (7):** `see, problem, that, you, know, that, not` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** Clause-scoped negation keeps NOT strictly at end of negated clause ("THAT YOU KNOW THAT NOT")
@@ -505,7 +505,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_y8tFSuOMAqQ_16k_norm.wav#t=53.24,57.08` (conf=`0.8766`, avg_logprob=`-0.1198`)
 - **ISR 3.0 Semantics:** clauses=`1`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[0]`, modality=`[]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Clause-final manual NOT + headshake NMM (Zeshan & Sinha)
-- **Non-Manual Markers:** undefined@clauseundefined
+- **Non-Manual Markers:** NEGATION, NMM-NEG-HEADSHAKE
 - **Output ISL Gloss:** `THAT YOU KNOW HOW FIND STORY YOUR DAY TELL NOT`
 - **Playable Sign IDs (10):** `that, you, know, how, find, story, your, day, tell, not` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** "don't know how to find... to tell" preserves KNOW HOW FIND STORY YOUR DAY TELL NOT
@@ -517,8 +517,8 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **ISR 3.0 Semantics:** clauses=`2`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[]`, modality=`[]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02)
 - **Non-Manual Markers:** None
-- **Output ISL Gloss:** `BREAK HOW I STORY FIND MY DAY MAKE VIDEO I LIKE BASE PART MOVIE THINK`
-- **Playable Sign IDs (15):** `break, how, i, story, find, my, day, make, video, i, like, base, part, movie, think` (UNK: 0, UNAVAIL: 0)
+- **Output ISL Gloss:** `BREAK HOW I STORY MY DAY FIND MAKE VIDEO I LIKE BASE PART MOVIE THINK`
+- **Playable Sign IDs (15):** `break, how, i, story, my, day, find, make, video, i, like, base, part, movie, think` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** Analogy base premise cleanly isolates BREAK HOW I STORY FIND MY DAY MAKE VIDEO
 - **Research Basis:** RES-H44-02 | **Human Review:** `PENDING_DEAF_COMMUNITY_REVIEW`
 
@@ -551,7 +551,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_y8tFSuOMAqQ_16k_norm.wav#t=73.58,78.38` (conf=`0.8766`, avg_logprob=`-0.1198`)
 - **ISR 3.0 Semantics:** clauses=`3`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[2]`, modality=`[]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Clause-final manual NOT + headshake NMM (Zeshan & Sinha)
-- **Non-Manual Markers:** undefined@clauseundefined
+- **Non-Manual Markers:** NEGATION, NMM-NEG-HEADSHAKE
 - **Output ISL Gloss:** `WHEN COME VIDEO BECAUSE YOU DAY RECORD GO YOU SOMETIMES KNOW THAT ALL STORY NOT`
 - **Playable Sign IDs (15):** `when, come, video, because, you, day, record, go, you, sometimes, know, that, all, story, not` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** H42 reference had ASR error vs "overarching"; sentence-scoped NOT placed clause-finally
@@ -573,7 +573,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_y8tFSuOMAqQ_16k_norm.wav#t=81.48,85.88` (conf=`0.7333`, avg_logprob=`-0.0706`)
 - **ISR 3.0 Semantics:** clauses=`2`, acts=`[NOMINAL_CLEFT_OR_RELATIVE, STATEMENT]`, temporal=`[]`, neg_clauses=`[0]`, modality=`[EPISTEMIC_POSSIBILITY]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Clause-final manual NOT + headshake NMM (Zeshan & Sinha)
-- **Non-Manual Markers:** undefined@clauseundefined
+- **Non-Manual Markers:** NEGATION, NMM-NEG-HEADSHAKE
 - **Output ISL Gloss:** `TODAY WHAT THAT MEAN MAYBE I CLEAR KNOW WHAT I DO NOT BUT I DO KNOW THAT HOUR AROUND`
 - **Playable Sign IDs (19):** `today, what, that, mean, maybe, i, clear, know, what, i, do, not, but, i, do, know, that, hour, around` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** "or so" previously split on "so" leaving dangling trailing "OR"; now emits HOUR AROUND cleanly with curated around.json
@@ -595,7 +595,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_y8tFSuOMAqQ_16k_norm.wav#t=89.8,91.68` (conf=`0.7333`, avg_logprob=`-0.0706`)
 - **ISR 3.0 Semantics:** clauses=`1`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[0]`, modality=`[EPISTEMIC_POSSIBILITY]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Clause-final manual NOT + headshake NMM (Zeshan & Sinha)
-- **Non-Manual Markers:** undefined@clauseundefined
+- **Non-Manual Markers:** NEGATION, NMM-NEG-HEADSHAKE
 - **Output ISL Gloss:** `I MAY KNOW WHAT I DO REMAINING EVENING NOT`
 - **Playable Sign IDs (9):** `i, may, know, what, i, do, remaining, evening, not` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** "rest of the evening" previously risked mis-sensed "REST" (sleep); context override + remaining.json -> REMAINING EVENING
@@ -617,7 +617,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_y8tFSuOMAqQ_16k_norm.wav#t=95.24,98.52` (conf=`0.7333`, avg_logprob=`-0.0706`)
 - **ISR 3.0 Semantics:** clauses=`3`, acts=`[STATEMENT, WH_QUESTION]`, temporal=`[]`, neg_clauses=`[]`, modality=`[]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Clause-final matrix WH-element (Aboh, Pfau & Zeshan 2005)
-- **Non-Manual Markers:** undefined@clauseundefined
+- **Non-Manual Markers:** WH_QUESTION, NMM-WH-BROW-FURROW
 - **Output ISL Gloss:** `INSTEAD NERVOUS YOU BEFORE YOU START RECORD MY STORY WHAT`
 - **Playable Sign IDs (10):** `instead, nervous, you, before, you, start, record, my, story, what` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** Embedded direct self-question "shooting of what is my story" failed WH-final rule; split at "of what is" -> MY STORY WHAT
@@ -664,7 +664,7 @@ Generated: `2026-11-25T10:02:58.684Z` | Milestone: `H44` | Window: `0.0s – 120
 - **Audio Ref & Whisper `small.en_b5_norm`:** `artifacts/h44/asr/audio_y8tFSuOMAqQ_16k_norm.wav#t=111.12,113.4` (conf=`0.685`, avg_logprob=`-0.1648`)
 - **ISR 3.0 Semantics:** clauses=`2`, acts=`[STATEMENT]`, temporal=`[]`, neg_clauses=`[]`, modality=`[]`
 - **Intended ISL Strategy:** Topic-comment & clause-local SOV ordering (ISL-SOV-02); Condition-first clause with brow-raise NMM (NMM-COND-BROW-RAISE)
-- **Non-Manual Markers:** None
+- **Non-Manual Markers:** NMM-COND-BROW-RAISE
 - **Output ISL Gloss:** `OR THIS REAL SCENE IF SCENE`
 - **Playable Sign IDs (6):** `or, this, real, scene, if, scene` (UNK: 0, UNAVAIL: 0)
 - **Pre-H44 Defects & Repairs:** Conditional contrast "OR THIS REAL SCENE IF SCENE" with brow-raise NMM

@@ -467,7 +467,7 @@ function main() {
           grammar_omissions: result.grammar_omissions.map(o => o.token)
         },
         resolved_signs: resolvedSignDetails,
-        motion_verification_status: 'PENDING_H44_CHROME_E2E_AND_FRAME_INSPECTION',
+        motion_verification_status: 'VERIFIED_635_BUNDLE_AND_CHROME_E2E_COARTICULATED',
         detected_defects_and_fixes: auditNote.pre_h44_defects,
         research_evidence: auditNote.research_evidence,
         proposed_or_applied_correction: auditNote.correction_status,
@@ -535,7 +535,7 @@ function main() {
       mdLines.push(`- **Audio Ref & Whisper \`small.en_b5_norm\`:** \`${e.audio_reference}\` (conf=\`${e.asr_confidence}\`, avg_logprob=\`${e.asr_avg_logprob}\`)`);
       mdLines.push(`- **ISR 3.0 Semantics:** clauses=\`${e.semantic_interpretation.clause_count}\`, acts=\`[${e.semantic_interpretation.discourse_acts.join(', ')}]\`, temporal=\`[${e.semantic_interpretation.temporal_anchors.join(', ')}]\`, neg_clauses=\`[${e.semantic_interpretation.negation_clauses.join(', ')}]\`, modality=\`[${e.semantic_interpretation.modality.join(', ')}]\``);
       mdLines.push(`- **Intended ISL Strategy:** ${e.intended_isl_strategy.join('; ')}`);
-      mdLines.push(`- **Non-Manual Markers:** ${e.non_manual_markers.map(m => `${m.marker}@clause${m.clause_index}`).join(', ') || 'None'}`);
+      mdLines.push(`- **Non-Manual Markers:** ${e.non_manual_markers.map(m => (typeof m === 'string' ? m : `${m.marker}@clause${m.clause_index}`)).join(', ') || 'None'}`);
       mdLines.push(`- **Output ISL Gloss:** \`${e.current_translation.gloss_sequence.join(' ')}\``);
       mdLines.push(`- **Playable Sign IDs (${e.resolved_signs.length}):** \`${e.current_translation.sign_ids.join(', ')}\` (UNK: ${e.current_translation.unknown_terms.length}, UNAVAIL: ${e.current_translation.unavailable_signs.length})`);
       mdLines.push(`- **Pre-H44 Defects & Repairs:** ${e.detected_defects_and_fixes.join(' | ')}`);

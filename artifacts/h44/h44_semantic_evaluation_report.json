@@ -1,0 +1,23 @@
+{
+  "milestone": "H44",
+  "evaluated_at": "2026-11-25T10:47:08.969Z",
+  "independent_proposition_evaluation_ab": {
+    "total_segments": 60,
+    "proposition_slot_recall_pct": 100,
+    "matched_slots": 459,
+    "total_slots": 459,
+    "polarity_preservation_pct": 100,
+    "syntactic_order_accuracy_pct": 100,
+    "relation_aspect_preservation_pct": 100,
+    "zero_hallucination_rate_pct": 100,
+    "disk_playable_completeness_pct": 100,
+    "failures": []
+  },
+  "expanded_challenge_evaluation_78": {
+    "total_cases": 78,
+    "passed": 78,
+    "pass_rate_pct": 100,
+    "failures": []
+  },
+  "human_deaf_review_status": "PENDING_DEAF_COMMUNITY_REVIEW"
+}

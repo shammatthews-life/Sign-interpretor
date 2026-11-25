@@ -142,9 +142,12 @@ document.addEventListener('DOMContentLoaded', () => {
         : message.payload;
       if (youtube) {
         renderYoutube(youtube, message.payload?.signingQueue);
-        if (youtube.state !== 'READY' && youtube.state !== 'ERROR') {
+        if (youtube.state && !['IDLE', 'READY', 'ERROR'].includes(youtube.state)) {
           processButton.disabled = true;
           processButton.textContent = 'Processing…';
+        } else {
+          processButton.disabled = false;
+          processButton.textContent = 'Process Video';
         }
       }
     } else if (message.type === contract.MESSAGE_TYPES.YOUTUBE_ERROR) {

@@ -79,6 +79,45 @@ const NEW_SIGNS = {
       { t: 680, r: { Bip001_R_UpperArm: { x: -16, y: 6, z: -58 }, Bip001_R_Forearm: { x: 0, y: 4, z: -50 }, Bip001_R_Hand: { x: -16, y: 20, z: -12 }, Bip001_L_UpperArm: { x: -16, y: -6, z: 58 }, Bip001_L_Forearm: { x: 0, y: -4, z: 50 }, Bip001_L_Hand: { x: -16, y: -20, z: 12 } }, c: { thumb: 0, index: 5, middle: 5, ring: 5, pinky: 5 } },
       { t: 1080, r: { Bip001_R_UpperArm: { x: 0, y: 0, z: 0 }, Bip001_R_Forearm: { x: 0, y: 0, z: 0 }, Bip001_R_Hand: { x: 0, y: 0, z: 0 }, Bip001_L_UpperArm: { x: 0, y: 0, z: 0 }, Bip001_L_Forearm: { x: 0, y: 0, z: 0 }, Bip001_L_Hand: { x: 0, y: 0, z: 0 } }, c: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 } }
     ]
+  },
+  where: {
+    display_name: 'Where',
+    gloss: 'WHERE',
+    dominant_hand: 'right',
+    duration_ms: 1040,
+    notes: 'ISLRTC WH-interrogative: Open upright B-palm rotating horizontally side-to-side with furrowed brow (WHERE).',
+    kfs: [
+      { t: 0, r: { Bip001_R_UpperArm: { x: 0, y: 0, z: 0 }, Bip001_R_Forearm: { x: 0, y: 0, z: 0 }, Bip001_R_Hand: { x: 0, y: 0, z: 0 }, Bip001_Head: { x: 0, y: 0, z: 0 } }, c: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 } },
+      { t: 300, r: { Bip001_R_UpperArm: { x: -14, y: -12, z: -54 }, Bip001_R_Forearm: { x: 0, y: -18, z: -74 }, Bip001_R_Hand: { x: -12, y: 26, z: -18 }, Bip001_Head: { x: 4, y: -6, z: -4 } }, c: { thumb: 18, index: 0, middle: 0, ring: 0, pinky: 0 } },
+      { t: 680, r: { Bip001_R_UpperArm: { x: -14, y: 12, z: -60 }, Bip001_R_Forearm: { x: 0, y: -4, z: -70 }, Bip001_R_Hand: { x: -12, y: -26, z: 18 }, Bip001_Head: { x: 4, y: 6, z: 4 } }, c: { thumb: 18, index: 0, middle: 0, ring: 0, pinky: 0 } },
+      { t: 1040, r: { Bip001_R_UpperArm: { x: 0, y: 0, z: 0 }, Bip001_R_Forearm: { x: 0, y: 0, z: 0 }, Bip001_R_Hand: { x: 0, y: 0, z: 0 }, Bip001_Head: { x: 0, y: 0, z: 0 } }, c: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 } }
+    ]
+  },
+  who: {
+    display_name: 'Who',
+    gloss: 'WHO',
+    dominant_hand: 'right',
+    duration_ms: 1020,
+    notes: 'ISLRTC WH-interrogative: Extended index finger making questioning arc near chin/mouth with brow furrow (WHO).',
+    kfs: [
+      { t: 0, r: { Bip001_R_UpperArm: { x: 0, y: 0, z: 0 }, Bip001_R_Forearm: { x: 0, y: 0, z: 0 }, Bip001_R_Hand: { x: 0, y: 0, z: 0 }, Bip001_Head: { x: 0, y: 0, z: 0 } }, c: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 } },
+      { t: 320, r: { Bip001_R_UpperArm: { x: -16, y: -8, z: -78 }, Bip001_R_Forearm: { x: 0, y: -26, z: -92 }, Bip001_R_Hand: { x: 6, y: 16, z: -8 }, Bip001_Head: { x: 4, y: 0, z: -5 } }, c: { thumb: 68, index: 12, middle: 88, ring: 88, pinky: 88 } },
+      { t: 680, r: { Bip001_R_UpperArm: { x: -14, y: 4, z: -72 }, Bip001_R_Forearm: { x: 0, y: -14, z: -82 }, Bip001_R_Hand: { x: 18, y: -14, z: 10 }, Bip001_Head: { x: 6, y: 4, z: 5 } }, c: { thumb: 68, index: 26, middle: 88, ring: 88, pinky: 88 } },
+      { t: 1020, r: { Bip001_R_UpperArm: { x: 0, y: 0, z: 0 }, Bip001_R_Forearm: { x: 0, y: 0, z: 0 }, Bip001_R_Hand: { x: 0, y: 0, z: 0 }, Bip001_Head: { x: 0, y: 0, z: 0 } }, c: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 } }
+    ]
+  },
+  please: {
+    display_name: 'Please',
+    gloss: 'PLEASE',
+    dominant_hand: 'right',
+    duration_ms: 1160,
+    notes: 'ISLRTC politeness marker: Open flat palm on center chest moving in a gentle circular stroke (PLEASE).',
+    kfs: [
+      { t: 0, r: { Bip001_R_UpperArm: { x: 0, y: 0, z: 0 }, Bip001_R_Forearm: { x: 0, y: 0, z: 0 }, Bip001_R_Hand: { x: 0, y: 0, z: 0 }, Bip001_Head: { x: 0, y: 0, z: 0 } }, c: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 } },
+      { t: 340, r: { Bip001_R_UpperArm: { x: -6, y: 20, z: -48 }, Bip001_R_Forearm: { x: -14, y: -30, z: -84 }, Bip001_R_Hand: { x: 10, y: 12, z: -6 }, Bip001_Head: { x: 6, y: 0, z: 0 } }, c: { thumb: 14, index: 0, middle: 0, ring: 0, pinky: 0 } },
+      { t: 740, r: { Bip001_R_UpperArm: { x: -12, y: 12, z: -56 }, Bip001_R_Forearm: { x: -18, y: -22, z: -78 }, Bip001_R_Hand: { x: 14, y: -8, z: 6 }, Bip001_Head: { x: 8, y: 0, z: 0 } }, c: { thumb: 14, index: 0, middle: 0, ring: 0, pinky: 0 } },
+      { t: 1160, r: { Bip001_R_UpperArm: { x: 0, y: 0, z: 0 }, Bip001_R_Forearm: { x: 0, y: 0, z: 0 }, Bip001_R_Hand: { x: 0, y: 0, z: 0 }, Bip001_Head: { x: 0, y: 0, z: 0 } }, c: { thumb: 0, index: 0, middle: 0, ring: 0, pinky: 0 } }
+    ]
   }
 };
 
