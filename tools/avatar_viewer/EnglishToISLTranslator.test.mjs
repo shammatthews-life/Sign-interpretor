@@ -123,4 +123,58 @@ test('H44 regression fixes across A05, A12, A15, A18, B01, B03, B18, B21, B23, B
   const b31 = tr.translate('You have probably heard of the phrase show not tell.');
   assert.equal(b31.gloss_sequence.includes('NOT'), false);
   assert.ok(b31.gloss_sequence.includes('SHOW'));
+  assert.ok(b31.gloss_sequence.includes('MAYBE'));
+});
+
+test('H45 ISR 4.0 relational, negation-scope, emphatic DO, inchoative & contextual sense fixes', () => {
+  const tr = new EnglishToISLTranslator();
+
+  // Multi-clause negation preservation (B14): both negations retained in respective clauses
+  const b14 = tr.translate("See the problem isn't that you don't know that.");
+  assert.equal(b14.gloss_sequence.filter(g => g === 'NOT').length, 2);
+  assert.ok(b14.gloss_sequence.indexOf('NOT') < b14.gloss_sequence.indexOf('KNOW'));
+
+  // Matrix negation anchored at KNOW (B15 & ADV04): does not drift past embedded clause
+  const b15 = tr.translate("It's that you don't know how to actually find a story in your day to tell.");
+  assert.ok(b15.gloss_sequence.indexOf('NOT') > b15.gloss_sequence.indexOf('KNOW'));
+  assert.ok(b15.gloss_sequence.indexOf('NOT') < b15.gloss_sequence.indexOf('TELL'));
+
+  const adv04 = tr.translate("I didn't say you failed the speech.");
+  assert.ok(adv04.gloss_sequence.indexOf('NOT') < adv04.gloss_sequence.indexOf('FAIL'));
+
+  // Contrastive replacement "instead of X" negates rejected action (B25)
+  const b25 = tr.translate('So instead of stressing yourself before you start shooting of what is my story');
+  assert.ok(b25.gloss_sequence.indexOf('NERVOUS') < b25.gloss_sequence.indexOf('NOT'));
+  assert.equal(b25.gloss_sequence.slice(-3).join(' '), 'MY STORY WHAT');
+
+  // Emphatic auxiliary DO omitted + marked with NMM-EMPHATIC-NOD; elliptical DO resolved (B20, B13)
+  const b20 = tr.translate('but I bet you do know at least a scene or two ahead.');
+  assert.equal(b20.gloss_sequence.includes('DO'), false);
+  assert.ok(b20.non_manual_markers.includes('NMM-EMPHATIC-NOD'));
+
+  const b13 = tr.translate('You have to have a story because everybody knows that and I know you do too.');
+  assert.equal(b13.gloss_sequence.includes('DO'), false);
+  assert.ok(b13.gloss_sequence.includes('EVERYONE'));
+
+  // Contextual senses & inchoative comparative (A06, A12, A28, B06, B31)
+  const a06 = tr.translate('which we delivered live right here in our studio.');
+  assert.ok(a06.gloss_sequence.includes('PRESENTATION'));
+  assert.ok(a06.gloss_sequence.includes('OUR'));
+  assert.equal(a06.gloss_sequence.includes('GIVE'), false);
+
+  const a12 = tr.translate("and I'm best known for my TEDx talks,");
+  assert.ok(a12.gloss_sequence.includes('SPEECH'));
+  assert.equal(a12.gloss_sequence.includes('SAY'), false);
+
+  const a28 = tr.translate('This is, well, this is my view of you.');
+  assert.ok(a28.gloss_sequence.includes('PERSPECTIVE'));
+  assert.equal(a28.gloss_sequence.includes('SEE'), false);
+
+  const b06 = tr.translate('but the entire creative process for vlogging has definitely gotten a lot easier over the years');
+  assert.ok(b06.gloss_sequence.includes('BECOME'));
+  assert.ok(b06.gloss_sequence.includes('MORE'));
+  assert.equal(b06.gloss_sequence.includes('GET'), false);
+
+  const adv01 = tr.translate('The coach helped the beginner yesterday.');
+  assert.ok(adv01.gloss_sequence.indexOf('LEARN') < adv01.gloss_sequence.indexOf('HELP'));
 });

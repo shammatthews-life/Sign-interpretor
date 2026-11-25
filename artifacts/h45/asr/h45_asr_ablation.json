@@ -1,0 +1,1179 @@
+{
+  "milestone": "H45",
+  "generated_at": "2026-11-25T13:01:26Z",
+  "experiments": [
+    {
+      "config": "base.en_b5_norm",
+      "model": "base.en",
+      "initial_prompt": false,
+      "mean_wer_pct": 6.12,
+      "mean_rtf": 0.056,
+      "per_video": {
+        "MXKkXXYUxBc": {
+          "wer_pct": 9.62,
+          "edit_distance": 28,
+          "ref_words": 291,
+          "hyp_words": 311,
+          "infer_time_s": 5.499,
+          "rtf": 0.0458,
+          "segment_count": 26,
+          "segments": [
+            {
+              "start": 2.45,
+              "end": 7.83,
+              "text": "This is public speaking for beginners, and the goal of this video is simple.",
+              "asr_confidence": 0.8226
+            },
+            {
+              "start": 8.59,
+              "end": 14.09,
+              "text": "It's to help you overcome being uncertain, anxious, afraid,",
+              "asr_confidence": 0.8226
+            },
+            {
+              "start": 14.69,
+              "end": 20.47,
+              "text": "and bring you a few steps closer to being more confident, more clear,",
+              "asr_confidence": 0.8226
+            },
+            {
+              "start": 21.29,
+              "end": 23.91,
+              "text": "and a much more captivating speaker.",
+              "asr_confidence": 0.8226
+            },
+            {
+              "start": 25.07,
+              "end": 30.23,
+              "text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+              "asr_confidence": 0.8226
+            },
+            {
+              "start": 30.23,
+              "end": 33.53,
+              "text": "which we delivered live right here in our studio.",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 34.33,
+              "end": 36.63,
+              "text": "We'll begin with mindset and confidence.",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 37.35,
+              "end": 39.43,
+              "text": "We'll move into the science of capturing attention",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 40.03,
+              "end": 43.33,
+              "text": "and we'll finish off with the most impactful delivery skills",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 43.33,
+              "end": 47.11,
+              "text": "from the 110-step chart of excellence communication.",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 49.04,
+              "end": 52.64,
+              "text": "Hey, if we haven't met before, my name is David J.P. Phillips",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 52.64,
+              "end": 54.54,
+              "text": "and I'm best known for my TEDx talks",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 54.54,
+              "end": 56.9,
+              "text": "which are among the most viewed in the world",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 56.9,
+              "end": 58.22,
+              "text": "on this particular subject.",
+              "asr_confidence": 0.6466
+            },
+            {
+              "start": 58.22,
+              "end": 64.14,
+              "text": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great",
+              "asr_confidence": 0.7176
+            },
+            {
+              "start": 64.14,
+              "end": 64.52,
+              "text": "speaker.",
+              "asr_confidence": 0.7176
+            },
+            {
+              "start": 65.12,
+              "end": 69.06,
+              "text": "And this chart is one of the results of that particular endeavor.",
+              "asr_confidence": 0.7176
+            },
+            {
+              "start": 69.56,
+              "end": 71.36,
+              "text": "Oh, and they have been put to practice.",
+              "asr_confidence": 0.7176
+            },
+            {
+              "start": 71.78,
+              "end": 76.18,
+              "text": "I've coached global giants like Oracle, Google and Disney and storytelling and presentation",
+              "asr_confidence": 0.7176
+            },
+            {
+              "start": 76.18,
+              "end": 80.68,
+              "text": "skills and the beautiful science of holding an audience's attention.",
+              "asr_confidence": 0.7176
+            },
+            {
+              "start": 81.28,
+              "end": 86.82,
+              "text": "Now over the next two hours and 30 minutes you'll discover the essential tools I've gathered",
+              "asr_confidence": 0.7176
+            },
+            {
+              "start": 86.82,
+              "end": 93.04,
+              "text": "during my 25 year career as a public speaker and public speaking coach so make sure you have",
+              "asr_confidence": 0.7114
+            },
+            {
+              "start": 93.04,
+              "end": 100.4,
+              "text": "a pen and a paper, lean in and you'll walk away with practical tools you can apply tomorrow.",
+              "asr_confidence": 0.7114
+            },
+            {
+              "start": 101.6,
+              "end": 112.91,
+              "text": "Have fun. Welcome beautiful people all around the world to the lovely country of Sweden.",
+              "asr_confidence": 0.7114
+            },
+            {
+              "start": 114.01,
+              "end": 120.17,
+              "text": "This is well this is my view of you pictures all over the place we've got people from UK,",
+              "asr_confidence": 0.7114
+            },
+            {
+              "start": 120.17,
+              "end": 124.73,
+              "text": "Croatia, Switzerland, my orca, I'm going to my orca in just a couple of weeks.",
+              "asr_confidence": 0.5194
+            }
+          ]
+        },
+        "y8tFSuOMAqQ": {
+          "wer_pct": 2.63,
+          "edit_distance": 15,
+          "ref_words": 571,
+          "hyp_words": 580,
+          "infer_time_s": 7.94,
+          "rtf": 0.0662,
+          "segment_count": 36,
+          "segments": [
+            {
+              "start": 0.0,
+              "end": 3.66,
+              "text": "Alright so summer is here and in my opinion that's really the best time to go out, start filming,",
+              "asr_confidence": 0.8962
+            },
+            {
+              "start": 3.84,
+              "end": 7.62,
+              "text": "start vlogging and documenting your life. Maybe you've just sat down and scripted out your first",
+              "asr_confidence": 0.8962
+            },
+            {
+              "start": 7.62,
+              "end": 12.16,
+              "text": "video or maybe you even gone out and filmed it but I bet in the back of your mind something still",
+              "asr_confidence": 0.8962
+            },
+            {
+              "start": 12.16,
+              "end": 15.58,
+              "text": "just doesn't feel right about your vlog and I'm gonna say it right now you're probably just",
+              "asr_confidence": 0.8962
+            },
+            {
+              "start": 15.58,
+              "end": 20.38,
+              "text": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
+              "asr_confidence": 0.8962
+            },
+            {
+              "start": 20.38,
+              "end": 24.54,
+              "text": "entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+              "asr_confidence": 0.8962
+            },
+            {
+              "start": 24.54,
+              "end": 28.68,
+              "text": "wanted to share some advice about that. Things I've learned through years of trial and error on how",
+              "asr_confidence": 0.8962
+            },
+            {
+              "start": 28.68,
+              "end": 31.6,
+              "text": "you can go about your day and start vlogging your life without completely",
+              "asr_confidence": 0.8349
+            },
+            {
+              "start": 32.06,
+              "end": 39.34,
+              "text": "overcomplicating the process as a beginner. So essentially a vlog is just a very",
+              "asr_confidence": 0.8349
+            },
+            {
+              "start": 39.34,
+              "end": 43.32,
+              "text": "loosely defined short film and what that means is that the core of it all you",
+              "asr_confidence": 0.8349
+            },
+            {
+              "start": 43.32,
+              "end": 46.94,
+              "text": "still need a good story. I know you are definitely tired of hearing that from",
+              "asr_confidence": 0.8349
+            },
+            {
+              "start": 46.94,
+              "end": 50.12,
+              "text": "everybody that story is king. You have to have a story because everybody knows",
+              "asr_confidence": 0.8349
+            },
+            {
+              "start": 50.12,
+              "end": 53.0,
+              "text": "that and I know you do too. See the problem isn't that you don't know that",
+              "asr_confidence": 0.8349
+            },
+            {
+              "start": 53.0,
+              "end": 57.38,
+              "text": "it's that you don't know how to actually find a story in your day to tell. So to",
+              "asr_confidence": 0.8349
+            },
+            {
+              "start": 57.38,
+              "end": 60.62,
+              "text": "To break down how I find a story in my day to make a vlog about, I like to think about",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 60.62,
+              "end": 62.56,
+              "text": "the fundamental pieces in a movie.",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 62.8,
+              "end": 66.02,
+              "text": "And just like short films, future films, documentaries, what you really need to think",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 66.02,
+              "end": 67.2,
+              "text": "about are scenes.",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 67.64,
+              "end": 70.72,
+              "text": "Just like scenes in your favorite movie, you need to have a compilation of scenes that",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 70.72,
+              "end": 73.46,
+              "text": "when stitched together tell a greater and broader story.",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 73.7,
+              "end": 76.3,
+              "text": "When it comes to vlogging, because you're filming as the day is going on, you sometimes",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 76.3,
+              "end": 81.34,
+              "text": "don't know that over-arching story, but I bet you do know at least a scene or two ahead.",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 81.46,
+              "end": 84.72,
+              "text": "What that means is maybe I don't know exactly what I'm up to today, but I do know that",
+              "asr_confidence": 0.8421
+            },
+            {
+              "start": 84.72,
+              "end": 88.22,
+              "text": "in an hour or so I'm gonna go meet up with a friend so I can build a scene",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 88.22,
+              "end": 90.94,
+              "text": "around that and then after that again I might not know what I'm gonna do for",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 90.94,
+              "end": 93.76,
+              "text": "the rest of the evening but I do know that I'm hungry so I'm gonna go get",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 93.76,
+              "end": 96.9,
+              "text": "some food that's another scene so instead of stressing yourself before you",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 96.9,
+              "end": 101.02,
+              "text": "start shooting of what is my story just allow yourself to live life and think",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 101.02,
+              "end": 104.46,
+              "text": "of things scene by scene and also think about how the scenes kind of tie into",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 104.46,
+              "end": 107.34,
+              "text": "the overall feeling that you're trying to deliver so when I'm out shooting and",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 107.34,
+              "end": 110.42,
+              "text": "filming things I always try and think is this just a shot that I'm getting",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 110.42,
+              "end": 113.84,
+              "text": "because it looks cool or is this an actual scene if it's a scene I'll have to",
+              "asr_confidence": 0.5861
+            },
+            {
+              "start": 113.84,
+              "end": 117.02,
+              "text": "build a little bit more around it. Most often it'll also capture some dialogues",
+              "asr_confidence": 0.6953
+            },
+            {
+              "start": 117.02,
+              "end": 119.54,
+              "text": "and talking. I'll talk straight to the camera and explain what's going on.",
+              "asr_confidence": 0.6953
+            },
+            {
+              "start": 119.92,
+              "end": 122.76,
+              "text": "A lot of people will tell you that in filmmaking you want to show, not tell.",
+              "asr_confidence": 0.6953
+            },
+            {
+              "start": 123.02,
+              "end": 124.98,
+              "text": "I do think that's true, but because vlogging...",
+              "asr_confidence": 0.6953
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": "small.en_b5_norm",
+      "model": "small.en",
+      "initial_prompt": false,
+      "mean_wer_pct": 5.43,
+      "mean_rtf": 0.0761,
+      "per_video": {
+        "MXKkXXYUxBc": {
+          "wer_pct": 8.59,
+          "edit_distance": 25,
+          "ref_words": 291,
+          "hyp_words": 309,
+          "infer_time_s": 6.63,
+          "rtf": 0.0552,
+          "segment_count": 22,
+          "segments": [
+            {
+              "start": 2.45,
+              "end": 9.09,
+              "text": "This is public speaking for beginners and the goal of this video is simple, it's to",
+              "asr_confidence": 0.8425
+            },
+            {
+              "start": 9.09,
+              "end": 16.65,
+              "text": "help you overcome being uncertain, nervous, anxious, afraid and bring you a few steps",
+              "asr_confidence": 0.8425
+            },
+            {
+              "start": 16.65,
+              "end": 24.13,
+              "text": "closer to being more confident, more clear and a much more captivating speaker.",
+              "asr_confidence": 0.8425
+            },
+            {
+              "start": 24.96,
+              "end": 30.69,
+              "text": "What you're about to watch is a special compilation of a three-day public speaking challenge which",
+              "asr_confidence": 0.8425
+            },
+            {
+              "start": 30.69,
+              "end": 36.93,
+              "text": "we delivered live right here in our studio. We'll begin with mindset and confidence,",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 37.49,
+              "end": 41.55,
+              "text": "we'll move into the science of capturing attention and we'll finish off with the",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 41.55,
+              "end": 47.55,
+              "text": "most impactful delivery skills from the 110 steps chart of excellent communication.",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 49.12,
+              "end": 54.6,
+              "text": "Hey, if we haven't met before my name is David JP Phillips and I'm best known for my TEDx talks",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 54.6,
+              "end": 59.4,
+              "text": "which are among the most viewed in the world on this particular subject. You see I've studied",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 59.4,
+              "end": 64.74,
+              "text": "over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 65.16,
+              "end": 69.2,
+              "text": "And this chart is one of the results of that particular endeavor.",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 69.62,
+              "end": 71.52,
+              "text": "Oh, and they have been put to practice.",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 71.76,
+              "end": 76.34,
+              "text": "I have coached global giants like Oracle, Google and Disney in storytelling and presentation",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 76.34,
+              "end": 80.94,
+              "text": "skills and the beautiful science of holding an audience's attention.",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 81.38,
+              "end": 86.72,
+              "text": "Now, over the next two hours and 30 minutes, you'll discover the essential tools I've",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 86.72,
+              "end": 90.08,
+              "text": "gather during my 25 year career as a public speaker and public",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 90.08,
+              "end": 95.96,
+              "text": "speaking coach. So make sure you have a pen and a paper, lean in",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 96.38,
+              "end": 99.8,
+              "text": "and you'll walk away with practical tools you can apply",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 99.8,
+              "end": 109.95,
+              "text": "tomorrow. Have fun. Welcome beautiful people all around the",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 109.95,
+              "end": 115.69,
+              "text": "world to the lovely country of Sweden. This is well, this is my",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 115.69,
+              "end": 119.77,
+              "text": "view of you as pictures all over the place. We got people from",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 119.77,
+              "end": 124.77,
+              "text": "UK, Croatia, Switzerland, Mallorca. I'm going to Mallorca in just a couple of weeks.",
+              "asr_confidence": 0.6908
+            }
+          ]
+        },
+        "y8tFSuOMAqQ": {
+          "wer_pct": 2.28,
+          "edit_distance": 13,
+          "ref_words": 571,
+          "hyp_words": 578,
+          "infer_time_s": 11.647,
+          "rtf": 0.0971,
+          "segment_count": 37,
+          "segments": [
+            {
+              "start": 0.0,
+              "end": 5.48,
+              "text": "Alright, so Summer is here, and in my opinion, that's really the best time to go out, start filming, start vlogging, and documenting your life.",
+              "asr_confidence": 0.8402
+            },
+            {
+              "start": 5.72,
+              "end": 10.26,
+              "text": "Maybe you just sat down and scripted out your first video, or maybe you even gone out and filmed it,",
+              "asr_confidence": 0.8402
+            },
+            {
+              "start": 10.32,
+              "end": 13.8,
+              "text": "but I bet in the back of your mind, something still just doesn't feel right about your vlog.",
+              "asr_confidence": 0.8402
+            },
+            {
+              "start": 13.92,
+              "end": 16.42,
+              "text": "And I'm gonna say it right now, you're probably just overthinking it.",
+              "asr_confidence": 0.8402
+            },
+            {
+              "start": 16.52,
+              "end": 20.08,
+              "text": "I was too in the very beginning, and honestly, I still do, even to this day.",
+              "asr_confidence": 0.8402
+            },
+            {
+              "start": 20.22,
+              "end": 23.78,
+              "text": "But the entire creative process for vlogging has definitely gotten a lot easier over the years,",
+              "asr_confidence": 0.8402
+            },
+            {
+              "start": 23.92,
+              "end": 26.22,
+              "text": "so today, I wanted to share some advice about that.",
+              "asr_confidence": 0.8402
+            },
+            {
+              "start": 26.22,
+              "end": 30.88,
+              "text": "Things I've learned through years of trial and error on how you can go about your day and start vlogging your life",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 30.88,
+              "end": 33.76,
+              "text": "without completely overcomplicating the process as a beginner.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 36.94,
+              "end": 41.26,
+              "text": "So essentially a vlog is just a very loosely defined short film.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 41.5,
+              "end": 45.0,
+              "text": "And what that means is at the core of it all, you still need a good story.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 45.22,
+              "end": 48.3,
+              "text": "I know you are definitely tired of hearing that from everybody, that story is king.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 48.46,
+              "end": 51.34,
+              "text": "You have to have a story because everybody knows that and I know you do too.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 51.48,
+              "end": 53.08,
+              "text": "See the problem isn't that you don't know that,",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 53.08,
+              "end": 57.12,
+              "text": "It's that you don't know how to actually find a story in your day to tell.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 57.3,
+              "end": 59.7,
+              "text": "So to break down how I find a story in my day to make a vlog about,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 59.84,
+              "end": 62.64,
+              "text": "I like to think about the fundamental pieces in a movie.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 62.84,
+              "end": 64.72,
+              "text": "And just like short films, feature films, documentaries,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 65.02,
+              "end": 67.34,
+              "text": "what you really need to think about are scenes.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 67.7,
+              "end": 69.08,
+              "text": "Just like scenes in your favorite movie,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 69.12,
+              "end": 71.6,
+              "text": "you need to have a compilation of scenes that when stitched together,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 71.66,
+              "end": 73.54,
+              "text": "tell a greater and broader story.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 73.68,
+              "end": 76.02,
+              "text": "When it comes to vlogging, because you're filming as the day is going on,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 76.06,
+              "end": 78.18,
+              "text": "you sometimes don't know that overarching story.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 78.56,
+              "end": 81.38,
+              "text": "But I bet you do know at least a scene or two ahead.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 81.38,
+              "end": 85.82,
+              "text": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 85.82,
+              "end": 89.8,
+              "text": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 89.8,
+              "end": 93.18,
+              "text": "I might not know what I'm gonna do for the rest of the evening, but I do know that I'm hungry",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 93.18,
+              "end": 95.28,
+              "text": "So I'm gonna go get some food. That's another scene",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 95.28,
+              "end": 98.58,
+              "text": "So instead of stressing yourself before you start shooting of what is my story",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 98.58,
+              "end": 104.68,
+              "text": "just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 104.68,
+              "end": 106.32,
+              "text": "Overall feeling that you're trying to deliver",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 106.32,
+              "end": 107.98,
+              "text": "So when I'm out shooting and filming things",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 107.98,
+              "end": 113.12,
+              "text": "I always try and think is this just a shot that I'm getting cuz it looks cool or is this an actual scene if it's",
+              "asr_confidence": 0.818
+            },
+            {
+              "start": 113.12,
+              "end": 115.64,
+              "text": "A scene I'll have to build a little bit more around it most often",
+              "asr_confidence": 0.818
+            },
+            {
+              "start": 115.64,
+              "end": 120.74,
+              "text": "I'll also capture some dialogues and talking I'll talk straight to the camera and explain what's going on a lot of people will tell",
+              "asr_confidence": 0.818
+            },
+            {
+              "start": 120.74,
+              "end": 124.98,
+              "text": "You that in filmmaking you want to show not tell I do think that's true, but because vlogging",
+              "asr_confidence": 0.818
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": "small.en_b5_norm_prompt",
+      "model": "small.en",
+      "initial_prompt": true,
+      "mean_wer_pct": 5.43,
+      "mean_rtf": 0.0771,
+      "per_video": {
+        "MXKkXXYUxBc": {
+          "wer_pct": 8.59,
+          "edit_distance": 25,
+          "ref_words": 291,
+          "hyp_words": 309,
+          "infer_time_s": 6.828,
+          "rtf": 0.0569,
+          "segment_count": 22,
+          "segments": [
+            {
+              "start": 2.45,
+              "end": 9.09,
+              "text": "This is public speaking for beginners and the goal of this video is simple, it's to",
+              "asr_confidence": 0.8307
+            },
+            {
+              "start": 9.09,
+              "end": 16.65,
+              "text": "help you overcome being uncertain, nervous, anxious, afraid, and bring you a few steps",
+              "asr_confidence": 0.8307
+            },
+            {
+              "start": 16.65,
+              "end": 24.13,
+              "text": "closer to being more confident, more clear, and a much more captivating speaker.",
+              "asr_confidence": 0.8307
+            },
+            {
+              "start": 24.95,
+              "end": 30.69,
+              "text": "What you're about to watch is a special compilation of a three-day public speaking challenge which",
+              "asr_confidence": 0.8307
+            },
+            {
+              "start": 30.69,
+              "end": 36.93,
+              "text": "we delivered live right here in our studio. We'll begin with mindset and confidence,",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 37.49,
+              "end": 41.55,
+              "text": "we'll move into the science of capturing attention and we'll finish off with the",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 41.55,
+              "end": 47.55,
+              "text": "most impactful delivery skills from the 110 steps chart of excellent communication.",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 49.12,
+              "end": 54.6,
+              "text": "Hey, if we haven't met before my name is David JP Phillips and I'm best known for my TEDx talks",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 54.6,
+              "end": 59.4,
+              "text": "which are among the most viewed in the world on this particular subject. You see I've studied",
+              "asr_confidence": 0.8746
+            },
+            {
+              "start": 59.4,
+              "end": 64.74,
+              "text": "over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 65.16,
+              "end": 69.2,
+              "text": "And this chart is one of the results of that particular endeavor.",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 69.62,
+              "end": 71.52,
+              "text": "Oh, and they have been put to practice.",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 71.76,
+              "end": 76.34,
+              "text": "I have coached global giants like Oracle, Google and Disney in storytelling and presentation",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 76.34,
+              "end": 80.94,
+              "text": "skills and the beautiful science of holding an audience's attention.",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 81.38,
+              "end": 86.72,
+              "text": "Now, over the next two hours and 30 minutes, you'll discover the essential tools I've",
+              "asr_confidence": 0.8128
+            },
+            {
+              "start": 86.72,
+              "end": 90.08,
+              "text": "gather during my 25 year career as a public speaker and public",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 90.08,
+              "end": 95.96,
+              "text": "speaking coach. So make sure you have a pen and a paper, lean in",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 96.38,
+              "end": 99.8,
+              "text": "and you'll walk away with practical tools you can apply",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 99.8,
+              "end": 109.95,
+              "text": "tomorrow. Have fun. Welcome beautiful people all around the",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 109.95,
+              "end": 115.69,
+              "text": "world to the lovely country of Sweden. This is well, this is my",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 115.69,
+              "end": 119.77,
+              "text": "view of you as pictures all over the place. We got people from",
+              "asr_confidence": 0.8294
+            },
+            {
+              "start": 119.77,
+              "end": 124.77,
+              "text": "UK, Croatia, Switzerland, Mallorca. I'm going to Mallorca in just a couple of weeks.",
+              "asr_confidence": 0.6908
+            }
+          ]
+        },
+        "y8tFSuOMAqQ": {
+          "wer_pct": 2.28,
+          "edit_distance": 13,
+          "ref_words": 571,
+          "hyp_words": 578,
+          "infer_time_s": 11.682,
+          "rtf": 0.0974,
+          "segment_count": 37,
+          "segments": [
+            {
+              "start": 0.0,
+              "end": 5.48,
+              "text": "Alright, so Summer is here, and in my opinion, that's really the best time to go out, start filming, start vlogging, and documenting your life.",
+              "asr_confidence": 0.6546
+            },
+            {
+              "start": 5.72,
+              "end": 10.26,
+              "text": "Maybe you just sat down and scripted out your first video, or maybe you even gone out and filmed it,",
+              "asr_confidence": 0.6546
+            },
+            {
+              "start": 10.32,
+              "end": 13.8,
+              "text": "but I bet in the back of your mind, something still just doesn't feel right about your vlog.",
+              "asr_confidence": 0.6546
+            },
+            {
+              "start": 13.92,
+              "end": 16.42,
+              "text": "And I'm gonna say it right now, you're probably just overthinking it.",
+              "asr_confidence": 0.6546
+            },
+            {
+              "start": 16.52,
+              "end": 20.08,
+              "text": "I was too in the very beginning, and honestly, I still do, even to this day.",
+              "asr_confidence": 0.6546
+            },
+            {
+              "start": 20.22,
+              "end": 23.78,
+              "text": "But the entire creative process for vlogging has definitely gotten a lot easier over the years,",
+              "asr_confidence": 0.6546
+            },
+            {
+              "start": 23.92,
+              "end": 26.22,
+              "text": "so today, I wanted to share some advice about that.",
+              "asr_confidence": 0.6546
+            },
+            {
+              "start": 26.22,
+              "end": 30.88,
+              "text": "Things I've learned through years of trial and error on how you can go about your day and start vlogging your life",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 30.88,
+              "end": 33.76,
+              "text": "without completely overcomplicating the process as a beginner.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 36.94,
+              "end": 41.26,
+              "text": "So essentially a vlog is just a very loosely defined short film.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 41.5,
+              "end": 45.0,
+              "text": "And what that means is at the core of it all, you still need a good story.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 45.22,
+              "end": 48.3,
+              "text": "I know you are definitely tired of hearing that from everybody, that story is king.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 48.46,
+              "end": 51.34,
+              "text": "You have to have a story because everybody knows that and I know you do too.",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 51.48,
+              "end": 53.08,
+              "text": "See the problem isn't that you don't know that,",
+              "asr_confidence": 0.8079
+            },
+            {
+              "start": 53.08,
+              "end": 57.12,
+              "text": "It's that you don't know how to actually find a story in your day to tell.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 57.3,
+              "end": 59.7,
+              "text": "So to break down how I find a story in my day to make a vlog about,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 59.84,
+              "end": 62.64,
+              "text": "I like to think about the fundamental pieces in a movie.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 62.84,
+              "end": 64.72,
+              "text": "And just like short films, feature films, documentaries,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 65.02,
+              "end": 67.34,
+              "text": "what you really need to think about are scenes.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 67.7,
+              "end": 69.08,
+              "text": "Just like scenes in your favorite movie,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 69.12,
+              "end": 71.6,
+              "text": "you need to have a compilation of scenes that when stitched together,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 71.66,
+              "end": 73.54,
+              "text": "tell a greater and broader story.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 73.68,
+              "end": 76.02,
+              "text": "When it comes to vlogging, because you're filming as the day is going on,",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 76.06,
+              "end": 78.18,
+              "text": "you sometimes don't know that overarching story.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 78.56,
+              "end": 81.38,
+              "text": "But I bet you do know at least a scene or two ahead.",
+              "asr_confidence": 0.8947
+            },
+            {
+              "start": 81.38,
+              "end": 85.82,
+              "text": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 85.82,
+              "end": 89.8,
+              "text": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 89.8,
+              "end": 93.18,
+              "text": "I might not know what I'm gonna do for the rest of the evening, but I do know that I'm hungry",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 93.18,
+              "end": 95.28,
+              "text": "So I'm gonna go get some food. That's another scene",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 95.28,
+              "end": 98.58,
+              "text": "So instead of stressing yourself before you start shooting of what is my story",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 98.58,
+              "end": 104.68,
+              "text": "just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 104.68,
+              "end": 106.32,
+              "text": "Overall feeling that you're trying to deliver",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 106.32,
+              "end": 107.98,
+              "text": "So when I'm out shooting and filming things",
+              "asr_confidence": 0.8671
+            },
+            {
+              "start": 107.98,
+              "end": 113.12,
+              "text": "I always try and think is this just a shot that I'm getting cuz it looks cool or is this an actual scene if it's",
+              "asr_confidence": 0.818
+            },
+            {
+              "start": 113.12,
+              "end": 115.64,
+              "text": "A scene I'll have to build a little bit more around it most often",
+              "asr_confidence": 0.818
+            },
+            {
+              "start": 115.64,
+              "end": 120.74,
+              "text": "I'll also capture some dialogues and talking I'll talk straight to the camera and explain what's going on a lot of people will tell",
+              "asr_confidence": 0.818
+            },
+            {
+              "start": 120.74,
+              "end": 124.98,
+              "text": "You that in filmmaking you want to show not tell I do think that's true, but because vlogging",
+              "asr_confidence": 0.818
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# H45 Autonomous Defect Ledger
+
+| ID | Component | Defect Discovered | Root Cause | Resolution |
+| :--- | :--- | :--- | :--- | :--- |
+| `DEF-H45-01` | `SemanticUnderstandingEngine.js` | `B14` collapsed 2 negations (`isn't`+`don't`) into 1 `NOT` | `that`-complement didn't split under negated matrix | Split `that`- & zero-`that` complements (`ADV04`, `B14`) |
+| `DEF-H45-02` | `SemanticUnderstandingEngine.js`, `EnglishToISLTranslator.js` | `B15` & `ADV04` matrix `NOT` drifted to end of subordinate clause | Clause-final rule didn't anchor matrix negated `KNOW` | Added `negation_anchor: 'MATRIX_VERB'` + finite verb hints |
+| `DEF-H45-03` | `SemanticUnderstandingEngine.js` | `B25` `"instead of stressing"` rendered affirmative (`INSTEAD NERVOUS YOU`) | Missing negation for contrastive replacement `"instead of X"` | Added `is_contrastive_instead_of` -> `YOU NERVOUS NOT` |
+| `DEF-H45-04` | `EnglishToISLTranslator.js`, `SemanticUnderstandingEngine.js` | `B20`, `B21`, `B24`, `B13` emitted literal `DO` for emphatic/elliptical `do` | `hasOtherVerb` omitted cognitive/state verbs; ellipsis unhandled | Added cognitive verbs to `hasOtherVerb`, `HEAD_NOD_EMPHATIC`, `do too -> KNOW` |
+| `DEF-H45-05` | `EnglishToISLTranslator.js` | Wrong-but-playable substitutions (`probably->THINK`, `view->SEE`, `talks->SAY`, `delivered->GIVE`, `what's going on->WHAT GO`, `still/always->CONTINUOUS`, `something->ONE`, `things->MATTER`, `some->FEW`, `again->MORE`, `gotten->GET`, `our->WE`, `everybody->PEOPLE`) | H38/H41 vocabulary compression mapped tokens onto wrong signs even when `perspective`/`happen`/`speech`/`presentation`/`maybe` existed | Authored 12 ISLRTC signs (`647` total), unlocked 5 existing signs, added context rules |
+| `DEF-H45-06` | `EnglishToISLTranslator.js` | `ADV01` `"the beginner"` (`LEARN`) locked SOV object movement | `lexicalVerbs` matched nominalized `LEARN` after determiner | Added `isNominalLearn` check and `isEffectiveVerb` in SOV loop |
+| `DEF-H45-07` | `h43_linguistic_challenge_dataset.json`, `h44_independent_propositions.json` | Evaluation suites codified buggy outputs (`NEG_01` `maxCount:1`, `B25` `INSTEAD`, `B14`/`B15` wrong `NOT` order) | Prior references derived from buggy translator output | Audited & corrected stale expectations with full provenance |
+| `DEF-H45-08` | `benchmark_h45_asr.py` | Short-silence VAD (`350ms`) degraded Video A WER from `0.69%` to `8.59%` | Aggressive VAD sliced speaker intro pauses | Confirmed default Silero VAD (`2000ms`) optimal for runtime |
