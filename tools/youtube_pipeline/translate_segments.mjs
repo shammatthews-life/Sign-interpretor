@@ -73,7 +73,9 @@ export function processSegments(segments, translator = null) {
       unavailable_concepts: rep.unavailable_signs || [],
       unknown_terms: rep.unknown_terms || [],
       fingerspelled_terms: rep.fingerspelled_terms || [],
-      grammar_omissions: rep.grammar_omissions || []
+      grammar_omissions: rep.grammar_omissions || [],
+      non_manual_markers: rep.non_manual_markers || [],
+      spatial_plan: rep.spatial_plan || { locus_assignments: [], directional_inflections: [], role_shifts: [] }
     };
   });
 }

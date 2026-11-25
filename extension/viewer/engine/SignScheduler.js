@@ -74,7 +74,9 @@ export class SignScheduler {
       cueId,
       jobId,
       cueStartSeconds: metadata.cueStartSeconds ?? null,
-      cueEndSeconds: metadata.cueEndSeconds ?? null
+      cueEndSeconds: metadata.cueEndSeconds ?? null,
+      nonManualMarkers: Array.isArray(metadata.nonManualMarkers) ? metadata.nonManualMarkers : [],
+      spatialYawDeg: Number.isFinite(metadata.spatialYawDeg) ? metadata.spatialYawDeg : 0
     };
     const result = { accepted: true };
     if (eventId) this.rememberEvent(eventId, identity, result);
@@ -154,7 +156,11 @@ export class SignScheduler {
           this.player.playbackSpeed = 1.0;
         }
 
-        this.player.loadSign(next.playable, { blendFromCurrentPose: Boolean(this._blendNextTransition) });
+        this.player.loadSign(next.playable, {
+          blendFromCurrentPose: Boolean(this._blendNextTransition),
+          nonManualMarkers: next.nonManualMarkers || [],
+          spatialYawDeg: next.spatialYawDeg || 0
+        });
         this._blendNextTransition = false;
         this.player.play();
         this.emitLifecycle('playback_start', next, { durationMs: next.playable.duration_ms });

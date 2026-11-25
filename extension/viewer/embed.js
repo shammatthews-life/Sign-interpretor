@@ -276,7 +276,9 @@ function handleCommandMessage(data) {
       data.jobId ?? null,
       {
         cueStartSeconds: Number.isFinite(data.cueStartSeconds) ? data.cueStartSeconds : null,
-        cueEndSeconds: Number.isFinite(data.cueEndSeconds) ? data.cueEndSeconds : null
+        cueEndSeconds: Number.isFinite(data.cueEndSeconds) ? data.cueEndSeconds : null,
+        nonManualMarkers: Array.isArray(data.nonManualMarkers) ? data.nonManualMarkers : [],
+        spatialYawDeg: Number.isFinite(data.spatialYawDeg) ? data.spatialYawDeg : 0
       }
     );
 

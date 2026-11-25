@@ -2386,6 +2386,8 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ...clauseNmmMapped
     ])];
 
+    const spatial_plan = this._buildSpatialPlan(isr, gloss_sequence, sign_ids, normalized_text);
+
     return {
       source_text,
       normalized_text,
@@ -2398,11 +2400,77 @@ export class EnglishToISLTranslator extends TranslationBackend {
       grammar_omissions: removed.map(token => ({ token, status: 'GRAMMAR_OMISSION' })),
       intermediate_semantic_representation: isr,
       non_manual_markers: mergedNonManuals,
+      spatial_plan,
       linguistic_notes,
       transformation_trace: trace,
       asr_confidence: Number.isFinite(asrConf) ? asrConf : null,
       status,
       timings_ms: Object.fromEntries(Object.entries(timing).map(([k, v]) => [k, Number(v.toFixed(3))]))
+    };
+  }
+
+  _buildSpatialPlan(isr, glossSequence = [], signIds = [], normalizedText = '') {
+    const locusAssignments = [];
+    const directionalInflections = [];
+    const roleShifts = [];
+    const assigned = new Map();
+    const textLower = String(normalizedText || '').toLowerCase();
+
+    const referentTokens = ['he', 'she', 'they', 'teacher', 'friend', 'student', 'doctor', 'parent', 'person', 'people', 'group', 'first', 'second', 'other', 'team', 'someone', 'anyone', 'sister', 'kid'];
+    const directionalVerbs = new Set(['help', 'give', 'tell', 'show', 'ask', 'teach', 'bring', 'send', 'explain']);
+    const roleShiftTriggers = new Set(['say', 'tell', 'ask', 'think', 'feel']);
+
+    const assignLocus = (ref) => {
+      if (assigned.has(ref)) return assigned.get(ref);
+      const isLeft = assigned.size % 2 === 0;
+      const entry = {
+        referent: ref,
+        locus: isLeft ? 'LOCUS_LEFT' : 'LOCUS_RIGHT',
+        yaw_deg: isLeft ? -10 : 10
+      };
+      assigned.set(ref, entry);
+      locusAssignments.push(entry);
+      return entry;
+    };
+
+    for (const id of signIds) {
+      if (referentTokens.includes(id)) {
+        assignLocus(id);
+      }
+    }
+    if (/\b(but|however|instead|whereas)\b/.test(textLower) && locusAssignments.length === 1) {
+      assignLocus('contrast_topic');
+    }
+
+    const defaultTarget = locusAssignments[locusAssignments.length - 1] || { locus: 'LOCUS_RIGHT', yaw_deg: 10 };
+    for (let i = 0; i < signIds.length; i++) {
+      const id = signIds[i];
+      if (directionalVerbs.has(id)) {
+        const targetLocus = (id === 'ask' || id === 'give') && /\b(me|i|my)\b/.test(textLower)
+          ? { locus: 'LOCUS_SPEAKER', yaw_deg: -6 }
+          : defaultTarget;
+        directionalInflections.push({
+          occurrence_index: i,
+          verb: id,
+          target_locus: targetLocus.locus,
+          yaw_deg: targetLocus.yaw_deg
+        });
+      }
+      if (roleShiftTriggers.has(id) && locusAssignments.length > 0) {
+        const shiftTarget = locusAssignments[0];
+        roleShifts.push({
+          occurrence_index: i,
+          trigger_sign: id,
+          locus: shiftTarget.locus,
+          yaw_deg: shiftTarget.yaw_deg > 0 ? 12 : -12
+        });
+      }
+    }
+
+    return {
+      locus_assignments: locusAssignments,
+      directional_inflections: directionalInflections,
+      role_shifts: roleShifts
     };
   }
 }

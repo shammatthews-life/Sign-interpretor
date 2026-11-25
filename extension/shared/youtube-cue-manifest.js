@@ -215,6 +215,17 @@
       if (translated) sourceMismatchFallbackOccurrences += mismatchFallbackTerms.length;
       unavailableConceptOccurrences += unavailableConcepts.length;
 
+      const nonManualMarkers = aligned && Array.isArray(translated.non_manual_markers)
+        ? translated.non_manual_markers.filter(item => typeof item === 'string' && item.trim())
+        : [];
+      const spatialPlan = aligned && translated.spatial_plan && typeof translated.spatial_plan === 'object'
+        ? {
+            locus_assignments: Array.isArray(translated.spatial_plan.locus_assignments) ? translated.spatial_plan.locus_assignments : [],
+            directional_inflections: Array.isArray(translated.spatial_plan.directional_inflections) ? translated.spatial_plan.directional_inflections : [],
+            role_shifts: Array.isArray(translated.spatial_plan.role_shifts) ? translated.spatial_plan.role_shifts : []
+          }
+        : { locus_assignments: [], directional_inflections: [], role_shifts: [] };
+
       cues.push({
         cue_schema_version: SCHEMA_VERSION,
         cue_id: cueId,
@@ -233,6 +244,8 @@
         })),
         sign_occurrences: signOccurrences,
         sign_ids: signOccurrences.map(item => item.sign_id),
+        non_manual_markers: nonManualMarkers,
+        spatial_plan: spatialPlan,
         unavailable_concepts: unavailableConcepts,
         unknown_terms: unknownTerms,
         fallback_occurrences: cueFallbackOccurrences,

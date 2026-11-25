@@ -379,7 +379,9 @@
         targetEventId: payload.targetEventId,
         viewMode: payload.viewMode,
         cueStartSeconds: payload.cueStartSeconds,
-        cueEndSeconds: payload.cueEndSeconds
+        cueEndSeconds: payload.cueEndSeconds,
+        nonManualMarkers: Array.isArray(payload.nonManualMarkers) ? payload.nonManualMarkers : [],
+        spatialYawDeg: Number.isFinite(payload.spatialYawDeg) ? payload.spatialYawDeg : 0
       }, origin);
     } catch (error) {
       if (eventId) inFlightAetherCommands.delete(eventId);

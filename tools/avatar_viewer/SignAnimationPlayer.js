@@ -81,6 +81,8 @@ export class SignAnimationPlayer {
     this.currentTimeMs = 0;
     this.isPlaying = false;
     this.isPaused = false;
+    this._nonManualMarkers = Array.isArray(options?.nonManualMarkers) ? options.nonManualMarkers : [];
+    this._spatialYawDeg = Number.isFinite(options?.spatialYawDeg) ? options.spatialYawDeg : 0;
     this._precomputeSign(signData);
     if (!blend) {
       this.resetNeutral();
@@ -364,5 +366,66 @@ export class SignAnimationPlayer {
         }
       });
     });
+
+    this._applyNonManualAndSpatialOverlays(timeMs, this.currentSign.duration_ms || 1000, appliedBones);
+  }
+
+  _applyNonManualAndSpatialOverlays(timeMs, durationMs, appliedBones = null) {
+    const markers = this._nonManualMarkers || [];
+    const spatialYawDeg = this._spatialYawDeg || 0;
+    if (markers.length === 0 && spatialYawDeg === 0) return;
+
+    const progress = Math.max(0, Math.min(1.0, durationMs > 0 ? timeMs / durationMs : 0.5));
+    const env = Math.sin(Math.PI * progress);
+
+    let headDx = 0;
+    let headDy = 0;
+    let headDz = 0;
+    let spineDx = 0;
+    let spineDy = 0;
+    let armDy = 0;
+
+    if (markers.includes('NMM-NEG-HEADSHAKE') || markers.includes('NEGATION')) {
+      headDy += THREE.MathUtils.degToRad(10 * Math.sin(progress * Math.PI * 4) * (0.4 + 0.6 * env));
+      headDx += THREE.MathUtils.degToRad(2 * env);
+    }
+    if (markers.includes('NMM-WH-BROW-FURROW') || markers.includes('WH_QUESTION')) {
+      headDx += THREE.MathUtils.degToRad(6.5 * env);
+      headDz += THREE.MathUtils.degToRad(4.0 * env);
+      spineDx += THREE.MathUtils.degToRad(2.5 * env);
+    }
+    if (markers.includes('NMM-YESNO-BROW-RAISE') || markers.includes('NMM-COND-BROW-RAISE') || markers.includes('YES_NO_QUESTION')) {
+      headDx += THREE.MathUtils.degToRad(-5.5 * env);
+      spineDx += THREE.MathUtils.degToRad(3.0 * env);
+    }
+    if (markers.includes('NMM-EMPHATIC-NOD')) {
+      headDx += THREE.MathUtils.degToRad(6.0 * Math.abs(Math.sin(progress * Math.PI * 2)));
+    }
+    if (spatialYawDeg !== 0) {
+      spineDy += THREE.MathUtils.degToRad(spatialYawDeg * env);
+      headDy += THREE.MathUtils.degToRad(spatialYawDeg * 0.55 * env);
+      armDy += THREE.MathUtils.degToRad(spatialYawDeg * 0.45 * env);
+    }
+
+    const addOverlay = (boneName, dx, dy, dz) => {
+      if (dx === 0 && dy === 0 && dz === 0) return;
+      const bone = this.bonesMap.get(boneName);
+      const rest = this.restRotations.get(boneName);
+      if (!bone || !rest) return;
+      const k0 = this.currentSign?.keyframes?.[0];
+      const hasKeyframe = Boolean(
+        (appliedBones && appliedBones.has(boneName)) ||
+        (k0 && ((k0.rotations && k0.rotations[boneName]) || (k0._optimizedBones && k0._optimizedBones.some(b => b.name === boneName))))
+      );
+      if (hasKeyframe) {
+        bone.rotation.set(bone.rotation.x + dx, bone.rotation.y + dy, bone.rotation.z + dz);
+      } else {
+        bone.rotation.set(rest.x + dx, rest.y + dy, rest.z + dz);
+      }
+    };
+
+    addOverlay('Bip001_Head', headDx, headDy, headDz);
+    addOverlay('Bip001_Spine1', spineDx, spineDy, 0);
+    addOverlay('Bip001_R_UpperArm', 0, armDy, 0);
   }
 }

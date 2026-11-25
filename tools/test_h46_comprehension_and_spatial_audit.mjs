@@ -33,7 +33,14 @@ function createMockSkeletonRig() {
   for (const n of names) {
     bones[n] = {
       name: n,
-      rotation: { x: 0, y: 0, z: 0, set(x, y, z) { this.x = x; this.y = y; this.z = z; } }
+      isBone: true,
+      position: { x: 0, y: 0, z: 0, copy(v) { this.x = v.x; this.y = v.y; this.z = v.z; }, clone() { return { x: this.x, y: this.y, z: this.z }; } },
+      rotation: {
+        x: 0, y: 0, z: 0,
+        set(x, y, z) { this.x = x; this.y = y; this.z = z; },
+        copy(v) { this.x = v.x; this.y = v.y; this.z = v.z; },
+        clone() { return { x: this.x, y: this.y, z: this.z }; }
+      }
     };
     bonesMap.set(n, bones[n]);
   }
@@ -106,9 +113,11 @@ async function runAudit() {
           segment_id: 'c1',
           start: 0,
           end: 3,
-          text: 'Why did you not help her?',
+          source_text: 'Why did you not help her?',
           isl_glosses: ['YOU', 'SHE', 'HELP', 'NOT', 'WHY'],
+          gloss: ['YOU', 'SHE', 'HELP', 'NOT', 'WHY'],
           playable_sign_ids: ['you', 'she', 'help', 'not', 'why'],
+          playable_signs: ['you', 'she', 'help', 'not', 'why'],
           non_manual_markers: ['NMM-WH-BROW-FURROW', 'NMM-NEG-HEADSHAKE'],
           spatial_plan: {
             locus_assignments: [{ referent: 'she', locus: 'LOCUS_RIGHT', yaw_deg: 10 }],
@@ -136,23 +145,24 @@ async function runAudit() {
   const { rigRoot, bones, bonesMap } = createMockSkeletonRig();
   const player = new SignAnimationPlayer(rigRoot, bonesMap, null);
   const helpSign = JSON.parse(fs.readFileSync(path.join(ROOT, 'signs', 'help.json'), 'utf8'));
+  const helpPlayable = { ...(helpSign.motion || helpSign), sign_id: helpSign.sign_id };
 
   // Neutral baseline
-  player.loadSign(helpSign, { nonManualMarkers: [], spatialYawDeg: 0 });
-  player.applyFrame(Math.round((helpSign.motion.duration_ms || 1000) * 0.45));
+  player.loadSign(helpPlayable, { nonManualMarkers: [], spatialYawDeg: 0 });
+  player.applyFrame(Math.round((helpPlayable.duration_ms || 1000) * 0.35));
   const neutralHeadY = bones.Bip001_Head.rotation.y;
   const neutralHeadX = bones.Bip001_Head.rotation.x;
   const neutralSpineY = bones.Bip001_Spine1.rotation.y;
 
   // Negation headshake + spatial right locus
-  player.loadSign(helpSign, { nonManualMarkers: ['NMM-NEG-HEADSHAKE'], spatialYawDeg: 10 });
-  player.applyFrame(Math.round((helpSign.motion.duration_ms || 1000) * 0.45));
+  player.loadSign(helpPlayable, { nonManualMarkers: ['NMM-NEG-HEADSHAKE'], spatialYawDeg: 10 });
+  player.applyFrame(Math.round((helpPlayable.duration_ms || 1000) * 0.35));
   const negHeadDelta = Math.abs(bones.Bip001_Head.rotation.y - neutralHeadY);
   const spatialSpineDelta = Math.abs(bones.Bip001_Spine1.rotation.y - neutralSpineY);
 
   // WH brow furrow (head pitch/tilt)
-  player.loadSign(helpSign, { nonManualMarkers: ['NMM-WH-BROW-FURROW'], spatialYawDeg: 0 });
-  player.applyFrame(Math.round((helpSign.motion.duration_ms || 1000) * 0.45));
+  player.loadSign(helpPlayable, { nonManualMarkers: ['NMM-WH-BROW-FURROW'], spatialYawDeg: 0 });
+  player.applyFrame(Math.round((helpPlayable.duration_ms || 1000) * 0.35));
   const whHeadPitchDelta = Math.abs(bones.Bip001_Head.rotation.x - neutralHeadX);
 
   const playerActuates = negHeadDelta > 0.03 && spatialSpineDelta > 0.05 && whHeadPitchDelta > 0.03;
@@ -160,6 +170,32 @@ async function runAudit() {
     'PLAYER_3D_NMM_AND_SPATIAL_ACTUATION',
     playerActuates,
     `negHeadDelta=${negHeadDelta.toFixed(4)} rad, spatialSpineDelta=${spatialSpineDelta.toFixed(4)} rad, whHeadPitchDelta=${whHeadPitchDelta.toFixed(4)} rad`
+  );
+
+  // 5. Expanded Spatial, NMM, and Discourse Comprehension Cases
+  const cases = [
+    {
+      text: 'Why did he not tell the teacher?',
+      check: r => r.non_manual_markers.includes('NMM-WH-BROW-FURROW') && r.non_manual_markers.includes('NMM-NEG-HEADSHAKE') && r.spatial_plan.directional_inflections.some(d => d.verb === 'tell') && r.spatial_plan.role_shifts.some(s => s.trigger_sign === 'tell')
+    },
+    {
+      text: 'If you practice every day, will you win?',
+      check: r => (r.non_manual_markers.includes('NMM-COND-BROW-RAISE') || r.non_manual_markers.includes('NMM-YESNO-BROW-RAISE')) && r.sign_ids.includes('win')
+    },
+    {
+      text: 'She showed her friend the new video and they helped him.',
+      check: r => r.spatial_plan.locus_assignments.length >= 2 && r.spatial_plan.directional_inflections.some(d => d.verb === 'show') && r.spatial_plan.directional_inflections.some(d => d.verb === 'help')
+    }
+  ];
+  let casePasses = 0;
+  for (const c of cases) {
+    const out = translator.translate(c.text);
+    if (c.check(out)) casePasses++;
+  }
+  record(
+    'EXPANDED_SPATIAL_AND_DISCOURSE_CASES',
+    casePasses === cases.length,
+    `${casePasses}/${cases.length} spatial+NMM+discourse cases passed`
   );
 
   const passed = results.filter(r => r.pass).length;

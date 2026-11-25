@@ -206,15 +206,28 @@
       const activationId = `${cueKey}:${++this.activationSequence}`;
       this.activeCueKey = cueKey;
       this.activeCueId = activationId;
+      const cueNmm = Array.isArray(segment.non_manual_markers) ? segment.non_manual_markers : [];
+      const spatialPlan = segment.spatial_plan && typeof segment.spatial_plan === 'object' ? segment.spatial_plan : null;
       this.onDispatchCommand?.('CUE_TRANSITION', {
         jobId: this.activeJobId,
         cueId: segment.id,
-        eventId: this.nextCommandEventId('cue', segment.id)
+        eventId: this.nextCommandEventId('cue', segment.id),
+        nonManualMarkers: cueNmm,
+        spatialPlan
       });
       if (segment.signIds.length) {
         this.onClearFallback?.();
         segment.signIds.forEach((signId, occurrenceIndex) => {
           const occurrence = segment.signOccurrences[occurrenceIndex];
+          let spatialYawDeg = 0;
+          if (spatialPlan) {
+            const dir = (spatialPlan.directional_inflections || []).find(d => d.occurrence_index === occurrenceIndex);
+            const rs = (spatialPlan.role_shifts || []).find(r => r.occurrence_index === occurrenceIndex);
+            const loc = (spatialPlan.locus_assignments || []).find(l => l.referent === signId);
+            if (dir && Number.isFinite(dir.yaw_deg)) spatialYawDeg = dir.yaw_deg;
+            else if (rs && Number.isFinite(rs.yaw_deg)) spatialYawDeg = rs.yaw_deg;
+            else if (loc && Number.isFinite(loc.yaw_deg)) spatialYawDeg = loc.yaw_deg;
+          }
           this.onDispatchSign?.(signId, {
             cueId: segment.id,
             jobId: this.activeJobId,
@@ -222,7 +235,9 @@
             eventId: `${activationId}:${occurrence?.occurrence_id || `sign:${occurrenceIndex}`}`,
             command: 'QUEUE_SIGN',
             cueStartSeconds: segment.start,
-            cueEndSeconds: segment.end
+            cueEndSeconds: segment.end,
+            nonManualMarkers: cueNmm,
+            spatialYawDeg
           });
         });
       }
