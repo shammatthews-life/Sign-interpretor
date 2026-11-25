@@ -57,7 +57,9 @@
       "resources": [
         "icons/*",
         "content/*",
-        "shared/*"
+        "shared/*",
+        "viewer/*",
+        "vendor/*"
       ],
       "matches": [
         "https://*.youtube.com/*",

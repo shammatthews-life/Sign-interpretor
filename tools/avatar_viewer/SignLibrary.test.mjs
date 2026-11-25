@@ -43,3 +43,54 @@ test('preload limits concurrent fetches, preserves order, and reports individual
   assert.equal(results[9].reason.code, 'LOAD_FAILED');
   assert.equal(library.cache.size, 19);
 });
+
+
+test('SignLibrary preloadBundle caches bundled signs and synthesizes fs_<word> fingerspelling', async () => {
+  const sampleDef = {
+    schema_version: '2.0.0',
+    sign_id: 'hello',
+    metadata: { display_name: 'Hello', gloss: 'HELLO', language: 'ISL' },
+    motion: {
+      status: 'playable',
+      duration_ms: 800,
+      dominant_hand: 'right',
+      return_to_neutral: true,
+      involved_bones: ['mixamorigRightArm'],
+      keyframes: [
+        { time_ms: 0, rotations: {} },
+        { time_ms: 800, rotations: {} }
+      ]
+    }
+  };
+  let requestedUrls = [];
+  const library = new SignLibrary({
+    basePath: '/signs',
+    fetchImpl: async url => {
+      requestedUrls.push(url);
+      if (url.endsWith('/bundle.json')) {
+        return {
+          ok: true,
+          async json() {
+            return { signs: { hello: sampleDef } };
+          }
+        };
+      }
+      return { ok: false, async json() { return {}; } };
+    }
+  });
+
+  const summary = await library.preloadBundle();
+  assert.equal(summary.source, 'bundle');
+  assert.equal(summary.loaded, 1);
+  assert.equal(requestedUrls.includes('/signs/bundle.json'), true);
+
+  const boneNames = [
+    'Bip001_R_Clavicle', 'Bip001_R_UpperArm', 'Bip001_R_Forearm', 'Bip001_R_Hand',
+    'Bip001_L_Clavicle', 'Bip001_L_UpperArm', 'Bip001_L_Forearm', 'Bip001_L_Hand',
+    'Bip001_Head'
+  ];
+  const bonesMap = new Map(boneNames.map(name => [name, { name }]));
+  const playableFs = library.getPlayable('fs_ai', bonesMap);
+  assert.equal(playableFs.sign_id, 'fs_ai');
+  assert.ok(playableFs.keyframes.length >= 2);
+});

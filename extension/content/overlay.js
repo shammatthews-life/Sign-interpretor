@@ -705,6 +705,20 @@
       }
     }
 
+    setAetherReady(ready, detail = null) {
+      this.aetherReady = Boolean(ready);
+      const el = this.elements || {};
+      if (!el.aetherFallback) return;
+      if (this.aetherReady) {
+        el.aetherFallback.classList.add('hidden');
+      } else {
+        el.aetherFallback.classList.remove('hidden');
+        if (detail?.error && el.txtRuntimeMsg) {
+          el.txtRuntimeMsg.textContent = `Avatar error: ${detail.error}`;
+        }
+      }
+    }
+
     setUnavailableFallback(originalWord = null, durationMs = 2500) {
       if (!this.elements.unavailableSubtitle || !this.elements.unavailableSubText) return;
       if (this.fallbackTimer) {
@@ -950,13 +964,23 @@
       // 7. Aether Bridge Runtime Status
       if (state.runtimeAvailable || state.runtimeActive) {
         this.stopAutoReconnect();
+        const endpoint = state.runtimeEndpoint || 'http://localhost:8000';
         el.txtRuntimeMsg.textContent = state.runtimeEndpoint ? `Connected: ${state.runtimeEndpoint}` : 'Localhost runtime online';
         el.txtRuntimeMsg.style.color = '#3fb950';
 
-        const targetSrc = state.avatarViewerUrl || `${state.runtimeEndpoint || 'http://localhost:8000'}/tools/avatar_viewer/index.html?embed=1`;
+        const hasExtViewer = typeof chrome !== 'undefined' && chrome.runtime && typeof chrome.runtime.getURL === 'function';
+        const defaultViewerUrl = hasExtViewer
+          ? chrome.runtime.getURL(`viewer/embed.html?endpoint=${encodeURIComponent(endpoint)}&parentOrigin=${encodeURIComponent(typeof window !== 'undefined' && window.location?.origin ? window.location.origin : 'https://www.youtube.com')}`)
+          : `${endpoint}/tools/avatar_viewer/index.html?embed=1`;
+        const targetSrc = state.avatarViewerUrl || defaultViewerUrl;
         if (el.aetherIframe.src !== targetSrc) {
+          this.aetherReady = false;
           el.aetherIframe.src = targetSrc;
           el.aetherIframe.classList.remove('hidden');
+          if (el.aetherFallback) {
+            el.aetherFallback.classList.remove('hidden');
+          }
+        } else if (this.aetherReady && el.aetherFallback) {
           el.aetherFallback.classList.add('hidden');
         }
       } else {

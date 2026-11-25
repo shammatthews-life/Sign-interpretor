@@ -1,0 +1,233 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "summer",
+  "metadata": {
+    "display_name": "Summer",
+    "gloss": "SUMMER",
+    "language": "ISL",
+    "lexical_type": "Noun / Time (season / heat / warm weather)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC 10,000 Dictionary. Dominant index finger held horizontally across the forehead and swept across from ipsilateral to contralateral side as if wiping perspiration from the brow in summer heat.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1300,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 350,
+        "label": "Index Finger Reaches Temple",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 4.6,
+            "y": 2.3,
+            "z": 6.9
+          },
+          "Bip001_R_UpperArm": {
+            "x": -48.7,
+            "y": 20.1,
+            "z": 31.5
+          },
+          "Bip001_R_Forearm": {
+            "x": -85.9,
+            "y": 34.4,
+            "z": -14.3
+          },
+          "Bip001_R_Hand": {
+            "x": -17.2,
+            "y": 14.3,
+            "z": 11.5
+          },
+          "Bip001_Head": {
+            "x": -2.9,
+            "y": -2.9,
+            "z": -1.1
+          }
+        },
+        "finger_curls": {
+          "thumb": 64,
+          "index": 8,
+          "middle": 68,
+          "ring": 68,
+          "pinky": 68
+        }
+      },
+      {
+        "time_ms": 750,
+        "label": "Forehead Perspiration Wipe Sweep",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 5.2,
+            "y": 1.1,
+            "z": 5.7
+          },
+          "Bip001_R_UpperArm": {
+            "x": -45.8,
+            "y": 8.6,
+            "z": 22.9
+          },
+          "Bip001_R_Forearm": {
+            "x": -83.1,
+            "y": 17.2,
+            "z": -8.6
+          },
+          "Bip001_R_Hand": {
+            "x": -14.3,
+            "y": -5.7,
+            "z": 8.6
+          },
+          "Bip001_Head": {
+            "x": -1.1,
+            "y": 2.9,
+            "z": 1.1
+          }
+        },
+        "finger_curls": {
+          "thumb": 64,
+          "index": 8,
+          "middle": 68,
+          "ring": 68,
+          "pinky": 68
+        }
+      },
+      {
+        "time_ms": 1000,
+        "label": "Completion of Brow Wipe Gesture",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 3.4,
+            "y": 0.6,
+            "z": 3.4
+          },
+          "Bip001_R_UpperArm": {
+            "x": -34.4,
+            "y": 5.7,
+            "z": 14.3
+          },
+          "Bip001_R_Forearm": {
+            "x": -63,
+            "y": 11.5,
+            "z": -5.7
+          },
+          "Bip001_R_Hand": {
+            "x": -8.6,
+            "y": -2.9,
+            "z": 4.6
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 40,
+          "index": 16,
+          "middle": 40,
+          "ring": 40,
+          "pinky": 40
+        }
+      },
+      {
+        "time_ms": 1300,
+        "label": "Return to Neutral",
+        "easing": "easeInQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

@@ -154,6 +154,12 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 
     def end_headers(self) -> None:
         self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+        req_headers = getattr(self, "headers", None)
+        req_command = getattr(self, "command", "")
+        if req_headers and req_headers.get("Access-Control-Request-Private-Network") == "true":
+            self.send_header("Access-Control-Allow-Private-Network", "true")
+        elif req_command in ("GET", "HEAD", "OPTIONS"):
+            self.send_header("Access-Control-Allow-Private-Network", "true")
         super().end_headers()
 
     def _read_body(self, maximum_bytes: int):
@@ -241,6 +247,18 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Access-Control-Max-Age", "86400")
             self.end_headers()
             return
+        if (
+            origin == "https://www.youtube.com"
+            and self.headers.get("Access-Control-Request-Private-Network") == "true"
+            and self._request_host_is_local()
+        ):
+            self.send_response(204)
+            self.send_header("Access-Control-Allow-Origin", origin)
+            self.send_header("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS")
+            self.send_header("Access-Control-Allow-Private-Network", "true")
+            self.send_header("Access-Control-Max-Age", "86400")
+            self.end_headers()
+            return
         self.send_error(403, "Cross-origin requests are not enabled.")
 
     def do_GET(self) -> None:
@@ -248,6 +266,20 @@ class QuietSimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.send_error(403, "Request host is not allowed.")
             return
         parsed = urllib.parse.urlsplit(self.path)
+        if parsed.path == "/signs/bundle.json":
+            signs_dir = PROJECT_ROOT / "signs"
+            bundle = {}
+            for sign_file in sorted(signs_dir.glob("*.json")):
+                if sign_file.name == "manifest.json":
+                    continue
+                try:
+                    data = json.loads(sign_file.read_text(encoding="utf-8"))
+                    if isinstance(data, dict) and data.get("sign_id"):
+                        bundle[data["sign_id"]] = data
+                except Exception:
+                    continue
+            self._send_json({"schema_version": "2.0.0", "count": len(bundle), "signs": bundle})
+            return
         if parsed.path == "/asr/status":
             self._send_json(ASR_SERVICE.status())
             return

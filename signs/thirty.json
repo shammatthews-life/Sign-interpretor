@@ -12,7 +12,9 @@
       "portal": "Indian Sign Language Research and Training Centre",
       "url": "https://divyangjan.depwd.gov.in/islrtc/"
     },
-    "notes": "Dominant right hand forms an upright 3-handshape (index, middle, and ring fingers extended apart) and flexes forward slightly twice indicating numeral 30."
+    "notes": "Dominant right hand forms an upright 3-handshape (index, middle, and ring fingers extended apart) and flexes forward slightly twice indicating numeral 30.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
   },
   "motion": {
     "status": "playable",
@@ -36,14 +38,38 @@
         "label": "Neutral",
         "easing": "easeInOutQuad",
         "rotations": {
-          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
-          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
-          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
-          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
-          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
         },
         "finger_curls": {
-          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
         }
       },
       {
@@ -51,14 +77,38 @@
         "label": "Numeral Three Formed",
         "easing": "easeOutQuad",
         "rotations": {
-          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
-          "Bip001_R_UpperArm": { "x": -5, "y": -5, "z": -35 },
-          "Bip001_R_Forearm": { "x": 0, "y": -15, "z": -60 },
-          "Bip001_R_Hand": { "x": -5, "y": 10, "z": -5 },
-          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": -5,
+            "y": -5,
+            "z": -35
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -15,
+            "z": -60
+          },
+          "Bip001_R_Hand": {
+            "x": -5,
+            "y": 10,
+            "z": -5
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
         },
         "finger_curls": {
-          "thumb": 0.8, "index": 0.0, "middle": 0.0, "ring": 0.0, "pinky": 0.9
+          "thumb": 64,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 72
         }
       },
       {
@@ -66,14 +116,38 @@
         "label": "Forward Flex Tap (Decade Accent)",
         "easing": "easeInOutQuad",
         "rotations": {
-          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
-          "Bip001_R_UpperArm": { "x": -8, "y": -5, "z": -35 },
-          "Bip001_R_Forearm": { "x": 0, "y": -12, "z": -65 },
-          "Bip001_R_Hand": { "x": 15, "y": 10, "z": -5 },
-          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": -8,
+            "y": -5,
+            "z": -35
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -12,
+            "z": -65
+          },
+          "Bip001_R_Hand": {
+            "x": 15,
+            "y": 10,
+            "z": -5
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
         },
         "finger_curls": {
-          "thumb": 0.8, "index": 0.2, "middle": 0.2, "ring": 0.2, "pinky": 0.9
+          "thumb": 64,
+          "index": 16,
+          "middle": 16,
+          "ring": 16,
+          "pinky": 72
         }
       },
       {
@@ -81,14 +155,38 @@
         "label": "Return to Neutral",
         "easing": "easeInOutQuad",
         "rotations": {
-          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
-          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
-          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
-          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
-          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
         },
         "finger_curls": {
-          "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
         }
       }
     ]

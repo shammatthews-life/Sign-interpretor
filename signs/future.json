@@ -1,0 +1,233 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "future",
+  "metadata": {
+    "display_name": "Future",
+    "gloss": "FUTURE",
+    "language": "ISL",
+    "lexical_type": "Time Adverb / Temporal Marker",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC 10,000 Dictionary. Flat open B-handshape oriented vertically with palm facing left/contralateral, moving smoothly forward from cheek/shoulder level into anterior space, indicating future timeline.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1250,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 350,
+        "label": "Preparation at cheek",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 2.9,
+            "z": 2.9
+          },
+          "Bip001_R_UpperArm": {
+            "x": -34.4,
+            "y": -11.5,
+            "z": 22.9
+          },
+          "Bip001_R_Forearm": {
+            "x": 83.1,
+            "y": 11.5,
+            "z": -17.2
+          },
+          "Bip001_R_Hand": {
+            "x": 8.6,
+            "y": 17.2,
+            "z": 5.7
+          },
+          "Bip001_Head": {
+            "x": -2.9,
+            "y": 1.1,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 8,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 750,
+        "label": "Forward temporal projection",
+        "easing": "easeInOutCubic",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4.6,
+            "z": 2.9
+          },
+          "Bip001_R_UpperArm": {
+            "x": -54.4,
+            "y": -8.6,
+            "z": 14.3
+          },
+          "Bip001_R_Forearm": {
+            "x": 48.7,
+            "y": 17.2,
+            "z": -11.5
+          },
+          "Bip001_R_Hand": {
+            "x": 14.3,
+            "y": 20.1,
+            "z": 2.9
+          },
+          "Bip001_Head": {
+            "x": -1.1,
+            "y": 2.9,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 4,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 950,
+        "label": "Hold apex",
+        "easing": "linear",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4.6,
+            "z": 2.9
+          },
+          "Bip001_R_UpperArm": {
+            "x": -52.7,
+            "y": -8.6,
+            "z": 14.3
+          },
+          "Bip001_R_Forearm": {
+            "x": 50.4,
+            "y": 17.2,
+            "z": -11.5
+          },
+          "Bip001_R_Hand": {
+            "x": 14.3,
+            "y": 20.1,
+            "z": 2.9
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 1.7,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 4,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 1250,
+        "label": "Return to Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

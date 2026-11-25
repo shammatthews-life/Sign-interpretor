@@ -42,6 +42,8 @@ for (const file of files) {
       duration_ms: data.motion?.duration_ms || 1200,
       dominant_hand: data.motion?.dominant_hand || 'right',
       validation_status: data.metadata?.validation_status || 'IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW',
+      provenance_tier: data.metadata?.provenance_tier || 'legacy_library_entry',
+      motion_distinctness: data.metadata?.motion_distinctness || 'unique_trajectory',
       source: data.metadata?.source || {
         organization: 'ISLRTC',
         portal: 'Indian Sign Language Research and Training Centre',

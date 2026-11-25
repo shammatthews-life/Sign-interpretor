@@ -1,0 +1,58 @@
+{
+  "dataset_id": "H43_LINGUISTIC_CHALLENGE_44",
+  "milestone": "H43",
+  "linguistic_validation_status": "PENDING_DEAF_COMMUNITY_REVIEW",
+  "cases": [
+    { "id": "NEG_01", "category": "clause_isolated_negation", "text": "See the problem isn't that you don't know that. It's that you need a story.", "mustInclude": ["PROBLEM", "KNOW", "NOT", "STORY", "NEED"], "before": [["NOT", "STORY"]], "maxCount": { "NOT": 1 } },
+    { "id": "NEG_02", "category": "clause_isolated_negation", "text": "I might not know what I'm up to today, but I do know I will meet a friend.", "mustInclude": ["NOT", "BUT", "MEET", "FRIEND"], "before": [["NOT", "BUT"]] },
+    { "id": "NEG_03", "category": "clause_isolated_negation", "text": "We haven't met before, my name is David.", "mustInclude": ["MEET", "FINISH", "NOT", "FS_DAVID"], "before": [["NOT", "MY"], ["NOT", "FS_DAVID"]] },
+    { "id": "NEG_04", "category": "clause_isolated_negation", "text": "You don't need expensive camera, but you need a good story.", "mustInclude": ["CAMERA", "NOT", "BUT", "STORY"], "before": [["NOT", "BUT"], ["NOT", "STORY"]] },
+    { "id": "NEG_05", "category": "clause_isolated_negation", "text": "He can come tomorrow, she cannot come today.", "mustInclude": ["HE", "COME", "SHE", "NOT"], "before": [["HE", "SHE"], ["SHE", "NOT"]] },
+    { "id": "NEG_06", "category": "clause_isolated_negation", "text": "Don't overthink it, just start.", "mustInclude": ["THINK", "NOT", "START"], "before": [["THINK", "NOT"]] },
+
+    { "id": "DBL_01", "category": "auxiliary_contraction_negation", "text": "Something still just doesn't feel right about your vlog.", "mustInclude": ["FEEL", "GOOD", "VIDEO", "NOT"], "maxCount": { "NOT": 1 }, "mustExclude": ["TRUE"] },
+    { "id": "DBL_02", "category": "auxiliary_contraction_negation", "text": "This wasn't easy.", "mustInclude": ["THIS", "EASY", "NOT"], "maxCount": { "NOT": 1 } },
+    { "id": "DBL_03", "category": "auxiliary_contraction_negation", "text": "I won't forget your advice.", "mustInclude": ["I", "ADVICE", "NOT"], "maxCount": { "NOT": 1 } },
+    { "id": "DBL_04", "category": "auxiliary_contraction_negation", "text": "They didn't understand the question.", "mustInclude": ["THEY", "QUESTION", "UNDERSTAND", "NOT"], "maxCount": { "NOT": 1 } },
+    { "id": "DBL_05", "category": "auxiliary_contraction_negation", "text": "She couldn't find the book.", "mustInclude": ["SHE", "BOOK", "FIND", "NOT"], "maxCount": { "NOT": 1 } },
+
+    { "id": "OPR_01", "category": "discourse_operators", "text": "Start vlogging your life without overcomplicating the process.", "mustInclude": ["WITHOUT", "START", "VIDEO", "LIFE"] },
+    { "id": "OPR_02", "category": "discourse_operators", "text": "Because everybody knows that story is important.", "mustInclude": ["BECAUSE", "PEOPLE", "KNOW", "STORY", "IMPORTANT"] },
+    { "id": "OPR_03", "category": "discourse_operators", "text": "I want a feature film or a short video.", "mustInclude": ["FEATURE", "FILM", "OR", "SMALL", "VIDEO"] },
+    { "id": "OPR_04", "category": "discourse_operators", "text": "If you practice every day, you will improve.", "mustInclude": ["IF", "YOU", "PRACTICE"] },
+    { "id": "OPR_05", "category": "discourse_operators", "text": "Why do we need a neural network?", "mustInclude": ["WHY", "WE", "NEURON", "NETWORK"], "mustContainMarker": ["WH_QUESTION"] },
+    { "id": "OPR_06", "category": "discourse_operators", "text": "We have already finished two scenes.", "mustInclude": ["ALREADY", "TWO", "SCENE", "FINISH"] },
+    { "id": "OPR_07", "category": "discourse_operators", "text": "Maybe I will also share one picture.", "mustInclude": ["MAYBE", "ALSO", "SHARE", "ONE", "PICTURE"] },
+    { "id": "OPR_08", "category": "discourse_operators", "text": "Good idea, but explain the problem clearly.", "mustInclude": ["GOOD", "IDEA", "BUT", "EXPLAIN", "PROBLEM"] },
+
+    { "id": "ASP_01", "category": "aspect_distinction", "text": "Is this just a shot that I'm getting because it looks cool?", "mustInclude": ["PICTURE", "GET", "BECAUSE", "COOL", "LOOK"], "mustExclude": ["FINISH", "HAVE"] },
+    { "id": "ASP_02", "category": "aspect_distinction", "text": "You have to find a story in your day.", "mustInclude": ["YOU", "NEED", "FIND", "STORY"], "mustExclude": ["FINISH"] },
+    { "id": "ASP_03", "category": "aspect_distinction", "text": "You have a good story.", "mustInclude": ["YOU", "STORY", "GOOD", "HAVE"], "mustExclude": ["FINISH"] },
+    { "id": "ASP_04", "category": "aspect_distinction", "text": "I have gathered essential tools.", "mustInclude": ["I", "TOOLS", "FIND", "FINISH"] },
+    { "id": "ASP_05", "category": "aspect_distinction", "text": "We have learned from trial and error.", "mustInclude": ["WE", "LEARN", "FINISH", "PRACTICE", "FAIL"] },
+
+    { "id": "LEX_01", "category": "lexicon_precision", "text": "Good evening, see you tomorrow evening.", "mustInclude": ["EVENING"], "mustExclude": ["MORNING"] },
+    { "id": "LEX_02", "category": "lexicon_precision", "text": "Eight or nine students took the third train.", "mustInclude": ["EIGHT", "OR", "NINE", "THIRD"], "mustExclude": ["ONE"] },
+    { "id": "LEX_03", "category": "lexicon_precision", "text": "Yesterday I walked back to school.", "mustInclude": ["YESTERDAY", "BACK", "SCHOOL"], "mustExclude": ["PAST"] },
+    { "id": "LEX_04", "category": "lexicon_precision", "text": "The wind is strong today.", "mustInclude": ["TODAY", "WIND", "STRONG"], "mustExclude": ["TREE"] },
+    { "id": "LEX_05", "category": "lexicon_precision", "text": "Feature films need strong scenes.", "mustInclude": ["FEATURE", "FILM", "SCENE"], "mustExclude": ["FUTURE", "RECORD", "PICTURE"] },
+    { "id": "LEX_06", "category": "lexicon_precision", "text": "Say hello to my friend right here.", "mustInclude": ["HELLO", "FRIEND", "HERE"], "mustExclude": ["GREETING", "TRUE"] },
+    { "id": "LEX_07", "category": "lexicon_precision", "text": "He himself wrote it and she herself read it.", "mustInclude": ["HE", "WRITE", "SHE", "READ"] },
+    { "id": "LEX_08", "category": "lexicon_precision", "text": "Every year people build better music.", "mustInclude": ["YEAR", "PEOPLE", "BUILD", "MUSIC"] },
+
+    { "id": "FS_01", "category": "playable_fingerspelling", "text": "My name is David JP Phillips.", "mustIncludeSignIds": ["my", "name", "fs_david", "fs_jp", "fs_phillips"] },
+    { "id": "FS_02", "category": "playable_fingerspelling", "text": "I coached Oracle, Google, Disney, and TEDx.", "mustIncludeSignIds": ["fs_oracle", "fs_google", "fs_disney", "fs_tedx"] },
+    { "id": "FS_03", "category": "playable_fingerspelling", "text": "IIT students study AI on GPU.", "mustIncludeSignIds": ["fs_iit", "people", "study", "fs_ai", "fs_gpu"] },
+    { "id": "FS_04", "category": "unknown_honesty", "text": "Quantum electrodynamics mystery.", "mustIncludeUnknown": ["QUANTUM", "MYSTERY"], "mustExcludeSignIds": ["fs_quantum", "fs_mystery"] },
+
+    { "id": "ASR_01", "category": "disfluency_and_confidence", "text": "I've I've gathered essential tools.", "maxCount": { "I": 1, "HAVE": 0 }, "mustInclude": ["FIND", "FINISH"] },
+    { "id": "ASR_02", "category": "disfluency_and_confidence", "text": "Go go to school.", "maxCount": { "GO": 1 }, "mustInclude": ["SCHOOL"] },
+    { "id": "ASR_03", "category": "disfluency_and_confidence", "text": "Hello friend.", "asrContext": { "confidence": 0.42 }, "expectedStatus": "TRANSLATION_UNCERTAIN" },
+    { "id": "ASR_04", "category": "disfluency_and_confidence", "text": "Hello good morning.", "mustIncludeSignIds": ["hello", "good", "morning"] },
+
+    { "id": "DOM_01", "category": "multi_domain_robotics", "text": "A robot system controls three layers with data.", "mustInclude": ["ROBOT", "SYSTEM", "THREE", "LAYER", "DATA"] },
+    { "id": "DOM_02", "category": "multi_domain_neural_nets", "text": "Each pixel enters the first neuron layer with a weight to recognize a digit.", "mustInclude": ["PIXEL", "FIRST", "NEURON", "LAYER", "WEIGHT", "DIGIT"] },
+    { "id": "DOM_03", "category": "multi_domain_storytelling", "text": "The danger of a single story about Africa.", "mustInclude": ["DANGER", "SINGLE", "STORY", "AFRICA"] },
+    { "id": "DOM_04", "category": "multi_domain_storytelling", "text": "Chimamanda Adichie is an African writer.", "mustInclude": ["FS_CHIMAMANDA", "FS_ADICHIE", "AFRICAN", "WRITE"] }
+  ]
+}

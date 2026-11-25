@@ -1,0 +1,844 @@
+{
+  "milestone": "H43",
+  "window_seconds": 120.0,
+  "videos": {
+    "MXKkXXYUxBc": {
+      "video_id": "MXKkXXYUxBc",
+      "title": "Public Speaking for Beginners - Free Full Course | Speak with Confidence",
+      "domain": "public_speaking_tutorial",
+      "accent": "European/Scandinavian-English",
+      "ground_truth_status": "human_audited_caption_revision",
+      "window_seconds": 120.0,
+      "segment_count": 29,
+      "word_count": 275,
+      "full_text": "This is public speaking for beginners, and the goal of this video is simple. It's to help you overcome being uncertain, anxious, afraid, and bring you a few steps closer to being more confident, more clear, and a much more captivating speaker. What you're about to watch is a special compilation of a three-day public speaking challenge which we delivered live right here in our studio. We'll begin with mindset and confidence. We'll move into the science of capturing attention, and we'll finish off with the most impactful delivery skills from the 110-step chart of excellence communication. Hey, if we haven't met before, my name is David JP Phillips, and I'm best known for my TEDx talks, which are among the most viewed in the world on this particular subject. You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker. And this chart is one of the results of that particular endeavour. Oh, and they have been put to practice. I've coached global giants like Oracle, Google, and Disney and storytelling and presentation skills, and the beautiful science of holding an audience attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've I've gathered during my 25 year career as a public speaker and public speaking coach. So make sure you have a pen and a paper, lean in and you'll walk away with practical tools you can apply tomorrow. Have fun. Welcome beautiful people all around the world to the lovely country of Sweden. This is, well, this is my view of you. There's pictures all over the place.",
+      "segments": [
+        {
+          "start": 2.45,
+          "end": 8.45,
+          "source_text": "This is public speaking for beginners, and the goal of this video is simple."
+        },
+        {
+          "start": 8.45,
+          "end": 14.45,
+          "source_text": "It's to help you overcome being uncertain, anxious, afraid,"
+        },
+        {
+          "start": 14.45,
+          "end": 21.45,
+          "source_text": "and bring you a few steps closer to being more confident, more clear,"
+        },
+        {
+          "start": 21.45,
+          "end": 24.45,
+          "source_text": "and a much more captivating speaker."
+        },
+        {
+          "start": 24.45,
+          "end": 30.45,
+          "source_text": "What you're about to watch is a special compilation of a three-day public speaking challenge"
+        },
+        {
+          "start": 30.45,
+          "end": 34.25,
+          "source_text": "which we delivered live right here in our studio."
+        },
+        {
+          "start": 34.25,
+          "end": 37.33,
+          "source_text": "We'll begin with mindset and confidence."
+        },
+        {
+          "start": 37.33,
+          "end": 40.21,
+          "source_text": "We'll move into the science of capturing attention,"
+        },
+        {
+          "start": 40.21,
+          "end": 43.77,
+          "source_text": "and we'll finish off with the most impactful delivery skills"
+        },
+        {
+          "start": 43.77,
+          "end": 47.81,
+          "source_text": "from the 110-step chart of excellence communication."
+        },
+        {
+          "start": 49.37,
+          "end": 52.85,
+          "source_text": "Hey, if we haven't met before, my name is David JP Phillips,"
+        },
+        {
+          "start": 52.85,
+          "end": 54.73,
+          "source_text": "and I'm best known for my TEDx talks,"
+        },
+        {
+          "start": 54.73,
+          "end": 57.01,
+          "source_text": "which are among the most viewed in the world"
+        },
+        {
+          "start": 57.01,
+          "end": 58.53,
+          "source_text": "on this particular subject."
+        },
+        {
+          "start": 58.53,
+          "end": 65.01,
+          "source_text": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+        },
+        {
+          "start": 65.01,
+          "end": 69.49,
+          "source_text": "And this chart is one of the results of that particular endeavour."
+        },
+        {
+          "start": 69.49,
+          "end": 74.29,
+          "source_text": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+        },
+        {
+          "start": 74.29,
+          "end": 80.45,
+          "source_text": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience"
+        },
+        {
+          "start": 80.45,
+          "end": 86.61,
+          "source_text": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+        },
+        {
+          "start": 86.61,
+          "end": 89.53,
+          "source_text": "I've gathered during my 25 year career as a public speaker"
+        },
+        {
+          "start": 89.53,
+          "end": 91.69,
+          "source_text": "and public speaking coach."
+        },
+        {
+          "start": 91.69,
+          "end": 95.33,
+          "source_text": "So make sure you have a pen and a paper,"
+        },
+        {
+          "start": 95.33,
+          "end": 98.93,
+          "source_text": "lean in and you'll walk away with practical tools"
+        },
+        {
+          "start": 98.93,
+          "end": 101.81,
+          "source_text": "you can apply tomorrow."
+        },
+        {
+          "start": 101.81,
+          "end": 107.03,
+          "source_text": "Have fun."
+        },
+        {
+          "start": 107.03,
+          "end": 110.79,
+          "source_text": "Welcome beautiful people all around the world"
+        },
+        {
+          "start": 110.79,
+          "end": 114.03,
+          "source_text": "to the lovely country of Sweden."
+        },
+        {
+          "start": 114.03,
+          "end": 116.63,
+          "source_text": "This is, well, this is my view of you."
+        },
+        {
+          "start": 116.63,
+          "end": 118.95,
+          "source_text": "There's pictures all over the place."
+        }
+      ]
+    },
+    "y8tFSuOMAqQ": {
+      "video_id": "y8tFSuOMAqQ",
+      "title": "How to Vlog as a Beginner (without overthinking it)",
+      "domain": "conversational_vlogging",
+      "accent": "North-American-English",
+      "ground_truth_status": "human_audited_caption_revision",
+      "window_seconds": 120.0,
+      "segment_count": 31,
+      "word_count": 539,
+      "full_text": "Alright, so summer is here and in my opinion that's really the best time to go out, start filming, start vlogging and documenting your life. Maybe you've just sat down and scripted out your first video or maybe you even gone out and filmed it but I bet in the back of your mind something still just doesn't feel right about your vlog and I'm gonna say it right now you're probably just overthinking it. I was too in the very beginning and honestly I still do even to this day but the entire creative process for vlogging has definitely gotten a lot easier over the years so today I wanted to share some advice about that. Things I've learned through years of trial and error on how you can go about your day and start vlogging your life without completely overcomplicating the process as a beginner. So essentially a vlog is just a very loosely defined short film. And what that means is that the core of it all you still need a good story. I know you are definitely tired of hearing that from everybody that story is king. You have to have a story because everybody knows that and I know you do too. See the problem isn't that you don't know that. It's that you don't know how to actually find a story in your day to tell. So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie. And just like short films, feature films, documentaries, what you really need to think about are scenes. Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story. When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story, but I bet you do know at least a scene or two ahead. What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so, I'm gonna go meet up with a friend so I can build a scene around that and then after that again I might not know what I'm gonna do for the rest of the evening But I do know that I'm hungry so I'm gonna go get some food. That's another scene So instead of stressing yourself before you start shooting of what is my story Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall Feeling that you're trying to deliver so when I'm out shooting and filming things I always try and think is this just a shot that I'm getting because it looks cool Or is this an actual scene if it's a scene I'll have to build a little bit more around it. Most often it'll also capture some dialogues. I'm talking I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell.",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3.84,
+          "source_text": "Alright, so summer is here and in my opinion that's really the best time to go out, start filming,"
+        },
+        {
+          "start": 3.84,
+          "end": 7.68,
+          "source_text": "start vlogging and documenting your life. Maybe you've just sat down and scripted out your first"
+        },
+        {
+          "start": 7.68,
+          "end": 12.24,
+          "source_text": "video or maybe you even gone out and filmed it but I bet in the back of your mind something still"
+        },
+        {
+          "start": 12.24,
+          "end": 15.68,
+          "source_text": "just doesn't feel right about your vlog and I'm gonna say it right now you're probably just"
+        },
+        {
+          "start": 15.68,
+          "end": 20.32,
+          "source_text": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the"
+        },
+        {
+          "start": 20.32,
+          "end": 24.48,
+          "source_text": "entire creative process for vlogging has definitely gotten a lot easier over the years so today I"
+        },
+        {
+          "start": 24.48,
+          "end": 28.64,
+          "source_text": "wanted to share some advice about that. Things I've learned through years of trial and error on how"
+        },
+        {
+          "start": 28.64,
+          "end": 32.56,
+          "source_text": "you can go about your day and start vlogging your life without completely overcomplicating"
+        },
+        {
+          "start": 32.56,
+          "end": 37.32,
+          "source_text": "the process as a beginner."
+        },
+        {
+          "start": 37.32,
+          "end": 41.56,
+          "source_text": "So essentially a vlog is just a very loosely defined short film."
+        },
+        {
+          "start": 41.56,
+          "end": 45.2,
+          "source_text": "And what that means is that the core of it all you still need a good story."
+        },
+        {
+          "start": 45.2,
+          "end": 48.48,
+          "source_text": "I know you are definitely tired of hearing that from everybody that story is king."
+        },
+        {
+          "start": 48.48,
+          "end": 51.56,
+          "source_text": "You have to have a story because everybody knows that and I know you do too."
+        },
+        {
+          "start": 51.56,
+          "end": 53.24,
+          "source_text": "See the problem isn't that you don't know that."
+        },
+        {
+          "start": 53.24,
+          "end": 57.08,
+          "source_text": "It's that you don't know how to actually find a story in your day to tell."
+        },
+        {
+          "start": 57.08,
+          "end": 62.68,
+          "source_text": "So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie."
+        },
+        {
+          "start": 62.68,
+          "end": 67.58,
+          "source_text": "And just like short films, feature films, documentaries, what you really need to think about are scenes."
+        },
+        {
+          "start": 67.58,
+          "end": 73.58,
+          "source_text": "Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story."
+        },
+        {
+          "start": 73.58,
+          "end": 78.38,
+          "source_text": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,"
+        },
+        {
+          "start": 78.38,
+          "end": 81.48,
+          "source_text": "but I bet you do know at least a scene or two ahead."
+        },
+        {
+          "start": 81.48,
+          "end": 85.88,
+          "source_text": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,"
+        },
+        {
+          "start": 85.88,
+          "end": 89.8,
+          "source_text": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again"
+        },
+        {
+          "start": 89.8,
+          "end": 91.68,
+          "source_text": "I might not know what I'm gonna do for the rest of the evening"
+        },
+        {
+          "start": 91.68,
+          "end": 95.24,
+          "source_text": "But I do know that I'm hungry so I'm gonna go get some food. That's another scene"
+        },
+        {
+          "start": 95.24,
+          "end": 98.52,
+          "source_text": "So instead of stressing yourself before you start shooting of what is my story"
+        },
+        {
+          "start": 98.56,
+          "end": 105.04,
+          "source_text": "Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall"
+        },
+        {
+          "start": 105.04,
+          "end": 107.92,
+          "source_text": "Feeling that you're trying to deliver so when I'm out shooting and filming things"
+        },
+        {
+          "start": 107.92,
+          "end": 111.12,
+          "source_text": "I always try and think is this just a shot that I'm getting because it looks cool"
+        },
+        {
+          "start": 111.12,
+          "end": 113.4,
+          "source_text": "Or is this an actual scene if it's a scene"
+        },
+        {
+          "start": 113.4,
+          "end": 117.48,
+          "source_text": "I'll have to build a little bit more around it. Most often it'll also capture some dialogues. I'm talking"
+        },
+        {
+          "start": 117.48,
+          "end": 120,
+          "source_text": "I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell."
+        }
+      ]
+    },
+    "xrwz9IxpMJg": {
+      "video_id": "xrwz9IxpMJg",
+      "title": "IIT/NPTEL Robotics Lecture 01 - Introduction",
+      "domain": "indian_english_academic_robotics",
+      "accent": "Indian-English",
+      "ground_truth_status": "official_human_subtitles",
+      "vtt_source": "artifacts/h43/benchmark/subs_xrwz9IxpMJg.en-LUU0EuDKgKo.vtt",
+      "window_seconds": 120.0,
+      "segment_count": 21,
+      "word_count": 213,
+      "full_text": "Let us start with the course on Robotics. The first topic is on Introduction to Robots and Robotics. Now, before we start learning robotics, a few questions may come to our mind, these are as follows: What is a robot? What is robotics? Why should we study robotics? What is motivation behind robotics? How can we give instruction to a robot that you perform this particular task? What are the different types of robots, we generally use? What are the possible applications of robots? Can a human being be replaced by a robot?, and so on. Similarly, there are many other questions. Now, here actually, what I am going to do, I am just going to give answer to the first few questions. But, the last one, that is can a human being be replaced by a robot?, that I will try to answer towards the end of this particular course. Now, let me start with the first one, that is, what is a robot? So, I am just going to define the term: robot. The term: robot has come from the Czech word: robota, which means the forced or the slave laborer. This is just like a servant, and we are going to give some tasks to the robot, and it is",
+      "segments": [
+        {
+          "start": 14.15,
+          "end": 18.25,
+          "source_text": "Let us start with the course on Robotics."
+        },
+        {
+          "start": 18.25,
+          "end": 24.25,
+          "source_text": "The first topic is on Introduction to Robots and Robotics."
+        },
+        {
+          "start": 24.25,
+          "end": 35.38,
+          "source_text": "Now, before we start learning robotics, a few questions may come to our mind, these"
+        },
+        {
+          "start": 35.38,
+          "end": 40.66,
+          "source_text": "are as follows: What is a robot?"
+        },
+        {
+          "start": 40.66,
+          "end": 41.66,
+          "source_text": "What is robotics?"
+        },
+        {
+          "start": 41.66,
+          "end": 44.87,
+          "source_text": "Why should we study robotics?"
+        },
+        {
+          "start": 44.87,
+          "end": 47.08,
+          "source_text": "What is motivation behind robotics?"
+        },
+        {
+          "start": 47.08,
+          "end": 54.18,
+          "source_text": "How can we give instruction to a robot that you perform this particular task?"
+        },
+        {
+          "start": 54.18,
+          "end": 58.5,
+          "source_text": "What are the different types of robots, we generally use?"
+        },
+        {
+          "start": 58.5,
+          "end": 63.55,
+          "source_text": "What are the possible applications of robots?"
+        },
+        {
+          "start": 63.55,
+          "end": 68.72,
+          "source_text": "Can a human being be replaced by a robot?, and so on."
+        },
+        {
+          "start": 68.72,
+          "end": 71.34,
+          "source_text": "Similarly, there are many other questions."
+        },
+        {
+          "start": 71.34,
+          "end": 79.67,
+          "source_text": "Now, here actually, what I am going to do, I am just going to give answer to the first"
+        },
+        {
+          "start": 79.67,
+          "end": 80.67,
+          "source_text": "few questions."
+        },
+        {
+          "start": 80.67,
+          "end": 87.64,
+          "source_text": "But, the last one, that is can a human being be replaced by a robot?, that I will try to"
+        },
+        {
+          "start": 87.64,
+          "end": 91.27,
+          "source_text": "answer towards the end of this particular course."
+        },
+        {
+          "start": 91.27,
+          "end": 97.38,
+          "source_text": "Now, let me start with the first one, that is, what is a robot?"
+        },
+        {
+          "start": 97.38,
+          "end": 103.72,
+          "source_text": "So, I am just going to define the term: robot."
+        },
+        {
+          "start": 103.72,
+          "end": 111.73,
+          "source_text": "The term: robot has come from the Czech word: robota, which means the forced or the slave"
+        },
+        {
+          "start": 111.73,
+          "end": 113.34,
+          "source_text": "laborer."
+        },
+        {
+          "start": 113.34,
+          "end": 120.0,
+          "source_text": "This is just like a servant, and we are going to give some tasks to the robot, and it is"
+        }
+      ]
+    },
+    "aircAruvnKk": {
+      "video_id": "aircAruvnKk",
+      "title": "3Blue1Brown - But what is a neural network?",
+      "domain": "stem_deep_learning_math",
+      "accent": "North-American-English",
+      "ground_truth_status": "official_human_subtitles",
+      "vtt_source": "artifacts/h43/benchmark/subs_aircAruvnKk.en.vtt",
+      "window_seconds": 120.0,
+      "segment_count": 33,
+      "word_count": 381,
+      "full_text": "This is a 3. It's sloppily written and rendered at an extremely low resolution of 28x28 pixels, but your brain has no trouble recognizing it as a 3. And I want you to take a moment to appreciate how crazy it is that brains can do this so effortlessly. I mean, this, this and this are also recognizable as 3s, even though the specific values of each pixel is very different from one image to the next. The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy-smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas. But if I told you, hey, sit down and write for me a program that takes in a grid of 28x28 pixels like this and outputs a single number between 0 and 10, telling you what it thinks the digit is, well the task goes from comically trivial to dauntingly difficult. Unless you've been living under a rock, I think I hardly need to motivate the relevance and importance of machine learning and neural networks to the present and to the future. But what I want to do here is show you what a neural network actually is, assuming no background, and to help visualize what it's doing, not as a buzzword but as a piece of math. My hope is that you come away feeling like the structure itself is motivated, and to feel like you know what it means when you read, or you hear about a neural network quote-unquote learning. This video is just going to be devoted to the structure component of that, and the following one is going to tackle learning. What we're going to do is put together a neural network that can learn to recognize handwritten digits. This is a somewhat classic example for introducing the topic, and I'm happy to stick with the status quo here, because at the end of the two videos I want to point you to a couple good resources where you can learn more, and where you can download the code that",
+      "segments": [
+        {
+          "start": 4.22,
+          "end": 5.4,
+          "source_text": "This is a 3."
+        },
+        {
+          "start": 6.06,
+          "end": 10.71,
+          "source_text": "It's sloppily written and rendered at an extremely low resolution of 28x28 pixels,"
+        },
+        {
+          "start": 10.71,
+          "end": 13.72,
+          "source_text": "but your brain has no trouble recognizing it as a 3."
+        },
+        {
+          "start": 14.34,
+          "end": 16.56,
+          "source_text": "And I want you to take a moment to appreciate how"
+        },
+        {
+          "start": 16.56,
+          "end": 18.96,
+          "source_text": "crazy it is that brains can do this so effortlessly."
+        },
+        {
+          "start": 19.7,
+          "end": 22.96,
+          "source_text": "I mean, this, this and this are also recognizable as 3s,"
+        },
+        {
+          "start": 22.96,
+          "end": 27.21,
+          "source_text": "even though the specific values of each pixel is very different from one"
+        },
+        {
+          "start": 27.21,
+          "end": 28.32,
+          "source_text": "image to the next."
+        },
+        {
+          "start": 28.9,
+          "end": 32.95,
+          "source_text": "The particular light-sensitive cells in your eye that are firing when you"
+        },
+        {
+          "start": 32.95,
+          "end": 36.94,
+          "source_text": "see this 3 are very different from the ones firing when you see this 3."
+        },
+        {
+          "start": 37.52,
+          "end": 42.74,
+          "source_text": "But something in that crazy-smart visual cortex of yours resolves these as representing"
+        },
+        {
+          "start": 42.74,
+          "end": 47.84,
+          "source_text": "the same idea, while at the same time recognizing other images as their own distinct"
+        },
+        {
+          "start": 47.84,
+          "end": 48.34,
+          "source_text": "ideas."
+        },
+        {
+          "start": 49.22,
+          "end": 54.63,
+          "source_text": "But if I told you, hey, sit down and write for me a program that takes in a grid of"
+        },
+        {
+          "start": 54.63,
+          "end": 59.13,
+          "source_text": "28x28 pixels like this and outputs a single number between 0 and 10,"
+        },
+        {
+          "start": 59.13,
+          "end": 64.75,
+          "source_text": "telling you what it thinks the digit is, well the task goes from comically trivial to"
+        },
+        {
+          "start": 64.75,
+          "end": 66.18,
+          "source_text": "dauntingly difficult."
+        },
+        {
+          "start": 67.16,
+          "end": 70.86,
+          "source_text": "Unless you've been living under a rock, I think I hardly need to motivate the relevance"
+        },
+        {
+          "start": 70.86,
+          "end": 74.64,
+          "source_text": "and importance of machine learning and neural networks to the present and to the future."
+        },
+        {
+          "start": 75.12,
+          "end": 78.95,
+          "source_text": "But what I want to do here is show you what a neural network actually is,"
+        },
+        {
+          "start": 78.95,
+          "end": 82.26,
+          "source_text": "assuming no background, and to help visualize what it's doing,"
+        },
+        {
+          "start": 82.26,
+          "end": 84.46,
+          "source_text": "not as a buzzword but as a piece of math."
+        },
+        {
+          "start": 85.02,
+          "end": 88.78,
+          "source_text": "My hope is that you come away feeling like the structure itself is motivated,"
+        },
+        {
+          "start": 88.78,
+          "end": 91.46,
+          "source_text": "and to feel like you know what it means when you read,"
+        },
+        {
+          "start": 91.46,
+          "end": 94.34,
+          "source_text": "or you hear about a neural network quote-unquote learning."
+        },
+        {
+          "start": 95.36,
+          "end": 98.26,
+          "source_text": "This video is just going to be devoted to the structure component of that,"
+        },
+        {
+          "start": 98.26,
+          "end": 100.26,
+          "source_text": "and the following one is going to tackle learning."
+        },
+        {
+          "start": 100.96,
+          "end": 103.28,
+          "source_text": "What we're going to do is put together a neural"
+        },
+        {
+          "start": 103.28,
+          "end": 106.04,
+          "source_text": "network that can learn to recognize handwritten digits."
+        },
+        {
+          "start": 109.36,
+          "end": 112.06,
+          "source_text": "This is a somewhat classic example for introducing the topic,"
+        },
+        {
+          "start": 112.06,
+          "end": 114.23,
+          "source_text": "and I'm happy to stick with the status quo here,"
+        },
+        {
+          "start": 114.23,
+          "end": 117.5,
+          "source_text": "because at the end of the two videos I want to point you to a couple good"
+        },
+        {
+          "start": 117.5,
+          "end": 120.0,
+          "source_text": "resources where you can learn more, and where you can download the code that"
+        }
+      ]
+    },
+    "D9Ihs241zeg": {
+      "video_id": "D9Ihs241zeg",
+      "title": "Chimamanda Ngozi Adichie - The danger of a single story (TED)",
+      "domain": "cultural_storytelling_ted",
+      "accent": "Nigerian-English",
+      "ground_truth_status": "official_human_subtitles",
+      "vtt_source": "artifacts/h43/benchmark/subs_D9Ihs241zeg.en.vtt",
+      "window_seconds": 120.0,
+      "segment_count": 40,
+      "word_count": 290,
+      "full_text": "I'm a storyteller. And I would like to tell you a few personal stories about what I like to call \"the danger of the single story.\" I grew up on a university campus in eastern Nigeria. My mother says that I started reading at the age of two, although I think four is probably close to the truth. So I was an early reader, and what I read were British and American children's books. I was also an early writer, and when I began to write, at about the age of seven, stories in pencil with crayon illustrations that my poor mother was obligated to read, I wrote exactly the kinds of stories I was reading: All my characters were white and blue-eyed, they played in the snow, they ate apples, (Laughter) and they talked a lot about the weather, how lovely it was that the sun had come out. (Laughter) Now, this despite the fact that I lived in Nigeria. I had never been outside Nigeria. We didn't have snow, we ate mangoes, and we never talked about the weather, because there was no need to. My characters also drank a lot of ginger beer, because the characters in the British books I read drank ginger beer. Never mind that I had no idea what ginger beer was. (Laughter) And for many years afterwards, I would have a desperate desire to taste ginger beer. But that is another story. What this demonstrates, I think, is how impressionable and vulnerable we are in the face of a story, particularly as children. Because all I had read were books in which characters were foreign, I had become convinced that books by their very nature had to have foreigners in them",
+      "segments": [
+        {
+          "start": 12.16,
+          "end": 14.14,
+          "source_text": "I'm a storyteller."
+        },
+        {
+          "start": 14.16,
+          "end": 17.14,
+          "source_text": "And I would like to tell you a few personal stories"
+        },
+        {
+          "start": 17.16,
+          "end": 22.14,
+          "source_text": "about what I like to call \"the danger of the single story.\""
+        },
+        {
+          "start": 22.91,
+          "end": 26.14,
+          "source_text": "I grew up on a university campus in eastern Nigeria."
+        },
+        {
+          "start": 26.32,
+          "end": 29.63,
+          "source_text": "My mother says that I started reading at the age of two,"
+        },
+        {
+          "start": 29.65,
+          "end": 32.67,
+          "source_text": "although I think four is probably close to the truth."
+        },
+        {
+          "start": 33.91,
+          "end": 35.72,
+          "source_text": "So I was an early reader,"
+        },
+        {
+          "start": 35.75,
+          "end": 39.14,
+          "source_text": "and what I read were British and American children's books."
+        },
+        {
+          "start": 39.87,
+          "end": 42.14,
+          "source_text": "I was also an early writer,"
+        },
+        {
+          "start": 42.16,
+          "end": 46.14,
+          "source_text": "and when I began to write, at about the age of seven,"
+        },
+        {
+          "start": 46.16,
+          "end": 48.21,
+          "source_text": "stories in pencil with crayon illustrations"
+        },
+        {
+          "start": 48.23,
+          "end": 51.76,
+          "source_text": "that my poor mother was obligated to read,"
+        },
+        {
+          "start": 51.79,
+          "end": 55.36,
+          "source_text": "I wrote exactly the kinds of stories I was reading:"
+        },
+        {
+          "start": 55.38,
+          "end": 60.14,
+          "source_text": "All my characters were white and blue-eyed,"
+        },
+        {
+          "start": 60.16,
+          "end": 62.47,
+          "source_text": "they played in the snow,"
+        },
+        {
+          "start": 62.49,
+          "end": 64.58,
+          "source_text": "they ate apples,"
+        },
+        {
+          "start": 64.6,
+          "end": 66.0,
+          "source_text": "(Laughter)"
+        },
+        {
+          "start": 66.17,
+          "end": 68.18,
+          "source_text": "and they talked a lot about the weather,"
+        },
+        {
+          "start": 68.21,
+          "end": 70.34,
+          "source_text": "how lovely it was that the sun had come out."
+        },
+        {
+          "start": 70.57,
+          "end": 72.53,
+          "source_text": "(Laughter)"
+        },
+        {
+          "start": 72.56,
+          "end": 75.69,
+          "source_text": "Now, this despite the fact that I lived in Nigeria."
+        },
+        {
+          "start": 75.72,
+          "end": 77.49,
+          "source_text": "I had never been outside Nigeria."
+        },
+        {
+          "start": 79.3,
+          "end": 82.56,
+          "source_text": "We didn't have snow, we ate mangoes,"
+        },
+        {
+          "start": 82.59,
+          "end": 84.44,
+          "source_text": "and we never talked about the weather,"
+        },
+        {
+          "start": 84.46,
+          "end": 86.14,
+          "source_text": "because there was no need to."
+        },
+        {
+          "start": 86.43,
+          "end": 89.14,
+          "source_text": "My characters also drank a lot of ginger beer,"
+        },
+        {
+          "start": 89.16,
+          "end": 91.54,
+          "source_text": "because the characters in the British books I read"
+        },
+        {
+          "start": 91.56,
+          "end": 93.14,
+          "source_text": "drank ginger beer."
+        },
+        {
+          "start": 93.46,
+          "end": 96.14,
+          "source_text": "Never mind that I had no idea what ginger beer was."
+        },
+        {
+          "start": 96.16,
+          "end": 97.69,
+          "source_text": "(Laughter)"
+        },
+        {
+          "start": 97.72,
+          "end": 99.16,
+          "source_text": "And for many years afterwards,"
+        },
+        {
+          "start": 99.19,
+          "end": 102.14,
+          "source_text": "I would have a desperate desire to taste ginger beer."
+        },
+        {
+          "start": 102.64,
+          "end": 104.14,
+          "source_text": "But that is another story."
+        },
+        {
+          "start": 104.16,
+          "end": 106.64,
+          "source_text": "What this demonstrates, I think,"
+        },
+        {
+          "start": 106.67,
+          "end": 109.52,
+          "source_text": "is how impressionable and vulnerable we are"
+        },
+        {
+          "start": 109.55,
+          "end": 111.14,
+          "source_text": "in the face of a story,"
+        },
+        {
+          "start": 111.16,
+          "end": 112.55,
+          "source_text": "particularly as children."
+        },
+        {
+          "start": 113.8,
+          "end": 117.57,
+          "source_text": "Because all I had read were books in which characters were foreign,"
+        },
+        {
+          "start": 117.59,
+          "end": 119.71,
+          "source_text": "I had become convinced that books"
+        },
+        {
+          "start": 119.74,
+          "end": 120.0,
+          "source_text": "by their very nature had to have foreigners in them"
+        }
+      ]
+    }
+  }
+}

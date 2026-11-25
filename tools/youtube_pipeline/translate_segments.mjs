@@ -51,11 +51,20 @@ export function processSegments(segments, translator = null) {
       };
     }
 
-    const rep = trans.translate(rawText);
+    const asrContext = (typeof seg.asr_confidence === 'number' || typeof seg.avg_logprob === 'number')
+      ? {
+          confidence: Number.isFinite(seg.asr_confidence) ? seg.asr_confidence : null,
+          avg_logprob: Number.isFinite(seg.avg_logprob) ? seg.avg_logprob : null,
+          no_speech_prob: Number.isFinite(seg.no_speech_prob) ? seg.no_speech_prob : null
+        }
+      : null;
+
+    const rep = trans.translate(rawText, { asrContext });
     return {
       start: Number(seg.start || 0),
       end: Number(seg.end || 0),
       source_text: rawText,
+      asr_confidence: rep.asr_confidence,
       gloss: rep.gloss_sequence || [],
       translation_status: rep.status || 'UNCERTAIN',
       transformation_trace: rep.transformation_trace || [],

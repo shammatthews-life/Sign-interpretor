@@ -21,6 +21,10 @@ export class SignLibrary {
     const normalizedId = String(id).trim().toLowerCase();
     if (this.cache.has(normalizedId)) return this.cache.get(normalizedId);
 
+    if (normalizedId.startsWith('fs_')) {
+      return this._loadFingerspelling(normalizedId);
+    }
+
     let response;
     try {
       response = await this.fetchImpl(`${this.basePath}/${normalizedId}.json`);
@@ -40,7 +44,78 @@ export class SignLibrary {
     return definition;
   }
 
+  async _ensureFingerspeller() {
+    if (!this._composeFingerspelling) {
+      const mod = await import('./ISLFingerspelling.js');
+      this._composeFingerspelling = mod.composeFingerspellingMotion;
+    }
+    return this._composeFingerspelling;
+  }
+
+  _buildFingerspellingDefinition(normalizedId, composeFn) {
+    const word = normalizedId.slice(3).replace(/[^a-z0-9]/g, '');
+    if (!word) {
+      throw new SignLibraryError(`Sign '${normalizedId}' was not found.`, 'NOT_FOUND');
+    }
+    const definition = composeFn(word);
+    if (!definition) {
+      throw new SignLibraryError(`Sign '${normalizedId}' could not be synthesized.`, 'NOT_FOUND');
+    }
+    this.validateDefinition(definition, normalizedId);
+    this.cache.set(normalizedId, definition);
+    return definition;
+  }
+
+  async _loadFingerspelling(normalizedId) {
+    const composeFn = await this._ensureFingerspeller();
+    return this._buildFingerspellingDefinition(normalizedId, composeFn);
+  }
+
+  async preloadBundle(bundleUrl = `${this.basePath}/bundle.json`, manifestUrl = `${this.basePath}/manifest.json`) {
+    await this._ensureFingerspeller().catch(() => null);
+    try {
+      const response = await this.fetchImpl(bundleUrl);
+      if (response.ok) {
+        const payload = await response.json();
+        const signs = payload && typeof payload === 'object' ? (payload.signs || payload) : null;
+        if (signs && typeof signs === 'object') {
+          let loaded = 0;
+          const failed = [];
+          for (const [rawId, definition] of Object.entries(signs)) {
+            const normalizedId = String(rawId).trim().toLowerCase();
+            try {
+              this.validateDefinition(definition, normalizedId);
+              this.cache.set(normalizedId, definition);
+              loaded += 1;
+            } catch (error) {
+              failed.push({ id: normalizedId, reason: error.message });
+            }
+          }
+          if (loaded > 0) {
+            return { source: 'bundle', loaded, failed, total: this.cache.size };
+          }
+        }
+      }
+    } catch {
+      // Fall back to manifest-based preloading below.
+    }
+
+    const manifestResp = await this.fetchImpl(manifestUrl);
+    if (!manifestResp.ok) {
+      throw new SignLibraryError(`Unable to load signs manifest from '${manifestUrl}'.`, 'LOAD_FAILED');
+    }
+    const manifest = await manifestResp.json();
+    const rawSigns = manifest && manifest.signs;
+    const ids = Array.isArray(rawSigns)
+      ? rawSigns.map(entry => (typeof entry === 'string' ? entry : entry?.sign_id)).filter(Boolean)
+      : Object.keys(rawSigns || {});
+    const results = await this.preload(ids);
+    const failed = results.filter(r => r.status === 'rejected').map(r => ({ id: r.id, reason: r.reason?.message || 'failed' }));
+    return { source: 'manifest', loaded: ids.length - failed.length, failed, total: this.cache.size };
+  }
+
   async preload(ids) {
+    await this._ensureFingerspeller().catch(() => null);
     const results = [];
     for (let offset = 0; offset < ids.length; offset += SignLibrary.MAX_PRELOAD_CONCURRENCY) {
       const batch = ids.slice(offset, offset + SignLibrary.MAX_PRELOAD_CONCURRENCY);
@@ -50,7 +125,11 @@ export class SignLibrary {
   }
 
   getPlayable(id, bonesMap) {
-    const definition = this.cache.get(String(id).trim().toLowerCase());
+    const normalizedId = String(id).trim().toLowerCase();
+    let definition = this.cache.get(normalizedId);
+    if (!definition && normalizedId.startsWith('fs_') && this._composeFingerspelling) {
+      definition = this._buildFingerspellingDefinition(normalizedId, this._composeFingerspelling);
+    }
     if (!definition) throw new SignLibraryError(`Sign '${id}' has not been preloaded.`, 'NOT_PRELOADED');
     const { metadata, motion } = definition;
     if (motion.status !== 'playable') {

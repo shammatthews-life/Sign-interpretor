@@ -13,7 +13,9 @@
       "entry_id": "ISLRTC #T-044",
       "url": "https://divyangjan.depwd.gov.in/islrtc/"
     },
-    "notes": "Handshape: Loose fist pulled back by shoulder, then extending rapidly forward opening fingers in toss trajectory."
+    "notes": "Handshape: Loose fist pulled back by shoulder, then extending rapidly forward opening fingers in toss trajectory.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
   },
   "motion": {
     "status": "playable",
@@ -61,19 +63,19 @@
         "easing": "easeOutQuad",
         "rotations": {
           "Bip001_R_UpperArm": {
-            "x": 0.25,
-            "y": -0.1,
-            "z": -0.55
+            "x": 14.3,
+            "y": -5.7,
+            "z": -31.5
           },
           "Bip001_R_Forearm": {
-            "x": 0.1,
-            "y": -0.25,
-            "z": -0.45
+            "x": 5.7,
+            "y": -14.3,
+            "z": -25.8
           },
           "Bip001_R_Hand": {
-            "x": 0.15,
-            "y": 0.1,
-            "z": 0.0
+            "x": 8.6,
+            "y": 5.7,
+            "z": 0
           }
         },
         "finger_curls": {
@@ -113,6 +115,12 @@
           "pinky": 0
         }
       }
-    ]
+    ],
+    "return_to_neutral": true,
+    "transition_hints": {
+      "entry_handshape": "neutral",
+      "exit_handshape": "neutral",
+      "recommended_blend_ms": 150
+    }
   }
 }

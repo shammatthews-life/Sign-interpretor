@@ -1,0 +1,233 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "advice",
+  "metadata": {
+    "display_name": "Advice",
+    "gloss": "ADVICE",
+    "language": "ISL",
+    "lexical_type": "Noun / Verb (guidance / counsel / advise)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC 10,000 Dictionary. Dominant hand starts near chin/mouth with fingers loosely together, then sweeps forward towards addressee opening up into an outward/upward palm presentation representing giving guidance/advice.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1200,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 320,
+        "label": "Cluster under chin",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 2.9,
+            "z": 2.9
+          },
+          "Bip001_R_UpperArm": {
+            "x": -40.1,
+            "y": 5.7,
+            "z": 20.1
+          },
+          "Bip001_R_Forearm": {
+            "x": 91.7,
+            "y": -11.5,
+            "z": 11.5
+          },
+          "Bip001_R_Hand": {
+            "x": 5.7,
+            "y": -8.6,
+            "z": 5.7
+          },
+          "Bip001_Head": {
+            "x": 2.9,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 40,
+          "index": 40,
+          "middle": 40,
+          "ring": 40,
+          "pinky": 40
+        }
+      },
+      {
+        "time_ms": 700,
+        "label": "Outward counsel projection",
+        "easing": "easeInOutCubic",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 2.9,
+            "z": 2.9
+          },
+          "Bip001_R_UpperArm": {
+            "x": -48.7,
+            "y": -5.7,
+            "z": 11.5
+          },
+          "Bip001_R_Forearm": {
+            "x": 51.6,
+            "y": 17.2,
+            "z": -8.6
+          },
+          "Bip001_R_Hand": {
+            "x": 17.2,
+            "y": 11.5,
+            "z": -5.7
+          },
+          "Bip001_Head": {
+            "x": -2.9,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 8,
+          "index": 4,
+          "middle": 4,
+          "ring": 4,
+          "pinky": 4
+        }
+      },
+      {
+        "time_ms": 900,
+        "label": "Hold presentation",
+        "easing": "linear",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 2.9,
+            "z": 2.9
+          },
+          "Bip001_R_UpperArm": {
+            "x": -48.7,
+            "y": -5.7,
+            "z": 11.5
+          },
+          "Bip001_R_Forearm": {
+            "x": 52.7,
+            "y": 17.2,
+            "z": -8.6
+          },
+          "Bip001_R_Hand": {
+            "x": 17.2,
+            "y": 11.5,
+            "z": -5.7
+          },
+          "Bip001_Head": {
+            "x": -1.1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 8,
+          "index": 4,
+          "middle": 4,
+          "ring": 4,
+          "pinky": 4
+        }
+      },
+      {
+        "time_ms": 1200,
+        "label": "Return to Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

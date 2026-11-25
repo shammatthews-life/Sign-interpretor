@@ -269,30 +269,38 @@ export class SignAnimationPlayer {
 
     // Legacy finger curls remain a fallback; explicit per-joint rotations win.
     const domSide = this.currentSign.dominant_hand || 'right';
+    const targetSides = domSide === 'both' ? ['left', 'right'] : [domSide];
     const c0 = k0.finger_curls || {};
     const c1 = k1.finger_curls || {};
 
-    ['thumb', 'index', 'middle', 'ring', 'pinky'].forEach(f => {
-      const val0 = c0[f] !== undefined ? c0[f] : 0;
-      const val1 = c1[f] !== undefined ? c1[f] : 0;
-      const curlDeg = val0 + (val1 - val0) * alpha;
+    targetSides.forEach(side => {
+      const sideRig = this.handRig && this.handRig[side] ? this.handRig[side] : null;
+      if (!sideRig) return;
+      const sideC0 = (c0[side] && typeof c0[side] === 'object') ? c0[side] : c0;
+      const sideC1 = (c1[side] && typeof c1[side] === 'object') ? c1[side] : c1;
 
-      const chain = this.handRig && this.handRig[domSide] ? this.handRig[domSide][f] : null;
-      if (chain) {
-        const rad = THREE.MathUtils.degToRad(curlDeg);
-        chain.forEach((b, idx) => {
-          const explicitlyKeyframed = Boolean(
-            (k0.rotations && Object.prototype.hasOwnProperty.call(k0.rotations, b.name))
-            || (k1.rotations && Object.prototype.hasOwnProperty.call(k1.rotations, b.name))
-          );
-          if (explicitlyKeyframed) return;
-          const rest = this.restRotations.get(b.name);
-          if (rest) {
-            const factor = idx === 0 ? 0.75 : 1.0;
-            b.rotation.z = rest.z + (rad * factor);
-          }
-        });
-      }
+      ['thumb', 'index', 'middle', 'ring', 'pinky'].forEach(f => {
+        const val0 = Number.isFinite(sideC0[f]) ? sideC0[f] : 0;
+        const val1 = Number.isFinite(sideC1[f]) ? sideC1[f] : 0;
+        const curlDeg = val0 + (val1 - val0) * alpha;
+
+        const chain = sideRig[f] || null;
+        if (chain) {
+          const rad = THREE.MathUtils.degToRad(curlDeg);
+          chain.forEach((b, idx) => {
+            const explicitlyKeyframed = Boolean(
+              (k0.rotations && Object.prototype.hasOwnProperty.call(k0.rotations, b.name))
+              || (k1.rotations && Object.prototype.hasOwnProperty.call(k1.rotations, b.name))
+            );
+            if (explicitlyKeyframed) return;
+            const rest = this.restRotations.get(b.name);
+            if (rest) {
+              const factor = idx === 0 ? 0.75 : 1.0;
+              b.rotation.z = rest.z + (rad * factor);
+            }
+          });
+        }
+      });
     });
   }
 }

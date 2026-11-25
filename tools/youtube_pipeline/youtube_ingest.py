@@ -116,6 +116,8 @@ def _translation_implementation_hash() -> str:
     digest = hashlib.sha256()
     for path in (
         PROJECT_ROOT / "tools" / "youtube_pipeline" / "translate_segments.mjs",
+        PROJECT_ROOT / "tools" / "avatar_viewer" / "SemanticUnderstandingEngine.js",
+        PROJECT_ROOT / "tools" / "avatar_viewer" / "ISLFingerspelling.js",
         PROJECT_ROOT / "tools" / "avatar_viewer" / "EnglishToISLTranslator.js",
     ):
         digest.update(path.name.encode("utf-8"))
@@ -504,17 +506,24 @@ def transcribe_audio_file(
         segments_generator, info = model.transcribe(
             str(audio_path),
             language="en",
-            beam_size=1,
+            beam_size=5,
             condition_on_previous_text=False,
             vad_filter=True,
         )
         for s in segments_generator:
             text = s.text.strip()
             if text:
+                avg_lp = float(getattr(s, "avg_logprob", -0.25))
+                no_speech = float(getattr(s, "no_speech_prob", 0.0))
+                import math
+                conf = max(0.0, min(1.0, math.exp(avg_lp) * (1.0 - min(0.95, no_speech))))
                 segments_list.append({
                     "start": round(s.start, 2),
                     "end": round(s.end, 2),
                     "text": text,
+                    "avg_logprob": round(avg_lp, 4),
+                    "no_speech_prob": round(no_speech, 4),
+                    "asr_confidence": round(conf, 4),
                 })
                 full_text_parts.append(text)
 

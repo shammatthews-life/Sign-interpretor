@@ -492,7 +492,17 @@
   function handleAetherAck(event, iframe, expectedOrigin) {
     const data = event.data;
     if (event.source !== iframe.contentWindow || event.origin !== expectedOrigin) return false;
+    if (data?.type === 'ISL_AETHER_READY') {
+      ui?.setAetherReady?.(true, data);
+      flushAetherCommands();
+      return true;
+    }
+    if (data?.type === 'ISL_AETHER_ERROR') {
+      ui?.setAetherReady?.(false, data);
+      return true;
+    }
     if (data?.type === 'ISL_AETHER_LIFECYCLE') {
+      ui?.setAetherReady?.(true);
       console.info('[ISL Content Script] Aether playback lifecycle:', data.event);
       handleAetherLifecycle(data.event);
       return true;
@@ -654,6 +664,7 @@
     if (handleAetherAck(event, iframe, expectedOrigin)) return;
     if (event.source !== iframe.contentWindow || event.origin !== expectedOrigin
       || event.data?.type !== 'ISL_AETHER_STATE') return;
+    ui?.setAetherReady?.(true);
     chrome.runtime.sendMessage(contract.createMessage(
       contract.MESSAGE_TYPES.AETHER_PLAYBACK_STATE,
       {

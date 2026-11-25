@@ -12,7 +12,9 @@
       "portal": "Indian Sign Language Research and Training Centre",
       "url": "https://divyangjan.depwd.gov.in/islrtc/"
     },
-    "notes": "ISLRTC 10,000 Dictionary. Both flat hands held at chest level move slightly apart in measured, balanced gesture."
+    "notes": "ISLRTC 10,000 Dictionary. Both flat hands held at chest level move slightly apart in measured, balanced gesture.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
   },
   "motion": {
     "status": "playable",
@@ -38,42 +40,42 @@
         "easing": "easeInOutQuad",
         "rotations": {
           "Bip001_L_UpperArm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_L_Forearm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_L_Hand": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_UpperArm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_Forearm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_Hand": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           }
         },
         "finger_curls": {
-          "thumb": 0.0,
-          "index": 0.0,
-          "middle": 0.0,
-          "ring": 0.0,
-          "pinky": 0.0
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
         }
       },
       {
@@ -82,42 +84,42 @@
         "easing": "easeInOutQuad",
         "rotations": {
           "Bip001_L_UpperArm": {
-            "x": -0.35,
-            "y": -0.2,
-            "z": -0.15
+            "x": -20.1,
+            "y": -11.5,
+            "z": -8.6
           },
           "Bip001_L_Forearm": {
-            "x": 0.55,
-            "y": -0.1,
-            "z": 0.0
+            "x": 31.5,
+            "y": -5.7,
+            "z": 0
           },
           "Bip001_L_Hand": {
-            "x": 0.2,
-            "y": 0.0,
-            "z": 0.0
+            "x": 11.5,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_UpperArm": {
-            "x": -0.35,
-            "y": 0.2,
-            "z": 0.15
+            "x": -20.1,
+            "y": 11.5,
+            "z": 8.6
           },
           "Bip001_R_Forearm": {
-            "x": 0.55,
-            "y": 0.1,
-            "z": 0.0
+            "x": 31.5,
+            "y": 5.7,
+            "z": 0
           },
           "Bip001_R_Hand": {
-            "x": 0.2,
-            "y": 0.0,
-            "z": 0.0
+            "x": 11.5,
+            "y": 0,
+            "z": 0
           }
         },
         "finger_curls": {
-          "thumb": 0.0,
-          "index": 0.0,
-          "middle": 0.0,
-          "ring": 0.0,
-          "pinky": 0.0
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
         }
       },
       {
@@ -126,42 +128,42 @@
         "easing": "easeInOutQuad",
         "rotations": {
           "Bip001_L_UpperArm": {
-            "x": -0.4,
-            "y": -0.25,
-            "z": -0.2
+            "x": -22.9,
+            "y": -14.3,
+            "z": -11.5
           },
           "Bip001_L_Forearm": {
-            "x": 0.65,
-            "y": -0.15,
-            "z": 0.0
+            "x": 37.2,
+            "y": -8.6,
+            "z": 0
           },
           "Bip001_L_Hand": {
-            "x": 0.25,
-            "y": 0.0,
-            "z": 0.0
+            "x": 14.3,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_UpperArm": {
-            "x": -0.4,
-            "y": 0.25,
-            "z": 0.2
+            "x": -22.9,
+            "y": 14.3,
+            "z": 11.5
           },
           "Bip001_R_Forearm": {
-            "x": 0.65,
-            "y": 0.15,
-            "z": 0.0
+            "x": 37.2,
+            "y": 8.6,
+            "z": 0
           },
           "Bip001_R_Hand": {
-            "x": 0.25,
-            "y": 0.0,
-            "z": 0.0
+            "x": 14.3,
+            "y": 0,
+            "z": 0
           }
         },
         "finger_curls": {
-          "thumb": 0.0,
-          "index": 0.0,
-          "middle": 0.0,
-          "ring": 0.0,
-          "pinky": 0.0
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
         }
       },
       {
@@ -170,42 +172,42 @@
         "easing": "easeInOutQuad",
         "rotations": {
           "Bip001_L_UpperArm": {
-            "x": -0.2,
-            "y": -0.1,
-            "z": -0.1
+            "x": -11.5,
+            "y": -5.7,
+            "z": -5.7
           },
           "Bip001_L_Forearm": {
-            "x": 0.4,
-            "y": -0.05,
-            "z": 0.0
+            "x": 22.9,
+            "y": -2.9,
+            "z": 0
           },
           "Bip001_L_Hand": {
-            "x": 0.1,
-            "y": 0.0,
-            "z": 0.0
+            "x": 5.7,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_UpperArm": {
-            "x": -0.2,
-            "y": 0.1,
-            "z": 0.1
+            "x": -11.5,
+            "y": 5.7,
+            "z": 5.7
           },
           "Bip001_R_Forearm": {
-            "x": 0.4,
-            "y": 0.05,
-            "z": 0.0
+            "x": 22.9,
+            "y": 2.9,
+            "z": 0
           },
           "Bip001_R_Hand": {
-            "x": 0.1,
-            "y": 0.0,
-            "z": 0.0
+            "x": 5.7,
+            "y": 0,
+            "z": 0
           }
         },
         "finger_curls": {
-          "thumb": 0.0,
-          "index": 0.0,
-          "middle": 0.0,
-          "ring": 0.0,
-          "pinky": 0.0
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
         }
       },
       {
@@ -214,42 +216,42 @@
         "easing": "easeInOutQuad",
         "rotations": {
           "Bip001_L_UpperArm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_L_Forearm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_L_Hand": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_UpperArm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_Forearm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_Hand": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           }
         },
         "finger_curls": {
-          "thumb": 0.0,
-          "index": 0.0,
-          "middle": 0.0,
-          "ring": 0.0,
-          "pinky": 0.0
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
         }
       }
     ]

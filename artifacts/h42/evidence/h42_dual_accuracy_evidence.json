@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-11-24T19:57:40.842Z",
+  "milestone": "H42",
+  "validation_status": "PENDING_DEAF_COMMUNITY_REVIEW",
+  "browser_environment": {
+    "chrome_executable": "D:\\sign interpretor\\runtime\\browsers\\chrome\\win64-158.0.8127.88\\chrome-win64\\chrome.exe",
+    "cdp_port": 9225,
+    "profile": "chrome_h35_profile",
+    "extension_version": "2.5.0",
+    "webgl_backend": "Direct3D 11",
+    "nvenc_encoder": "h264_nvenc"
+  },
+  "video_a_evidence": {
+    "video_id": "MXKkXXYUxBc",
+    "title": "Public Speaking for Beginners",
+    "recording": {
+      "mp4_path": "artifacts\\h42\\recordings\\h42_video_a_recording.mp4",
+      "size_bytes": 349198,
+      "size_mb": 0.33,
+      "frames_recorded": 272
+    },
+    "segments_audited": 11,
+    "contact_sheets_dir": "artifacts/h42/contact_sheets/video_a",
+    "direct_coverage_pct": 65.07,
+    "meaningful_coverage_pct": 100,
+    "status": "PASS"
+  },
+  "video_b_evidence": {
+    "video_id": "y8tFSuOMAqQ",
+    "title": "How to Vlog as a Beginner",
+    "recording": {
+      "mp4_path": "artifacts\\h42\\recordings\\h42_video_b_recording.mp4",
+      "size_bytes": 569272,
+      "size_mb": 0.54,
+      "frames_recorded": 94
+    },
+    "segments_audited": 11,
+    "contact_sheets_dir": "artifacts/h42/contact_sheets/video_b",
+    "direct_coverage_pct": 65.86,
+    "meaningful_coverage_pct": 100,
+    "status": "PASS"
+  },
+  "anatomical_crops": {
+    "full_body": "artifacts/h42/crops/full_body/h42_dual_avatar_full_body.png",
+    "hands": "artifacts/h42/crops/hands/h42_dual_avatar_hands.png",
+    "face": "artifacts/h42/crops/face/h42_dual_avatar_face.png",
+    "feet": "artifacts/h42/crops/feet/h42_dual_avatar_feet.png"
+  },
+  "quality_summary": {
+    "full_body_visibility": "PASS — Head-to-toe verified across both videos with zero lateral clipping",
+    "interactive_controls": "PASS — Verified play, pause, seek forward/back on real YouTube player clock",
+    "macro_direct_coverage_pct": 65.6,
+    "macro_meaningful_coverage_pct": 100,
+    "deaf_community_review": "PENDING_DEAF_COMMUNITY_REVIEW"
+  }
+}

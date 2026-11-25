@@ -13,7 +13,9 @@
       "entry_id": "ISLRTC #U-012",
       "url": "https://divyangjan.depwd.gov.in/islrtc/"
     },
-    "notes": "Handshape: Open flat 5-hand palm facing down making horizontal circular motion in front of chest."
+    "notes": "Handshape: Open flat 5-hand palm facing down making horizontal circular motion in front of chest.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
   },
   "motion": {
     "status": "playable",
@@ -61,19 +63,19 @@
         "easing": "easeOutQuad",
         "rotations": {
           "Bip001_R_UpperArm": {
-            "x": 0.1,
-            "y": -0.2,
-            "z": -0.4
+            "x": 5.7,
+            "y": -11.5,
+            "z": -22.9
           },
           "Bip001_R_Forearm": {
-            "x": 0.0,
-            "y": -0.4,
-            "z": -0.55
+            "x": 0,
+            "y": -22.9,
+            "z": -31.5
           },
           "Bip001_R_Hand": {
-            "x": -0.05,
-            "y": 0.25,
-            "z": -0.1
+            "x": -2.9,
+            "y": 14.3,
+            "z": -5.7
           }
         },
         "finger_curls": {
@@ -113,6 +115,12 @@
           "pinky": 0
         }
       }
-    ]
+    ],
+    "return_to_neutral": true,
+    "transition_hints": {
+      "entry_handshape": "neutral",
+      "exit_handshape": "neutral",
+      "recommended_blend_ms": 150
+    }
   }
 }

@@ -13,7 +13,9 @@
       "entry_id": "ISLRTC #O-008",
       "url": "https://divyangjan.depwd.gov.in/islrtc/"
     },
-    "notes": "Handshape: Dominant hand forms O-K circular thumb/index pinch, extending middle/ring/pinky upward with positive nod."
+    "notes": "Handshape: Dominant hand forms O-K circular thumb/index pinch, extending middle/ring/pinky upward with positive nod.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
   },
   "motion": {
     "status": "playable",
@@ -61,19 +63,19 @@
         "easing": "easeOutQuad",
         "rotations": {
           "Bip001_R_UpperArm": {
-            "x": 0.12,
-            "y": -0.15,
-            "z": -0.45
+            "x": 6.9,
+            "y": -8.6,
+            "z": -25.8
           },
           "Bip001_R_Forearm": {
-            "x": 0.05,
-            "y": -0.35,
-            "z": -0.65
+            "x": 2.9,
+            "y": -20.1,
+            "z": -37.2
           },
           "Bip001_R_Hand": {
-            "x": 0.1,
-            "y": 0.15,
-            "z": -0.05
+            "x": 5.7,
+            "y": 8.6,
+            "z": -2.9
           }
         },
         "finger_curls": {
@@ -113,6 +115,12 @@
           "pinky": 0
         }
       }
-    ]
+    ],
+    "return_to_neutral": true,
+    "transition_hints": {
+      "entry_handshape": "neutral",
+      "exit_handshape": "neutral",
+      "recommended_blend_ms": 150
+    }
   }
 }

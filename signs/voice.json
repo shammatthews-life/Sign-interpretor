@@ -12,7 +12,9 @@
       "portal": "Indian Sign Language Research and Training Centre",
       "url": "https://divyangjan.depwd.gov.in/islrtc/"
     },
-    "notes": "ISLRTC #V-088. V-hand moving upward along throat outward to express vocalization."
+    "notes": "ISLRTC #V-088. V-hand moving upward along throat outward to express vocalization.",
+    "unit_system": "degrees",
+    "provenance_tier": "islrtc_reference_parametric"
   },
   "motion": {
     "status": "playable",
@@ -35,19 +37,19 @@
         "easing": "linear",
         "rotations": {
           "Bip001_R_UpperArm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_Forearm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_Hand": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           }
         }
       },
@@ -57,19 +59,19 @@
         "easing": "ease-in-out",
         "rotations": {
           "Bip001_R_UpperArm": {
-            "x": 0.45,
-            "y": 0.2,
-            "z": -0.3
+            "x": 25.8,
+            "y": 11.5,
+            "z": -17.2
           },
           "Bip001_R_Forearm": {
-            "x": 0.55,
-            "y": 0.15,
-            "z": 0.25
+            "x": 31.5,
+            "y": 8.6,
+            "z": 14.3
           },
           "Bip001_R_Hand": {
-            "x": 0.2,
-            "y": 0.1,
-            "z": 0.0
+            "x": 11.5,
+            "y": 5.7,
+            "z": 0
           }
         }
       },
@@ -79,19 +81,19 @@
         "easing": "ease-out",
         "rotations": {
           "Bip001_R_UpperArm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_Forearm": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           },
           "Bip001_R_Hand": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
+            "x": 0,
+            "y": 0,
+            "z": 0
           }
         }
       }

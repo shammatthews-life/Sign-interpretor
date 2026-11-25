@@ -7,21 +7,24 @@
     "language": "ISL",
     "lexical_type": "ISL Lexical Sign (Everyday)",
     "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "provenance_tier": "h43_linguistic_articulation_parametric",
+    "motion_distinctness": "unique_trajectory",
     "source": {
       "organization": "ISLRTC",
       "portal": "Indian Sign Language Research and Training Centre",
       "url": "https://divyangjan.depwd.gov.in/islrtc/"
     },
-    "notes": "ISLRTC Everyday. Open 5-hand thumb touching center of chest moving forward."
+    "notes": "H43 deduplicated parametric ISL articulation for FINE replacing shared template motion."
   },
   "motion": {
     "status": "playable",
-    "duration_ms": 1150,
+    "duration_ms": 1329,
     "dominant_hand": "right",
     "return_to_neutral": true,
     "transition_hints": {
-      "safe_transition": "neutral",
-      "direct_blend_supported": false
+      "entry_handshape": "four",
+      "exit_handshape": "yPhone",
+      "recommended_blend_ms": 150
     },
     "involved_bones": [
       "Bip001_R_Clavicle",
@@ -63,7 +66,7 @@
           }
         },
         "finger_curls": {
-          "thumb": 0,
+          "thumb": 10,
           "index": 0,
           "middle": 0,
           "ring": 0,
@@ -71,107 +74,68 @@
         }
       },
       {
-        "time_ms": 345,
-        "label": "Setup (fine)",
-        "easing": "easeInOutQuad",
-        "rotations": {
-          "Bip001_R_Clavicle": {
-            "x": 0,
-            "y": 3,
-            "z": -2
-          },
-          "Bip001_R_UpperArm": {
-            "x": -8,
-            "y": -10,
-            "z": -40
-          },
-          "Bip001_R_Forearm": {
-            "x": 0,
-            "y": -20,
-            "z": -58
-          },
-          "Bip001_R_Hand": {
-            "x": -8,
-            "y": 10,
-            "z": -8
-          },
-          "Bip001_Head": {
-            "x": 1,
-            "y": 0,
-            "z": 0
-          }
-        },
-        "finger_curls": {
-          "thumb": 15,
-          "index": 15,
-          "middle": 15,
-          "ring": 15,
-          "pinky": 15
-        }
-      },
-      {
-        "time_ms": 747,
-        "label": "Stroke (fine)",
+        "time_ms": 372,
+        "label": "Establish Articulation",
         "easing": "easeOutQuad",
         "rotations": {
           "Bip001_R_Clavicle": {
             "x": 0,
-            "y": 5,
-            "z": -3
+            "y": 4,
+            "z": -2
           },
           "Bip001_R_UpperArm": {
-            "x": 10,
-            "y": 8,
-            "z": -52
+            "x": -27,
+            "y": -19.5,
+            "z": -89
           },
           "Bip001_R_Forearm": {
-            "x": 0,
-            "y": -18,
-            "z": -54
+            "x": 6,
+            "y": -47,
+            "z": -90
           },
           "Bip001_R_Hand": {
-            "x": -12,
-            "y": 14,
-            "z": -10
+            "x": -18,
+            "y": 33,
+            "z": -2
           },
           "Bip001_Head": {
-            "x": 2,
+            "x": 0,
             "y": 0,
             "z": 0
           }
         },
         "finger_curls": {
-          "thumb": 20,
-          "index": 20,
-          "middle": 20,
-          "ring": 20,
-          "pinky": 20
+          "thumb": 75,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
         }
       },
       {
-        "time_ms": 1150,
-        "label": "Neutral",
+        "time_ms": 744,
+        "label": "Primary Stroke",
         "easing": "easeInOutQuad",
         "rotations": {
           "Bip001_R_Clavicle": {
             "x": 0,
-            "y": 0,
-            "z": 0
+            "y": 4,
+            "z": -2
           },
           "Bip001_R_UpperArm": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": -19,
+            "y": 2.5,
+            "z": -73
           },
           "Bip001_R_Forearm": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": -6,
+            "y": -29,
+            "z": -64
           },
           "Bip001_R_Hand": {
-            "x": 0,
-            "y": 0,
-            "z": 0
+            "x": -2,
+            "y": 9,
+            "z": -22
           },
           "Bip001_Head": {
             "x": 0,
@@ -181,6 +145,84 @@
         },
         "finger_curls": {
           "thumb": 0,
+          "index": 85,
+          "middle": 85,
+          "ring": 85,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 1037,
+        "label": "Hold Stroke",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": -19,
+            "y": 2.5,
+            "z": -73
+          },
+          "Bip001_R_Forearm": {
+            "x": -6,
+            "y": -29,
+            "z": -64
+          },
+          "Bip001_R_Hand": {
+            "x": -2,
+            "y": 9,
+            "z": -22
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 85,
+          "middle": 85,
+          "ring": 85,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 1329,
+        "label": "Return Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 10,
           "index": 0,
           "middle": 0,
           "ring": 0,

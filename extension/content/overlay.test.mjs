@@ -441,3 +441,69 @@ test('unavailable subtitle fallback pill displays and clears cleanly', () => {
   assert.equal(subText.textContent, '');
   assert.equal(subClasses.contains('hidden'), true);
 });
+
+
+test('overlay uses chrome-extension viewer when available and keeps fallback visible until Aether signals ready', () => {
+  const ui = new ISLOverlayUI();
+  const iframeClasses = classList();
+  const fallbackClasses = classList();
+  ui.elements = {
+    stConn: eventTarget(),
+    stAudio: eventTarget(),
+    stAsr: eventTarget(),
+    stTrans: eventTarget(),
+    stSign: eventTarget(),
+    boxPartial: { textContent: '' },
+    boxFinal: { textContent: '' },
+    youtubeJobState: { textContent: '' },
+    youtubeJobId: { textContent: '' },
+    youtubeVideoTitle: { textContent: '' },
+    youtubeSegmentCount: { textContent: '' },
+    youtubeLatestSegment: { textContent: '' },
+    youtubeTranscriptSummary: { textContent: '' },
+    youtubeTranslationStatus: { textContent: '' },
+    youtubeGlosses: { textContent: '' },
+    youtubePlayableSigns: { textContent: '' },
+    youtubeUnavailableConcepts: { textContent: '' },
+    youtubeJobProgress: { textContent: '' },
+    youtubeJobError: { textContent: '', classList: classList() },
+    badgeTransStatus: { textContent: '' },
+    boxGloss: { textContent: '' },
+    boxTrace: { textContent: '' },
+    pillActiveSign: { textContent: '', style: {} },
+    txtNoActive: { style: {} },
+    pillReviewBadge: { classList: classList() },
+    boxQueuedSigns: { innerHTML: '' },
+    boxUnavailable: { classList: classList() },
+    listUnavailable: { innerHTML: '' },
+    demoIndicator: { textContent: '', style: {} },
+    txtRuntimeMsg: { textContent: '', style: {} },
+    aetherIframe: { src: '', classList: iframeClasses },
+    aetherFallback: { classList: fallbackClasses },
+    unavailableSubtitle: { classList: classList() },
+    unavailableSubText: { textContent: '' }
+  };
+  ui.syncAvatarSurface = () => {};
+
+  const prevChrome = globalThis.chrome;
+  globalThis.chrome = {
+    runtime: {
+      getURL: rel => `chrome-extension://test-ext-id/${rel}`
+    }
+  };
+  try {
+    ui.update({ runtimeAvailable: true, runtimeEndpoint: 'http://localhost:8000' });
+    assert.ok(ui.elements.aetherIframe.src.startsWith('chrome-extension://test-ext-id/viewer/embed.html?endpoint='));
+    assert.equal(fallbackClasses.contains('hidden'), false);
+
+    ui.setAetherReady(true);
+    assert.equal(fallbackClasses.contains('hidden'), true);
+
+    ui.setAetherReady(false, { error: 'FBX timeout' });
+    assert.equal(fallbackClasses.contains('hidden'), false);
+    assert.match(ui.elements.txtRuntimeMsg.textContent, /FBX timeout/);
+  } finally {
+    if (prevChrome === undefined) delete globalThis.chrome;
+    else globalThis.chrome = prevChrome;
+  }
+});

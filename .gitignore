@@ -44,8 +44,11 @@ node_modules/
 *.webm
 *.avi
 *.mkv
+*.wav
 artifacts/**/frames/
 artifacts/**/recording/
 artifacts/**/recordings/
 artifacts/**/raw_frames/
 artifacts/**/raw_screencast/
+artifacts/**/preprocessed_audio/
+artifacts/**/tmp_*

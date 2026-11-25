@@ -1,0 +1,5849 @@
+{
+  "timestamp": "2026-11-24T20:05:28.503Z",
+  "milestone": "H42",
+  "validation_status": "PENDING_DEAF_COMMUNITY_REVIEW",
+  "video_a": {
+    "video_id": "MXKkXXYUxBc",
+    "total_segments": 29,
+    "spoken_words": 272,
+    "playable_signs": 177,
+    "direct_coverage_pct": 65.07,
+    "grammar_omissions": 80,
+    "unknown_terms": 0,
+    "meaningful_coverage_pct": 100,
+    "invariants_passed": 17,
+    "invariants_total": 17,
+    "segments": [
+      {
+        "segment_index": 0,
+        "source_text": "This is public speaking for beginners, and the goal of this video is simple.",
+        "gloss_sequence": [
+          "THIS",
+          "PUBLIC",
+          "SPEECH",
+          "LEARN",
+          "GOAL",
+          "THIS",
+          "VIDEO",
+          "SIMPLY"
+        ],
+        "sign_ids": [
+          "this",
+          "public",
+          "speech",
+          "learn",
+          "goal",
+          "this",
+          "video",
+          "simply"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "for",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "This is public speaking for beginners, and the goal of this video is simple.",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "This is public speaking for beginners ,",
+              "tokens": [
+                "This",
+                "is",
+                "public",
+                "speaking",
+                "for",
+                "beginners",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "the goal of this video is simple",
+              "tokens": [
+                "the",
+                "goal",
+                "of",
+                "this",
+                "video",
+                "is",
+                "simple"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 1,
+        "source_text": "It's to help you overcome being uncertain, anxious, afraid,",
+        "gloss_sequence": [
+          "YOU",
+          "CONFUSED",
+          "NERVOUS",
+          "FEAR",
+          "OVERCOME",
+          "HELP"
+        ],
+        "sign_ids": [
+          "you",
+          "confused",
+          "nervous",
+          "fear",
+          "overcome",
+          "help"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "being",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "It's to help you overcome being uncertain, anxious, afraid,",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "It's to help you overcome being uncertain , anxious , afraid ,",
+              "tokens": [
+                "It's",
+                "to",
+                "help",
+                "you",
+                "overcome",
+                "being",
+                "uncertain",
+                ",",
+                "anxious",
+                ",",
+                "afraid",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 3,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 2,
+        "source_text": "and bring you a few steps closer to being more confident, more clear,",
+        "gloss_sequence": [
+          "BRING",
+          "YOU",
+          "FEW",
+          "STEP",
+          "CLOSE",
+          "MORE",
+          "CONFIDENT",
+          "MORE",
+          "CLEAR"
+        ],
+        "sign_ids": [
+          "bring",
+          "you",
+          "few",
+          "step",
+          "close",
+          "more",
+          "confident",
+          "more",
+          "clear"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "being",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "and bring you a few steps closer to being more confident, more clear,",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "and bring you a few steps closer to being more confident , more clear ,",
+              "tokens": [
+                "and",
+                "bring",
+                "you",
+                "a",
+                "few",
+                "steps",
+                "closer",
+                "to",
+                "being",
+                "more",
+                "confident",
+                ",",
+                "more",
+                "clear",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 2,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 3,
+        "source_text": "and a much more captivating speaker.",
+        "gloss_sequence": [
+          "VERY",
+          "MORE",
+          "BEAUTIFUL",
+          "SPEAKER"
+        ],
+        "sign_ids": [
+          "very",
+          "more",
+          "beautiful",
+          "speaker"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "and a much more captivating speaker.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "and a much more captivating speaker",
+              "tokens": [
+                "and",
+                "a",
+                "much",
+                "more",
+                "captivating",
+                "speaker"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 4,
+        "source_text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+        "gloss_sequence": [
+          "WHAT",
+          "YOU",
+          "SPECIAL",
+          "COMBINATION",
+          "THREE",
+          "DAY",
+          "PUBLIC",
+          "SPEECH",
+          "CHALLENGE",
+          "WATCH"
+        ],
+        "sign_ids": [
+          "what",
+          "you",
+          "special",
+          "combination",
+          "three",
+          "day",
+          "public",
+          "speech",
+          "challenge",
+          "watch"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "about",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "What you're about to watch is a special compilation of a three-day public speaking challenge",
+              "tokens": [
+                "What",
+                "you're",
+                "about",
+                "to",
+                "watch",
+                "is",
+                "a",
+                "special",
+                "compilation",
+                "of",
+                "a",
+                "three-day",
+                "public",
+                "speaking",
+                "challenge"
+              ],
+              "conjunction": null,
+              "discourse_act": "WH_QUESTION",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "WH_QUESTION"
+        }
+      },
+      {
+        "segment_index": 5,
+        "source_text": "which we delivered live right here in our studio.",
+        "gloss_sequence": [
+          "WE",
+          "LIVE",
+          "HERE",
+          "GIVE",
+          "RECORD",
+          "ROOM"
+        ],
+        "sign_ids": [
+          "we",
+          "live",
+          "here",
+          "give",
+          "record",
+          "room"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "which",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "which we delivered live right here in our studio.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "which we delivered live right here in our studio",
+              "tokens": [
+                "which",
+                "we",
+                "delivered",
+                "live",
+                "right",
+                "here",
+                "in",
+                "our",
+                "studio"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "WE",
+              "subject_index": 1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 6,
+        "source_text": "We'll begin with mindset and confidence.",
+        "gloss_sequence": [
+          "WE",
+          "MINDSET",
+          "CONFIDENT",
+          "START"
+        ],
+        "sign_ids": [
+          "we",
+          "mindset",
+          "confident",
+          "start"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "We'll begin with mindset and confidence.",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "We'll begin with mindset",
+              "tokens": [
+                "We'll",
+                "begin",
+                "with",
+                "mindset"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "INCEPTIVE_START",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "confidence",
+              "tokens": [
+                "confidence"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 7,
+        "source_text": "We'll move into the science of capturing attention,",
+        "gloss_sequence": [
+          "WE",
+          "MOVE",
+          "SCIENCE",
+          "HOLD",
+          "ATTENTION"
+        ],
+        "sign_ids": [
+          "we",
+          "move",
+          "science",
+          "hold",
+          "attention"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "into",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "We'll move into the science of capturing attention,",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "We'll move into the science of capturing attention ,",
+              "tokens": [
+                "We'll",
+                "move",
+                "into",
+                "the",
+                "science",
+                "of",
+                "capturing",
+                "attention",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 8,
+        "source_text": "and we'll finish off with the most impactful delivery skills",
+        "gloss_sequence": [
+          "WE",
+          "MOST",
+          "POWER",
+          "PRESENTATION",
+          "SKILL",
+          "FINISH"
+        ],
+        "sign_ids": [
+          "we",
+          "most",
+          "power",
+          "presentation",
+          "skill",
+          "finish"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "and we'll finish off with the most impactful delivery skills",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "and we'll finish off with the most impactful delivery skills",
+              "tokens": [
+                "and",
+                "we'll",
+                "finish",
+                "off",
+                "with",
+                "the",
+                "most",
+                "impactful",
+                "delivery",
+                "skills"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 9,
+        "source_text": "from the 110-step chart of excellence communication.",
+        "gloss_sequence": [
+          "HUNDRED",
+          "TEN",
+          "STEP",
+          "CHART",
+          "GREAT",
+          "COMMUNICATION"
+        ],
+        "sign_ids": [
+          "hundred",
+          "ten",
+          "step",
+          "chart",
+          "great",
+          "communication"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "from",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "from the 110-step chart of excellence communication.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "from the 110-step chart of excellence communication",
+              "tokens": [
+                "from",
+                "the",
+                "110-step",
+                "chart",
+                "of",
+                "excellence",
+                "communication"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 10,
+        "source_text": "Hey, if we haven't met before, my name is David JP Phillips,",
+        "gloss_sequence": [
+          "HEY",
+          "BEFORE",
+          "WE",
+          "MEET",
+          "NOT",
+          "MY",
+          "NAME"
+        ],
+        "sign_ids": [
+          "hey",
+          "before",
+          "we",
+          "meet",
+          "not",
+          "my",
+          "name"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "if",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [
+          "NEGATION"
+        ],
+        "isr": {
+          "source_text": "Hey, if we haven't met before, my name is David JP Phillips,",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Hey , if we haven't met before , my name is David JP Phillips ,",
+              "tokens": [
+                "Hey",
+                ",",
+                "if",
+                "we",
+                "haven't",
+                "met",
+                "before",
+                ",",
+                "my",
+                "name",
+                "is",
+                "David",
+                "JP",
+                "Phillips",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "GREETING_VOCATIVE",
+              "clause_type": "MAIN",
+              "subject": "WE",
+              "subject_index": 3,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "GREETING_VOCATIVE"
+        }
+      },
+      {
+        "segment_index": 11,
+        "source_text": "and I'm best known for my TEDx talks,",
+        "gloss_sequence": [
+          "I",
+          "GOOD",
+          "KNOW",
+          "MY",
+          "SAY"
+        ],
+        "sign_ids": [
+          "i",
+          "good",
+          "know",
+          "my",
+          "say"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "for",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "and I'm best known for my TEDx talks,",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "and I'm best known for my TEDx talks ,",
+              "tokens": [
+                "and",
+                "I'm",
+                "best",
+                "known",
+                "for",
+                "my",
+                "TEDx",
+                "talks",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 12,
+        "source_text": "which are among the most viewed in the world",
+        "gloss_sequence": [
+          "WORLD",
+          "ALL",
+          "MOST",
+          "SEE"
+        ],
+        "sign_ids": [
+          "world",
+          "all",
+          "most",
+          "see"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "which",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "are",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "which are among the most viewed in the world",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "which are among the most viewed in the world",
+              "tokens": [
+                "which",
+                "are",
+                "among",
+                "the",
+                "most",
+                "viewed",
+                "in",
+                "the",
+                "world"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 13,
+        "source_text": "on this particular subject.",
+        "gloss_sequence": [
+          "THIS",
+          "POINT",
+          "SUBJECT"
+        ],
+        "sign_ids": [
+          "this",
+          "point",
+          "subject"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "on",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "on this particular subject.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "on this particular subject",
+              "tokens": [
+                "on",
+                "this",
+                "particular",
+                "subject"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 14,
+        "source_text": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+        "gloss_sequence": [
+          "I",
+          "FIVE",
+          "THOUSAND",
+          "SPEAKER",
+          "STUDY",
+          "FINISH",
+          "FIND",
+          "TRUE",
+          "WHAT",
+          "MAKE",
+          "SOMEBODY",
+          "GREAT",
+          "SPEAKER"
+        ],
+        "sign_ids": [
+          "i",
+          "five",
+          "thousand",
+          "speaker",
+          "study",
+          "finish",
+          "find",
+          "true",
+          "what",
+          "make",
+          "somebody",
+          "great",
+          "speaker"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "over",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "You see , I've studied over 5 , 000 speakers to pinpoint exactly what makes someone a great speaker",
+              "tokens": [
+                "You",
+                "see",
+                ",",
+                "I've",
+                "studied",
+                "over",
+                "5",
+                ",",
+                "000",
+                "speakers",
+                "to",
+                "pinpoint",
+                "exactly",
+                "what",
+                "makes",
+                "someone",
+                "a",
+                "great",
+                "speaker"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 0,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 15,
+        "source_text": "And this chart is one of the results of that particular endeavour.",
+        "gloss_sequence": [
+          "THIS",
+          "CHART",
+          "ONE",
+          "RESULT",
+          "THAT",
+          "POINT",
+          "WORK"
+        ],
+        "sign_ids": [
+          "this",
+          "chart",
+          "one",
+          "result",
+          "that",
+          "point",
+          "work"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "And this chart is one of the results of that particular endeavour.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "And this chart is one of the results of that particular endeavour",
+              "tokens": [
+                "And",
+                "this",
+                "chart",
+                "is",
+                "one",
+                "of",
+                "the",
+                "results",
+                "of",
+                "that",
+                "particular",
+                "endeavour"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 16,
+        "source_text": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+        "gloss_sequence": [
+          "THEY",
+          "PRACTICE",
+          "FINISH",
+          "I",
+          "WORLD",
+          "BIG",
+          "COMPANY",
+          "LIKE",
+          "COACHING",
+          "FINISH"
+        ],
+        "sign_ids": [
+          "they",
+          "practice",
+          "finish",
+          "i",
+          "world",
+          "big",
+          "company",
+          "like",
+          "coaching",
+          "finish"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "oh",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "been",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "Oh, and they have been put to practice. I've coached global giants like Oracle, Google,",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Oh , and they have been put to practice",
+              "tokens": [
+                "Oh",
+                ",",
+                "and",
+                "they",
+                "have",
+                "been",
+                "put",
+                "to",
+                "practice"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "THEY",
+              "subject_index": 3,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "I've coached global giants like Oracle , Google ,",
+              "tokens": [
+                "I've",
+                "coached",
+                "global",
+                "giants",
+                "like",
+                "Oracle",
+                ",",
+                "Google",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 17,
+        "source_text": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
+        "gloss_sequence": [
+          "STORY",
+          "PRESENTATION",
+          "SKILL",
+          "BEAUTIFUL",
+          "SCIENCE",
+          "HOLD",
+          "AUDIENCE"
+        ],
+        "sign_ids": [
+          "story",
+          "presentation",
+          "skill",
+          "beautiful",
+          "science",
+          "hold",
+          "audience"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "an",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "and Disney and storytelling and presentation skills, and the beautiful science of holding an audience",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "and Disney and storytelling",
+              "tokens": [
+                "and",
+                "Disney",
+                "and",
+                "storytelling"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "presentation skills ,",
+              "tokens": [
+                "presentation",
+                "skills",
+                ","
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "the beautiful science of holding an audience",
+              "tokens": [
+                "the",
+                "beautiful",
+                "science",
+                "of",
+                "holding",
+                "an",
+                "audience"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 18,
+        "source_text": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
+        "gloss_sequence": [
+          "NOW",
+          "ATTENTION",
+          "NEXT",
+          "TWO",
+          "HOUR",
+          "THIRTY",
+          "MINUTE",
+          "YOU",
+          "IMPORTANT",
+          "TOOLS",
+          "FIND",
+          "I",
+          "HAVE"
+        ],
+        "sign_ids": [
+          "now",
+          "attention",
+          "next",
+          "two",
+          "hour",
+          "thirty",
+          "minute",
+          "you",
+          "important",
+          "tools",
+          "find",
+          "i",
+          "have"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "attention",
+              "tokens": [
+                "attention"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "Now over the next two hours",
+              "tokens": [
+                "Now",
+                "over",
+                "the",
+                "next",
+                "two",
+                "hours"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "NOW"
+              ],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "30 minutes , you'll discover the essential tools I've",
+              "tokens": [
+                "30",
+                "minutes",
+                ",",
+                "you'll",
+                "discover",
+                "the",
+                "essential",
+                "tools",
+                "I've"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 19,
+        "source_text": "I've gathered during my 25 year career as a public speaker",
+        "gloss_sequence": [
+          "I",
+          "DURING",
+          "FIND",
+          "FINISH",
+          "MY",
+          "TWENTY",
+          "FIVE",
+          "YEAR",
+          "CAREER",
+          "PUBLIC",
+          "SPEAKER"
+        ],
+        "sign_ids": [
+          "i",
+          "during",
+          "find",
+          "finish",
+          "my",
+          "twenty",
+          "five",
+          "year",
+          "career",
+          "public",
+          "speaker"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "as",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "I've gathered during my 25 year career as a public speaker",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "I've gathered during my 25 year career",
+              "tokens": [
+                "I've",
+                "gathered",
+                "during",
+                "my",
+                "25",
+                "year",
+                "career"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "a public speaker",
+              "tokens": [
+                "a",
+                "public",
+                "speaker"
+              ],
+              "conjunction": "as",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 20,
+        "source_text": "and public speaking coach.",
+        "gloss_sequence": [
+          "PUBLIC",
+          "SPEECH",
+          "COACHING"
+        ],
+        "sign_ids": [
+          "public",
+          "speech",
+          "coaching"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "and public speaking coach.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "and public speaking coach",
+              "tokens": [
+                "and",
+                "public",
+                "speaking",
+                "coach"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 21,
+        "source_text": "So make sure you have a pen and a paper,",
+        "gloss_sequence": [
+          "SURE",
+          "YOU",
+          "PEN",
+          "PAPER",
+          "HAVE"
+        ],
+        "sign_ids": [
+          "sure",
+          "you",
+          "pen",
+          "paper",
+          "have"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "So make sure you have a pen and a paper,",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "So make sure you have a pen",
+              "tokens": [
+                "So",
+                "make",
+                "sure",
+                "you",
+                "have",
+                "a",
+                "pen"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 3,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "a paper ,",
+              "tokens": [
+                "a",
+                "paper",
+                ","
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 22,
+        "source_text": "lean in and you'll walk away with practical tools",
+        "gloss_sequence": [
+          "ATTENTION",
+          "YOU",
+          "PRACTICAL",
+          "TOOLS",
+          "HAVE"
+        ],
+        "sign_ids": [
+          "attention",
+          "you",
+          "practical",
+          "tools",
+          "have"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "lean in and you'll walk away with practical tools",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "lean in and you'll walk away with practical tools",
+              "tokens": [
+                "lean",
+                "in",
+                "and",
+                "you'll",
+                "walk",
+                "away",
+                "with",
+                "practical",
+                "tools"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 23,
+        "source_text": "you can apply tomorrow.",
+        "gloss_sequence": [
+          "TOMORROW",
+          "YOU",
+          "PRACTICE"
+        ],
+        "sign_ids": [
+          "tomorrow",
+          "you",
+          "practice"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "can",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "you can apply tomorrow.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "you can apply tomorrow",
+              "tokens": [
+                "you",
+                "can",
+                "apply",
+                "tomorrow"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 0,
+              "modal": "ABILITY_CAN",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "TOMORROW"
+              ],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 24,
+        "source_text": "Have fun.",
+        "gloss_sequence": [
+          "ENJOY"
+        ],
+        "sign_ids": [
+          "enjoy"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "Have fun.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Have fun",
+              "tokens": [
+                "Have",
+                "fun"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 25,
+        "source_text": "Welcome beautiful people all around the world",
+        "gloss_sequence": [
+          "WELCOME",
+          "BEAUTIFUL",
+          "PEOPLE",
+          "ALL",
+          "WORLD"
+        ],
+        "sign_ids": [
+          "welcome",
+          "beautiful",
+          "people",
+          "all",
+          "world"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "Welcome beautiful people all around the world",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Welcome beautiful people all around the world",
+              "tokens": [
+                "Welcome",
+                "beautiful",
+                "people",
+                "all",
+                "around",
+                "the",
+                "world"
+              ],
+              "conjunction": null,
+              "discourse_act": "GREETING_VOCATIVE",
+              "clause_type": "MAIN",
+              "subject": "PEOPLE",
+              "subject_index": 2,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "GREETING_VOCATIVE"
+        }
+      },
+      {
+        "segment_index": 26,
+        "source_text": "to the lovely country of Sweden.",
+        "gloss_sequence": [
+          "SWEDEN",
+          "LOVELY",
+          "COUNTRY"
+        ],
+        "sign_ids": [
+          "sweden",
+          "lovely",
+          "country"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "to the lovely country of Sweden.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "to the lovely country of Sweden",
+              "tokens": [
+                "to",
+                "the",
+                "lovely",
+                "country",
+                "of",
+                "Sweden"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 27,
+        "source_text": "This is, well, this is my view of you.",
+        "gloss_sequence": [
+          "THIS",
+          "THIS",
+          "MY",
+          "SEE",
+          "YOU"
+        ],
+        "sign_ids": [
+          "this",
+          "this",
+          "my",
+          "see",
+          "you"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "well",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "This is, well, this is my view of you.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "This is , well , this is my view of you",
+              "tokens": [
+                "This",
+                "is",
+                ",",
+                "well",
+                ",",
+                "this",
+                "is",
+                "my",
+                "view",
+                "of",
+                "you"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 10,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 28,
+        "source_text": "There's pictures all over the place.",
+        "gloss_sequence": [
+          "PICTURE",
+          "ALL",
+          "PLACE"
+        ],
+        "sign_ids": [
+          "picture",
+          "all",
+          "place"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "there",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "There's pictures all over the place.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "There's pictures all over the place",
+              "tokens": [
+                "There's",
+                "pictures",
+                "all",
+                "over",
+                "the",
+                "place"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      }
+    ]
+  },
+  "video_b": {
+    "video_id": "y8tFSuOMAqQ",
+    "total_segments": 31,
+    "spoken_words": 539,
+    "playable_signs": 355,
+    "direct_coverage_pct": 65.86,
+    "grammar_omissions": 177,
+    "unknown_terms": 0,
+    "meaningful_coverage_pct": 100,
+    "invariants_passed": 10,
+    "invariants_total": 10,
+    "segments": [
+      {
+        "segment_index": 0,
+        "source_text": "Alright, so summer is here and in my opinion that's really the best time to go out, start filming,",
+        "gloss_sequence": [
+          "TIME",
+          "SUMMER",
+          "HERE",
+          "MY",
+          "THINK",
+          "THAT",
+          "REAL",
+          "GOOD",
+          "GO",
+          "START",
+          "RECORD"
+        ],
+        "sign_ids": [
+          "time",
+          "summer",
+          "here",
+          "my",
+          "think",
+          "that",
+          "real",
+          "good",
+          "go",
+          "start",
+          "record"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "alright",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "out",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "Alright, so summer is here and in my opinion that's really the best time to go out, start filming,",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Alright , so summer is here",
+              "tokens": [
+                "Alright",
+                ",",
+                "so",
+                "summer",
+                "is",
+                "here"
+              ],
+              "conjunction": null,
+              "discourse_act": "GREETING_VOCATIVE",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "SUMMER"
+              ],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "in my opinion that's really the best time to go out , start filming ,",
+              "tokens": [
+                "in",
+                "my",
+                "opinion",
+                "that's",
+                "really",
+                "the",
+                "best",
+                "time",
+                "to",
+                "go",
+                "out",
+                ",",
+                "start",
+                "filming",
+                ","
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "INCEPTIVE_START",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "GREETING_VOCATIVE"
+        }
+      },
+      {
+        "segment_index": 1,
+        "source_text": "start vlogging and documenting your life. Maybe you've just sat down and scripted out your first",
+        "gloss_sequence": [
+          "START",
+          "VIDEO",
+          "MOVIE",
+          "YOUR",
+          "LIFE",
+          "GUESS",
+          "YOU",
+          "SAT",
+          "HAVE",
+          "WRITE",
+          "YOUR",
+          "FIRST"
+        ],
+        "sign_ids": [
+          "start",
+          "video",
+          "movie",
+          "your",
+          "life",
+          "guess",
+          "you",
+          "sat",
+          "have",
+          "write",
+          "your",
+          "first"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "just",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "down",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "out",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "start vlogging and documenting your life. Maybe you've just sat down and scripted out your first",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "start vlogging and documenting your life",
+              "tokens": [
+                "start",
+                "vlogging",
+                "and",
+                "documenting",
+                "your",
+                "life"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "INCEPTIVE_START",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "Maybe you've just sat down",
+              "tokens": [
+                "Maybe",
+                "you've",
+                "just",
+                "sat",
+                "down"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "scripted out your first",
+              "tokens": [
+                "scripted",
+                "out",
+                "your",
+                "first"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 2,
+        "source_text": "video or maybe you even gone out and filmed it but I bet in the back of your mind something still",
+        "gloss_sequence": [
+          "PAST",
+          "VIDEO",
+          "GUESS",
+          "YOU",
+          "GO",
+          "RECORD",
+          "I",
+          "THINK",
+          "YOUR",
+          "MIND",
+          "ONE",
+          "CONTINUOUS"
+        ],
+        "sign_ids": [
+          "past",
+          "video",
+          "guess",
+          "you",
+          "go",
+          "record",
+          "i",
+          "think",
+          "your",
+          "mind",
+          "one",
+          "continuous"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "or",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "even",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "out",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "but",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "video or maybe you even gone out and filmed it but I bet in the back of your mind something still",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "video or maybe you even gone out",
+              "tokens": [
+                "video",
+                "or",
+                "maybe",
+                "you",
+                "even",
+                "gone",
+                "out"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 3,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "filmed it but I bet in the back of your mind something still",
+              "tokens": [
+                "filmed",
+                "it",
+                "but",
+                "I",
+                "bet",
+                "in",
+                "the",
+                "back",
+                "of",
+                "your",
+                "mind",
+                "something",
+                "still"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "IT",
+              "subject_index": 1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 3,
+        "source_text": "just doesn't feel right about your vlog and I'm gonna say it right now you're probably just",
+        "gloss_sequence": [
+          "NOW",
+          "FEEL",
+          "TRUE",
+          "YOUR",
+          "VIDEO",
+          "I",
+          "SAY",
+          "GO",
+          "YOU",
+          "THINK",
+          "NOT"
+        ],
+        "sign_ids": [
+          "now",
+          "feel",
+          "true",
+          "your",
+          "video",
+          "i",
+          "say",
+          "go",
+          "you",
+          "think",
+          "not"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "just",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "about",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "just",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [
+          "NEGATION"
+        ],
+        "isr": {
+          "source_text": "just doesn't feel right about your vlog and I'm gonna say it right now you're probably just",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "just doesn't feel right about your vlog",
+              "tokens": [
+                "just",
+                "doesn't",
+                "feel",
+                "right",
+                "about",
+                "your",
+                "vlog"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "I'm gonna say it right now you're probably just",
+              "tokens": [
+                "I'm",
+                "gonna",
+                "say",
+                "it",
+                "right",
+                "now",
+                "you're",
+                "probably",
+                "just"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "IT",
+              "subject_index": 3,
+              "modal": "FUTURE_INTENT",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "NOW"
+              ],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 4,
+        "source_text": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
+        "gloss_sequence": [
+          "THINK",
+          "I",
+          "MORE",
+          "VERY",
+          "HONESTY",
+          "START",
+          "I",
+          "CONTINUOUS",
+          "THIS",
+          "DAY",
+          "DO"
+        ],
+        "sign_ids": [
+          "think",
+          "i",
+          "more",
+          "very",
+          "honesty",
+          "start",
+          "i",
+          "continuous",
+          "this",
+          "day",
+          "do"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "was",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "even",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "but",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
+          "clause_count": 4,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "overthinking it",
+              "tokens": [
+                "overthinking",
+                "it"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "IT",
+              "subject_index": 1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "I was too in the very beginning",
+              "tokens": [
+                "I",
+                "was",
+                "too",
+                "in",
+                "the",
+                "very",
+                "beginning"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 0,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "honestly I still do even to this day",
+              "tokens": [
+                "honestly",
+                "I",
+                "still",
+                "do",
+                "even",
+                "to",
+                "this",
+                "day"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "DAY"
+              ],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 3,
+              "raw_text": "the",
+              "tokens": [
+                "the"
+              ],
+              "conjunction": "but",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 5,
+        "source_text": "entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+        "gloss_sequence": [
+          "TODAY",
+          "ALL",
+          "ART",
+          "STEP",
+          "VIDEO",
+          "HAVE",
+          "TRUE",
+          "HAVE",
+          "MORE",
+          "EASY",
+          "YEAR",
+          "I"
+        ],
+        "sign_ids": [
+          "today",
+          "all",
+          "art",
+          "step",
+          "video",
+          "have",
+          "true",
+          "have",
+          "more",
+          "easy",
+          "year",
+          "i"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "for",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "over",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "entire creative process for vlogging has definitely gotten a lot easier over the years",
+              "tokens": [
+                "entire",
+                "creative",
+                "process",
+                "for",
+                "vlogging",
+                "has",
+                "definitely",
+                "gotten",
+                "a",
+                "lot",
+                "easier",
+                "over",
+                "the",
+                "years"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "today I",
+              "tokens": [
+                "today",
+                "I"
+              ],
+              "conjunction": "so",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "TODAY"
+              ],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 6,
+        "source_text": "wanted to share some advice about that. Things I've learned through years of trial and error on how",
+        "gloss_sequence": [
+          "WANT",
+          "SHARE",
+          "FEW",
+          "ADVICE",
+          "THAT",
+          "ALL",
+          "I",
+          "LEARN",
+          "YEAR",
+          "HAVE",
+          "PRACTICE",
+          "FAIL",
+          "LEARN",
+          "HOW"
+        ],
+        "sign_ids": [
+          "want",
+          "share",
+          "few",
+          "advice",
+          "that",
+          "all",
+          "i",
+          "learn",
+          "year",
+          "have",
+          "practice",
+          "fail",
+          "learn",
+          "how"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "about",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "through",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "on",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "wanted to share some advice about that. Things I've learned through years of trial and error on how",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "wanted to share some advice about that",
+              "tokens": [
+                "wanted",
+                "to",
+                "share",
+                "some",
+                "advice",
+                "about",
+                "that"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "Things I've learned through years of trial",
+              "tokens": [
+                "Things",
+                "I've",
+                "learned",
+                "through",
+                "years",
+                "of",
+                "trial"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "error on how",
+              "tokens": [
+                "error",
+                "on",
+                "how"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 7,
+        "source_text": "you can go about your day and start vlogging your life without completely overcomplicating",
+        "gloss_sequence": [
+          "YOU",
+          "GO",
+          "YOUR",
+          "DAY",
+          "VIDEO",
+          "START",
+          "YOUR",
+          "LIFE",
+          "ALL",
+          "CONFUSED"
+        ],
+        "sign_ids": [
+          "you",
+          "go",
+          "your",
+          "day",
+          "video",
+          "start",
+          "your",
+          "life",
+          "all",
+          "confused"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "can",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "about",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "without",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "you can go about your day and start vlogging your life without completely overcomplicating",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "you can go about your day",
+              "tokens": [
+                "you",
+                "can",
+                "go",
+                "about",
+                "your",
+                "day"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 0,
+              "modal": "ABILITY_CAN",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "DAY"
+              ],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "start vlogging your life without completely overcomplicating",
+              "tokens": [
+                "start",
+                "vlogging",
+                "your",
+                "life",
+                "without",
+                "completely",
+                "overcomplicating"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "INCEPTIVE_START",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 8,
+        "source_text": "the process as a beginner.",
+        "gloss_sequence": [
+          "STEP",
+          "LEARN"
+        ],
+        "sign_ids": [
+          "step",
+          "learn"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "as",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "the process as a beginner.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "the process as a beginner",
+              "tokens": [
+                "the",
+                "process",
+                "as",
+                "a",
+                "beginner"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 9,
+        "source_text": "So essentially a vlog is just a very loosely defined short film.",
+        "gloss_sequence": [
+          "VIDEO",
+          "VERY",
+          "SIMPLE",
+          "SMALL",
+          "MOVIE"
+        ],
+        "sign_ids": [
+          "video",
+          "very",
+          "simple",
+          "small",
+          "movie"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "essentially",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "just",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "So essentially a vlog is just a very loosely defined short film.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "So essentially a vlog is just a very loosely defined short film",
+              "tokens": [
+                "So",
+                "essentially",
+                "a",
+                "vlog",
+                "is",
+                "just",
+                "a",
+                "very",
+                "loosely",
+                "defined",
+                "short",
+                "film"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 10,
+        "source_text": "And what that means is that the core of it all you still need a good story.",
+        "gloss_sequence": [
+          "WHAT",
+          "THAT",
+          "MEAN",
+          "THAT",
+          "CORE",
+          "ALL",
+          "YOU",
+          "CONTINUOUS",
+          "GOOD",
+          "STORY",
+          "NEED"
+        ],
+        "sign_ids": [
+          "what",
+          "that",
+          "mean",
+          "that",
+          "core",
+          "all",
+          "you",
+          "continuous",
+          "good",
+          "story",
+          "need"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "And what that means is that the core of it all you still need a good story.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "And what that means is that the core of it all you still need a good story",
+              "tokens": [
+                "And",
+                "what",
+                "that",
+                "means",
+                "is",
+                "that",
+                "the",
+                "core",
+                "of",
+                "it",
+                "all",
+                "you",
+                "still",
+                "need",
+                "a",
+                "good",
+                "story"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "IT",
+              "subject_index": 9,
+              "modal": "NECESSITY_OBLIGATION",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 11,
+        "source_text": "I know you are definitely tired of hearing that from everybody that story is king.",
+        "gloss_sequence": [
+          "I",
+          "KNOW",
+          "YOU",
+          "TRUE",
+          "TIRED",
+          "HEAR",
+          "THAT",
+          "PEOPLE",
+          "THAT",
+          "STORY",
+          "MOST",
+          "IMPORTANT"
+        ],
+        "sign_ids": [
+          "i",
+          "know",
+          "you",
+          "true",
+          "tired",
+          "hear",
+          "that",
+          "people",
+          "that",
+          "story",
+          "most",
+          "important"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "are",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "from",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "I know you are definitely tired of hearing that from everybody that story is king.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "I know you are definitely tired of hearing that from everybody that story is king",
+              "tokens": [
+                "I",
+                "know",
+                "you",
+                "are",
+                "definitely",
+                "tired",
+                "of",
+                "hearing",
+                "that",
+                "from",
+                "everybody",
+                "that",
+                "story",
+                "is",
+                "king"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 0,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 12,
+        "source_text": "You have to have a story because everybody knows that and I know you do too.",
+        "gloss_sequence": [
+          "YOU",
+          "STORY",
+          "YOU",
+          "HAVE",
+          "NEED",
+          "PEOPLE",
+          "KNOW",
+          "THAT",
+          "I",
+          "KNOW",
+          "YOU",
+          "MORE"
+        ],
+        "sign_ids": [
+          "you",
+          "story",
+          "you",
+          "have",
+          "need",
+          "people",
+          "know",
+          "that",
+          "i",
+          "know",
+          "you",
+          "more"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "because",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "You have to have a story because everybody knows that and I know you do too.",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "You have to have a story",
+              "tokens": [
+                "You",
+                "have",
+                "to",
+                "have",
+                "a",
+                "story"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 0,
+              "modal": "NECESSITY_OBLIGATION",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "everybody knows that",
+              "tokens": [
+                "everybody",
+                "knows",
+                "that"
+              ],
+              "conjunction": "because",
+              "discourse_act": "STATEMENT",
+              "clause_type": "REASON_CAUSE",
+              "subject": "EVERYBODY",
+              "subject_index": 0,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "I know you do too",
+              "tokens": [
+                "I",
+                "know",
+                "you",
+                "do",
+                "too"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 0,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 13,
+        "source_text": "See the problem isn't that you don't know that.",
+        "gloss_sequence": [
+          "SEE",
+          "PROBLEM",
+          "THAT",
+          "YOU",
+          "NOT",
+          "KNOW",
+          "THAT",
+          "NOT"
+        ],
+        "sign_ids": [
+          "see",
+          "problem",
+          "that",
+          "you",
+          "not",
+          "know",
+          "that",
+          "not"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [
+          "NEGATION"
+        ],
+        "isr": {
+          "source_text": "See the problem isn't that you don't know that.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "See the problem isn't that you don't know that",
+              "tokens": [
+                "See",
+                "the",
+                "problem",
+                "isn't",
+                "that",
+                "you",
+                "don't",
+                "know",
+                "that"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 5,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 14,
+        "source_text": "It's that you don't know how to actually find a story in your day to tell.",
+        "gloss_sequence": [
+          "THAT",
+          "YOU",
+          "KNOW",
+          "HOW",
+          "STORY",
+          "FIND",
+          "YOUR",
+          "DAY",
+          "TELL",
+          "NOT"
+        ],
+        "sign_ids": [
+          "that",
+          "you",
+          "know",
+          "how",
+          "story",
+          "find",
+          "your",
+          "day",
+          "tell",
+          "not"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "actually",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [
+          "NEGATION"
+        ],
+        "isr": {
+          "source_text": "It's that you don't know how to actually find a story in your day to tell.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "It's that you don't know how to actually find a story in your day to tell",
+              "tokens": [
+                "It's",
+                "that",
+                "you",
+                "don't",
+                "know",
+                "how",
+                "to",
+                "actually",
+                "find",
+                "a",
+                "story",
+                "in",
+                "your",
+                "day",
+                "to",
+                "tell"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 2,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "DAY"
+              ],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 15,
+        "source_text": "So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie.",
+        "gloss_sequence": [
+          "BREAK",
+          "HOW",
+          "I",
+          "STORY",
+          "FIND",
+          "MY",
+          "DAY",
+          "VIDEO",
+          "MAKE",
+          "I",
+          "LIKE",
+          "THINK",
+          "BASE",
+          "PART",
+          "MOVIE"
+        ],
+        "sign_ids": [
+          "break",
+          "how",
+          "i",
+          "story",
+          "find",
+          "my",
+          "day",
+          "video",
+          "make",
+          "i",
+          "like",
+          "think",
+          "base",
+          "part",
+          "movie"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "down",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "about",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "So to break down how I find a story in my day to make a vlog about , I like to think about the fundamental pieces in a movie",
+              "tokens": [
+                "So",
+                "to",
+                "break",
+                "down",
+                "how",
+                "I",
+                "find",
+                "a",
+                "story",
+                "in",
+                "my",
+                "day",
+                "to",
+                "make",
+                "a",
+                "vlog",
+                "about",
+                ",",
+                "I",
+                "like",
+                "to",
+                "think",
+                "about",
+                "the",
+                "fundamental",
+                "pieces",
+                "in",
+                "a",
+                "movie"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 5,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "DAY"
+              ],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 16,
+        "source_text": "And just like short films, future films, documentaries, what you really need to think about are scenes.",
+        "gloss_sequence": [
+          "FUTURE",
+          "LIKE",
+          "SMALL",
+          "MOVIE",
+          "RECORD",
+          "MOVIE",
+          "WHAT",
+          "YOU",
+          "REAL",
+          "THINK",
+          "PICTURE",
+          "NEED"
+        ],
+        "sign_ids": [
+          "future",
+          "like",
+          "small",
+          "movie",
+          "record",
+          "movie",
+          "what",
+          "you",
+          "real",
+          "think",
+          "picture",
+          "need"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "just",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "are",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "And just like short films, future films, documentaries, what you really need to think about are scenes.",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "And just like short films , future films , documentaries , what you really need to think about are scenes",
+              "tokens": [
+                "And",
+                "just",
+                "like",
+                "short",
+                "films",
+                ",",
+                "future",
+                "films",
+                ",",
+                "documentaries",
+                ",",
+                "what",
+                "you",
+                "really",
+                "need",
+                "to",
+                "think",
+                "about",
+                "are",
+                "scenes"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 12,
+              "modal": "NECESSITY_OBLIGATION",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "FUTURE"
+              ],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 17,
+        "source_text": "Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story.",
+        "gloss_sequence": [
+          "LIKE",
+          "PICTURE",
+          "YOUR",
+          "FAVORITE",
+          "MOVIE",
+          "YOU",
+          "HAVE",
+          "COMBINATION",
+          "PICTURE",
+          "THAT",
+          "WHEN",
+          "COMBINATION",
+          "JOIN",
+          "TELL",
+          "BIG",
+          "BIG",
+          "STORY",
+          "NEED"
+        ],
+        "sign_ids": [
+          "like",
+          "picture",
+          "your",
+          "favorite",
+          "movie",
+          "you",
+          "have",
+          "combination",
+          "picture",
+          "that",
+          "when",
+          "combination",
+          "join",
+          "tell",
+          "big",
+          "big",
+          "story",
+          "need"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "just",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story.",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Just like scenes in your favorite movie , you need to have a compilation of scenes that",
+              "tokens": [
+                "Just",
+                "like",
+                "scenes",
+                "in",
+                "your",
+                "favorite",
+                "movie",
+                ",",
+                "you",
+                "need",
+                "to",
+                "have",
+                "a",
+                "compilation",
+                "of",
+                "scenes",
+                "that"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 8,
+              "modal": "NECESSITY_OBLIGATION",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "stitched together tell a greater",
+              "tokens": [
+                "stitched",
+                "together",
+                "tell",
+                "a",
+                "greater"
+              ],
+              "conjunction": "when",
+              "discourse_act": "STATEMENT",
+              "clause_type": "TEMPORAL_ADVERBIAL",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "broader story",
+              "tokens": [
+                "broader",
+                "story"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 18,
+        "source_text": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that over-arching story,",
+        "gloss_sequence": [
+          "WHEN",
+          "COME",
+          "VIDEO",
+          "YOU",
+          "DAY",
+          "RECORD",
+          "GO",
+          "YOU",
+          "SOMETIMES",
+          "KNOW",
+          "THAT",
+          "ALL",
+          "STORY",
+          "NOT"
+        ],
+        "sign_ids": [
+          "when",
+          "come",
+          "video",
+          "you",
+          "day",
+          "record",
+          "go",
+          "you",
+          "sometimes",
+          "know",
+          "that",
+          "all",
+          "story",
+          "not"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "because",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "as",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "on",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "over",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [
+          "NEGATION"
+        ],
+        "isr": {
+          "source_text": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that over-arching story,",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "When it comes to vlogging ,",
+              "tokens": [
+                "When",
+                "it",
+                "comes",
+                "to",
+                "vlogging",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "WH_QUESTION",
+              "clause_type": "MAIN",
+              "subject": "IT",
+              "subject_index": 1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "you're filming as the day is going on , you sometimes don't know that over-arching story ,",
+              "tokens": [
+                "you're",
+                "filming",
+                "as",
+                "the",
+                "day",
+                "is",
+                "going",
+                "on",
+                ",",
+                "you",
+                "sometimes",
+                "don't",
+                "know",
+                "that",
+                "over-arching",
+                "story",
+                ","
+              ],
+              "conjunction": "because",
+              "discourse_act": "STATEMENT",
+              "clause_type": "REASON_CAUSE",
+              "subject": "YOU",
+              "subject_index": 9,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "DAY"
+              ],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "WH_QUESTION"
+        }
+      },
+      {
+        "segment_index": 19,
+        "source_text": "but I bet you do know at least a scene or two ahead.",
+        "gloss_sequence": [
+          "FUTURE",
+          "I",
+          "THINK",
+          "YOU",
+          "KNOW",
+          "LITTLE",
+          "PICTURE",
+          "TWO"
+        ],
+        "sign_ids": [
+          "future",
+          "i",
+          "think",
+          "you",
+          "know",
+          "little",
+          "picture",
+          "two"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "but",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "or",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "but I bet you do know at least a scene or two ahead.",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "but I bet you do know at least a scene",
+              "tokens": [
+                "but",
+                "I",
+                "bet",
+                "you",
+                "do",
+                "know",
+                "at",
+                "least",
+                "a",
+                "scene"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "two ahead",
+              "tokens": [
+                "two",
+                "ahead"
+              ],
+              "conjunction": "or",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 20,
+        "source_text": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,",
+        "gloss_sequence": [
+          "TODAY",
+          "WHAT",
+          "THAT",
+          "MEAN",
+          "GUESS",
+          "I",
+          "KNOW",
+          "TRUE",
+          "WHAT",
+          "I",
+          "I",
+          "KNOW",
+          "THAT",
+          "HOUR",
+          "DO",
+          "NOT"
+        ],
+        "sign_ids": [
+          "today",
+          "what",
+          "that",
+          "mean",
+          "guess",
+          "i",
+          "know",
+          "true",
+          "what",
+          "i",
+          "i",
+          "know",
+          "that",
+          "hour",
+          "do",
+          "not"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "up",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "but",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "an",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "or",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [
+          "NEGATION"
+        ],
+        "isr": {
+          "source_text": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "What that means is maybe I don't know exactly what I'm up to today ,",
+              "tokens": [
+                "What",
+                "that",
+                "means",
+                "is",
+                "maybe",
+                "I",
+                "don't",
+                "know",
+                "exactly",
+                "what",
+                "I'm",
+                "up",
+                "to",
+                "today",
+                ","
+              ],
+              "conjunction": null,
+              "discourse_act": "WH_QUESTION",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 5,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "TODAY"
+              ],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "I do know that in an hour",
+              "tokens": [
+                "I",
+                "do",
+                "know",
+                "that",
+                "in",
+                "an",
+                "hour"
+              ],
+              "conjunction": "but",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 0,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "so ,",
+              "tokens": [
+                "so",
+                ","
+              ],
+              "conjunction": "or",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "WH_QUESTION"
+        }
+      },
+      {
+        "segment_index": 21,
+        "source_text": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again",
+        "gloss_sequence": [
+          "NEXT",
+          "I",
+          "FRIEND",
+          "GO",
+          "GO",
+          "MEET",
+          "I",
+          "BUILD",
+          "PICTURE",
+          "THAT",
+          "AFTER",
+          "THAT",
+          "MORE"
+        ],
+        "sign_ids": [
+          "next",
+          "i",
+          "friend",
+          "go",
+          "go",
+          "meet",
+          "i",
+          "build",
+          "picture",
+          "that",
+          "after",
+          "that",
+          "more"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "up",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "with",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "can",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "around",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "I'm gonna go meet up with a friend",
+              "tokens": [
+                "I'm",
+                "gonna",
+                "go",
+                "meet",
+                "up",
+                "with",
+                "a",
+                "friend"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": "FUTURE_INTENT",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "I can build a scene around that",
+              "tokens": [
+                "I",
+                "can",
+                "build",
+                "a",
+                "scene",
+                "around",
+                "that"
+              ],
+              "conjunction": "so",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 0,
+              "modal": "ABILITY_CAN",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "then after that again",
+              "tokens": [
+                "then",
+                "after",
+                "that",
+                "again"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 22,
+        "source_text": "I might not know what I'm gonna do for the rest of the evening",
+        "gloss_sequence": [
+          "I",
+          "MAY",
+          "KNOW",
+          "WHAT",
+          "I",
+          "REST",
+          "MORNING",
+          "GO",
+          "NOT"
+        ],
+        "sign_ids": [
+          "i",
+          "may",
+          "know",
+          "what",
+          "i",
+          "rest",
+          "morning",
+          "go",
+          "not"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "do",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "for",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [
+          "NEGATION"
+        ],
+        "isr": {
+          "source_text": "I might not know what I'm gonna do for the rest of the evening",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "I might not know what I'm gonna do for the rest of the evening",
+              "tokens": [
+                "I",
+                "might",
+                "not",
+                "know",
+                "what",
+                "I'm",
+                "gonna",
+                "do",
+                "for",
+                "the",
+                "rest",
+                "of",
+                "the",
+                "evening"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 0,
+              "modal": "FUTURE_INTENT",
+              "polarity": "NEGATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [
+                "EVENING"
+              ],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 23,
+        "source_text": "But I do know that I'm hungry so I'm gonna go get some food. That's another scene",
+        "gloss_sequence": [
+          "I",
+          "KNOW",
+          "THAT",
+          "I",
+          "HUNGRY",
+          "I",
+          "HAVE",
+          "FEW",
+          "FOOD",
+          "THAT",
+          "OTHER",
+          "PICTURE",
+          "GO",
+          "GO"
+        ],
+        "sign_ids": [
+          "i",
+          "know",
+          "that",
+          "i",
+          "hungry",
+          "i",
+          "have",
+          "few",
+          "food",
+          "that",
+          "other",
+          "picture",
+          "go",
+          "go"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "but",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "do",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "But I do know that I'm hungry so I'm gonna go get some food. That's another scene",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "But I do know that I'm hungry",
+              "tokens": [
+                "But",
+                "I",
+                "do",
+                "know",
+                "that",
+                "I'm",
+                "hungry"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "I'm gonna go get some food",
+              "tokens": [
+                "I'm",
+                "gonna",
+                "go",
+                "get",
+                "some",
+                "food"
+              ],
+              "conjunction": "so",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": "FUTURE_INTENT",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "That's another scene",
+              "tokens": [
+                "That's",
+                "another",
+                "scene"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 24,
+        "source_text": "So instead of stressing yourself before you start shooting of what is my story",
+        "gloss_sequence": [
+          "BEFORE",
+          "INSTEAD",
+          "NERVOUS",
+          "YOU",
+          "YOU",
+          "START",
+          "RECORD",
+          "WHAT",
+          "MY",
+          "STORY"
+        ],
+        "sign_ids": [
+          "before",
+          "instead",
+          "nervous",
+          "you",
+          "you",
+          "start",
+          "record",
+          "what",
+          "my",
+          "story"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "So instead of stressing yourself before you start shooting of what is my story",
+          "clause_count": 1,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "So instead of stressing yourself before you start shooting of what is my story",
+              "tokens": [
+                "So",
+                "instead",
+                "of",
+                "stressing",
+                "yourself",
+                "before",
+                "you",
+                "start",
+                "shooting",
+                "of",
+                "what",
+                "is",
+                "my",
+                "story"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "YOU",
+              "subject_index": 6,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "INCEPTIVE_START",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": false,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 25,
+        "source_text": "Just allow yourself to live life and think of things seen by scene and also think about how the scenes kind of tie into the overall",
+        "gloss_sequence": [
+          "ALLOW",
+          "YOU",
+          "LIVE",
+          "LIFE",
+          "THINK",
+          "ALL",
+          "PICTURE",
+          "MORE",
+          "THINK",
+          "SEE",
+          "HOW",
+          "PICTURE",
+          "SAME",
+          "JOIN",
+          "ALL"
+        ],
+        "sign_ids": [
+          "allow",
+          "you",
+          "live",
+          "life",
+          "think",
+          "all",
+          "picture",
+          "more",
+          "think",
+          "see",
+          "how",
+          "picture",
+          "same",
+          "join",
+          "all"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "just",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "by",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "of",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "into",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "Just allow yourself to live life and think of things seen by scene and also think about how the scenes kind of tie into the overall",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Just allow yourself to live life",
+              "tokens": [
+                "Just",
+                "allow",
+                "yourself",
+                "to",
+                "live",
+                "life"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "think of things seen by scene",
+              "tokens": [
+                "think",
+                "of",
+                "things",
+                "seen",
+                "by",
+                "scene"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "also think about how the scenes kind of tie into the overall",
+              "tokens": [
+                "also",
+                "think",
+                "about",
+                "how",
+                "the",
+                "scenes",
+                "kind",
+                "of",
+                "tie",
+                "into",
+                "the",
+                "overall"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 26,
+        "source_text": "Feeling that you're trying to deliver so when I'm out shooting and filming things",
+        "gloss_sequence": [
+          "FEEL",
+          "THAT",
+          "YOU",
+          "TRY",
+          "WHEN",
+          "GIVE",
+          "I",
+          "ALL",
+          "RECORD",
+          "RECORD"
+        ],
+        "sign_ids": [
+          "feel",
+          "that",
+          "you",
+          "try",
+          "when",
+          "give",
+          "i",
+          "all",
+          "record",
+          "record"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "so",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "out",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "Feeling that you're trying to deliver so when I'm out shooting and filming things",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Feeling that you're trying to deliver",
+              "tokens": [
+                "Feeling",
+                "that",
+                "you're",
+                "trying",
+                "to",
+                "deliver"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "when I'm out shooting",
+              "tokens": [
+                "when",
+                "I'm",
+                "out",
+                "shooting"
+              ],
+              "conjunction": "so",
+              "discourse_act": "WH_QUESTION",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "filming things",
+              "tokens": [
+                "filming",
+                "things"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 27,
+        "source_text": "I always try and think is this just a shot that I'm getting because it looks cool",
+        "gloss_sequence": [
+          "I",
+          "CONTINUOUS",
+          "TRY",
+          "THINK",
+          "THIS",
+          "PICTURE",
+          "THAT",
+          "I",
+          "COOL",
+          "LOOK",
+          "FINISH"
+        ],
+        "sign_ids": [
+          "i",
+          "continuous",
+          "try",
+          "think",
+          "this",
+          "picture",
+          "that",
+          "i",
+          "cool",
+          "look",
+          "finish"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "just",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "because",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "I always try and think is this just a shot that I'm getting because it looks cool",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "I always try",
+              "tokens": [
+                "I",
+                "always",
+                "try"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "I",
+              "subject_index": 0,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "think is this just a shot that I'm getting",
+              "tokens": [
+                "think",
+                "is",
+                "this",
+                "just",
+                "a",
+                "shot",
+                "that",
+                "I'm",
+                "getting"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "it looks cool",
+              "tokens": [
+                "it",
+                "looks",
+                "cool"
+              ],
+              "conjunction": "because",
+              "discourse_act": "STATEMENT",
+              "clause_type": "REASON_CAUSE",
+              "subject": "IT",
+              "subject_index": 0,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 28,
+        "source_text": "Or is this an actual scene if it's a scene",
+        "gloss_sequence": [
+          "THIS",
+          "REAL",
+          "PICTURE",
+          "PICTURE"
+        ],
+        "sign_ids": [
+          "this",
+          "real",
+          "picture",
+          "picture"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "or",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "is",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "an",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "if",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "Or is this an actual scene if it's a scene",
+          "clause_count": 2,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "Or is this an actual scene",
+              "tokens": [
+                "Or",
+                "is",
+                "this",
+                "an",
+                "actual",
+                "scene"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "it's a scene",
+              "tokens": [
+                "it's",
+                "a",
+                "scene"
+              ],
+              "conjunction": "if",
+              "discourse_act": "STATEMENT",
+              "clause_type": "CONDITIONAL_PROTASIS",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 29,
+        "source_text": "I'll have to build a little bit more around it. Most often it'll also capture some dialogues. I'm talking",
+        "gloss_sequence": [
+          "I",
+          "BUILD",
+          "LITTLE",
+          "BIT",
+          "MORE",
+          "MOST",
+          "USUALLY",
+          "MORE",
+          "HOLD",
+          "FEW",
+          "COMMUNICATION",
+          "NEED",
+          "I",
+          "SAY"
+        ],
+        "sign_ids": [
+          "i",
+          "build",
+          "little",
+          "bit",
+          "more",
+          "most",
+          "usually",
+          "more",
+          "hold",
+          "few",
+          "communication",
+          "need",
+          "i",
+          "say"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "a",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "around",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "it",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "I'll have to build a little bit more around it. Most often it'll also capture some dialogues. I'm talking",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "I'll have to build a little bit more around it",
+              "tokens": [
+                "I'll",
+                "have",
+                "to",
+                "build",
+                "a",
+                "little",
+                "bit",
+                "more",
+                "around",
+                "it"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "IT",
+              "subject_index": 9,
+              "modal": "NECESSITY_OBLIGATION",
+              "polarity": "AFFIRMATIVE",
+              "aspect": "PERFECTIVE_COMPLETED",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "Most often it'll also capture some dialogues",
+              "tokens": [
+                "Most",
+                "often",
+                "it'll",
+                "also",
+                "capture",
+                "some",
+                "dialogues"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "I'm talking",
+              "tokens": [
+                "I'm",
+                "talking"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      },
+      {
+        "segment_index": 30,
+        "source_text": "I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell.",
+        "gloss_sequence": [
+          "I",
+          "SAY",
+          "CLEAR",
+          "CAMERA",
+          "EXPLAIN",
+          "WHAT",
+          "MORE",
+          "GO",
+          "PEOPLE",
+          "TELL",
+          "YOU",
+          "THAT",
+          "RECORD",
+          "YOU",
+          "SHOW",
+          "MORE",
+          "SAY",
+          "LESS",
+          "WANT"
+        ],
+        "sign_ids": [
+          "i",
+          "say",
+          "clear",
+          "camera",
+          "explain",
+          "what",
+          "more",
+          "go",
+          "people",
+          "tell",
+          "you",
+          "that",
+          "record",
+          "you",
+          "show",
+          "more",
+          "say",
+          "less",
+          "want"
+        ],
+        "unknown_terms": [],
+        "grammar_omissions": [
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "to",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "the",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "and",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "on",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "will",
+            "status": "GRAMMAR_OMISSION"
+          },
+          {
+            "token": "in",
+            "status": "GRAMMAR_OMISSION"
+          }
+        ],
+        "non_manual_markers": [],
+        "isr": {
+          "source_text": "I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell.",
+          "clause_count": 3,
+          "clauses": [
+            {
+              "clause_index": 0,
+              "raw_text": "I'll talk straight to the camera",
+              "tokens": [
+                "I'll",
+                "talk",
+                "straight",
+                "to",
+                "the",
+                "camera"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 1,
+              "raw_text": "explain what's going on",
+              "tokens": [
+                "explain",
+                "what's",
+                "going",
+                "on"
+              ],
+              "conjunction": "and",
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": null,
+              "subject_index": -1,
+              "modal": null,
+              "polarity": "AFFIRMATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            },
+            {
+              "clause_index": 2,
+              "raw_text": "A lot of people will tell you that in filmmaking you want to show not tell",
+              "tokens": [
+                "A",
+                "lot",
+                "of",
+                "people",
+                "will",
+                "tell",
+                "you",
+                "that",
+                "in",
+                "filmmaking",
+                "you",
+                "want",
+                "to",
+                "show",
+                "not",
+                "tell"
+              ],
+              "conjunction": null,
+              "discourse_act": "STATEMENT",
+              "clause_type": "MAIN",
+              "subject": "PEOPLE",
+              "subject_index": 3,
+              "modal": "FUTURE_INTENT",
+              "polarity": "NEGATIVE",
+              "aspect": "NEUTRAL",
+              "temporal_items": [],
+              "confidence": 0.95
+            }
+          ],
+          "is_compound": true,
+          "overall_discourse_act": "STATEMENT"
+        }
+      }
+    ]
+  },
+  "combined": {
+    "total_videos": 2,
+    "total_segments": 60,
+    "total_words": 811,
+    "total_playable_signs": 532,
+    "total_unknown_terms": 0,
+    "macro_direct_coverage_pct": 65.6,
+    "macro_meaningful_coverage_pct": 100,
+    "all_invariants_passed": true
+  }
+}

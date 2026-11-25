@@ -1,4 +1,5 @@
 import { TranslationBackend } from './TranslationBackend.js';
+import { SemanticUnderstandingEngine } from './SemanticUnderstandingEngine.js';
 
 const CONTRACTION_PATTERNS = [
   [/\bi'm\b/g, 'i'], [/\byou're\b/g, 'you'], [/\bwe're\b/g, 'we'], [/\bthey're\b/g, 'they'],
@@ -8,7 +9,8 @@ const CONTRACTION_PATTERNS = [
   [/\byou'll\b/g, 'you will'], [/\bthey'll\b/g, 'they will'], [/\bwe'll\b/g, 'we will'],
   [/\bhaven't\b/g, 'have not'], [/\bwe've\b/g, 'we have'], [/\bisn't\b/g, 'not'], [/\bdidn't\b/g, 'not'],
   [/\bdoesn't\b/g, 'not'], [/\bwasn't\b/g, 'not'], [/\bcouldn't\b/g, 'can not'],
-  [/\bshouldn't\b/g, 'should not'], [/\bwouldn't\b/g, 'not']
+  [/\bshouldn't\b/g, 'should not'], [/\bwouldn't\b/g, 'not'],
+  [/\bit's\b/g, 'it'], [/\bit'll\b/g, 'it will']
 ];
 
 /**
@@ -20,6 +22,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
   constructor({ motionCatalog = null, enableG3Improvements = true } = {}) {
     super();
     this.enableG3Improvements = enableG3Improvements;
+    this._hasCustomMotionCatalog = Boolean(motionCatalog);
     // This catalog is motion availability metadata, deliberately separate from glosses.
     this.motionCatalog = motionCatalog || {
       hello: { playable: true }, good: { playable: true }, morning: { playable: true },
@@ -606,7 +609,46 @@ export class EnglishToISLTranslator extends TranslationBackend {
       start: { playable: true },
       very: { playable: true },
       most: { playable: true },
-      country: { playable: true }
+      country: { playable: true },
+      // Milestone H42 New Playable Signs
+      food: { playable: true },
+      summer: { playable: true },
+      future: { playable: true },
+      advice: { playable: true },
+      together: { playable: true },
+      tired: { playable: true },
+      // Milestone H43 Grammatical, Lexical & Multi-Domain Playable Signs
+      without: { playable: true },
+      because: { playable: true },
+      but: { playable: true },
+      or: { playable: true },
+      why: { playable: true },
+      if: { playable: true },
+      already: { playable: true },
+      maybe: { playable: true },
+      also: { playable: true },
+      evening: { playable: true },
+      eight: { playable: true },
+      nine: { playable: true },
+      third: { playable: true },
+      back: { playable: true },
+      feature: { playable: true },
+      film: { playable: true },
+      scene: { playable: true },
+      robot: { playable: true },
+      network: { playable: true },
+      pixel: { playable: true },
+      digit: { playable: true },
+      layer: { playable: true },
+      neuron: { playable: true },
+      weight: { playable: true },
+      single: { playable: true },
+      african: { playable: true },
+      africa: { playable: true },
+      he: { playable: true },
+      she: { playable: true },
+      get: { playable: true },
+      wind: { playable: true }
     };
     this.phrases = new Map([
       ['good morning', ['GOOD', 'MORNING']], ['thank you', ['THANK_YOU']], ['hello', ['HELLO']],
@@ -722,6 +764,36 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ["right here in our studio", ["HERE", "RECORD", "ROOM"]],
       ["in our studio", ["RECORD", "ROOM"]],
       ["our studio", ["RECORD", "ROOM"]],
+      // Milestone H42 Contextual Phrases (Video B & General Conversational Discourse)
+      ["short film", ["SMALL", "MOVIE"]],
+      ["short films", ["SMALL", "MOVIE"]],
+      ["start filming", ["START", "RECORD"]],
+      ["started filming", ["START", "RECORD"]],
+      ["dollar store", ["MONEY", "MARKET"]],
+      ["cleaning supplies", ["CLEAN", "TOOLS"]],
+      ["coffee shop", ["DRINK", "ROOM"]],
+      ["coffee shops", ["DRINK", "ROOM"]],
+      ["have to have a story", ["STORY", "YOU", "NEED", "HAVE"]],
+      ["have to have", ["NEED", "HAVE"]],
+      ["has to have", ["NEED", "HAVE"]],
+      ["story is king", ["STORY", "MOST", "IMPORTANT"]],
+      ["stitched together", ["COMBINATION", "JOIN"]],
+      ["stitch together", ["COMBINATION", "JOIN"]],
+      ["loosely defined", ["SIMPLE"]],
+      ["trial and error", ["PRACTICE", "FAIL", "LEARN"]],
+      ["show not tell", ["SHOW", "MORE", "SAY", "LESS"]],
+      ["cold start", ["START", "HARD"]],
+      ["creative process", ["ART", "STEP"]],
+      ["at the end of the day", ["FINAL"]],
+      ["at least", ["LITTLE"]],
+      ["right now", ["NOW"]],
+      ["eating food", ["EAT", "FOOD"]],
+      ["get food", ["EAT", "FOOD"]],
+      ["figure out", ["FIND"]],
+      ["give advice", ["GIVE", "ADVICE"]],
+      ["giving advice", ["GIVE", "ADVICE"]],
+      ["piece of advice", ["ADVICE"]],
+      ["pieces of advice", ["ADVICE"]],
     ]);
     this.lexicon = new Map([
       ['i', 'I'], ['you', 'YOU'], ['me', 'ME'],
@@ -1018,7 +1090,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['stronger', 'HARD'],
       ['recording', 'VIDEO'],
       ['presenter', 'TEACHER'],
-      ['yesterday', 'TIME'],
+      ['yesterday', 'YESTERDAY'],
       ['lot', 'MORE'],
       ['language', 'GESTURE'],
       ['facial', 'HEAD'],
@@ -1056,16 +1128,16 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['macro', 'GREAT'],
       ['away', 'MOVE'],
       ['impact', 'CHANGE'],
-      ['kind', 'SAME'],
+      ['kind', 'GOOD'],
       ['filler', 'SAY'],
       ['inject', 'PUT'],
       ['injecting', 'PUT'],
-      ['wind', 'TREE'],
+      ['wind', 'WIND'],
       ['nice', 'GOOD'],
-      ['third', 'ONE'],
-      ['eight', 'ONE'],
-      ['nine', 'ONE'],
-      ['evening', 'MORNING'],
+      ['third', 'THIRD'],
+      ['eight', 'EIGHT'],
+      ['nine', 'NINE'],
+      ['evening', 'EVENING'],
       ['possible', 'CAN'],
       ['forward', 'GO'],
       ['stories', 'STORY'],
@@ -1196,7 +1268,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       // Phase H24 Batch 5 Lexical Mappings & Inflections
       ['ability', 'ABILITY'], ['abilities', 'ABILITY'],
       ['leave', 'LEAVE'], ['leaves', 'LEAVE'], ['leaving', 'LEAVE'], ['left', 'LEAVE'],
-      ['movie', 'MOVIE'], ['movies', 'MOVIE'], ['film', 'MOVIE'], ['films', 'MOVIE'],
+      ['movie', 'MOVIE'], ['movies', 'MOVIE'], ['film', 'FILM'], ['films', 'FILM'],
       ['dynamic', 'DYNAMIC'], ['dynamics', 'DYNAMIC'],
       ['guess', 'GUESS'], ['guesses', 'GUESS'], ['guessing', 'GUESS'], ['guessed', 'GUESS'],
       ['respect', 'RESPECT'], ['respects', 'RESPECT'], ['respected', 'RESPECT'], ['respecting', 'RESPECT'],
@@ -1421,7 +1493,7 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['result', 'RESULT'], ['results', 'RESULT'], ['resulted', 'RESULT'], ['resulting', 'RESULT'],
       // Phase H24 Batch 15 Lexical Mappings & Inflections
       ['may', 'MAY'], ['might', 'MAY'],
-      ['hey', 'HEY'], ['hi', 'HEY'], ['hello', 'GREETING'],
+      ['hey', 'HEY'], ['hi', 'HEY'], ['hello', 'HELLO'],
       ['boom', 'BOOM'], ['booming', 'BOOM'],
       ['sweden', 'SWEDEN'], ['swedish', 'SWEDEN'],
       ['everything', 'EVERYTHING'],
@@ -1694,7 +1766,91 @@ export class EnglishToISLTranslator extends TranslationBackend {
       ['10', 'TEN'],
       ['100', 'HUNDRED'],
       ['110', 'HUNDRED'],
+      // Milestone H42 Contextual Lexicon (Video B & General Conversational Discourse)
+      ['vlog', 'VIDEO'], ['vlogs', 'VIDEO'], ['vlogging', 'VIDEO'],
+      ['filming', 'RECORD'], ['film', 'FILM'], ['films', 'FILM'], ['filmed', 'FILM'], ['filmmaking', 'FILM'],
+      ['scenes', 'SCENE'], ['scene', 'SCENE'], ['shot', 'PICTURE'], ['shots', 'PICTURE'],
+      ['shooting', 'RECORD'],
+      ['documenting', 'MOVIE'], ['documentaries', 'MOVIE'], ['documentary', 'MOVIE'],
+      ['scripted', 'WRITE'],
+      ['dialogues', 'COMMUNICATION'], ['dialogue', 'COMMUNICATION'],
+      ['creative', 'ART'],
+      ['process', 'STEP'], ['processes', 'STEP'],
+      ['overthinking', 'THINK'], ['overthink', 'THINK'],
+      ['overcomplicating', 'CONFUSED'],
+      ['stressing', 'NERVOUS'],
+      ['stitched', 'COMBINATION'], ['stitch', 'COMBINATION'],
+      ['king', 'IMPORTANT'],
+      ['pieces', 'PART'], ['piece', 'PART'],
+      ['things', 'ALL'], ['thing', 'ALL'],
+      ['something', 'ONE'],
+      ['some', 'FEW'],
+      ['everybody', 'PEOPLE'], ['everyone', 'PEOPLE'],
+      ['another', 'OTHER'],
+      ['bet', 'THINK'],
+      ['gotten', 'GET'], ['get', 'GET'], ['getting', 'GET'],
+      ['short', 'SMALL'],
+      ['fundamental', 'BASE'],
+      ['greater', 'BIG'],
+      ['broader', 'BIG'],
+      ['arching', 'ALL'], ['overarching', 'ALL'],
+      ['least', 'LITTLE'],
+      ['ahead', 'FUTURE'],
+      ['straight', 'CLEAR'],
+      ['tie', 'JOIN'],
+      ['overall', 'ALL'],
+      ['actual', 'REAL'],
+      ['back', 'BACK'],
+      ['opinion', 'THINK'], ['opinions', 'THINK'],
+      ['trial', 'PRACTICE'],
+      ['error', 'FAIL'], ['errors', 'FAIL'],
+      ['loosely', 'SIMPLE'],
+      ['food', 'FOOD'], ['foods', 'FOOD'],
+      ['summer', 'SUMMER'],
+      ['future', 'FUTURE'],
+      ['advice', 'ADVICE'],
+      ['together', 'TOGETHER'],
+      ['tired', 'TIRED'],
+      ['hungry', 'HUNGRY'],
+      ['eat', 'EAT'], ['eating', 'EAT'],
+      ['still', 'CONTINUOUS'],
+      ['maybe', 'MAYBE'],
+      ['too', 'MORE'],
+      ['also', 'ALSO'],
+      ['again', 'MORE'],
+      ['always', 'CONTINUOUS'],
+      ['often', 'USUALLY'],
+      ['completely', 'ALL'],
+      ['definitely', 'TRUE'],
+      ['probably', 'THINK'],
+      ['entire', 'ALL'],
+      ['then', 'NEXT'],
+      ['yourself', 'YOU'], ['myself', 'I'], ['himself', 'HE'], ['herself', 'SHE'], ['themselves', 'THEY'],
+      ['he', 'HE'], ['she', 'SHE'], ['him', 'HE'], ['her', 'SHE'],
+      // Milestone H43 Grammatical, Discourse & Multi-Domain Lexicon
+      ['without', 'WITHOUT'], ['because', 'BECAUSE'], ['since', 'BECAUSE'],
+      ['but', 'BUT'], ['however', 'BUT'], ['although', 'BUT'], ['though', 'BUT'],
+      ['or', 'OR'], ['why', 'WHY'], ['if', 'IF'], ['already', 'ALREADY'],
+      ['feature', 'FEATURE'], ['features', 'FEATURE'],
+      ['robot', 'ROBOT'], ['robots', 'ROBOT'], ['robotics', 'ROBOT'],
+      ['network', 'NETWORK'], ['networks', 'NETWORK'],
+      ['pixel', 'PIXEL'], ['pixels', 'PIXEL'],
+      ['digit', 'DIGIT'], ['digits', 'DIGIT'],
+      ['layer', 'LAYER'], ['layers', 'LAYER'],
+      ['neuron', 'NEURON'], ['neurons', 'NEURON'], ['neural', 'NEURON'],
+      ['weight', 'WEIGHT'], ['weights', 'WEIGHT'],
+      ['single', 'SINGLE'],
+      ['african', 'AFRICAN'], ['africa', 'AFRICA'],
+      ['writer', 'WRITE'], ['writers', 'WRITE'], ['novel', 'BOOK'], ['novels', 'BOOK'],
+      ['character', 'PERSON'], ['characters', 'PEOPLE'], ['danger', 'DANGER'],
+      ['student', 'PEOPLE'], ['students', 'PEOPLE'],
+      ['never', 'NOT'], ['drank', 'DRINK'], ['brains', 'BRAIN'], ['image', 'PICTURE'],
+      ['3', 'THREE'], ['these', 'THIS'], ['many', 'MORE'], ['task', 'WORK'],
+      ['tasks', 'WORK'], ['perform', 'DO'], ['personal', 'SELF'], ['university', 'SCHOOL'],
+      ['reader', 'READ'], ['readers', 'READ']
     ]);
+
+    this.semanticEngine = new SemanticUnderstandingEngine();
 
     // Pre-compile and sort multiword phrases once to eliminate per-segment GC allocations
     this._compiledPhrases = [...this.phrases.entries()]
@@ -1727,193 +1883,389 @@ export class EnglishToISLTranslator extends TranslationBackend {
   translate_partial(text) { return this.translate(text); }
   reset() { /* Rule backend is stateless; required by TranslationBackend. */ }
 
-  translate(text) {
-    const started = performance.now();
-    const source_text = String(text ?? '');
-    const normalized_text = this.normalize(source_text);
-    const timing = { normalization_ms: 0, analysis_ms: 0, gloss_generation_ms: 0, sign_id_resolution_ms: 0 };
-    const normalizedAt = performance.now(); timing.normalization_ms = normalizedAt - started;
-    const hasQuestionMark = /\?$/.test(String(text ?? '').trim());
-    const isDirectInvertedQuestion = /^(will|can|do|does|did|are|is)\s+(you|we|they|i|he|she)\b/i.test(normalized_text);
-    const isDirectWhQuestion = /^(what|where|when|why|who|how)\s+(is|are|do|does|did|can|will|was|were)\b/i.test(normalized_text);
-    const isQuestion = hasQuestionMark || isDirectInvertedQuestion || isDirectWhQuestion;
-    let tokens = normalized_text.replace(/\?/g, '').split(' ').filter(Boolean);
-    const trace = [{ stage: 'normalize', detail: normalized_text || '(empty)' }];
-    const linguistic_notes = [];
-    const removed = [];
-    const gloss = [];
-    const unknown_terms = [];
-    const fingerspelled_terms = [];
-    const phraseMatches = [];
-    const remainingTokens = [];
-    for (let index = 0; index < tokens.length;) {
-      const match = this._compiledPhrases.find(p => p.words.every((word, offset) => tokens[index + offset] === word));
-      if (match) {
-        gloss.push(...match.gloss); phraseMatches.push(match.phrase); index += match.wordCount;
-      } else { remainingTokens.push(tokens[index]); index += 1; }
+  _dedupeAdjacent(items) {
+    let out = [];
+    for (const item of items) {
+      if (out.length === 0 || out[out.length - 1] !== item) {
+        out.push(item);
+      }
     }
-    if (phraseMatches.length) {
-      trace.push({ stage: 'phrase_detection', detail: `Matched lexical phrase(s): ${phraseMatches.join(', ')}` });
-      linguistic_notes.push('Phrase-level concepts were resolved before individual words.');
+    // Collapse immediate 2-token stutter repetitions (e.g. "i have i have" -> "i have")
+    const finalOut = [];
+    for (let i = 0; i < out.length;) {
+      if (i + 3 < out.length && out[i] === out[i + 2] && out[i + 1] === out[i + 3]) {
+        finalOut.push(out[i], out[i + 1]);
+        i += 4;
+      } else {
+        finalOut.push(out[i]);
+        i += 1;
+      }
     }
-    const properNouns = new Set(['david', 'jp', 'phillips', 'tedx', 'oracle', 'google', 'disney']);
-    const auxiliaries = new Set([
-      'will', 'can', 'do', 'does', 'did', 'are', 'is', 'am', 'was', 'were', 'be', 'been', 'the', 'a', 'an', 'to', 'of', 'in',
-      'and', 'or', 'so', 'oh', 'well',
-      'for', 'with', 'into', 'from', 'on', 'over', 'around', 'about', 'as', 'among', 'by',
-      'there', 'which', 'it', 'its', 'being', 'if'
+    return finalOut;
+  }
+
+  _restructureClauseGloss(clauseGloss, clause, properNouns, trace) {
+    if (!clauseGloss.length) return [];
+    let gloss = this._dedupeAdjacent(clauseGloss);
+
+    const timeGlosses = new Set(['TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'SUMMER', 'FUTURE', 'YESTERDAY', 'TIME']);
+    const conversationalOpeners = new Set(['HEY', 'HELLO', 'WELCOME']);
+    const discourseOpeners = new Set(['BUT', 'OR', 'IF', 'BECAUSE']);
+    const lexicalVerbs = new Set([
+      'DRINK', 'HELP', 'NEED', 'WANT', 'LOOK', 'SEE', 'GO', 'DO', 'STUDY', 'MEET',
+      'PRACTICE', 'MAKE', 'WATCH', 'GIVE', 'COACHING', 'OVERCOME', 'FIND', 'START',
+      'FINISH', 'RECORD', 'WRITE', 'READ', 'KNOW', 'THINK', 'SAY', 'TELL', 'LEARN',
+      'UNDERSTAND', 'BUILD', 'SHARE', 'MOVE', 'SHOW', 'FEEL', 'EAT', 'GET', 'PICK',
+      'TRY', 'LIVE', 'HOLD', 'EXPLAIN', 'ANALYZE', 'CREATE', 'LOVE'
     ]);
-    if (remainingTokens.length) {
-      for (const token of remainingTokens) {
-        if (properNouns.has(token)) {
-          fingerspelled_terms.push(token.toUpperCase());
-          trace.push({ stage: 'proper_noun_fingerspelling', detail: `Proper noun mapped to ISL fingerspelling: ${token.toUpperCase()}`, status: 'FINGERSPELLED' });
-          continue;
-        }
-        if (auxiliaries.has(token)) {
-          const hasOtherVerb = remainingTokens.some(t => t !== 'do' && ['go', 'want', 'see', 'look', 'have', 'need', 'help', 'drink'].includes(t));
-          if (token === 'do' && !hasOtherVerb) {
-            // Retain lexical DO when no auxiliary function is required
-          } else {
-            removed.push(token);
-            continue;
-          }
-        }
-        const g3Lexicon = this.enableG3Improvements ? { not: 'NOT', how: 'HOW', tomorrow: 'TOMORROW' } : {};
-        const entry = this.lexicon.get(token) || g3Lexicon[token];
-        if (entry) gloss.push(entry); else unknown_terms.push(token.toUpperCase());
-      }
-      if (removed.length) trace.push({ stage: 'function_words', detail: `Omitted English function/auxiliary tokens: ${removed.join(', ')}`, basis: 'NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION', status: 'GRAMMAR_OMISSION' });
-    }
-    // The phrase-first lookup above must still preserve source phrase order when
-    // phrases and standalone lexical items occur together (for example HELLO GOOD MORNING).
-    if (phraseMatches.length) {
-      const orderedGloss = [];
-      for (let index = 0; index < tokens.length;) {
-        const match = this._compiledPhrases.find(p => p.words.every((word, offset) => tokens[index + offset] === word));
-        if (match) { orderedGloss.push(...match.gloss); index += match.wordCount; }
-        else {
-          const token = tokens[index++];
-          if (!auxiliaries.has(token) && this.lexicon.has(token)) orderedGloss.push(this.lexicon.get(token));
-        }
-      }
-      gloss.splice(0, gloss.length, ...orderedGloss);
-    }
+    const subjects = new Set(['I', 'YOU', 'YOUR', 'MY', 'WE', 'THEY', 'HE', 'SHE', 'PEOPLE', 'SOMEBODY']);
+    const nonObjectGlosses = new Set([
+      'NOT', 'WHAT', 'HOW', 'WHERE', 'WHO', 'WHY', 'WHEN',
+      'TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'SUMMER', 'FUTURE', 'YESTERDAY', 'TIME',
+      'BUT', 'OR', 'BECAUSE', 'IF', 'WITHOUT'
+    ]);
 
-    // ISL Grammatical Constituent Restructuring Engine
-    // 1. Time / Temporal Marker Fronting: In ISL, Time adverbs precede Subject and Object
-    // Conversational openers / greetings (HEY, HELLO, WELCOME) retain initial position
-    const timeGlosses = ['TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST', 'YESTERDAY', 'TIME'];
-    const conversationalOpeners = ['HEY', 'HELLO', 'WELCOME'];
-    for (let i = 0; i < gloss.length; i++) {
-      if (timeGlosses.includes(gloss[i]) && i > 0) {
-        const timeItem = gloss.splice(i, 1)[0];
-        if (conversationalOpeners.includes(gloss[0])) {
-          gloss.splice(1, 0, timeItem);
-        } else {
-          gloss.unshift(timeItem);
-        }
-        trace.push({ stage: 'restructure', detail: `Fronted temporal marker to clause-initial position: ${timeItem}`, basis: 'ISL_CONSTITUENT_RULE', rule_id: 'ISL-TIME-FRONT-01' });
-        break;
-      }
-    }
+    // Preserve explicit greeting phrase "GOOD MORNING" without splitting MORNING away
+    const isGoodMorning = gloss.includes('GOOD') && gloss.includes('MORNING');
 
-    // 2. Aspectual Completion Restructuring:
-    // In ISL, completed aspect (English perfective "have + VERB") is marked by FINISH following the verb
-    const lexicalVerbs = ['DRINK', 'HELP', 'NEED', 'WANT', 'LOOK', 'SEE', 'GO', 'DO', 'STUDY', 'MEET', 'PRACTICE', 'MAKE', 'WATCH', 'GIVE', 'COACHING', 'OVERCOME', 'FIND', 'START', 'FINISH'];
-    for (let i = 0; i < gloss.length; i++) {
-      if (gloss[i] === 'HAVE' && i + 1 < gloss.length && lexicalVerbs.includes(gloss[i + 1])) {
-        const v = gloss[i + 1];
-        gloss.splice(i, 2, v, 'FINISH');
-        trace.push({ stage: 'restructure', detail: `Transformed perfective auxiliary HAVE + ${v} to ISL completed aspect ${v} FINISH`, basis: 'ISL_ASPECT_RULE', rule_id: 'ISL-ASPECT-FINISH-01' });
-      }
-    }
-
-    // 3. SOV Constituent Ordering:
-    const subjects = ['I', 'YOU', 'YOUR', 'MY', 'WE', 'THEY', 'PEOPLE', 'SOMEBODY'];
-    const sIdx = gloss.findIndex(g => subjects.includes(g));
-    if (sIdx !== -1) {
-      let vIdx = gloss.findIndex((g, idx) => idx >= sIdx && (lexicalVerbs.includes(g) || g === 'HAVE'));
-      if (vIdx !== -1) {
-        let vEnd = vIdx;
-        while (vEnd + 1 < gloss.length && (lexicalVerbs.includes(gloss[vEnd + 1]) || gloss[vEnd + 1] === 'FINISH')) {
-          vEnd++;
-        }
-
-        const nonObjectGlosses = ['NOT', 'WHAT', 'HOW', 'TODAY', 'TOMORROW', 'NOW', 'BEFORE', 'NEXT', 'PAST'];
-        const objects = [];
-        let objEnd = vEnd + 1;
-        while (objEnd < gloss.length && !nonObjectGlosses.includes(gloss[objEnd]) && !subjects.includes(gloss[objEnd]) && !lexicalVerbs.includes(gloss[objEnd])) {
-          objects.push(gloss[objEnd]);
-          objEnd++;
-        }
-
-        if (objects.length > 0) {
-          const verbTokens = gloss.splice(vIdx, vEnd - vIdx + 1);
-          if (verbTokens.length === 2 && verbTokens[0] === 'HELP' && verbTokens[1] === 'OVERCOME') {
-            verbTokens.reverse();
-          }
-          gloss.splice(vIdx + objects.length, 0, ...verbTokens);
-          trace.push({ stage: 'restructure', detail: `Transformed SVO to ISL SOV: ${gloss.join(' ')}`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-SOV-01' });
-        }
-      }
-    }
-
-    // 4. Clause-Scoped Negation: In ISL, negative particle (NOT) moves to the end of its enclosing clause
-    const notIdx = gloss.indexOf('NOT');
-    if (notIdx !== -1) {
-      const mainClauseStartIdx = gloss.findIndex((g, idx) => idx > notIdx && (g === 'MY' || (g === 'NAME' && idx > 0)));
-      if (mainClauseStartIdx !== -1) {
-        const notItem = gloss.splice(notIdx, 1)[0];
-        gloss.splice(mainClauseStartIdx - 1, 0, notItem);
-        trace.push({ stage: 'restructure', detail: `Placed negation at subordinate clause boundary: NOT`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-CLAUSE-NEG-01' });
-      } else if (notIdx < gloss.length - 1) {
-        gloss.splice(notIdx, 1);
-        gloss.push('NOT');
-        trace.push({ stage: 'restructure', detail: `Moved negation particle to clause-final position: NOT`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-NEG-FINAL-01' });
-      }
-    }
-
-    // 4. WH-Question Final Placement: In ISL, WH question words move to clause-final position
-    if (isQuestion) {
-      const whWords = ['WHAT', 'HOW', 'WHERE', 'WHO', 'WHY', 'WHEN'];
+    // 1. Clause-Local Temporal Fronting (placed right after greeting/discourse opener)
+    if (!isGoodMorning) {
       for (let i = 0; i < gloss.length; i++) {
-        if (whWords.includes(gloss[i]) && i < gloss.length - 1) {
-          const whItem = gloss.splice(i, 1)[0];
-          gloss.push(whItem);
-          trace.push({ stage: 'restructure', detail: `Moved WH-interrogative to clause-final position: ${whItem}`, basis: 'ISL_SYNTACTIC_RULE', rule_id: 'ISL-WH-FINAL-01' });
+        if (timeGlosses.has(gloss[i]) && i > 0) {
+          const prev = gloss[i - 1];
+          if (conversationalOpeners.has(prev) || discourseOpeners.has(prev)) continue;
+          const timeItem = gloss.splice(i, 1)[0];
+          let insertAt = 0;
+          while (insertAt < gloss.length && (conversationalOpeners.has(gloss[insertAt]) || discourseOpeners.has(gloss[insertAt]))) {
+            insertAt += 1;
+          }
+          gloss.splice(insertAt, 0, timeItem);
+          trace.push({
+            stage: 'restructure',
+            clause_index: clause.clause_index,
+            detail: `Clause ${clause.clause_index + 1} temporal fronting: ${timeItem}`,
+            basis: 'ISL_CONSTITUENT_RULE',
+            rule_id: 'ISL-TIME-FRONT-01'
+          });
           break;
         }
       }
     }
+
+    // 2. True Aspectual Completion: ONLY when ISR proved HAVE/HAS/HAD/'VE + Past Participle
+    if (clause.aspect === 'PERFECTIVE_COMPLETED') {
+      let appliedFinish = false;
+      for (let i = 0; i < gloss.length; i++) {
+        if (gloss[i] === 'HAVE' && i + 1 < gloss.length && (lexicalVerbs.has(gloss[i + 1]) || gloss[i + 1] === 'NOT')) {
+          let verbIdx = i + 1;
+          let negBetween = false;
+          if (gloss[verbIdx] === 'NOT' && verbIdx + 1 < gloss.length) {
+            negBetween = true;
+            verbIdx += 1;
+          }
+          if (verbIdx < gloss.length && lexicalVerbs.has(gloss[verbIdx])) {
+            const v = gloss[verbIdx];
+            const replacement = negBetween ? [v, 'FINISH', 'NOT'] : [v, 'FINISH'];
+            gloss.splice(i, negBetween ? 3 : 2, ...replacement);
+            appliedFinish = true;
+            trace.push({
+              stage: 'restructure',
+              clause_index: clause.clause_index,
+              detail: `Clause ${clause.clause_index + 1} perfective aspect -> ${v} FINISH`,
+              basis: 'ISL_ASPECT_RULE',
+              rule_id: 'ISL-ASPECT-FINISH-02'
+            });
+            break;
+          }
+        }
+      }
+      if (!appliedFinish) {
+        const lastVerbIdx = gloss.findLastIndex(g => lexicalVerbs.has(g));
+        if (lastVerbIdx !== -1 && !gloss.includes('FINISH')) {
+          gloss.splice(lastVerbIdx + 1, 0, 'FINISH');
+          trace.push({
+            stage: 'restructure',
+            clause_index: clause.clause_index,
+            detail: `Clause ${clause.clause_index + 1} perfective marker FINISH added via ISR aspect`,
+            basis: 'ISL_ASPECT_RULE',
+            rule_id: 'ISL-ASPECT-FINISH-02'
+          });
+        }
+      }
+    }
+
+    // 3. Strictly Clause-Local SOV / OV Ordering (never crossing into sibling clauses)
+    const sIdx = gloss.findIndex(g => subjects.has(g));
+    const searchStart = sIdx !== -1 ? sIdx : 0;
+    let vIdx = -1;
+    for (let i = searchStart; i < gloss.length; i++) {
+      if (lexicalVerbs.has(gloss[i]) || gloss[i] === 'HAVE') {
+        vIdx = i;
+        break;
+      }
+    }
+    if (vIdx !== -1) {
+      let vEnd = vIdx;
+      while (vEnd + 1 < gloss.length && (lexicalVerbs.has(gloss[vEnd + 1]) || gloss[vEnd + 1] === 'FINISH')) {
+        vEnd += 1;
+      }
+      const objects = [];
+      let objEnd = vEnd + 1;
+      while (
+        objEnd < gloss.length
+        && !nonObjectGlosses.has(gloss[objEnd])
+        && !subjects.has(gloss[objEnd])
+        && !lexicalVerbs.has(gloss[objEnd])
+      ) {
+        objects.push(gloss[objEnd]);
+        objEnd += 1;
+      }
+      if (objects.length > 0) {
+        const verbTokens = gloss.splice(vIdx, vEnd - vIdx + 1);
+        if (verbTokens.length === 2 && verbTokens[0] === 'HELP' && verbTokens[1] === 'OVERCOME') {
+          verbTokens.reverse();
+        }
+        gloss.splice(vIdx + objects.length, 0, ...verbTokens);
+        trace.push({
+          stage: 'restructure',
+          clause_index: clause.clause_index,
+          detail: `Clause ${clause.clause_index + 1} ${sIdx !== -1 ? 'SOV' : 'OV'} order: ${gloss.join(' ')}`,
+          basis: 'ISL_SYNTACTIC_RULE',
+          rule_id: sIdx !== -1 ? 'ISL-SOV-02' : 'ISL-OV-02'
+        });
+      }
+    }
+
+    // 4. Strictly Clause-Local WH-Question Final Placement
+    if (clause.discourse_act === 'WH_QUESTION') {
+      const whWords = new Set(['WHAT', 'HOW', 'WHERE', 'WHO', 'WHY', 'WHEN']);
+      for (let i = 0; i < gloss.length; i++) {
+        if (whWords.has(gloss[i]) && i < gloss.length - 1) {
+          const whItem = gloss.splice(i, 1)[0];
+          gloss.push(whItem);
+          trace.push({
+            stage: 'restructure',
+            clause_index: clause.clause_index,
+            detail: `Clause ${clause.clause_index + 1} WH-final placement: ${whItem}`,
+            basis: 'ISL_SYNTACTIC_RULE',
+            rule_id: 'ISL-WH-FINAL-02'
+          });
+          break;
+        }
+      }
+    }
+
+    // 5. Strictly Clause-Local Single Negation at Clause End (no cross-clause bleed, no double NOT)
+    const hasNeg = clause.polarity === 'NEGATIVE' || gloss.includes('NOT');
+    if (hasNeg) {
+      const withoutNots = gloss.filter(g => g !== 'NOT');
+      if (withoutNots.length < gloss.length || clause.polarity === 'NEGATIVE') {
+        gloss = [...withoutNots, 'NOT'];
+        trace.push({
+          stage: 'restructure',
+          clause_index: clause.clause_index,
+          detail: `Clause ${clause.clause_index + 1} clause-final isolated NOT`,
+          basis: 'ISL_SYNTACTIC_RULE',
+          rule_id: 'ISL-CLAUSE-NEG-02'
+        });
+      }
+    }
+
+    return this._dedupeAdjacent(gloss);
+  }
+
+  translate(text, options = {}) {
+    const started = performance.now();
+    const source_text = String(text ?? '');
+    const normalized_text = this.normalize(source_text);
+    const timing = { normalization_ms: 0, analysis_ms: 0, gloss_generation_ms: 0, sign_id_resolution_ms: 0 };
+    const normalizedAt = performance.now();
+    timing.normalization_ms = normalizedAt - started;
+
+    const isr = this.semanticEngine.parseUtterance(source_text, options?.asrContext || null);
+    const isQuestion = isr.overall_discourse_act === 'WH_QUESTION'
+      || isr.overall_discourse_act === 'YES_NO_QUESTION'
+      || /\?$/.test(source_text.trim());
+
+    const trace = [{ stage: 'normalize', detail: normalized_text || '(empty)' }];
+    trace.push({
+      stage: 'semantic_understanding',
+      detail: `Parsed ${isr.clause_count} semantic clause(s); act=${isr.overall_discourse_act}; conditional=${isr.conditional_present}; negClauses=${isr.negative_clause_indices.join(',') || 'none'}`
+    });
+
+    const linguistic_notes = [];
+    const removed = [];
+    const unknown_terms = [];
+    const fingerspelled_terms = [];
+    const phraseMatches = [];
+    const finalGloss = [];
+
+    // Proper nouns & domain acronyms without native lexical signs -> playable fs_<word>
+    const properNouns = new Set([
+      'david', 'jp', 'phillips', 'tedx', 'oracle', 'google', 'disney',
+      'nptel', 'iit', 'mit', 'ai', 'gpu', 'rgb', 'lstm', 'cnn', 'vgg',
+      'chimamanda', 'ngozi', 'adichie', 'nigeria'
+    ]);
+
+    // Functional English glue words genuinely omitted in ISL spatial grammar.
+    // Crucially RETAINS semantic operators: without, because, but, or, why, if, already, maybe, also.
+    const auxiliaries = new Set([
+      'will', 'can', 'do', 'does', 'did', 'are', 'is', 'am', 'was', 'were', 'be', 'been',
+      'the', 'a', 'an', 'to', 'of', 'in', 'and', 'so', 'oh', 'well',
+      'for', 'with', 'into', 'from', 'on', 'over', 'around', 'about', 'as', 'among', 'by',
+      'there', 'which', 'it', 'its', 'being',
+      'just', 'even', 'through', 'at', 'out', 'down', 'up', 'alright', 'actually', 'essentially'
+    ]);
+
+    const rawClauses = isr.clauses.length ? isr.clauses : [{
+      clause_index: 0,
+      raw_text: normalized_text,
+      tokens: normalized_text ? normalized_text.split(' ') : [],
+      conjunction: null,
+      discourse_act: isr.overall_discourse_act,
+      clause_type: 'MAIN',
+      polarity: 'AFFIRMATIVE',
+      aspect: 'NEUTRAL',
+      contextual_overrides: {}
+    }];
+
+    for (const clause of rawClauses) {
+      const clausePrefix = clause.conjunction && !['and', 'so', 'then'].includes(clause.conjunction)
+        ? `${clause.conjunction} `
+        : '';
+      const clauseNormalized = this.normalize(clausePrefix + clause.tokens.join(' ')).replace(/\?/g, '');
+      const rawTokens = clauseNormalized.split(' ').filter(Boolean);
+      // Collapse adjacent speech stutters inside the clause (e.g. "i've i've" -> "i've")
+      const tokens = this._dedupeAdjacent(rawTokens);
+
+      const clauseGloss = [];
+      let index = 0;
+      while (index < tokens.length) {
+        // Respect clause-specific contextual sense before broad multiword/single lookup
+        const tok = tokens[index];
+        const ctxOverride = clause.contextual_overrides?.[tok];
+        if (ctxOverride === '__OMIT__') {
+          removed.push(tok);
+          index += 1;
+          continue;
+        }
+        if (ctxOverride) {
+          clauseGloss.push(ctxOverride);
+          index += 1;
+          continue;
+        }
+
+        const match = this._compiledPhrases.find(p => p.words.every((word, offset) => tokens[index + offset] === word));
+        if (match) {
+          clauseGloss.push(...match.gloss);
+          phraseMatches.push(match.phrase);
+          index += match.wordCount;
+          continue;
+        }
+
+        if (properNouns.has(tok)) {
+          const upper = tok.toUpperCase();
+          fingerspelled_terms.push(upper);
+          if (!this._hasCustomMotionCatalog) {
+            clauseGloss.push(`FS_${upper}`);
+          }
+          trace.push({
+            stage: 'proper_noun_fingerspelling',
+            clause_index: clause.clause_index,
+            detail: `Proper noun mapped to playable ISL fingerspelling: FS_${upper}`,
+            status: 'FINGERSPELLED'
+          });
+          index += 1;
+          continue;
+        }
+
+        if (auxiliaries.has(tok)) {
+          const hasOtherVerb = tokens.some(t => t !== 'do' && ['go', 'want', 'see', 'look', 'have', 'need', 'help', 'drink'].includes(t));
+          if (tok === 'do' && !hasOtherVerb) {
+            // Lexical DO retained
+          } else {
+            removed.push(tok);
+            index += 1;
+            continue;
+          }
+        }
+
+        const g3Lexicon = this.enableG3Improvements ? { not: 'NOT', how: 'HOW', tomorrow: 'TOMORROW' } : {};
+        const entry = this.lexicon.get(tok) || g3Lexicon[tok];
+        if (entry) {
+          clauseGloss.push(entry);
+        } else {
+          unknown_terms.push(tok.toUpperCase());
+        }
+        index += 1;
+      }
+
+      const restructuredClause = this._restructureClauseGloss(clauseGloss, clause, properNouns, trace);
+      finalGloss.push(...restructuredClause);
+    }
+
+    if (phraseMatches.length) {
+      trace.push({ stage: 'phrase_detection', detail: `Matched lexical phrase(s): ${phraseMatches.join(', ')}` });
+      linguistic_notes.push('Phrase-level concepts were resolved before individual words.');
+    }
+    if (removed.length) {
+      trace.push({ stage: 'function_words', detail: `Omitted English function/auxiliary tokens: ${removed.join(', ')}`, basis: 'NATURAL_ISL_OMISSION_OR_SPATIAL_INTEGRATION', status: 'GRAMMAR_OMISSION' });
+    }
+
+    const gloss_sequence = this._dedupeAdjacent(finalGloss);
+
     if (isQuestion) {
-      const isWhQuestion = /^(how|what|where|when|why)\b/.test(normalized_text);
+      const isWhQuestion = isr.overall_discourse_act === 'WH_QUESTION';
       trace.push({ stage: 'question', detail: `${isWhQuestion ? 'WH' : 'Yes/no'} question retained as a non-manual requirement; no invented manual question sign.`, basis: 'SOURCE_SUPPORTED', rule_id: 'G3-RULE-QUESTION-01' });
       linguistic_notes.push('Requires ISL question non-manual marking; current avatar pipeline does not render it.');
     }
-    const hasNegation = gloss.includes('NOT');
+    const hasNegation = gloss_sequence.includes('NOT');
     if (hasNegation) {
-      trace.push({ stage: 'negation', detail: 'Negation concept retained; exact ISL construction remains unmodeled.', basis: 'SOURCE_SUPPORTED', rule_id: 'G3-RULE-NEGATION-01' });
-      linguistic_notes.push('Negation is retained lexically and marked for non-manual review; no claim is made about ISL negation placement.');
+      trace.push({ stage: 'negation', detail: 'Clause-scoped negation retained; headshake non-manual recommended.', basis: 'SOURCE_SUPPORTED', rule_id: 'G3-RULE-NEGATION-01' });
+      linguistic_notes.push('Negation is clause-isolated and marked for non-manual review (PENDING_DEAF_COMMUNITY_REVIEW).');
     }
-    const analysisAt = performance.now(); timing.analysis_ms = analysisAt - normalizedAt;
-    const gloss_sequence = gloss;
+
+    const asrConf = options?.asrContext?.confidence ?? isr.asr_confidence;
+    const lowAsrConfidence = Number.isFinite(asrConf) && asrConf < 0.55;
+    if (lowAsrConfidence) {
+      trace.push({ stage: 'asr_confidence', detail: `Low ASR confidence (${asrConf.toFixed(3)}) propagated as TRANSLATION_UNCERTAIN.` });
+      linguistic_notes.push('Underlying ASR segment had low acoustic confidence; translation flagged uncertain.');
+    }
+
+    const analysisAt = performance.now();
+    timing.analysis_ms = analysisAt - normalizedAt;
     trace.push({ stage: 'gloss_generation', detail: gloss_sequence.join(' ') || '(no resolved glosses)' });
-    const glossAt = performance.now(); timing.gloss_generation_ms = glossAt - analysisAt;
-    const motion_candidate_sign_ids = gloss_sequence.map(g => g.toLowerCase()).filter(id => this.motionCatalog[id]);
+    const glossAt = performance.now();
+    timing.gloss_generation_ms = glossAt - analysisAt;
+
+    const motion_candidate_sign_ids = [];
     const sign_ids = [];
     const unavailable_signs = [];
-    for (const id of motion_candidate_sign_ids) {
-      const availability = this.motionCatalog[id];
-      const targetSignId = availability.sign_id || id;
+
+    for (const g of gloss_sequence) {
+      const lower = g.toLowerCase();
+      if (lower.startsWith('fs_') && !this._hasCustomMotionCatalog) {
+        motion_candidate_sign_ids.push(lower);
+        sign_ids.push(lower);
+        continue;
+      }
+      const availability = this.motionCatalog[lower];
+      if (!availability) continue;
+      motion_candidate_sign_ids.push(lower);
+      const targetSignId = availability.sign_id || lower;
       if (availability.playable) sign_ids.push(targetSignId);
       else unavailable_signs.push({ sign_id: targetSignId, reason: availability.reason });
     }
+
     trace.push({ stage: 'sign_id_resolution', detail: `Playable: ${sign_ids.join(', ') || 'none'}; unavailable: ${unavailable_signs.map(s => s.sign_id).join(', ') || 'none'}` });
     timing.sign_id_resolution_ms = performance.now() - glossAt;
+
     const hasHeuristic = trace.some(x => x.basis === 'PROJECT_HEURISTIC');
-    const status = unknown_terms.length || (!phraseMatches.length && !hasHeuristic) ? 'TRANSLATION_UNCERTAIN' : (hasHeuristic ? 'TRANSLATION_HEURISTIC' : 'TRANSLATION_SUPPORTED');
-    const questionMarker = /^(how|what|where|when|why)\b/.test(normalized_text) ? 'WH_QUESTION' : 'YES_NO_QUESTION';
+    const status = (unknown_terms.length || lowAsrConfidence || (!phraseMatches.length && !hasHeuristic && !sign_ids.length))
+      ? 'TRANSLATION_UNCERTAIN'
+      : (hasHeuristic ? 'TRANSLATION_HEURISTIC' : (unknown_terms.length === 0 ? 'TRANSLATION_SUPPORTED' : 'TRANSLATION_UNCERTAIN'));
+    const questionMarker = isr.overall_discourse_act === 'WH_QUESTION' ? 'WH_QUESTION' : 'YES_NO_QUESTION';
+
     return {
       source_text,
       normalized_text,
@@ -1924,9 +2276,11 @@ export class EnglishToISLTranslator extends TranslationBackend {
       fingerspelled_terms,
       unavailable_signs,
       grammar_omissions: removed.map(token => ({ token, status: 'GRAMMAR_OMISSION' })),
+      intermediate_semantic_representation: isr,
       non_manual_markers: [...(isQuestion ? [questionMarker] : []), ...(hasNegation ? ['NEGATION'] : [])],
       linguistic_notes,
       transformation_trace: trace,
+      asr_confidence: Number.isFinite(asrConf) ? asrConf : null,
       status,
       timings_ms: Object.fromEntries(Object.entries(timing).map(([k, v]) => [k, Number(v.toFixed(3))]))
     };
