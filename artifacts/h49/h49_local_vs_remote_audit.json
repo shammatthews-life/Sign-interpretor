@@ -1,0 +1,44 @@
+{
+  "local_root": "D:\\sign interpretor",
+  "remote_branch": "origin/main",
+  "local_files_total": 39582,
+  "remote_files_total": 3290,
+  "matched_files": 3290,
+  "matched_mb": 496.68,
+  "lfs_tracked_files": 59,
+  "local_only_files": 36292,
+  "excluded_breakdown": {
+    "GITHUB_QUOTA_ARTIFACTS_RAW_MEDIA": {
+      "count": 23723,
+      "mb": 13242.97
+    },
+    "GITHUB_LIMIT_AND_REPRODUCIBLE_VENV": {
+      "count": 7167,
+      "mb": 1163.16
+    },
+    "GITHUB_LIMIT_AND_REPRODUCIBLE_RUNTIME_MEDIA_OR_BROWSERS": {
+      "count": 322,
+      "mb": 1066.24
+    },
+    "SECURITY_EXCLUDED_BROWSER_PROFILES": {
+      "count": 5011,
+      "mb": 392.87
+    },
+    "SECURITY_EXCLUDED_ENV": {
+      "count": 1,
+      "mb": 0
+    },
+    "LICENSE_EXCLUDED_AVATAR_PROPRIETARY": {
+      "count": 19,
+      "mb": 5.75
+    },
+    "PYTHON_BYTECODE_CACHE": {
+      "count": 48,
+      "mb": 0.43
+    },
+    "OTHER_LOCAL_ONLY": {
+      "count": 1,
+      "mb": 0
+    }
+  }
+}
