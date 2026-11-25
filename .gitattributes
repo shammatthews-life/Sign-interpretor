@@ -30,3 +30,5 @@ artifacts/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
 artifacts/**/*.wav filter=lfs diff=lfs merge=lfs -text
 runtime/*.wav filter=lfs diff=lfs merge=lfs -text
 runtime/wheels/*.whl filter=lfs diff=lfs merge=lfs -text
+runtime/youtube/**/*.wav filter=lfs diff=lfs merge=lfs -text
+runtime/youtube/**/*.webm filter=lfs diff=lfs merge=lfs -text
