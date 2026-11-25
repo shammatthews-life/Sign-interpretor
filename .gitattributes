@@ -1,6 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
 # Text formats (normalize to LF)
 *.js text eol=lf
 *.mjs text eol=lf
@@ -12,12 +11,10 @@
 *.txt text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
-
 # Windows PowerShell scripts (keep CRLF)
 *.ps1 text eol=crlf
 *.bat text eol=crlf
 *.cmd text eol=crlf
-
 # Binary formats
 *.fbx binary
 *.png binary
@@ -29,3 +26,7 @@
 *.bin binary
 *.pt binary
 *.zip binary
+artifacts/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+artifacts/**/*.wav filter=lfs diff=lfs merge=lfs -text
+runtime/*.wav filter=lfs diff=lfs merge=lfs -text
+runtime/wheels/*.whl filter=lfs diff=lfs merge=lfs -text
