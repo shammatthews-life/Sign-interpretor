@@ -1,0 +1,908 @@
+{
+  "batch_index": 4,
+  "concept_range": "151\u2013200",
+  "concept_count": 50,
+  "total_occurrences": 150,
+  "concepts": [
+    {
+      "rank": 151,
+      "concept": "deeper",
+      "lemma": "deeper",
+      "surface_forms": [
+        "deeper"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DEEPER",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "And each time you go deeper and deeper and deeper, you inject more dopamine into your"
+    },
+    {
+      "rank": 152,
+      "concept": "recorded",
+      "lemma": "recorded",
+      "surface_forms": [
+        "recorded"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Past Tense / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "RECORDED",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "recording that we've done today or this live session, you can see that recorded"
+    },
+    {
+      "rank": 153,
+      "concept": "door",
+      "lemma": "door",
+      "surface_forms": [
+        "door"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DOOR",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "yesterday. I was standing outside the door, the rest of my classmates were there, it was closed."
+    },
+    {
+      "rank": 154,
+      "concept": "past",
+      "lemma": "past",
+      "surface_forms": [
+        "past"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PAST",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Five minutes past, the door slowly opens and this happens. It slowly opens,"
+    },
+    {
+      "rank": 155,
+      "concept": "arthur",
+      "lemma": "arthur",
+      "surface_forms": [
+        "arthur"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ARTHUR",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "two meters wide, shoulder-wise. His name is Arthur Brumer, he sounds like a bear,"
+    },
+    {
+      "rank": 156,
+      "concept": "full",
+      "lemma": "full",
+      "surface_forms": [
+        "full"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FULL",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "of your own why. That's not too hard is it? It's full ways and you're injecting, grabbing,"
+    },
+    {
+      "rank": 157,
+      "concept": "bought",
+      "lemma": "bought",
+      "surface_forms": [
+        "bought"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "BOUGHT",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I see a bunch of you have bought that one."
+    },
+    {
+      "rank": 158,
+      "concept": "ten",
+      "lemma": "ten",
+      "surface_forms": [
+        "ten"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TEN",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "One, two, three, four, five, six, seven, eight, nine, ten."
+    },
+    {
+      "rank": 159,
+      "concept": "placed",
+      "lemma": "placed",
+      "surface_forms": [
+        "placed"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Past Tense / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PLACED",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "placed as a rhetorical question, it would sound like this. What is the most important"
+    },
+    {
+      "rank": 160,
+      "concept": "expectation",
+      "lemma": "expectation",
+      "surface_forms": [
+        "expectation"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "EXPECTATION",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "The last one is the best. So any kind of expectation that you can build up builds up dope."
+    },
+    {
+      "rank": 161,
+      "concept": "break",
+      "lemma": "break",
+      "surface_forms": [
+        "break"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "BREAK",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I just wanna break this pattern, man."
+    },
+    {
+      "rank": 162,
+      "concept": "worth",
+      "lemma": "worth",
+      "surface_forms": [
+        "worth"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WORTH",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I think this is worth a drum roll, isn't it?"
+    },
+    {
+      "rank": 163,
+      "concept": "porsche",
+      "lemma": "porsche",
+      "surface_forms": [
+        "porsche"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "PORSCHE",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "We got a Lamborghini Aventador, Porsche 911 Turbo"
+    },
+    {
+      "rank": 164,
+      "concept": "turbo",
+      "lemma": "turbo",
+      "surface_forms": [
+        "turbo"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TURBO",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "We got a Lamborghini Aventador, Porsche 911 Turbo"
+    },
+    {
+      "rank": 165,
+      "concept": "road",
+      "lemma": "road",
+      "surface_forms": [
+        "road"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ROAD",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "And you stop there on the road"
+    },
+    {
+      "rank": 166,
+      "concept": "setting",
+      "lemma": "setting",
+      "surface_forms": [
+        "setting"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Participle / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SETTING",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "the sun is just setting and you let that thing rip"
+    },
+    {
+      "rank": 167,
+      "concept": "nowhere",
+      "lemma": "nowhere",
+      "surface_forms": [
+        "nowhere"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NOWHERE",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I started talking about cars from absolutely nowhere, but you went, I think it's faster,"
+    },
+    {
+      "rank": 168,
+      "concept": "faster",
+      "lemma": "faster",
+      "surface_forms": [
+        "faster"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FASTER",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I started talking about cars from absolutely nowhere, but you went, I think it's faster,"
+    },
+    {
+      "rank": 169,
+      "concept": "fair",
+      "lemma": "fair",
+      "surface_forms": [
+        "fair"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FAIR",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Fair enough, we are going to leave that fifth, sixth tip I gave you. That means"
+    },
+    {
+      "rank": 170,
+      "concept": "statistics",
+      "lemma": "statistics",
+      "surface_forms": [
+        "statistics"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "STATISTICS",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "We have a professor in Sweden who is a world-renowned presenter of statistics."
+    },
+    {
+      "rank": 171,
+      "concept": "fill",
+      "lemma": "fill",
+      "surface_forms": [
+        "fill"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FILL",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "He can fill, or he filled his past away now, sadly get, God rest his soul, but he could"
+    },
+    {
+      "rank": 172,
+      "concept": "soul",
+      "lemma": "soul",
+      "surface_forms": [
+        "soul"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SOUL",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "He can fill, or he filled his past away now, sadly get, God rest his soul, but he could"
+    },
+    {
+      "rank": 173,
+      "concept": "300",
+      "lemma": "300",
+      "surface_forms": [
+        "300"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "300",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "When I worked with him once, he had beer crates, 300 of them building things on stage."
+    },
+    {
+      "rank": 174,
+      "concept": "meal",
+      "lemma": "meal",
+      "surface_forms": [
+        "meal"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "MEAL",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Do you remember a good meal that you've had in life,"
+    },
+    {
+      "rank": 175,
+      "concept": "136",
+      "lemma": "136",
+      "surface_forms": [
+        "136"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "136",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "It's 136 spices that you can add"
+    },
+    {
+      "rank": 176,
+      "concept": "follow",
+      "lemma": "follow",
+      "surface_forms": [
+        "follow"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FOLLOW",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "I cannot follow that in any any way."
+    },
+    {
+      "rank": 177,
+      "concept": "unheard",
+      "lemma": "unheard",
+      "surface_forms": [
+        "unheard"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "UNHEARD",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Unheard of. And again, for you who have, I'll just say this, you know, this is all so much free value"
+    },
+    {
+      "rank": 178,
+      "concept": "decided",
+      "lemma": "decided",
+      "surface_forms": [
+        "decided"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Past Tense / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "DECIDED",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "No where. Because when I was 20 and I decided to embark on this career, I consciously decided to never read a book on public speaking,"
+    },
+    {
+      "rank": 179,
+      "concept": "nose",
+      "lemma": "nose",
+      "surface_forms": [
+        "nose"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NOSE",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "So write this down for yourself. I paused. I did an audible inhale through my nose."
+    },
+    {
+      "rank": 180,
+      "concept": "self",
+      "lemma": "self",
+      "surface_forms": [
+        "self"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SELF",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "So I look up, I pause, I do an audible inhale, I do a self-laughter."
+    },
+    {
+      "rank": 181,
+      "concept": "laughter",
+      "lemma": "laughter",
+      "surface_forms": [
+        "laughter"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "LAUGHTER",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "So I look up, I pause, I do an audible inhale, I do a self-laughter."
+    },
+    {
+      "rank": 182,
+      "concept": "set",
+      "lemma": "set",
+      "surface_forms": [
+        "set"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SET",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "If you have your mobile phone, you can go into settings and set it on grayscale."
+    },
+    {
+      "rank": 183,
+      "concept": "grayscale",
+      "lemma": "grayscale",
+      "surface_forms": [
+        "grayscale"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "GRAYSCALE",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "If you have your mobile phone, you can go into settings and set it on grayscale."
+    },
+    {
+      "rank": 184,
+      "concept": "test",
+      "lemma": "test",
+      "surface_forms": [
+        "test"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TEST",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Add them, feel them, see them, test them if you wish,"
+    },
+    {
+      "rank": 185,
+      "concept": "village",
+      "lemma": "village",
+      "surface_forms": [
+        "village"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "VILLAGE",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "This store took place a long, long, long, long time ago in a small little village in"
+    },
+    {
+      "rank": 186,
+      "concept": "sister's",
+      "lemma": "sister's",
+      "surface_forms": [
+        "sister's"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SISTER'S",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "The one sister's name was Story and the other sister's name was Truth."
+    },
+    {
+      "rank": 187,
+      "concept": "street",
+      "lemma": "street",
+      "surface_forms": [
+        "street"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "STREET",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Let's walk down the center street"
+    },
+    {
+      "rank": 188,
+      "concept": "grabs",
+      "lemma": "grabs",
+      "surface_forms": [
+        "grabs"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "GRABS",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "to see who grabs most attention, who grabs most attention."
+    },
+    {
+      "rank": 189,
+      "concept": "cloak",
+      "lemma": "cloak",
+      "surface_forms": [
+        "cloak"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "CLOAK",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "So she unbuttoned her cloak and she let it go and there she was entirely naked."
+    },
+    {
+      "rank": 190,
+      "concept": "attracted",
+      "lemma": "attracted",
+      "surface_forms": [
+        "attracted"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Past Tense / Verb",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ATTRACTED",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "The thing is though, the people aren't attracted to the truth."
+    },
+    {
+      "rank": 191,
+      "concept": "faces",
+      "lemma": "faces",
+      "surface_forms": [
+        "faces"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FACES",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Beautiful faces from all over the world."
+    },
+    {
+      "rank": 192,
+      "concept": "today's",
+      "lemma": "today's",
+      "surface_forms": [
+        "today's"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TODAY'S",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "Today's subject."
+    },
+    {
+      "rank": 193,
+      "concept": "liability",
+      "lemma": "liability",
+      "surface_forms": [
+        "liability"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "LIABILITY",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "and it's a liability if you don't like doing it"
+    },
+    {
+      "rank": 194,
+      "concept": "observant",
+      "lemma": "observant",
+      "surface_forms": [
+        "observant"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "OBSERVANT",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "he's super observant."
+    },
+    {
+      "rank": 195,
+      "concept": "tina",
+      "lemma": "tina",
+      "surface_forms": [
+        "tina"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TINA",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "and I go, I look at Tina Wesberg, for instance,"
+    },
+    {
+      "rank": 196,
+      "concept": "80",
+      "lemma": "80",
+      "surface_forms": [
+        "80"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "80",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "and I want to increase that to 80%,"
+    },
+    {
+      "rank": 197,
+      "concept": "90",
+      "lemma": "90",
+      "surface_forms": [
+        "90"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "90",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "If you want to become a world class speaker, you've got to be touching between 90 to 100."
+    },
+    {
+      "rank": 198,
+      "concept": "average",
+      "lemma": "average",
+      "surface_forms": [
+        "average"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "AVERAGE",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "How many do you think that the average person uses?"
+    },
+    {
+      "rank": 199,
+      "concept": "unfunctional",
+      "lemma": "unfunctional",
+      "surface_forms": [
+        "unfunctional"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "UNFUNCTIONAL",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "which is an unfunctional head angle, which is very bad."
+    },
+    {
+      "rank": 200,
+      "concept": "15",
+      "lemma": "15",
+      "surface_forms": [
+        "15"
+      ],
+      "fallback_frequency": 3,
+      "part_of_speech": "Noun",
+      "semantic_category": "Uncategorized Lexicon",
+      "handling_disposition": "LEXICAL_FALLBACK_DOCUMENTED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "15",
+      "evidence_rationale": "ISLRTC catalogue matched; verified as fallback until secondary motion pass",
+      "dictionary_entry": null,
+      "dictionary_source": "ISLRTC Dictionary / Sign Learn (DEPwD, Govt. of India)",
+      "example_context": "like 10, 15 years ago. This one girl in the group, she was doing something, and I could not, for the"
+    }
+  ]
+}

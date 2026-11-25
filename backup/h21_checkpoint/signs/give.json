@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "give",
+  "metadata": {
+    "display_name": "Give",
+    "gloss": "GIVE",
+    "language": "ISL",
+    "lexical_type": "Transfer verb; dominant curved palm starting near chest extending forward",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant hand forms an open supinated (palm up) curved hand near chest, moving smoothly forward and outward toward the addressee in an offering gesture."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1200,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 300,
+        "label": "Cupped Hand Near Chest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": -10,
+            "y": -12,
+            "z": -38
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -25,
+            "z": -60
+          },
+          "Bip001_R_Hand": {
+            "x": -10,
+            "y": 15,
+            "z": -10
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 25,
+          "index": 25,
+          "middle": 25,
+          "ring": 25,
+          "pinky": 25
+        }
+      },
+      {
+        "time_ms": 700,
+        "label": "Extend Forward to Recipient",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 6,
+            "z": -3
+          },
+          "Bip001_R_UpperArm": {
+            "x": 18,
+            "y": 12,
+            "z": -62
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -10,
+            "z": -48
+          },
+          "Bip001_R_Hand": {
+            "x": -15,
+            "y": 20,
+            "z": -15
+          },
+          "Bip001_Head": {
+            "x": 2,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 20,
+          "index": 20,
+          "middle": 20,
+          "ring": 20,
+          "pinky": 20
+        }
+      },
+      {
+        "time_ms": 950,
+        "label": "Hold Offering Gesture",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": 10,
+            "y": 8,
+            "z": -50
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -10,
+            "z": -42
+          },
+          "Bip001_R_Hand": {
+            "x": -10,
+            "y": 14,
+            "z": -10
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 20,
+          "index": 20,
+          "middle": 20,
+          "ring": 20,
+          "pinky": 20
+        }
+      },
+      {
+        "time_ms": 1200,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

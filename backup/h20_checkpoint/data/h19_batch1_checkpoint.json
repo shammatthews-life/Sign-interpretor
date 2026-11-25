@@ -1,0 +1,811 @@
+{
+  "batch_number": 1,
+  "concept_range": "1-50",
+  "concepts_count": 50,
+  "total_occurrences": 779,
+  "concepts": [
+    {
+      "rank": 1,
+      "lemma": "he",
+      "surface_forms": [
+        "he's",
+        "him",
+        "his"
+      ],
+      "fallback_frequency": 68,
+      "percentage_of_fallback": 1.364,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "DEICTIC_SPATIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "HE",
+      "evidence_rationale": "Spatial deictic indexing / 3rd person singular masculine locus",
+      "example_context": "And I flew to the US and we had a coaching session and I walked in and I asked him to"
+    },
+    {
+      "rank": 2,
+      "lemma": "that",
+      "surface_forms": [
+        "that's"
+      ],
+      "fallback_frequency": 43,
+      "percentage_of_fallback": 0.862,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "DEICTIC_SPATIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "THAT",
+      "evidence_rationale": "Spatial deictic distal demonstrative pointing",
+      "example_context": "challenge, yes? All right, that's amazing. I love it. Love it."
+    },
+    {
+      "rank": 3,
+      "lemma": "there",
+      "surface_forms": [
+        "there's"
+      ],
+      "fallback_frequency": 31,
+      "percentage_of_fallback": 0.622,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "DEICTIC_SPATIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "THERE",
+      "evidence_rationale": "Spatial deictic locative locus",
+      "example_context": "There's pictures all over the place."
+    },
+    {
+      "rank": 4,
+      "lemma": "she",
+      "surface_forms": [
+        "her",
+        "she's"
+      ],
+      "fallback_frequency": 25,
+      "percentage_of_fallback": 0.501,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "DEICTIC_SPATIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "SHE",
+      "evidence_rationale": "Spatial deictic indexing / 3rd person singular feminine locus",
+      "example_context": "It's a video of a woman, her name is Susan Boyle, and she was a British Got Talent."
+    },
+    {
+      "rank": 5,
+      "lemma": "david",
+      "surface_forms": [
+        "david"
+      ],
+      "fallback_frequency": 16,
+      "percentage_of_fallback": 0.321,
+      "part_of_speech": "Proper Noun",
+      "semantic_category": "Technical / Proper Noun",
+      "handling_disposition": "FINGERSPELLED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FS:DAVID",
+      "evidence_rationale": "Proper noun or technical brand name rendered via ISL manual alphabet",
+      "example_context": "Hey, if we haven't met before, my name is David JP Phillips,"
+    },
+    {
+      "rank": 6,
+      "lemma": "other",
+      "surface_forms": [
+        "other"
+      ],
+      "fallback_frequency": 16,
+      "percentage_of_fallback": 0.321,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "other",
+      "resolved_gloss": "OTHER",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/other.json",
+      "example_context": "brain, and that will help you evolve as a public speaker. Other things that impact your"
+    },
+    {
+      "rank": 7,
+      "lemma": "10",
+      "surface_forms": [
+        "10"
+      ],
+      "fallback_frequency": 16,
+      "percentage_of_fallback": 0.321,
+      "part_of_speech": "Numeral",
+      "semantic_category": "Numeral",
+      "handling_disposition": "NUMERAL_MAPPING",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NUM:10",
+      "evidence_rationale": "Numerical value 10 represented by ISL numeral rules",
+      "example_context": "But as soon as there's 10 or more suddenly, I can't."
+    },
+    {
+      "rank": 8,
+      "lemma": "six",
+      "surface_forms": [
+        "six"
+      ],
+      "fallback_frequency": 16,
+      "percentage_of_fallback": 0.321,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "six",
+      "resolved_gloss": "SIX",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/six.json",
+      "example_context": "Make sure you have five or six songs."
+    },
+    {
+      "rank": 9,
+      "lemma": "micro",
+      "surface_forms": [
+        "micro"
+      ],
+      "fallback_frequency": 16,
+      "percentage_of_fallback": 0.321,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Micro, that's it."
+    },
+    {
+      "rank": 10,
+      "lemma": "whatever",
+      "surface_forms": [
+        "whatever"
+      ],
+      "fallback_frequency": 15,
+      "percentage_of_fallback": 0.301,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "DEICTIC_SPATIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WHATEVER",
+      "evidence_rationale": "Discourse pronoun / universal indeterminate marker",
+      "example_context": "I also want to say this, please take out pens and papers and whatever you need to write"
+    },
+    {
+      "rank": 11,
+      "lemma": "presentations",
+      "surface_forms": [
+        "presentations"
+      ],
+      "fallback_frequency": 15,
+      "percentage_of_fallback": 0.301,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "presentation",
+      "resolved_gloss": "PRESENTATION",
+      "evidence_rationale": "Plural inflection of PRESENTATION",
+      "example_context": "presentations, in meetings, in negotiations, as a leader, as a presenter, as a coach, doesn't"
+    },
+    {
+      "rank": 12,
+      "lemma": "should",
+      "surface_forms": [
+        "should"
+      ],
+      "fallback_frequency": 15,
+      "percentage_of_fallback": 0.301,
+      "part_of_speech": "Modal Verb",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "should",
+      "resolved_gloss": "SHOULD",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/should.json",
+      "example_context": "asked to do public speaking, and you say, oh my god, now I can't do that, you should"
+    },
+    {
+      "rank": 13,
+      "lemma": "absolutely",
+      "surface_forms": [
+        "absolutely"
+      ],
+      "fallback_frequency": 15,
+      "percentage_of_fallback": 0.301,
+      "part_of_speech": "Adverb",
+      "semantic_category": "Discourse / Modifier",
+      "handling_disposition": "MANNER_ADVERBIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "ABSOLUTELY",
+      "evidence_rationale": "Manner adverbial non-manual modulation of predicate",
+      "example_context": "It was absolutely amazing."
+    },
+    {
+      "rank": 14,
+      "lemma": "seven",
+      "surface_forms": [
+        "seven"
+      ],
+      "fallback_frequency": 15,
+      "percentage_of_fallback": 0.301,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "seven",
+      "resolved_gloss": "SEVEN",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/seven.json",
+      "example_context": "One, two, three, four, five, six, seven, eight, nine, ten."
+    },
+    {
+      "rank": 15,
+      "lemma": "you'll",
+      "surface_forms": [
+        "you'll"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "CONTRACTION_UNPACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": "YOU WILL",
+      "evidence_rationale": "Spoken contraction unpacked into core ISL lexical items: YOU WILL",
+      "example_context": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+    },
+    {
+      "rank": 16,
+      "lemma": "literally",
+      "surface_forms": [
+        "literally"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Adverb",
+      "semantic_category": "Discourse / Modifier",
+      "handling_disposition": "MANNER_ADVERBIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "LITERALLY",
+      "evidence_rationale": "Manner adverbial non-manual modulation of predicate",
+      "example_context": "which can literally transform you into being a nervous wreck, delivering a bad presentation,"
+    },
+    {
+      "rank": 17,
+      "lemma": "lot",
+      "surface_forms": [
+        "lot"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "more",
+      "resolved_gloss": "MORE",
+      "evidence_rationale": "Quantifier synonym: large quantity",
+      "example_context": "It just came out in Japan, which I think looks a lot more interesting than the English version,"
+    },
+    {
+      "rank": 18,
+      "lemma": "may",
+      "surface_forms": [
+        "may"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Modal Verb",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "You may have prepared, like, weeks, your presentation,"
+    },
+    {
+      "rank": 19,
+      "lemma": "base",
+      "surface_forms": [
+        "base"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "What I mean with that is that this one's skill base, but what on earth is this?"
+    },
+    {
+      "rank": 20,
+      "lemma": "playlist",
+      "surface_forms": [
+        "playlist"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "FINGERSPELLED",
+      "resolved_sign_id": null,
+      "resolved_gloss": "FS:PLAYLIST",
+      "evidence_rationale": "Proper noun or technical brand name rendered via ISL manual alphabet",
+      "example_context": "So on YouTube I have a playlist for each of these substances."
+    },
+    {
+      "rank": 21,
+      "lemma": "long",
+      "surface_forms": [
+        "long"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "long",
+      "resolved_gloss": "LONG",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/long.json",
+      "example_context": "into in a long while and you've been putting off, challenge yourself to do speaking in public"
+    },
+    {
+      "rank": 22,
+      "lemma": "left",
+      "surface_forms": [
+        "left"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "left",
+      "resolved_gloss": "LEFT",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/left.json",
+      "example_context": "Actually looks quite sensible for being a left hand."
+    },
+    {
+      "rank": 23,
+      "lemma": "too",
+      "surface_forms": [
+        "too"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Too much. What is your occupation?"
+    },
+    {
+      "rank": 24,
+      "lemma": "volume",
+      "surface_forms": [
+        "volume"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.281,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "So you have pace, you have volume,"
+    },
+    {
+      "rank": 25,
+      "lemma": "next",
+      "surface_forms": [
+        "next"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "next",
+      "resolved_gloss": "NEXT",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/next.json",
+      "example_context": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+    },
+    {
+      "rank": 26,
+      "lemma": "30",
+      "surface_forms": [
+        "30"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Numeral",
+      "semantic_category": "Numeral",
+      "handling_disposition": "NUMERAL_MAPPING",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NUM:30",
+      "evidence_rationale": "Numerical value 30 represented by ISL numeral rules",
+      "example_context": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+    },
+    {
+      "rank": 27,
+      "lemma": "coach",
+      "surface_forms": [
+        "coach"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "teacher",
+      "resolved_gloss": "TEACHER",
+      "evidence_rationale": "ISLRTC pedagogical synonym: instructor/mentor",
+      "example_context": "and public speaking coach."
+    },
+    {
+      "rank": 28,
+      "lemma": "weeks",
+      "surface_forms": [
+        "weeks"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "week",
+      "resolved_gloss": "WEEK",
+      "evidence_rationale": "Plural inflection of WEEK",
+      "example_context": "Mayorka, I'm going to Mayorka in just a couple of weeks."
+    },
+    {
+      "rank": 29,
+      "lemma": "often",
+      "surface_forms": [
+        "often"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I want you to take with you that the case is often this one, which is that confidence is"
+    },
+    {
+      "rank": 30,
+      "lemma": "asked",
+      "surface_forms": [
+        "asked"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "ask",
+      "resolved_gloss": "ASK",
+      "evidence_rationale": "Past tense inflection of ASK",
+      "example_context": "The kids who were asked, do you believe that you are good in maths?"
+    },
+    {
+      "rank": 31,
+      "lemma": "own",
+      "surface_forms": [
+        "own"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Please create your own dopamine playlist on Spotify or YouTube music or whatever it is."
+    },
+    {
+      "rank": 32,
+      "lemma": "another",
+      "surface_forms": [
+        "another"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Now, I want to share a couple of words of wisdom from another legend in the business,"
+    },
+    {
+      "rank": 33,
+      "lemma": "sounds",
+      "surface_forms": [
+        "sounds"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "sound",
+      "resolved_gloss": "SOUND",
+      "evidence_rationale": "Plural/3rd person inflection of SOUND",
+      "example_context": "two meters wide, shoulder-wise. His name is Arthur Brumer, he sounds like a bear,"
+    },
+    {
+      "rank": 34,
+      "lemma": "slide",
+      "surface_forms": [
+        "slide"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.261,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "slide",
+      "resolved_gloss": "SLIDE",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/slide.json",
+      "example_context": "This I love this one. Sell your slide. Okay so it goes like this."
+    },
+    {
+      "rank": 35,
+      "lemma": "haven't",
+      "surface_forms": [
+        "haven't"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "CONTRACTION_UNPACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": "HAVE NOT",
+      "evidence_rationale": "Spoken contraction unpacked into core ISL lexical items: HAVE NOT",
+      "example_context": "Hey, if we haven't met before, my name is David JP Phillips,"
+    },
+    {
+      "rank": 36,
+      "lemma": "we've",
+      "surface_forms": [
+        "we've"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "CONTRACTION_UNPACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": "WE HAVE",
+      "evidence_rationale": "Spoken contraction unpacked into core ISL lexical items: WE HAVE",
+      "example_context": "We've got people from UK, Croatia, Switzerland,"
+    },
+    {
+      "rank": 37,
+      "lemma": "amazing",
+      "surface_forms": [
+        "amazing"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "great",
+      "resolved_gloss": "GREAT",
+      "evidence_rationale": "ISLRTC evaluative synonym: exceptional/great",
+      "example_context": "challenge, yes? All right, that's amazing. I love it. Love it."
+    },
+    {
+      "rank": 38,
+      "lemma": "isn't",
+      "surface_forms": [
+        "isn't"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Contraction",
+      "semantic_category": "Grammar / Auxiliary",
+      "handling_disposition": "CONTRACTION_UNPACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NOT",
+      "evidence_rationale": "Spoken contraction unpacked into core ISL lexical items: NOT",
+      "example_context": "Because this isn't up to me. I'm here. I will give you the skills and the tools and the techniques,"
+    },
+    {
+      "rank": 39,
+      "lemma": "than",
+      "surface_forms": [
+        "than"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "It just came out in Japan, which I think looks a lot more interesting than the English version,"
+    },
+    {
+      "rank": 40,
+      "lemma": "horrible",
+      "surface_forms": [
+        "horrible"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "bad",
+      "resolved_gloss": "BAD",
+      "evidence_rationale": "ISLRTC evaluative synonym: severe negative/bad",
+      "example_context": "It's horrible, right?"
+    },
+    {
+      "rank": 41,
+      "lemma": "truly",
+      "surface_forms": [
+        "truly"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Adverb",
+      "semantic_category": "Discourse / Modifier",
+      "handling_disposition": "MANNER_ADVERBIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "TRULY",
+      "evidence_rationale": "Manner adverbial non-manual modulation of predicate",
+      "example_context": "and how much would that truly help you"
+    },
+    {
+      "rank": 42,
+      "lemma": "increase",
+      "surface_forms": [
+        "increase"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "But if it's just good enough, it can actually increase your fire."
+    },
+    {
+      "rank": 43,
+      "lemma": "perspective",
+      "surface_forms": [
+        "perspective"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "If your perspective is that you can learn and that you are not restricted, you have, per"
+    },
+    {
+      "rank": 44,
+      "lemma": "after",
+      "surface_forms": [
+        "after"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Determiner / Adverb",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "This first study was done on math grades before and after the intervention."
+    },
+    {
+      "rank": 45,
+      "lemma": "add",
+      "surface_forms": [
+        "add"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.241,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "add",
+      "resolved_gloss": "ADD",
+      "evidence_rationale": "New Schema 2.0.0 sign authored in signs/add.json",
+      "example_context": "people through failures, not through perfection. So I add failures in order to create that connection."
+    },
+    {
+      "rank": 46,
+      "lemma": "begin",
+      "surface_forms": [
+        "begin"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.221,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "EXISTING_SIGN_REUSE",
+      "resolved_sign_id": "go",
+      "resolved_gloss": "GO",
+      "evidence_rationale": "Inchoative aspect: start/commence",
+      "example_context": "We'll begin with mindset and confidence."
+    },
+    {
+      "rank": 47,
+      "lemma": "110",
+      "surface_forms": [
+        "110"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.221,
+      "part_of_speech": "Numeral",
+      "semantic_category": "Numeral",
+      "handling_disposition": "NUMERAL_MAPPING",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NUM:110",
+      "evidence_rationale": "Numerical value 110 represented by ISL numeral rules",
+      "example_context": "from the 110-step chart of excellence communication."
+    },
+    {
+      "rank": 48,
+      "lemma": "hey",
+      "surface_forms": [
+        "hey"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.221,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Hey, if we haven't met before, my name is David JP Phillips,"
+    },
+    {
+      "rank": 49,
+      "lemma": "particular",
+      "surface_forms": [
+        "particular"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.221,
+      "part_of_speech": "Content Word",
+      "semantic_category": "Everyday",
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Concept documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "on this particular subject."
+    },
+    {
+      "rank": 50,
+      "lemma": "exactly",
+      "surface_forms": [
+        "exactly"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.221,
+      "part_of_speech": "Adverb",
+      "semantic_category": "Discourse / Modifier",
+      "handling_disposition": "MANNER_ADVERBIAL",
+      "resolved_sign_id": null,
+      "resolved_gloss": "EXACTLY",
+      "evidence_rationale": "Manner adverbial non-manual modulation of predicate",
+      "example_context": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+    }
+  ]
+}

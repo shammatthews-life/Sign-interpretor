@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ISL Accessibility Translator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-header">
+    <div class="title-group">
+      <h1>🤟 ISL Translator</h1>
+      <span class="tag">H8 Development</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">
+      <label for="youtube-url">Process a YouTube video</label>
+      <span id="youtube-job-state" class="status-badge status-muted">IDLE</span>
+    </div>
+    <input id="youtube-url" type="url" placeholder="https://www.youtube.com/watch?v=..." autocomplete="url">
+    <button id="btn-youtube-process" class="btn btn-primary">Process Video</button>
+    <p id="youtube-error" class="youtube-error" role="alert" aria-live="polite"></p>
+    <p id="youtube-job-id" class="youtube-meta">No active job</p>
+    <p id="youtube-title" class="youtube-result-title"></p>
+    <p id="youtube-stage" class="youtube-meta">Enter a YouTube URL to begin.</p>
+    <p id="youtube-transcript" class="youtube-result"></p>
+    <p id="youtube-translation" class="youtube-result"></p>
+    <p id="youtube-signs" class="youtube-result"></p>
+    <p id="youtube-unavailable" class="youtube-unavailable"></p>
+  </div>
+
+  <!-- Overlay Visibility Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>Page Overlay</span>
+      <span id="pop-overlay-status" class="status-badge status-green">VISIBLE</span>
+    </div>
+    <button id="btn-toggle-overlay" class="btn btn-primary">Toggle Overlay on Page</button>
+  </div>
+
+  <!-- Localhost Runtime Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>Localhost Runtime</span>
+      <span id="pop-runtime-status" class="status-badge status-muted">DISCONNECTED</span>
+    </div>
+    <p id="pop-endpoint-text" style="font-size: 10px; color: #8b949e; margin-bottom: 8px;">http://localhost:8000</p>
+    <button id="btn-probe-runtime" class="btn">🔄 Probe Localhost Runtime</button>
+    <button id="btn-open-viewer" class="btn">↗ Open Standalone Viewer</button>
+  </div>
+
+  <!-- Quick Demo Card -->
+  <div class="card">
+    <div class="card-title">
+      <span>Demo Scenarios</span>
+    </div>
+    <button id="btn-pop-demo-greeting" class="btn">▶ Run "Hello Good Morning"</button>
+    <button id="btn-pop-demo-missing" class="btn">▶ Run "I Need Water" (Missing Signs)</button>
+    <button id="btn-pop-demo-reset" class="btn">⏹ Reset Demo</button>
+  </div>
+
+  <div class="footer-text">
+    Development prototype gloss only; not full ISL translation.<br>Unavailable signs are not played.
+  </div>
+
+  <script src="../shared/message-contract.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

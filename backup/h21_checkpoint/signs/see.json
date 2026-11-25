@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "see",
+  "metadata": {
+    "display_name": "See",
+    "gloss": "SEE",
+    "language": "ISL",
+    "lexical_type": "Visual perception verb; V-handshape moving forward from eye level",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant hand forms V-handshape starting with fingertips positioned close to eyes/temple, palm inward/angled, and moves straight outward along the line of sight."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1300,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 350,
+        "label": "Fingertips Near Eyes",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 5, "z": -3 },
+          "Bip001_R_UpperArm": { "x": -18, "y": -15, "z": -85 },
+          "Bip001_R_Forearm": { "x": 0, "y": -40, "z": -75 },
+          "Bip001_R_Hand": { "x": -15, "y": 20, "z": -20 },
+          "Bip001_Head": { "x": 2, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 70, "index": 0, "middle": 0, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 750,
+        "label": "Move Outward Along Line of Sight",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 6, "z": -3 },
+          "Bip001_R_UpperArm": { "x": 8, "y": 10, "z": -65 },
+          "Bip001_R_Forearm": { "x": 0, "y": -10, "z": -45 },
+          "Bip001_R_Hand": { "x": -15, "y": 15, "z": -8 },
+          "Bip001_Head": { "x": 2, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 70, "index": 0, "middle": 0, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 1050,
+        "label": "Hold Extended Line of Sight",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": 4, "y": 6, "z": -50 },
+          "Bip001_R_Forearm": { "x": 0, "y": -15, "z": -40 },
+          "Bip001_R_Hand": { "x": -10, "y": 12, "z": -6 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 70, "index": 0, "middle": 0, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 1300,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      }
+    ]
+  }
+}

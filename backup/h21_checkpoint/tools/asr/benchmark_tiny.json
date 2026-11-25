@@ -1,0 +1,72 @@
+{
+  "paced_input": true,
+  "benchmarks": [
+    {
+      "model": "tiny.en",
+      "device": "cpu",
+      "compute_type": "int8",
+      "model_load_ms": 4191.663199919276,
+      "results": [
+        {
+          "fixture": "short",
+          "reference": "And so my fellow Americans ask not what your country can do for you.",
+          "hypothesis": "And so my fellow Americans ask not what your country",
+          "wer": 0.2857142857142857,
+          "audio_duration_ms": 6300.0,
+          "first_partial_latency_ms": 1543.1262999773026,
+          "final_latency_ms": 11361.187399864197,
+          "final_compute_ms": 634.970400094986,
+          "final_rtf": 0.10078895239602952
+        },
+        {
+          "fixture": "normal",
+          "reference": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country.",
+          "hypothesis": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country",
+          "wer": 0.0,
+          "audio_duration_ms": 11000.0,
+          "first_partial_latency_ms": 1464.5331000089645,
+          "final_latency_ms": 19611.034900069237,
+          "final_compute_ms": 590.1040998697281,
+          "final_rtf": 0.05364582726088437
+        },
+        {
+          "fixture": "fast",
+          "reference": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country.",
+          "hypothesis": "I'm so my phone at us! Hah! What's your company to do for you? Ask what you can do for your company!",
+          "wer": 0.45454545454545453,
+          "audio_duration_ms": 5500.0,
+          "first_partial_latency_ms": 1949.0923999547958,
+          "final_latency_ms": 26250.24310004711,
+          "final_compute_ms": 554.9771000146866,
+          "final_rtf": 0.10090492727539756
+        },
+        {
+          "fixture": "pause_rich",
+          "reference": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country.",
+          "hypothesis": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country.",
+          "wer": 0.0,
+          "audio_duration_ms": 12000.0,
+          "first_partial_latency_ms": 1451.5585000514984,
+          "final_latency_ms": 21339.938399910927,
+          "final_compute_ms": 586.0758000612259,
+          "final_rtf": 0.04883965000510216
+        },
+        {
+          "fixture": "mild_noisy",
+          "reference": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country.",
+          "hypothesis": "And so my fellow America ask not what your country can do for you ask what you can do for your country.",
+          "wer": 0.045454545454545456,
+          "audio_duration_ms": 11000.0,
+          "first_partial_latency_ms": 1454.1335999965668,
+          "final_latency_ms": 20357.665099978447,
+          "final_compute_ms": 689.3991000652313,
+          "final_rtf": 0.06267264546047557
+        }
+      ],
+      "average_wer": 0.15714285714285714,
+      "average_decode_ms": 611.1053000211716,
+      "worst_decode_ms": 689.3991000652313,
+      "average_rtf": 0.07337040047957784
+    }
+  ]
+}

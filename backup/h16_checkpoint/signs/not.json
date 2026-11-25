@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "not",
+  "metadata": {
+    "display_name": "Not",
+    "gloss": "NOT",
+    "language": "ISL",
+    "lexical_type": "Negation particle; flat-hand wave with non-manual headshake",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant flat hand moves horizontally side-to-side in front of chest accompanied by coordinated headshake."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1400,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 350,
+        "label": "Raise Flat Palm & Head Turn Left",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": -6, "y": 5, "z": -48 },
+          "Bip001_R_Forearm": { "x": 0, "y": -15, "z": -55 },
+          "Bip001_R_Hand": { "x": -10, "y": 15, "z": -10 },
+          "Bip001_Head": { "x": 0, "y": -12, "z": 0 }
+        },
+        "finger_curls": { "thumb": 10, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 700,
+        "label": "Wave Hand Right & Head Turn Right",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 6, "z": -3 },
+          "Bip001_R_UpperArm": { "x": 10, "y": 20, "z": -65 },
+          "Bip001_R_Forearm": { "x": 0, "y": 10, "z": -60 },
+          "Bip001_R_Hand": { "x": -15, "y": 25, "z": 5 },
+          "Bip001_Head": { "x": 0, "y": 12, "z": 0 }
+        },
+        "finger_curls": { "thumb": 10, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 1050,
+        "label": "Wave Hand Center & Head Center",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 10, "z": -50 },
+          "Bip001_R_Forearm": { "x": 0, "y": -5, "z": -50 },
+          "Bip001_R_Hand": { "x": -10, "y": 15, "z": -5 },
+          "Bip001_Head": { "x": 0, "y": -4, "z": 0 }
+        },
+        "finger_curls": { "thumb": 10, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 1400,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      }
+    ]
+  }
+}

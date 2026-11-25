@@ -1,0 +1,709 @@
+{
+  "phase": "H20",
+  "batch_number": 1,
+  "concept_range": "1-50",
+  "concepts_count": 50,
+  "total_occurrences": 455,
+  "concepts": [
+    {
+      "rank": 1,
+      "lemma": "10",
+      "surface_forms": [
+        "10"
+      ],
+      "fallback_frequency": 16,
+      "percentage_of_fallback": 0.429,
+      "handling_disposition": "NUMERAL_MAPPING",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NUM:10",
+      "evidence_rationale": "Numerical value 10 expressed via ISL numeral rules",
+      "example_context": "But as soon as there's 10 or more suddenly, I can't."
+    },
+    {
+      "rank": 2,
+      "lemma": "may",
+      "surface_forms": [
+        "may"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.376,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "You may have prepared, like, weeks, your presentation,"
+    },
+    {
+      "rank": 3,
+      "lemma": "base",
+      "surface_forms": [
+        "base"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.376,
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "base",
+      "resolved_gloss": "BASE",
+      "evidence_rationale": "Authored new Schema 2.0.0 sign in signs/base.json",
+      "example_context": "What I mean with that is that this one's skill base, but what on earth is this?"
+    },
+    {
+      "rank": 4,
+      "lemma": "volume",
+      "surface_forms": [
+        "volume"
+      ],
+      "fallback_frequency": 14,
+      "percentage_of_fallback": 0.376,
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "volume",
+      "resolved_gloss": "VOLUME",
+      "evidence_rationale": "Authored new Schema 2.0.0 sign in signs/volume.json",
+      "example_context": "So you have pace, you have volume,"
+    },
+    {
+      "rank": 5,
+      "lemma": "30",
+      "surface_forms": [
+        "30"
+      ],
+      "fallback_frequency": 13,
+      "percentage_of_fallback": 0.349,
+      "handling_disposition": "NUMERAL_MAPPING",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NUM:30",
+      "evidence_rationale": "Numerical value 30 expressed via ISL numeral rules",
+      "example_context": "attention. Now over the next two hours and 30 minutes, you'll discover the essential tools I've"
+    },
+    {
+      "rank": 6,
+      "lemma": "increase",
+      "surface_forms": [
+        "increase"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.322,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "But if it's just good enough, it can actually increase your fire."
+    },
+    {
+      "rank": 7,
+      "lemma": "perspective",
+      "surface_forms": [
+        "perspective"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.322,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "If your perspective is that you can learn and that you are not restricted, you have, per"
+    },
+    {
+      "rank": 8,
+      "lemma": "after",
+      "surface_forms": [
+        "after"
+      ],
+      "fallback_frequency": 12,
+      "percentage_of_fallback": 0.322,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "This first study was done on math grades before and after the intervention."
+    },
+    {
+      "rank": 9,
+      "lemma": "110",
+      "surface_forms": [
+        "110"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.295,
+      "handling_disposition": "NUMERAL_MAPPING",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NUM:110",
+      "evidence_rationale": "Numerical value 110 expressed via ISL numeral rules",
+      "example_context": "from the 110-step chart of excellence communication."
+    },
+    {
+      "rank": 10,
+      "lemma": "hey",
+      "surface_forms": [
+        "hey"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.295,
+      "handling_disposition": "DISCOURSE_PARTICLE",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Conversational spoken discourse filler naturally omitted in ISL",
+      "example_context": "Hey, if we haven't met before, my name is David JP Phillips,"
+    },
+    {
+      "rank": 11,
+      "lemma": "lead",
+      "surface_forms": [
+        "command"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.295,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "that it's time to begin. Our first session today is about confidence on command. And"
+    },
+    {
+      "rank": 12,
+      "lemma": "rest",
+      "surface_forms": [
+        "rest"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.295,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I wanted to see the rest. I wanted to see the rest."
+    },
+    {
+      "rank": 13,
+      "lemma": "little",
+      "surface_forms": [
+        "little"
+      ],
+      "fallback_frequency": 11,
+      "percentage_of_fallback": 0.295,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "For said Bond. I'm a little confused."
+    },
+    {
+      "rank": 14,
+      "lemma": "000",
+      "surface_forms": [
+        "000"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.242,
+      "handling_disposition": "NUMERAL_MAPPING",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NUM:000",
+      "evidence_rationale": "Numerical value 000 expressed via ISL numeral rules",
+      "example_context": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+    },
+    {
+      "rank": 15,
+      "lemma": "50",
+      "surface_forms": [
+        "50"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.242,
+      "handling_disposition": "NUMERAL_MAPPING",
+      "resolved_sign_id": null,
+      "resolved_gloss": "NUM:50",
+      "evidence_rationale": "Numerical value 50 expressed via ISL numeral rules",
+      "example_context": "And then when you've listened to it 50 times,"
+    },
+    {
+      "rank": 16,
+      "lemma": "functional",
+      "surface_forms": [
+        "functional"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.242,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "you have functional gestures,"
+    },
+    {
+      "rank": 17,
+      "lemma": "guy",
+      "surface_forms": [
+        "guy"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.242,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "such grace and he shakes my hand and feels like I'm knocked out. You know, like this guy is the"
+    },
+    {
+      "rank": 18,
+      "lemma": "angle",
+      "surface_forms": [
+        "angle"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.242,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I want you to angle towards me."
+    },
+    {
+      "rank": 19,
+      "lemma": "let",
+      "surface_forms": [
+        "let"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.242,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Let me just catch up."
+    },
+    {
+      "rank": 20,
+      "lemma": "boom",
+      "surface_forms": [
+        "boom"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.242,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "It is time for history lesson 1902, boom."
+    },
+    {
+      "rank": 21,
+      "lemma": "wise",
+      "surface_forms": [
+        "wise"
+      ],
+      "fallback_frequency": 9,
+      "percentage_of_fallback": 0.242,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "two meters wide, shoulder-wise. His name is Arthur Brumer, he sounds like a bear,"
+    },
+    {
+      "rank": 22,
+      "lemma": "communication",
+      "surface_forms": [
+        "communication"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "communication",
+      "resolved_gloss": "COMMUNICATION",
+      "evidence_rationale": "Authored new Schema 2.0.0 sign in signs/communication.json",
+      "example_context": "from the 110-step chart of excellence communication."
+    },
+    {
+      "rank": 23,
+      "lemma": "paper",
+      "surface_forms": [
+        "paper"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "NEW_LEXICAL_SIGN",
+      "resolved_sign_id": "paper",
+      "resolved_gloss": "PAPER",
+      "evidence_rationale": "Authored new Schema 2.0.0 sign in signs/paper.json",
+      "example_context": "So make sure you have a pen and a paper,"
+    },
+    {
+      "rank": 24,
+      "lemma": "instead",
+      "surface_forms": [
+        "instead"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I know, I can't do that. That is you having a fixed mindset. But if you instead say,"
+    },
+    {
+      "rank": 25,
+      "lemma": "able",
+      "surface_forms": [
+        "able"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "mentioned growth mindset. We won't be able to go through all of these, but when we"
+    },
+    {
+      "rank": 26,
+      "lemma": "ago",
+      "surface_forms": [
+        "ago"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "rank": 27,
+      "lemma": "quite",
+      "surface_forms": [
+        "quite"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "And a month ago, I was, I guess, quite critically called up by an HR manager who said, I have"
+    },
+    {
+      "rank": 28,
+      "lemma": "part",
+      "surface_forms": [
+        "part"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "introduce you to the concept of the Angels and the Devil's Cocktail, which is part of the book."
+    },
+    {
+      "rank": 29,
+      "lemma": "oxytocin",
+      "surface_forms": [
+        "oxytocin"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "testosterone and maybe some oxytocin in there as well. I'll ask you to drink that."
+    },
+    {
+      "rank": 30,
+      "lemma": "momentum",
+      "surface_forms": [
+        "momentum"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Focus, motivation, direction, and momentum."
+    },
+    {
+      "rank": 31,
+      "lemma": "big",
+      "surface_forms": [
+        "big"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "It's a big town."
+    },
+    {
+      "rank": 32,
+      "lemma": "stop",
+      "surface_forms": [
+        "stop"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "Why did you stop it David?"
+    },
+    {
+      "rank": 33,
+      "lemma": "bit",
+      "surface_forms": [
+        "bit"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "They all look a bit edgy these flowers."
+    },
+    {
+      "rank": 34,
+      "lemma": "outside",
+      "surface_forms": [
+        "outside"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I was outside of the pub, and when he scored, just prior to him scoring, there were, I don't know,"
+    },
+    {
+      "rank": 35,
+      "lemma": "remove",
+      "surface_forms": [
+        "remove"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "It is something that you can in no way or form remove."
+    },
+    {
+      "rank": 36,
+      "lemma": "anticipation",
+      "surface_forms": [
+        "anticipation"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "write this sentence down is the anticipation of reward. That's what dopamine is, the anticipation"
+    },
+    {
+      "rank": 37,
+      "lemma": "sell",
+      "surface_forms": [
+        "sell"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "This I love this one. Sell your slide. Okay so it goes like this."
+    },
+    {
+      "rank": 38,
+      "lemma": "based",
+      "surface_forms": [
+        "based"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "indeed. Maybe not the most beautiful one I've seen, but it does summarize, you know, based on how"
+    },
+    {
+      "rank": 39,
+      "lemma": "lars",
+      "surface_forms": [
+        "lars"
+      ],
+      "fallback_frequency": 8,
+      "percentage_of_fallback": 0.215,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "His name was Lars."
+    },
+    {
+      "rank": 40,
+      "lemma": "bring",
+      "surface_forms": [
+        "bring"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "and bring you a few steps closer to being more confident, more clear,"
+    },
+    {
+      "rank": 41,
+      "lemma": "watch",
+      "surface_forms": [
+        "watch"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "What you're about to watch is a special compilation of a three-day public speaking challenge"
+    },
+    {
+      "rank": 42,
+      "lemma": "chart",
+      "surface_forms": [
+        "chart"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "from the 110-step chart of excellence communication."
+    },
+    {
+      "rank": 43,
+      "lemma": "subject",
+      "surface_forms": [
+        "subject"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "on this particular subject."
+    },
+    {
+      "rank": 44,
+      "lemma": "during",
+      "surface_forms": [
+        "during"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I've gathered during my 25 year career as a public speaker"
+    },
+    {
+      "rank": 45,
+      "lemma": "25",
+      "surface_forms": [
+        "25"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "I've gathered during my 25 year career as a public speaker"
+    },
+    {
+      "rank": 46,
+      "lemma": "pen",
+      "surface_forms": [
+        "pen"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "So make sure you have a pen and a paper,"
+    },
+    {
+      "rank": 47,
+      "lemma": "sweden",
+      "surface_forms": [
+        "sweden"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "to the lovely country of Sweden."
+    },
+    {
+      "rank": 48,
+      "lemma": "nervous",
+      "surface_forms": [
+        "nervous"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "which can literally transform you into being a nervous wreck, delivering a bad presentation,"
+    },
+    {
+      "rank": 49,
+      "lemma": "far",
+      "surface_forms": [
+        "far"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "to give you a concept of how important this is for any public speaker, at the far end"
+    },
+    {
+      "rank": 50,
+      "lemma": "per",
+      "surface_forms": [
+        "per"
+      ],
+      "fallback_frequency": 7,
+      "percentage_of_fallback": 0.188,
+      "handling_disposition": "SUBTITLE_FALLBACK",
+      "resolved_sign_id": null,
+      "resolved_gloss": null,
+      "evidence_rationale": "Candidate documented; retained in honest subtitle fallback until motion authoring",
+      "example_context": "and then you have a per-skill confidence."
+    }
+  ]
+}

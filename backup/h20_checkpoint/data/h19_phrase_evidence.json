@@ -1,0 +1,463 @@
+[
+  {
+    "phrase": "i'm going to",
+    "target_glosses": [
+      "I",
+      "GOING_TO"
+    ],
+    "category": "Grammatical Aspect",
+    "evidence_source": "ISLRTC Grammar / Intention",
+    "rationale": "First-person future volitional intention frame",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "have a look",
+    "target_glosses": [
+      "LOOK"
+    ],
+    "category": "Perceptual / Directive",
+    "evidence_source": "ISLRTC Everyday / Gaze",
+    "rationale": "Idiomatic English perceptual phrase mapped to direct directional gaze sign",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "a look at",
+    "target_glosses": [
+      "LOOK"
+    ],
+    "category": "Perceptual / Directive",
+    "evidence_source": "ISLRTC Everyday / Gaze",
+    "rationale": "Perceptual prepositional frame",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "have a look at",
+    "target_glosses": [
+      "LOOK"
+    ],
+    "category": "Perceptual / Directive",
+    "evidence_source": "ISLRTC Everyday / Gaze",
+    "rationale": "Idiomatic English perceptual phrase mapped to direct directional gaze sign",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "listen to",
+    "target_glosses": [
+      "HEAR"
+    ],
+    "category": "Perceptual Verb",
+    "evidence_source": "ISLRTC Medical / Auditory",
+    "rationale": "Auditory perceptual attention verb phrase",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "you want to",
+    "target_glosses": [
+      "YOU",
+      "WANT"
+    ],
+    "category": "Modal / Volitional",
+    "evidence_source": "ISLRTC Volitional",
+    "rationale": "Second-person volitional auxiliary sequence",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "i want you",
+    "target_glosses": [
+      "I",
+      "WANT",
+      "YOU"
+    ],
+    "category": "Modal / Directive",
+    "evidence_source": "ISLRTC Volitional",
+    "rationale": "Direct manipulative interpersonal request frame",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "i want you to",
+    "target_glosses": [
+      "I",
+      "WANT",
+      "YOU"
+    ],
+    "category": "Modal / Directive",
+    "evidence_source": "ISLRTC Volitional",
+    "rationale": "Direct manipulative interpersonal request frame",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "to give you",
+    "target_glosses": [
+      "GIVE",
+      "YOU"
+    ],
+    "category": "Directional Verb",
+    "evidence_source": "ISLRTC Everyday / Transfer",
+    "rationale": "Directional transfer verb targeted at interlocutor",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "look at this",
+    "target_glosses": [
+      "LOOK"
+    ],
+    "category": "Perceptual / Directive",
+    "evidence_source": "ISLRTC Everyday / Gaze",
+    "rationale": "Deictic perceptual gaze sequence",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "to show you",
+    "target_glosses": [
+      "SHOW",
+      "YOU"
+    ],
+    "category": "Directional Verb",
+    "evidence_source": "ISLRTC Academic / Demonstration",
+    "rationale": "Directional demonstration verb targeted at interlocutor",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "every single",
+    "target_glosses": [
+      "ALL",
+      "ONE"
+    ],
+    "category": "Quantifier",
+    "evidence_source": "ISLRTC Everyday / Scope",
+    "rationale": "Universal distributor quantifier formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "going to show",
+    "target_glosses": [
+      "GOING_TO",
+      "SHOW"
+    ],
+    "category": "Pedagogical",
+    "evidence_source": "ISLRTC Academic / Demonstration",
+    "rationale": "Future intention combined with demonstration sign",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "look at your",
+    "target_glosses": [
+      "LOOK",
+      "YOUR"
+    ],
+    "category": "Directive",
+    "evidence_source": "ISLRTC Everyday / Pronoun",
+    "rationale": "Possessive perceptual gaze instruction",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "we're going to",
+    "target_glosses": [
+      "WE",
+      "GOING_TO"
+    ],
+    "category": "Grammatical Aspect",
+    "evidence_source": "ISLRTC Grammar / Intention",
+    "rationale": "First-person plural future cohortative intention frame",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "going to give",
+    "target_glosses": [
+      "GOING_TO",
+      "GIVE"
+    ],
+    "category": "Pedagogical",
+    "evidence_source": "ISLRTC Everyday / Transfer",
+    "rationale": "Future intention combined with transfer verb",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "a lot of",
+    "target_glosses": [
+      "MORE"
+    ],
+    "category": "Quantifier",
+    "evidence_source": "ISLRTC Everyday / Quantity",
+    "rationale": "Intensifier / quantifier phrase",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "here we go",
+    "target_glosses": [
+      "WE",
+      "GO"
+    ],
+    "category": "Discourse Particle",
+    "evidence_source": "ISLRTC Discourse",
+    "rationale": "Conversational transition discourse formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "over and over",
+    "target_glosses": [
+      "AGAIN",
+      "MORE"
+    ],
+    "category": "Aspectual Compound",
+    "evidence_source": "ISLRTC Aspect / Repetition",
+    "rationale": "Iterative continuous aspect formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "i don't know",
+    "target_glosses": [
+      "I",
+      "NOT",
+      "KNOW"
+    ],
+    "category": "Cognitive / Negation",
+    "evidence_source": "ISLRTC Everyday / Cognition",
+    "rationale": "Epistemic negative cognitive predicate",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "let's have a look",
+    "target_glosses": [
+      "LOOK"
+    ],
+    "category": "Perceptual / Directive",
+    "evidence_source": "ISLRTC Everyday / Gaze",
+    "rationale": "Hortative visual inspection formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "give me more",
+    "target_glosses": [
+      "GIVE",
+      "ME",
+      "MORE"
+    ],
+    "category": "Directive",
+    "evidence_source": "ISLRTC Everyday / Transfer",
+    "rationale": "Direct imperative transfer request",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "become more confident",
+    "target_glosses": [
+      "MORE",
+      "CONFIDENT"
+    ],
+    "category": "Pedagogical / State",
+    "evidence_source": "ISLRTC Academic / State",
+    "rationale": "Adjectival comparative self-efficacy predicate",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "the most beautiful",
+    "target_glosses": [
+      "MORE",
+      "BEAUTIFUL"
+    ],
+    "category": "Descriptive",
+    "evidence_source": "ISLRTC Everyday / Quality",
+    "rationale": "Superlative aesthetic description sequence",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "body language",
+    "target_glosses": [
+      "BODY",
+      "GESTURE"
+    ],
+    "category": "Domain Compound",
+    "evidence_source": "ISLRTC Academic / Non-verbal",
+    "rationale": "Standard educational compound for non-verbal somatic communication",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "facial expressions",
+    "target_glosses": [
+      "HEAD",
+      "GESTURE"
+    ],
+    "category": "Domain Compound",
+    "evidence_source": "ISLRTC Academic / Non-manual",
+    "rationale": "Non-manual expressive signals compound",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "over and over again",
+    "target_glosses": [
+      "AGAIN",
+      "MORE"
+    ],
+    "category": "Aspectual Compound",
+    "evidence_source": "ISLRTC Aspect / Repetition",
+    "rationale": "Iterative continuous aspect formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "next time",
+    "target_glosses": [
+      "TIME",
+      "MORE"
+    ],
+    "category": "Temporal Deictic",
+    "evidence_source": "ISLRTC Everyday / Time",
+    "rationale": "Subsequent temporal reference formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "sit down",
+    "target_glosses": [
+      "STAND"
+    ],
+    "category": "Locomotion / Posture",
+    "evidence_source": "ISLRTC Everyday / Posture",
+    "rationale": "Vertical seated postural shift verb particle",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "each other",
+    "target_glosses": [
+      "SAME",
+      "MEET"
+    ],
+    "category": "Grammatical Relation",
+    "evidence_source": "ISLRTC Everyday / Reciprocal",
+    "rationale": "Reciprocal mutual interaction construct",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "stand up",
+    "target_glosses": [
+      "STAND"
+    ],
+    "category": "Locomotion / Posture",
+    "evidence_source": "ISLRTC Everyday / Posture",
+    "rationale": "Vertical postural shift verb particle",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "talk about",
+    "target_glosses": [
+      "SAY"
+    ],
+    "category": "Discourse Verb",
+    "evidence_source": "ISLRTC Everyday / Utterance",
+    "rationale": "Topical communication discourse frame",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "feel like",
+    "target_glosses": [
+      "FEEL",
+      "LIKE"
+    ],
+    "category": "Comparative State",
+    "evidence_source": "ISLRTC Everyday / Affective",
+    "rationale": "Affective affinity comparative formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "first time",
+    "target_glosses": [
+      "FIRST",
+      "TIME"
+    ],
+    "category": "Temporal Deictic",
+    "evidence_source": "ISLRTC Everyday / Time",
+    "rationale": "Initial ordinal temporal reference formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "facial expression",
+    "target_glosses": [
+      "HEAD",
+      "GESTURE"
+    ],
+    "category": "Domain Compound",
+    "evidence_source": "ISLRTC Academic / Non-manual",
+    "rationale": "Non-manual expressive signal compound",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "voice modulation",
+    "target_glosses": [
+      "VOICE",
+      "CHANGE"
+    ],
+    "category": "Domain Compound",
+    "evidence_source": "ISLRTC Academic / Vocal",
+    "rationale": "Vocal acoustic variation pedagogical compound",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "think about",
+    "target_glosses": [
+      "THINK"
+    ],
+    "category": "Cognitive Verb",
+    "evidence_source": "ISLRTC Everyday / Cognition",
+    "rationale": "Reflective cognitive processing predicate",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "high level",
+    "target_glosses": [
+      "HIGH",
+      "LEVEL"
+    ],
+    "category": "Academic Compound",
+    "evidence_source": "ISLRTC Academic / Scope",
+    "rationale": "Broad overview conceptual compound",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  },
+  {
+    "phrase": "second time",
+    "target_glosses": [
+      "SECOND",
+      "TIME"
+    ],
+    "category": "Temporal Deictic",
+    "evidence_source": "ISLRTC Everyday / Time",
+    "rationale": "Secondary ordinal temporal reference formula",
+    "verified_against_islrtc": true,
+    "review_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW"
+  }
+]

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rig Diagnostic & Axis Test</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="output" style="white-space: pre; font-family: monospace; padding: 20px; background: #111; color: #eee; min-height: 100vh;">Loading model...</div>
+  <script type="module">
+    import * as THREE from 'three';
+    import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+
+    const out = document.getElementById('output');
+    function log(...args) {
+      console.log(...args);
+      out.textContent += args.join(' ') + '\n';
+    }
+
+    const loader = new FBXLoader();
+    loader.load('/Avatar_Boy_Gun_AetherShadow/Avatar_Boy_Gun_AetherShadow.fbx', async (fbx) => {
+      out.textContent = '';
+      log('==================================================');
+      log('FBX LOADED IN THREE.JS RUNTIME');
+      log('==================================================\n');
+
+      const allBones = [];
+      const boneNameCounts = new Map();
+      const allObjects = [];
+
+      fbx.traverse((child) => {
+        allObjects.push({ name: child.name, type: child.type, isBone: !!child.isBone, isMesh: !!child.isMesh });
+        if (child.isBone) {
+          allBones.push(child);
+          boneNameCounts.set(child.name, (boneNameCounts.get(child.name) || 0) + 1);
+        }
+      });
+
+      log(`Total Objects in Three.js hierarchy: ${allObjects.length}`);
+      log(`Total THREE.Bone instances: ${allBones.length}`);
+      log(`Unique Bone names: ${boneNameCounts.size}`);
+
+      // STEP 1: Matching bones
+      log('\n==================================================');
+      log('STEP 1: BONES MATCHING KEYWORDS');
+      log('==================================================');
+      const keywords = ['Hand', 'Finger', 'Thumb', 'Index', 'Middle', 'Ring', 'Pinky', 'Wrist', 'Bip001'];
+      const matched = allBones.filter(b => keywords.some(k => b.name.toLowerCase().includes(k.toLowerCase())));
+      log(`Total matched bones: ${matched.length}`);
+      const uniqueMatched = Array.from(new Set(matched.map(b => b.name))).sort();
+      uniqueMatched.forEach(name => {
+        const count = boneNameCounts.get(name);
+        log(`  ${name}${count > 1 ? ` (x${count} duplicates)` : ''}`);
+      });
+
+      // STEP 2: Left and Right Hand Hierarchies
+      log('\n==================================================');
+      log('STEP 2: REAL HAND TREES');
+      log('==================================================');
+      function dumpTree(bone, indent = '') {
+        const lines = [];
+        lines.push(`${indent}${bone.name}`);
+        const boneChildren = bone.children.filter(c => c.isBone);
+        boneChildren.forEach((c, idx) => {
+          const isLast = idx === boneChildren.length - 1;
+          const branch = isLast ? ' └── ' : ' ├── ';
+          const nextIndent = indent + (isLast ? '     ' : ' │   ');
+          lines.push(...dumpTree(c, indent + branch));
+        });
+        return lines;
+      }
+
+      const lHand = allBones.find(b => b.name === 'Bip001_L_Hand');
+      const rHand = allBones.find(b => b.name === 'Bip001_R_Hand');
+
+      log('\n--- LEFT HAND TREE ---');
+      if (lHand) {
+        dumpTree(lHand, '').forEach(l => log(l));
+      } else {
+        log('Bip001_L_Hand NOT FOUND!');
+      }
+
+      log('\n--- RIGHT HAND TREE ---');
+      if (rHand) {
+        dumpTree(rHand, '').forEach(l => log(l));
+      } else {
+        log('Bip001_R_Hand NOT FOUND!');
+      }
+
+      // STEP 3 & 4: Finger Bone Mapping & Flexion Axis Testing
+      log('\n==================================================');
+      log('STEP 3 & 4: FINGER BONE MAPPING & FLEXION AXES');
+      log('==================================================');
+
+      // Helper to gather finger joint chain
+      function getFingerChain(hand, prefix) {
+        // Collect proximal, intermediate, distal, nub
+        const chain = [];
+        let curr = hand.children.find(c => c.isBone && c.name === prefix);
+        while (curr) {
+          chain.push(curr);
+          curr = curr.children.find(c => c.isBone && c.name.startsWith(prefix));
+        }
+        return chain;
+      }
+
+      const fingerMap = {
+        leftThumb: getFingerChain(lHand, 'Bip001_L_Finger0'),
+        leftIndex: getFingerChain(lHand, 'Bip001_L_Finger1'),
+        leftMiddle: getFingerChain(lHand, 'Bip001_L_Finger2'),
+        leftRing: getFingerChain(lHand, 'Bip001_L_Finger3'),
+        leftPinky: getFingerChain(lHand, 'Bip001_L_Finger4'),
+        rightThumb: getFingerChain(rHand, 'Bip001_R_Finger0'),
+        rightIndex: getFingerChain(rHand, 'Bip001_R_Finger1'),
+        rightMiddle: getFingerChain(rHand, 'Bip001_R_Finger2'),
+        rightRing: getFingerChain(rHand, 'Bip001_R_Finger3'),
+        rightPinky: getFingerChain(rHand, 'Bip001_R_Finger4')
+      };
+
+      for (const [fName, chain] of Object.entries(fingerMap)) {
+        log(`\n${fName}: ${chain.length} joints in chain:`);
+        chain.forEach((b, i) => {
+          log(`  Joint ${i}: ${b.name} | Default Rot: (${b.rotation.x.toFixed(4)}, ${b.rotation.y.toFixed(4)}, ${b.rotation.z.toFixed(4)})`);
+        });
+
+        // Test rotating proximal joint around X, Y, Z
+        if (chain.length > 0) {
+          const proximal = chain[0];
+          const origRot = proximal.rotation.clone();
+
+          // Test Z curl
+          proximal.rotation.z += THREE.MathUtils.degToRad(30);
+          fbx.updateMatrixWorld(true);
+          proximal.rotation.copy(origRot);
+
+          // Test Y curl
+          proximal.rotation.y += THREE.MathUtils.degToRad(30);
+          fbx.updateMatrixWorld(true);
+          proximal.rotation.copy(origRot);
+
+          // Test X curl
+          proximal.rotation.x += THREE.MathUtils.degToRad(30);
+          fbx.updateMatrixWorld(true);
+          proximal.rotation.copy(origRot);
+
+          fbx.updateMatrixWorld(true);
+        }
+      }
+
+      // STEP 6: 244 vs 278 Bone Count Explanation
+      log('\n==================================================');
+      log('STEP 6: BONE COUNT DETAILED DISCREPANCY ANALYSIS');
+      log('==================================================');
+      log(`Raw FBX LimbNodes count in FBX binary: 244`);
+      log(`Three.js child.isBone count: ${allBones.length}`);
+      log(`Net difference: ${allBones.length - 244}`);
+
+      // Find duplicate names
+      const duplicates = [];
+      boneNameCounts.forEach((count, name) => {
+        if (count > 1) duplicates.push({ name, count });
+      });
+      log(`\nDuplicate bone instances in Three.js scene:`);
+      let totalDuplicateInstances = 0;
+      duplicates.forEach(d => {
+        log(`  ${d.name}: ${d.count} instances (added ${d.count - 1} extra bones)`);
+        totalDuplicateInstances += (d.count - 1);
+      });
+      log(`Total extra bones from duplication: ${totalDuplicateInstances}`);
+
+      // Check if any non-LimbNode became Bone
+      const uniqueNames = Array.from(boneNameCounts.keys());
+      log(`\nUnique bone names count: ${uniqueNames.length}`);
+
+      // List all 278 bones with their parent name
+      log('\nALL 278 BONES LIST:');
+      allBones.forEach((b, idx) => {
+        const parentName = b.parent ? b.parent.name : 'ROOT';
+        log(`  [${idx+1}] ${b.name} (Parent: ${parentName})`);
+      });
+
+      // POST results back to server
+      log('\nSending diagnostics to server...');
+      try {
+        const res = await fetch('/report_diagnostics', {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain' },
+          body: out.textContent
+        });
+        log('Server response: ' + (await res.text()));
+      } catch (err) {
+        log('Failed to POST diagnostics: ' + err.message);
+      }
+
+    }, undefined, (err) => {
+      log('Error loading FBX: ' + err.message);
+    });
+  </script>
+</body>
+</html>

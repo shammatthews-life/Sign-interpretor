@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "come",
+  "metadata": {
+    "display_name": "Come",
+    "gloss": "COME",
+    "language": "ISL",
+    "lexical_type": "Directional motion verb; supinated open hand curling inward toward torso",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant hand held forward with palm facing inward toward torso, fingers curling inward toward the body twice in an inviting beckoning movement."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1150,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 300,
+        "label": "Reach Forward Inward Facing",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 5,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": 12,
+            "y": 10,
+            "z": -55
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -15,
+            "z": -48
+          },
+          "Bip001_R_Hand": {
+            "x": -10,
+            "y": 15,
+            "z": -10
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 20,
+          "index": 15,
+          "middle": 15,
+          "ring": 15,
+          "pinky": 15
+        }
+      },
+      {
+        "time_ms": 600,
+        "label": "First Beckon Curl Toward Torso",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 5,
+            "z": -42
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -28,
+            "z": -68
+          },
+          "Bip001_R_Hand": {
+            "x": -20,
+            "y": 18,
+            "z": -15
+          },
+          "Bip001_Head": {
+            "x": 2,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 40,
+          "index": 60,
+          "middle": 60,
+          "ring": 60,
+          "pinky": 60
+        }
+      },
+      {
+        "time_ms": 850,
+        "label": "Second Beckon Curl Toward Torso",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 5,
+            "z": -42
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -28,
+            "z": -68
+          },
+          "Bip001_R_Hand": {
+            "x": -20,
+            "y": 18,
+            "z": -15
+          },
+          "Bip001_Head": {
+            "x": 2,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 40,
+          "index": 60,
+          "middle": 60,
+          "ring": 60,
+          "pinky": 60
+        }
+      },
+      {
+        "time_ms": 1150,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

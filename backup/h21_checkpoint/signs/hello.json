@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "hello",
+  "metadata": {
+    "display_name": "Hello",
+    "gloss": "HELLO",
+    "language": "ISL",
+    "lexical_type": "Lexical greeting; not fingerspelling",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {"organization":"ISLRTC","portal":"Indian Sign Language Research and Training Centre","url":"https://divyangjan.depwd.gov.in/islrtc/"},
+    "notes": "Technical avatar approximation. Linguistic validation is not claimed."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 2000,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {"safe_transition":"neutral","direct_blend_supported":false},
+    "involved_bones":["Bip001_R_Clavicle","Bip001_R_UpperArm","Bip001_R_Forearm","Bip001_R_Hand","Bip001_R_Finger0","Bip001_R_Finger1","Bip001_R_Finger2","Bip001_R_Finger3","Bip001_R_Finger4","Bip001_Head"],
+    "keyframes":[
+      {"time_ms":0,"label":"Neutral","easing":"easeInOutQuad","rotations":{"Bip001_R_Clavicle":{"x":0,"y":0,"z":0},"Bip001_R_UpperArm":{"x":0,"y":0,"z":0},"Bip001_R_Forearm":{"x":0,"y":0,"z":0},"Bip001_R_Hand":{"x":0,"y":0,"z":0},"Bip001_Head":{"x":0,"y":0,"z":0}},"finger_curls":{"thumb":0,"index":0,"middle":0,"ring":0,"pinky":0}},
+      {"time_ms":300,"label":"Early Raise","easing":"easeInOutQuad","rotations":{"Bip001_R_Clavicle":{"x":0,"y":3,"z":-2},"Bip001_R_UpperArm":{"x":-6,"y":-3,"z":-42},"Bip001_R_Forearm":{"x":0,"y":-15,"z":-36},"Bip001_R_Hand":{"x":-6,"y":9,"z":-6},"Bip001_Head":{"x":0,"y":0,"z":0}},"finger_curls":{"thumb":0,"index":0,"middle":0,"ring":0,"pinky":0}},
+      {"time_ms":650,"label":"Approach Temple","easing":"easeInOutQuad","rotations":{"Bip001_R_Clavicle":{"x":0,"y":6,"z":-4},"Bip001_R_UpperArm":{"x":-14,"y":-7,"z":-88},"Bip001_R_Forearm":{"x":0,"y":-31,"z":-74},"Bip001_R_Hand":{"x":-14,"y":19,"z":-12},"Bip001_Head":{"x":0,"y":0,"z":0}},"finger_curls":{"thumb":0,"index":0,"middle":0,"ring":0,"pinky":0}},
+      {"time_ms":850,"label":"Temple Transition","easing":"easeInOutQuad","rotations":{"Bip001_R_Clavicle":{"x":0,"y":7,"z":-4},"Bip001_R_UpperArm":{"x":-18,"y":-9,"z":-108},"Bip001_R_Forearm":{"x":0,"y":-37,"z":-92},"Bip001_R_Hand":{"x":-18,"y":23,"z":-14},"Bip001_Head":{"x":0,"y":0,"z":0}},"finger_curls":{"thumb":0,"index":0,"middle":0,"ring":0,"pinky":0}},
+      {"time_ms":1200,"label":"Outward Movement","easing":"easeOutQuad","rotations":{"Bip001_R_Clavicle":{"x":0,"y":6,"z":-3},"Bip001_R_UpperArm":{"x":8,"y":14,"z":-74},"Bip001_R_Forearm":{"x":0,"y":-2,"z":-72},"Bip001_R_Hand":{"x":-15,"y":18,"z":-10},"Bip001_Head":{"x":0,"y":0,"z":0}},"finger_curls":{"thumb":0,"index":0,"middle":0,"ring":0,"pinky":0}},
+      {"time_ms":1500,"label":"Outward Follow-through","easing":"easeInOutQuad","rotations":{"Bip001_R_Clavicle":{"x":0,"y":5,"z":-2},"Bip001_R_UpperArm":{"x":15,"y":20,"z":-68},"Bip001_R_Forearm":{"x":0,"y":5,"z":-65},"Bip001_R_Hand":{"x":-13,"y":15,"z":-8},"Bip001_Head":{"x":0,"y":0,"z":0}},"finger_curls":{"thumb":0,"index":0,"middle":0,"ring":0,"pinky":0}},
+      {"time_ms":2000,"label":"Neutral","easing":"easeInOutQuad","rotations":{"Bip001_R_Clavicle":{"x":0,"y":0,"z":0},"Bip001_R_UpperArm":{"x":0,"y":0,"z":0},"Bip001_R_Forearm":{"x":0,"y":0,"z":0},"Bip001_R_Hand":{"x":0,"y":0,"z":0},"Bip001_Head":{"x":0,"y":0,"z":0}},"finger_curls":{"thumb":0,"index":0,"middle":0,"ring":0,"pinky":0}}
+    ]
+  }
+}

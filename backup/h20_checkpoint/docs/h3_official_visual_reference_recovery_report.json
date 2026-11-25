@@ -1,0 +1,51 @@
+{
+  "phase": "H3",
+  "date": "2026-10-06",
+  "purpose": "Official visual-reference recovery only; no sign motion was created or changed.",
+  "official_access_routes": [
+    {
+      "route": "ISLRTC FAQ / dictionary guidance",
+      "url": "https://islrtc.nic.in/faq/",
+      "access": "ACCESSIBLE",
+      "finding": "ISLRTC states that the dictionary is video-only and directs users to its YouTube channel, Google Drive, and DIKSHA."
+    },
+    {
+      "route": "ISLRTC dictionary directory",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/",
+      "access": "DIRECT_REQUEST_TIMED_OUT_IN_H2; SEARCH_INDEX_ACCESSIBLE_IN_H3",
+      "finding": "Official directory listings confirm candidate labels but did not provide inspectable candidate video in this environment."
+    },
+    {
+      "route": "ISLRTC YouTube channel",
+      "url": "https://www.youtube.com/channel/UC3AcGIlqVI4nJWCwHgHFXtg",
+      "access": "CHANNEL_ENDPOINT_REACHED; CANDIDATE_VIDEO_NOT_ISOLATED",
+      "finding": "No individual candidate video could be located and inspected through the available retrieval surface."
+    },
+    {
+      "route": "ISLRTC Google Drive",
+      "url": "https://drive.google.com/drive/folders/1U-Pr4r1-cupgNOOq9NH_uTsQnPSVEKco?usp=sharing",
+      "access": "FOLDER_ENDPOINT_REACHED; FILE_LISTING_UNAVAILABLE",
+      "finding": "The folder route redirected to a mobile folder surface without inspectable file metadata or video frames."
+    },
+    {
+      "route": "DIKSHA",
+      "url": "https://diksha.gov.in/",
+      "access": "PORTAL_ACCESSIBLE; CANDIDATE_VIDEO_NOT_ISOLATED",
+      "finding": "The portal loaded, but no word-level ISL dictionary video for a candidate was retrievable and inspectable."
+    }
+  ],
+  "candidates": [
+    {"concept":"YOU","h1_frequency":17,"official_source_found":true,"actual_video_inspected":false,"evidence_status":"NO_ACCESSIBLE_OFFICIAL_VISUAL_REFERENCE","motion_critical_details_complete":false,"variant_ambiguity":"UNCLEAR","eligible_for_h4_authoring":false,"source_url":"https://divyangjan.depwd.gov.in/islrtc/search.php?search=You"},
+    {"concept":"WATER","h1_frequency":16,"official_source_found":true,"actual_video_inspected":false,"evidence_status":"NO_ACCESSIBLE_OFFICIAL_VISUAL_REFERENCE","motion_critical_details_complete":false,"variant_ambiguity":"UNCLEAR","eligible_for_h4_authoring":false,"source_url":"https://divyangjan.depwd.gov.in/islrtc/listpage.php?type=W"},
+    {"concept":"I","h1_frequency":15,"official_source_found":true,"actual_video_inspected":false,"evidence_status":"NO_ACCESSIBLE_OFFICIAL_VISUAL_REFERENCE","motion_critical_details_complete":false,"variant_ambiguity":"UNCLEAR; official directory label is I, Me","eligible_for_h4_authoring":false,"source_url":"https://divyangjan.depwd.gov.in/islrtc/listpage.php?type=I"},
+    {"concept":"HELP","h1_frequency":12,"official_source_found":true,"actual_video_inspected":false,"evidence_status":"NO_ACCESSIBLE_OFFICIAL_VISUAL_REFERENCE","motion_critical_details_complete":false,"variant_ambiguity":"UNCLEAR","eligible_for_h4_authoring":false,"source_url":"https://divyangjan.depwd.gov.in/islrtc/listpage.php?type=H"},
+    {"concept":"ME","h1_frequency":12,"official_source_found":true,"actual_video_inspected":false,"evidence_status":"NO_ACCESSIBLE_OFFICIAL_VISUAL_REFERENCE","motion_critical_details_complete":false,"variant_ambiguity":"UNCLEAR; official directory label is I, Me","eligible_for_h4_authoring":false,"source_url":"https://divyangjan.depwd.gov.in/islrtc/listpage.php?type=I"},
+    {"concept":"NEED","h1_frequency":9,"official_source_found":false,"actual_video_inspected":false,"evidence_status":"NO_ACCESSIBLE_OFFICIAL_VISUAL_REFERENCE","motion_critical_details_complete":false,"variant_ambiguity":"UNCLEAR","eligible_for_h4_authoring":false,"source_url":null},
+    {"concept":"DRINK","h1_frequency":7,"official_source_found":true,"actual_video_inspected":false,"evidence_status":"NO_ACCESSIBLE_OFFICIAL_VISUAL_REFERENCE","motion_critical_details_complete":false,"variant_ambiguity":"UNCLEAR","eligible_for_h4_authoring":false,"source_url":"https://divyangjan.depwd.gov.in/islrtc/listpage.php?type=D"}
+  ],
+  "coverage_simulation": {
+    "current": {"covered_concept_occurrences":10,"total_concept_occurrences":110,"technical_motion_coverage_percent":9.09},
+    "current_plus_verified_visual_references": {"candidate_ids":[],"covered_concept_occurrences":10,"total_concept_occurrences":110,"technical_motion_coverage_percent":9.09},
+    "current_plus_verified_and_safe_after_human_review": {"candidate_ids":[],"covered_concept_occurrences":10,"total_concept_occurrences":110,"technical_motion_coverage_percent":9.09}
+  }
+}

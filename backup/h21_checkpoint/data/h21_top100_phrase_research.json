@@ -1,0 +1,1776 @@
+[
+  {
+    "phrase_id": "p_h21_001",
+    "phrase": "have a look at",
+    "occurrences": 35,
+    "tokens_affected": 140,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "HAVE",
+      "A",
+      "LOOK",
+      "AT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "have",
+      "look"
+    ],
+    "example_sentence": "Have a look at this video."
+  },
+  {
+    "phrase_id": "p_h21_002",
+    "phrase": "i'm going to",
+    "occurrences": 40,
+    "tokens_affected": 120,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "I'M",
+      "GOING",
+      "TO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "Mayorka, I'm going to Mayorka in just a couple of weeks."
+  },
+  {
+    "phrase_id": "p_h21_003",
+    "phrase": "have a look",
+    "occurrences": 38,
+    "tokens_affected": 114,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "HAVE",
+      "A",
+      "LOOK"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "have",
+      "look"
+    ],
+    "example_sentence": "Have a look at this video."
+  },
+  {
+    "phrase_id": "p_h21_004",
+    "phrase": "a look at",
+    "occurrences": 37,
+    "tokens_affected": 111,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "A",
+      "LOOK",
+      "AT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "look"
+    ],
+    "example_sentence": "Saying that, let's begin by having a look at what happens"
+  },
+  {
+    "phrase_id": "p_h21_005",
+    "phrase": "i want you to",
+    "occurrences": 25,
+    "tokens_affected": 100,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "I",
+      "WANT",
+      "YOU",
+      "TO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "i",
+      "want",
+      "you"
+    ],
+    "example_sentence": "I want you to take with you that the case is often this one, which is that confidence is"
+  },
+  {
+    "phrase_id": "p_h21_006",
+    "phrase": "you want to",
+    "occurrences": 27,
+    "tokens_affected": 81,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "YOU",
+      "WANT",
+      "TO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "want"
+    ],
+    "example_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+  },
+  {
+    "phrase_id": "p_h21_007",
+    "phrase": "i want you",
+    "occurrences": 26,
+    "tokens_affected": 78,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "I",
+      "WANT",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "i",
+      "want",
+      "you"
+    ],
+    "example_sentence": "I want you to take with you that the case is often this one, which is that confidence is"
+  },
+  {
+    "phrase_id": "p_h21_008",
+    "phrase": "to give you",
+    "occurrences": 25,
+    "tokens_affected": 75,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "TO",
+      "GIVE",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "give",
+      "you"
+    ],
+    "example_sentence": "to give you a concept of how important this is for any public speaker, at the far end"
+  },
+  {
+    "phrase_id": "p_h21_009",
+    "phrase": "listen to",
+    "occurrences": 31,
+    "tokens_affected": 62,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "LISTEN",
+      "TO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "your TED talk, whatever it is, listen to those songs."
+  },
+  {
+    "phrase_id": "p_h21_010",
+    "phrase": "look at this",
+    "occurrences": 20,
+    "tokens_affected": 60,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "LOOK",
+      "AT",
+      "THIS"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "look"
+    ],
+    "example_sentence": "Have a look at this video."
+  },
+  {
+    "phrase_id": "p_h21_011",
+    "phrase": "to show you",
+    "occurrences": 20,
+    "tokens_affected": 60,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "TO",
+      "SHOW",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "show",
+      "you"
+    ],
+    "example_sentence": "I'm going to show you two studies, one where people have a growth mindset, where they say"
+  },
+  {
+    "phrase_id": "p_h21_012",
+    "phrase": "i'm going to show",
+    "occurrences": 15,
+    "tokens_affected": 60,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "I'M",
+      "GOING",
+      "TO",
+      "SHOW"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "show"
+    ],
+    "example_sentence": "I'm going to show you two studies, one where people have a growth mindset, where they say"
+  },
+  {
+    "phrase_id": "p_h21_013",
+    "phrase": "going to show you",
+    "occurrences": 14,
+    "tokens_affected": 56,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GOING",
+      "TO",
+      "SHOW",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "show",
+      "you"
+    ],
+    "example_sentence": "I'm going to show you two studies, one where people have a growth mindset, where they say"
+  },
+  {
+    "phrase_id": "p_h21_014",
+    "phrase": "goes like this",
+    "occurrences": 16,
+    "tokens_affected": 48,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GOES",
+      "LIKE",
+      "THIS"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "like"
+    ],
+    "example_sentence": "concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+  },
+  {
+    "phrase_id": "p_h21_015",
+    "phrase": "i'm going to give",
+    "occurrences": 12,
+    "tokens_affected": 48,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "I'M",
+      "GOING",
+      "TO",
+      "GIVE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "give"
+    ],
+    "example_sentence": "Now the stuff I'm going to give you all come from my TEDx talks."
+  },
+  {
+    "phrase_id": "p_h21_016",
+    "phrase": "going to give you",
+    "occurrences": 12,
+    "tokens_affected": 48,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GOING",
+      "TO",
+      "GIVE",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "give",
+      "you"
+    ],
+    "example_sentence": "Now the stuff I'm going to give you all come from my TEDx talks."
+  },
+  {
+    "phrase_id": "p_h21_017",
+    "phrase": "a look at this",
+    "occurrences": 12,
+    "tokens_affected": 48,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "A",
+      "LOOK",
+      "AT",
+      "THIS"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "look"
+    ],
+    "example_sentence": "Have a look at this video."
+  },
+  {
+    "phrase_id": "p_h21_018",
+    "phrase": "going to show",
+    "occurrences": 15,
+    "tokens_affected": 45,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GOING",
+      "TO",
+      "SHOW"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "show"
+    ],
+    "example_sentence": "I'm going to show you two studies, one where people have a growth mindset, where they say"
+  },
+  {
+    "phrase_id": "p_h21_019",
+    "phrase": "let's have a look",
+    "occurrences": 10,
+    "tokens_affected": 40,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "LET'S",
+      "HAVE",
+      "A",
+      "LOOK"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "have",
+      "look"
+    ],
+    "example_sentence": "Let's have a look at these two studies."
+  },
+  {
+    "phrase_id": "p_h21_020",
+    "phrase": "up on stage",
+    "occurrences": 13,
+    "tokens_affected": 39,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "UP",
+      "ON",
+      "STAGE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "stage"
+    ],
+    "example_sentence": "walks up on stage fearful, well, their output and what they present will be severely impacted"
+  },
+  {
+    "phrase_id": "p_h21_021",
+    "phrase": "i look at",
+    "occurrences": 13,
+    "tokens_affected": 39,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "I",
+      "LOOK",
+      "AT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "i",
+      "look"
+    ],
+    "example_sentence": "All right, so if I look at these,"
+  },
+  {
+    "phrase_id": "p_h21_022",
+    "phrase": "you have to",
+    "occurrences": 13,
+    "tokens_affected": 39,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "YOU",
+      "HAVE",
+      "TO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "have"
+    ],
+    "example_sentence": "You have to understand that."
+  },
+  {
+    "phrase_id": "p_h21_023",
+    "phrase": "going to give",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GOING",
+      "TO",
+      "GIVE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "give"
+    ],
+    "example_sentence": "Now the stuff I'm going to give you all come from my TEDx talks."
+  },
+  {
+    "phrase_id": "p_h21_024",
+    "phrase": "if you have",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "IF",
+      "YOU",
+      "HAVE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "have"
+    ],
+    "example_sentence": "way you think about the answer to that question says a lot about if you have a growth or a"
+  },
+  {
+    "phrase_id": "p_h21_025",
+    "phrase": "that you can",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Modal Construction",
+    "target_isl_glosses": [
+      "THAT",
+      "YOU",
+      "CAN"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "can"
+    ],
+    "example_sentence": "If your perspective is that you can learn and that you are not restricted, you have, per"
+  },
+  {
+    "phrase_id": "p_h21_026",
+    "phrase": "let's have a",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "LET'S",
+      "HAVE",
+      "A"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "have"
+    ],
+    "example_sentence": "Let's have a look at these two studies."
+  },
+  {
+    "phrase_id": "p_h21_027",
+    "phrase": "a lot of",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "A",
+      "LOT",
+      "OF"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "Now, a lot of you, you actually look at Instagram feeds and TikTok feeds"
+  },
+  {
+    "phrase_id": "p_h21_028",
+    "phrase": "to do this",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "TO",
+      "DO",
+      "THIS"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "do"
+    ],
+    "example_sentence": "So you know how to do this."
+  },
+  {
+    "phrase_id": "p_h21_029",
+    "phrase": "here we go",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "HERE",
+      "WE",
+      "GO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "we",
+      "go"
+    ],
+    "example_sentence": "So here we go, let's have a look at this"
+  },
+  {
+    "phrase_id": "p_h21_030",
+    "phrase": "look at your",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "LOOK",
+      "AT",
+      "YOUR"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "look",
+      "your"
+    ],
+    "example_sentence": "look at your vision board every two to three days"
+  },
+  {
+    "phrase_id": "p_h21_031",
+    "phrase": "we're going to",
+    "occurrences": 12,
+    "tokens_affected": 36,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "WE'RE",
+      "GOING",
+      "TO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "We're going to have a look at big ways to inject dopamine."
+  },
+  {
+    "phrase_id": "p_h21_032",
+    "phrase": "it goes like this",
+    "occurrences": 9,
+    "tokens_affected": 36,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "IT",
+      "GOES",
+      "LIKE",
+      "THIS"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "like"
+    ],
+    "example_sentence": "concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+  },
+  {
+    "phrase_id": "p_h21_033",
+    "phrase": "you have a",
+    "occurrences": 11,
+    "tokens_affected": 33,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "YOU",
+      "HAVE",
+      "A"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "have"
+    ],
+    "example_sentence": "So make sure you have a pen and a paper,"
+  },
+  {
+    "phrase_id": "p_h21_034",
+    "phrase": "that you are",
+    "occurrences": 11,
+    "tokens_affected": 33,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "THAT",
+      "YOU",
+      "ARE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you"
+    ],
+    "example_sentence": "hey, can you play golf? Because just because it's a ball doesn't mean that you are naturally"
+  },
+  {
+    "phrase_id": "p_h21_035",
+    "phrase": "i don't know",
+    "occurrences": 11,
+    "tokens_affected": 33,
+    "semantic_category": "Negation Construct",
+    "target_isl_glosses": [
+      "I",
+      "DON'T",
+      "KNOW"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "i",
+      "know"
+    ],
+    "example_sentence": "fixed mindset. If your answer is, for instance, I don't know how to dance and I wasn't born"
+  },
+  {
+    "phrase_id": "p_h21_036",
+    "phrase": "over and over",
+    "occurrences": 11,
+    "tokens_affected": 33,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "OVER",
+      "AND",
+      "OVER"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "But if you don't, go over and over and over again."
+  },
+  {
+    "phrase_id": "p_h21_037",
+    "phrase": "in public",
+    "occurrences": 16,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "IN",
+      "PUBLIC"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "public"
+    ],
+    "example_sentence": "Do you want to become more confident in public speaking?"
+  },
+  {
+    "phrase_id": "p_h21_038",
+    "phrase": "the people",
+    "occurrences": 16,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "THE",
+      "PEOPLE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "people"
+    ],
+    "example_sentence": "particular skill, but the people who had a growth mindset actually grew."
+  },
+  {
+    "phrase_id": "p_h21_039",
+    "phrase": "every single",
+    "occurrences": 16,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "EVERY",
+      "SINGLE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "because you do it every single day."
+  },
+  {
+    "phrase_id": "p_h21_040",
+    "phrase": "we go",
+    "occurrences": 16,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "WE",
+      "GO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "we",
+      "go"
+    ],
+    "example_sentence": "So here we go, let's have a look at this"
+  },
+  {
+    "phrase_id": "p_h21_041",
+    "phrase": "time you",
+    "occurrences": 16,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "TIME",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "time",
+      "you"
+    ],
+    "example_sentence": "Have you ever realized that the first time you hear a song,"
+  },
+  {
+    "phrase_id": "p_h21_042",
+    "phrase": "do i",
+    "occurrences": 16,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "DO",
+      "I"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "do",
+      "i"
+    ],
+    "example_sentence": "How do I use these substances?"
+  },
+  {
+    "phrase_id": "p_h21_043",
+    "phrase": "of your",
+    "occurrences": 16,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "OF",
+      "YOUR"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "your"
+    ],
+    "example_sentence": "So the real truth of your life is this."
+  },
+  {
+    "phrase_id": "p_h21_044",
+    "phrase": "you want to become",
+    "occurrences": 8,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "YOU",
+      "WANT",
+      "TO",
+      "BECOME"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "want"
+    ],
+    "example_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+  },
+  {
+    "phrase_id": "p_h21_045",
+    "phrase": "want to become more",
+    "occurrences": 8,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "WANT",
+      "TO",
+      "BECOME",
+      "MORE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "want",
+      "more"
+    ],
+    "example_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+  },
+  {
+    "phrase_id": "p_h21_046",
+    "phrase": "to become more confident",
+    "occurrences": 8,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "TO",
+      "BECOME",
+      "MORE",
+      "CONFIDENT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "more",
+      "confident"
+    ],
+    "example_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+  },
+  {
+    "phrase_id": "p_h21_047",
+    "phrase": "become more confident in",
+    "occurrences": 8,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "BECOME",
+      "MORE",
+      "CONFIDENT",
+      "IN"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "more",
+      "confident"
+    ],
+    "example_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+  },
+  {
+    "phrase_id": "p_h21_048",
+    "phrase": "over and over again",
+    "occurrences": 8,
+    "tokens_affected": 32,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "OVER",
+      "AND",
+      "OVER",
+      "AGAIN"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "But if you don't, go over and over and over again."
+  },
+  {
+    "phrase_id": "p_h21_049",
+    "phrase": "what do i get",
+    "occurrences": 8,
+    "tokens_affected": 32,
+    "semantic_category": "Interrogative Construct",
+    "target_isl_glosses": [
+      "WHAT",
+      "DO",
+      "I",
+      "GET"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "what",
+      "do",
+      "i"
+    ],
+    "example_sentence": "What do I get from you then?"
+  },
+  {
+    "phrase_id": "p_h21_050",
+    "phrase": "to see",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "TO",
+      "SEE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "see"
+    ],
+    "example_sentence": "All right, beautiful to see you all."
+  },
+  {
+    "phrase_id": "p_h21_051",
+    "phrase": "to me",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "TO",
+      "ME"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "This is the most important subject to me in my life."
+  },
+  {
+    "phrase_id": "p_h21_052",
+    "phrase": "if i",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "IF",
+      "I"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "i"
+    ],
+    "example_sentence": "All right, so if I look at these,"
+  },
+  {
+    "phrase_id": "p_h21_053",
+    "phrase": "and it",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "AND",
+      "IT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "fire and it becomes stronger and stronger. This is your skill. This is your skill in becoming"
+  },
+  {
+    "phrase_id": "p_h21_054",
+    "phrase": "so you",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "SO",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you"
+    ],
+    "example_sentence": "become and the more confident you become. That's the fire, right? So you can make it burn stronger"
+  },
+  {
+    "phrase_id": "p_h21_055",
+    "phrase": "over and",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "OVER",
+      "AND"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "Can you please fly over and have a look at it?"
+  },
+  {
+    "phrase_id": "p_h21_056",
+    "phrase": "it was",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "IT",
+      "WAS"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "And it was sublime."
+  },
+  {
+    "phrase_id": "p_h21_057",
+    "phrase": "i'm gonna",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "I'M",
+      "GONNA"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "I'm gonna do this, oh, I've got a to-do list"
+  },
+  {
+    "phrase_id": "p_h21_058",
+    "phrase": "and she",
+    "occurrences": 15,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "AND",
+      "SHE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "It's a video of a woman, her name is Susan Boyle, and she was a British Got Talent."
+  },
+  {
+    "phrase_id": "p_h21_059",
+    "phrase": "this is the",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "THIS",
+      "IS",
+      "THE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "This is the most important subject to me in my life."
+  },
+  {
+    "phrase_id": "p_h21_060",
+    "phrase": "so if you",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "SO",
+      "IF",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you"
+    ],
+    "example_sentence": "So if you like this session, make sure you pick up this book."
+  },
+  {
+    "phrase_id": "p_h21_061",
+    "phrase": "want to become",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "WANT",
+      "TO",
+      "BECOME"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "want"
+    ],
+    "example_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+  },
+  {
+    "phrase_id": "p_h21_062",
+    "phrase": "become more confident",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "BECOME",
+      "MORE",
+      "CONFIDENT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "more",
+      "confident"
+    ],
+    "example_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+  },
+  {
+    "phrase_id": "p_h21_063",
+    "phrase": "do you know",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "DO",
+      "YOU",
+      "KNOW"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "do",
+      "you",
+      "know"
+    ],
+    "example_sentence": "like do you know maths because you've studied it? Are you good at maths? They"
+  },
+  {
+    "phrase_id": "p_h21_064",
+    "phrase": "this is a",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "THIS",
+      "IS",
+      "A"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "Now this is a choice that you make in life. When you're asked to do a talk, when you're"
+  },
+  {
+    "phrase_id": "p_h21_065",
+    "phrase": "give me more",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GIVE",
+      "ME",
+      "MORE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "give",
+      "more"
+    ],
+    "example_sentence": "where the feeling is, give me more, give me more."
+  },
+  {
+    "phrase_id": "p_h21_066",
+    "phrase": "you look at",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "YOU",
+      "LOOK",
+      "AT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "look"
+    ],
+    "example_sentence": "morning and the first thing you do is take up your phone and you look at the news, you are literally"
+  },
+  {
+    "phrase_id": "p_h21_067",
+    "phrase": "the most beautiful",
+    "occurrences": 10,
+    "tokens_affected": 30,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "THE",
+      "MOST",
+      "BEAUTIFUL"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "beautiful"
+    ],
+    "example_sentence": "indeed. Maybe not the most beautiful one I've seen, but it does summarize, you know, based on how"
+  },
+  {
+    "phrase_id": "p_h21_068",
+    "phrase": "you see",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "YOU",
+      "SEE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "see"
+    ],
+    "example_sentence": "You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+  },
+  {
+    "phrase_id": "p_h21_069",
+    "phrase": "will be",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Modal Construction",
+    "target_isl_glosses": [
+      "WILL",
+      "BE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "will"
+    ],
+    "example_sentence": "challenge. Yes, you've probably seen that. Yes. That means that I will be challenging you."
+  },
+  {
+    "phrase_id": "p_h21_070",
+    "phrase": "here we",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "HERE",
+      "WE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "we"
+    ],
+    "example_sentence": "over here we have fear, and at the far end over here we have confidence. If a person"
+  },
+  {
+    "phrase_id": "p_h21_071",
+    "phrase": "a person",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "A",
+      "PERSON"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "over here we have fear, and at the far end over here we have confidence. If a person"
+  },
+  {
+    "phrase_id": "p_h21_072",
+    "phrase": "a lot",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "A",
+      "LOT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "It just came out in Japan, which I think looks a lot more interesting than the English version,"
+  },
+  {
+    "phrase_id": "p_h21_073",
+    "phrase": "go up",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GO",
+      "UP"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "go"
+    ],
+    "example_sentence": "go up and still to some extent you fail in your presentation."
+  },
+  {
+    "phrase_id": "p_h21_074",
+    "phrase": "the first",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "THE",
+      "FIRST"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "first"
+    ],
+    "example_sentence": "good at playing golf and that you are naturally confident in it. So the first question I want"
+  },
+  {
+    "phrase_id": "p_h21_075",
+    "phrase": "what do",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Interrogative Construct",
+    "target_isl_glosses": [
+      "WHAT",
+      "DO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "what",
+      "do"
+    ],
+    "example_sentence": "to ask you is to ask yourself, what do you want to become more confident in? What do you"
+  },
+  {
+    "phrase_id": "p_h21_076",
+    "phrase": "go like",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GO",
+      "LIKE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "go",
+      "like"
+    ],
+    "example_sentence": "And an Angels Cocktail can go like this. If I were to offer you an Angels Cocktail, well,"
+  },
+  {
+    "phrase_id": "p_h21_077",
+    "phrase": "my friend",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "MY",
+      "FRIEND"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "my",
+      "friend"
+    ],
+    "example_sentence": "But here's the key, my friend."
+  },
+  {
+    "phrase_id": "p_h21_078",
+    "phrase": "it's not",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Negation Construct",
+    "target_isl_glosses": [
+      "IT'S",
+      "NOT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "not"
+    ],
+    "example_sentence": "Never, ever listen to them if it's not intentional."
+  },
+  {
+    "phrase_id": "p_h21_079",
+    "phrase": "at your",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "AT",
+      "YOUR"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "your"
+    ],
+    "example_sentence": "look at your vision board every two to three days"
+  },
+  {
+    "phrase_id": "p_h21_080",
+    "phrase": "of them",
+    "occurrences": 14,
+    "tokens_affected": 28,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "OF",
+      "THEM"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "What I want you to see is change your perspective on failures. Invite them. Be proud of them."
+  },
+  {
+    "phrase_id": "p_h21_081",
+    "phrase": "to have a look",
+    "occurrences": 7,
+    "tokens_affected": 28,
+    "semantic_category": "Perceptual Directive",
+    "target_isl_glosses": [
+      "TO",
+      "HAVE",
+      "A",
+      "LOOK"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "have",
+      "look"
+    ],
+    "example_sentence": "So I want to have a look at that in the chat,"
+  },
+  {
+    "phrase_id": "p_h21_082",
+    "phrase": "give you a",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "GIVE",
+      "YOU",
+      "A"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "give",
+      "you"
+    ],
+    "example_sentence": "to give you a concept of how important this is for any public speaker, at the far end"
+  },
+  {
+    "phrase_id": "p_h21_083",
+    "phrase": "you are not",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Negation Construct",
+    "target_isl_glosses": [
+      "YOU",
+      "ARE",
+      "NOT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "not"
+    ],
+    "example_sentence": "Some days you may walk in and even if you were super confident three days before, you are not"
+  },
+  {
+    "phrase_id": "p_h21_084",
+    "phrase": "it goes like",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "IT",
+      "GOES",
+      "LIKE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "like"
+    ],
+    "example_sentence": "concept from Carol Dweck, but it is so crucial to your confidence. And it goes like this,"
+  },
+  {
+    "phrase_id": "p_h21_085",
+    "phrase": "of you have",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "OF",
+      "YOU",
+      "HAVE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you",
+      "have"
+    ],
+    "example_sentence": "A lot of you have seen her."
+  },
+  {
+    "phrase_id": "p_h21_086",
+    "phrase": "and that is",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "AND",
+      "THAT",
+      "IS"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "and that is that it's gonna feel good"
+  },
+  {
+    "phrase_id": "p_h21_087",
+    "phrase": "and over again",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "AND",
+      "OVER",
+      "AGAIN"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "But if you don't, go over and over and over again."
+  },
+  {
+    "phrase_id": "p_h21_088",
+    "phrase": "the way you",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "THE",
+      "WAY",
+      "YOU"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "you"
+    ],
+    "example_sentence": "state in you. So the way you walk can impact the way you feel. You've probably felt this so many"
+  },
+  {
+    "phrase_id": "p_h21_089",
+    "phrase": "do i get",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "DO",
+      "I",
+      "GET"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "do",
+      "i"
+    ],
+    "example_sentence": "How do I get to do what you do, David?"
+  },
+  {
+    "phrase_id": "p_h21_090",
+    "phrase": "and he goes",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "AND",
+      "HE",
+      "GOES"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "So he's a British detective and he goes around and he's like,"
+  },
+  {
+    "phrase_id": "p_h21_091",
+    "phrase": "what do i",
+    "occurrences": 9,
+    "tokens_affected": 27,
+    "semantic_category": "Interrogative Construct",
+    "target_isl_glosses": [
+      "WHAT",
+      "DO",
+      "I"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "what",
+      "do",
+      "i"
+    ],
+    "example_sentence": "What do I... What does a conductor..."
+  },
+  {
+    "phrase_id": "p_h21_092",
+    "phrase": "more confident",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "MORE",
+      "CONFIDENT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "more",
+      "confident"
+    ],
+    "example_sentence": "and bring you a few steps closer to being more confident, more clear,"
+  },
+  {
+    "phrase_id": "p_h21_093",
+    "phrase": "and i'm",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "AND",
+      "I'M"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "and I'm best known for my TEDx talks,"
+  },
+  {
+    "phrase_id": "p_h21_094",
+    "phrase": "the world",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "THE",
+      "WORLD"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "world"
+    ],
+    "example_sentence": "which are among the most viewed in the world"
+  },
+  {
+    "phrase_id": "p_h21_095",
+    "phrase": "one of",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "ONE",
+      "OF"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "one"
+    ],
+    "example_sentence": "And this chart is one of the results of that particular endeavour."
+  },
+  {
+    "phrase_id": "p_h21_096",
+    "phrase": "up to",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "UP",
+      "TO"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "You've signed up to something which is called a challenge,"
+  },
+  {
+    "phrase_id": "p_h21_097",
+    "phrase": "means that",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "MEANS",
+      "THAT"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "challenge. Yes, you've probably seen that. Yes. That means that I will be challenging you."
+  },
+  {
+    "phrase_id": "p_h21_098",
+    "phrase": "i love",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "I",
+      "LOVE"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "i",
+      "love"
+    ],
+    "example_sentence": "challenge, yes? All right, that's amazing. I love it. Love it."
+  },
+  {
+    "phrase_id": "p_h21_099",
+    "phrase": "one is",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "ONE",
+      "IS"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [
+      "one"
+    ],
+    "example_sentence": "And the mindset one is actually derived from this book."
+  },
+  {
+    "phrase_id": "p_h21_100",
+    "phrase": "so if",
+    "occurrences": 13,
+    "tokens_affected": 26,
+    "semantic_category": "Presentation Discourse",
+    "target_isl_glosses": [
+      "SO",
+      "IF"
+    ],
+    "islrtc_evidence_basis": "ISLRTC discourse rule; compound structure in public lecture context",
+    "linguistic_confidence": "HIGH",
+    "existing_signs_reused": [],
+    "example_sentence": "So if you like this session, make sure you pick up this book."
+  }
+]

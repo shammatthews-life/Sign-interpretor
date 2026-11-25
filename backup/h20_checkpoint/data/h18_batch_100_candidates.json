@@ -1,0 +1,1502 @@
+[
+  {
+    "rank": 1,
+    "canonical_concept": "skill",
+    "surface_forms": [
+      "skill"
+    ],
+    "corpus_frequency": 77,
+    "example_context": "Public speaking lecture occurrence (skill)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "skill",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "skill",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 2,
+    "canonical_concept": "confident",
+    "surface_forms": [
+      "confident"
+    ],
+    "corpus_frequency": 69,
+    "example_context": "Public speaking lecture occurrence (confident)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "confident",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "confident",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 3,
+    "canonical_concept": "show",
+    "surface_forms": [
+      "show"
+    ],
+    "corpus_frequency": 52,
+    "example_context": "Public speaking lecture occurrence (show)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "show",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "show",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 4,
+    "canonical_concept": "video",
+    "surface_forms": [
+      "video"
+    ],
+    "corpus_frequency": 48,
+    "example_context": "Public speaking lecture occurrence (video)",
+    "semantic_category": "Technical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "video",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "video",
+    "evidence_reference": "ISLRTC Dictionary (Technical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 5,
+    "canonical_concept": "life",
+    "surface_forms": [
+      "life"
+    ],
+    "corpus_frequency": 38,
+    "example_context": "Public speaking lecture occurrence (life)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "life",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "life",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 6,
+    "canonical_concept": "second",
+    "surface_forms": [
+      "second"
+    ],
+    "corpus_frequency": 35,
+    "example_context": "Public speaking lecture occurrence (second)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "second",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "second",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 7,
+    "canonical_concept": "walk",
+    "surface_forms": [
+      "walk"
+    ],
+    "corpus_frequency": 35,
+    "example_context": "Public speaking lecture occurrence (walk)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "walk",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "walk",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 8,
+    "canonical_concept": "question",
+    "surface_forms": [
+      "question"
+    ],
+    "corpus_frequency": 33,
+    "example_context": "Public speaking lecture occurrence (question)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "question",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "question",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 9,
+    "canonical_concept": "ask",
+    "surface_forms": [
+      "ask"
+    ],
+    "corpus_frequency": 32,
+    "example_context": "Public speaking lecture occurrence (ask)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "ask",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "ask",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 10,
+    "canonical_concept": "level",
+    "surface_forms": [
+      "level"
+    ],
+    "corpus_frequency": 30,
+    "example_context": "Public speaking lecture occurrence (level)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "level",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "level",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 11,
+    "canonical_concept": "beautiful",
+    "surface_forms": [
+      "beautiful"
+    ],
+    "corpus_frequency": 29,
+    "example_context": "Public speaking lecture occurrence (beautiful)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "beautiful",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "beautiful",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 12,
+    "canonical_concept": "stage",
+    "surface_forms": [
+      "stage"
+    ],
+    "corpus_frequency": 29,
+    "example_context": "Public speaking lecture occurrence (stage)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "stage",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "stage",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 13,
+    "canonical_concept": "attention",
+    "surface_forms": [
+      "attention"
+    ],
+    "corpus_frequency": 28,
+    "example_context": "Public speaking lecture occurrence (attention)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "attention",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "attention",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 14,
+    "canonical_concept": "voice",
+    "surface_forms": [
+      "voice"
+    ],
+    "corpus_frequency": 28,
+    "example_context": "Public speaking lecture occurrence (voice)",
+    "semantic_category": "Medical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "voice",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "voice",
+    "evidence_reference": "ISLRTC Dictionary (Medical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 15,
+    "canonical_concept": "year",
+    "surface_forms": [
+      "year"
+    ],
+    "corpus_frequency": 27,
+    "example_context": "Public speaking lecture occurrence (year)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "year",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "year",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 16,
+    "canonical_concept": "pace",
+    "surface_forms": [
+      "pace"
+    ],
+    "corpus_frequency": 27,
+    "example_context": "Public speaking lecture occurrence (pace)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "pace",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "pace",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 17,
+    "canonical_concept": "love",
+    "surface_forms": [
+      "love"
+    ],
+    "corpus_frequency": 26,
+    "example_context": "Public speaking lecture occurrence (love)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "love",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "love",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 18,
+    "canonical_concept": "first",
+    "surface_forms": [
+      "first"
+    ],
+    "corpus_frequency": 25,
+    "example_context": "Public speaking lecture occurrence (first)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "first",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "first",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 19,
+    "canonical_concept": "imagine",
+    "surface_forms": [
+      "imagine"
+    ],
+    "corpus_frequency": 25,
+    "example_context": "Public speaking lecture occurrence (imagine)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "imagine",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "imagine",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 20,
+    "canonical_concept": "story",
+    "surface_forms": [
+      "story"
+    ],
+    "corpus_frequency": 25,
+    "example_context": "Public speaking lecture occurrence (story)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "story",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "story",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 21,
+    "canonical_concept": "sound",
+    "surface_forms": [
+      "sound"
+    ],
+    "corpus_frequency": 25,
+    "example_context": "Public speaking lecture occurrence (sound)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "sound",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "sound",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 22,
+    "canonical_concept": "write",
+    "surface_forms": [
+      "write"
+    ],
+    "corpus_frequency": 24,
+    "example_context": "Public speaking lecture occurrence (write)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "write",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "write",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 23,
+    "canonical_concept": "hear",
+    "surface_forms": [
+      "hear"
+    ],
+    "corpus_frequency": 24,
+    "example_context": "Public speaking lecture occurrence (hear)",
+    "semantic_category": "Medical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "hear",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "hear",
+    "evidence_reference": "ISLRTC Dictionary (Medical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 24,
+    "canonical_concept": "feel",
+    "surface_forms": [
+      "feel"
+    ],
+    "corpus_frequency": 23,
+    "example_context": "Public speaking lecture occurrence (feel)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "feel",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "feel",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 25,
+    "canonical_concept": "minute",
+    "surface_forms": [
+      "minute"
+    ],
+    "corpus_frequency": 23,
+    "example_context": "Public speaking lecture occurrence (minute)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "minute",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "minute",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 26,
+    "canonical_concept": "mean",
+    "surface_forms": [
+      "mean"
+    ],
+    "corpus_frequency": 23,
+    "example_context": "Public speaking lecture occurrence (mean)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "mean",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "mean",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 27,
+    "canonical_concept": "call",
+    "surface_forms": [
+      "call"
+    ],
+    "corpus_frequency": 23,
+    "example_context": "Public speaking lecture occurrence (call)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "call",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "call",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 28,
+    "canonical_concept": "world",
+    "surface_forms": [
+      "world"
+    ],
+    "corpus_frequency": 21,
+    "example_context": "Public speaking lecture occurrence (world)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "world",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "world",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 29,
+    "canonical_concept": "put",
+    "surface_forms": [
+      "put"
+    ],
+    "corpus_frequency": 21,
+    "example_context": "Public speaking lecture occurrence (put)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "put",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "put",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 30,
+    "canonical_concept": "public",
+    "surface_forms": [
+      "public"
+    ],
+    "corpus_frequency": 21,
+    "example_context": "Public speaking lecture occurrence (public)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "public",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "public",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 31,
+    "canonical_concept": "important",
+    "surface_forms": [
+      "important"
+    ],
+    "corpus_frequency": 21,
+    "example_context": "Public speaking lecture occurrence (important)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "important",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "important",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 32,
+    "canonical_concept": "gesture",
+    "surface_forms": [
+      "gesture"
+    ],
+    "corpus_frequency": 21,
+    "example_context": "Public speaking lecture occurrence (gesture)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "gesture",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "gesture",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 33,
+    "canonical_concept": "stand",
+    "surface_forms": [
+      "stand"
+    ],
+    "corpus_frequency": 20,
+    "example_context": "Public speaking lecture occurrence (stand)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "stand",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "stand",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 34,
+    "canonical_concept": "mindset",
+    "surface_forms": [
+      "mindset"
+    ],
+    "corpus_frequency": 19,
+    "example_context": "Public speaking lecture occurrence (mindset)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "mindset",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "mindset",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 35,
+    "canonical_concept": "music",
+    "surface_forms": [
+      "music"
+    ],
+    "corpus_frequency": 19,
+    "example_context": "Public speaking lecture occurrence (music)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "music",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "music",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 36,
+    "canonical_concept": "challenge",
+    "surface_forms": [
+      "challenge"
+    ],
+    "corpus_frequency": 18,
+    "example_context": "Public speaking lecture occurrence (challenge)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "challenge",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "challenge",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 37,
+    "canonical_concept": "practice",
+    "surface_forms": [
+      "practice"
+    ],
+    "corpus_frequency": 18,
+    "example_context": "Public speaking lecture occurrence (practice)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "practice",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "practice",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 38,
+    "canonical_concept": "brain",
+    "surface_forms": [
+      "brain"
+    ],
+    "corpus_frequency": 18,
+    "example_context": "Public speaking lecture occurrence (brain)",
+    "semantic_category": "Medical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "brain",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "brain",
+    "evidence_reference": "ISLRTC Dictionary (Medical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 39,
+    "canonical_concept": "number",
+    "surface_forms": [
+      "number"
+    ],
+    "corpus_frequency": 18,
+    "example_context": "Public speaking lecture occurrence (number)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "number",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "number",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 40,
+    "canonical_concept": "answer",
+    "surface_forms": [
+      "answer"
+    ],
+    "corpus_frequency": 18,
+    "example_context": "Public speaking lecture occurrence (answer)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "answer",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "answer",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 41,
+    "canonical_concept": "same",
+    "surface_forms": [
+      "same"
+    ],
+    "corpus_frequency": 17,
+    "example_context": "Public speaking lecture occurrence (same)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "same",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "same",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 42,
+    "canonical_concept": "different",
+    "surface_forms": [
+      "different"
+    ],
+    "corpus_frequency": 16,
+    "example_context": "Public speaking lecture occurrence (different)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "different",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "different",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 43,
+    "canonical_concept": "fire",
+    "surface_forms": [
+      "fire"
+    ],
+    "corpus_frequency": 16,
+    "example_context": "Public speaking lecture occurrence (fire)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "fire",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "fire",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 44,
+    "canonical_concept": "week",
+    "surface_forms": [
+      "week"
+    ],
+    "corpus_frequency": 16,
+    "example_context": "Public speaking lecture occurrence (week)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "week",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "week",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 45,
+    "canonical_concept": "move",
+    "surface_forms": [
+      "move"
+    ],
+    "corpus_frequency": 16,
+    "example_context": "Public speaking lecture occurrence (move)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "move",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "move",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 46,
+    "canonical_concept": "lose",
+    "surface_forms": [
+      "lose"
+    ],
+    "corpus_frequency": 16,
+    "example_context": "Public speaking lecture occurrence (lose)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "lose",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "lose",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 47,
+    "canonical_concept": "presentation",
+    "surface_forms": [
+      "presentation"
+    ],
+    "corpus_frequency": 15,
+    "example_context": "Public speaking lecture occurrence (presentation)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "presentation",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "presentation",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 48,
+    "canonical_concept": "today",
+    "surface_forms": [
+      "today"
+    ],
+    "corpus_frequency": 15,
+    "example_context": "Public speaking lecture occurrence (today)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "today",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "today",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 49,
+    "canonical_concept": "remember",
+    "surface_forms": [
+      "remember"
+    ],
+    "corpus_frequency": 15,
+    "example_context": "Public speaking lecture occurrence (remember)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "remember",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "remember",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 50,
+    "canonical_concept": "small",
+    "surface_forms": [
+      "small"
+    ],
+    "corpus_frequency": 15,
+    "example_context": "Public speaking lecture occurrence (small)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "small",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "small",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 51,
+    "canonical_concept": "try",
+    "surface_forms": [
+      "try"
+    ],
+    "corpus_frequency": 15,
+    "example_context": "Public speaking lecture occurrence (try)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "try",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "try",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 52,
+    "canonical_concept": "bad",
+    "surface_forms": [
+      "bad"
+    ],
+    "corpus_frequency": 14,
+    "example_context": "Public speaking lecture occurrence (bad)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "bad",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "bad",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 53,
+    "canonical_concept": "high",
+    "surface_forms": [
+      "high"
+    ],
+    "corpus_frequency": 14,
+    "example_context": "Public speaking lecture occurrence (high)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "high",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "high",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 54,
+    "canonical_concept": "find",
+    "surface_forms": [
+      "find"
+    ],
+    "corpus_frequency": 14,
+    "example_context": "Public speaking lecture occurrence (find)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "find",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "find",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 55,
+    "canonical_concept": "study",
+    "surface_forms": [
+      "study"
+    ],
+    "corpus_frequency": 14,
+    "example_context": "Public speaking lecture occurrence (study)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "study",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "study",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 56,
+    "canonical_concept": "change",
+    "surface_forms": [
+      "change"
+    ],
+    "corpus_frequency": 14,
+    "example_context": "Public speaking lecture occurrence (change)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "change",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "change",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 57,
+    "canonical_concept": "body",
+    "surface_forms": [
+      "body"
+    ],
+    "corpus_frequency": 13,
+    "example_context": "Public speaking lecture occurrence (body)",
+    "semantic_category": "Medical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "body",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "body",
+    "evidence_reference": "ISLRTC Dictionary (Medical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 58,
+    "canonical_concept": "action",
+    "surface_forms": [
+      "action"
+    ],
+    "corpus_frequency": 13,
+    "example_context": "Public speaking lecture occurrence (action)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "action",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "action",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 59,
+    "canonical_concept": "great",
+    "surface_forms": [
+      "great"
+    ],
+    "corpus_frequency": 12,
+    "example_context": "Public speaking lecture occurrence (great)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "great",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "great",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 60,
+    "canonical_concept": "tell",
+    "surface_forms": [
+      "tell"
+    ],
+    "corpus_frequency": 12,
+    "example_context": "Public speaking lecture occurrence (tell)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "tell",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "tell",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 61,
+    "canonical_concept": "build",
+    "surface_forms": [
+      "build"
+    ],
+    "corpus_frequency": 12,
+    "example_context": "Public speaking lecture occurrence (build)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "build",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "build",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 62,
+    "canonical_concept": "fast",
+    "surface_forms": [
+      "fast"
+    ],
+    "corpus_frequency": 12,
+    "example_context": "Public speaking lecture occurrence (fast)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "fast",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "fast",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 63,
+    "canonical_concept": "hold",
+    "surface_forms": [
+      "hold"
+    ],
+    "corpus_frequency": 12,
+    "example_context": "Public speaking lecture occurrence (hold)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "hold",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "hold",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 64,
+    "canonical_concept": "eye",
+    "surface_forms": [
+      "eye"
+    ],
+    "corpus_frequency": 12,
+    "example_context": "Public speaking lecture occurrence (eye)",
+    "semantic_category": "Medical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "eye",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "eye",
+    "evidence_reference": "ISLRTC Dictionary (Medical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 65,
+    "canonical_concept": "clear",
+    "surface_forms": [
+      "clear"
+    ],
+    "corpus_frequency": 11,
+    "example_context": "Public speaking lecture occurrence (clear)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "clear",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "clear",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 66,
+    "canonical_concept": "fear",
+    "surface_forms": [
+      "fear"
+    ],
+    "corpus_frequency": 11,
+    "example_context": "Public speaking lecture occurrence (fear)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "fear",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "fear",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 67,
+    "canonical_concept": "share",
+    "surface_forms": [
+      "share"
+    ],
+    "corpus_frequency": 11,
+    "example_context": "Public speaking lecture occurrence (share)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "share",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "share",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 68,
+    "canonical_concept": "happy",
+    "surface_forms": [
+      "happy"
+    ],
+    "corpus_frequency": 11,
+    "example_context": "Public speaking lecture occurrence (happy)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "happy",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "happy",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 69,
+    "canonical_concept": "open",
+    "surface_forms": [
+      "open"
+    ],
+    "corpus_frequency": 11,
+    "example_context": "Public speaking lecture occurrence (open)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "open",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "open",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 70,
+    "canonical_concept": "picture",
+    "surface_forms": [
+      "picture"
+    ],
+    "corpus_frequency": 11,
+    "example_context": "Public speaking lecture occurrence (picture)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "picture",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "picture",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 71,
+    "canonical_concept": "teacher",
+    "surface_forms": [
+      "teacher"
+    ],
+    "corpus_frequency": 10,
+    "example_context": "Public speaking lecture occurrence (teacher)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "teacher",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "teacher",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 72,
+    "canonical_concept": "class",
+    "surface_forms": [
+      "class"
+    ],
+    "corpus_frequency": 10,
+    "example_context": "Public speaking lecture occurrence (class)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "class",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "class",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 73,
+    "canonical_concept": "understand",
+    "surface_forms": [
+      "understand"
+    ],
+    "corpus_frequency": 10,
+    "example_context": "Public speaking lecture occurrence (understand)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "understand",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "understand",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 74,
+    "canonical_concept": "meet",
+    "surface_forms": [
+      "meet"
+    ],
+    "corpus_frequency": 10,
+    "example_context": "Public speaking lecture occurrence (meet)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "meet",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "meet",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 75,
+    "canonical_concept": "heart",
+    "surface_forms": [
+      "heart"
+    ],
+    "corpus_frequency": 10,
+    "example_context": "Public speaking lecture occurrence (heart)",
+    "semantic_category": "Medical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "heart",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "heart",
+    "evidence_reference": "ISLRTC Dictionary (Medical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 76,
+    "canonical_concept": "ready",
+    "surface_forms": [
+      "ready"
+    ],
+    "corpus_frequency": 10,
+    "example_context": "Public speaking lecture occurrence (ready)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "ready",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "ready",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 77,
+    "canonical_concept": "win",
+    "surface_forms": [
+      "win"
+    ],
+    "corpus_frequency": 9,
+    "example_context": "Public speaking lecture occurrence (win)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "win",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "win",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 78,
+    "canonical_concept": "problem",
+    "surface_forms": [
+      "problem"
+    ],
+    "corpus_frequency": 9,
+    "example_context": "Public speaking lecture occurrence (problem)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "problem",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "problem",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 79,
+    "canonical_concept": "easy",
+    "surface_forms": [
+      "easy"
+    ],
+    "corpus_frequency": 9,
+    "example_context": "Public speaking lecture occurrence (easy)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "easy",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "easy",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 80,
+    "canonical_concept": "hard",
+    "surface_forms": [
+      "hard"
+    ],
+    "corpus_frequency": 9,
+    "example_context": "Public speaking lecture occurrence (hard)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "hard",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "hard",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 81,
+    "canonical_concept": "true",
+    "surface_forms": [
+      "true"
+    ],
+    "corpus_frequency": 9,
+    "example_context": "Public speaking lecture occurrence (true)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "true",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "true",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 82,
+    "canonical_concept": "wrong",
+    "surface_forms": [
+      "wrong"
+    ],
+    "corpus_frequency": 9,
+    "example_context": "Public speaking lecture occurrence (wrong)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "wrong",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "wrong",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 83,
+    "canonical_concept": "clean",
+    "surface_forms": [
+      "clean"
+    ],
+    "corpus_frequency": 8,
+    "example_context": "Public speaking lecture occurrence (clean)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "clean",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "clean",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 84,
+    "canonical_concept": "light",
+    "surface_forms": [
+      "light"
+    ],
+    "corpus_frequency": 8,
+    "example_context": "Public speaking lecture occurrence (light)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "light",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "light",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 85,
+    "canonical_concept": "dark",
+    "surface_forms": [
+      "dark"
+    ],
+    "corpus_frequency": 8,
+    "example_context": "Public speaking lecture occurrence (dark)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "dark",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "dark",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 86,
+    "canonical_concept": "slow",
+    "surface_forms": [
+      "slow"
+    ],
+    "corpus_frequency": 8,
+    "example_context": "Public speaking lecture occurrence (slow)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "slow",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "slow",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 87,
+    "canonical_concept": "finish",
+    "surface_forms": [
+      "finish"
+    ],
+    "corpus_frequency": 8,
+    "example_context": "Public speaking lecture occurrence (finish)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "finish",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "finish",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 88,
+    "canonical_concept": "school",
+    "surface_forms": [
+      "school"
+    ],
+    "corpus_frequency": 7,
+    "example_context": "Public speaking lecture occurrence (school)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "school",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "school",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 89,
+    "canonical_concept": "read",
+    "surface_forms": [
+      "read"
+    ],
+    "corpus_frequency": 7,
+    "example_context": "Public speaking lecture occurrence (read)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "read",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "read",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 90,
+    "canonical_concept": "phone",
+    "surface_forms": [
+      "phone"
+    ],
+    "corpus_frequency": 8,
+    "example_context": "Public speaking lecture occurrence (phone)",
+    "semantic_category": "Technical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "phone",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "phone",
+    "evidence_reference": "ISLRTC Dictionary (Technical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 91,
+    "canonical_concept": "computer",
+    "surface_forms": [
+      "computer"
+    ],
+    "corpus_frequency": 6,
+    "example_context": "Public speaking lecture occurrence (computer)",
+    "semantic_category": "Technical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "computer",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "computer",
+    "evidence_reference": "ISLRTC Dictionary (Technical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 92,
+    "canonical_concept": "doctor",
+    "surface_forms": [
+      "doctor"
+    ],
+    "corpus_frequency": 6,
+    "example_context": "Public speaking lecture occurrence (doctor)",
+    "semantic_category": "Medical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "doctor",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "doctor",
+    "evidence_reference": "ISLRTC Dictionary (Medical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 93,
+    "canonical_concept": "eat",
+    "surface_forms": [
+      "eat"
+    ],
+    "corpus_frequency": 6,
+    "example_context": "Public speaking lecture occurrence (eat)",
+    "semantic_category": "Everyday",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "eat",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "eat",
+    "evidence_reference": "ISLRTC Dictionary (Everyday) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 94,
+    "canonical_concept": "tree",
+    "surface_forms": [
+      "tree"
+    ],
+    "corpus_frequency": 5,
+    "example_context": "Public speaking lecture occurrence (tree)",
+    "semantic_category": "Agricultural",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "tree",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "tree",
+    "evidence_reference": "ISLRTC Dictionary (Agricultural) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 95,
+    "canonical_concept": "flower",
+    "surface_forms": [
+      "flower"
+    ],
+    "corpus_frequency": 5,
+    "example_context": "Public speaking lecture occurrence (flower)",
+    "semantic_category": "Agricultural",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "flower",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "flower",
+    "evidence_reference": "ISLRTC Dictionary (Agricultural) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 96,
+    "canonical_concept": "mind",
+    "surface_forms": [
+      "mind"
+    ],
+    "corpus_frequency": 5,
+    "example_context": "Public speaking lecture occurrence (mind)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "mind",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "mind",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 97,
+    "canonical_concept": "system",
+    "surface_forms": [
+      "system"
+    ],
+    "corpus_frequency": 4,
+    "example_context": "Public speaking lecture occurrence (system)",
+    "semantic_category": "Technical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "system",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "system",
+    "evidence_reference": "ISLRTC Dictionary (Technical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 98,
+    "canonical_concept": "lesson",
+    "surface_forms": [
+      "lesson"
+    ],
+    "corpus_frequency": 4,
+    "example_context": "Public speaking lecture occurrence (lesson)",
+    "semantic_category": "Academic",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "lesson",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "lesson",
+    "evidence_reference": "ISLRTC Dictionary (Academic) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 99,
+    "canonical_concept": "camera",
+    "surface_forms": [
+      "camera"
+    ],
+    "corpus_frequency": 4,
+    "example_context": "Public speaking lecture occurrence (camera)",
+    "semantic_category": "Technical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "camera",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "camera",
+    "evidence_reference": "ISLRTC Dictionary (Technical) / Sign Learn (DEPwD, Govt. of India)"
+  },
+  {
+    "rank": 100,
+    "canonical_concept": "screen",
+    "surface_forms": [
+      "screen"
+    ],
+    "corpus_frequency": 4,
+    "example_context": "Public speaking lecture occurrence (screen)",
+    "semantic_category": "Technical",
+    "existing_handling_status": "SUBTITLE_FALLBACK",
+    "dictionary_search_term": "screen",
+    "research_status": "OFFICIAL_ISLRTC_MATCH",
+    "selected_sign_id": "screen",
+    "evidence_reference": "ISLRTC Dictionary (Technical) / Sign Learn (DEPwD, Govt. of India)"
+  }
+]

@@ -29,11 +29,10 @@ runtime/
 # ASR benchmark audio fixtures
 tools/asr/benchmark_audio/*.wav
 
-# Local backup checkpoints
-backup/
-
-# Node dependencies
-node_modules/
+# Node dependencies (keep local Three.js test shim tracked)
+node_modules/*
+!node_modules/three/
+!node_modules/three/*
 
 # Local environment variables
 .env

@@ -1,0 +1,2856 @@
+{
+  "phase": "G3",
+  "summary": {
+    "total_sentences": 40,
+    "evaluations": {
+      "HEURISTIC": 21,
+      "SUPPORTED": 5,
+      "UNCERTAIN": 14
+    },
+    "phrase_recognition_rate": "3/3",
+    "unknown_term_rate": "20/148",
+    "unavailable_sign_rate": "100/110",
+    "mean_translation_compute_ms": 0.097,
+    "failure_categories": {
+      "missing sign motion": 35,
+      "temporal ordering": 3,
+      "insufficient linguistic evidence": 3,
+      "question handling": 4,
+      "negation handling": 3,
+      "grammar gap": 6,
+      "lexical gap": 3,
+      "unknown vocabulary": 8
+    },
+    "before_after": {
+      "baseline_unknown_terms": 30,
+      "improved_unknown_terms": 20,
+      "delta": -10
+    },
+    "pipeline_latency_probe_ms": {
+      "t1_translation_complete_minus_t0": 0.066,
+      "t2_first_sign_commit_minus_t0": 2.014,
+      "t3_aether_playback_minus_t0": 2.146,
+      "queue_depth": 0
+    }
+  },
+  "category_summary": {
+    "simple_declarative": {
+      "total": 5,
+      "evaluations": {
+        "HEURISTIC": 4,
+        "SUPPORTED": 1
+      },
+      "unknown_terms": 0,
+      "unavailable_signs": 12,
+      "mean_translation_ms": 0.417
+    },
+    "pronouns": {
+      "total": 4,
+      "evaluations": {
+        "HEURISTIC": 4
+      },
+      "unknown_terms": 0,
+      "unavailable_signs": 12,
+      "mean_translation_ms": 0.032
+    },
+    "time_expressions": {
+      "total": 3,
+      "evaluations": {
+        "UNCERTAIN": 3
+      },
+      "unknown_terms": 0,
+      "unavailable_signs": 12,
+      "mean_translation_ms": 0.023
+    },
+    "questions": {
+      "total": 4,
+      "evaluations": {
+        "HEURISTIC": 4
+      },
+      "unknown_terms": 0,
+      "unavailable_signs": 11,
+      "mean_translation_ms": 0.023
+    },
+    "negation": {
+      "total": 3,
+      "evaluations": {
+        "HEURISTIC": 3
+      },
+      "unknown_terms": 0,
+      "unavailable_signs": 12,
+      "mean_translation_ms": 0.028
+    },
+    "multi_word_phrases": {
+      "total": 3,
+      "evaluations": {
+        "SUPPORTED": 3
+      },
+      "unknown_terms": 0,
+      "unavailable_signs": 1,
+      "mean_translation_ms": 0.025
+    },
+    "longer_sentences": {
+      "total": 3,
+      "evaluations": {
+        "HEURISTIC": 3
+      },
+      "unknown_terms": 0,
+      "unavailable_signs": 12,
+      "mean_translation_ms": 0.022
+    },
+    "function_word_heavy": {
+      "total": 3,
+      "evaluations": {
+        "UNCERTAIN": 3
+      },
+      "unknown_terms": 7,
+      "unavailable_signs": 10,
+      "mean_translation_ms": 0.029
+    },
+    "fast_spoken_style": {
+      "total": 4,
+      "evaluations": {
+        "SUPPORTED": 1,
+        "HEURISTIC": 3
+      },
+      "unknown_terms": 0,
+      "unavailable_signs": 9,
+      "mean_translation_ms": 0.264
+    },
+    "unknown_proper_technical": {
+      "total": 6,
+      "evaluations": {
+        "UNCERTAIN": 6
+      },
+      "unknown_terms": 11,
+      "unavailable_signs": 8,
+      "mean_translation_ms": 0.017
+    },
+    "mixed_known_unknown": {
+      "total": 2,
+      "evaluations": {
+        "UNCERTAIN": 2
+      },
+      "unknown_terms": 2,
+      "unavailable_signs": 1,
+      "mean_translation_ms": 0.019
+    }
+  },
+  "sign_coverage": {
+    "total_linguistic_concepts": 14,
+    "technically_playable": 3,
+    "incomplete_or_not_authored": 11,
+    "no_sign_entry_terms_in_corpus": [
+      "COMPUTING",
+      "HELPS",
+      "INSULIN",
+      "IT",
+      "KOMBUCHA",
+      "LIKE",
+      "MUMBAI",
+      "NEEDS",
+      "PLEASE",
+      "QUANTUM",
+      "RAVI",
+      "SMARTPHONE",
+      "THAT",
+      "TO",
+      "WITH",
+      "WOULD"
+    ],
+    "missing_motion_frequency": {
+      "i": 15,
+      "water": 16,
+      "drink": 7,
+      "you": 17,
+      "need": 9,
+      "help": 12,
+      "me": 12,
+      "tomorrow": 6,
+      "how": 1,
+      "not": 3,
+      "thank_you": 2
+    }
+  },
+  "failure_list": [
+    {
+      "id": "D01",
+      "source": "I drink water.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "D02",
+      "source": "You need water.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "D03",
+      "source": "I help you.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "D04",
+      "source": "You help me.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "P01",
+      "source": "I help you.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "P02",
+      "source": "You help me.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "P03",
+      "source": "I need you.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "P04",
+      "source": "You need me.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "T01",
+      "source": "Tomorrow I drink water.",
+      "causes": [
+        "missing sign motion",
+        "temporal ordering",
+        "insufficient linguistic evidence"
+      ]
+    },
+    {
+      "id": "T02",
+      "source": "I drink water tomorrow.",
+      "causes": [
+        "missing sign motion",
+        "temporal ordering",
+        "insufficient linguistic evidence"
+      ]
+    },
+    {
+      "id": "T03",
+      "source": "Tomorrow you help me.",
+      "causes": [
+        "missing sign motion",
+        "temporal ordering",
+        "insufficient linguistic evidence"
+      ]
+    },
+    {
+      "id": "Q01",
+      "source": "Will you help me?",
+      "causes": [
+        "missing sign motion",
+        "question handling"
+      ]
+    },
+    {
+      "id": "Q02",
+      "source": "How are you?",
+      "causes": [
+        "missing sign motion",
+        "question handling"
+      ]
+    },
+    {
+      "id": "Q03",
+      "source": "Do you need water?",
+      "causes": [
+        "missing sign motion",
+        "question handling"
+      ]
+    },
+    {
+      "id": "Q04",
+      "source": "Can you help me?",
+      "causes": [
+        "missing sign motion",
+        "question handling"
+      ]
+    },
+    {
+      "id": "N01",
+      "source": "I do not need water.",
+      "causes": [
+        "missing sign motion",
+        "negation handling"
+      ]
+    },
+    {
+      "id": "N02",
+      "source": "You do not help me.",
+      "causes": [
+        "missing sign motion",
+        "negation handling"
+      ]
+    },
+    {
+      "id": "N03",
+      "source": "I do not drink water.",
+      "causes": [
+        "missing sign motion",
+        "negation handling"
+      ]
+    },
+    {
+      "id": "M02",
+      "source": "Thank you.",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "L01",
+      "source": "I will drink water tomorrow.",
+      "causes": [
+        "missing sign motion",
+        "grammar gap"
+      ]
+    },
+    {
+      "id": "L02",
+      "source": "Tomorrow I will need water.",
+      "causes": [
+        "missing sign motion",
+        "grammar gap"
+      ]
+    },
+    {
+      "id": "L03",
+      "source": "Will you help me tomorrow?",
+      "causes": [
+        "missing sign motion",
+        "grammar gap"
+      ]
+    },
+    {
+      "id": "F01",
+      "source": "I would like to drink the water.",
+      "causes": [
+        "lexical gap",
+        "missing sign motion",
+        "grammar gap"
+      ]
+    },
+    {
+      "id": "F02",
+      "source": "Can you please help me with water?",
+      "causes": [
+        "lexical gap",
+        "missing sign motion",
+        "grammar gap"
+      ]
+    },
+    {
+      "id": "F03",
+      "source": "It is the water that I need.",
+      "causes": [
+        "lexical gap",
+        "missing sign motion",
+        "grammar gap"
+      ]
+    },
+    {
+      "id": "S02",
+      "source": "i need water",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "S03",
+      "source": "you help me",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "S04",
+      "source": "will you help me",
+      "causes": [
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "U01",
+      "source": "I drink kombucha.",
+      "causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "U02",
+      "source": "Ravi needs water.",
+      "causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "U03",
+      "source": "The smartphone needs water.",
+      "causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "U04",
+      "source": "I need insulin.",
+      "causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "U05",
+      "source": "Mumbai needs water.",
+      "causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "U06",
+      "source": "Quantum computing helps me.",
+      "causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "X01",
+      "source": "Thank you Ravi.",
+      "causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ]
+    },
+    {
+      "id": "X02",
+      "source": "Hello smartphone.",
+      "causes": [
+        "unknown vocabulary"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "D01",
+      "category": "simple_declarative",
+      "text": "I drink water.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "i drink water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i drink water"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: I WATER DRINK",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I WATER DRINK"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, water, drink"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "WATER",
+        "DRINK"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        },
+        {
+          "sign_id": "drink",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.702,
+        "analysis_ms": 0.508,
+        "gloss_generation_ms": 0.018,
+        "sign_id_resolution_ms": 0.105
+      }
+    },
+    {
+      "id": "D02",
+      "category": "simple_declarative",
+      "text": "You need water.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "you need water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "you need water"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU WATER NEED",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU WATER NEED"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, water, need"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "WATER",
+        "NEED"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.022,
+        "analysis_ms": 0.325,
+        "gloss_generation_ms": 0.008,
+        "sign_id_resolution_ms": 0.015
+      }
+    },
+    {
+      "id": "D03",
+      "category": "simple_declarative",
+      "text": "I help you.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "i help you",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i help you"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: I YOU HELP",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I YOU HELP"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, you, help"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "YOU",
+        "HELP"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.008,
+        "analysis_ms": 0.045,
+        "gloss_generation_ms": 0.004,
+        "sign_id_resolution_ms": 0.016
+      }
+    },
+    {
+      "id": "D04",
+      "category": "simple_declarative",
+      "text": "You help me.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "you help me",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "you help me"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU ME HELP",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU ME HELP"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, me, help"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "ME",
+        "HELP"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.01,
+        "analysis_ms": 0.099,
+        "gloss_generation_ms": 0.006,
+        "sign_id_resolution_ms": 0.022
+      }
+    },
+    {
+      "id": "D05",
+      "category": "simple_declarative",
+      "text": "Hello.",
+      "evaluation": "SUPPORTED",
+      "failure_causes": [],
+      "normalized_english": "hello",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "hello"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): hello"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "HELLO"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: hello; unavailable: none"
+        }
+      ],
+      "gloss_sequence": [
+        "HELLO"
+      ],
+      "sign_ids": [
+        "hello"
+      ],
+      "unknown_terms": [],
+      "unavailable_signs": [],
+      "translation_status": "TRANSLATION_SUPPORTED",
+      "timing_ms": {
+        "normalization_ms": 0.011,
+        "analysis_ms": 0.145,
+        "gloss_generation_ms": 0.004,
+        "sign_id_resolution_ms": 0.012
+      }
+    },
+    {
+      "id": "P01",
+      "category": "pronouns",
+      "text": "I help you.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "i help you",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i help you"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: I YOU HELP",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I YOU HELP"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, you, help"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "YOU",
+        "HELP"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.008,
+        "analysis_ms": 0.041,
+        "gloss_generation_ms": 0.002,
+        "sign_id_resolution_ms": 0.012
+      }
+    },
+    {
+      "id": "P02",
+      "category": "pronouns",
+      "text": "You help me.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "you help me",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "you help me"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU ME HELP",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU ME HELP"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, me, help"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "ME",
+        "HELP"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.004,
+        "analysis_ms": 0.013,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.003
+      }
+    },
+    {
+      "id": "P03",
+      "category": "pronouns",
+      "text": "I need you.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "i need you",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i need you"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: I YOU NEED",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I YOU NEED"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, you, need"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "YOU",
+        "NEED"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.01,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.003
+      }
+    },
+    {
+      "id": "P04",
+      "category": "pronouns",
+      "text": "You need me.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "you need me",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "you need me"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU ME NEED",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU ME NEED"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, me, need"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "ME",
+        "NEED"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.004,
+        "analysis_ms": 0.018,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "T01",
+      "category": "time_expressions",
+      "text": "Tomorrow I drink water.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "missing sign motion",
+        "temporal ordering",
+        "insufficient linguistic evidence"
+      ],
+      "normalized_english": "tomorrow i drink water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "tomorrow i drink water"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "TOMORROW I DRINK WATER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: tomorrow, i, drink, water"
+        }
+      ],
+      "gloss_sequence": [
+        "TOMORROW",
+        "I",
+        "DRINK",
+        "WATER"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "tomorrow",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "drink",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.007,
+        "analysis_ms": 0.022,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.004
+      }
+    },
+    {
+      "id": "T02",
+      "category": "time_expressions",
+      "text": "I drink water tomorrow.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "missing sign motion",
+        "temporal ordering",
+        "insufficient linguistic evidence"
+      ],
+      "normalized_english": "i drink water tomorrow",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i drink water tomorrow"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I DRINK WATER TOMORROW"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, drink, water, tomorrow"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "DRINK",
+        "WATER",
+        "TOMORROW"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "drink",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        },
+        {
+          "sign_id": "tomorrow",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.004,
+        "analysis_ms": 0.012,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.003
+      }
+    },
+    {
+      "id": "T03",
+      "category": "time_expressions",
+      "text": "Tomorrow you help me.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "missing sign motion",
+        "temporal ordering",
+        "insufficient linguistic evidence"
+      ],
+      "normalized_english": "tomorrow you help me",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "tomorrow you help me"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "TOMORROW YOU HELP ME"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: tomorrow, you, help, me"
+        }
+      ],
+      "gloss_sequence": [
+        "TOMORROW",
+        "YOU",
+        "HELP",
+        "ME"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "tomorrow",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.01,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.003
+      }
+    },
+    {
+      "id": "Q01",
+      "category": "questions",
+      "text": "Will you help me?",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "question handling"
+      ],
+      "normalized_english": "will you help me?",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "will you help me?"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: will",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU ME HELP",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "question",
+          "detail": "Yes/no question retained as a non-manual requirement; no invented manual question sign.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-QUESTION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU ME HELP"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, me, help"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "ME",
+        "HELP"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.018,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.003
+      }
+    },
+    {
+      "id": "Q02",
+      "category": "questions",
+      "text": "How are you?",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "question handling"
+      ],
+      "normalized_english": "how are you?",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "how are you?"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: are",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "question",
+          "detail": "WH question retained as a non-manual requirement; no invented manual question sign.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-QUESTION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "HOW YOU"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: how, you"
+        }
+      ],
+      "gloss_sequence": [
+        "HOW",
+        "YOU"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "how",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.023,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.004
+      }
+    },
+    {
+      "id": "Q03",
+      "category": "questions",
+      "text": "Do you need water?",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "question handling"
+      ],
+      "normalized_english": "do you need water?",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "do you need water?"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: do",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU WATER NEED",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "question",
+          "detail": "Yes/no question retained as a non-manual requirement; no invented manual question sign.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-QUESTION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU WATER NEED"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, water, need"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "WATER",
+        "NEED"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.004,
+        "analysis_ms": 0.013,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "Q04",
+      "category": "questions",
+      "text": "Can you help me?",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "question handling"
+      ],
+      "normalized_english": "can you help me?",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "can you help me?"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: can",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU ME HELP",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "question",
+          "detail": "Yes/no question retained as a non-manual requirement; no invented manual question sign.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-QUESTION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU ME HELP"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, me, help"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "ME",
+        "HELP"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.013,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "N01",
+      "category": "negation",
+      "text": "I do not need water.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "negation handling"
+      ],
+      "normalized_english": "i do not need water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i do not need water"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: do",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "negation",
+          "detail": "Negation concept retained; exact ISL construction remains unmodeled.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-NEGATION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I NOT NEED WATER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, not, need, water"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "NOT",
+        "NEED",
+        "WATER"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "not",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.037,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "N02",
+      "category": "negation",
+      "text": "You do not help me.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "negation handling"
+      ],
+      "normalized_english": "you do not help me",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "you do not help me"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: do",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "negation",
+          "detail": "Negation concept retained; exact ISL construction remains unmodeled.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-NEGATION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU NOT HELP ME"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, not, help, me"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "NOT",
+        "HELP",
+        "ME"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "not",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.019,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "N03",
+      "category": "negation",
+      "text": "I do not drink water.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "negation handling"
+      ],
+      "normalized_english": "i do not drink water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i do not drink water"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: do",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "negation",
+          "detail": "Negation concept retained; exact ISL construction remains unmodeled.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-NEGATION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I NOT DRINK WATER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, not, drink, water"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "NOT",
+        "DRINK",
+        "WATER"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "not",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "drink",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.012,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "M01",
+      "category": "multi_word_phrases",
+      "text": "Good morning.",
+      "evaluation": "SUPPORTED",
+      "failure_causes": [],
+      "normalized_english": "good morning",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "good morning"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): good morning"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "GOOD MORNING"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: good, morning; unavailable: none"
+        }
+      ],
+      "gloss_sequence": [
+        "GOOD",
+        "MORNING"
+      ],
+      "sign_ids": [
+        "good",
+        "morning"
+      ],
+      "unknown_terms": [],
+      "unavailable_signs": [],
+      "translation_status": "TRANSLATION_SUPPORTED",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.012,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.004
+      }
+    },
+    {
+      "id": "M02",
+      "category": "multi_word_phrases",
+      "text": "Thank you.",
+      "evaluation": "SUPPORTED",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "thank you",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "thank you"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): thank you"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "THANK_YOU"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: thank_you"
+        }
+      ],
+      "gloss_sequence": [
+        "THANK_YOU"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "thank_you",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_SUPPORTED",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.007,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "M03",
+      "category": "multi_word_phrases",
+      "text": "Hello good morning.",
+      "evaluation": "SUPPORTED",
+      "failure_causes": [],
+      "normalized_english": "hello good morning",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "hello good morning"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): hello, good morning"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "HELLO GOOD MORNING"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: hello, good, morning; unavailable: none"
+        }
+      ],
+      "gloss_sequence": [
+        "HELLO",
+        "GOOD",
+        "MORNING"
+      ],
+      "sign_ids": [
+        "hello",
+        "good",
+        "morning"
+      ],
+      "unknown_terms": [],
+      "unavailable_signs": [],
+      "translation_status": "TRANSLATION_SUPPORTED",
+      "timing_ms": {
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.038,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.004
+      }
+    },
+    {
+      "id": "L01",
+      "category": "longer_sentences",
+      "text": "I will drink water tomorrow.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "grammar gap"
+      ],
+      "normalized_english": "i will drink water tomorrow",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i will drink water tomorrow"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: will",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I DRINK WATER TOMORROW"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, drink, water, tomorrow"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "DRINK",
+        "WATER",
+        "TOMORROW"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "drink",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        },
+        {
+          "sign_id": "tomorrow",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.006,
+        "analysis_ms": 0.02,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "L02",
+      "category": "longer_sentences",
+      "text": "Tomorrow I will need water.",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "grammar gap"
+      ],
+      "normalized_english": "tomorrow i will need water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "tomorrow i will need water"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: will",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "TOMORROW I NEED WATER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: tomorrow, i, need, water"
+        }
+      ],
+      "gloss_sequence": [
+        "TOMORROW",
+        "I",
+        "NEED",
+        "WATER"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "tomorrow",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.006,
+        "analysis_ms": 0.011,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "L03",
+      "category": "longer_sentences",
+      "text": "Will you help me tomorrow?",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion",
+        "grammar gap"
+      ],
+      "normalized_english": "will you help me tomorrow?",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "will you help me tomorrow?"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: will",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "question",
+          "detail": "Yes/no question retained as a non-manual requirement; no invented manual question sign.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-QUESTION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU HELP ME TOMORROW"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, help, me, tomorrow"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "HELP",
+        "ME",
+        "TOMORROW"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "tomorrow",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.012,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "F01",
+      "category": "function_word_heavy",
+      "text": "I would like to drink the water.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "lexical gap",
+        "missing sign motion",
+        "grammar gap"
+      ],
+      "normalized_english": "i would like to drink the water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i would like to drink the water"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: the",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: I WATER DRINK",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I WATER DRINK"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, water, drink"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "WATER",
+        "DRINK"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "WOULD",
+        "LIKE",
+        "TO"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        },
+        {
+          "sign_id": "drink",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.005,
+        "analysis_ms": 0.03,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "F02",
+      "category": "function_word_heavy",
+      "text": "Can you please help me with water?",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "lexical gap",
+        "missing sign motion",
+        "grammar gap"
+      ],
+      "normalized_english": "can you please help me with water?",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "can you please help me with water?"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: can",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "question",
+          "detail": "Yes/no question retained as a non-manual requirement; no invented manual question sign.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-QUESTION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU HELP ME WATER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, help, me, water"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "HELP",
+        "ME",
+        "WATER"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "PLEASE",
+        "WITH"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.02,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "F03",
+      "category": "function_word_heavy",
+      "text": "It is the water that I need.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "lexical gap",
+        "missing sign motion",
+        "grammar gap"
+      ],
+      "normalized_english": "it is the water that i need",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "it is the water that i need"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: is, the",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: I WATER NEED",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I WATER NEED"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, water, need"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "WATER",
+        "NEED"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "IT",
+        "THAT"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.017,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "S01",
+      "category": "fast_spoken_style",
+      "text": "hello good morning",
+      "evaluation": "SUPPORTED",
+      "failure_causes": [],
+      "normalized_english": "hello good morning",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "hello good morning"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): hello, good morning"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "HELLO GOOD MORNING"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: hello, good, morning; unavailable: none"
+        }
+      ],
+      "gloss_sequence": [
+        "HELLO",
+        "GOOD",
+        "MORNING"
+      ],
+      "sign_ids": [
+        "hello",
+        "good",
+        "morning"
+      ],
+      "unknown_terms": [],
+      "unavailable_signs": [],
+      "translation_status": "TRANSLATION_SUPPORTED",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.009,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "S02",
+      "category": "fast_spoken_style",
+      "text": "i need water",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "i need water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i need water"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: I WATER NEED",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I WATER NEED"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, water, need"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "WATER",
+        "NEED"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.01,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.003
+      }
+    },
+    {
+      "id": "S03",
+      "category": "fast_spoken_style",
+      "text": "you help me",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "you help me",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "you help me"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU ME HELP",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU ME HELP"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, me, help"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "ME",
+        "HELP"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.008,
+        "gloss_generation_ms": 0.975,
+        "sign_id_resolution_ms": 0.007
+      }
+    },
+    {
+      "id": "S04",
+      "category": "fast_spoken_style",
+      "text": "will you help me",
+      "evaluation": "HEURISTIC",
+      "failure_causes": [
+        "missing sign motion"
+      ],
+      "normalized_english": "will you help me",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "will you help me"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: will",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "Controlled semantic-role order: YOU ME HELP",
+          "basis": "PROJECT_HEURISTIC",
+          "rule_id": "G3-RULE-PRONOUN-01"
+        },
+        {
+          "stage": "question",
+          "detail": "Yes/no question retained as a non-manual requirement; no invented manual question sign.",
+          "basis": "SOURCE_SUPPORTED",
+          "rule_id": "G3-RULE-QUESTION-01"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "YOU ME HELP"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: you, me, help"
+        }
+      ],
+      "gloss_sequence": [
+        "YOU",
+        "ME",
+        "HELP"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [],
+      "unavailable_signs": [
+        {
+          "sign_id": "you",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "help",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_HEURISTIC",
+      "timing_ms": {
+        "normalization_ms": 0.006,
+        "analysis_ms": 0.026,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.003
+      }
+    },
+    {
+      "id": "U01",
+      "category": "unknown_proper_technical",
+      "text": "I drink kombucha.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ],
+      "normalized_english": "i drink kombucha",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i drink kombucha"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I DRINK"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, drink"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "DRINK"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "KOMBUCHA"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "drink",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.004,
+        "analysis_ms": 0.023,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "U02",
+      "category": "unknown_proper_technical",
+      "text": "Ravi needs water.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ],
+      "normalized_english": "ravi needs water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "ravi needs water"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "WATER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: water"
+        }
+      ],
+      "gloss_sequence": [
+        "WATER"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "RAVI",
+        "NEEDS"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.011,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "U03",
+      "category": "unknown_proper_technical",
+      "text": "The smartphone needs water.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ],
+      "normalized_english": "the smartphone needs water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "the smartphone needs water"
+        },
+        {
+          "stage": "function_words",
+          "detail": "Omitted English function/auxiliary tokens: the",
+          "basis": "PROJECT_HEURISTIC"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "WATER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: water"
+        }
+      ],
+      "gloss_sequence": [
+        "WATER"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "SMARTPHONE",
+        "NEEDS"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.003,
+        "analysis_ms": 0.01,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.001
+      }
+    },
+    {
+      "id": "U04",
+      "category": "unknown_proper_technical",
+      "text": "I need insulin.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ],
+      "normalized_english": "i need insulin",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "i need insulin"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "I NEED"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: i, need"
+        }
+      ],
+      "gloss_sequence": [
+        "I",
+        "NEED"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "INSULIN"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "i",
+          "reason": "MOTION_NOT_AUTHORED"
+        },
+        {
+          "sign_id": "need",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.009,
+        "gloss_generation_ms": 0.001,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "U05",
+      "category": "unknown_proper_technical",
+      "text": "Mumbai needs water.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ],
+      "normalized_english": "mumbai needs water",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "mumbai needs water"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "WATER"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: water"
+        }
+      ],
+      "gloss_sequence": [
+        "WATER"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "MUMBAI",
+        "NEEDS"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "water",
+          "reason": "MOTION_INCOMPLETE"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.013,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.001
+      }
+    },
+    {
+      "id": "U06",
+      "category": "unknown_proper_technical",
+      "text": "Quantum computing helps me.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ],
+      "normalized_english": "quantum computing helps me",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "quantum computing helps me"
+        },
+        {
+          "stage": "restructure",
+          "detail": "No general reordering applied; input is outside the controlled declarative pattern.",
+          "basis": "TRANSLATION_UNCERTAIN"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "ME"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: me"
+        }
+      ],
+      "gloss_sequence": [
+        "ME"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "QUANTUM",
+        "COMPUTING",
+        "HELPS"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "me",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.012,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.001
+      }
+    },
+    {
+      "id": "X01",
+      "category": "mixed_known_unknown",
+      "text": "Thank you Ravi.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "unknown vocabulary",
+        "missing sign motion"
+      ],
+      "normalized_english": "thank you ravi",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "thank you ravi"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): thank you"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "THANK_YOU"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: none; unavailable: thank_you"
+        }
+      ],
+      "gloss_sequence": [
+        "THANK_YOU"
+      ],
+      "sign_ids": [],
+      "unknown_terms": [
+        "RAVI"
+      ],
+      "unavailable_signs": [
+        {
+          "sign_id": "thank_you",
+          "reason": "MOTION_NOT_AUTHORED"
+        }
+      ],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.021,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.002
+      }
+    },
+    {
+      "id": "X02",
+      "category": "mixed_known_unknown",
+      "text": "Hello smartphone.",
+      "evaluation": "UNCERTAIN",
+      "failure_causes": [
+        "unknown vocabulary"
+      ],
+      "normalized_english": "hello smartphone",
+      "transformation_trace": [
+        {
+          "stage": "normalize",
+          "detail": "hello smartphone"
+        },
+        {
+          "stage": "phrase_detection",
+          "detail": "Matched lexical phrase(s): hello"
+        },
+        {
+          "stage": "gloss_generation",
+          "detail": "HELLO"
+        },
+        {
+          "stage": "sign_id_resolution",
+          "detail": "Playable: hello; unavailable: none"
+        }
+      ],
+      "gloss_sequence": [
+        "HELLO"
+      ],
+      "sign_ids": [
+        "hello"
+      ],
+      "unknown_terms": [
+        "SMARTPHONE"
+      ],
+      "unavailable_signs": [],
+      "translation_status": "TRANSLATION_UNCERTAIN",
+      "timing_ms": {
+        "normalization_ms": 0.002,
+        "analysis_ms": 0.01,
+        "gloss_generation_ms": 0,
+        "sign_id_resolution_ms": 0.002
+      }
+    }
+  ]
+}

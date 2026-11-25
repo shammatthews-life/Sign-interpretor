@@ -1,0 +1,276 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "combination",
+  "metadata": {
+    "display_name": "Combination",
+    "gloss": "COMBINATION",
+    "language": "ISL",
+    "lexical_type": "ISL Lexical Sign (Academic)",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "ISLRTC Academic. Dual open claw hands circling together and meshing fingers."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1300,
+    "dominant_hand": "both",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head",
+      "Bip001_L_Clavicle",
+      "Bip001_L_UpperArm",
+      "Bip001_L_Forearm",
+      "Bip001_L_Hand"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 390,
+        "label": "Setup (combination)",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 3,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": -8,
+            "y": -10,
+            "z": -40
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -20,
+            "z": -58
+          },
+          "Bip001_R_Hand": {
+            "x": -8,
+            "y": 10,
+            "z": -8
+          },
+          "Bip001_Head": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_Clavicle": {
+            "x": 0,
+            "y": -3,
+            "z": 2
+          },
+          "Bip001_L_UpperArm": {
+            "x": -8,
+            "y": 10,
+            "z": 40
+          },
+          "Bip001_L_Forearm": {
+            "x": 0,
+            "y": 20,
+            "z": 58
+          },
+          "Bip001_L_Hand": {
+            "x": -8,
+            "y": -10,
+            "z": 8
+          }
+        },
+        "finger_curls": {
+          "thumb": 15,
+          "index": 15,
+          "middle": 15,
+          "ring": 15,
+          "pinky": 15
+        }
+      },
+      {
+        "time_ms": 845,
+        "label": "Stroke (combination)",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 5,
+            "z": -3
+          },
+          "Bip001_R_UpperArm": {
+            "x": 10,
+            "y": 8,
+            "z": -52
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -18,
+            "z": -54
+          },
+          "Bip001_R_Hand": {
+            "x": -12,
+            "y": 14,
+            "z": -10
+          },
+          "Bip001_Head": {
+            "x": 2,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_Clavicle": {
+            "x": 0,
+            "y": -5,
+            "z": 3
+          },
+          "Bip001_L_UpperArm": {
+            "x": 10,
+            "y": -8,
+            "z": 52
+          },
+          "Bip001_L_Forearm": {
+            "x": 0,
+            "y": 18,
+            "z": 54
+          },
+          "Bip001_L_Hand": {
+            "x": -12,
+            "y": -14,
+            "z": 10
+          }
+        },
+        "finger_curls": {
+          "thumb": 20,
+          "index": 20,
+          "middle": 20,
+          "ring": 20,
+          "pinky": 20
+        }
+      },
+      {
+        "time_ms": 1300,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_L_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

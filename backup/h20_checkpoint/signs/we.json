@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "we",
+  "metadata": {
+    "display_name": "We",
+    "gloss": "WE",
+    "language": "ISL",
+    "lexical_type": "First-person plural pronoun; dominant index finger sweeping across chest from right to left",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant hand forms an extended index finger, touching the right chest, then sweeping in a smooth horizontal outward arc across the torso to point near the left shoulder, embracing the collective group."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1250,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      },
+      {
+        "time_ms": 300,
+        "label": "Touch Right Chest",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 5,
+            "z": -3
+          },
+          "Bip001_R_UpperArm": {
+            "x": -10,
+            "y": -12,
+            "z": -40
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -35,
+            "z": -65
+          },
+          "Bip001_R_Hand": {
+            "x": -10,
+            "y": 15,
+            "z": -10
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 65,
+          "index": 0,
+          "middle": 75,
+          "ring": 75,
+          "pinky": 75
+        }
+      },
+      {
+        "time_ms": 700,
+        "label": "Sweep Arc to Left Shoulder",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": -4,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": 5,
+            "y": -25,
+            "z": -48
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -45,
+            "z": -75
+          },
+          "Bip001_R_Hand": {
+            "x": -12,
+            "y": 22,
+            "z": -15
+          },
+          "Bip001_Head": {
+            "x": 2,
+            "y": -2,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 65,
+          "index": 0,
+          "middle": 75,
+          "ring": 75,
+          "pinky": 75
+        }
+      },
+      {
+        "time_ms": 950,
+        "label": "Hold Left Endpoint",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": -2,
+            "z": -2
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": -18,
+            "z": -40
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": -30,
+            "z": -58
+          },
+          "Bip001_R_Hand": {
+            "x": -8,
+            "y": 14,
+            "z": -8
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 65,
+          "index": 0,
+          "middle": 75,
+          "ring": 75,
+          "pinky": 75
+        }
+      },
+      {
+        "time_ms": 1250,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_UpperArm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Forearm": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_R_Hand": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "Bip001_Head": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "finger_curls": {
+          "thumb": 0,
+          "index": 0,
+          "middle": 0,
+          "ring": 0,
+          "pinky": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": "2.0.0",
+  "sign_id": "look",
+  "metadata": {
+    "display_name": "Look",
+    "gloss": "LOOK",
+    "language": "ISL",
+    "lexical_type": "Directional visual verb; V-handshape pointing toward visual target",
+    "validation_status": "IMPLEMENTATION_PENDING_LINGUISTIC_REVIEW",
+    "source": {
+      "organization": "ISLRTC",
+      "portal": "Indian Sign Language Research and Training Centre",
+      "url": "https://divyangjan.depwd.gov.in/islrtc/"
+    },
+    "notes": "Dominant hand forms V-handshape (index and middle fingers extended apart, thumb across ring and pinky). Originates near cheek/eye level and directs forward toward object of focus."
+  },
+  "motion": {
+    "status": "playable",
+    "duration_ms": 1300,
+    "dominant_hand": "right",
+    "return_to_neutral": true,
+    "transition_hints": {
+      "safe_transition": "neutral",
+      "direct_blend_supported": false
+    },
+    "involved_bones": [
+      "Bip001_R_Clavicle",
+      "Bip001_R_UpperArm",
+      "Bip001_R_Forearm",
+      "Bip001_R_Hand",
+      "Bip001_Head"
+    ],
+    "keyframes": [
+      {
+        "time_ms": 0,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      },
+      {
+        "time_ms": 350,
+        "label": "Form V-Handshape at Eye Level",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 5, "z": -3 },
+          "Bip001_R_UpperArm": { "x": -15, "y": -12, "z": -75 },
+          "Bip001_R_Forearm": { "x": 0, "y": -30, "z": -65 },
+          "Bip001_R_Hand": { "x": -10, "y": 15, "z": -15 },
+          "Bip001_Head": { "x": 2, "y": 2, "z": 0 }
+        },
+        "finger_curls": { "thumb": 70, "index": 0, "middle": 0, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 700,
+        "label": "Direct V-Fingers Forward Toward Target",
+        "easing": "easeOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 6, "z": -4 },
+          "Bip001_R_UpperArm": { "x": 5, "y": 8, "z": -70 },
+          "Bip001_R_Forearm": { "x": 0, "y": -15, "z": -50 },
+          "Bip001_R_Hand": { "x": -18, "y": 22, "z": -10 },
+          "Bip001_Head": { "x": 3, "y": 3, "z": 0 }
+        },
+        "finger_curls": { "thumb": 70, "index": 0, "middle": 0, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 1000,
+        "label": "Hold Visual Direction",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 4, "z": -2 },
+          "Bip001_R_UpperArm": { "x": 2, "y": 4, "z": -55 },
+          "Bip001_R_Forearm": { "x": 0, "y": -20, "z": -45 },
+          "Bip001_R_Hand": { "x": -12, "y": 15, "z": -8 },
+          "Bip001_Head": { "x": 1, "y": 1, "z": 0 }
+        },
+        "finger_curls": { "thumb": 70, "index": 0, "middle": 0, "ring": 75, "pinky": 75 }
+      },
+      {
+        "time_ms": 1300,
+        "label": "Neutral",
+        "easing": "easeInOutQuad",
+        "rotations": {
+          "Bip001_R_Clavicle": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_UpperArm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Forearm": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_R_Hand": { "x": 0, "y": 0, "z": 0 },
+          "Bip001_Head": { "x": 0, "y": 0, "z": 0 }
+        },
+        "finger_curls": { "thumb": 0, "index": 0, "middle": 0, "ring": 0, "pinky": 0 }
+      }
+    ]
+  }
+}
