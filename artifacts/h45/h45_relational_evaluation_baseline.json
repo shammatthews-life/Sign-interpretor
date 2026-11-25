@@ -1,0 +1,726 @@
+{
+  "milestone": "H45",
+  "evaluated_at": "2026-11-25T11:12:07.997Z",
+  "total_cases": 33,
+  "passed": 6,
+  "failed": 27,
+  "pass_rate_pct": 18.18,
+  "results": [
+    {
+      "id": "R01_A06_deliver_sense",
+      "category": "contextual_sense",
+      "passed": false,
+      "errors": [
+        "missing OUR",
+        "missing PRESENTATION",
+        "forbidden GIVE"
+      ],
+      "output_gloss": "WE HERE GIVE LIVE RECORD ROOM",
+      "sign_ids": [
+        "we",
+        "here",
+        "give",
+        "live",
+        "record",
+        "room"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R02_A12_talks_noun",
+      "category": "noun_verb_homonym",
+      "passed": false,
+      "errors": [
+        "missing SPEECH",
+        "forbidden SAY"
+      ],
+      "output_gloss": "I FAMOUS BECAUSE MY FS_TEDX SAY",
+      "sign_ids": [
+        "i",
+        "famous",
+        "because",
+        "my",
+        "fs_tedx",
+        "say"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R03_A28_view_noun",
+      "category": "noun_verb_homonym",
+      "passed": false,
+      "errors": [
+        "missing PERSPECTIVE",
+        "forbidden SEE"
+      ],
+      "output_gloss": "THIS MY SEE YOU",
+      "sign_ids": [
+        "this",
+        "my",
+        "see",
+        "you"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R04_B03_still_something",
+      "category": "discourse_lexicon",
+      "passed": false,
+      "errors": [
+        "missing SOMETHING",
+        "missing STILL",
+        "forbidden ONE",
+        "forbidden CONTINUOUS"
+      ],
+      "output_gloss": "BUT I YOUR MIND DEEP ONE CONTINUOUS THINK",
+      "sign_ids": [
+        "but",
+        "i",
+        "your",
+        "mind",
+        "deep",
+        "one",
+        "continuous",
+        "think"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R05_B04_feel_good_order_probably",
+      "category": "predicate_order_modal",
+      "passed": false,
+      "errors": [
+        "missing MAYBE",
+        "forbidden THINK",
+        "forbidden ONE",
+        "forbidden CONTINUOUS",
+        "order FEEL < GOOD failed"
+      ],
+      "output_gloss": "ONE CONTINUOUS GOOD YOUR VIDEO FEEL NOT NOW I SAY YOU THINK",
+      "sign_ids": [
+        "one",
+        "continuous",
+        "good",
+        "your",
+        "video",
+        "feel",
+        "not",
+        "now",
+        "i",
+        "say",
+        "you",
+        "think"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R06_B06_gotten_easier",
+      "category": "inchoative_comparative",
+      "passed": false,
+      "errors": [
+        "missing BECOME",
+        "missing MORE",
+        "forbidden GET",
+        "order MORE < EASY failed"
+      ],
+      "output_gloss": "BUT ALL ART STEP VIDEO VERY EASY MANY YEAR GET FINISH",
+      "sign_ids": [
+        "but",
+        "all",
+        "art",
+        "step",
+        "video",
+        "very",
+        "easy",
+        "many",
+        "year",
+        "get",
+        "finish"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R07_B07_things_learned",
+      "category": "vague_noun_sense",
+      "passed": false,
+      "errors": [
+        "missing THING",
+        "forbidden MATTER"
+      ],
+      "output_gloss": "MATTER I YEAR LEARN FINISH PRACTICE FAIL LEARN",
+      "sign_ids": [
+        "matter",
+        "i",
+        "year",
+        "learn",
+        "finish",
+        "practice",
+        "fail",
+        "learn"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R08_B12_everybody",
+      "category": "universal_quantifier",
+      "passed": false,
+      "errors": [
+        "missing EVERYONE"
+      ],
+      "output_gloss": "I KNOW YOU VERY TIRED HEAR THAT PEOPLE THAT STORY MOST IMPORTANT",
+      "sign_ids": [
+        "i",
+        "know",
+        "you",
+        "very",
+        "tired",
+        "hear",
+        "that",
+        "people",
+        "that",
+        "story",
+        "most",
+        "important"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R09_B13_do_ellipsis",
+      "category": "vp_ellipsis",
+      "passed": false,
+      "errors": [
+        "missing EVERYONE",
+        "forbidden DO"
+      ],
+      "output_gloss": "YOU STORY HAVE NEED BECAUSE PEOPLE KNOW THAT I KNOW YOU DO ALSO",
+      "sign_ids": [
+        "you",
+        "story",
+        "have",
+        "need",
+        "because",
+        "people",
+        "know",
+        "that",
+        "i",
+        "know",
+        "you",
+        "do",
+        "also"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R10_B14_double_clause_negation",
+      "category": "multi_clause_neg_count",
+      "passed": false,
+      "errors": [
+        "order NOT < KNOW failed",
+        "NOT count 1 < 2"
+      ],
+      "output_gloss": "SEE PROBLEM THAT YOU KNOW THAT NOT",
+      "sign_ids": [
+        "see",
+        "problem",
+        "that",
+        "you",
+        "know",
+        "that",
+        "not"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R11_B15_matrix_neg_scope",
+      "category": "negation_scope_isolation",
+      "passed": false,
+      "errors": [
+        "order NOT < FIND failed",
+        "order NOT < TELL failed"
+      ],
+      "output_gloss": "THAT YOU KNOW HOW FIND STORY YOUR DAY TELL NOT",
+      "sign_ids": [
+        "that",
+        "you",
+        "know",
+        "how",
+        "find",
+        "story",
+        "your",
+        "day",
+        "tell",
+        "not"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R12_B19_day_going_on",
+      "category": "idiom_and_scope",
+      "passed": false,
+      "errors": [
+        "missing CONTINUE",
+        "forbidden GO"
+      ],
+      "output_gloss": "WHEN COME VIDEO BECAUSE YOU DAY RECORD GO YOU SOMETIMES KNOW THAT ALL STORY NOT",
+      "sign_ids": [
+        "when",
+        "come",
+        "video",
+        "because",
+        "you",
+        "day",
+        "record",
+        "go",
+        "you",
+        "sometimes",
+        "know",
+        "that",
+        "all",
+        "story",
+        "not"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R13_B20_emphatic_do",
+      "category": "emphatic_auxiliary_omission",
+      "passed": false,
+      "errors": [
+        "forbidden DO",
+        "missing NMM NMM-EMPHATIC-NOD"
+      ],
+      "output_gloss": "BUT FUTURE I THINK YOU DO KNOW LITTLE SCENE OR TWO",
+      "sign_ids": [
+        "but",
+        "future",
+        "i",
+        "think",
+        "you",
+        "do",
+        "know",
+        "little",
+        "scene",
+        "or",
+        "two"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R14_B21_neg_scope_and_emphatic_do",
+      "category": "negation_scope_plus_emphatic_do",
+      "passed": false,
+      "errors": [
+        "DO count 2 > 1"
+      ],
+      "output_gloss": "TODAY WHAT THAT MEAN MAYBE I CLEAR KNOW WHAT I DO NOT BUT I DO KNOW THAT HOUR AROUND",
+      "sign_ids": [
+        "today",
+        "what",
+        "that",
+        "mean",
+        "maybe",
+        "i",
+        "clear",
+        "know",
+        "what",
+        "i",
+        "do",
+        "not",
+        "but",
+        "i",
+        "do",
+        "know",
+        "that",
+        "hour",
+        "around"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R15_B22_again_lexeme",
+      "category": "lexical_precision",
+      "passed": false,
+      "errors": [
+        "missing AGAIN",
+        "forbidden MORE"
+      ],
+      "output_gloss": "I FRIEND GO MEET I SCENE BUILD THAT NEXT AFTER THAT MORE",
+      "sign_ids": [
+        "i",
+        "friend",
+        "go",
+        "meet",
+        "i",
+        "scene",
+        "build",
+        "that",
+        "next",
+        "after",
+        "that",
+        "more"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R16_B24_some_vs_few_and_do",
+      "category": "quantifier_and_emphatic_do",
+      "passed": false,
+      "errors": [
+        "missing SOME",
+        "forbidden FEW",
+        "forbidden DO"
+      ],
+      "output_gloss": "BUT I DO KNOW THAT I HUNGRY I FEW FOOD GO GET",
+      "sign_ids": [
+        "but",
+        "i",
+        "do",
+        "know",
+        "that",
+        "i",
+        "hungry",
+        "i",
+        "few",
+        "food",
+        "go",
+        "get"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R17_B25_instead_of_negation",
+      "category": "contrastive_instead_of",
+      "passed": false,
+      "errors": [
+        "missing NOT",
+        "order NERVOUS < NOT failed"
+      ],
+      "output_gloss": "INSTEAD NERVOUS YOU BEFORE YOU START RECORD MY STORY WHAT",
+      "sign_ids": [
+        "instead",
+        "nervous",
+        "you",
+        "before",
+        "you",
+        "start",
+        "record",
+        "my",
+        "story",
+        "what"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R18_B27_deliver_feeling_things",
+      "category": "contextual_sense",
+      "passed": false,
+      "errors": [
+        "missing SHOW",
+        "missing THING",
+        "forbidden GIVE",
+        "forbidden MATTER"
+      ],
+      "output_gloss": "FEEL THAT YOU TRY GIVE WHEN I MATTER RECORD",
+      "sign_ids": [
+        "feel",
+        "that",
+        "you",
+        "try",
+        "give",
+        "when",
+        "i",
+        "matter",
+        "record"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R19_B28_always_freq",
+      "category": "temporal_frequency",
+      "passed": false,
+      "errors": [
+        "missing ALWAYS",
+        "forbidden CONTINUOUS"
+      ],
+      "output_gloss": "I CONTINUOUS TRY THINK THIS ONLY PICTURE THAT I GET BECAUSE COOL LOOK",
+      "sign_ids": [
+        "i",
+        "continuous",
+        "try",
+        "think",
+        "this",
+        "only",
+        "picture",
+        "that",
+        "i",
+        "get",
+        "because",
+        "cool",
+        "look"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R20_B30_some_dialogue",
+      "category": "quantifier_sense",
+      "passed": false,
+      "errors": [
+        "missing SOME",
+        "forbidden FEW"
+      ],
+      "output_gloss": "MOST USUALLY I ALSO COMMUNICATION FEW RECORD SAY",
+      "sign_ids": [
+        "most",
+        "usually",
+        "i",
+        "also",
+        "communication",
+        "few",
+        "record",
+        "say"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "R21_B31_straight_going_on_probably",
+      "category": "idiom_sense_triple",
+      "passed": false,
+      "errors": [
+        "missing DIRECT",
+        "missing HAPPEN",
+        "missing MAYBE",
+        "forbidden CLEAR",
+        "forbidden GO",
+        "forbidden THINK"
+      ],
+      "output_gloss": "I CLEAR CAMERA SAY EXPLAIN WHAT GO YOU HEAR HAVE THINK SHOW MORE SAY LESS",
+      "sign_ids": [
+        "i",
+        "clear",
+        "camera",
+        "say",
+        "explain",
+        "what",
+        "go",
+        "you",
+        "hear",
+        "have",
+        "think",
+        "show",
+        "more",
+        "say",
+        "less"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "ADV01_role_swap_so",
+      "category": "adversarial_roles",
+      "passed": false,
+      "errors": [
+        "order LEARN < HELP failed"
+      ],
+      "output_gloss": "YESTERDAY COACHING HELP LEARN",
+      "sign_ids": [
+        "yesterday",
+        "coaching",
+        "help",
+        "learn"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "ADV02_causal_direction",
+      "category": "adversarial_causal",
+      "passed": false,
+      "errors": [
+        "missing HOME",
+        "missing RAIN",
+        "order HOME < BECAUSE failed",
+        "order BECAUSE < RAIN failed"
+      ],
+      "output_gloss": "I HOUSE BECAUSE HEAVY",
+      "sign_ids": [
+        "i",
+        "house",
+        "because",
+        "heavy"
+      ],
+      "unknown_terms": [
+        "STAYED",
+        "RAINED"
+      ]
+    },
+    {
+      "id": "ADV03_conditional_direction",
+      "category": "adversarial_conditional",
+      "passed": true,
+      "errors": [],
+      "output_gloss": "IF YOU EVERYDAY PRACTICE YOUR FEAR",
+      "sign_ids": [
+        "if",
+        "you",
+        "everyday",
+        "practice",
+        "your",
+        "fear"
+      ],
+      "unknown_terms": [
+        "DECREASE"
+      ]
+    },
+    {
+      "id": "ADV04_matrix_neg_subordinate_aff",
+      "category": "adversarial_neg_scope",
+      "passed": false,
+      "errors": [
+        "order NOT < FAIL failed"
+      ],
+      "output_gloss": "I SAY YOU FAIL SPEECH NOT",
+      "sign_ids": [
+        "i",
+        "say",
+        "you",
+        "fail",
+        "speech",
+        "not"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "ADV05_aff_matrix_neg_subordinate",
+      "category": "adversarial_neg_scope",
+      "passed": true,
+      "errors": [],
+      "output_gloss": "I THINK YOU FINISH WRITE PLAN NOT",
+      "sign_ids": [
+        "i",
+        "think",
+        "you",
+        "finish",
+        "write",
+        "plan",
+        "not"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "ADV06_possessive_vs_subject",
+      "category": "adversarial_role",
+      "passed": false,
+      "errors": [
+        "missing LOVE",
+        "order STORY < LOVE failed"
+      ],
+      "output_gloss": "MY FRIEND YOUR STORY",
+      "sign_ids": [
+        "my",
+        "friend",
+        "your",
+        "story"
+      ],
+      "unknown_terms": [
+        "LOVES"
+      ]
+    },
+    {
+      "id": "ADV07_comparative_adjective",
+      "category": "adversarial_comparative",
+      "passed": false,
+      "errors": [
+        "missing MORE",
+        "missing GOOD",
+        "missing CLEAR",
+        "order MORE < GOOD failed"
+      ],
+      "output_gloss": "THIS CAMERA BETTER",
+      "sign_ids": [
+        "this",
+        "camera",
+        "better"
+      ],
+      "unknown_terms": [
+        "CLEARER"
+      ]
+    },
+    {
+      "id": "ADV08_homonym_like_verb_vs_prep",
+      "category": "adversarial_homonym",
+      "passed": true,
+      "errors": [],
+      "output_gloss": "I LIKE MOVIE LIKE THIS WATCH",
+      "sign_ids": [
+        "i",
+        "like",
+        "movie",
+        "like",
+        "this",
+        "watch"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "ADV09_inchoative_get_cold",
+      "category": "adversarial_inchoative",
+      "passed": false,
+      "errors": [
+        "missing BECOME",
+        "forbidden GET"
+      ],
+      "output_gloss": "WATER GET",
+      "sign_ids": [
+        "water",
+        "get"
+      ],
+      "unknown_terms": [
+        "WARMER"
+      ]
+    },
+    {
+      "id": "ADV10_wh_vs_rel_embed",
+      "category": "adversarial_wh",
+      "passed": true,
+      "errors": [],
+      "output_gloss": "TELL ME WHAT MAKE SOMEBODY FAMOUS",
+      "sign_ids": [
+        "tell",
+        "i",
+        "what",
+        "make",
+        "somebody",
+        "famous"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "ADV11_yn_or_alt_question",
+      "category": "adversarial_question",
+      "passed": true,
+      "errors": [],
+      "output_gloss": "THIS PICTURE OR REAL SCENE",
+      "sign_ids": [
+        "this",
+        "picture",
+        "or",
+        "real",
+        "scene"
+      ],
+      "unknown_terms": []
+    },
+    {
+      "id": "ADV12_ellipsis_can_too",
+      "category": "adversarial_ellipsis",
+      "passed": true,
+      "errors": [],
+      "output_gloss": "SHE WANT SAY I ALSO",
+      "sign_ids": [
+        "she",
+        "want",
+        "say",
+        "i",
+        "also"
+      ],
+      "unknown_terms": []
+    }
+  ]
+}

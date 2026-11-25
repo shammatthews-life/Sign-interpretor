@@ -1,0 +1,1458 @@
+{
+  "milestone": "H45",
+  "generated_at": "2026-11-25T11:12:07.833Z",
+  "unique_normalized_tokens_ab": 325,
+  "non_exact_lexicon_mappings_count": 133,
+  "flagged_segments_count": 24,
+  "flagged_segments": [
+    {
+      "segment_id": "A06",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "which we delivered live right here in our studio.",
+      "current_gloss": "WE HERE GIVE LIVE RECORD ROOM"
+    },
+    {
+      "segment_id": "A12",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "and I'm best known for my TEDx talks,",
+      "current_gloss": "I FAMOUS BECAUSE MY FS_TEDX SAY"
+    },
+    {
+      "segment_id": "A28",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "This is, well, this is my view of you.",
+      "current_gloss": "THIS MY SEE YOU"
+    },
+    {
+      "segment_id": "B03",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "video or maybe you've even gone out and filmed it but I bet in the back of your mind something still",
+      "current_gloss": "VIDEO OR MAYBE YOU GO FINISH FILM BUT I YOUR MIND DEEP ONE CONTINUOUS THINK"
+    },
+    {
+      "segment_id": "B04",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "just doesn't feel right about your vlog and I'm gonna say it right now you're probably just",
+      "current_gloss": "GOOD YOUR VIDEO FEEL NOT NOW I SAY YOU THINK"
+    },
+    {
+      "segment_id": "B05",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
+      "current_gloss": "MORE THINK I ALSO VERY START HONESTY I CONTINUOUS THIS DAY DO BUT"
+    },
+    {
+      "segment_id": "B06",
+      "flags": [
+        "INCHOATIVE_COMPARATIVE_MISSED"
+      ],
+      "english": "entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+      "current_gloss": "ALL ART STEP VIDEO VERY EASY MANY YEAR GET FINISH TODAY I"
+    },
+    {
+      "segment_id": "B07",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "wanted to share some advice about that. Things I've learned through years of trial and error on how",
+      "current_gloss": "FEW ADVICE WANT SHARE THAT MATTER I YEAR LEARN FINISH PRACTICE FAIL LEARN HOW"
+    },
+    {
+      "segment_id": "B11",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "And what that means is at the core of it all you still need a good story.",
+      "current_gloss": "WHAT THAT MEAN CORE ALL YOU CONTINUOUS GOOD STORY NEED"
+    },
+    {
+      "segment_id": "B12",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "I know you are definitely tired of hearing that from everybody that story is king.",
+      "current_gloss": "I KNOW YOU VERY TIRED HEAR THAT PEOPLE THAT STORY MOST IMPORTANT"
+    },
+    {
+      "segment_id": "B13",
+      "flags": [
+        "ELLIPTICAL_PRO_VERB_DO_UNRESOLVED",
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "You have to have a story because everybody knows that and I know you do too.",
+      "current_gloss": "YOU STORY HAVE NEED BECAUSE PEOPLE KNOW THAT I KNOW YOU DO ALSO"
+    },
+    {
+      "segment_id": "B14",
+      "flags": [
+        "MULTI_CLAUSE_NEGATION_COLLAPSED"
+      ],
+      "english": "See the problem isn't that you don't know that.",
+      "current_gloss": "SEE PROBLEM THAT YOU KNOW THAT NOT"
+    },
+    {
+      "segment_id": "B15",
+      "flags": [
+        "MATRIX_NEGATION_BLEED_PAST_EMBEDDED_CLAUSE"
+      ],
+      "english": "It's that you don't know how to actually find a story in your day to tell.",
+      "current_gloss": "THAT YOU KNOW HOW FIND STORY YOUR DAY TELL NOT"
+    },
+    {
+      "segment_id": "B19",
+      "flags": [
+        "IDIOM_GOING_ON_LITERAL_GO"
+      ],
+      "english": "When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,",
+      "current_gloss": "WHEN COME VIDEO BECAUSE YOU DAY RECORD GO YOU SOMETIMES KNOW THAT ALL STORY NOT"
+    },
+    {
+      "segment_id": "B20",
+      "flags": [
+        "SPURIOUS_EMPHATIC_DO_VERB"
+      ],
+      "english": "but I bet you do know at least a scene or two ahead.",
+      "current_gloss": "BUT FUTURE I THINK YOU DO KNOW LITTLE SCENE OR TWO"
+    },
+    {
+      "segment_id": "B21",
+      "flags": [
+        "SPURIOUS_EMPHATIC_DO_VERB"
+      ],
+      "english": "What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,",
+      "current_gloss": "TODAY WHAT THAT MEAN MAYBE I CLEAR KNOW WHAT I DO NOT BUT I DO KNOW THAT HOUR AROUND"
+    },
+    {
+      "segment_id": "B22",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "I'm gonna go meet up with a friend so I can build a scene around that and then after that again",
+      "current_gloss": "I FRIEND GO MEET I SCENE BUILD THAT NEXT AFTER THAT MORE"
+    },
+    {
+      "segment_id": "B24",
+      "flags": [
+        "SPURIOUS_EMPHATIC_DO_VERB",
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "But I do know that I'm hungry so I'm gonna go get some food. That's another scene",
+      "current_gloss": "BUT I DO KNOW THAT I HUNGRY I FEW FOOD GO GET THAT OTHER SCENE"
+    },
+    {
+      "segment_id": "B25",
+      "flags": [
+        "CONTRASTIVE_INSTEAD_OF_MISSING_NEGATION"
+      ],
+      "english": "So instead of stressing yourself before you start shooting of what is my story",
+      "current_gloss": "INSTEAD NERVOUS YOU BEFORE YOU START RECORD MY STORY WHAT"
+    },
+    {
+      "segment_id": "B26",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall",
+      "current_gloss": "ALLOW YOU LIFE LIVE MATTER SCENE STEP THINK ALSO THINK HOW SCENE JOIN ALL"
+    },
+    {
+      "segment_id": "B27",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "feeling that you're trying to deliver so when I'm out shooting and filming things",
+      "current_gloss": "FEEL THAT YOU TRY GIVE WHEN I MATTER RECORD"
+    },
+    {
+      "segment_id": "B28",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "I always try and think is this just a shot that I'm getting because it looks cool",
+      "current_gloss": "I CONTINUOUS TRY THINK THIS ONLY PICTURE THAT I GET BECAUSE COOL LOOK"
+    },
+    {
+      "segment_id": "B30",
+      "flags": [
+        "HIGH_RISK_POLYSEMY_OR_COMPRESSION"
+      ],
+      "english": "I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,",
+      "current_gloss": "I LITTLE BIT MORE NEED BUILD MOST USUALLY I ALSO COMMUNICATION FEW RECORD SAY"
+    },
+    {
+      "segment_id": "B31",
+      "flags": [
+        "IDIOM_GOING_ON_LITERAL_GO"
+      ],
+      "english": "I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell.",
+      "current_gloss": "I CLEAR CAMERA SAY EXPLAIN WHAT GO MANY PEOPLE TELL YOU THAT FILM YOU WANT SHOW MORE SAY LESS"
+    }
+  ],
+  "non_exact_mappings": {
+    "5": {
+      "mapped_gloss": "FIVE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+      ]
+    },
+    "110": {
+      "mapped_gloss": "HUNDRED",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A10: from the 110-step chart of excellent communication."
+      ]
+    },
+    "000": {
+      "mapped_gloss": "THOUSAND",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+      ]
+    },
+    "actual": {
+      "mapped_gloss": "REAL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B29: or is this an actual scene if it's a scene"
+      ]
+    },
+    "again": {
+      "mapped_gloss": "MORE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B22: I'm gonna go meet up with a friend so I can build a scene around that and then after that again"
+      ]
+    },
+    "ahead": {
+      "mapped_gloss": "FUTURE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B20: but I bet you do know at least a scene or two ahead."
+      ]
+    },
+    "always": {
+      "mapped_gloss": "CONTINUOUS",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B28: I always try and think is this just a shot that I'm getting because it looks cool"
+      ]
+    },
+    "another": {
+      "mapped_gloss": "OTHER",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B24: But I do know that I'm hungry so I'm gonna go get some food. That's another scene"
+      ]
+    },
+    "anxious": {
+      "mapped_gloss": "NERVOUS",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A02: It's to help you overcome being uncertain, nervous, anxious, afraid,"
+      ]
+    },
+    "apply": {
+      "mapped_gloss": "PRACTICE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A24: you can apply tomorrow."
+      ]
+    },
+    "away": {
+      "mapped_gloss": "MOVE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A23: lean in and you'll walk away with practical tools"
+      ]
+    },
+    "begin": {
+      "mapped_gloss": "START",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A07: We'll begin with mindset and confidence."
+      ]
+    },
+    "beginner": {
+      "mapped_gloss": "LEARN",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B09: the process as a beginner."
+      ]
+    },
+    "beginners": {
+      "mapped_gloss": "LEARN",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A01: This is public speaking for beginners, and the goal of this video is simple."
+      ]
+    },
+    "beginning": {
+      "mapped_gloss": "START",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B05: overthinking it. I was too in the very beginning and honestly I still do even to this day but the"
+      ]
+    },
+    "best": {
+      "mapped_gloss": "GOOD",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A12: and I'm best known for my TEDx talks,",
+        "B01: Alright, so summer is here and in my opinion that's really the best time to go out, start filming,"
+      ]
+    },
+    "bet": {
+      "mapped_gloss": "THINK",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B03: video or maybe you've even gone out and filmed it but I bet in the back of your mind something still",
+        "B20: but I bet you do know at least a scene or two ahead."
+      ]
+    },
+    "broader": {
+      "mapped_gloss": "BIG",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B18: Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story."
+      ]
+    },
+    "captivating": {
+      "mapped_gloss": "INTERESTING",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A04: and a much more captivating speaker."
+      ]
+    },
+    "capture": {
+      "mapped_gloss": "HOLD",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B30: I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,"
+      ]
+    },
+    "capturing": {
+      "mapped_gloss": "HOLD",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A08: We'll move into the science of capturing attention,"
+      ]
+    },
+    "closer": {
+      "mapped_gloss": "CLOSE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A03: and bring you a few steps closer to being more confident, more clear,"
+      ]
+    },
+    "coach": {
+      "mapped_gloss": "COACHING",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A21: and public speaking coach."
+      ]
+    },
+    "coached": {
+      "mapped_gloss": "COACHING",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A17: Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+      ]
+    },
+    "comes": {
+      "mapped_gloss": "COME",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B19: When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,"
+      ]
+    },
+    "compilation": {
+      "mapped_gloss": "COMBINATION",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A05: What you're about to watch is a special compilation of a three-day public speaking challenge",
+        "B18: Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story."
+      ]
+    },
+    "completely": {
+      "mapped_gloss": "ALL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B08: you can go about your day and start vlogging your life without completely overcomplicating"
+      ]
+    },
+    "confidence": {
+      "mapped_gloss": "CONFIDENT",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A07: We'll begin with mindset and confidence."
+      ]
+    },
+    "creative": {
+      "mapped_gloss": "ART",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I"
+      ]
+    },
+    "defined": {
+      "mapped_gloss": "DEFINITION",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B10: So essentially a vlog is just a very loosely defined short film."
+      ]
+    },
+    "definitely": {
+      "mapped_gloss": "VERY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+        "B12: I know you are definitely tired of hearing that from everybody that story is king."
+      ]
+    },
+    "deliver": {
+      "mapped_gloss": "GIVE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B27: feeling that you're trying to deliver so when I'm out shooting and filming things"
+      ]
+    },
+    "delivered": {
+      "mapped_gloss": "GIVE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A06: which we delivered live right here in our studio."
+      ]
+    },
+    "delivery": {
+      "mapped_gloss": "PRESENTATION",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A09: and we'll finish off with the most impactful delivery skills"
+      ]
+    },
+    "dialogue": {
+      "mapped_gloss": "COMMUNICATION",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B30: I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,"
+      ]
+    },
+    "discover": {
+      "mapped_gloss": "FIND",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A19: attention. Now over the next two hours and 30 minutes, you'll discover the essential tools"
+      ]
+    },
+    "documentaries": {
+      "mapped_gloss": "MOVIE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B17: And just like short films, feature films, documentaries, what you really need to think about are scenes."
+      ]
+    },
+    "documenting": {
+      "mapped_gloss": "MOVIE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B02: start vlogging and documenting your life. Maybe you've just sat down and scripted out your first"
+      ]
+    },
+    "easier": {
+      "mapped_gloss": "EASY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I"
+      ]
+    },
+    "endeavour": {
+      "mapped_gloss": "WORK",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A16: And this chart is one of the results of that particular endeavour."
+      ]
+    },
+    "entire": {
+      "mapped_gloss": "ALL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I"
+      ]
+    },
+    "error": {
+      "mapped_gloss": "FAIL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how"
+      ]
+    },
+    "essential": {
+      "mapped_gloss": "IMPORTANT",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A19: attention. Now over the next two hours and 30 minutes, you'll discover the essential tools"
+      ]
+    },
+    "everybody": {
+      "mapped_gloss": "PEOPLE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B12: I know you are definitely tired of hearing that from everybody that story is king.",
+        "B13: You have to have a story because everybody knows that and I know you do too."
+      ]
+    },
+    "exactly": {
+      "mapped_gloss": "CLEAR",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker.",
+        "B21: What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,"
+      ]
+    },
+    "excellent": {
+      "mapped_gloss": "GREAT",
+      "disk_sign_exists_for_source": true,
+      "contexts": [
+        "A10: from the 110-step chart of excellent communication."
+      ]
+    },
+    "feeling": {
+      "mapped_gloss": "FEEL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B27: feeling that you're trying to deliver so when I'm out shooting and filming things"
+      ]
+    },
+    "filmed": {
+      "mapped_gloss": "FILM",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B03: video or maybe you've even gone out and filmed it but I bet in the back of your mind something still"
+      ]
+    },
+    "filming": {
+      "mapped_gloss": "RECORD",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B01: Alright, so summer is here and in my opinion that's really the best time to go out, start filming,",
+        "B19: When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,",
+        "B27: feeling that you're trying to deliver so when I'm out shooting and filming things"
+      ]
+    },
+    "filmmaking": {
+      "mapped_gloss": "FILM",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B31: I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell."
+      ]
+    },
+    "films": {
+      "mapped_gloss": "FILM",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B17: And just like short films, feature films, documentaries, what you really need to think about are scenes.",
+        "B17: And just like short films, feature films, documentaries, what you really need to think about are scenes."
+      ]
+    },
+    "fundamental": {
+      "mapped_gloss": "BASE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B16: So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie."
+      ]
+    },
+    "gathered": {
+      "mapped_gloss": "FIND",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A20: I've gathered during my 25 year career as a public speaker"
+      ]
+    },
+    "getting": {
+      "mapped_gloss": "GET",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B28: I always try and think is this just a shot that I'm getting because it looks cool"
+      ]
+    },
+    "giants": {
+      "mapped_gloss": "COMPANY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A17: Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+      ]
+    },
+    "global": {
+      "mapped_gloss": "WORLD",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A17: Oh, and they have been put to practice. I've coached global giants like Oracle, Google,"
+      ]
+    },
+    "going": {
+      "mapped_gloss": "GO",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B19: When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,",
+        "B31: I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell."
+      ]
+    },
+    "gone": {
+      "mapped_gloss": "GO",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B03: video or maybe you've even gone out and filmed it but I bet in the back of your mind something still"
+      ]
+    },
+    "gotten": {
+      "mapped_gloss": "GET",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I"
+      ]
+    },
+    "greater": {
+      "mapped_gloss": "BIG",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B18: Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story."
+      ]
+    },
+    "has": {
+      "mapped_gloss": "HAVE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I"
+      ]
+    },
+    "hearing": {
+      "mapped_gloss": "HEAR",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B12: I know you are definitely tired of hearing that from everybody that story is king."
+      ]
+    },
+    "holding": {
+      "mapped_gloss": "HOLD",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A18: and Disney and storytelling and presentation skills, and the beautiful science of holding an audience's"
+      ]
+    },
+    "honestly": {
+      "mapped_gloss": "HONESTY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B05: overthinking it. I was too in the very beginning and honestly I still do even to this day but the"
+      ]
+    },
+    "hours": {
+      "mapped_gloss": "HOUR",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A19: attention. Now over the next two hours and 30 minutes, you'll discover the essential tools"
+      ]
+    },
+    "impactful": {
+      "mapped_gloss": "POWER",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A09: and we'll finish off with the most impactful delivery skills"
+      ]
+    },
+    "kind": {
+      "mapped_gloss": "GOOD",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B26: Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall"
+      ]
+    },
+    "king": {
+      "mapped_gloss": "IMPORTANT",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B12: I know you are definitely tired of hearing that from everybody that story is king."
+      ]
+    },
+    "known": {
+      "mapped_gloss": "KNOW",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A12: and I'm best known for my TEDx talks,"
+      ]
+    },
+    "knows": {
+      "mapped_gloss": "KNOW",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B13: You have to have a story because everybody knows that and I know you do too."
+      ]
+    },
+    "learned": {
+      "mapped_gloss": "LEARN",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how"
+      ]
+    },
+    "least": {
+      "mapped_gloss": "LITTLE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B20: but I bet you do know at least a scene or two ahead."
+      ]
+    },
+    "looks": {
+      "mapped_gloss": "LOOK",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B28: I always try and think is this just a shot that I'm getting because it looks cool"
+      ]
+    },
+    "loosely": {
+      "mapped_gloss": "SIMPLE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B10: So essentially a vlog is just a very loosely defined short film."
+      ]
+    },
+    "lot": {
+      "mapped_gloss": "MORE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+        "B31: I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell."
+      ]
+    },
+    "makes": {
+      "mapped_gloss": "MAKE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+      ]
+    },
+    "means": {
+      "mapped_gloss": "MEAN",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B11: And what that means is at the core of it all you still need a good story.",
+        "B21: What that means is maybe I don't know exactly what I'm up to today, but I do know that in an hour or so,"
+      ]
+    },
+    "met": {
+      "mapped_gloss": "MEET",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A11: Hey, if we haven't met before, my name is David JP Phillips,"
+      ]
+    },
+    "might": {
+      "mapped_gloss": "MAY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B23: I might not know what I'm gonna do for the rest of the evening"
+      ]
+    },
+    "minutes": {
+      "mapped_gloss": "MINUTE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A19: attention. Now over the next two hours and 30 minutes, you'll discover the essential tools"
+      ]
+    },
+    "much": {
+      "mapped_gloss": "MORE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A04: and a much more captivating speaker."
+      ]
+    },
+    "often": {
+      "mapped_gloss": "USUALLY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B30: I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,"
+      ]
+    },
+    "opinion": {
+      "mapped_gloss": "THINK",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B01: Alright, so summer is here and in my opinion that's really the best time to go out, start filming,"
+      ]
+    },
+    "our": {
+      "mapped_gloss": "WE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A06: which we delivered live right here in our studio."
+      ]
+    },
+    "overall": {
+      "mapped_gloss": "ALL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B26: Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall"
+      ]
+    },
+    "overarching": {
+      "mapped_gloss": "ALL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B19: When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,"
+      ]
+    },
+    "overcomplicating": {
+      "mapped_gloss": "CONFUSED",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B08: you can go about your day and start vlogging your life without completely overcomplicating"
+      ]
+    },
+    "overthinking": {
+      "mapped_gloss": "THINK",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B05: overthinking it. I was too in the very beginning and honestly I still do even to this day but the"
+      ]
+    },
+    "particular": {
+      "mapped_gloss": "SPECIAL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A14: on this particular subject.",
+        "A16: And this chart is one of the results of that particular endeavour."
+      ]
+    },
+    "pictures": {
+      "mapped_gloss": "PICTURE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A29: There's pictures all over the place."
+      ]
+    },
+    "pieces": {
+      "mapped_gloss": "PART",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B16: So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie."
+      ]
+    },
+    "pinpoint": {
+      "mapped_gloss": "FIND",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+      ]
+    },
+    "probably": {
+      "mapped_gloss": "THINK",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B04: just doesn't feel right about your vlog and I'm gonna say it right now you're probably just"
+      ]
+    },
+    "process": {
+      "mapped_gloss": "STEP",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+        "B09: the process as a beginner."
+      ]
+    },
+    "really": {
+      "mapped_gloss": "REAL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B01: Alright, so summer is here and in my opinion that's really the best time to go out, start filming,",
+        "B17: And just like short films, feature films, documentaries, what you really need to think about are scenes."
+      ]
+    },
+    "results": {
+      "mapped_gloss": "RESULT",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A16: And this chart is one of the results of that particular endeavour."
+      ]
+    },
+    "sat": {
+      "mapped_gloss": "SIT",
+      "disk_sign_exists_for_source": true,
+      "contexts": [
+        "B02: start vlogging and documenting your life. Maybe you've just sat down and scripted out your first"
+      ]
+    },
+    "scenes": {
+      "mapped_gloss": "SCENE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B17: And just like short films, feature films, documentaries, what you really need to think about are scenes.",
+        "B18: Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story.",
+        "B18: Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story.",
+        "B26: Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall"
+      ]
+    },
+    "scripted": {
+      "mapped_gloss": "WRITE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B02: start vlogging and documenting your life. Maybe you've just sat down and scripted out your first"
+      ]
+    },
+    "shooting": {
+      "mapped_gloss": "RECORD",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B25: So instead of stressing yourself before you start shooting of what is my story",
+        "B27: feeling that you're trying to deliver so when I'm out shooting and filming things"
+      ]
+    },
+    "short": {
+      "mapped_gloss": "SMALL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B10: So essentially a vlog is just a very loosely defined short film.",
+        "B17: And just like short films, feature films, documentaries, what you really need to think about are scenes."
+      ]
+    },
+    "shot": {
+      "mapped_gloss": "PICTURE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B28: I always try and think is this just a shot that I'm getting because it looks cool"
+      ]
+    },
+    "skills": {
+      "mapped_gloss": "SKILL",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A09: and we'll finish off with the most impactful delivery skills",
+        "A18: and Disney and storytelling and presentation skills, and the beautiful science of holding an audience's"
+      ]
+    },
+    "some": {
+      "mapped_gloss": "FEW",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how",
+        "B24: But I do know that I'm hungry so I'm gonna go get some food. That's another scene",
+        "B30: I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,",
+        "B30: I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,"
+      ]
+    },
+    "someone": {
+      "mapped_gloss": "SOMEBODY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+      ]
+    },
+    "something": {
+      "mapped_gloss": "ONE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B03: video or maybe you've even gone out and filmed it but I bet in the back of your mind something still"
+      ]
+    },
+    "speakers": {
+      "mapped_gloss": "SPEAKER",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+      ]
+    },
+    "speaking": {
+      "mapped_gloss": "SAY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A01: This is public speaking for beginners, and the goal of this video is simple.",
+        "A05: What you're about to watch is a special compilation of a three-day public speaking challenge",
+        "A21: and public speaking coach."
+      ]
+    },
+    "steps": {
+      "mapped_gloss": "STEP",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A03: and bring you a few steps closer to being more confident, more clear,"
+      ]
+    },
+    "still": {
+      "mapped_gloss": "CONTINUOUS",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B03: video or maybe you've even gone out and filmed it but I bet in the back of your mind something still",
+        "B05: overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
+        "B11: And what that means is at the core of it all you still need a good story."
+      ]
+    },
+    "stitched": {
+      "mapped_gloss": "COMBINATION",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B18: Just like scenes in your favorite movie, you need to have a compilation of scenes that when stitched together tell a greater and broader story."
+      ]
+    },
+    "storytelling": {
+      "mapped_gloss": "STORY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A18: and Disney and storytelling and presentation skills, and the beautiful science of holding an audience's"
+      ]
+    },
+    "straight": {
+      "mapped_gloss": "CLEAR",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B31: I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell."
+      ]
+    },
+    "stressing": {
+      "mapped_gloss": "NERVOUS",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B25: So instead of stressing yourself before you start shooting of what is my story"
+      ]
+    },
+    "studied": {
+      "mapped_gloss": "STUDY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A15: You see, I've studied over 5,000 speakers to pinpoint exactly what makes someone a great speaker."
+      ]
+    },
+    "studio": {
+      "mapped_gloss": "ROOM",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A06: which we delivered live right here in our studio."
+      ]
+    },
+    "talk": {
+      "mapped_gloss": "SAY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B31: I'll talk straight to the camera and explain what's going on. A lot of people will tell you that in filmmaking you want to show not tell."
+      ]
+    },
+    "talking": {
+      "mapped_gloss": "SAY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B30: I'll have to build a little bit more around it. Most often I'll also capture some dialogue, some talking,"
+      ]
+    },
+    "talks": {
+      "mapped_gloss": "SAY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A12: and I'm best known for my TEDx talks,"
+      ]
+    },
+    "then": {
+      "mapped_gloss": "NEXT",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B22: I'm gonna go meet up with a friend so I can build a scene around that and then after that again"
+      ]
+    },
+    "things": {
+      "mapped_gloss": "MATTER",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how",
+        "B26: Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall",
+        "B27: feeling that you're trying to deliver so when I'm out shooting and filming things"
+      ]
+    },
+    "tie": {
+      "mapped_gloss": "JOIN",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B26: Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall"
+      ]
+    },
+    "too": {
+      "mapped_gloss": "ALSO",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B05: overthinking it. I was too in the very beginning and honestly I still do even to this day but the",
+        "B13: You have to have a story because everybody knows that and I know you do too."
+      ]
+    },
+    "trial": {
+      "mapped_gloss": "PRACTICE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how"
+      ]
+    },
+    "trying": {
+      "mapped_gloss": "TRY",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B27: feeling that you're trying to deliver so when I'm out shooting and filming things"
+      ]
+    },
+    "uncertain": {
+      "mapped_gloss": "CONFUSED",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A02: It's to help you overcome being uncertain, nervous, anxious, afraid,"
+      ]
+    },
+    "view": {
+      "mapped_gloss": "SEE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A28: This is, well, this is my view of you."
+      ]
+    },
+    "viewed": {
+      "mapped_gloss": "SEE",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "A13: which are among the most viewed in the world"
+      ]
+    },
+    "vlog": {
+      "mapped_gloss": "VIDEO",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B04: just doesn't feel right about your vlog and I'm gonna say it right now you're probably just",
+        "B10: So essentially a vlog is just a very loosely defined short film.",
+        "B16: So to break down how I find a story in my day to make a vlog about, I like to think about the fundamental pieces in a movie."
+      ]
+    },
+    "vlogging": {
+      "mapped_gloss": "VIDEO",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B02: start vlogging and documenting your life. Maybe you've just sat down and scripted out your first",
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+        "B08: you can go about your day and start vlogging your life without completely overcomplicating",
+        "B19: When it comes to vlogging, because you're filming as the day is going on, you sometimes don't know that overarching story,"
+      ]
+    },
+    "wanted": {
+      "mapped_gloss": "WANT",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how"
+      ]
+    },
+    "years": {
+      "mapped_gloss": "YEAR",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B06: entire creative process for vlogging has definitely gotten a lot easier over the years so today I",
+        "B07: wanted to share some advice about that. Things I've learned through years of trial and error on how"
+      ]
+    },
+    "yourself": {
+      "mapped_gloss": "YOU",
+      "disk_sign_exists_for_source": false,
+      "contexts": [
+        "B25: So instead of stressing yourself before you start shooting of what is my story",
+        "B26: Just allow yourself to live life and think of things scene by scene and also think about how the scenes kind of tie into the overall"
+      ]
+    }
+  },
+  "top_bigrams": [
+    [
+      "i will",
+      7
+    ],
+    [
+      "not know",
+      5
+    ],
+    [
+      "i have",
+      4
+    ],
+    [
+      "you have",
+      4
+    ],
+    [
+      "but i",
+      4
+    ],
+    [
+      "know that",
+      4
+    ],
+    [
+      "this is",
+      3
+    ],
+    [
+      "public speaking",
+      3
+    ],
+    [
+      "we will",
+      3
+    ],
+    [
+      "and i",
+      3
+    ],
+    [
+      "in the",
+      3
+    ],
+    [
+      "over the",
+      3
+    ],
+    [
+      "have a",
+      3
+    ],
+    [
+      "a story",
+      3
+    ],
+    [
+      "that you",
+      3
+    ],
+    [
+      "think about",
+      3
+    ],
+    [
+      "do know",
+      3
+    ],
+    [
+      "a scene",
+      3
+    ],
+    [
+      "and the",
+      2
+    ],
+    [
+      "and a",
+      2
+    ],
+    [
+      "what you",
+      2
+    ],
+    [
+      "compilation of",
+      2
+    ],
+    [
+      "into the",
+      2
+    ],
+    [
+      "science of",
+      2
+    ],
+    [
+      "the most",
+      2
+    ],
+    [
+      "the world",
+      2
+    ],
+    [
+      "exactly what",
+      2
+    ],
+    [
+      "of the",
+      2
+    ],
+    [
+      "you will",
+      2
+    ],
+    [
+      "as a",
+      2
+    ],
+    [
+      "you can",
+      2
+    ],
+    [
+      "to the",
+      2
+    ],
+    [
+      "is my",
+      2
+    ],
+    [
+      "in my",
+      2
+    ],
+    [
+      "start vlogging",
+      2
+    ],
+    [
+      "your life",
+      2
+    ],
+    [
+      "maybe you",
+      2
+    ],
+    [
+      "i bet",
+      2
+    ],
+    [
+      "about your",
+      2
+    ],
+    [
+      "a lot",
+      2
+    ]
+  ],
+  "top_trigrams": [
+    [
+      "maybe you have",
+      2
+    ],
+    [
+      "but i bet",
+      2
+    ],
+    [
+      "what that means",
+      2
+    ],
+    [
+      "that means is",
+      2
+    ],
+    [
+      "i know you",
+      2
+    ],
+    [
+      "to have a",
+      2
+    ],
+    [
+      "that you not",
+      2
+    ],
+    [
+      "you not know",
+      2
+    ],
+    [
+      "not know that",
+      2
+    ],
+    [
+      "find a story",
+      2
+    ],
+    [
+      "a story in",
+      2
+    ],
+    [
+      "to think about",
+      2
+    ],
+    [
+      "but i do",
+      2
+    ],
+    [
+      "i do know",
+      2
+    ],
+    [
+      "do know that",
+      2
+    ],
+    [
+      "i will go",
+      2
+    ],
+    [
+      "this is public",
+      1
+    ],
+    [
+      "is public speaking",
+      1
+    ],
+    [
+      "public speaking for",
+      1
+    ],
+    [
+      "speaking for beginners",
+      1
+    ],
+    [
+      "for beginners and",
+      1
+    ],
+    [
+      "beginners and the",
+      1
+    ],
+    [
+      "and the goal",
+      1
+    ],
+    [
+      "the goal of",
+      1
+    ],
+    [
+      "goal of this",
+      1
+    ],
+    [
+      "of this video",
+      1
+    ],
+    [
+      "this video is",
+      1
+    ],
+    [
+      "video is simple",
+      1
+    ],
+    [
+      "it to help",
+      1
+    ],
+    [
+      "to help you",
+      1
+    ]
+  ]
+}
