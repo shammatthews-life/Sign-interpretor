@@ -1,0 +1,11 @@
+# H46 Defect Ledger
+
+| ID | Severity | Component | Defect Description | Status | Verification Evidence |
+|---|---|---|---|---|---|
+| `H46-DEF-01` | **CRITICAL** | `translate_segments.mjs` / `youtube-cue-manifest.js` / `timeline-synchronizer.js` / `content-script.js` / `embed.js` / `SignScheduler.js` | `non_manual_markers` computed by `EnglishToISLTranslator.js` are dropped before reaching the 3D avatar (`0` matches across transport files). | **OPEN (Phase 0)** | Pre-fix forensic grep & `test_h46_comprehension_and_spatial_audit.mjs` |
+| `H46-DEF-02` | **CRITICAL** | `SignAnimationPlayer.js` | `applyFrame()` has no procedural NMM overlay (`NMM-NEG-HEADSHAKE`, `NMM-WH-BROW-FURROW`, `NMM-YESNO-BROW-RAISE`, `NMM-COND-BROW-RAISE`, `NMM-EMPHATIC-NOD`) on `Bip001_Head` / `Bip001_Spine1`. | **OPEN (Phase 0)** | `SignAnimationPlayer.js` L243–L310 inspection |
+| `H46-DEF-03` | **CRITICAL** | `EnglishToISLTranslator.js` & `SignAnimationPlayer.js` | No `spatial_plan` (referent locus `LOCUS_LEFT`/`LOCUS_RIGHT`, role-shift torso yaw, or directional verb agreement yaw on `HELP`/`GIVE`/`TELL`/`SHOW`/`ASK`/`TEACH`). | **OPEN (Phase 0)** | `EnglishToISLTranslator.js` search & H46 baseline audit |
+| `H46-DEF-04` | **HIGH** | `signs/*.json` | `13` exact rotation-duplicate groups (`33` excess signs) make distinct Video A/B concepts (`beautiful`/`tell`, `base`/`communication`, `five`/`two`/`three`, `thirty`/`twenty`, `already`/`video`, `open`/`scene`, `ask`/`show`/`life`/`first`, `action`/`hold`/`minute`, `add`/`new`/`next`/`room`, `catch`/`other`) render identically. | **OPEN (Phase 0)** | Phase 0 `signs/*.json` hash audit |
+| `H46-DEF-05` | **MEDIUM** | `signs/*.json` | `94 / 647` signs have zero `finger_curls`, reducing handshape contrast on flat/open vs number/pointing signs. | **OPEN (Phase 0)** | Phase 0 `signs/*.json` curl audit |
+| `H46-DEF-06` | **HIGH** | `tools/run_h45_real_chrome_e2e.mjs` -> H46 E2E | Video A post-seek YouTube buffering spinner in Chrome (`readyState >= 3` not awaited after `seek_forward`/`seek_back`). | **OPEN (Phase 0)** | H45 Video A Chrome E2E defect |
+| `H46-DEF-07` | **GOVERNANCE** | Linguistic Validation | All ISL rules, spatial conventions, and repaired sign trajectories remain `PENDING_DEAF_COMMUNITY_REVIEW` until reviewed by Deaf ISL linguists/community. | **PRESERVED** | Governance constraint |
